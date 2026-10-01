@@ -4,9 +4,10 @@ import { defineConfig, envField } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { satteri } from '@astrojs/markdown-satteri';
 
-// Die Domain ist noch offen. Bis zur Liveschaltung gilt der Platzhalter example.com.
-// Im Deployment wird SITE_URL als GitHub-Variable gesetzt (siehe docs/01-technik-und-deployment.md).
-const SITE_URL = process.env.SITE_URL || 'https://example.com';
+// Endgültige Adresse: https://baumpflege-happe.de (ohne www).
+// In der Vorschau setzt GitHub Actions SITE_URL auf die temporäre Hostinger-Adresse
+// (siehe docs/01-technik-und-deployment.md, Abschnitt 7).
+const SITE_URL = process.env.SITE_URL || 'https://baumpflege-happe.de';
 
 export default defineConfig({
   site: SITE_URL,

@@ -4,8 +4,8 @@ Stand: 1. Oktober 2026. Gehört zu [01-technik-und-deployment.md](01-technik-und
 
 Jede Adresse der alten Website leitet per **301** (dauerhaft umgezogen) auf die passende neue Seite. So landen Besucher, Links aus Branchenverzeichnissen und Google nicht auf einer Fehlerseite, und Google überträgt die Signale der alten Seiten auf die neuen.
 
-> **Platzhalter: `NEUE-DOMAIN.de`**
-> Die neue Domain steht noch nicht fest. Vor dem Hochladen in der `.htaccess` überall `NEUE-DOMAIN.de` durch die echte Domain ersetzen. Ziel ist immer die endgültige Schreibweise: `https://` und **ohne www**. Dann kommt jede alte Adresse in einem einzigen Schritt an.
+> **Ziel: `https://baumpflege-happe.de`**
+> Alle Weiterleitungen zeigen direkt auf die endgültige Schreibweise der neuen Domain: `https://` und **ohne www**. Dann kommt jede alte Adresse in einem einzigen Schritt an. Die fertige Datei liegt unter [`redirects/gartenheldservice.com/.htaccess`](../redirects/gartenheldservice.com/.htaccess).
 
 ---
 
@@ -112,12 +112,12 @@ Nicht nur auf die Weiterleitung verlassen. Nach dem Start direkt auf neue Domain
 5. **Wayback Machine:** `https://web.archive.org/web/*/gartenheldservice.com/*` zeigt auch früher vorhandene Adressen, die noch irgendwo verlinkt sein können.
 6. **Alles in die Tabelle 1.1 übernehmen** und je Adresse das Ziel festlegen. Prüfen, ob eine Schlagwort-Regel schon das richtige Ziel liefert. Wenn nicht, eine genaue Regel in Abschnitt 4 der `.htaccess` ergänzen (nach den belegten Seiten, vor den Schlagwörtern):
    ```apache
-   RewriteRule ^alter-pfad/?$ https://NEUE-DOMAIN.de/neuer-pfad/? [R=301,L,NC]
+   RewriteRule ^alter-pfad/?$ https://baumpflege-happe.de/neuer-pfad/? [R=301,L,NC]
    ```
    Für alte Kurzlinks mit ID, und zwar **über** der Startseiten-Regel `^(index\.(php|html?))?$`, sonst landet `/?p=123` vorher auf der Startseite:
    ```apache
    RewriteCond %{QUERY_STRING} (^|&)(p|page_id)=123(&|$)
-   RewriteRule ^(index\.php)?$ https://NEUE-DOMAIN.de/leistungen/? [R=301,L,NC]
+   RewriteRule ^(index\.php)?$ https://baumpflege-happe.de/leistungen/? [R=301,L,NC]
    ```
 7. **Backup** der alten Website ziehen (Dateien, Datenbank, Mediathek). Nach dem Umschalten ist sie nicht mehr erreichbar.
 
@@ -130,7 +130,7 @@ Zwei Zuordnungen kannst du gern anders entscheiden, sag dann Bescheid: Alte Pfla
 Empfohlen ist Variante B (Begründung in 01-technik-und-deployment.md, Abschnitt 13):
 
 - Bei Hostinger eine eigene kleine Website `gartenheldservice.com` anlegen (leere PHP/HTML-Website), Platzhalterdateien löschen, nur diese `.htaccess` in deren `public_html` legen.
-- Beim DNS-Anbieter der alten Domain nur die A-Records von `@` und `www` auf die Hostinger-IP setzen, AAAA-Records entfernen (beide Namen haben laut DNS-Abfrage vom 01.10.2026 einen). MX, TXT, DKIM, DMARC und alles andere bleibt. Menüpfad nach unserer Recherche (Bitte prüfen): bei STRATO *Domains -> Domainverwaltung -> Zahnrad an der Domain -> DNS -> A-Record verwalten*, bei IONOS *Domains & SSL -> Domain -> DNS*.
+- Im STRATO-Kundenkonto nur die A-Records von `@` und `www` auf die Hostinger-IP setzen, AAAA-Records entfernen (beide Namen haben laut DNS-Abfrage vom 01.10.2026 einen). MX, TXT, DKIM, DMARC und alles andere bleibt. Die Domain liegt bei STRATO (von dir bestätigt). Menüpfad nach unserer Recherche (Bitte prüfen): *Domains -> Domainverwaltung -> Zahnrad an der Domain -> DNS -> A-Record verwalten*.
 - SSL-Zertifikat für beide Namen (mit und ohne www) im hPanel prüfen. Ohne gültiges Zertifikat zeigt der Browser bei `https://gartenheldservice.com/...` eine Warnung, bevor die Weiterleitung greift.
 - „Force HTTPS“ für diese Website **nicht** einschalten, sonst gibt es zwei Sprünge statt einem.
 - Eine Kopie der Datei legen wir im Repository unter `redirects/gartenheldservice.com/.htaccess` ab. Sie wird nicht automatisch hochgeladen, weil sie zu einer anderen Website gehört.
@@ -152,10 +152,9 @@ Getestet am 01.10.2026 auf Apache 2.4.58 mit 134 Test-Adressen (Weiterleitungszi
 # gartenheldservice.com, empfohlen: eigene kleine Website bei Hostinger.
 # Sie gehört NICHT in die neue Website.
 #
-# PLATZHALTER: "NEUE-DOMAIN.de" vor dem Hochladen überall durch die echte neue
-# Domain ersetzen (Suchen und Ersetzen, alle Stellen). Ziel ist immer die finale
-# Schreibweise: https und ohne www. Erst hochladen, wenn die neue Website unter
-# dieser Adresse live ist.
+# Ziel ist die neue Domain in ihrer endgültigen Schreibweise:
+# https://baumpflege-happe.de (https, ohne www). Erst hochladen, wenn die neue
+# Website unter dieser Adresse live ist.
 #
 # Gilt für alle Schreibweisen: http und https, mit und ohne www, mit und ohne
 # Schrägstrich am Ende, Groß- und Kleinschreibung. Jede alte Adresse kommt in
@@ -196,76 +195,76 @@ RewriteRule ^wp-content/(plugins|themes|cache|languages|upgrade)/ - [G,NC]
 
 # --- 3. Medien, Sitemaps, Feeds -----------------------------------------------
 # Alte Bilder und PDFs aus der Mediathek -> Startseite
-RewriteRule ^wp-content/ https://NEUE-DOMAIN.de/? [R=301,L,NC]
+RewriteRule ^wp-content/ https://baumpflege-happe.de/? [R=301,L,NC]
 # Alte Sitemaps (WordPress, Yoast, Rank Math, andere) -> neue Sitemap
-RewriteRule ^(wp-sitemap|sitemap|sitemap_index|[^/]*-sitemap)[^/]*\.(xml|xsl|xml\.gz)$ https://NEUE-DOMAIN.de/sitemap-index.xml? [R=301,L,NC]
+RewriteRule ^(wp-sitemap|sitemap|sitemap_index|[^/]*-sitemap)[^/]*\.(xml|xsl|xml\.gz)$ https://baumpflege-happe.de/sitemap-index.xml? [R=301,L,NC]
 # RSS-Feeds (/feed/, /comments/feed/, /seite/feed/) -> Startseite
-RewriteRule (^|/)(feed|rss|rss2|atom|rdf)(/.*)?$ https://NEUE-DOMAIN.de/? [R=301,L,NC]
+RewriteRule (^|/)(feed|rss|rss2|atom|rdf)(/.*)?$ https://baumpflege-happe.de/? [R=301,L,NC]
 
 # --- 4. Belegte Seiten (per Suchmaschine nachgewiesen, Stand 2026-10-01) ------
 # Alte Kurzlinks mit ID (?p=, ?page_id=) müssen VOR der Startseiten-Regel direkt darunter stehen.
 # IDs in WordPress ablesen und eintragen, Beispiel:
 # RewriteCond %{QUERY_STRING} (^|&)(p|page_id)=123(&|$)
-# RewriteRule ^(index\.php)?$ https://NEUE-DOMAIN.de/leistungen/? [R=301,L,NC]
-RewriteRule ^(index\.(php|html?))?$ https://NEUE-DOMAIN.de/? [R=301,L,NC]
-RewriteRule ^kontakt/?$ https://NEUE-DOMAIN.de/kontakt/? [R=301,L,NC]
-RewriteRule ^dienstleistungen/?$ https://NEUE-DOMAIN.de/leistungen/? [R=301,L,NC]
-RewriteRule ^preise/?$ https://NEUE-DOMAIN.de/faq/? [R=301,L,NC]
+# RewriteRule ^(index\.php)?$ https://baumpflege-happe.de/leistungen/? [R=301,L,NC]
+RewriteRule ^(index\.(php|html?))?$ https://baumpflege-happe.de/? [R=301,L,NC]
+RewriteRule ^kontakt/?$ https://baumpflege-happe.de/kontakt/? [R=301,L,NC]
+RewriteRule ^dienstleistungen/?$ https://baumpflege-happe.de/leistungen/? [R=301,L,NC]
+RewriteRule ^preise/?$ https://baumpflege-happe.de/faq/? [R=301,L,NC]
 # Hier weitere exakt bekannte alte Adressen eintragen (vor den Schlagwort-Regeln), Muster:
-# RewriteRule ^alter-pfad/?$ https://NEUE-DOMAIN.de/neuer-pfad/? [R=301,L,NC]
+# RewriteRule ^alter-pfad/?$ https://baumpflege-happe.de/neuer-pfad/? [R=301,L,NC]
 
 # --- 5. Rechtliches (Seiten laut Footer vorhanden, genaue Adresse vermutet) ---
-RewriteRule (impressum|imprint|legal-notice) https://NEUE-DOMAIN.de/impressum/? [R=301,L,NC]
-RewriteRule (datenschutz|privacy|dsgvo|cookie) https://NEUE-DOMAIN.de/datenschutz/? [R=301,L,NC]
+RewriteRule (impressum|imprint|legal-notice) https://baumpflege-happe.de/impressum/? [R=301,L,NC]
+RewriteRule (datenschutz|privacy|dsgvo|cookie) https://baumpflege-happe.de/datenschutz/? [R=301,L,NC]
 
 # --- 6. Seitentypen (vermutet) -------------------------------------------------
-RewriteRule (gewerbe|hausverwaltung|firmenkunden|unternehmenskunden|wohnungswirtschaft|hausmeister|objektpflege|verkehrssicherung) https://NEUE-DOMAIN.de/gewerbe-hausverwaltungen/? [R=301,L,NC]
-RewriteRule (referenz|projekt|galerie|gallery|portfolio|vorher-nachher|bewertung|rezension|kundenstimme|testimonial) https://NEUE-DOMAIN.de/referenzen/? [R=301,L,NC]
-RewriteRule (ber-uns|ber-mich|about|unser-team|(^|/)(team|unternehmen|wir|philosophie)(/|$)) https://NEUE-DOMAIN.de/ueber-uns/? [R=301,L,NC]
-RewriteRule (^|/)author/ https://NEUE-DOMAIN.de/ueber-uns/? [R=301,L,NC]
+RewriteRule (gewerbe|hausverwaltung|firmenkunden|unternehmenskunden|wohnungswirtschaft|hausmeister|objektpflege|verkehrssicherung) https://baumpflege-happe.de/gewerbe-hausverwaltungen/? [R=301,L,NC]
+RewriteRule (referenz|projekt|galerie|gallery|portfolio|vorher-nachher|bewertung|rezension|kundenstimme|testimonial) https://baumpflege-happe.de/referenzen/? [R=301,L,NC]
+RewriteRule (ber-uns|ber-mich|about|unser-team|(^|/)(team|unternehmen|wir|philosophie)(/|$)) https://baumpflege-happe.de/ueber-uns/? [R=301,L,NC]
+RewriteRule (^|/)author/ https://baumpflege-happe.de/ueber-uns/? [R=301,L,NC]
 # Kontakt vor FAQ, weil "anfragen" sonst als "fragen" erkannt würde
-RewriteRule (kontakt|contact|anfrage|anfordern|r.{1,2}ckruf|danke|thank-you) https://NEUE-DOMAIN.de/kontakt/? [R=301,L,NC]
-RewriteRule (faq|fragen) https://NEUE-DOMAIN.de/faq/? [R=301,L,NC]
+RewriteRule (kontakt|contact|anfrage|anfordern|r.{1,2}ckruf|danke|thank-you) https://baumpflege-happe.de/kontakt/? [R=301,L,NC]
+RewriteRule (faq|fragen) https://baumpflege-happe.de/faq/? [R=301,L,NC]
 
 # --- 7. Leistungen (vermutet, Schlagwörter im alten Pfad) ---------------------
 # Seilklettertechnik: solange die Seite ausgeblendet ist -> Baumpflege.
 # Wenn /leistungen/seilklettertechnik/ online ist: Ziel der nächsten Regel entsprechend ändern.
-RewriteRule (seilklett|klettertechnik|seiltechnik) https://NEUE-DOMAIN.de/leistungen/baumpflege/? [R=301,L,NC]
-RewriteRule (sturm|unwetter|notfall|notdienst) https://NEUE-DOMAIN.de/leistungen/sturmschadenbeseitigung/? [R=301,L,NC]
-RewriteRule (stubben|wurzel|stumpf) https://NEUE-DOMAIN.de/leistungen/wurzelstockentfernung/? [R=301,L,NC]
-RewriteRule (f.{1,2}llung|f.{1,2}llen|felling|rodung) https://NEUE-DOMAIN.de/leistungen/baumfaellung/? [R=301,L,NC]
-RewriteRule (h.{1,2}cksel|schredder) https://NEUE-DOMAIN.de/leistungen/haeckselarbeiten/? [R=301,L,NC]
-RewriteRule (rasen|vertikutier|nachsaat) https://NEUE-DOMAIN.de/leistungen/rollrasen/? [R=301,L,NC]
-RewriteRule (hecke|strauch|str.{1,2}ucher|geh.{1,2}lz|formschnitt) https://NEUE-DOMAIN.de/leistungen/landschaftspflege-heckenschnitt/? [R=301,L,NC]
+RewriteRule (seilklett|klettertechnik|seiltechnik) https://baumpflege-happe.de/leistungen/baumpflege/? [R=301,L,NC]
+RewriteRule (sturm|unwetter|notfall|notdienst) https://baumpflege-happe.de/leistungen/sturmschadenbeseitigung/? [R=301,L,NC]
+RewriteRule (stubben|wurzel|stumpf) https://baumpflege-happe.de/leistungen/wurzelstockentfernung/? [R=301,L,NC]
+RewriteRule (f.{1,2}llung|f.{1,2}llen|felling|rodung) https://baumpflege-happe.de/leistungen/baumfaellung/? [R=301,L,NC]
+RewriteRule (h.{1,2}cksel|schredder) https://baumpflege-happe.de/leistungen/haeckselarbeiten/? [R=301,L,NC]
+RewriteRule (rasen|vertikutier|nachsaat) https://baumpflege-happe.de/leistungen/rollrasen/? [R=301,L,NC]
+RewriteRule (hecke|strauch|str.{1,2}ucher|geh.{1,2}lz|formschnitt) https://baumpflege-happe.de/leistungen/landschaftspflege-heckenschnitt/? [R=301,L,NC]
 # Nicht mehr angeboten -> Leistungsübersicht
-RewriteRule (pflaster|terrass|einfahrt|naturstein|zaun|mauer) https://NEUE-DOMAIN.de/leistungen/? [R=301,L,NC]
-RewriteRule (baum|b(ae|..)ume|obst|krone|totholz) https://NEUE-DOMAIN.de/leistungen/baumpflege/? [R=301,L,NC]
-RewriteRule (garten|beet|unkraut|landschaft|gr.{1,2}npflege|(^|[-_/])laub|galabau) https://NEUE-DOMAIN.de/leistungen/landschaftspflege-heckenschnitt/? [R=301,L,NC]
-RewriteRule (leistung|service|angebot) https://NEUE-DOMAIN.de/leistungen/? [R=301,L,NC]
+RewriteRule (pflaster|terrass|einfahrt|naturstein|zaun|mauer) https://baumpflege-happe.de/leistungen/? [R=301,L,NC]
+RewriteRule (baum|b(ae|..)ume|obst|krone|totholz) https://baumpflege-happe.de/leistungen/baumpflege/? [R=301,L,NC]
+RewriteRule (garten|beet|unkraut|landschaft|gr.{1,2}npflege|(^|[-_/])laub|galabau) https://baumpflege-happe.de/leistungen/landschaftspflege-heckenschnitt/? [R=301,L,NC]
+RewriteRule (leistung|service|angebot) https://baumpflege-happe.de/leistungen/? [R=301,L,NC]
 
 # Beratung und Besichtigung ohne Leistungsbezug -> Kontakt
-RewriteRule (beratung|besichtigung|termin) https://NEUE-DOMAIN.de/kontakt/? [R=301,L,NC]
+RewriteRule (beratung|besichtigung|termin) https://baumpflege-happe.de/kontakt/? [R=301,L,NC]
 
 # --- 8. Kosten (nach den Leistungen, damit z. B. "baumfaellung-kosten" zur Leistung führt)
-RewriteRule (preis|kosten|tarif) https://NEUE-DOMAIN.de/faq/? [R=301,L,NC]
+RewriteRule (preis|kosten|tarif) https://baumpflege-happe.de/faq/? [R=301,L,NC]
 
 # --- 9. Orte (vermutet) ---------------------------------------------------------
-RewriteRule (bornheim|brenig|dersdorf|merten|roisdorf|sechtem|hersel|walberberg|waldorf|kardorf|hemmerich|r.{1,2}sberg|widdig|uedorf) https://NEUE-DOMAIN.de/einsatzgebiet/bornheim/? [R=301,L,NC]
-RewriteRule (alfter|witterschlick|oedekoven|impekoven|gielsdorf|volmershoven|heidgen) https://NEUE-DOMAIN.de/einsatzgebiet/alfter/? [R=301,L,NC]
-RewriteRule (bonn) https://NEUE-DOMAIN.de/einsatzgebiet/bonn/? [R=301,L,NC]
-RewriteRule (br.{1,2}hl) https://NEUE-DOMAIN.de/einsatzgebiet/bruehl/? [R=301,L,NC]
-RewriteRule (k(o|oe|..)ln|cologne) https://NEUE-DOMAIN.de/einsatzgebiet/koeln/? [R=301,L,NC]
-RewriteRule (wesseling) https://NEUE-DOMAIN.de/einsatzgebiet/wesseling/? [R=301,L,NC]
-RewriteRule (h.{1,2}rth) https://NEUE-DOMAIN.de/einsatzgebiet/huerth/? [R=301,L,NC]
-RewriteRule (erftstadt|lechenich|liblar) https://NEUE-DOMAIN.de/einsatzgebiet/erftstadt/? [R=301,L,NC]
-RewriteRule (weilerswist) https://NEUE-DOMAIN.de/einsatzgebiet/weilerswist/? [R=301,L,NC]
-RewriteRule (einsatzgebiet|standort|region|umgebung|heimerzheim|swisttal) https://NEUE-DOMAIN.de/einsatzgebiet/? [R=301,L,NC]
+RewriteRule (bornheim|brenig|dersdorf|merten|roisdorf|sechtem|hersel|walberberg|waldorf|kardorf|hemmerich|r.{1,2}sberg|widdig|uedorf) https://baumpflege-happe.de/einsatzgebiet/bornheim/? [R=301,L,NC]
+RewriteRule (alfter|witterschlick|oedekoven|impekoven|gielsdorf|volmershoven|heidgen) https://baumpflege-happe.de/einsatzgebiet/alfter/? [R=301,L,NC]
+RewriteRule (bonn) https://baumpflege-happe.de/einsatzgebiet/bonn/? [R=301,L,NC]
+RewriteRule (br.{1,2}hl) https://baumpflege-happe.de/einsatzgebiet/bruehl/? [R=301,L,NC]
+RewriteRule (k(o|oe|..)ln|cologne) https://baumpflege-happe.de/einsatzgebiet/koeln/? [R=301,L,NC]
+RewriteRule (wesseling) https://baumpflege-happe.de/einsatzgebiet/wesseling/? [R=301,L,NC]
+RewriteRule (h.{1,2}rth) https://baumpflege-happe.de/einsatzgebiet/huerth/? [R=301,L,NC]
+RewriteRule (erftstadt|lechenich|liblar) https://baumpflege-happe.de/einsatzgebiet/erftstadt/? [R=301,L,NC]
+RewriteRule (weilerswist) https://baumpflege-happe.de/einsatzgebiet/weilerswist/? [R=301,L,NC]
+RewriteRule (einsatzgebiet|standort|region|umgebung|heimerzheim|swisttal) https://baumpflege-happe.de/einsatzgebiet/? [R=301,L,NC]
 
 # --- 10. WordPress-Archive ohne Schlagwort (Kategorien, Schlagwörter, Datum, Seiten) ->
 #         Startseite (übernimmt die Catch-all-Regel)
 
 # --- 11. Catch-all: alles Unbekannte -> Startseite -----------------------------
-RewriteRule ^ https://NEUE-DOMAIN.de/? [R=301,L]
+RewriteRule ^ https://baumpflege-happe.de/? [R=301,L]
 ```
 
 Pflege:
@@ -277,7 +276,7 @@ Pflege:
 
 ## 5. Test nach dem Umschalten
 
-Jede Adresse aus der Liste in vier Varianten prüfen: http und https, mit und ohne www. Erwartet wird **genau ein** 301 direkt auf `https://NEUE-DOMAIN.de/...`, keine Kette, kein 302, danach Status 200.
+Jede Adresse aus der Liste in vier Varianten prüfen: http und https, mit und ohne www. Erwartet wird **genau ein** 301 direkt auf `https://baumpflege-happe.de/...`, keine Kette, kein 302, danach Status 200.
 
 Im Terminal:
 
@@ -286,7 +285,7 @@ curl -sI http://gartenheldservice.com/preise/ | grep -iE "^(HTTP|location)"
 curl -sIL -o /dev/null -w '%{num_redirects} %{http_code} %{url_effective}\n' https://www.gartenheldservice.com/dienstleistungen/
 ```
 
-Erwartet: `301` mit `location: https://NEUE-DOMAIN.de/faq/` bzw. `1 200 https://NEUE-DOMAIN.de/leistungen/`.
+Erwartet: `301` mit `location: https://baumpflege-happe.de/faq/` bzw. `1 200 https://baumpflege-happe.de/leistungen/`.
 
 Ohne Terminal: Online-Statuscode-Prüfer (z. B. httpstatus.io) oder Screaming Frog im Listenmodus (*Mode -> List*, Adressen einfügen, Spalte „Redirect URL“).
 

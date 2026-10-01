@@ -27,7 +27,7 @@ export const betrieb = {
     nummer: '490000000000',
     vorbelegterText: 'Guten Tag, ich habe eine Anfrage zu einem Baum:',
   },
-  email: 'PLATZHALTER@example.com',
+  email: 'PLATZHALTER@baumpflege-happe.de',
 
   // Erreichbarkeit für Telefon und Rückrufe:
   erreichbarkeit: 'PLATZHALTER Erreichbarkeitszeiten, z. B. Mo bis Fr 8 bis 17 Uhr',

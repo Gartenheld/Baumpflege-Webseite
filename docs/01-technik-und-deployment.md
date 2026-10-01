@@ -9,7 +9,7 @@ Dieses Dokument erklärt dir, womit wir die Website bauen, wie sie zu Hostinger 
 
 - Ohne Zusatz: geprüft, entweder an der Primärquelle (Hersteller-Repository, Gesetzestext, npm) oder durch eigene Tests.
 - **Bitte prüfen**: nicht sicher belegbar, meist Tarifdetails, Menüpfade oder Preise von Hostinger, IONOS, STRATO und Google. Diese Angaben ändern sich oft. Du siehst sie im jeweiligen Kundenbereich nach, bevor du etwas kaufst oder umstellst.
-- Platzhalter: `NEUE-DOMAIN.de` steht für die noch offene neue Domain. Telefon, E-Mail, WhatsApp-Nummer und Erreichbarkeitszeiten sind ebenfalls Platzhalter.
+- Neue Domain: `baumpflege-happe.de` (festgelegt am 01.10.2026). Telefon, E-Mail, WhatsApp-Nummer und Erreichbarkeitszeiten sind noch Platzhalter.
 
 Keine der Aussagen zu Recht und Datenschutz ist Rechtsberatung.
 
@@ -23,8 +23,8 @@ Keine der Aussagen zu Recht und Datenschutz ist Rechtsberatung.
 - **Formular:** PHP mit PHPMailer, Versand per SMTP über ein Hostinger-Postfach. Spamschutz mit Honeypot, Zeitsperre und Rate-Limit, ohne reCAPTCHA. Bis zu 8 Fotos. Keine Cookies, funktioniert auch ohne JavaScript.
 - **Datenschutz:** keine Cookies, kein Tracking, keine externen Ressourcen (Schriften, Videos, Karte alles lokal). Damit ist nach unserer Einschätzung kein Cookie-Banner nötig.
 - **SEO:** strukturierte Daten (LocalBusiness als Untertyp `HomeAndConstructionBusiness`, Service, BreadcrumbList, FAQPage), Sitemap, robots.txt, Canonical, Open Graph, eigener Title und eigene Description je Seite. Bewusst kein Bewertungs-Sterne-Markup.
-- **Alte Domain:** gartenheldservice.com bleibt beim bisherigen Anbieter. Nur die Adresseinträge (A-Records) zeigen künftig auf Hostinger, dort leitet eine fertige, lokal getestete `.htaccess` jede alte Seite per 301 auf die passende neue. Die E-Mail auf der alten Domain bleibt unberührt. Ein Umzug der Domain zu Hostinger bringt für die Weiterleitungen nichts, gefährdet aber die E-Mail (Abschnitt 13.2). Domain dauerhaft behalten.
-- **Vorher klären:** Laut DNS liegen Nameserver und E-Mail von gartenheldservice.com bei **STRATO**, nur die Webserver im Netz von IONOS. Das prüfst du bitte zuerst (Frage 1 in Abschnitt 15).
+- **Neue Domain:** `baumpflege-happe.de`. Laut DNS-Abfrage vom 01.10.2026 ist sie noch nicht registriert. Am besten zusammen mit dem Hostinger-Tarif registrieren, und zwar bald.
+- **Alte Domain:** gartenheldservice.com liegt bei **STRATO** (von dir bestätigt), Postfächer darauf nutzt du nicht. Zum Start zeigen nur die Adresseinträge (A-Records) auf Hostinger, dort leitet eine fertige, lokal getestete `.htaccess` jede alte Seite per 301 auf die passende neue. Das geht in Minuten und ist sofort rückgängig zu machen. Ein Umzug der Domain zu Hostinger ist möglich, aber erst nach dem Start sinnvoll, passend zum Ende der STRATO-Laufzeit (Abschnitt 13.2). Domain dauerhaft behalten.
 - **Schon umgesetzt:** Grundgerüst mit Astro 7 und Platzhalterseite, zentrale Betriebsdaten mit Platzhaltern, `robots.txt` mit Vorschau-Sperre, Sitemap, Content-Security-Policy ohne Fremdquellen, `.htaccess` mit Sicherheits-Headern und Cache-Regeln (lokal auf Apache getestet), Deployment-Workflow (Prüfung und Build laufen auf GitHub grün, der Upload startet, sobald Hostinger eingerichtet ist) und die fertige Weiterleitungsdatei für die alte Domain.
 
 ---
@@ -236,7 +236,7 @@ Menüpfade auf Englisch, die deutsche Oberfläche kann anders heißen.
 2. **Rechenzentrum:** EU-Standort wählen, Deutschland, falls angeboten. Der Standort wird bei der ersten Website festgelegt.
 3. **SSH aktivieren:** *Websites -> Dashboard -> Advanced -> SSH Access*. Server-IP, Port und Benutzername (`u...`) notieren. Den Port ablesen, nicht raten (laut Recherche 65002). Den Deploy-Schlüssel unter *SSH keys* hinterlegen (Abschnitt 7.2).
 4. **PHP:** unter *PHP Configuration* die neueste angebotene 8.x-Version wählen (laut Hostinger-Hilfe 8.2 bis 8.5, Bitte prüfen). Unter *PHP options* setzen: `upload_max_filesize` mindestens 12M, `post_max_size` mindestens 20M, `max_file_uploads` mindestens 10, `display_errors` aus, `session.auto_start` aus. Danach die Werte noch einmal ablesen: Hostinger kappt Werte über dem Tarifmaximum ohne Meldung (belegt in der Hostinger-API-Doku).
-5. **E-Mail:** Postfach für Anfragen anlegen (z. B. `anfrage@NEUE-DOMAIN.de`), ideal ein zweites nur zum Versenden (`website@NEUE-DOMAIN.de`). SMTP-Daten unter E-Mail ablesen.
+5. **E-Mail:** Postfach für Anfragen anlegen (z. B. `anfrage@baumpflege-happe.de`), ideal ein zweites nur zum Versenden (`website@baumpflege-happe.de`). SMTP-Daten unter E-Mail ablesen.
 6. **Formular-Zugangsdaten:** im Dateimanager die Datei `anfrage-config.php` **außerhalb** von `public_html` anlegen (Abschnitt 8).
 7. **Domain:** registrieren oder verbinden, danach den **SSL-Status prüfen** und das Zertifikat bei Bedarf installieren. Erst wenn es aktiv ist, unter *Security -> SSL* „Force HTTPS“ einschalten. **Bitte prüfen:** Ob der Schalter selbst in die `.htaccess` schreibt, ist nicht belegt. Nach dem nächsten Deployment testen, ob `http://` weiter auf `https://` umleitet. Falls nicht, kommt die Regel in unsere `.htaccess`.
 8. **Nicht nutzen:** die hPanel-Werkzeuge *Redirects* und *Password Protect Directories* für den Website-Ordner. Sie schreiben vermutlich in die `.htaccess`, und die wird bei jedem Deployment überschrieben. Alle Regeln pflegen wir im Repository.
@@ -303,9 +303,9 @@ In GitHub: *Settings -> Secrets and variables -> Actions*. Wir nutzen Repository
 | `HOSTINGER_SSH_HOST` | Variable | Server-IP aus dem hPanel |
 | `HOSTINGER_SSH_PORT` | Variable | SSH-Port aus dem hPanel (ohne Angabe nimmt der Workflow 65002) |
 | `HOSTINGER_SSH_USER` | Variable | Benutzer, z. B. `u123456789` |
-| `DEPLOY_PATH` | Variable | z. B. `/home/u123456789/domains/NEUE-DOMAIN.de/public_html/` |
+| `DEPLOY_PATH` | Variable | z. B. `/home/u123456789/domains/baumpflege-happe.de/public_html/` |
 | `DEPLOY_ENABLED` | Variable | `true`, sobald hochgeladen werden soll |
-| `SITE_URL` | Variable | Adresse der Website, z. B. `https://NEUE-DOMAIN.de` (in der Vorschau die temporäre Adresse) |
+| `SITE_URL` | Variable | Adresse der Website, z. B. `https://baumpflege-happe.de` (in der Vorschau die temporäre Adresse) |
 | `NOINDEX` | Variable | `true` bis zur Liveschaltung (ohne Angabe gilt `true`), dann `false` |
 | `PREVIEW_HTPASSWD_PATH` | Variable | Pfad zur Passwortdatei der Vorschau, außerhalb von `public_html`; leer = kein Passwortschutz |
 
@@ -320,11 +320,11 @@ Die Vorschau ist von Anfang an gesperrt, für Menschen per Passwort, für Suchma
 - **Solange die Domain offen ist:** Die Website läuft unter der temporären Hostinger-Adresse `*.hostingersite.com`. `SITE_URL` zeigt auf diese Adresse.
 - **Sobald die Domain registriert ist:** Website auf der echten Domain anlegen und weiter mit Passwort und noindex betreiben. So entfällt später ein Umzug.
 - **Sperre für Suchmaschinen** (automatisch bei `NOINDEX` = `true`): `<meta name="robots" content="noindex, nofollow">` auf jeder Seite, Header `X-Robots-Tag: noindex, nofollow`, `robots.txt` mit `Disallow: /`. Ob Hostinger die temporäre Adresse selbst sperrt, ist nicht belegt, deshalb sperren wir selbst.
-- **Passwortschutz (Basic Auth):** Eine Passwortdatei außerhalb von `public_html` anlegen, z. B. `/home/u123456789/domains/NEUE-DOMAIN.de/.htpasswd-vorschau`. Inhalt erzeugen mit `printf 'vorschau:%s\n' "$(openssl passwd -apr1 'DEIN-PASSWORT')"` (lokal oder per SSH), Datei im Dateimanager hochladen, Pfad in `PREVIEW_HTPASSWD_PATH` eintragen. Der Workflow schreibt die Passwortregel dann in die `.htaccess` der Vorschau. Nach dem ersten Upload einmal testen, ob der Browser nach dem Passwort fragt.
+- **Passwortschutz (Basic Auth):** Eine Passwortdatei außerhalb von `public_html` anlegen, z. B. `/home/u123456789/domains/baumpflege-happe.de/.htpasswd-vorschau`. Inhalt erzeugen mit `printf 'vorschau:%s\n' "$(openssl passwd -apr1 'DEIN-PASSWORT')"` (lokal oder per SSH), Datei im Dateimanager hochladen, Pfad in `PREVIEW_HTPASSWD_PATH` eintragen. Der Workflow schreibt die Passwortregel dann in die `.htaccess` der Vorschau. Nach dem ersten Upload einmal testen, ob der Browser nach dem Passwort fragt.
 
 **Liveschaltung:** `NOINDEX` auf `false`, `PREVIEW_HTPASSWD_PATH` leeren, `SITE_URL` prüfen, Workflow neu starten (*Actions -> Build und Deployment -> Run workflow*). Ein vergessenes `NOINDEX` ist der häufigste Fehler beim Start, deshalb steht es auf der Checkliste.
 
-**Nach dem Start, bei Bedarf:** eine Subdomain `vorschau.NEUE-DOMAIN.de` mit eigenem Ordner, auf die ein Branch `vorschau` mit Passwort und noindex hochlädt. Dafür erweitern wir den Workflow, falls du größere Änderungen vorher ansehen willst.
+**Nach dem Start, bei Bedarf:** eine Subdomain `vorschau.baumpflege-happe.de` mit eigenem Ordner, auf die ein Branch `vorschau` mit Passwort und noindex hochlädt. Dafür erweitern wir den Workflow, falls du größere Änderungen vorher ansehen willst.
 
 ### 7.5 Fallback: Git-Funktion im hPanel
 
@@ -370,7 +370,7 @@ Ein Redaktionssystem (CMS) brauchen wir zum Start nicht. Wenn dir die GitHub-Obe
 - **Felder:** Name (Pflicht), E-Mail, Telefon, Ort oder PLZ des Grundstücks, Anliegen (Leistung, optional), Nachricht (Pflicht), Fotos, Rückrufwunsch mit Zeitfenster (vormittags, nachmittags, egal). Pflicht ist E-Mail oder Telefon, bei Rückrufwunsch das Telefon. Am Formular stehen Erreichbarkeit und Antwortzeit aus `betrieb.ts` und ein Foto-Tipp (Gesamtansicht, Stamm, Zufahrt, möglichst ohne Personen).
 - **Datenschutzhinweis** mit Link über dem Senden-Knopf, keine Einwilligungs-Checkbox. Den Text bestimmt der Generator.
 - **Empfänger:** `public/anfrage/senden.php` mit Hilfsdatei `lib/anfrage.php` und PHPMailer 7.1.1 (drei Dateien, ohne Composer, Lizenz LGPL-2.1). Den Ordner `lib/` sperrt eine eigene `.htaccess`.
-- **Zugangsdaten** in `anfrage-config.php` außerhalb von `public_html`, z. B. `/home/u123456789/domains/NEUE-DOMAIN.de/anfrage-config.php`: SMTP-Server, Postfach, Passwort, Empfänger, ein zufälliger Geheimschlüssel. Die Datei steht in `.gitignore` und kommt nie ins Repository. Daneben der Ordner `anfrage-daten/` für Rate-Limit und ein Fehlerprotokoll ohne Inhalte. Ob PHP dort lesen darf (`open_basedir`), testen wir einmal.
+- **Zugangsdaten** in `anfrage-config.php` außerhalb von `public_html`, z. B. `/home/u123456789/domains/baumpflege-happe.de/anfrage-config.php`: SMTP-Server, Postfach, Passwort, Empfänger, ein zufälliger Geheimschlüssel. Die Datei steht in `.gitignore` und kommt nie ins Repository. Daneben der Ordner `anfrage-daten/` für Rate-Limit und ein Fehlerprotokoll ohne Inhalte. Ob PHP dort lesen darf (`open_basedir`), testen wir einmal.
 - **Nach dem Absenden:** Weiterleitung auf `/kontakt/danke/` mit nächsten Schritten, Antwortzeit, Telefon und WhatsApp. Keine automatische Eingangsbestätigung an Kunden: Jeder könnte eine fremde Adresse eintragen und das Formular als Spam-Schleuder missbrauchen, das schadet dem Ruf deines Postfachs. Deine persönliche Antwort ist die Bestätigung.
 
 ### 8.2 Spamschutz ohne Fremddienst
@@ -460,7 +460,7 @@ Zur Liveschaltung kommen dazu:
 
 - `Strict-Transport-Security` (HSTS): erst mit einem Tag Laufzeit testen, nach einer Woche auf ein Jahr. Ohne `preload`.
 - `Header unset X-Powered-By` (verrät die PHP-Version) und `Cross-Origin-Opener-Policy: same-origin`.
-- `public/anfrage/.htaccess`: nur `senden.php` ist erreichbar. Test: `curl -I https://NEUE-DOMAIN.de/anfrage/lib/PHPMailer/PHPMailer.php` muss 403 liefern.
+- `public/anfrage/.htaccess`: nur `senden.php` ist erreichbar. Test: `curl -I https://baumpflege-happe.de/anfrage/lib/PHPMailer/PHPMailer.php` muss 403 liefern.
 
 Hostinger nutzt nach unserer Recherche den Webserver LiteSpeed, der Apache-`.htaccess` versteht. Jede Regel testen wir nach dem ersten Upload mit `curl -I`.
 
@@ -600,7 +600,7 @@ Warum `HomeAndConstructionBusiness`: Der Typ ist ein Untertyp von `LocalBusiness
   User-agent: *
   Disallow: /anfrage/
 
-  Sitemap: https://NEUE-DOMAIN.de/sitemap-index.xml
+  Sitemap: https://baumpflege-happe.de/sitemap-index.xml
   ```
   Die Danke-Seite wird **nicht** per robots.txt gesperrt, sondern trägt `noindex`. Google kann ein noindex hinter einer Sperre nicht lesen.
 - **robots.txt (Vorschau):** `Disallow: /`.
@@ -608,7 +608,7 @@ Warum `HomeAndConstructionBusiness`: Der Typ ist ein Untertyp von `LocalBusiness
 ### 11.3 Canonical, Weiterleitungen, Open Graph
 
 - **Canonical** auf jeder Seite: absolute Adresse, `https://`, ohne www, mit „/“ am Ende. Ist im Grundlayout schon so umgesetzt.
-- **Eine Schreibweise:** `http://` und `www.` leiten per 301 auf `https://NEUE-DOMAIN.de/...`. Nach der Liveschaltung zählen wir mit `curl -I`, dass es höchstens zwei Sprünge sind. Sind es mehr, regeln wir alles in der `.htaccess`.
+- **Eine Schreibweise:** `http://` und `www.` leiten per 301 auf `https://baumpflege-happe.de/...`. Nach der Liveschaltung zählen wir mit `curl -I`, dass es höchstens zwei Sprünge sind. Sind es mehr, regeln wir alles in der `.htaccess`.
 - **Open Graph** für die Vorschau beim Teilen per WhatsApp: `og:title`, `og:description`, `og:url`, `og:image` (JPEG 1200 x 630, möglichst unter 300 KB, mit Alt-Text), dazu `twitter:card` „summary_large_image“. Je Seite ein eigenes Bild, sonst ein Standardbild.
 - `<html lang="de">` ist gesetzt, `hreflang` ist nicht nötig.
 
@@ -647,7 +647,7 @@ Die H1 nennt ebenfalls Leistung und Ort. Ortsseiten bekommen jeweils eigenen Tex
 
 Zeitpunkt: Die **Bestätigung** geht, sobald die neue Domain registriert ist, auch vor der Liveschaltung. **Sitemap und Indexierung** erst nach der Liveschaltung mit `NOINDEX` = `false`. Nimm das Google-Konto des Betriebs, mit dem du auch das Unternehmensprofil verwaltest. Menüpfade nach unserem Wissensstand, Google ändert die Oberfläche gelegentlich.
 
-1. **Property anlegen:** search.google.com/search-console öffnen, *Property hinzufügen*, links **Domain** wählen, `NEUE-DOMAIN.de` eingeben (ohne https und www). Eine Domain-Property umfasst alle Schreibweisen (http, https, mit und ohne www).
+1. **Property anlegen:** search.google.com/search-console öffnen, *Property hinzufügen*, links **Domain** wählen, `baumpflege-happe.de` eingeben (ohne https und www). Eine Domain-Property umfasst alle Schreibweisen (http, https, mit und ohne www).
 2. **Bestätigungscode kopieren:** Google zeigt einen TXT-Eintrag `google-site-verification=...`.
 3. **TXT-Eintrag setzen** beim DNS-Anbieter, auf den die Nameserver der Domain zeigen:
    - Domain bei Hostinger mit Hostinger-Nameservern: im hPanel unter *Domains -> Domain verwalten -> DNS / Nameservers* einen Eintrag anlegen: Typ `TXT`, Name `@`, Wert aus der Search Console, TTL Standard.
@@ -679,7 +679,9 @@ Eigene DNS-Abfrage vom 01.10.2026:
 | Google-Bestätigung | TXT `google-site-verification=...` vorhanden: Eine Search-Console-Property gibt es also vermutlich schon |
 | TTL | 150 Sekunden: DNS-Änderungen greifen nach wenigen Minuten |
 
-Du schreibst, die Domain liegt bei IONOS. Laut DNS liegen Nameserver und E-Mail bei STRATO, nur die Webserver-Adressen gehören zum Netz von IONOS. Bei welchem Anbieter die Domain registriert und die Website gebucht ist, lässt sich von außen nicht sicher sagen, weil beide zur selben Unternehmensgruppe gehören. Bitte in beiden Kundenkonten nachsehen (oder unter lookup.icann.org), bevor wir etwas umstellen. An der Empfehlung ändert das nichts, nur an den Menüpfaden.
+Von dir bestätigt: Die Domain liegt bei **STRATO**, E-Mail-Adressen auf der alten Domain nutzt du nicht. Die Webserver-Adressen gehören zum Netz von IONOS, beide Anbieter sind Teil derselben Unternehmensgruppe. Für uns zählt nur: Die DNS-Einträge änderst du im STRATO-Kundenkonto.
+
+Hinweis: Die alte Website und Branchenverzeichnisse nennen noch `info@gartenheldservice.com`. Falls dort ein Kunde hinschreibt, geht die Mail ins Leere oder in ein Postfach, das niemand liest. Deshalb die Verzeichniseinträge zügig auf die neue Adresse umstellen (13.3, Schritt 15). Falls dein STRATO-Paket es ohne Aufwand erlaubt, ist eine Weiterleitung von `info@gartenheldservice.com` auf die neue Adresse für ein Jahr eine gute Absicherung.
 
 Im Google-Index gefunden: `/`, `/kontakt/`, `/preise/`, `/dienstleistungen/`. Impressum und Datenschutz gibt es laut Footer, ihre Adressen sind nicht belegt.
 
@@ -689,47 +691,47 @@ Die eingebaute Domain-Weiterleitung bei IONOS oder STRATO scheidet aus: Sie kenn
 
 | | A: alter Webspace bleibt | **B: Adresseinträge auf Hostinger** | C: Domain-Umzug zu Hostinger |
 |---|---|---|---|
-| Was passiert | Die alte Website wird gesichert und gelöscht, auf dem alten Webspace liegt nur noch die `.htaccess` | Beim DNS-Anbieter zeigen nur die A-Records von `@` und `www` auf Hostinger. Dort ist die alte Domain eine kleine eigene Website mit der `.htaccess`. | Domain wechselt mit Auth-Code zu Hostinger, DNS und Mail müssen vorher umziehen |
+| Was passiert | Die alte Website wird gesichert und gelöscht, auf dem alten Webspace liegt nur noch die `.htaccess` | Beim DNS-Anbieter zeigen nur die A-Records von `@` und `www` auf Hostinger. Dort ist die alte Domain eine kleine eigene Website mit der `.htaccess`. | Domain wechselt mit Auth-Code zu Hostinger, DNS-Einträge werden dort neu angelegt |
 | Weiterleitung je Seite | ja | **ja** | ja |
 | HTTPS | ja (bestehendes Zertifikat) | **ja (Hostinger-Zertifikat, nach Umstellung prüfen)** | ja |
-| Risiko für E-Mail | keins | **keins (MX bleibt unverändert)** | hoch, Mailumzug nötig |
-| Laufende Kosten | Hosting bei IONOS plus Domain | **nur Domain- und Mailvertrag beim bisherigen Anbieter** | Domain bei Hostinger plus Mail |
+| Risiko für E-Mail | keins | **keins (MX bleibt unverändert)** | gering, weil keine Postfächer genutzt werden |
+| Laufende Kosten | Hosting bei STRATO plus Domain | **nur der Domainvertrag bei STRATO** | nur die Domain bei Hostinger |
 | Aufwand | mittel | **gering** | hoch |
 | Alles bei einem Hoster | nein | **ja (Web)** | ja |
 
-**Empfehlung: Variante B.** Ein Hoster, die Regeln liegen versioniert im Repository, das Zertifikat stellt Hostinger aus, die E-Mail bleibt unberührt, der alte Webspace ist kündbar. Ein Domain-Umzug (C) bringt für die Weiterleitungen nichts und ist höchstens später sinnvoll, wenn auf der alten Domain keine E-Mail mehr läuft. Variante A ist der Ausweg, falls du an der DNS nichts ändern willst.
+**Empfehlung: zum Start Variante B, später optional C.** B ist in Minuten erledigt, jederzeit umkehrbar und hängt nicht an Fristen: Die Regeln liegen versioniert im Repository, das Zertifikat stellt Hostinger aus, der alte Webspace ist danach kündbar. Weil auf der alten Domain keine Postfächer laufen, spricht auch nichts gegen einen späteren Umzug der Domain zu Hostinger (C). Dann liegt alles bei einem Anbieter, und eine geänderte Hostinger-IP muss nicht mehr von Hand bei STRATO nachgetragen werden. Den Umzug planst du in Ruhe nach dem Start, passend zum Ende der STRATO-Laufzeit, nicht am Starttag. Variante A ist der Ausweg, falls du an der DNS nichts ändern willst.
 
 ### 13.3 Schritt für Schritt (Variante B)
 
 **Vorbereitung, 1 bis 2 Wochen vor dem Start**
 
-1. Im STRATO- und im IONOS-Kundenkonto klären: Wo liegt die Domain, welches Produkt hostet die alte Website, welche Postfächer gibt es, Laufzeiten und Kündigungsfristen.
+1. Im STRATO-Kundenkonto nachsehen: welches Paket (nur Domain oder Domain mit Webspace bzw. Baukasten), Laufzeit und Kündigungsfrist.
 2. Die DNS-Einträge der alten Domain als Screenshot sichern (A, AAAA, MX, TXT, `_dmarc`, DKIM, SRV, CNAME, alle Subdomains, besonders `www`).
 3. Backup der alten Website ziehen, vor allem die Fotos (echte Arbeitsfotos sind eventuell für Referenzen nutzbar).
 4. Die alte URL-Liste vervollständigen und die Weiterleitungen abschließen: Anleitung in [02-weiterleitungen.md](02-weiterleitungen.md).
 5. Zugriff auf die Search-Console-Property der alten Domain und auf das Google-Unternehmensprofil sicherstellen.
-6. Neue Mailadresse auf der neuen Domain einrichten und beim bisherigen Mailanbieter für jede noch genutzte Adresse `...@gartenheldservice.com` eine Weiterleitung auf die neue Adresse vorbereiten.
+6. Neue Mailadresse auf der neuen Domain einrichten. Optional bei STRATO eine Weiterleitung von `info@gartenheldservice.com` auf die neue Adresse (13.1).
 
 **Am Starttag (abends)**
 
 7. Die neue Website läuft unter der neuen Domain mit SSL und ist getestet.
 8. hPanel: *Websites -> Add website*, `gartenheldservice.com` als leere PHP/HTML-Website. Vorhandene Platzhalterdateien löschen, die Datei [`redirects/gartenheldservice.com/.htaccess`](../redirects/gartenheldservice.com/.htaccess) (mit eingesetzter neuer Domain, Erklärung in [02-weiterleitungen.md](02-weiterleitungen.md)) in deren `public_html` hochladen. Server-IP ablesen. Eventuell verlangt Hostinger vorher einen TXT-Eintrag als Eigentumsnachweis.
-9. Beim DNS-Anbieter (laut Abfrage STRATO): A-Record für `@` **und** für `www` auf die Hostinger-IP. AAAA-Records für beide löschen (oder auf die Hostinger-IPv6, falls das hPanel eine anzeigt), sonst landen IPv6-Besucher weiter auf dem alten Server. **Nameserver, MX, TXT, DKIM, DMARC, SRV und Autoconfig nicht ändern.**
+9. Im STRATO-Kundenkonto: A-Record für `@` **und** für `www` auf die Hostinger-IP. AAAA-Records für beide löschen (oder auf die Hostinger-IPv6, falls das hPanel eine anzeigt), sonst landen IPv6-Besucher weiter auf dem alten Server. **Nameserver, MX, TXT, DKIM, DMARC, SRV und Autoconfig nicht ändern.**
 10. Nach einigen Minuten im hPanel den SSL-Status für `gartenheldservice.com` und `www.gartenheldservice.com` prüfen und die Installation bei Bedarf anstoßen. Bis das Zertifikat aktiv ist, kann `https://gartenheldservice.com` eine Warnung zeigen, deshalb abends umstellen. Für diese Website „Force HTTPS“ **nicht** einschalten: Die `.htaccess` leitet http und https in einem Schritt direkt zum Ziel.
 11. Weiterleitungen testen (Anleitung in 02-weiterleitungen.md): jede Adresse mit http und https, mit und ohne www. Erwartet: genau ein 301 aufs Ziel.
-12. Testmail an jede noch genutzte Adresse `...@gartenheldservice.com` schicken und prüfen, dass sie ankommt.
+12. Falls die Weiterleitung von `info@gartenheldservice.com` eingerichtet ist: Testmail schicken und prüfen, dass sie bei der neuen Adresse ankommt.
 
 **Danach**
 
 13. Search Console: Adressänderung (13.6).
 14. Google-Unternehmensprofil umstellen (13.5).
 15. Branchenverzeichnisse direkt auf neue Domain, neuen Namen und neue Mailadresse umstellen: Gelbe Seiten, Das Örtliche, Facebook, Instagram, weitere. Einheitliche Angaben zu Name, Anschrift und Telefon helfen der lokalen Sichtbarkeit.
-16. Den alten Webspace erst kündigen, wenn Weiterleitungen und SSL laufen und das Backup vorliegt. Vorher prüfen, dass im Vertrag nicht noch Domain oder Postfächer stecken.
+16. Den alten Webspace erst kündigen, wenn Weiterleitungen und SSL laufen und das Backup vorliegt. Achtung: Steckt die Domain im selben STRATO-Paket, darf nur der Webspace wegfallen, nicht die Domain. Im Zweifel das Paket auf einen reinen Domainvertrag umstellen oder die Domain vorher zu Hostinger umziehen (Variante C).
 
 ### 13.4 E-Mail und Dauer
 
-- Die alte Mailadresse läuft weiter wie bisher. Sie leitet mindestens 12 bis 24 Monate an die neue Adresse weiter. Antworten schickst du nur noch von der neuen Adresse.
-- Das Formular sendet nie mit Absender `@gartenheldservice.com` (wegen DMARC `p=reject`).
+- Auf der alten Domain laufen keine Postfächer. Die bestehenden Mail-Einträge (MX, DKIM, DMARC `p=reject`) lassen wir trotzdem unverändert: `p=reject` verhindert, dass Fremde Mails im Namen von gartenheldservice.com verschicken.
+- Das Formular sendet nie mit Absender `@gartenheldservice.com`.
 - **Weiterleitungen mindestens ein Jahr behalten, besser dauerhaft.** Google empfiehlt mindestens ein Jahr (Stand unseres Wissens). Die Domain **nie auslaufen lassen**: Ein Fremder könnte sie registrieren, Mails an die alte Adresse empfangen und die Einträge in Verzeichnissen ausnutzen. Automatische Verlängerung aktiv lassen.
 
 ### 13.5 Google-Unternehmensprofil
@@ -751,7 +753,7 @@ Die eingebaute Domain-Weiterleitung bei IONOS oder STRATO scheidet aus: Sie kenn
 
 Voraussetzungen und Ablauf (Stand unseres Wissens, Bitte prüfen im Hilfeartikel „Tool zur Adressänderung“):
 
-1. Alte und neue Domain sind beide im **selben Google-Konto** als Inhaber bestätigt. Für die alte Domain existiert schon ein TXT-Eintrag. Wir klären, in welchem Konto diese Property liegt (Frage 5).
+1. Alte und neue Domain sind beide im **selben Google-Konto** als Inhaber bestätigt. Für die alte Domain existiert schon ein TXT-Eintrag. Wir klären, in welchem Konto diese Property liegt (Frage 4).
 2. Die 301-Weiterleitungen sind live, mindestens für die Startseite, besser für alle Seiten.
 3. In der **alten** Property: *Einstellungen -> Adressänderung*, neue Property wählen, prüfen lassen, absenden. Nach unserem Kenntnisstand soll man das für alle Varianten der alten Domain tun, mit und ohne www (Bitte prüfen im Hilfeartikel). Eine Domain-Property deckt beide ab. Verlangt das Werkzeug einzelne Varianten, bestätigen wir sie zusätzlich.
 4. In der neuen Property die Sitemap einreichen und beide Properties einige Wochen beobachten.
@@ -767,6 +769,7 @@ Nicht verwenden für http zu https, www zu ohne www oder einen reinen Hosterwech
 
 - [ ] Du liest das Konzept und beantwortest die Fragen in Abschnitt 15.
 - [ ] Hostinger-Tarif prüfen und buchen (Premium), Laufzeit festlegen, EU-Rechenzentrum.
+- [ ] Domain `baumpflege-happe.de` registrieren (laut DNS am 01.10.2026 noch frei), am besten gleich bei Hostinger.
 - [ ] Repository auf privat stellen (Abschnitt 7.3).
 - [ ] SSH, Deploy-Schlüssel, Secrets und Variablen einrichten. Erster Upload auf die temporäre Adresse mit Passwort und noindex.
 - [ ] Datenschutz-Vereinbarung von Hostinger ablegen, Speicherdauer der Server-Logs erfragen.
@@ -811,12 +814,13 @@ Nicht verwenden für http zu https, www zu ohne www oder einen reinen Hosterwech
 
 Nach Wichtigkeit sortiert:
 
-1. **Alte Domain:** Du schreibst IONOS, laut DNS liegen Nameserver und E-Mail von gartenheldservice.com bei STRATO, nur die Webserver im IONOS-Netz. Bei wem ist die Domain registriert, welches Produkt hostet die alte Website, und welche Adressen `...@gartenheldservice.com` nutzt du noch?
-2. **Hostinger:** Hast du schon einen Vertrag, und wenn ja, welchen Tarif (bei Single fehlen SSH und eine zweite Website)? Wenn nein: Ist Premium für dich in Ordnung, und mit welcher Laufzeit?
-3. **Neue Domain und E-Mail:** Welcher Domainname? Darf ich Registrierung und Postfächer bei Hostinger vorsehen (Domain laut Recherche im ersten Jahr gratis, Postfächer nach der Testphase kostenpflichtig), und an welche Adresse sollen die Anfragen gehen?
-4. **GitHub:** Das Repository ist derzeit öffentlich. Bist du einverstanden, dass es privat wird (Abschnitt 7.3)? Umstellen kannst du es selbst mit einem Klick, ich habe dafür keinen Zugriff auf die Einstellungen.
-5. **Google-Konten:** In welchem Google-Konto liegen die Search-Console-Property von gartenheldservice.com (eine Bestätigung existiert schon) und dein Unternehmensprofil, und hast du Zugriff auf beide?
-6. **Neuer Name nach außen:** Ist „Baumpflege Happe“ zum Start schon auf Fahrzeug, Kleidung und Rechnungen sichtbar (wichtig für die Namensänderung im Google-Profil)? Werden „Garten Held“ bei Facebook und @gartenheld_ bei Instagram umbenannt oder neu angelegt? Erst dann verlinken wir sie im Footer.
+Geklärt am 01.10.2026: Die alte Domain liegt bei STRATO, darauf werden keine Postfächer genutzt. Die neue Domain heißt `baumpflege-happe.de`. Logo und Design entstehen in Schritt 2.
+
+1. **Hostinger:** Hast du schon einen Vertrag, und wenn ja, welchen Tarif (bei Single fehlen SSH und eine zweite Website)? Wenn nein: Ist Premium für dich in Ordnung, und mit welcher Laufzeit?
+2. **E-Mail der neuen Domain:** Sollen die Postfächer bei Hostinger liegen (laut Recherche nach der Testphase kostenpflichtig), und welche Adresse soll nach außen erscheinen und die Anfragen empfangen, z. B. `info@baumpflege-happe.de`?
+3. **GitHub:** Das Repository ist derzeit öffentlich. Bist du einverstanden, dass es privat wird (Abschnitt 7.3)? Umstellen kannst du es selbst mit einem Klick, ich habe dafür keinen Zugriff auf die Einstellungen.
+4. **Google-Konten:** In welchem Google-Konto liegen die Search-Console-Property von gartenheldservice.com (eine Bestätigung existiert schon) und dein Unternehmensprofil, und hast du Zugriff auf beide?
+5. **Social Media:** Werden „Garten Held“ bei Facebook und @gartenheld_ bei Instagram umbenannt oder neu angelegt? Erst dann verlinken wir sie im Footer. (Die Namensänderung im Google-Profil planen wir, sobald Logo, Fahrzeug und Kleidung den neuen Namen tragen.)
 
 ---
 

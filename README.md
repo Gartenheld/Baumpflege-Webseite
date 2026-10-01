@@ -33,7 +33,7 @@ Umgebungsvariablen beim Build:
 
 | Variable | Bedeutung |
 | --- | --- |
-| `SITE_URL` | Adresse der Website, z. B. `https://NEUE-DOMAIN.de`. Ohne Angabe gilt der Platzhalter `https://example.com`. |
+| `SITE_URL` | Adresse der Website. Ohne Angabe gilt `https://baumpflege-happe.de`. In der Vorschau die temporäre Hostinger-Adresse. |
 | `PUBLIC_NOINDEX` | `true` sperrt Suchmaschinen aus (Vorschau). Zur Liveschaltung auf `false`. |
 
 Deployment: [.github/workflows/deploy.yml](.github/workflows/deploy.yml). Benötigte Secrets und Variablen stehen im Konzept unter "Deployment".
