@@ -8,7 +8,8 @@ import LeistungsKarten from '../../components/LeistungsKarten.astro';
 import ReferenzKarten from '../../components/ReferenzKarten.astro';
 import KontaktAufruf from '../../components/start/KontaktAufruf.astro';
 import { getCollection, render } from 'astro:content';
-import { sichtbareReferenzen } from '../../lib/inhalte';
+import { sichtbareReferenzen, ortUrl } from '../../lib/inhalte';
+import { dienstleistung } from '../../lib/strukturdaten';
 
 export async function getStaticPaths() {
   const orte = await getCollection('orte');
@@ -19,9 +20,10 @@ const { ort } = Astro.props;
 const d = ort.data;
 const { Content } = await render(ort);
 const { liste: referenzen, nurPlatzhalter } = await sichtbareReferenzen(ort.id);
+const service = dienstleistung(Astro.site!, ortUrl(ort.id), `Baumpflege und Baumfällung in ${d.name}`, 'Baumpflege und Baumfällung', d.beschreibung, [d.name]);
 ---
 
-<Basis title={d.seitentitel} description={d.beschreibung}>
+<Basis title={d.seitentitel} description={d.beschreibung} strukturdaten={[service]}>
   <Seitenkopf
     pfad={[{ titel: 'Einsatzgebiet', href: '/einsatzgebiet/' }, { titel: d.name }]}
     kicker="Einsatzgebiet"

@@ -9,7 +9,8 @@ import FaqListe from '../../components/FaqListe.astro';
 import LeistungsKarten from '../../components/LeistungsKarten.astro';
 import KontaktAufruf from '../../components/start/KontaktAufruf.astro';
 import { render } from 'astro:content';
-import { sichtbareLeistungen, faqFuerLeistung } from '../../lib/inhalte';
+import { sichtbareLeistungen, faqFuerLeistung, orteSortiert, leistungsUrl } from '../../lib/inhalte';
+import { dienstleistung } from '../../lib/strukturdaten';
 
 export async function getStaticPaths() {
   const leistungen = await sichtbareLeistungen();
@@ -21,9 +22,11 @@ const d = leistung.data;
 const { Content } = await render(leistung);
 const fragen = await faqFuerLeistung(leistung.id);
 const anfrageLink = `/kontakt/?leistung=${leistung.id}`;
+const orte = (await orteSortiert()).map((o) => o.data.name);
+const service = dienstleistung(Astro.site!, leistungsUrl(leistung.id), d.titel, d.titel, d.beschreibung, orte);
 ---
 
-<Basis title={d.seitentitel} description={d.beschreibung}>
+<Basis title={d.seitentitel} description={d.beschreibung} foto={`leistung-${leistung.id}`} strukturdaten={[service]}>
   <Seitenkopf
     pfad={[{ titel: 'Leistungen', href: '/leistungen/' }, { titel: d.titel }]}
     kicker="Leistungen"

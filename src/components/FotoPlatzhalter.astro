@@ -1,5 +1,8 @@
 ---
-// Platzhalter, bis echte eigene Fotos vorliegen (keine Stockfotos).
+// Fläche für ein noch fehlendes eigenes Foto (keine Stockfotos).
+// Vorschau: mit Hinweis, welches Foto hier hingehört. Live-Seite: ruhige Fläche mit dem Baumsymbol, ohne Text,
+// damit die Website auch online gehen kann, bevor alle Fotos da sind.
+import { PUBLIC_NOINDEX } from 'astro:env/client';
 import { LOGO } from './logo-daten';
 
 interface Props {
@@ -10,7 +13,15 @@ interface Props {
 const { text, class: klasse } = Astro.props;
 ---
 
-<div class:list={['foto-platzhalter', klasse]} role="img" aria-label={`Platzhalter: ${text}`}>
-  <svg viewBox={LOGO.symbol.viewBox} width="56" height="63" aria-hidden="true" fill="currentColor" set:html={LOGO.symbol.inhalt} />
-  <span>Foto folgt: {text}</span>
-</div>
+{
+  PUBLIC_NOINDEX ? (
+    <div class:list={['foto-platzhalter', klasse]} role="img" aria-label={`Platzhalter: ${text}`}>
+      <svg viewBox={LOGO.symbol.viewBox} width="56" height="63" aria-hidden="true" fill="currentColor" set:html={LOGO.symbol.inhalt} />
+      <span>Foto folgt: {text}</span>
+    </div>
+  ) : (
+    <div class:list={['foto-platzhalter', 'foto-platzhalter--ruhig', klasse]} aria-hidden="true">
+      <svg viewBox={LOGO.symbol.viewBox} width="56" height="63" fill="currentColor" set:html={LOGO.symbol.inhalt} />
+    </div>
+  )
+}

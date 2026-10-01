@@ -5,13 +5,15 @@ import FaqListe from '../components/FaqListe.astro';
 import KontaktAufruf from '../components/start/KontaktAufruf.astro';
 import { render } from 'astro:content';
 import { seite, faqNachThema } from '../lib/inhalte';
+import { fragenSeite } from '../lib/strukturdaten';
 
 const s = await seite('faq');
 const { Content } = await render(s);
 const gruppen = await faqNachThema();
+const faqDaten = fragenSeite(gruppen.flatMap((g) => g.fragen));
 ---
 
-<Basis title={s.data.seitentitel} description={s.data.beschreibung}>
+<Basis title={s.data.seitentitel} description={s.data.beschreibung} strukturdaten={[faqDaten]}>
   <Seitenkopf pfad={[{ titel: 'Häufige Fragen' }]} kicker={s.data.kicker} titel={s.data.h1} einleitung={s.data.einleitung}>
     <div class="prosa"><Content /></div>
     <nav aria-label="Themen" class="themen">

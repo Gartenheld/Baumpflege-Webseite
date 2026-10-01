@@ -274,6 +274,12 @@ img.foto {
   opacity: 0.35;
 }
 
+/* Live-Seite ohne eigenes Foto: nur das Baumsymbol, etwas größer und zurückhaltender */
+.foto-platzhalter--ruhig svg {
+  width: clamp(4rem, 12%, 7rem);
+  opacity: 0.22;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

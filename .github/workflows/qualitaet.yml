@@ -1,0 +1,54 @@
+# Qualitätsprüfung mit Lighthouse: Ladezeit, Barrierefreiheit, Best Practices und SEO.
+# Läuft nach Änderungen an main, jeden Montag früh und auf Knopfdruck.
+# Blockiert das Deployment nicht. Ist dieser Workflow rot, kommt eine Mail von GitHub:
+# Dann bitte die Zusammenfassung des Laufs ansehen (Tabelle mit allen Seiten).
+name: Qualität
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: qualitaet
+  cancel-in-progress: true
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-24.04
+    env:
+      ASTRO_TELEMETRY_DISABLED: 1
+    steps:
+      - name: Code holen
+        uses: actions/checkout@v7
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Abhängigkeiten installieren
+        run: |
+          npm ci
+          npm install --no-save --no-audit --no-fund lighthouse@13.5.0
+
+      - name: Website bauen (Vorschau-Modus)
+        run: npm run build
+
+      - name: Website lokal starten
+        run: |
+          cd dist
+          php -S 127.0.0.1:8080 > /tmp/php.log 2>&1 &
+          sleep 1
+          curl -sf -o /dev/null http://127.0.0.1:8080/
+
+      - name: Lighthouse über alle Seiten
+        env:
+          BASIS_URL: http://127.0.0.1:8080
+        run: node scripts/qualitaet.mjs

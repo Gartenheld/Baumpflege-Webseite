@@ -1,23 +1,44 @@
 ---
 // Grundlayout aller Seiten: Kopfbereich mit Title, Description, Canonical, Robots, Open Graph,
 // lokal eingebundenen Schriften und Favicons, dazu Kopf, Fuß und Handy-Leiste.
-import { Font } from 'astro:assets';
+import { Font, getImage } from 'astro:assets';
 import { PUBLIC_NOINDEX } from 'astro:env/client';
 import { betrieb } from '../config/betrieb';
 import Kopf from '../components/Kopf.astro';
 import Fuss from '../components/Fuss.astro';
 import Handyleiste from '../components/Handyleiste.astro';
+import { sichtbareLeistungen, orteSortiert } from '../lib/inhalte';
+import { foto as fotoPlatz } from '../lib/fotos';
+import { grunddaten, alsJson } from '../lib/strukturdaten';
 import '../styles/global.css';
 
 interface Props {
   title: string;
   description: string;
   noindex?: boolean;
+  // Foto-Platz aus src/config/fotos.ts: Ist dort ein Foto hinterlegt, wird ein Ausschnitt davon das Vorschaubild beim Teilen
+  foto?: string;
+  // Zusätzliche strukturierte Daten der Seite (z. B. Service, FAQPage)
+  strukturdaten?: Record<string, unknown>[];
 }
 
-const { title, description, noindex = false } = Astro.props;
-const canonical = new URL(Astro.url.pathname, Astro.site);
+const { title, description, noindex = false, foto, strukturdaten = [] } = Astro.props;
+const site = Astro.site!;
+const canonical = new URL(Astro.url.pathname, site);
 const robots = PUBLIC_NOINDEX || noindex ? 'noindex, nofollow' : 'index, follow';
+
+// Vorschaubild zum Teilen: eigenes Foto der Seite oder das Standardbild mit Logo
+const f = foto ? fotoPlatz(foto) : undefined;
+const ogBild = f?.bild
+  ? {
+      url: new URL((await getImage({ src: f.bild, width: 1200, height: 630, fit: 'cover', format: 'jpg', quality: 80 })).src, site).href,
+      alt: f.alt,
+    }
+  : { url: new URL('/og-standard.jpg', site).href, alt: `Logo ${betrieb.name}: ${betrieb.claim}` };
+
+const leistungen = (await sichtbareLeistungen()).map((l) => l.data.titel);
+const orte = (await orteSortiert()).map((o) => o.data.name);
+const jsonLd = alsJson([...grunddaten(site, leistungen, orte), ...strukturdaten]);
 ---
 
 <!doctype html>
@@ -45,6 +66,13 @@ const robots = PUBLIC_NOINDEX || noindex ? 'noindex, nofollow' : 'index, follow'
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogBild.url} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={ogBild.alt} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script is:inline type="application/ld+json" set:html={jsonLd} />
   </head>
   <body>
     <a class="sprunglink" href="#inhalt">Zum Inhalt springen</a>

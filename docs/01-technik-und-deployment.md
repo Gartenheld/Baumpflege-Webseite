@@ -559,12 +559,12 @@ Blockierend (im Deployment, schnell und eindeutig), umgesetzt in Schritt 4:
 - `php -l`: Syntax der PHP-Dateien
 - Build-Cache für Bilder (`.astro-cache`), damit Läufe schnell bleiben
 
-Nicht blockierend (eigener Workflow `qualitaet.yml`, bei jeder Änderung und wöchentlich), kommt in Schritt 5:
+Nicht blockierend (eigener Workflow `qualitaet.yml`, nach Änderungen an `main` und jeden Montag), umgesetzt in Schritt 5 mit Lighthouse statt pa11y (Lighthouse enthält die axe-Regeln für Barrierefreiheit):
 
-- **Lighthouse CI** für 5 typische Seiten (Startseite, eine Leistung, ein Ort, Referenzen, Kontakt), je 3 Läufe
-- **pa11y mit axe** über alle Seiten der Sitemap (Barriere-Test)
+- **Lighthouse** (`scripts/qualitaet.mjs`) für 5 typische Seiten (Startseite, eine Leistung, ein Ort, Referenzen, Kontakt) mit allen vier Kategorien, für alle übrigen Seiten der Sitemap Barrierefreiheit und SEO
+- Grenzen: Leistung 85, Barrierefreiheit 95, Best Practices 90, SEO 95. Die Tabelle aller Werte steht in der Zusammenfassung des Laufs.
 
-Ist dieser Workflow rot, bekommst du eine Mail, das Deployment läuft trotzdem. Messwerte auf GitHub schwanken, deshalb hier nur Warnungen.
+Ist dieser Workflow rot, bekommst du eine Mail, das Deployment läuft trotzdem. Messwerte auf GitHub schwanken, deshalb liegt die Grenze für Leistung niedriger als die lokal gemessenen 99.
 
 Automatische Tests finden nur einen Teil der Barrieren. Vor der Liveschaltung prüfen wir zusätzlich von Hand: Bedienung nur mit Tastatur, sichtbarer Fokus, Zoom 200 und 400 Prozent, Screenreader (VoiceOver oder NVDA), Kontraste der gewählten Farben.
 
@@ -574,11 +574,11 @@ Automatische Tests finden nur einen Teil der Barrieren. Vor der Liveschaltung pr
 
 ### 11.1 Strukturierte Daten (JSON-LD)
 
-Ein Datenblock pro Seite, erzeugt aus `betrieb.ts`, damit Name, Anschrift und Telefon überall gleich sind.
+Umgesetzt in Schritt 5 (`src/lib/strukturdaten.ts`), erzeugt aus `betrieb.ts`, damit Name, Anschrift und Telefon überall gleich sind. Ein Block mit Betrieb, Website und den Daten der Seite, auf Unterseiten zusätzlich ein Block mit den Brotkrumen. Die Seitenprüfung nach dem Build stellt sicher, dass jeder Block gültiges JSON ist.
 
 | Seite | Typen |
 |---|---|
-| Alle Seiten | `HomeAndConstructionBusiness` (der Betrieb, mit Name, Slogan, Logo, Foto, Telefon, E-Mail, Anschrift, Koordinaten, Erreichbarkeit als `contactPoint`, die 9 Orte als `areaServed`, Leistungen als `knowsAbout`, Profil-Links als `sameAs`) und `WebSite` |
+| Alle Seiten | `HomeAndConstructionBusiness` (der Betrieb, mit Name, Slogan, Logo `/logo.png`, Bild, Telefon, E-Mail, Anschrift, `contactPoint`, die 9 Orte als `areaServed`, sichtbare Leistungen als `knowsAbout`, Profil-Links als `sameAs`, sobald eingetragen) und `WebSite` |
 | Leistungsseiten | `Service` (Leistung, Beschreibung, Anbieter, Einsatzgebiet) und `BreadcrumbList` |
 | Ortsseiten | `Service` „Baumpflege und Baumfällung in {Ort}“ mit nur diesem Ort und `BreadcrumbList` |
 | FAQ | `FAQPage` und `BreadcrumbList` |
@@ -592,7 +592,8 @@ Warum `HomeAndConstructionBusiness`: Der Typ ist ein Untertyp von `LocalBusiness
 |---|---|
 | Bewertungs-Sterne (`AggregateRating`, `Review`) | Google zeigt für Bewertungen, die ein Betrieb auf der eigenen Website über sich selbst auszeichnet, seit 2019 keine Sterne. Bewertungen von anderen Plattformen (hier Google) sollen ohnehin nicht übernommen und ausgezeichnet werden. Die Sterne in der Google-Suche kommen aus dem Unternehmensprofil. (Stand unseres Wissens, Bitte prüfen) |
 | `priceRange` | Briefing: keine Preise |
-| Öffnungszeiten als Ladenöffnung | Es gibt keinen Laden. Die Erreichbarkeit steht als `contactPoint`. |
+| Öffnungszeiten als Ladenöffnung | Es gibt keinen Laden. Die Erreichbarkeit steht als Text in `betrieb.ts`, deshalb ohne Uhrzeiten im `contactPoint`. |
+| Koordinaten (`geo`) | Optional. Ohne geprüfte Koordinaten der Betriebsanschrift lieber weglassen, das Unternehmensprofil liefert den Standort. |
 | `FAQPage` auf Leistungsseiten | Dieselbe Frage soll nicht mehrfach ausgezeichnet werden. Nur auf `/faq/`. Google zeigt aufklappbare FAQ in der Suche seit 2023 nur noch für Behörden- und Gesundheitsseiten (Stand unseres Wissens). Das Markup schadet nicht, hat aber niedrige Priorität. |
 | Seilklettertechnik | solange ausgeblendet, kein `Service` |
 
@@ -615,7 +616,7 @@ Warum `HomeAndConstructionBusiness`: Der Typ ist ein Untertyp von `LocalBusiness
 
 - **Canonical** auf jeder Seite: absolute Adresse, `https://`, ohne www, mit „/“ am Ende. Ist im Grundlayout schon so umgesetzt.
 - **Eine Schreibweise:** `http://` und `www.` leiten per 301 auf `https://baumpflege-happe.de/...`. Nach der Liveschaltung zählen wir mit `curl -I`, dass es höchstens zwei Sprünge sind. Sind es mehr, regeln wir alles in der `.htaccess`.
-- **Open Graph** für die Vorschau beim Teilen per WhatsApp: `og:title`, `og:description`, `og:url`, `og:image` (JPEG 1200 x 630, möglichst unter 300 KB, mit Alt-Text), dazu `twitter:card` „summary_large_image“. Je Seite ein eigenes Bild, sonst ein Standardbild.
+- **Open Graph** für die Vorschau beim Teilen per WhatsApp: `og:title`, `og:description`, `og:url`, `og:image` (JPEG 1200 x 630 mit Alt-Text), dazu `twitter:card` „summary_large_image“. Umgesetzt: Seiten mit eigenem Foto (Startseite, Leistungen, Gewerbe, Über uns) nutzen automatisch einen Ausschnitt davon, alle anderen das Standardbild `public/og-standard.jpg` (Logo und Claim, 50 KB, Vorlage in `tools/og-bild/`).
 - `<html lang="de">` ist gesetzt, `hreflang` ist nicht nötig.
 
 ### 11.4 Title und Description
@@ -805,11 +806,14 @@ Nicht verwenden für http zu https, www zu ohne www oder einen reinen Hosterwech
 - [ ] Freigabe der Seiten durch dich.
 - [ ] Alte URL-Liste vervollständigen (02-weiterleitungen.md), sobald die Search Console der alten Domain zugänglich ist.
 
-**Schritt 5: SEO-Feinschliff, Test und Liveschaltung**
+**Schritt 5: SEO-Feinschliff, Test und Liveschaltung** (Checkliste in [04-liveschaltung.md](04-liveschaltung.md))
 
-- [ ] Strukturierte Daten, Titles, Descriptions, Open-Graph-Bilder, Längen- und Duplikat-Check.
+- [x] Strukturierte Daten, Titles, Descriptions, Open-Graph-Bilder, Längen- und Duplikat-Check.
+- [x] Live-Wächter: Build bricht ab bei „Platzhalter“, Platzhalter-Nummer oder noindex auf der Startseite. Ohne Angabe baut die Website immer als Vorschau (noindex).
+- [x] Probelauf: Live-Build mit ausgefüllten Testwerten besteht alle Prüfungen. Fehlende Fotos erscheinen live als ruhige Fläche mit Baumsymbol.
+- [x] Lighthouse lokal (Handy): 99 bis 100 in allen Kategorien, Barrierefreiheit und SEO auf allen 26 Seiten der Sitemap 100.
 - [ ] Alle Platzhalter ersetzt (Telefon, E-Mail, WhatsApp, Erreichbarkeit, Antwortzeit, USt-IdNr., Bewertungen, Datenschutztext aus dem Generator).
-- [ ] Zweiter Workflow `qualitaet.yml` für Lighthouse und Barriere-Test.
+- [x] Zweiter Workflow `qualitaet.yml` für Lighthouse (alle Seiten, jeden Montag und nach Änderungen an `main`).
 - [ ] Tests: Lighthouse, Barriere-Test, Handarbeit (Tastatur, Zoom, Screenreader), Formular von iPhone, Android und ohne JavaScript, keine Cookies.
 - [ ] Domain registriert, SSL aktiv, Force HTTPS, www-Weiterleitung, HSTS zunächst kurz.
 - [ ] `NOINDEX` = `false`, Passwortschutz aus, `SITE_URL` richtig. Danach Live-Seite prüfen: kein noindex, robots.txt richtig.

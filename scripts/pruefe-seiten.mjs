@@ -2,7 +2,8 @@
 // - jede Seite hat genau einen Title, eine Description, eine H1 und einen Canonical-Link
 // - Titles und Descriptions sind nicht doppelt und nicht zu lang
 // - interne Links und Bilder zeigen auf vorhandene Dateien, Sprungmarken (#…) auf vorhandene IDs
-// - Live-Build (PUBLIC_NOINDEX=false): kein „Platzhalter“ mehr auf der Website
+// - strukturierte Daten sind gültiges JSON, das Vorschaubild zum Teilen ist vorhanden
+// - Live-Build (PUBLIC_NOINDEX=false): kein „Platzhalter“ und keine Platzhalter-Nummer mehr, Startseite indexierbar
 // Lange Gedankenstriche werden nur als Hinweis gemeldet.
 // Aufruf: node scripts/pruefe-seiten.mjs (läuft in "npm run build" automatisch mit)
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
@@ -61,6 +62,24 @@ for (const [d, html] of inhalt) {
   if (desc.length !== 1) fehler.push(`${url}: ${desc.length} Descriptions statt 1`);
   if (h1 !== 1) fehler.push(`${url}: ${h1} Überschriften H1 statt 1`);
   if (!/<link rel="canonical"/.test(html)) fehler.push(`${url}: Canonical-Link fehlt`);
+
+  // Strukturierte Daten müssen gültiges JSON sein
+  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    try {
+      JSON.parse(m[1]);
+    } catch (e) {
+      fehler.push(`${url}: strukturierte Daten sind kein gültiges JSON (${e.message})`);
+    }
+  }
+
+  // Vorschaubild zum Teilen muss vorhanden sein
+  const og = html.match(/<meta property="og:image" content="([^"]+)"/);
+  if (!og) fehler.push(`${url}: Vorschaubild (og:image) fehlt`);
+  else if (!vorhanden(new URL(ent(og[1])).pathname)) fehler.push(`${url}: Vorschaubild ${og[1]} fehlt`);
+
+  // Live: Platzhalter-Nummern aus betrieb.ts und versehentliches noindex
+  if (live && /0{8,}/.test(html)) fehler.push(`${url}: Telefon- oder WhatsApp-Nummer ist noch der Platzhalter (lauter Nullen)`);
+  if (live && url === '/' && !/<meta name="robots" content="index, follow"/.test(html)) fehler.push('Startseite ist auf noindex gestellt');
 
   // Längen und Dubletten nur für Seiten, die in Suchmaschinen erscheinen sollen
   const zaehlt = !istFehlerseite && !url.startsWith('/kontakt/danke/');

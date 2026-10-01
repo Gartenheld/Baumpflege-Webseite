@@ -42,8 +42,9 @@ export default defineConfig({
   ],
   env: {
     schema: {
-      // true für die Vorschau-Umgebung: Suchmaschinen werden ausgesperrt (robots.txt und noindex).
-      PUBLIC_NOINDEX: envField.boolean({ context: 'client', access: 'public', default: false }),
+      // true (Standard) für die Vorschau: Suchmaschinen werden ausgesperrt (robots.txt und noindex).
+      // Erst zur Liveschaltung bewusst auf false setzen.
+      PUBLIC_NOINDEX: envField.boolean({ context: 'client', access: 'public', default: true }),
     },
   },
   integrations: [

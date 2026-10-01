@@ -7,6 +7,7 @@ Konzept und Hintergründe:
 - [docs/01-technik-und-deployment.md](docs/01-technik-und-deployment.md): Technik, Hosting, Deployment, Formular, Datenschutz, SEO, Search Console, alte Domain
 - [docs/02-weiterleitungen.md](docs/02-weiterleitungen.md): Weiterleitungen von gartenheldservice.com
 - [docs/03-logo-und-farben.md](docs/03-logo-und-farben.md): Logo-Vorschläge und Farbwelten (Schritt 2)
+- [docs/04-liveschaltung.md](docs/04-liveschaltung.md): Checkliste für die Liveschaltung (Schritt 5)
 - [brand/README.md](brand/README.md): gewähltes Logo und Farben, Endfassungen für Druck, Folie und Stick
 - [redirects/gartenheldservice.com/.htaccess](redirects/gartenheldservice.com/.htaccess): fertige Weiterleitungsdatei für die alte Domain (wird von Hand hochgeladen, nicht über das Deployment)
 
@@ -106,6 +107,6 @@ Umgebungsvariablen beim Build:
 | Variable | Bedeutung |
 | --- | --- |
 | `SITE_URL` | Adresse der Website. Ohne Angabe gilt `https://baumpflege-happe.de`. In der Vorschau die temporäre Hostinger-Adresse. |
-| `PUBLIC_NOINDEX` | `true` sperrt Suchmaschinen aus (Vorschau). Zur Liveschaltung auf `false`. |
+| `PUBLIC_NOINDEX` | `true` sperrt Suchmaschinen aus (Vorschau, gilt auch ohne Angabe). Zur Liveschaltung auf `false`. Nur dann prüft der Build, dass kein Platzhalter mehr übrig ist. |
 
 Deployment: [.github/workflows/deploy.yml](.github/workflows/deploy.yml). Benötigte Secrets und Variablen stehen im Konzept unter "Deployment".

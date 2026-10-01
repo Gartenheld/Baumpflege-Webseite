@@ -56,7 +56,7 @@ const orte = defineCollection({
       // satzung = Baumschutzsatzung bekannt, keine = keine Satzung, unklar = noch nicht geprüft
       status: z.enum(['satzung', 'keine', 'unklar']),
       stelle: z.string(),
-      link: z.string().url(),
+      link: z.url(),
       // Datum der letzten Prüfung (JJJJ-MM-TT), leer = noch nicht geprüft
       geprueft: z.string().nullable().default(null),
     }),

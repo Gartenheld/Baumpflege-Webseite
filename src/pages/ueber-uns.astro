@@ -14,7 +14,7 @@ const s = await seite('ueber-uns');
 const { Content } = await render(s);
 ---
 
-<Basis title={s.data.seitentitel} description={s.data.beschreibung}>
+<Basis title={s.data.seitentitel} description={s.data.beschreibung} foto="ueber-uns">
   <Seitenkopf pfad={[{ titel: 'Über uns' }]} kicker={s.data.kicker} titel={s.data.h1} einleitung={s.data.einleitung} foto="ueber-uns" />
 
   {

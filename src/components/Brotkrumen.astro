@@ -1,10 +1,18 @@
 ---
 // Brotkrumen-Navigation (Startseite > Bereich > Seite). Der letzte Eintrag ist die aktuelle Seite.
+import { brotkrumen, alsJson } from '../lib/strukturdaten';
+
 interface Props {
   pfad: { titel: string; href?: string }[];
 }
 
 const { pfad } = Astro.props;
+const jsonLd = alsJson([
+  brotkrumen(Astro.site!, [
+    { titel: 'Startseite', url: '/' },
+    ...pfad.map((p, i) => ({ titel: p.titel, url: i === pfad.length - 1 || !p.href ? Astro.url.pathname : p.href })),
+  ]),
+]);
 ---
 
 <nav class="brotkrumen" aria-label="Brotkrumen">
@@ -17,6 +25,7 @@ const { pfad } = Astro.props;
     }
   </ol>
 </nav>
+<script is:inline type="application/ld+json" set:html={jsonLd} />
 
 <style>
   ol {
