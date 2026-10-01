@@ -61,6 +61,16 @@ h3 {
   color: var(--tanne);
   margin: 0;
   text-wrap: balance;
+  /* Lange Wörter wie „Eigentümergemeinschaften“ dürfen auf schmalen Bildschirmen nicht über den Rand ragen */
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 40rem) {
+  h1,
+  h2,
+  h3 {
+    hyphens: auto;
+  }
 }
 
 h1 {
@@ -244,6 +254,18 @@ svg {
   text-align: center;
   padding: 1.5rem;
   font-size: 0.95rem;
+}
+
+/* Eigene Fotos (Komponente Foto): füllen ihren Rahmen, Ausschnitt mittig */
+.foto-rahmen {
+  display: contents;
+}
+
+img.foto {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .foto-platzhalter svg {

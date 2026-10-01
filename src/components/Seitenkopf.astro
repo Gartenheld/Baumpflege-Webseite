@@ -2,7 +2,7 @@
 // Kopfbereich einer Unterseite: Brotkrumen, Oberbegriff, H1, Einleitung, optional Knöpfe und Foto.
 import Brotkrumen from './Brotkrumen.astro';
 import Icon from './Icon.astro';
-import FotoPlatzhalter from './FotoPlatzhalter.astro';
+import Foto from './Foto.astro';
 import { telefonLink } from '../config/betrieb';
 
 interface Props {
@@ -12,6 +12,7 @@ interface Props {
   einleitung?: string;
   knoepfe?: boolean;
   anfrageLink?: string;
+  // Name eines Foto-Platzes aus src/config/fotos.ts
   foto?: string;
 }
 
@@ -41,7 +42,7 @@ const { pfad, kicker, titel, einleitung, knoepfe = false, anfrageLink = '/kontak
       }
       <slot />
     </div>
-    {foto && <FotoPlatzhalter text={foto} class="bild" />}
+    {foto && <Foto name={foto} class="bild" oben sizes="(min-width: 75rem) 33rem, (min-width: 60rem) 45vw, 100vw" />}
   </div>
 </header>
 
@@ -52,12 +53,14 @@ const { pfad, kicker, titel, einleitung, knoepfe = false, anfrageLink = '/kontak
 
   .raster {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     gap: 2rem;
     align-items: center;
   }
 
   .text {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     gap: 1.1rem;
     max-width: 46rem;
   }
@@ -86,7 +89,7 @@ const { pfad, kicker, titel, einleitung, knoepfe = false, anfrageLink = '/kontak
 
   @media (min-width: 60rem) {
     .seitenkopf--foto .raster {
-      grid-template-columns: 1.15fr 1fr;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
       gap: 4rem;
     }
   }

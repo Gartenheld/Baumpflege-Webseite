@@ -14,8 +14,9 @@ const { Content } = await render(s);
 <Basis title={s.data.seitentitel} description={s.data.beschreibung}>
   <Seitenkopf pfad={[{ titel: 'Leistungen' }]} kicker={s.data.kicker} titel={s.data.h1} einleitung={s.data.einleitung} knoepfe />
 
-  <section class="abschnitt" aria-label="Alle Leistungen">
+  <section class="abschnitt" aria-labelledby="alle-titel">
     <div class="huelle">
+      <h2 id="alle-titel" class="sr-only">Alle Leistungen</h2>
       <LeistungsKarten />
     </div>
   </section>

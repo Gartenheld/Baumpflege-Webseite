@@ -2,6 +2,12 @@
 import { getCollection, getEntry } from 'astro:content';
 import { PUBLIC_NOINDEX } from 'astro:env/client';
 
+/** Bricht den Build ab, wenn eine Inhaltsart leer ist (z. B. Ordner versehentlich gelöscht). */
+function nichtLeer<T>(liste: T[], ordner: string): T[] {
+  if (liste.length === 0) throw new Error(`In src/inhalte/${ordner} wurde kein Eintrag gefunden.`);
+  return liste;
+}
+
 /** Kennungen der Qualifikationen, die tatsächlich vorhanden sind. */
 export async function vorhandeneQualifikationen() {
   const alle = await getCollection('qualifikationen', ({ data }) => data.vorhanden);
@@ -11,7 +17,7 @@ export async function vorhandeneQualifikationen() {
 /** Leistungen, deren benötigte Qualifikation vorhanden ist (z. B. Seilklettertechnik erst mit SKT-A). */
 export async function sichtbareLeistungen() {
   const vorhanden = new Set((await vorhandeneQualifikationen()).map((q) => q.id));
-  const alle = await getCollection('leistungen', ({ data }) => !data.benoetigt || vorhanden.has(data.benoetigt));
+  const alle = nichtLeer(await getCollection('leistungen', ({ data }) => !data.benoetigt || vorhanden.has(data.benoetigt)), 'leistungen');
   return alle.sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
 }
 
@@ -26,7 +32,7 @@ export async function sichtbareBewertungen() {
 }
 
 export async function orteSortiert() {
-  const alle = await getCollection('orte');
+  const alle = nichtLeer(await getCollection('orte'), 'orte');
   return alle.sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
 }
 

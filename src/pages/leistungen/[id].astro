@@ -31,7 +31,7 @@ const anfrageLink = `/kontakt/?leistung=${leistung.id}`;
     einleitung={d.einleitung}
     knoepfe
     anfrageLink={anfrageLink}
-    foto={d.titel}
+    foto={`leistung-${leistung.id}`}
   />
 
   <section class="abschnitt abschnitt--weiss" aria-labelledby="vorteile-titel">
@@ -55,7 +55,7 @@ const anfrageLink = `/kontakt/?leistung=${leistung.id}`;
         <div class="huelle">
           <div class="abschnittskopf">
             <p class="kicker">Häufige Fragen</p>
-            <h2 id="faq-titel">Fragen zu {d.titel === 'Landschaftspflege und Heckenschnitt' ? 'Hecke und Landschaftspflege' : d.titel}</h2>
+            <h2 id="faq-titel">{d.fragenTitel ?? `Fragen und Antworten: ${d.titel}`}</h2>
           </div>
           <FaqListe eintraege={fragen} />
           <p class="mehr-fragen"><a href="/faq/">Alle häufigen Fragen ansehen</a></p>

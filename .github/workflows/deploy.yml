@@ -25,6 +25,8 @@ jobs:
       # Bis zur Liveschaltung ist NOINDEX nicht gesetzt oder true: Suchmaschinen bleiben ausgesperrt
       PUBLIC_NOINDEX: ${{ vars.NOINDEX || 'true' }}
       SITE_URL: ${{ vars.SITE_URL }}
+      # Keine Nutzungsstatistik an Astro senden
+      ASTRO_TELEMETRY_DISABLED: 1
     steps:
       - name: Code holen
         uses: actions/checkout@v7
@@ -41,7 +43,17 @@ jobs:
       - name: Inhalte und Code prüfen
         run: npm run check
 
-      - name: Website bauen
+      # Verkleinerte Fotos zwischenspeichern, damit nicht jeder Lauf alle Fotos neu berechnet
+      - name: Bild-Cache laden
+        uses: actions/cache@v6
+        with:
+          path: .astro-cache
+          key: bilder-${{ hashFiles('src/bilder/**', 'src/inhalte/referenzen/**', 'package-lock.json') }}
+          restore-keys: bilder-
+
+      # Baut die Website und prüft danach alle Seiten: Links, Titles, Descriptions,
+      # im Live-Build zusätzlich, dass kein „Platzhalter“ mehr vorkommt (scripts/pruefe-seiten.mjs)
+      - name: Website bauen und prüfen
         run: npm run build
 
       - name: PHP-Dateien auf Syntaxfehler prüfen

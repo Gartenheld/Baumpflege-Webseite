@@ -16,6 +16,7 @@ vorteile:
     text: "Der Rollrasen wird frisch geliefert und möglichst am selben Tag verlegt, damit die Bahnen nicht austrocknen."
   - titel: "Pflegehinweise für den Start"
     text: "Sie erfahren, wie Sie den Rasen in den ersten Wochen wässern und wann er das erste Mal gemäht werden kann."
+fragenTitel: "Fragen zum Rollrasen"
 kosten:
   frage: "Was kostet das Verlegen von Rollrasen?"
   einleitung: "Der Preis hängt vor allem von der Fläche und ihrem Zustand ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot."

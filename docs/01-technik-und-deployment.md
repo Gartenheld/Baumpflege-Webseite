@@ -106,7 +106,7 @@ Technische Adressen ohne eigenen Inhalt:
 
 ## 4. Inhaltsmodell
 
-Alles, was du später selbst änderst, liegt in zwei Bereichen: `src/inhalte/` und `src/config/betrieb.ts`. Jeder Eintrag ist eine eigene Datei. Markdown (`.md`) für Seiten mit Fließtext, YAML (`.yaml`) für kurze Listeneinträge.
+Alles, was du später selbst änderst, liegt in drei Bereichen: `src/inhalte/`, `src/config/` (Betriebsdaten, Foto-Plätze, Menü) und `src/bilder/` (Fotos). Jeder Eintrag ist eine eigene Datei. Markdown (`.md`) für Seiten mit Fließtext, YAML (`.yaml`) für kurze Listeneinträge.
 
 ### Betriebsdaten zentral in einer Datei
 
@@ -116,13 +116,14 @@ Alles, was du später selbst änderst, liegt in zwei Bereichen: `src/inhalte/` u
 
 | Inhalt | Ordner (eine Datei pro Eintrag) | Wichtige Felder | Wo es erscheint |
 |---|---|---|---|
-| Leistungen | `src/inhalte/leistungen/*.md` | Titel, Seitentitel, Description, H1, Reihenfolge, benötigte Qualifikation, Bild mit Alt-Text, Kostenfaktoren, verwandte Leistungen; Fließtext mit Nutzen, Vorgehen, Technik | Leistungsseiten, Übersicht, Navigation, strukturierte Daten |
-| Orte | `src/inhalte/orte/*.md` | Ort, Seitentitel, Description, H1, Anfahrt aus Bornheim, Baumschutz (Satzung ja/nein/unklar, Link zur Stadt, geprüft am), Nachbarorte; eigener Fließtext | Ortsseiten, Einsatzgebiet. Referenzen aus dem Ort erscheinen automatisch. |
-| Referenzen | `src/inhalte/referenzen/<jahr-monat-ort-baum>/index.md` plus Fotos im selben Ordner | Titel, Ort, Leistungen, Baumart, Datum, Bilder (vorher, nachher, Arbeit) mit Alt-Text, `veroeffentlichen` | Referenzseite, passende Orts- und Leistungsseiten |
+| Leistungen | `src/inhalte/leistungen/*.md` | Titel, Kurztext, Seitentitel, Description, H1, Einleitung, Reihenfolge, Schwerpunkt, benötigte Qualifikation, Nutzen (3 bis 4 Punkte), Kostenfaktoren, Überschrift der Fragen; Fließtext mit Vorgehen und Technik | Leistungsseiten, Übersicht, Startseite, Fußbereich |
+| Fotos | `src/bilder/<platz>.jpg`, alt-Texte in `src/config/fotos.ts` | fester Platz pro Foto (Startseite, Über uns, Gewerbe, je Leistung), alt-Text Pflicht | Seitenkopf, Leistungskarten; Platzhalter, solange kein Foto da ist |
+| Orte | `src/inhalte/orte/*.md` | Ort, Lage für die Karte, Seitentitel, Description, H1, Einleitung, Ortsteile, Entfernung, Baumschutz (Satzung ja/nein/unklar, zuständige Stelle, Link zur Stadt, geprüft am); eigener Fließtext mit Anfahrt aus Bornheim | Ortsseiten, Einsatzgebiet mit Karte. Referenzen aus dem Ort erscheinen automatisch. |
+| Referenzen | `src/inhalte/referenzen/<jahr-monat-ort-baum>/index.md` plus Fotos im selben Ordner | Titel, Ort, Leistungen, Baumart, Aufgabe, Datum, Fotos vorher und nachher mit Alt-Text, `veroeffentlichen` | Referenzseite, passende Ortsseite |
 | FAQ | `src/inhalte/faq/*.md` | Frage (endet mit „?“), Thema, zugehörige Leistungen, auf FAQ-Seite ja/nein, Reihenfolge; Antwort als Fließtext | FAQ-Seite und verteilt auf die Leistungsseiten |
-| Bewertungen | `src/inhalte/bewertungen/*.yaml` | Name gekürzt (Vorname und Anfangsbuchstabe), Sterne, Datum, Text, `veroeffentlichen` | Startseite, ggf. Leistungsseiten |
+| Bewertungen | `src/inhalte/bewertungen/*.yaml` | Name gekürzt (Vorname und Anfangsbuchstabe), Sterne, Datum, Text, `veroeffentlichen` | Startseite |
 | Qualifikationen | `src/inhalte/qualifikationen/*.yaml` | Titel, Erklärung in einem Satz für Laien, `vorhanden`, Reihenfolge | Über uns, Schalter für Leistungen |
-| Seiten | `src/inhalte/seiten/*.md` | Seitentitel, Description, H1, je nach Seite Listen (z. B. Ablauf-Schritte, Ausstattung) | Startseite, Über uns, Gewerbe, Einsatzgebiet, Kontakt, Datenschutz |
+| Seiten | `src/inhalte/seiten/*.md` | Seitentitel, Description, Oberbegriff, H1, Einleitung, Karten (Nutzen, Grundsätze) | Leistungsübersicht, Über uns, Gewerbe, Einsatzgebiet, Referenzen, FAQ, Kontakt, Datenschutz |
 
 Grundsätze:
 
@@ -130,7 +131,7 @@ Grundsätze:
 - **Dateinamen ohne Umlaute**, z. B. `baumfaellung.md`, `koeln.md`. Der Dateiname wird zur Adresse.
 - **Vorlagen** beginnen mit Unterstrich (`_vorlage`) und werden nie veröffentlicht.
 - **Platzhalter gehen nie live:** Referenzen und Bewertungen sind standardmäßig `veroeffentlichen: false`. In der Entwicklung sind sie sichtbar, auf der Live-Seite nicht. Zusätzlich bricht der Live-Build ab, wenn irgendwo noch das Wort „Platzhalter“ steht.
-- **Mindestanzahl:** Ist eine Inhaltsart unerwartet leer, bricht der Build ab.
+- **Mindestanzahl:** Sind Leistungen oder Orte unerwartet leer, bricht der Build ab.
 
 ### Schalter für Seilklettertechnik
 
@@ -340,7 +341,7 @@ Nicht belegt und beim Einrichten zu testen: ob der Zielordner vorher leer sein m
 
 ### 7.6 So änderst du Inhalte selbst (GitHub-Webeditor)
 
-Die ausführliche Anleitung mit Bildschirmschritten kommt in Schritt 4 ins README. Das Prinzip:
+Die ausführliche Anleitung steht im [README](../README.md#inhalte-selbst-ändern). Das Prinzip:
 
 ```
 Datei auf github.com öffnen (z. B. src/inhalte/leistungen/baumfaellung.md)
@@ -352,7 +353,7 @@ Datei auf github.com öffnen (z. B. src/inhalte/leistungen/baumfaellung.md)
        Die Fehlermeldung nennt Datei und Feld.
 ```
 
-- **Foto tauschen:** im Zielordner *Add file -> Upload files*, Datei hineinziehen, committen, dann den Dateinamen in der `.md`-Datei eintragen.
+- **Foto tauschen:** in `src/bilder/` *Add file -> Upload files*, Datei mit dem Namen des Platzes (z. B. `startseite.jpg`) hineinziehen, in `src/config/fotos.ts` den alt-Text eintragen, committen. Ohne alt-Text bricht der Build mit Hinweis ab. Nach dem Build entfernt `scripts/originale-entfernen.mjs` die unverkleinerten Originale (mit GPS-Daten) aus `dist/`, online stehen nur verkleinerte Fassungen ohne Metadaten (getestet).
 - **Neue Referenz:** *Add file -> Create new file*, Name z. B. `src/inhalte/referenzen/2026-10-alfter-linde/index.md` (der Schrägstrich legt den Ordner an), Vorlage einfügen, Fotos in denselben Ordner laden, zum Schluss `veroeffentlichen: true`.
 - **Neue Bewertung:** eine Datei in `src/inhalte/bewertungen/` kopieren und anpassen. Durchschnitt, Anzahl und Stand in `betrieb.ts` mit aktualisieren.
 - **Fotos:** JPEG oder PNG, **kein HEIC** (die Bildverarbeitung kann iPhone-HEIC nicht lesen, getestet). Am iPhone unter Kamera -> Formate „Maximale Kompatibilität“ wählen. Lange Kante 2000 bis 3000 Pixel, möglichst unter 5 MB, Dateinamen klein, ohne Umlaute und Leerzeichen. Der Browser-Upload bei GitHub erlaubt höchstens 25 MB pro Datei.
@@ -395,6 +396,7 @@ Jede Fehlerseite nennt Telefon und WhatsApp, damit ein fälschlich abgewiesener 
 
 - `accept="image/*"`, mehrere Dateien, Kamera oder Galerie wählbar.
 - Grenzen: **höchstens 8 Fotos, je 10 MB, zusammen 15 MB.** Als Mailanhang wird daraus gut 20 MB, das bleibt unter der üblichen Grenze von 25 MB für Anhänge (für Hostinger-Postfächer laut Recherche, Bitte prüfen mit einer Testmail).
+- Die PHP-Grenzen für Uploads stehen in `public/anfrage/.htaccess` (12 MB je Datei, 20 MB je Anfrage, greift auf LiteSpeed-Servern wie bei Hostinger). Zusätzlich im hPanel unter PHP-Konfiguration prüfen, dass `upload_max_filesize` und `post_max_size` mindestens so hoch sind. Mit den PHP-Standardwerten (2 MB) würde ein großes Handyfoto ohne JavaScript abgewiesen (getestet).
 - Erlaubt sind JPEG, PNG, WebP, HEIC und HEIF (anders als bei Fotos für die Website in 7.6, weil diese Fotos nur als Mailanhang weitergehen). Der Server prüft den echten Dateityp, nicht die Endung (getestet: eine als `.jpg` getarnte PHP-Datei wird abgewiesen).
 - Mit JavaScript werden große Fotos schon im Browser auf höchstens 2560 Pixel verkleinert. Dabei fallen auch GPS-Daten und andere Metadaten weg. Ohne JavaScript gehen die Originale raus.
 - Fotos werden **nicht auf dem Server gespeichert**, sie gehen nur als Anhang an dein Postfach. Anhänge heißen `foto-1.jpg` usw., der Dateiname des Kunden wird nie verwendet.
@@ -545,17 +547,19 @@ Nur aufrechte Schnitte vorladen, Kursive im Design vermeiden.
 
 ### 10.5 Automatische Prüfungen in CI
 
-Blockierend (im Deployment, schnell und eindeutig):
+Blockierend (im Deployment, schnell und eindeutig), umgesetzt in Schritt 4:
 
-- `astro check`: Code und Inhalts-Pflichtfelder
-- Build
-- Linkprüfung: tote interne Links stoppen das Deployment
-- Platzhalter-Wächter: Live-Build bricht ab, wenn „Platzhalter“ vorkommt
+- `astro check`: Code und Inhalts-Pflichtfelder (Längen von Title und Description prüft schon das Inhaltsschema)
+- Build, danach `scripts/pruefe-seiten.mjs` über alle gebauten Seiten:
+  - genau ein Title, eine Description, eine H1 und ein Canonical-Link je Seite
+  - keine doppelten Titles oder Descriptions
+  - Linkprüfung: tote interne Links, fehlende Bilder und falsche Sprungmarken stoppen das Deployment
+  - Platzhalter-Wächter: Der Live-Build (`NOINDEX` = `false`) bricht ab, solange irgendwo „Platzhalter“ steht
+  - Hinweis (nicht blockierend) bei langen Gedankenstrichen im sichtbaren Text
 - `php -l`: Syntax der PHP-Dateien
-- Build-Cache für Bilder, damit Läufe schnell bleiben
-- Längenprüfung für Title und Description, doppelte Titles
+- Build-Cache für Bilder (`.astro-cache`), damit Läufe schnell bleiben
 
-Nicht blockierend (eigener Workflow `qualitaet.yml`, bei jeder Änderung und wöchentlich):
+Nicht blockierend (eigener Workflow `qualitaet.yml`, bei jeder Änderung und wöchentlich), kommt in Schritt 5:
 
 - **Lighthouse CI** für 5 typische Seiten (Startseite, eine Leistung, ein Ort, Referenzen, Kontakt), je 3 Läufe
 - **pa11y mit axe** über alle Seiten der Sitemap (Barriere-Test)
@@ -791,17 +795,21 @@ Nicht verwenden für http zu https, www zu ohne www oder einen reinen Hosterwech
 
 **Schritt 4: Alle weiteren Seiten**
 
-- [ ] Inhaltsarten mit Prüfregeln, Schalter Seilklettertechnik (SKT-A).
-- [ ] Leistungs-, Orts-, Gewerbe-, Referenz-, Über-uns-, FAQ-, Kontakt-, Impressum- und Datenschutzseite.
-- [ ] Formular mit PHP, Spamschutz, Foto-Upload; Postfächer, `anfrage-config.php`, PHP-Optionen im hPanel.
-- [ ] Workflow ergänzen: Bild-Cache, Linkprüfung, Platzhalter-Wächter, Formular-Nachbearbeitung. Zweiter Workflow für Lighthouse und Barriere-Test.
-- [ ] README mit Pflegeanleitung (Texte, Fotos, Referenzen, Bewertungen).
-- [ ] Alte URL-Liste vervollständigen (02-weiterleitungen.md).
+- [x] Inhaltsarten mit Prüfregeln, Schalter Seilklettertechnik (SKT-A), Foto-Plätze mit Platzhaltern.
+- [x] Leistungs-, Orts-, Gewerbe-, Referenz-, Über-uns-, FAQ-, Kontakt-, Impressum- und Datenschutzseite (Datenschutztext folgt aus dem Generator).
+- [x] Formular mit PHP, Spamschutz, Foto-Upload, lokal getestet (gültige Anfrage mit großen Fotos und HEIC, Honeypot, Zeitsperre, gefälschter Zeitstempel, fremde Herkunft, getarnte PHP-Datei, zu viele Links, Rate-Limit, keine Cookies).
+- [ ] Auf dem Server: Postfächer, `anfrage-config.php`, PHP-Optionen im hPanel, Testmail (braucht Hostinger-Zugang).
+- [x] Workflow ergänzt: Bild-Cache, Seitenprüfung mit Linkprüfung und Platzhalter-Wächter, Formular-Nachbearbeitung, Originalfotos entfernen.
+- [x] Barriere-Test mit axe über alle Seiten bei 360 und 1440 Pixel Breite: keine Verstöße, kein waagerechtes Scrollen, keine Fehler in der Browser-Konsole.
+- [x] README mit Pflegeanleitung (Texte, Fotos, Referenzen, Bewertungen, FAQ, SKT-A).
+- [ ] Freigabe der Seiten durch dich.
+- [ ] Alte URL-Liste vervollständigen (02-weiterleitungen.md), sobald die Search Console der alten Domain zugänglich ist.
 
 **Schritt 5: SEO-Feinschliff, Test und Liveschaltung**
 
 - [ ] Strukturierte Daten, Titles, Descriptions, Open-Graph-Bilder, Längen- und Duplikat-Check.
 - [ ] Alle Platzhalter ersetzt (Telefon, E-Mail, WhatsApp, Erreichbarkeit, Antwortzeit, USt-IdNr., Bewertungen, Datenschutztext aus dem Generator).
+- [ ] Zweiter Workflow `qualitaet.yml` für Lighthouse und Barriere-Test.
 - [ ] Tests: Lighthouse, Barriere-Test, Handarbeit (Tastatur, Zoom, Screenreader), Formular von iPhone, Android und ohne JavaScript, keine Cookies.
 - [ ] Domain registriert, SSL aktiv, Force HTTPS, www-Weiterleitung, HSTS zunächst kurz.
 - [ ] `NOINDEX` = `false`, Passwortschutz aus, `SITE_URL` richtig. Danach Live-Seite prüfen: kein noindex, robots.txt richtig.

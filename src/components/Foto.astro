@@ -1,0 +1,38 @@
+---
+// Eigenes Foto aus src/bilder oder, solange es fehlt, ein Platzhalter. Plätze und alt-Texte: src/config/fotos.ts
+import { Picture } from 'astro:assets';
+import FotoPlatzhalter from './FotoPlatzhalter.astro';
+import { foto } from '../lib/fotos';
+
+interface Props {
+  name: string;
+  // Wie breit das Foto auf der Seite ist, damit der Browser die passende Größe lädt
+  sizes: string;
+  widths?: number[];
+  class?: string;
+  // Fotos ganz oben auf der Seite sofort laden, alle anderen erst beim Scrollen
+  oben?: boolean;
+}
+
+const { name, sizes, widths = [480, 800, 1200, 1600], class: klasse, oben = false } = Astro.props;
+const f = foto(name);
+const breiten = f.bild ? widths.filter((w) => w <= f.bild!.width) : [];
+---
+
+{
+  f.bild ? (
+    <Picture
+      src={f.bild}
+      alt={f.alt}
+      formats={['avif', 'webp']}
+      widths={breiten.length ? breiten : [f.bild.width]}
+      sizes={sizes}
+      class:list={['foto', klasse]}
+      pictureAttributes={{ class: 'foto-rahmen' }}
+      loading={oben ? 'eager' : 'lazy'}
+      fetchpriority={oben ? 'high' : undefined}
+    />
+  ) : (
+    <FotoPlatzhalter text={f.zeigt} class:list={['foto', klasse]} />
+  )
+}

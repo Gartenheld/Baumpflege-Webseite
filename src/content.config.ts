@@ -12,7 +12,7 @@ const karte = z.object({ titel: z.string(), text: z.string() });
 
 const leistungen = defineCollection({
   loader: glob({ pattern: '[^_]*.md', base: './src/inhalte/leistungen' }),
-  schema: ({ image }) =>
+  schema: () =>
     z.object({
       titel: z.string().min(3),
       kurz: z.string().min(20).max(160, 'Der Kurztext soll höchstens 160 Zeichen haben.'),
@@ -27,13 +27,13 @@ const leistungen = defineCollection({
       // Nutzen für den Kunden, 3 oder 4 Punkte
       vorteile: z.array(karte).min(3).max(4),
       // Abschnitt „Was kostet …?“: Preisfaktoren ohne Zahlen
+      // Überschrift über den häufigen Fragen auf der Leistungsseite, z. B. „Fragen zur Baumfällung“
+      fragenTitel: z.string().optional(),
       kosten: z.object({
         frage: z.string().endsWith('?'),
         einleitung: z.string(),
         faktoren: z.array(karte).min(3),
       }),
-      bild: image().optional(),
-      bildAlt: z.string().min(10).optional(),
     }),
 });
 

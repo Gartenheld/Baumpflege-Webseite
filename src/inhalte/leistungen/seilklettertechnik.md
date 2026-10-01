@@ -17,6 +17,7 @@ vorteile:
     text: "Direkt in der Krone setzen wir jeden Schnitt genau dort, wo er hingehört."
   - titel: "Leise Arbeit"
     text: "Mit Handsäge und Astschere arbeiten wir in der Krone ohne Motorenlärm."
+fragenTitel: "Fragen zur Seilklettertechnik"
 kosten:
   frage: "Was kosten Arbeiten mit Seilklettertechnik?"
   einleitung: "Der Aufwand hängt vom Baum und von den gewünschten Arbeiten ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot."

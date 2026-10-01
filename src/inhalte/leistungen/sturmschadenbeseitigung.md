@@ -16,6 +16,7 @@ vorteile:
     text: "Äste und Kronenholz häckseln wir vor Ort, das Schnittgut fahren wir ab. Danach ist Ihr Grundstück wieder nutzbar."
   - titel: "Ehrliche Auskunft"
     text: "Sie erfahren offen, wann wir kommen können und welche Arbeiten mit unseren Mitteln möglich sind."
+fragenTitel: "Fragen zur Sturmschadenbeseitigung"
 kosten:
   frage: "Was kostet die Beseitigung eines Sturmschadens?"
   einleitung: "Das hängt stark davon ab, was der Sturm angerichtet hat. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot."

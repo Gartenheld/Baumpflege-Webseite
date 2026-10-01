@@ -16,6 +16,7 @@ vorteile:
     text: "Heckenschnitt und Zweige häckseln wir vor Ort und fahren sie ab. Auf Wunsch bleibt Mulch für Ihre Gehölzflächen."
   - titel: "Kleine Projekte ohne großes Gerät"
     text: "Überschaubare Arbeiten im Garten erledigen wir ohne schwere Maschinen, die Rasen und Beete beanspruchen."
+fragenTitel: "Fragen zu Hecke und Landschaftspflege"
 kosten:
   frage: "Was kosten Heckenschnitt und Gehölzpflege?"
   einleitung: "Der Aufwand hängt von Größe, Zustand und Zugänglichkeit ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot."

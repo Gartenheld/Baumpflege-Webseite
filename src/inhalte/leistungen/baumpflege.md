@@ -16,6 +16,7 @@ vorteile:
     text: "So wenig wie möglich, so viel wie nötig. Das schont den Baum und erhält seine natürliche Form."
   - titel: "Sauber hinterlassen"
     text: "Das Schnittgut häckseln wir vor Ort mit unserem eigenen Häcksler und fahren es ab. Auf Wunsch bleibt es als Mulch bei Ihnen."
+fragenTitel: "Fragen zur Baumpflege"
 kosten:
   frage: "Was kostet Baumpflege?"
   einleitung: "Die Kosten hängen davon ab, was Ihr Baum braucht und wie gut er erreichbar ist. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot."

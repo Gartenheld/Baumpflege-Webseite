@@ -1,7 +1,7 @@
 ---
 // Leistungen als Karten: Schwerpunkte groß, weitere kompakt. Optional eine Leistung ausblenden (die aktuelle Seite).
 import Icon from './Icon.astro';
-import FotoPlatzhalter from './FotoPlatzhalter.astro';
+import Foto from './Foto.astro';
 import { sichtbareLeistungen, leistungsUrl } from '../lib/inhalte';
 
 interface Props {
@@ -20,7 +20,7 @@ const weitere = kompakt ? leistungen : leistungen.filter((l) => !l.data.schwerpu
     <div class="schwerpunkte">
       {schwerpunkte.map((l) => (
         <article class="karte karte--gross">
-          <FotoPlatzhalter text={l.data.titel} class="karte__bild" />
+          <Foto name={`leistung-${l.id}`} class="karte__bild" sizes="(min-width: 75rem) 37rem, (min-width: 48rem) 50vw, 100vw" />
           <div class="karte__text">
             <h3>
               <a href={leistungsUrl(l.id)}>{l.data.titel}</a>

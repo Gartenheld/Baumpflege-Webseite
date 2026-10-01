@@ -16,6 +16,7 @@ vorteile:
     text: "Der Häcksler gehört zu unserer Ausstattung. Wir sind nicht auf Leihgeräte angewiesen."
   - titel: "Abtransport auf Wunsch"
     text: "Was Sie nicht als Mulch behalten möchten, laden wir auf unseren Pritschenwagen mit Kipper und fahren es ab."
+fragenTitel: "Fragen zu Häckselarbeiten"
 kosten:
   frage: "Was kosten Häckselarbeiten?"
   einleitung: "Der Preis richtet sich nach Menge und Aufwand. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot."

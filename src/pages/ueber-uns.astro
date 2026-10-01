@@ -2,7 +2,7 @@
 import Basis from '../layouts/Basis.astro';
 import Seitenkopf from '../components/Seitenkopf.astro';
 import Karten from '../components/Karten.astro';
-import FotoPlatzhalter from '../components/FotoPlatzhalter.astro';
+import Foto from '../components/Foto.astro';
 import Qualifikation from '../components/start/Qualifikation.astro';
 import KontaktAufruf from '../components/start/KontaktAufruf.astro';
 import Icon from '../components/Icon.astro';
@@ -15,7 +15,7 @@ const { Content } = await render(s);
 ---
 
 <Basis title={s.data.seitentitel} description={s.data.beschreibung}>
-  <Seitenkopf pfad={[{ titel: 'Über uns' }]} kicker={s.data.kicker} titel={s.data.h1} einleitung={s.data.einleitung} foto="bei der Arbeit, mit Ausrüstung" />
+  <Seitenkopf pfad={[{ titel: 'Über uns' }]} kicker={s.data.kicker} titel={s.data.h1} einleitung={s.data.einleitung} foto="ueber-uns" />
 
   {
     s.data.karten.length > 0 && (
@@ -34,7 +34,7 @@ const { Content } = await render(s);
     <div class="huelle raster">
       <div class="prosa"><Content /></div>
       <aside class="ansprechpartner" aria-labelledby="ansprechpartner-titel">
-        <FotoPlatzhalter text="Arbeitsfoto mit Häcksler oder Pritschenwagen" class="bild" />
+        <Foto name="ueber-uns-ausstattung" class="bild" sizes="(min-width: 75rem) 26rem, (min-width: 60rem) 35vw, 100vw" />
         <div class="karte">
           <p class="kicker">Ihr Ansprechpartner</p>
           <h2 id="ansprechpartner-titel">{betrieb.inhaber}</h2>

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/formular-php.mjs",
+    "build": "astro build && node scripts/formular-php.mjs && node scripts/originale-entfernen.mjs && node scripts/pruefe-seiten.mjs",
     "preview": "astro preview",
     "check": "astro check"
   },

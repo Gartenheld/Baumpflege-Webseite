@@ -16,6 +16,7 @@ vorteile:
     text: "Manche Baumarten treiben aus dem Stumpf immer wieder aus. Ist der Wurzelstock entfernt, entfallen diese Stockaustriebe."
   - titel: "Sauberer Abschluss"
     text: "Das Loch wird verfüllt und eingeebnet, Späne und Wurzelreste nehmen wir mit oder lassen sie auf Wunsch als Mulch da."
+fragenTitel: "Fragen zur Wurzelstockentfernung"
 kosten:
   frage: "Was kostet es, einen Wurzelstock zu entfernen?"
   einleitung: "Der Aufwand hängt vor allem vom Stumpf und seiner Lage ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot."

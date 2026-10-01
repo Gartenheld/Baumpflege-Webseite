@@ -1,12 +1,12 @@
 ---
 import Icon from '../Icon.astro';
-import FotoPlatzhalter from '../FotoPlatzhalter.astro';
+import Foto from '../Foto.astro';
 import { betrieb, telefonLink } from '../../config/betrieb';
 ---
 
 <section class="einstieg" aria-labelledby="einstieg-titel">
   <div class="einstieg__bild">
-    <FotoPlatzhalter text="großes eigenes Foto, zum Beispiel Baumkrone bei der Arbeit" />
+    <Foto name="startseite" oben sizes="(min-width: 60rem) 46vw, 100vw" widths={[640, 960, 1280, 1920, 2560]} />
   </div>
   <div class="huelle einstieg__raster">
     <div class="einstieg__text">
@@ -35,7 +35,7 @@ import { betrieb, telefonLink } from '../../config/betrieb';
     background: var(--sand);
   }
 
-  .einstieg__bild :global(.foto-platzhalter) {
+  .einstieg__bild :global(.foto) {
     aspect-ratio: 16 / 9;
     width: 100%;
   }
@@ -109,7 +109,7 @@ import { betrieb, telefonLink } from '../../config/betrieb';
       inset: 0 0 0 54%;
     }
 
-    .einstieg__bild :global(.foto-platzhalter) {
+    .einstieg__bild :global(.foto) {
       aspect-ratio: auto;
       height: 100%;
       border-radius: 0;
