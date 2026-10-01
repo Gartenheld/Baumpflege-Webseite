@@ -1,0 +1,68 @@
+---
+import Basis from '../../layouts/Basis.astro';
+import Seitenkopf from '../../components/Seitenkopf.astro';
+import LeistungsKarten from '../../components/LeistungsKarten.astro';
+import KontaktAufruf from '../../components/start/KontaktAufruf.astro';
+import Icon from '../../components/Icon.astro';
+import { render } from 'astro:content';
+import { seite } from '../../lib/inhalte';
+
+const s = await seite('leistungen');
+const { Content } = await render(s);
+---
+
+<Basis title={s.data.seitentitel} description={s.data.beschreibung}>
+  <Seitenkopf pfad={[{ titel: 'Leistungen' }]} kicker={s.data.kicker} titel={s.data.h1} einleitung={s.data.einleitung} knoepfe />
+
+  <section class="abschnitt" aria-label="Alle Leistungen">
+    <div class="huelle">
+      <LeistungsKarten />
+    </div>
+  </section>
+
+  <section class="abschnitt abschnitt--weiss">
+    <div class="huelle raster">
+      <div class="prosa"><Content /></div>
+      <aside class="gewerbe">
+        <h2>Für Hausverwaltungen und Gewerbe</h2>
+        <p>Regelmäßige Pflege mit festem Ansprechpartner, Rahmenvertrag und schriftlicher Dokumentation.</p>
+        <a class="knopf knopf--hell" href="/gewerbe-hausverwaltungen/">Mehr erfahren <Icon name="pfeil" /></a>
+      </aside>
+    </div>
+  </section>
+
+  <KontaktAufruf />
+</Basis>
+
+<style>
+  .raster {
+    display: grid;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .gewerbe {
+    background: var(--tanne);
+    color: var(--auf-dunkel-weich);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .gewerbe h2 {
+    color: var(--auf-dunkel);
+    font-size: 1.5rem;
+  }
+
+  .gewerbe .knopf {
+    justify-self: start;
+  }
+
+  @media (min-width: 60rem) {
+    .raster {
+      grid-template-columns: 1.6fr 1fr;
+      gap: 4rem;
+    }
+  }
+</style>

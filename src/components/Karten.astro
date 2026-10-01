@@ -1,0 +1,70 @@
+---
+// Raster aus kurzen Karten (Titel und Text), z. B. Nutzen einer Leistung.
+interface Props {
+  karten: { titel: string; text: string }[];
+  dunkel?: boolean;
+  nummeriert?: boolean;
+}
+
+const { karten, dunkel = false, nummeriert = false } = Astro.props;
+---
+
+<ul class:list={['karten', { 'karten--dunkel': dunkel, 'karten--nummer': nummeriert }]}>
+  {
+    karten.map((k) => (
+      <li>
+        <h3>{k.titel}</h3>
+        <p>{k.text}</p>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .karten {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    counter-reset: karte;
+  }
+
+  li {
+    background: var(--weiss);
+    border-radius: var(--radius);
+    padding: 1.4rem 1.5rem;
+    display: grid;
+    gap: 0.45rem;
+    align-content: start;
+    counter-increment: karte;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    color: var(--text-weich);
+    font-size: 1.05rem;
+  }
+
+  .karten--nummer h3::before {
+    content: counter(karte) '. ';
+    color: var(--kupfer-dunkel);
+  }
+
+  .karten--dunkel li {
+    background: transparent;
+    border: 1px solid rgb(243 238 230 / 0.22);
+  }
+
+  .karten--dunkel h3 {
+    color: var(--auf-dunkel);
+  }
+
+  .karten--dunkel p {
+    color: var(--auf-dunkel-weich);
+  }
+</style>

@@ -1,0 +1,118 @@
+---
+import Basis from '../../layouts/Basis.astro';
+import Seitenkopf from '../../components/Seitenkopf.astro';
+import Karte from '../../components/Karte.astro';
+import Icon from '../../components/Icon.astro';
+import KontaktAufruf from '../../components/start/KontaktAufruf.astro';
+import { render } from 'astro:content';
+import { seite, orteSortiert, ortUrl } from '../../lib/inhalte';
+
+const s = await seite('einsatzgebiet');
+const { Content } = await render(s);
+const orte = await orteSortiert();
+---
+
+<Basis title={s.data.seitentitel} description={s.data.beschreibung}>
+  <Seitenkopf pfad={[{ titel: 'Einsatzgebiet' }]} kicker={s.data.kicker} titel={s.data.h1} einleitung={s.data.einleitung} />
+
+  <section class="abschnitt abschnitt--weiss">
+    <div class="huelle raster">
+      <div class="text">
+        <div class="prosa"><Content /></div>
+        <h2 class="orte-titel">Orte im Einsatzgebiet</h2>
+        <ul class="orte">
+          {
+            orte.map((o) => (
+              <li>
+                <a href={ortUrl(o.id)}>
+                  <Icon name="ort" />
+                  <span>
+                    <strong>{o.data.name}</strong>
+                    <span class="entfernung">{o.data.entfernungKm ? `rund ${o.data.entfernungKm} km von Bornheim` : 'Sitz unseres Betriebs'}</span>
+                  </span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+        <p class="hinweis">Ihr Ort ist nicht dabei? Fragen Sie gern nach.</p>
+      </div>
+      <Karte />
+    </div>
+  </section>
+
+  <KontaktAufruf />
+</Basis>
+
+<style>
+  .raster {
+    display: grid;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .text {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .orte-titel {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .orte {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+  }
+
+  .orte a {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    padding: 0.9rem 1rem;
+    background: var(--sand);
+    border-radius: var(--radius-klein);
+    text-decoration: none;
+    color: var(--text);
+    min-height: 3.5rem;
+  }
+
+  .orte a:hover strong {
+    color: var(--kupfer-dunkel);
+    text-decoration: underline;
+  }
+
+  .orte a > span {
+    display: grid;
+  }
+
+  .orte :global(.icon) {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: 0.2rem;
+    color: var(--kupfer);
+    flex-shrink: 0;
+  }
+
+  .entfernung {
+    font-size: 0.95rem;
+    color: var(--text-weich);
+  }
+
+  .hinweis {
+    color: var(--text-weich);
+    font-size: 1rem;
+  }
+
+  @media (min-width: 60rem) {
+    .raster {
+      grid-template-columns: 1fr 1.05fr;
+      gap: 4rem;
+    }
+  }
+</style>

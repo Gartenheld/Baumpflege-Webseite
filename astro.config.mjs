@@ -48,8 +48,8 @@ export default defineConfig({
   },
   integrations: [
     sitemap({
-      // Danke-Seite des Formulars gehört nicht in die Sitemap (sie trägt zusätzlich noindex).
-      filter: (page) => !page.includes('/kontakt/danke/'),
+      // Danke- und Fehlerseite des Formulars gehören nicht in die Sitemap (sie tragen zusätzlich noindex).
+      filter: (page) => !page.includes('/kontakt/danke/') && !page.includes('/kontakt/fehler/'),
     }),
   ],
   markdown: {

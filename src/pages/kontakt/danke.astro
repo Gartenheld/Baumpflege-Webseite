@@ -1,0 +1,48 @@
+---
+import Basis from '../../layouts/Basis.astro';
+import Brotkrumen from '../../components/Brotkrumen.astro';
+import Icon from '../../components/Icon.astro';
+import { betrieb, telefonLink, whatsappLink } from '../../config/betrieb';
+---
+
+<Basis title="Vielen Dank für Ihre Anfrage | Baumpflege Happe" description="Ihre Anfrage an Baumpflege Happe ist angekommen. Wir melden uns mit einer kostenlosen Ersteinschätzung bei Ihnen." noindex>
+  <section class="abschnitt">
+    <div class="huelle text">
+      <Brotkrumen pfad={[{ titel: 'Kontakt', href: '/kontakt/' }, { titel: 'Vielen Dank' }]} />
+      <p class="kicker">Anfrage gesendet</p>
+      <h1>Vielen Dank für Ihre Anfrage</h1>
+      <p class="einleitung">Ihre Nachricht ist bei uns angekommen. Sie erhalten eine kostenlose Ersteinschätzung, {betrieb.antwortzeit}.</p>
+      <h2>So geht es weiter</h2>
+      <ol class="prosa">
+        <li>Wir sehen uns Ihre Angaben und Fotos an.</li>
+        <li>Sie erhalten unsere Ersteinschätzung per E-Mail oder Telefon. Falls nötig, vereinbaren wir einen Termin vor Ort.</li>
+        <li>Danach bekommen Sie ein schriftliches Angebot.</li>
+      </ol>
+      <p>Haben Sie etwas vergessen oder möchten Fotos nachreichen?</p>
+      <div class="knoepfe">
+        <a class="knopf knopf--rahmen" href={whatsappLink}><Icon name="whatsapp" />Per WhatsApp nachreichen</a>
+        <a class="knopf knopf--rahmen" href={telefonLink}><Icon name="telefon" />Anrufen</a>
+      </div>
+      <p><a href="/">Zur Startseite</a></p>
+    </div>
+  </section>
+</Basis>
+
+<style>
+  .text {
+    display: grid;
+    gap: 1.1rem;
+    max-width: 46rem;
+  }
+
+  h2 {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .knoepfe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+</style>

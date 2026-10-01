@@ -268,3 +268,54 @@ svg {
     --handyleiste: calc(3.75rem + env(safe-area-inset-bottom));
   }
 }
+
+/* Fließtext aus Markdown (Leistungs-, Orts- und Inhaltsseiten) */
+.prosa {
+  max-width: 44rem;
+}
+
+.prosa > * + * {
+  margin-top: 1.1em;
+}
+
+.prosa h2 {
+  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.05rem);
+  margin-top: 2.2em;
+}
+
+.prosa h3 {
+  margin-top: 1.8em;
+}
+
+.prosa > :first-child {
+  margin-top: 0;
+}
+
+.prosa ul,
+.prosa ol {
+  padding-left: 1.4em;
+}
+
+.prosa li + li {
+  margin-top: 0.45em;
+}
+
+.prosa li::marker {
+  color: var(--kupfer-dunkel);
+  font-weight: 700;
+}
+
+.prosa strong {
+  color: var(--tanne);
+}
+
+/* Raster für Abschnitte mit Überschrift */
+.abschnittskopf {
+  display: grid;
+  gap: 0.9rem;
+  margin-bottom: 2.25rem;
+}
+
+.abschnitt--weiss {
+  background: var(--weiss);
+}

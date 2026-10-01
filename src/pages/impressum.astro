@@ -1,0 +1,33 @@
+---
+// Impressum. Alle Angaben kommen aus src/config/betrieb.ts (dort die Platzhalter ersetzen).
+import Basis from '../layouts/Basis.astro';
+import Seitenkopf from '../components/Seitenkopf.astro';
+import { betrieb, telefonLink, mailLink } from '../config/betrieb';
+---
+
+<Basis title="Impressum | Baumpflege Happe, Bornheim" description="Impressum von Baumpflege Happe, Inhaber Heinrich Happe, Schebenstraße 6, 53332 Bornheim: Anschrift, Kontakt und Angaben nach § 5 DDG.">
+  <Seitenkopf pfad={[{ titel: 'Impressum' }]} kicker="Rechtliches" titel="Impressum" />
+  <section class="abschnitt abschnitt--weiss">
+    <div class="huelle prosa">
+      <h2>Angaben gemäß § 5 DDG</h2>
+      <p>
+        {betrieb.name}<br />
+        Inhaber: {betrieb.inhaber} ({betrieb.rechtsform})<br />
+        {betrieb.adresse.strasse}<br />
+        {betrieb.adresse.plz} {betrieb.adresse.ort}
+      </p>
+
+      <h2>Kontakt</h2>
+      <p>
+        Telefon: <a href={telefonLink}>{betrieb.telefon.anzeige}</a><br />
+        E-Mail: <a href={mailLink}>{betrieb.email}</a>
+      </p>
+
+      <h2>Umsatzsteuer</h2>
+      <p>Umsatzsteuer-Identifikationsnummer nach § 27a Umsatzsteuergesetz: {betrieb.ustId}</p>
+
+      <h2>Verbraucherstreitbeilegung</h2>
+      <p>[Platzhalter: Angabe nach § 36 VSBG prüfen, z. B. „Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.“]</p>
+    </div>
+  </section>
+</Basis>

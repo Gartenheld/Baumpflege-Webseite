@@ -1,0 +1,19 @@
+# Im Ordner /anfrage/ ist nur der Formular-Empfänger erreichbar.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^lib/ - [F,L]
+  RewriteCond %{REQUEST_URI} !/anfrage/senden\.php$
+  RewriteRule ^ - [F,L]
+</IfModule>
+<IfModule mod_headers.c>
+  Header always set X-Robots-Tag "noindex, nofollow"
+  Header always set Cache-Control "no-store"
+</IfModule>
+
+# Upload-Grenzen für das Formular (Fotos). Gilt nur auf LiteSpeed-Servern wie bei Hostinger;
+# zusätzlich im hPanel unter PHP-Konfiguration prüfen (Hostinger kappt Werte über dem Tarifmaximum).
+<IfModule LiteSpeed>
+  php_value upload_max_filesize 12M
+  php_value post_max_size 20M
+  php_value max_file_uploads 10
+</IfModule>

@@ -1,0 +1,423 @@
+---
+// Kontaktseite mit Anfrageformular. Nach dem Build macht scripts/formular-php.mjs daraus eine index.php,
+// die beim Aufruf einen frischen, signierten Zeitstempel einsetzt (Spamschutz ohne Cookies).
+import Basis from '../../layouts/Basis.astro';
+import Seitenkopf from '../../components/Seitenkopf.astro';
+import Karten from '../../components/Karten.astro';
+import Icon from '../../components/Icon.astro';
+import { render } from 'astro:content';
+import { seite, sichtbareLeistungen } from '../../lib/inhalte';
+import { betrieb, telefonLink, whatsappLink, mailLink } from '../../config/betrieb';
+
+const s = await seite('kontakt');
+const { Content } = await render(s);
+const leistungen = await sichtbareLeistungen();
+---
+
+<Basis title={s.data.seitentitel} description={s.data.beschreibung}>
+  <Seitenkopf pfad={[{ titel: 'Kontakt' }]} kicker={s.data.kicker} titel={s.data.h1} einleitung={s.data.einleitung} />
+
+  <section class="abschnitt abschnitt--weiss" aria-label="Anfrageformular und Kontakt">
+    <div class="huelle raster">
+      <form class="formular" method="post" action="/anfrage/senden.php" enctype="multipart/form-data" data-anfrage>
+        <input type="hidden" name="t" value="__ANFRAGE_TOKEN__" />
+
+        <div class="feld">
+          <label for="name">Name <span class="pflicht">(Pflichtfeld)</span></label>
+          <input id="name" name="name" type="text" autocomplete="name" required maxlength="100" />
+        </div>
+
+        <div class="zwei">
+          <div class="feld">
+            <label for="email">E-Mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" maxlength="254" aria-describedby="erreichbar-hinweis" />
+          </div>
+          <div class="feld">
+            <label for="telefon">Telefon</label>
+            <input id="telefon" name="telefon" type="tel" autocomplete="tel" maxlength="40" aria-describedby="erreichbar-hinweis" />
+          </div>
+        </div>
+        <p class="hinweis" id="erreichbar-hinweis">Bitte geben Sie E-Mail oder Telefon an, damit wir Ihnen antworten können.</p>
+
+        <div class="zwei">
+          <div class="feld">
+            <label for="ort">Ort oder PLZ des Grundstücks</label>
+            <input id="ort" name="ort" type="text" autocomplete="postal-code" maxlength="100" />
+          </div>
+          <div class="feld">
+            <label for="leistung">Worum geht es?</label>
+            <select id="leistung" name="leistung">
+              <option value="">Bitte wählen (optional)</option>
+              {leistungen.map((l) => <option value={l.data.titel} data-id={l.id}>{l.data.titel}</option>)}
+              <option value="Regelmäßige Pflege für Gewerbe oder Hausverwaltung" data-id="gewerbe">Regelmäßige Pflege für Gewerbe oder Hausverwaltung</option>
+              <option value="Sonstiges">Sonstiges</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="feld">
+          <label for="nachricht">Ihre Nachricht <span class="pflicht">(Pflichtfeld)</span></label>
+          <textarea id="nachricht" name="nachricht" rows="6" required minlength="10" maxlength="5000" placeholder="Zum Beispiel: Welcher Baum, was soll gemacht werden, gibt es Besonderheiten bei der Zufahrt?"></textarea>
+        </div>
+
+        <div class="feld">
+          <label for="fotos">Fotos (optional, bis zu 8 Bilder)</label>
+          <input id="fotos" name="fotos[]" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" multiple aria-describedby="fotos-hinweis" />
+          <p class="hinweis" id="fotos-hinweis">JPEG, PNG, WebP oder HEIC, je Foto höchstens 10 MB, zusammen höchstens 15 MB. Große Handyfotos werden beim Senden automatisch verkleinert.</p>
+          <p class="hinweis fotos-status" data-fotos-status aria-live="polite"></p>
+        </div>
+
+        <fieldset class="rueckruf">
+          <legend>Rückruf</legend>
+          <label class="haken">
+            <input type="checkbox" name="rueckruf" value="ja" data-rueckruf />
+            <span>Bitte rufen Sie mich zurück</span>
+          </label>
+          <div class="feld">
+            <label for="rueckruf_zeit">Am besten erreichbar</label>
+            <select id="rueckruf_zeit" name="rueckruf_zeit">
+              <option value="egal">egal</option>
+              <option value="vormittags">vormittags</option>
+              <option value="nachmittags">nachmittags</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- Spamschutz: Dieses Feld ist für Menschen unsichtbar und muss leer bleiben. -->
+        <div class="honig" aria-hidden="true">
+          <label for="website">Website (bitte leer lassen)</label>
+          <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <p class="datenschutz">
+          Ihre Angaben und Fotos verwenden wir nur, um Ihre Anfrage zu beantworten. Mehr dazu in der
+          <a href="/datenschutz/">Datenschutzerklärung</a>.
+        </p>
+
+        <button class="knopf knopf--haupt" type="submit" data-senden><Icon name="kamera" />Anfrage senden</button>
+      </form>
+
+      <aside class="wege" aria-labelledby="wege-titel">
+        <h2 id="wege-titel">Direkter Kontakt</h2>
+        <ul>
+          <li>
+            <Icon name="telefon" />
+            <div>
+              <span class="etikett">Telefon</span>
+              <a href={telefonLink}>{betrieb.telefon.anzeige}</a>
+              <span class="zusatz">{betrieb.erreichbarkeit}</span>
+            </div>
+          </li>
+          <li>
+            <Icon name="whatsapp" />
+            <div>
+              <span class="etikett">WhatsApp</span>
+              <a href={whatsappLink}>Nachricht mit Fotos per WhatsApp</a>
+            </div>
+          </li>
+          <li>
+            <Icon name="mail" />
+            <div>
+              <span class="etikett">E-Mail</span>
+              <a href={mailLink}>{betrieb.email}</a>
+            </div>
+          </li>
+          <li>
+            <Icon name="uhr" />
+            <div>
+              <span class="etikett">Antwort</span>
+              <span>Ersteinschätzung kostenlos, {betrieb.antwortzeit}</span>
+            </div>
+          </li>
+        </ul>
+        <div class="prosa"><Content /></div>
+      </aside>
+    </div>
+  </section>
+
+  {
+    s.data.karten.length > 0 && (
+      <section class="abschnitt" aria-labelledby="tipps-titel">
+        <div class="huelle">
+          <div class="abschnittskopf">
+            <p class="kicker">Fotos</p>
+            <h2 id="tipps-titel">Diese Fotos helfen uns</h2>
+          </div>
+          <Karten karten={s.data.karten} nummeriert />
+        </div>
+      </section>
+    )
+  }
+</Basis>
+
+<script>
+  // Fortschreitende Verbesserung: Das Formular funktioniert auch ohne dieses Skript.
+  const formular = document.querySelector<HTMLFormElement>('[data-anfrage]');
+  if (formular) {
+    const fotos = formular.querySelector<HTMLInputElement>('#fotos')!;
+    const status = formular.querySelector<HTMLElement>('[data-fotos-status]')!;
+    const telefon = formular.querySelector<HTMLInputElement>('#telefon')!;
+    const email = formular.querySelector<HTMLInputElement>('#email')!;
+    const rueckruf = formular.querySelector<HTMLInputElement>('[data-rueckruf]')!;
+    const senden = formular.querySelector<HTMLButtonElement>('[data-senden]')!;
+    const leistung = formular.querySelector<HTMLSelectElement>('#leistung')!;
+
+    // Leistung aus dem Link übernehmen (?leistung=baumfaellung oder ?anliegen=gewerbe)
+    const parameter = new URLSearchParams(location.search);
+    const gewuenscht = parameter.get('leistung') ?? parameter.get('anliegen');
+    const option = gewuenscht ? [...leistung.options].find((o) => o.dataset.id === gewuenscht) : undefined;
+    if (option) option.selected = true;
+
+    // Bei Rückrufwunsch ist die Telefonnummer Pflicht, sonst E-Mail oder Telefon
+    const pruefeErreichbarkeit = () => {
+      telefon.required = rueckruf.checked;
+      const leer = !email.value.trim() && !telefon.value.trim();
+      email.setCustomValidity(leer && !rueckruf.checked ? 'Bitte geben Sie E-Mail oder Telefon an.' : '');
+    };
+    [rueckruf, email, telefon].forEach((el) => el.addEventListener('input', pruefeErreichbarkeit));
+    pruefeErreichbarkeit();
+
+    // Große Fotos im Browser verkleinern (lange Kante 2560 px), dabei fallen auch GPS-Daten weg
+    const MAX_KANTE = 2560;
+    const MAX_FOTOS = 8;
+    const verkleinern = async (datei: File): Promise<File> => {
+      if (datei.size < 1.5 * 1024 * 1024) return datei;
+      try {
+        const bild = await createImageBitmap(datei, { imageOrientation: 'from-image' });
+        const faktor = Math.min(1, MAX_KANTE / Math.max(bild.width, bild.height));
+        const leinwand = document.createElement('canvas');
+        leinwand.width = Math.round(bild.width * faktor);
+        leinwand.height = Math.round(bild.height * faktor);
+        leinwand.getContext('2d')!.drawImage(bild, 0, 0, leinwand.width, leinwand.height);
+        const blob = await new Promise<Blob | null>((ok) => leinwand.toBlob(ok, 'image/jpeg', 0.85));
+        if (!blob || blob.size >= datei.size) return datei;
+        return new File([blob], datei.name.replace(/\.\w+$/, '') + '.jpg', { type: 'image/jpeg' });
+      } catch {
+        return datei; // z. B. HEIC in Browsern ohne HEIC-Unterstützung: Original senden
+      }
+    };
+
+    fotos.addEventListener('change', async () => {
+      const dateien = [...(fotos.files ?? [])];
+      if (dateien.length > MAX_FOTOS) {
+        status.textContent = `Bitte wählen Sie höchstens ${MAX_FOTOS} Fotos aus.`;
+        fotos.value = '';
+        return;
+      }
+      if (!dateien.length || typeof DataTransfer === 'undefined') return;
+      status.textContent = 'Fotos werden vorbereitet …';
+      senden.disabled = true;
+      const fertig = await Promise.all(dateien.map(verkleinern));
+      const transfer = new DataTransfer();
+      fertig.forEach((d) => transfer.items.add(d));
+      fotos.files = transfer.files;
+      const mb = fertig.reduce((s, d) => s + d.size, 0) / 1024 / 1024;
+      status.textContent = `${fertig.length} ${fertig.length === 1 ? 'Foto' : 'Fotos'} ausgewählt, zusammen ${mb.toFixed(1).replace('.', ',')} MB.`;
+      senden.disabled = false;
+    });
+
+    // Doppeltes Absenden verhindern
+    formular.addEventListener('submit', () => {
+      senden.disabled = true;
+      senden.lastChild!.textContent = 'Wird gesendet …';
+    });
+  }
+</script>
+
+<style>
+  .raster {
+    display: grid;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .formular {
+    display: grid;
+    gap: 1.25rem;
+    max-width: 44rem;
+  }
+
+  .feld {
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  .zwei {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  label,
+  legend {
+    font-weight: 700;
+    color: var(--tanne);
+  }
+
+  .pflicht {
+    font-weight: 400;
+    color: var(--text-weich);
+    font-size: 0.95rem;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'],
+  select,
+  textarea {
+    width: 100%;
+    min-height: 3.1rem;
+    padding: 0.7rem 0.9rem;
+    border: 1.5px solid #9aa5a2;
+    border-radius: var(--radius-klein);
+    background: var(--weiss);
+    font: inherit;
+    color: var(--text);
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 3px solid var(--kupfer);
+    outline-offset: 1px;
+    border-color: var(--tanne);
+  }
+
+  input[type='file'] {
+    font: inherit;
+    padding: 0.75rem;
+    border: 1.5px dashed #9aa5a2;
+    border-radius: var(--radius-klein);
+    background: var(--sand);
+    width: 100%;
+  }
+
+  .hinweis {
+    font-size: 0.95rem;
+    color: var(--text-weich);
+  }
+
+  .rueckruf {
+    border: 1px solid var(--linie);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem 1.25rem;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .haken {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    font-weight: 600;
+    color: var(--text);
+    min-height: 2.75rem;
+  }
+
+  .haken input {
+    width: 1.35rem;
+    height: 1.35rem;
+    accent-color: var(--tanne);
+  }
+
+  .honig {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .datenschutz {
+    font-size: 0.95rem;
+    color: var(--text-weich);
+  }
+
+  .formular .knopf {
+    justify-self: start;
+  }
+
+  button[disabled] {
+    opacity: 0.7;
+    cursor: progress;
+  }
+
+  .wege {
+    background: var(--sand);
+    border-radius: var(--radius);
+    padding: clamp(1.4rem, 3vw, 2rem);
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .wege h2 {
+    font-size: 1.5rem;
+  }
+
+  .wege ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1.1rem;
+  }
+
+  .wege li {
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+  }
+
+  .wege li > :global(.icon) {
+    width: 1.4rem;
+    height: 1.4rem;
+    color: var(--kupfer);
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+  }
+
+  .wege div {
+    display: grid;
+    overflow-wrap: anywhere;
+  }
+
+  .etikett {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-weich);
+  }
+
+  .wege a {
+    font-weight: 700;
+  }
+
+  .zusatz {
+    color: var(--text-weich);
+    font-size: 1rem;
+  }
+
+  @media (min-width: 40rem) {
+    .zwei {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 29.99rem) {
+    .formular .knopf {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .raster {
+      grid-template-columns: 1.5fr 1fr;
+      gap: 4rem;
+    }
+  }
+</style>

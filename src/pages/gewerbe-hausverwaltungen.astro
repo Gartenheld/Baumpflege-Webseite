@@ -1,0 +1,70 @@
+---
+import Basis from '../layouts/Basis.astro';
+import Seitenkopf from '../components/Seitenkopf.astro';
+import Karten from '../components/Karten.astro';
+import FaqListe from '../components/FaqListe.astro';
+import KontaktAufruf from '../components/start/KontaktAufruf.astro';
+import { render } from 'astro:content';
+import { seite, faqZuThemen } from '../lib/inhalte';
+
+const s = await seite('gewerbe-hausverwaltungen');
+const { Content } = await render(s);
+const fragen = await faqZuThemen(['haftung']);
+---
+
+<Basis title={s.data.seitentitel} description={s.data.beschreibung}>
+  <Seitenkopf
+    pfad={[{ titel: 'Gewerbe und Hausverwaltungen' }]}
+    kicker={s.data.kicker}
+    titel={s.data.h1}
+    einleitung={s.data.einleitung}
+    knoepfe
+    anfrageLink="/kontakt/?anliegen=gewerbe"
+    foto="gepflegte Bäume an einer Wohnanlage"
+  />
+
+  <section class="abschnitt abschnitt--weiss" aria-labelledby="nutzen-titel">
+    <div class="huelle">
+      <div class="abschnittskopf">
+        <h2 id="nutzen-titel">Ihr Nutzen</h2>
+      </div>
+      <Karten karten={s.data.karten} />
+    </div>
+  </section>
+
+  <section class="abschnitt">
+    <div class="huelle">
+      <div class="prosa"><Content /></div>
+    </div>
+  </section>
+
+  {
+    fragen.length > 0 && (
+      <section class="abschnitt abschnitt--weiss" aria-labelledby="faq-titel">
+        <div class="huelle">
+          <div class="abschnittskopf">
+            <p class="kicker">Häufige Fragen</p>
+            <h2 id="faq-titel">Haftung und Verkehrssicherungspflicht</h2>
+          </div>
+          <FaqListe eintraege={fragen} />
+        </div>
+      </section>
+    )
+  }
+
+  <KontaktAufruf
+    titel="Pflege für Ihre Objekte anfragen"
+    text="Nennen Sie uns Ihre Objekte und schicken Sie Fotos oder einen Lageplan. Sie erhalten einen Vorschlag für die regelmäßige Pflege und ein schriftliches Angebot."
+    anfrageLink="/kontakt/?anliegen=gewerbe"
+  />
+</Basis>
+
+<style>
+  .abschnitt :global(.karten) li {
+    background: var(--sand);
+  }
+
+  .abschnitt--weiss :global(.faq details) {
+    background: var(--sand);
+  }
+</style>

@@ -1,5 +1,5 @@
 // Hilfsfunktionen für Inhalte: welche Leistungen, Qualifikationen und Bewertungen sichtbar sind.
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import { PUBLIC_NOINDEX } from 'astro:env/client';
 
 /** Kennungen der Qualifikationen, die tatsächlich vorhanden sind. */
@@ -32,3 +32,56 @@ export async function orteSortiert() {
 
 export const leistungsUrl = (id: string) => `/leistungen/${id}/`;
 export const ortUrl = (id: string) => `/einsatzgebiet/${id}/`;
+
+/** Referenzen: live nur freigegebene, in der Vorschau auch Platzhalter. Optional nach Ort gefiltert. */
+export async function sichtbareReferenzen(ort?: string) {
+  const alle = (await getCollection('referenzen', ({ data }) => !ort || data.ort === ort)).sort((a, b) =>
+    b.data.datum.localeCompare(a.data.datum),
+  );
+  const freigegeben = alle.filter((r) => r.data.veroeffentlichen);
+  return { liste: freigegeben.length > 0 || !PUBLIC_NOINDEX ? freigegeben : alle, nurPlatzhalter: freigegeben.length === 0 };
+}
+
+const THEMEN = ['genehmigung', 'kosten', 'nachbarn', 'haftung', 'ablauf', 'leistung'] as const;
+export const themenTitel: Record<(typeof THEMEN)[number], string> = {
+  genehmigung: 'Fällgenehmigung und Schonzeit',
+  kosten: 'Kosten und Abrechnung',
+  nachbarn: 'Nachbarbäume und überhängende Äste',
+  haftung: 'Haftung und Verkehrssicherungspflicht',
+  ablauf: 'Anfrage und Ablauf',
+  leistung: 'Zu unseren Leistungen',
+};
+const themaRang = (t: string) => THEMEN.indexOf(t as (typeof THEMEN)[number]);
+
+/** Fragen, die auf einer Leistungsseite erscheinen: erst die zur Leistung, dann allgemeine Themen. */
+export async function faqFuerLeistung(id: string) {
+  const alle = await getCollection('faq', ({ data }) => data.leistungen.includes(id));
+  return alle.sort(
+    (a, b) =>
+      Number(b.data.thema === 'leistung') - Number(a.data.thema === 'leistung') ||
+      themaRang(a.data.thema) - themaRang(b.data.thema) ||
+      a.data.reihenfolge - b.data.reihenfolge,
+  );
+}
+
+/** Fragen für die FAQ-Seite, gruppiert nach Thema. */
+export async function faqNachThema() {
+  const alle = await getCollection('faq', ({ data }) => data.aufFaqSeite);
+  return THEMEN.map((thema) => ({
+    thema,
+    titel: themenTitel[thema],
+    fragen: alle.filter((f) => f.data.thema === thema).sort((a, b) => a.data.reihenfolge - b.data.reihenfolge),
+  })).filter((g) => g.fragen.length > 0);
+}
+
+/** Fragen zu bestimmten Themen (z. B. Haftung auf der Gewerbe-Seite). */
+export async function faqZuThemen(themen: string[]) {
+  const alle = await getCollection('faq', ({ data }) => themen.includes(data.thema));
+  return alle.sort((a, b) => themaRang(a.data.thema) - themaRang(b.data.thema) || a.data.reihenfolge - b.data.reihenfolge);
+}
+
+export async function seite(id: string) {
+  const eintrag = await getEntry('seiten', id);
+  if (!eintrag) throw new Error(`Seitentext src/inhalte/seiten/${id}.md fehlt.`);
+  return eintrag;
+}

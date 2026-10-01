@@ -1,19 +1,28 @@
 ---
 import Icon from '../Icon.astro';
 import { betrieb, telefonLink, whatsappLink, mailLink } from '../../config/betrieb';
+
+interface Props {
+  titel?: string;
+  text?: string;
+  anfrageLink?: string;
+}
+
+const {
+  titel = 'Schicken Sie uns Fotos Ihres Baumes',
+  text = `Ein paar Fotos und eine kurze Beschreibung genügen. Sie erhalten eine kostenlose Ersteinschätzung, ${betrieb.antwortzeit}.`,
+  anfrageLink = '/kontakt/',
+} = Astro.props;
 ---
 
 <section class="abschnitt kontakt" aria-labelledby="kontakt-titel">
   <div class="huelle raster">
     <div class="text">
       <p class="kicker">Kontakt</p>
-      <h2 id="kontakt-titel">Schicken Sie uns Fotos Ihres Baumes</h2>
-      <p>
-        Ein paar Fotos und eine kurze Beschreibung genügen. Sie erhalten eine kostenlose Ersteinschätzung,
-        {betrieb.antwortzeit}.
-      </p>
+      <h2 id="kontakt-titel">{titel}</h2>
+      <p>{text}</p>
       <div class="knoepfe">
-        <a class="knopf knopf--haupt" href="/kontakt/"><Icon name="kamera" />Anfrage mit Fotos senden</a>
+        <a class="knopf knopf--haupt" href={anfrageLink}><Icon name="kamera" />Anfrage mit Fotos senden</a>
         <a class="knopf knopf--hell" href={whatsappLink}><Icon name="whatsapp" />Per WhatsApp</a>
       </div>
     </div>

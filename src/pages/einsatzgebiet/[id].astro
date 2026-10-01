@@ -1,0 +1,94 @@
+---
+// Vorlage für die Ortsseiten. Inhalte: src/inhalte/orte/<ort>.md (jede Seite mit eigenem Text).
+import Basis from '../../layouts/Basis.astro';
+import Seitenkopf from '../../components/Seitenkopf.astro';
+import Karte from '../../components/Karte.astro';
+import BaumschutzHinweis from '../../components/BaumschutzHinweis.astro';
+import LeistungsKarten from '../../components/LeistungsKarten.astro';
+import ReferenzKarten from '../../components/ReferenzKarten.astro';
+import KontaktAufruf from '../../components/start/KontaktAufruf.astro';
+import { getCollection, render } from 'astro:content';
+import { sichtbareReferenzen } from '../../lib/inhalte';
+
+export async function getStaticPaths() {
+  const orte = await getCollection('orte');
+  return orte.map((ort) => ({ params: { id: ort.id }, props: { ort } }));
+}
+
+const { ort } = Astro.props;
+const d = ort.data;
+const { Content } = await render(ort);
+const { liste: referenzen, nurPlatzhalter } = await sichtbareReferenzen(ort.id);
+---
+
+<Basis title={d.seitentitel} description={d.beschreibung}>
+  <Seitenkopf
+    pfad={[{ titel: 'Einsatzgebiet', href: '/einsatzgebiet/' }, { titel: d.name }]}
+    kicker="Einsatzgebiet"
+    titel={d.h1}
+    einleitung={d.einleitung}
+    knoepfe
+  />
+
+  <section class="abschnitt abschnitt--weiss">
+    <div class="huelle raster">
+      <div class="prosa"><Content /></div>
+      <div class="seite">
+        <Karte hervorheben={ort.id} />
+        <BaumschutzHinweis ort={d.name} status={d.baumschutz.status} stelle={d.baumschutz.stelle} link={d.baumschutz.link} />
+      </div>
+    </div>
+  </section>
+
+  {
+    referenzen.length > 0 && (
+      <section class="abschnitt" aria-labelledby="referenzen-titel">
+        <div class="huelle">
+          <div class="abschnittskopf">
+            <p class="kicker">Referenzen</p>
+            <h2 id="referenzen-titel">Projekte in {d.name}</h2>
+            {nurPlatzhalter && <p class="hinweis">Entwurf: Platzhalter, erscheinen so nicht auf der Live-Seite.</p>}
+          </div>
+          <ReferenzKarten referenzen={referenzen} />
+        </div>
+      </section>
+    )
+  }
+
+  <section class="abschnitt" aria-labelledby="leistungen-titel">
+    <div class="huelle">
+      <div class="abschnittskopf">
+        <p class="kicker">Leistungen</p>
+        <h2 id="leistungen-titel">Unsere Leistungen in {d.name}</h2>
+      </div>
+      <LeistungsKarten kompakt />
+    </div>
+  </section>
+
+  <KontaktAufruf titel={`Anfrage aus ${d.name}`} />
+</Basis>
+
+<style>
+  .raster {
+    display: grid;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .seite {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .hinweis {
+    color: var(--text-weich);
+    font-size: 0.95rem;
+  }
+
+  @media (min-width: 60rem) {
+    .raster {
+      grid-template-columns: 1.15fr 1fr;
+      gap: 4rem;
+    }
+  }
+</style>

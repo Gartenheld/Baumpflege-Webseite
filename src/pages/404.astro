@@ -1,10 +1,37 @@
 ---
 import Basis from '../layouts/Basis.astro';
+import Icon from '../components/Icon.astro';
+import { telefonLink } from '../config/betrieb';
 ---
 
-<Basis title="Seite nicht gefunden | Baumpflege Happe" description="Diese Seite gibt es nicht." noindex>
-  <main>
-    <h1>Seite nicht gefunden</h1>
-    <p><a href="/">Zur Startseite</a></p>
-  </main>
+<Basis title="Seite nicht gefunden | Baumpflege Happe" description="Diese Seite gibt es nicht oder nicht mehr. Hier geht es zur Startseite, zu unseren Leistungen und zum Kontakt." noindex>
+  <section class="abschnitt">
+    <div class="huelle text">
+      <p class="kicker">Fehler 404</p>
+      <h1>Diese Seite gibt es nicht</h1>
+      <p class="einleitung">Vielleicht hat sich die Adresse geändert. Diese Seiten helfen weiter:</p>
+      <ul>
+        <li><a href="/">Startseite</a></li>
+        <li><a href="/leistungen/">Leistungen</a></li>
+        <li><a href="/einsatzgebiet/">Einsatzgebiet</a></li>
+        <li><a href="/kontakt/">Kontakt und Anfrage</a></li>
+      </ul>
+      <p><a class="knopf knopf--rahmen" href={telefonLink}><Icon name="telefon" />Anrufen</a></p>
+    </div>
+  </section>
 </Basis>
+
+<style>
+  .text {
+    display: grid;
+    gap: 1.1rem;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.2em;
+    display: grid;
+    gap: 0.4rem;
+    font-weight: 700;
+  }
+</style>

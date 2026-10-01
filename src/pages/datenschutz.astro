@@ -1,0 +1,17 @@
+---
+// Datenschutzerklärung. Den Text aus dem Generator in src/inhalte/seiten/datenschutz.md einfügen.
+import Basis from '../layouts/Basis.astro';
+import Seitenkopf from '../components/Seitenkopf.astro';
+import { render } from 'astro:content';
+import { seite } from '../lib/inhalte';
+
+const s = await seite('datenschutz');
+const { Content } = await render(s);
+---
+
+<Basis title={s.data.seitentitel} description={s.data.beschreibung}>
+  <Seitenkopf pfad={[{ titel: 'Datenschutz' }]} kicker={s.data.kicker} titel={s.data.h1} einleitung={s.data.einleitung} />
+  <section class="abschnitt abschnitt--weiss">
+    <div class="huelle prosa"><Content /></div>
+  </section>
+</Basis>

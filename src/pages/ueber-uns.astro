@@ -1,0 +1,118 @@
+---
+import Basis from '../layouts/Basis.astro';
+import Seitenkopf from '../components/Seitenkopf.astro';
+import Karten from '../components/Karten.astro';
+import FotoPlatzhalter from '../components/FotoPlatzhalter.astro';
+import Qualifikation from '../components/start/Qualifikation.astro';
+import KontaktAufruf from '../components/start/KontaktAufruf.astro';
+import Icon from '../components/Icon.astro';
+import { render } from 'astro:content';
+import { seite } from '../lib/inhalte';
+import { betrieb, telefonLink, mailLink } from '../config/betrieb';
+
+const s = await seite('ueber-uns');
+const { Content } = await render(s);
+---
+
+<Basis title={s.data.seitentitel} description={s.data.beschreibung}>
+  <Seitenkopf pfad={[{ titel: 'Über uns' }]} kicker={s.data.kicker} titel={s.data.h1} einleitung={s.data.einleitung} foto="bei der Arbeit, mit Ausrüstung" />
+
+  {
+    s.data.karten.length > 0 && (
+      <section class="abschnitt abschnitt--weiss" aria-labelledby="grundsaetze-titel">
+        <div class="huelle">
+          <div class="abschnittskopf">
+            <h2 id="grundsaetze-titel">Worauf Sie sich verlassen können</h2>
+          </div>
+          <Karten karten={s.data.karten} />
+        </div>
+      </section>
+    )
+  }
+
+  <section class="abschnitt">
+    <div class="huelle raster">
+      <div class="prosa"><Content /></div>
+      <aside class="ansprechpartner" aria-labelledby="ansprechpartner-titel">
+        <FotoPlatzhalter text="Arbeitsfoto mit Häcksler oder Pritschenwagen" class="bild" />
+        <div class="karte">
+          <p class="kicker">Ihr Ansprechpartner</p>
+          <h2 id="ansprechpartner-titel">{betrieb.inhaber}</h2>
+          <p>{betrieb.name}, {betrieb.adresse.strasse}, {betrieb.adresse.plz} {betrieb.adresse.ort}</p>
+          <ul>
+            <li><a href={telefonLink}><Icon name="telefon" />{betrieb.telefon.anzeige}</a></li>
+            <li><a href={mailLink}><Icon name="mail" />{betrieb.email}</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <Qualifikation />
+
+  <KontaktAufruf />
+</Basis>
+
+<style>
+  .raster {
+    display: grid;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .ansprechpartner {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .ansprechpartner :global(.bild) {
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius);
+  }
+
+  .karte {
+    background: var(--weiss);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .karte h2 {
+    font-size: 1.6rem;
+  }
+
+  .karte p:not(.kicker) {
+    color: var(--text-weich);
+  }
+
+  ul {
+    list-style: none;
+    margin: 0.25rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  ul a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+  }
+
+  ul :global(.icon) {
+    width: 1.2rem;
+    height: 1.2rem;
+    color: var(--kupfer);
+    flex-shrink: 0;
+  }
+
+  @media (min-width: 60rem) {
+    .raster {
+      grid-template-columns: 1.4fr 1fr;
+      gap: 4rem;
+    }
+  }
+</style>

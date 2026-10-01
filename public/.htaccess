@@ -23,6 +23,9 @@ AddType font/woff2 .woff2
   # Übliche Sitemap-Adresse auf die von Astro erzeugte Sitemap
   RewriteRule ^sitemap\.xml$ /sitemap-index.xml [R=301,L]
 
+  # Hilfsdateien des Formulars sperren (zusätzlich zur .htaccess im Ordner)
+  RewriteRule ^anfrage/lib/ - [F,L]
+
   # Versteckte Dateien sperren (z. B. .git), .well-known für Zertifikate erlauben
   RewriteCond %{REQUEST_URI} !^/\.well-known/
   RewriteRule (^|/)\. - [F]

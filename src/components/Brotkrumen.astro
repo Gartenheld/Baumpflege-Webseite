@@ -1,0 +1,50 @@
+---
+// Brotkrumen-Navigation (Startseite > Bereich > Seite). Der letzte Eintrag ist die aktuelle Seite.
+interface Props {
+  pfad: { titel: string; href?: string }[];
+}
+
+const { pfad } = Astro.props;
+---
+
+<nav class="brotkrumen" aria-label="Brotkrumen">
+  <ol>
+    <li><a href="/">Startseite</a></li>
+    {
+      pfad.map((p, i) => (
+        <li>{i === pfad.length - 1 || !p.href ? <span aria-current="page">{p.titel}</span> : <a href={p.href}>{p.titel}</a>}</li>
+      ))
+    }
+  </ol>
+</nav>
+
+<style>
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.5rem;
+    font-size: 0.95rem;
+    color: var(--text-weich);
+  }
+
+  li + li::before {
+    content: '/';
+    margin-right: 0.5rem;
+    color: var(--linie);
+  }
+
+  a {
+    color: var(--text-weich);
+  }
+
+  a:hover {
+    color: var(--kupfer-dunkel);
+  }
+
+  [aria-current='page'] {
+    color: var(--text);
+  }
+</style>

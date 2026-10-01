@@ -1,0 +1,85 @@
+---
+// Fragen und Antworten zum Aufklappen (ohne JavaScript). Antworttext aus src/inhalte/faq.
+import { render, type CollectionEntry } from 'astro:content';
+
+interface Props {
+  eintraege: CollectionEntry<'faq'>[];
+}
+
+const { eintraege } = Astro.props;
+const mitInhalt = await Promise.all(eintraege.map(async (e) => ({ e, Inhalt: (await render(e)).Content })));
+---
+
+<div class="faq">
+  {
+    mitInhalt.map(({ e, Inhalt }) => (
+      <details>
+        <summary>
+          <span>{e.data.frage}</span>
+        </summary>
+        <div class="antwort prosa">
+          <Inhalt />
+        </div>
+      </details>
+    ))
+  }
+</div>
+
+<style>
+  .faq {
+    display: grid;
+    gap: 0.75rem;
+    max-width: 52rem;
+  }
+
+  details {
+    background: var(--weiss);
+    border-radius: var(--radius);
+    border: 1px solid transparent;
+  }
+
+  details[open] {
+    border-color: var(--linie);
+  }
+
+  summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.1rem 1.4rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--tanne);
+    min-height: 3.5rem;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary::after {
+    content: '+';
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--sand);
+    color: var(--kupfer-dunkel);
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+
+  details[open] summary::after {
+    content: '\2212';
+  }
+
+  .antwort {
+    padding: 0 1.4rem 1.4rem;
+    font-size: 1.05rem;
+  }
+</style>

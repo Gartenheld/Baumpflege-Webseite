@@ -1,34 +1,9 @@
 ---
-// Einsatzgebiet mit schematischer Karte aus Koordinaten (keine eingebettete Karte, keine Daten an Dritte).
 import Icon from '../Icon.astro';
+import Karte from '../Karte.astro';
 import { orteSortiert, ortUrl } from '../../lib/inhalte';
 
 const orte = await orteSortiert();
-
-// Einfache Projektion: Längengrad gestaucht mit cos(Breite), Norden oben.
-const B0 = 50.83;
-const L0 = 6.94;
-const K = 1700;
-const COS = Math.cos((B0 * Math.PI) / 180);
-const xy = (breite: number, laenge: number) => ({
-  x: 250 + (laenge - L0) * COS * K,
-  y: 240 - (breite - B0) * K,
-});
-
-// Rhein, grob vereinfacht von Süd (Bonn) nach Nord (Köln)
-const rhein = [
-  [50.69, 7.17], [50.72, 7.13], [50.745, 7.105], [50.765, 7.075], [50.785, 7.04], [50.805, 7.005],
-  [50.825, 6.99], [50.855, 6.99], [50.885, 6.985], [50.915, 6.975], [50.945, 6.97], [50.975, 6.97],
-]
-  .map(([b, l]) => xy(b, l))
-  .map((p, i) => `${i ? 'L' : 'M'}${p.x.toFixed(1)} ${p.y.toFixed(1)}`)
-  .join(' ');
-
-// Beschriftung je Ort: rechts (r) oder links (l) vom Punkt
-const seite: Record<string, 'r' | 'l'> = {
-  bornheim: 'l', alfter: 'l', bonn: 'r', bruehl: 'l', koeln: 'r', wesseling: 'r', huerth: 'l', erftstadt: 'l', weilerswist: 'l',
-};
-const punkte = orte.map((o) => ({ id: o.id, name: o.data.name, ...xy(o.data.breite, o.data.laenge), seite: seite[o.id] ?? 'r' }));
 ---
 
 <section class="abschnitt einsatz" aria-labelledby="einsatz-titel">
@@ -54,25 +29,7 @@ const punkte = orte.map((o) => ({ id: o.id, name: o.data.name, ...xy(o.data.brei
       <p class="hinweis">Ihr Ort ist nicht dabei? Fragen Sie gern nach.</p>
     </div>
 
-    <figure class="karte">
-      <svg viewBox="0 0 520 480" role="img" aria-labelledby="karte-titel">
-        <title id="karte-titel">Schematische Karte des Einsatzgebiets zwischen Köln und Bonn mit Standort Bornheim</title>
-        <path class="karte__rhein" d={rhein} />
-        <text class="karte__fluss" x="452" y="70">Rhein</text>
-        {
-          punkte.map((p) => (
-            <g class:list={['karte__ort', { 'karte__ort--sitz': p.id === 'bornheim' }]}>
-              {p.id === 'bornheim' && <circle class="karte__ring" cx={p.x.toFixed(1)} cy={p.y.toFixed(1)} r="16" />}
-              <circle cx={p.x.toFixed(1)} cy={p.y.toFixed(1)} r={p.id === 'bornheim' ? 8 : 5.5} />
-              <text x={(p.x + (p.seite === 'r' ? 13 : -13)).toFixed(1)} y={(p.y + 5).toFixed(1)} text-anchor={p.seite === 'r' ? 'start' : 'end'}>
-                {p.name}
-              </text>
-            </g>
-          ))
-        }
-      </svg>
-      <figcaption>Schematische Darstellung, Standort Bornheim hervorgehoben</figcaption>
-    </figure>
+    <Karte />
   </div>
 </section>
 
@@ -123,66 +80,6 @@ const punkte = orte.map((o) => ({ id: o.id, name: o.data.name, ...xy(o.data.brei
   .hinweis {
     color: var(--text-weich);
     font-size: 1rem;
-  }
-
-  .karte {
-    margin: 0;
-    background: var(--sand);
-    border-radius: var(--radius);
-    padding: clamp(1rem, 3vw, 2rem);
-  }
-
-  .karte svg {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  .karte__rhein {
-    fill: none;
-    stroke: #a9c3c9;
-    stroke-width: 9;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-
-  .karte__fluss {
-    fill: #4f6f76;
-    font-size: 18px;
-    font-style: italic;
-  }
-
-  .karte__ort circle {
-    fill: var(--tanne);
-  }
-
-  .karte__ort text {
-    fill: var(--text);
-    font-family: var(--schrift-text);
-    font-size: 21px;
-    font-weight: 600;
-  }
-
-  .karte__ort--sitz circle {
-    fill: var(--kupfer);
-  }
-
-  .karte__ort--sitz .karte__ring {
-    fill: none;
-    stroke: var(--kupfer);
-    stroke-width: 2;
-    opacity: 0.5;
-  }
-
-  .karte__ort--sitz text {
-    font-size: 23px;
-    font-weight: 700;
-  }
-
-  figcaption {
-    margin-top: 0.75rem;
-    font-size: 0.95rem;
-    color: var(--text-weich);
   }
 
   @media (min-width: 60rem) {

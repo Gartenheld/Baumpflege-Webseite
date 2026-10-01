@@ -1,0 +1,93 @@
+---
+// Kopfbereich einer Unterseite: Brotkrumen, Oberbegriff, H1, Einleitung, optional Knöpfe und Foto.
+import Brotkrumen from './Brotkrumen.astro';
+import Icon from './Icon.astro';
+import FotoPlatzhalter from './FotoPlatzhalter.astro';
+import { telefonLink } from '../config/betrieb';
+
+interface Props {
+  pfad: { titel: string; href?: string }[];
+  kicker?: string;
+  titel: string;
+  einleitung?: string;
+  knoepfe?: boolean;
+  anfrageLink?: string;
+  foto?: string;
+}
+
+const { pfad, kicker, titel, einleitung, knoepfe = false, anfrageLink = '/kontakt/', foto } = Astro.props;
+---
+
+<header class:list={['seitenkopf', { 'seitenkopf--foto': foto }]}>
+  <div class="huelle raster">
+    <div class="text">
+      <Brotkrumen pfad={pfad} />
+      {kicker && <p class="kicker">{kicker}</p>}
+      <h1>{titel}</h1>
+      {einleitung && <p class="einleitung">{einleitung}</p>}
+      {
+        knoepfe && (
+          <div class="knoepfe">
+            <a class="knopf knopf--haupt" href={anfrageLink}>
+              <Icon name="kamera" />
+              Anfrage mit Fotos senden
+            </a>
+            <a class="knopf knopf--rahmen" href={telefonLink}>
+              <Icon name="telefon" />
+              Anrufen
+            </a>
+          </div>
+        )
+      }
+      <slot />
+    </div>
+    {foto && <FotoPlatzhalter text={foto} class="bild" />}
+  </div>
+</header>
+
+<style>
+  .seitenkopf {
+    padding-block: clamp(2rem, 5vw, 3.5rem) clamp(2.5rem, 6vw, 4.5rem);
+  }
+
+  .raster {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .text {
+    display: grid;
+    gap: 1.1rem;
+    max-width: 46rem;
+  }
+
+  .text :global(.brotkrumen) {
+    margin-bottom: 0.5rem;
+  }
+
+  .knoepfe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .seitenkopf :global(.bild) {
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius);
+  }
+
+  @media (max-width: 29.99rem) {
+    .knoepfe .knopf {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 60rem) {
+    .seitenkopf--foto .raster {
+      grid-template-columns: 1.15fr 1fr;
+      gap: 4rem;
+    }
+  }
+</style>

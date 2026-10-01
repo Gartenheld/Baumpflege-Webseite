@@ -1,0 +1,16 @@
+---
+seitentitel: "Referenzen aus Bornheim, Köln und Bonn | Baumpflege Happe"
+beschreibung: "Einblicke in unsere Arbeit: ausgewählte Projekte zu Baumpflege, Baumfällung und Gartenpflege in Bornheim, Köln, Bonn und Umgebung."
+kicker: Referenzen
+h1: "Projekte aus der Region"
+einleitung: "Hier zeigen wir ausgewählte Arbeiten aus unserem Einsatzgebiet zwischen Köln und Bonn. Zu jedem Projekt nennen wir Ort, Baumart und Aufgabe."
+karten: []
+---
+
+## Was Sie hier sehen
+
+Jedes Grundstück ist anders, und jeder Baum stellt eigene Anforderungen. Die Beispiele zeigen, mit welchen Aufgaben wir zu tun haben und wie das Ergebnis aussieht. Wir veröffentlichen Projekte nur mit Einverständnis der Eigentümer und nennen keine genauen Adressen.
+
+## Ihr Projekt
+
+Sie haben einen Baum, eine Hecke oder eine Fläche, um die wir uns kümmern sollen? Schicken Sie uns Fotos und eine kurze Beschreibung. Sie erhalten eine kostenlose Ersteinschätzung und danach ein schriftliches Angebot.

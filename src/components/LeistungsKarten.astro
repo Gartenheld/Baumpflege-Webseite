@@ -1,0 +1,166 @@
+---
+// Leistungen als Karten: Schwerpunkte groß, weitere kompakt. Optional eine Leistung ausblenden (die aktuelle Seite).
+import Icon from './Icon.astro';
+import FotoPlatzhalter from './FotoPlatzhalter.astro';
+import { sichtbareLeistungen, leistungsUrl } from '../lib/inhalte';
+
+interface Props {
+  ohne?: string;
+  kompakt?: boolean;
+}
+
+const { ohne, kompakt = false } = Astro.props;
+const leistungen = (await sichtbareLeistungen()).filter((l) => l.id !== ohne);
+const schwerpunkte = kompakt ? [] : leistungen.filter((l) => l.data.schwerpunkt);
+const weitere = kompakt ? leistungen : leistungen.filter((l) => !l.data.schwerpunkt);
+---
+
+{
+  schwerpunkte.length > 0 && (
+    <div class="schwerpunkte">
+      {schwerpunkte.map((l) => (
+        <article class="karte karte--gross">
+          <FotoPlatzhalter text={l.data.titel} class="karte__bild" />
+          <div class="karte__text">
+            <h3>
+              <a href={leistungsUrl(l.id)}>{l.data.titel}</a>
+            </h3>
+            <p>{l.data.kurz}</p>
+            <span class="mehr" aria-hidden="true">
+              Mehr erfahren <Icon name="pfeil" />
+            </span>
+          </div>
+        </article>
+      ))}
+    </div>
+  )
+}
+
+<ul class="weitere">
+  {
+    weitere.map((l) => (
+      <li class="karte">
+        <h3>
+          <a href={leistungsUrl(l.id)}>{l.data.titel}</a>
+        </h3>
+        <p>{l.data.kurz}</p>
+        <Icon name="pfeil" class="karte__pfeil" />
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .karte {
+    position: relative;
+    background: var(--weiss);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    display: grid;
+    gap: 0.6rem;
+    align-content: start;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+  }
+
+  .karte:hover {
+    box-shadow: 0 10px 28px rgb(23 63 60 / 0.12);
+  }
+
+  .karte:focus-within {
+    box-shadow: 0 0 0 3px var(--kupfer);
+  }
+
+  /* Die ganze Karte ist klickbar, der Link steht in der Überschrift */
+  .karte h3 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .karte h3 a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+  }
+
+  .karte h3 a:focus-visible {
+    outline: none;
+  }
+
+  .karte p {
+    color: var(--text-weich);
+    font-size: 1.05rem;
+  }
+
+  .schwerpunkte {
+    display: grid;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .karte--gross {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .karte--gross :global(.karte__bild) {
+    aspect-ratio: 16 / 10;
+  }
+
+  .karte__text {
+    padding: 1.5rem 1.5rem 1.75rem;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .karte--gross h3 {
+    font-size: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+  }
+
+  .mehr {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 700;
+    color: var(--kupfer-dunkel);
+    margin-top: 0.25rem;
+  }
+
+  .mehr :global(.icon),
+  :global(.karte__pfeil) {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .weitere {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  }
+
+  .weitere .karte {
+    padding-right: 3rem;
+  }
+
+  .weitere :global(.karte__pfeil) {
+    position: absolute;
+    right: 1.25rem;
+    top: 1.6rem;
+    color: var(--kupfer);
+  }
+
+  @media (min-width: 48rem) {
+    .schwerpunkte {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .karte:hover {
+      transform: translateY(-2px);
+    }
+  }
+</style>

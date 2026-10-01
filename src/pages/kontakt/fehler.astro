@@ -1,0 +1,57 @@
+---
+// Vorlage für Fehlermeldungen des Formulars. anfrage/senden.php setzt die konkreten Meldungen
+// an der Stelle __FEHLERLISTE__ ein. Die Seite wird nicht direkt verlinkt und nicht indexiert.
+import Basis from '../../layouts/Basis.astro';
+import Icon from '../../components/Icon.astro';
+import { telefonLink, whatsappLink } from '../../config/betrieb';
+---
+
+<Basis title="Anfrage noch nicht gesendet | Baumpflege Happe" description="Ihre Anfrage konnte noch nicht gesendet werden. Bitte prüfen Sie die Hinweise oder kontaktieren Sie uns per Telefon oder WhatsApp." noindex>
+  <section class="abschnitt">
+    <div class="huelle text">
+      <p class="kicker">Anfrage</p>
+      <h1>Ihre Anfrage wurde noch nicht gesendet</h1>
+      <div class="meldung" role="alert">
+        <p><strong>Bitte prüfen Sie:</strong></p>
+        <ul class="fehlerliste"><li>__FEHLERLISTE__</li></ul>
+      </div>
+      <p>
+        Gehen Sie mit der Zurück-Taste Ihres Browsers zum Formular. Ihre Texteingaben sind dort meist noch vorhanden,
+        Fotos müssen Sie erneut auswählen.
+      </p>
+      <div class="knoepfe">
+        <a class="knopf knopf--haupt" href="/kontakt/">Zum Formular</a>
+        <a class="knopf knopf--rahmen" href={whatsappLink}><Icon name="whatsapp" />WhatsApp</a>
+        <a class="knopf knopf--rahmen" href={telefonLink}><Icon name="telefon" />Anrufen</a>
+      </div>
+    </div>
+  </section>
+</Basis>
+
+<style>
+  .text {
+    display: grid;
+    gap: 1.1rem;
+    max-width: 46rem;
+  }
+
+  .meldung {
+    background: #f8e7dc;
+    border-left: 4px solid var(--kupfer);
+    border-radius: var(--radius-klein);
+    padding: 1.1rem 1.4rem;
+  }
+
+  .fehlerliste {
+    margin: 0.5rem 0 0;
+    padding-left: 1.2em;
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .knoepfe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+</style>
