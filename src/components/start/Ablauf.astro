@@ -1,0 +1,112 @@
+---
+import { betrieb } from '../../config/betrieb';
+
+const schritte = [
+  { titel: 'Anfrage mit Fotos', text: 'Sie schicken uns Fotos des Baumes und eine kurze Beschreibung, per Formular oder WhatsApp.' },
+  { titel: 'Ersteinschätzung', text: `Sie erhalten eine kostenlose Ersteinschätzung, ${betrieb.antwortzeit}.` },
+  { titel: 'Besichtigung bei Bedarf', text: 'Reichen die Fotos nicht aus, sehen wir uns den Baum vor Ort an.' },
+  { titel: 'Schriftliches Angebot', text: 'Sie bekommen ein schriftliches Angebot mit allen Arbeiten im Überblick.' },
+  { titel: 'Ausführung', text: 'Wir führen die Arbeiten aus, räumen auf und entsorgen das Schnittgut.' },
+];
+---
+
+<section class="abschnitt ablauf" aria-labelledby="ablauf-titel">
+  <div class="huelle">
+    <div class="kopfzeile">
+      <p class="kicker">Ablauf</p>
+      <h2 id="ablauf-titel">So einfach geht Ihre Anfrage</h2>
+    </div>
+    <ol>
+      {
+        schritte.map((s) => (
+          <li>
+            <h3>{s.titel}</h3>
+            <p>{s.text}</p>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>
+
+<style>
+  .ablauf {
+    background: var(--weiss);
+  }
+
+  .kopfzeile {
+    display: grid;
+    gap: 0.9rem;
+    margin-bottom: 2.5rem;
+  }
+
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: schritt;
+    display: grid;
+    gap: 1.75rem;
+  }
+
+  li {
+    counter-increment: schritt;
+    position: relative;
+    padding-left: 4rem;
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  li::before {
+    content: counter(schritt);
+    position: absolute;
+    left: 0;
+    top: -0.15rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--sand);
+    color: var(--kupfer-dunkel);
+    font-family: var(--schrift-titel);
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    color: var(--text-weich);
+    font-size: 1.05rem;
+  }
+
+  /* Ab Desktop: Schritte nebeneinander mit Verbindungslinie */
+  @media (min-width: 64rem) {
+    ol {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.5rem;
+    }
+
+    li {
+      padding-left: 0;
+      padding-top: 4rem;
+    }
+
+    li::after {
+      content: '';
+      position: absolute;
+      top: 1.2rem;
+      left: 3.5rem;
+      right: -0.75rem;
+      height: 2px;
+      background: var(--linie);
+    }
+
+    li:last-child::after {
+      display: none;
+    }
+  }
+</style>

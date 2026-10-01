@@ -1,0 +1,126 @@
+---
+import Icon from '../Icon.astro';
+import FotoPlatzhalter from '../FotoPlatzhalter.astro';
+import { betrieb, telefonLink } from '../../config/betrieb';
+---
+
+<section class="einstieg" aria-labelledby="einstieg-titel">
+  <div class="einstieg__bild">
+    <FotoPlatzhalter text="großes eigenes Foto, zum Beispiel Baumkrone bei der Arbeit" />
+  </div>
+  <div class="huelle einstieg__raster">
+    <div class="einstieg__text">
+      <p class="einstieg__claim">{betrieb.claim}</p>
+      <h1 id="einstieg-titel">Baumpflege und Baumfällung in Bornheim, Köln und Bonn</h1>
+      <p class="einleitung">
+        Fachgerechter Schnitt, sorgfältige Fällung und ein aufgeräumtes Grundstück. Schicken Sie uns Fotos Ihres Baumes,
+        Sie erhalten eine kostenlose Ersteinschätzung.
+      </p>
+      <div class="einstieg__knoepfe">
+        <a class="knopf knopf--haupt" href="/kontakt/"><Icon name="kamera" />Anfrage mit Fotos senden</a>
+        <a class="knopf knopf--rahmen" href={telefonLink}><Icon name="telefon" />Anrufen</a>
+      </div>
+      <ul class="einstieg__punkte">
+        <li><Icon name="haken" />Kostenlose Ersteinschätzung</li>
+        <li><Icon name="haken" />Schriftliches Angebot</li>
+        <li><Icon name="haken" />Aufräumen und Entsorgung inklusive</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .einstieg {
+    position: relative;
+    background: var(--sand);
+  }
+
+  .einstieg__bild :global(.foto-platzhalter) {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+
+  .einstieg h1 {
+    font-size: clamp(2.1rem, 1.4rem + 2.6vw, 3.3rem);
+  }
+
+  .einstieg__raster {
+    padding-block: 2rem 3.5rem;
+  }
+
+  .einstieg__text {
+    display: grid;
+    gap: 1.25rem;
+    max-width: 38rem;
+  }
+
+  .einstieg__claim {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--kupfer-dunkel);
+  }
+
+  .einstieg__knoepfe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .einstieg__punkte {
+    list-style: none;
+    margin: 0.25rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: var(--text-weich);
+  }
+
+  .einstieg__punkte li {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .einstieg__punkte :global(.icon) {
+    width: 1.15rem;
+    height: 1.15rem;
+    color: var(--kupfer);
+  }
+
+  @media (max-width: 29.99rem) {
+    .einstieg__knoepfe .knopf {
+      width: 100%;
+    }
+  }
+
+  /* Ab Tablet quer: Foto rechts bis zum Rand, Text links */
+  @media (min-width: 60rem) {
+    .einstieg {
+      min-height: min(44rem, 82vh);
+      display: flex;
+      align-items: center;
+    }
+
+    .einstieg__bild {
+      position: absolute;
+      inset: 0 0 0 54%;
+    }
+
+    .einstieg__bild :global(.foto-platzhalter) {
+      aspect-ratio: auto;
+      height: 100%;
+      border-radius: 0;
+    }
+
+    .einstieg__raster {
+      padding-block: 4.5rem;
+    }
+
+    .einstieg__text {
+      max-width: calc(54% - 3rem);
+    }
+  }
+</style>

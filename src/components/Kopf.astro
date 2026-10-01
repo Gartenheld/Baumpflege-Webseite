@@ -1,0 +1,171 @@
+---
+import Logo from './Logo.astro';
+import Icon from './Icon.astro';
+import { hauptmenue } from '../config/navigation';
+import { telefonLink } from '../config/betrieb';
+
+const pfad = Astro.url.pathname;
+const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
+---
+
+<header class="kopf">
+  <div class="huelle kopf__innen">
+    <a href="/" class="kopf__logo">
+      <Logo variante="querKurz" titel="Baumpflege Happe, zur Startseite" />
+    </a>
+
+    <nav class="kopf__nav" aria-label="Hauptmenü">
+      <ul>
+        {
+          hauptmenue.map((punkt) => (
+            <li>
+              <a href={punkt.href} aria-current={aktiv(punkt.href) ? 'page' : undefined}>
+                {punkt.titel}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <a class="knopf knopf--haupt" href="/kontakt/">Anfrage senden</a>
+    </nav>
+
+    <!-- Menü für Handy und Tablet: funktioniert ohne JavaScript -->
+    <details class="kopf__menue">
+      <summary>
+        <Icon name="menue" />
+        <span>Menü</span>
+      </summary>
+      <nav aria-label="Hauptmenü">
+        <ul>
+          {
+            hauptmenue.map((punkt) => (
+              <li>
+                <a href={punkt.href} aria-current={aktiv(punkt.href) ? 'page' : undefined}>
+                  {punkt.titel}
+                </a>
+              </li>
+            ))
+          }
+          <li><a href="/faq/">Häufige Fragen</a></li>
+        </ul>
+        <a class="knopf knopf--haupt" href="/kontakt/">Anfrage mit Fotos senden</a>
+        <a class="knopf knopf--rahmen" href={telefonLink}><Icon name="telefon" />Anrufen</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<style>
+  .kopf {
+    background: var(--weiss);
+    border-bottom: 1px solid var(--linie);
+    position: relative;
+    z-index: 20;
+  }
+
+  .kopf__innen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    min-height: 4.5rem;
+  }
+
+  .kopf__logo {
+    display: block;
+    flex-shrink: 0;
+    padding-block: 0.6rem;
+  }
+
+  .kopf__logo :global(.logo) {
+    width: auto;
+    height: 2.6rem;
+  }
+
+  .kopf__nav {
+    display: none;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .kopf__nav a:not(.knopf),
+  .kopf__menue nav a:not(.knopf) {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .kopf__nav a:not(.knopf):hover,
+  .kopf__menue nav a:not(.knopf):hover,
+  [aria-current='page'] {
+    color: var(--kupfer-dunkel) !important;
+  }
+
+  /* Handy und Tablet */
+  .kopf__menue summary {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--linie);
+    border-radius: var(--radius-klein);
+    font-weight: 700;
+    color: var(--tanne);
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .kopf__menue summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .kopf__menue[open] summary {
+    background: var(--sand);
+  }
+
+  .kopf__menue nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: var(--weiss);
+    border-bottom: 1px solid var(--linie);
+    padding: 0.5rem var(--rand) 1.5rem;
+    display: grid;
+    gap: 0.75rem;
+    box-shadow: 0 12px 24px rgb(23 63 60 / 0.08);
+  }
+
+  .kopf__menue li a {
+    display: block;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--linie);
+    font-size: 1.15rem;
+  }
+
+  @media (min-width: 70rem) {
+    .kopf__menue {
+      display: none;
+    }
+
+    .kopf__nav {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .kopf__nav ul {
+      display: flex;
+      gap: 1.6rem;
+    }
+
+    .kopf__logo :global(.logo) {
+      height: 3rem;
+    }
+  }
+</style>

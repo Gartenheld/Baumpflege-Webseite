@@ -1,0 +1,138 @@
+---
+// Bewertungen als statischer Text mit Link zum Google-Profil, kein eingebettetes Widget.
+import { betrieb } from '../../config/betrieb';
+import { sichtbareBewertungen } from '../../lib/inhalte';
+
+const { liste, nurPlatzhalter } = await sichtbareBewertungen();
+const sternPfad = 'M12 2.6l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17l-5.6 3 1.1-6.3L2.9 9.3l6.3-.9z';
+---
+
+{
+  liste.length > 0 && (
+    <section class="abschnitt" aria-labelledby="bewertungen-titel">
+      <div class="huelle">
+        <div class="kopfzeile">
+          <p class="kicker">Bewertungen</p>
+          <h2 id="bewertungen-titel">Was unsere Kunden sagen</h2>
+          <p class="schnitt">
+            <span class="sterne" aria-hidden="true">
+              {[1, 2, 3, 4, 5].map(() => (
+                <svg viewBox="0 0 24 24" width="22" height="22">
+                  <path d={sternPfad} />
+                </svg>
+              ))}
+            </span>
+            <span>
+              {betrieb.bewertungen.durchschnitt} von 5 Sternen aus {betrieb.bewertungen.anzahl} Google-Bewertungen
+            </span>
+          </p>
+        </div>
+
+        <ul class="liste">
+          {liste.map((b) => (
+            <li>
+              <figure>
+                <span class="sterne" role="img" aria-label={`${b.data.sterne} von 5 Sternen`}>
+                  {Array.from({ length: b.data.sterne }).map(() => (
+                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                      <path d={sternPfad} />
+                    </svg>
+                  ))}
+                </span>
+                <blockquote>
+                  <p>{b.data.text}</p>
+                </blockquote>
+                <figcaption>
+                  {b.data.name}, {b.data.datum}
+                </figcaption>
+              </figure>
+            </li>
+          ))}
+        </ul>
+
+        <div class="fusszeile">
+          {betrieb.profile.google ? (
+            <a href={betrieb.profile.google} rel="noopener">
+              Alle Bewertungen auf Google ansehen
+            </a>
+          ) : (
+            <span>[Platzhalter: Link zum Google-Unternehmensprofil]</span>
+          )}
+          <p class="hinweis">
+            Auszüge aus unserem Google-Unternehmensprofil, Stand {betrieb.bewertungen.stand}. Wir prüfen nicht gesondert,
+            ob die Verfasser Kunden waren.
+          </p>
+          {nurPlatzhalter && <p class="hinweis">Entwurf: Die Bewertungen sind Platzhalter und erscheinen so nicht auf der Live-Seite.</p>}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .kopfzeile {
+    display: grid;
+    gap: 0.9rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .schnitt {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 0.9rem;
+    font-weight: 600;
+  }
+
+  .sterne {
+    display: inline-flex;
+    gap: 0.15rem;
+    fill: var(--kupfer);
+  }
+
+  .liste {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+  }
+
+  figure {
+    margin: 0;
+    height: 100%;
+    background: var(--weiss);
+    border-radius: var(--radius);
+    padding: 1.6rem;
+    display: grid;
+    gap: 0.9rem;
+    align-content: start;
+  }
+
+  blockquote {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  figcaption {
+    color: var(--text-weich);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .fusszeile {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .fusszeile a {
+    font-weight: 700;
+  }
+
+  .hinweis {
+    font-size: 0.95rem;
+    color: var(--text-weich);
+  }
+</style>

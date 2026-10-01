@@ -1,8 +1,13 @@
 ---
-// Grundlayout aller Seiten: Kopfbereich mit Title, Description, Canonical, Robots und Open Graph.
-// Gestaltung, Navigation und Footer folgen in Schritt 3 nach Freigabe von Logo und Farben.
+// Grundlayout aller Seiten: Kopfbereich mit Title, Description, Canonical, Robots, Open Graph,
+// lokal eingebundenen Schriften und Favicons, dazu Kopf, Fuß und Handy-Leiste.
+import { Font } from 'astro:assets';
 import { PUBLIC_NOINDEX } from 'astro:env/client';
 import { betrieb } from '../config/betrieb';
+import Kopf from '../components/Kopf.astro';
+import Fuss from '../components/Fuss.astro';
+import Handyleiste from '../components/Handyleiste.astro';
+import '../styles/global.css';
 
 interface Props {
   title: string;
@@ -26,6 +31,14 @@ const robots = PUBLIC_NOINDEX || noindex ? 'noindex, nofollow' : 'index, follow'
     <link rel="canonical" href={canonical} />
     <link rel="sitemap" href="/sitemap-index.xml" />
 
+    <Font cssVariable="--font-sans" preload />
+    <Font cssVariable="--font-serif" preload />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#173f3c" />
+
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="de_DE" />
     <meta property="og:site_name" content={betrieb.name} />
@@ -34,6 +47,12 @@ const robots = PUBLIC_NOINDEX || noindex ? 'noindex, nofollow' : 'index, follow'
     <meta property="og:url" content={canonical} />
   </head>
   <body>
-    <slot />
+    <a class="sprunglink" href="#inhalt">Zum Inhalt springen</a>
+    <Kopf />
+    <main id="inhalt">
+      <slot />
+    </main>
+    <Fuss />
+    <Handyleiste />
   </body>
 </html>

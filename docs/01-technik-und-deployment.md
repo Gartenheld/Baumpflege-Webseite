@@ -110,7 +110,7 @@ Alles, was du später selbst änderst, liegt in zwei Bereichen: `src/inhalte/` u
 
 ### Betriebsdaten zentral in einer Datei
 
-`src/config/betrieb.ts` enthält Name, Unterzeile, Claim, Anschrift, Telefon, WhatsApp-Nummer, E-Mail, Erreichbarkeitszeiten, Antwortzeit, USt-IdNr., Links zu Google-Profil und Social Media sowie Durchschnittsbewertung, Anzahl und Stand der Google-Bewertungen. Jede Angabe steht nur dort und wird überall verwendet: im Kopf, im Footer, in der Handy-Leiste, im Impressum, im Formular und in den strukturierten Daten. Alles mit `PLATZHALTER` muss vor der Liveschaltung ersetzt werden.
+`src/config/betrieb.ts` enthält Name, Unterzeile, Claim, Anschrift, Telefon, WhatsApp-Nummer, E-Mail, Erreichbarkeitszeiten, Antwortzeit, USt-IdNr., Links zu Google-Profil und Social Media sowie Durchschnittsbewertung, Anzahl und Stand der Google-Bewertungen. Jede Angabe steht nur dort und wird überall verwendet: im Kopf, im Footer, in der Handy-Leiste, im Impressum, im Formular und in den strukturierten Daten. Alles mit „Platzhalter“ muss vor der Liveschaltung ersetzt werden.
 
 ### Inhaltsarten
 
@@ -129,7 +129,7 @@ Grundsätze:
 - **Eine Datei pro Eintrag.** Ein Tippfehler in einer Datei stoppt den Build mit Dateiname und Zeile. (Getestet: Bei einer Sammeldatei für alle Bewertungen würde ein Fehler stillschweigend alle Bewertungen verschwinden lassen. Deshalb keine Sammeldateien.)
 - **Dateinamen ohne Umlaute**, z. B. `baumfaellung.md`, `koeln.md`. Der Dateiname wird zur Adresse.
 - **Vorlagen** beginnen mit Unterstrich (`_vorlage`) und werden nie veröffentlicht.
-- **Platzhalter gehen nie live:** Referenzen und Bewertungen sind standardmäßig `veroeffentlichen: false`. In der Entwicklung sind sie sichtbar, auf der Live-Seite nicht. Zusätzlich bricht der Live-Build ab, wenn irgendwo noch das Wort `PLATZHALTER` steht.
+- **Platzhalter gehen nie live:** Referenzen und Bewertungen sind standardmäßig `veroeffentlichen: false`. In der Entwicklung sind sie sichtbar, auf der Live-Seite nicht. Zusätzlich bricht der Live-Build ab, wenn irgendwo noch das Wort „Platzhalter“ steht.
 - **Mindestanzahl:** Ist eine Inhaltsart unerwartet leer, bricht der Build ab.
 
 ### Schalter für Seilklettertechnik
@@ -139,12 +139,12 @@ Die Seite Seilklettertechnik ist an die Qualifikation SKT-A gekoppelt:
 ```yaml
 # src/inhalte/qualifikationen/skt-a.yaml
 titel: SKT-A
-erklaerung: PLATZHALTER Ein Satz für Laien.
+erklaerung: Ein Satz für Laien.
 vorhanden: false   # auf true setzen, sobald der Nachweis vorliegt
 reihenfolge: 3
 ```
 
-Die Leistungsdatei `seilklettertechnik.md` trägt `benoetigt: skt-a`. Solange `vorhanden: false` gilt, wird die Seite nicht gebaut, nicht verlinkt, nicht in die Sitemap aufgenommen, und SKT-A erscheint nicht unter den Qualifikationen (getestet). Ein Schalter, eine Stelle. Den bisherigen Schalter `schalter.seilklettertechnik` in `betrieb.ts` ersetzen wir in Schritt 4 durch diese Kopplung, damit nicht zwei Schalter auseinanderlaufen.
+Die Leistungsdatei `seilklettertechnik.md` trägt `benoetigt: skt-a`. Solange `vorhanden: false` gilt, wird die Seite nicht gebaut, nicht verlinkt, nicht in die Sitemap aufgenommen, und SKT-A erscheint nicht unter den Qualifikationen (getestet). Ein Schalter, eine Stelle (umgesetzt in Schritt 3, `src/lib/inhalte.ts`).
 
 Weitere Qualifikationen sind einfach eine neue Datei. `skt-b.yaml` legen wir gleich mit `vorhanden: false` an. Wichtig: Der Schalter ändert keine Texte. Die SKT-Seite verspricht keine Motorsägenarbeit im Baum. Kommt später SKT-B dazu, überarbeiten wir den Text bewusst.
 
@@ -524,7 +524,9 @@ Eine kleine lokale Website hat oft zu wenige Besucher für Googles Felddaten. Da
 
 ### 10.3 Schrift
 
-Lokal eingebunden über die Fonts-Funktion von Astro: Datei im Repository, Preload, `font-display: swap` und automatisch angepasste Ersatzschrift gegen Layoutsprünge (getestet). Alle Kandidaten stehen unter der freien Lizenz OFL 1.1 und enthalten ä, ö, ü, ß, deutsche Anführungszeichen und das Eurozeichen. Die Auswahl treffen wir in Schritt 2 zusammen mit dem Logo.
+Lokal eingebunden über die Fonts-Funktion von Astro: Datei im Repository, Preload, `font-display: swap` und automatisch angepasste Ersatzschrift gegen Layoutsprünge (getestet). Alle Kandidaten stehen unter der freien Lizenz OFL 1.1 und enthalten ä, ö, ü, ß, deutsche Anführungszeichen und das Eurozeichen.
+
+**Gewählt in Schritt 2: Paarung A.** Source Serif 4 für Überschriften (Gewichte 500 bis 700, 34 KB) und Source Sans 3 für Text (400 bis 700, 27 KB), zugeschnitten auf den Latin-Zeichensatz, zusammen 61 KB.
 
 | Paarung | Überschriften / Fließtext | Größe | Charakter |
 |---|---|---|---|
@@ -548,7 +550,7 @@ Blockierend (im Deployment, schnell und eindeutig):
 - `astro check`: Code und Inhalts-Pflichtfelder
 - Build
 - Linkprüfung: tote interne Links stoppen das Deployment
-- Platzhalter-Wächter: Live-Build bricht ab, wenn `PLATZHALTER` vorkommt
+- Platzhalter-Wächter: Live-Build bricht ab, wenn „Platzhalter“ vorkommt
 - `php -l`: Syntax der PHP-Dateien
 - Build-Cache für Bilder, damit Läufe schnell bleiben
 - Längenprüfung für Title und Description, doppelte Titles
@@ -776,10 +778,10 @@ Nicht verwenden für http zu https, www zu ohne www oder einen reinen Hosterwech
 
 **Schritt 2: Logo und Farben**
 
-- [ ] Zwei bis drei Wortmarken als SVG, mit und ohne Kronensymbol.
-- [ ] Zwei bis drei Farbwelten, geprüft auf Kontrast (Website) und Eignung für Fahrzeug und Kleidung.
-- [ ] Schriftwahl aus den drei Paarungen (Abschnitt 10.3).
-- [ ] Deine Auswahl.
+- [x] Zwei bis drei Wortmarken als SVG, mit und ohne Kronensymbol.
+- [x] Zwei bis drei Farbwelten, geprüft auf Kontrast (Website) und Eignung für Fahrzeug und Kleidung.
+- [x] Schriftwahl aus den drei Paarungen (Abschnitt 10.3).
+- [x] Deine Auswahl: Logo 1 mit Symbol, Farbwelt C „Tanne und Kupfer“. Endfassungen in `brand/`.
 
 **Schritt 3: Startseite als Entwurf**
 
@@ -799,7 +801,7 @@ Nicht verwenden für http zu https, www zu ohne www oder einen reinen Hosterwech
 **Schritt 5: SEO-Feinschliff, Test und Liveschaltung**
 
 - [ ] Strukturierte Daten, Titles, Descriptions, Open-Graph-Bilder, Längen- und Duplikat-Check.
-- [ ] Alle `PLATZHALTER` ersetzt (Telefon, E-Mail, WhatsApp, Erreichbarkeit, Antwortzeit, USt-IdNr., Bewertungen, Datenschutztext aus dem Generator).
+- [ ] Alle Platzhalter ersetzt (Telefon, E-Mail, WhatsApp, Erreichbarkeit, Antwortzeit, USt-IdNr., Bewertungen, Datenschutztext aus dem Generator).
 - [ ] Tests: Lighthouse, Barriere-Test, Handarbeit (Tastatur, Zoom, Screenreader), Formular von iPhone, Android und ohne JavaScript, keine Cookies.
 - [ ] Domain registriert, SSL aktiv, Force HTTPS, www-Weiterleitung, HSTS zunächst kurz.
 - [ ] `NOINDEX` = `false`, Passwortschutz aus, `SITE_URL` richtig. Danach Live-Seite prüfen: kein noindex, robots.txt richtig.

@@ -1,0 +1,16 @@
+---
+// Platzhalter, bis echte eigene Fotos vorliegen (keine Stockfotos).
+import { LOGO } from './logo-daten';
+
+interface Props {
+  text: string;
+  class?: string;
+}
+
+const { text, class: klasse } = Astro.props;
+---
+
+<div class:list={['foto-platzhalter', klasse]} role="img" aria-label={`Platzhalter: ${text}`}>
+  <svg viewBox={LOGO.symbol.viewBox} width="56" height="63" aria-hidden="true" fill="currentColor" set:html={LOGO.symbol.inhalt} />
+  <span>Foto folgt: {text}</span>
+</div>

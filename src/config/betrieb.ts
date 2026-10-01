@@ -1,6 +1,6 @@
 // Zentrale Betriebsdaten. Jede Angabe steht nur hier und wird überall auf der Website verwendet.
 // Ändern: nur den Text zwischen den Anführungszeichen anpassen, Anführungszeichen und Kommas stehen lassen.
-// Alles mit "PLATZHALTER" muss vor der Liveschaltung ersetzt werden.
+// Alles mit "Platzhalter" muss vor der Liveschaltung ersetzt werden.
 
 export const betrieb = {
   name: 'Baumpflege Happe',
@@ -8,6 +8,7 @@ export const betrieb = {
   claim: 'Ihr Baumspezialist zwischen Köln und Bonn',
   inhaber: 'Heinrich Happe',
   rechtsform: 'Einzelunternehmen',
+  domain: 'baumpflege-happe.de',
 
   adresse: {
     strasse: 'Schebenstraße 6',
@@ -18,7 +19,7 @@ export const betrieb = {
 
   telefon: {
     // So wird die Nummer angezeigt:
-    anzeige: 'PLATZHALTER Telefon',
+    anzeige: '[Platzhalter Telefon]',
     // So wird sie gewählt (international, ohne Leerzeichen), z. B. +4922221234567:
     link: '+490000000000',
   },
@@ -27,14 +28,21 @@ export const betrieb = {
     nummer: '490000000000',
     vorbelegterText: 'Guten Tag, ich habe eine Anfrage zu einem Baum:',
   },
-  email: 'PLATZHALTER@baumpflege-happe.de',
+  email: '[Platzhalter]@baumpflege-happe.de',
 
   // Erreichbarkeit für Telefon und Rückrufe:
-  erreichbarkeit: 'PLATZHALTER Erreichbarkeitszeiten, z. B. Mo bis Fr 8 bis 17 Uhr',
+  erreichbarkeit: '[Platzhalter: Mo bis Fr 8 bis 17 Uhr]',
   // Antwortzeit auf Anfragen (wird im Ablauf und am Formular genannt):
-  antwortzeit: 'PLATZHALTER innerhalb von zwei Werktagen',
+  antwortzeit: '[Platzhalter: innerhalb von zwei Werktagen]',
 
-  ustId: 'PLATZHALTER USt-IdNr.',
+  ustId: '[Platzhalter USt-IdNr.]',
+
+  // Google-Bewertungen (Werte aus dem Google-Unternehmensprofil übernehmen):
+  bewertungen: {
+    durchschnitt: '[Platzhalter: 4,9]',
+    anzahl: '[Platzhalter: Anzahl]',
+    stand: '[Platzhalter: Monat Jahr]',
+  },
 
   // Links zu den Profilen (leer lassen, wenn es das Profil nicht gibt):
   profile: {
@@ -44,9 +52,9 @@ export const betrieb = {
   },
 } as const;
 
-// Schalter für Bereiche, die vorbereitet, aber noch nicht sichtbar sind.
-export const schalter = {
-  // Erst auf true setzen, wenn der Nachweis SKT-A vorliegt.
-  // Bei false wird die Seite Seilklettertechnik nicht gebaut, nicht verlinkt und nicht in die Sitemap aufgenommen.
-  seilklettertechnik: false,
-} as const;
+export const telefonLink = `tel:${betrieb.telefon.link}`;
+export const whatsappLink = `https://wa.me/${betrieb.whatsapp.nummer}?text=${encodeURIComponent(betrieb.whatsapp.vorbelegterText)}`;
+export const mailLink = `mailto:${betrieb.email}`;
+
+// Die Seite Seilklettertechnik erscheint erst, wenn in src/inhalte/qualifikationen/skt-a.yaml
+// "vorhanden: true" steht (siehe src/lib/inhalte.ts).

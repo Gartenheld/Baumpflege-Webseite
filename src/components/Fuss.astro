@@ -1,0 +1,176 @@
+---
+import Logo from './Logo.astro';
+import Icon from './Icon.astro';
+import { betrieb, telefonLink, whatsappLink, mailLink } from '../config/betrieb';
+import { fussmenue, rechtliches } from '../config/navigation';
+import { sichtbareLeistungen, leistungsUrl } from '../lib/inhalte';
+
+const leistungen = await sichtbareLeistungen();
+const profile = [
+  { name: 'Google', href: betrieb.profile.google },
+  { name: 'Instagram', href: betrieb.profile.instagram },
+  { name: 'Facebook', href: betrieb.profile.facebook },
+].filter((p) => p.href);
+const jahr = new Date().getFullYear();
+---
+
+<footer class="fuss">
+  <div class="huelle fuss__raster">
+    <div class="fuss__betrieb">
+      <a href="/" class="fuss__logo"><Logo variante="querKurz" negativ titel="Baumpflege Happe, zur Startseite" /></a>
+      <p class="fuss__unterzeile">{betrieb.unterzeile}</p>
+      <address>
+        {betrieb.name}<br />
+        Inhaber {betrieb.inhaber}<br />
+        {betrieb.adresse.strasse}<br />
+        {betrieb.adresse.plz} {betrieb.adresse.ort}
+      </address>
+    </div>
+
+    <nav aria-labelledby="fuss-leistungen">
+      <h2 id="fuss-leistungen">Leistungen</h2>
+      <ul>
+        {leistungen.map((l) => <li><a href={leistungsUrl(l.id)}>{l.data.titel}</a></li>)}
+      </ul>
+    </nav>
+
+    <nav aria-labelledby="fuss-betrieb">
+      <h2 id="fuss-betrieb">Betrieb</h2>
+      <ul>
+        {fussmenue.map((p) => <li><a href={p.href}>{p.titel}</a></li>)}
+      </ul>
+    </nav>
+
+    <div>
+      <h2>Kontakt</h2>
+      <ul class="fuss__kontakt">
+        <li><a href={telefonLink}><Icon name="telefon" />{betrieb.telefon.anzeige}</a></li>
+        <li><a href={whatsappLink}><Icon name="whatsapp" />WhatsApp</a></li>
+        <li><a href={mailLink}><Icon name="mail" />{betrieb.email}</a></li>
+        <li class="fuss__zeiten"><Icon name="uhr" /><span>{betrieb.erreichbarkeit}</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="huelle fuss__unten">
+    <p>© {jahr} {betrieb.name}</p>
+    <ul>
+      {rechtliches.map((p) => <li><a href={p.href}>{p.titel}</a></li>)}
+      {profile.map((p) => <li><a href={p.href} rel="noopener">{p.name}</a></li>)}
+    </ul>
+  </div>
+</footer>
+
+<style>
+  .fuss {
+    background: var(--tanne-dunkel);
+    color: var(--auf-dunkel);
+    font-size: 1rem;
+    padding-top: clamp(3rem, 6vw, 4.5rem);
+  }
+
+  .fuss__raster {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  }
+
+  .fuss__betrieb {
+    grid-column: 1 / -1;
+  }
+
+  .fuss__logo :global(.logo) {
+    width: 14rem;
+    height: auto;
+  }
+
+  .fuss__unterzeile {
+    margin: 0.75rem 0 1.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--kupfer-hell);
+  }
+
+  address {
+    font-style: normal;
+    color: var(--auf-dunkel-weich);
+  }
+
+  h2 {
+    font-family: var(--schrift-text);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--kupfer-hell);
+    margin-bottom: 0.9rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.55rem;
+  }
+
+  a {
+    color: var(--auf-dunkel);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--kupfer-hell);
+    text-decoration: underline;
+  }
+
+  .fuss__kontakt a,
+  .fuss__zeiten {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    overflow-wrap: anywhere;
+  }
+
+  .fuss__kontakt :global(.icon) {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+    color: var(--kupfer-hell);
+  }
+
+  .fuss__zeiten {
+    color: var(--auf-dunkel-weich);
+  }
+
+  .fuss__unten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-block: 1.5rem;
+    border-top: 1px solid rgb(243 238 230 / 0.18);
+    color: var(--auf-dunkel-weich);
+    font-size: 0.95rem;
+  }
+
+  .fuss__unten ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 64rem) {
+    .fuss__raster {
+      grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
+    }
+
+    .fuss__betrieb {
+      grid-column: auto;
+    }
+  }
+</style>

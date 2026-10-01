@@ -1,0 +1,24 @@
+---
+// Logo als eingebettete SVG-Grafik. Farbe: Hauptfarbe über "color", Unterzeile über .logo-akzent (global.css).
+import { LOGO, type LogoVariante } from './logo-daten';
+
+interface Props {
+  variante?: LogoVariante;
+  negativ?: boolean;
+  titel?: string;
+  class?: string;
+}
+
+const { variante = 'quer', negativ = false, titel = 'Baumpflege Happe', class: klasse } = Astro.props;
+const logo = LOGO[variante];
+---
+
+<svg
+  class:list={['logo', { 'logo--negativ': negativ }, klasse]}
+  viewBox={logo.viewBox}
+  width={logo.breite}
+  height={logo.hoehe}
+  role="img"
+  aria-label={titel}
+  set:html={logo.inhalt}
+/>

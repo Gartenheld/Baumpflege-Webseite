@@ -22,19 +22,15 @@ F3_TAG = Font('instrument-sans/files/instrument-sans-latin-wdth-normal.woff2', w
 # Jedes Symbol: (svg-Fragment, breite, höhe) in eigenen Koordinaten.
 
 def symbol_krone():
-    """Vorschlag 1: Krone als Fläche, Astwerk ausgespart, Stamm darunter."""
-    w, h = 120, 136
-    branches = [('M60 97 V70', 8), ('M60 78 C52 72 44 66 34 62', 6), ('M60 72 C68 64 76 58 86 54', 6),
-                ('M60 70 C58 58 56 48 50 36', 5.5), ('M56 52 C60 46 64 40 68 30', 4.5),
-                ('M44 66 C40 58 38 52 37 44', 4), ('M78 58 C80 50 82 44 82 38', 4)]
-    lines = ''.join(f'<path d="{d}" stroke-width="{sw}"/>' for d, sw in branches)
-    svg = f'''<mask id="k{{U}}" maskUnits="userSpaceOnUse" x="0" y="0" width="{w}" height="{h}">
-<rect width="{w}" height="{h}" fill="#fff"/>
-<g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round">{lines}</g>
-</mask>
-<circle cx="60" cy="54" r="50" fill="{{P}}" mask="url(#k{{U}})"/>
-<path d="M54.6 101.5 H65.4 L66.6 127 C66.9 130.6 68.8 132.4 73 133 H47 C51.2 132.4 53.1 130.6 53.4 127 Z" fill="{{P}}"/>'''
-    return svg, w, h
+    """Vorschlag 1: Krone als Fläche, Astwerk ausgespart, Stamm darunter (eine Fläche, ohne Maske)."""
+    from final_symbol import krone, BR
+    return f'<path d="{krone(BR)}" fill="{{P}}"/>', 120, 136
+
+
+def symbol_krone_klein():
+    """Vereinfachte Krone für 16 bis 48 Pixel (Favicon, App-Symbol)."""
+    from final_symbol import krone, BR_KLEIN
+    return f'<path d="{krone(BR_KLEIN)}" fill="{{P}}"/>', 120, 136
 
 
 def symbol_blattbaum():
@@ -147,6 +143,9 @@ def v1(variant):
         return wrap(s + t, width, sym_h + 36 + th, pad=8)
     if variant == 'symbol':
         svg, w, h = symbol_krone()
+        return wrap(svg, w, h, pad=4)
+    if variant == 'symbol_klein':
+        svg, w, h = symbol_krone_klein()
         return wrap(svg, w, h, pad=4)
 
 

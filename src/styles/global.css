@@ -1,0 +1,270 @@
+/* Grundstile Baumpflege Happe: Farbwelt „Tanne und Kupfer“, Schriften Source Serif 4 und Source Sans 3.
+   Keine Inline-Styles verwenden: Die Content-Security-Policy erlaubt nur Stylesheets. */
+
+:root {
+  /* Farben */
+  --tanne: #173f3c;
+  --tanne-dunkel: #0f2d2b;
+  --kupfer: #a65a2e;
+  --kupfer-dunkel: #8e4b25; /* kleine Kupfer-Schrift auf Sand und Hover */
+  --kupfer-hell: #de9a68; /* auf dunklem Grund */
+  --sand: #f3eee6;
+  --nebel: #dce6e2;
+  --weiss: #ffffff;
+  --text: #1a2120;
+  --text-weich: #4a5553;
+  --linie: #ddd5c8;
+  --auf-dunkel: #f3eee6;
+  --auf-dunkel-weich: #c9d6d2;
+
+  /* Schrift */
+  --schrift-text: var(--font-sans), Arial, sans-serif;
+  --schrift-titel: var(--font-serif), Georgia, serif;
+
+  /* Maße */
+  --breite: 74rem;
+  --rand: clamp(1rem, 4vw, 2.5rem);
+  --abstand-abschnitt: clamp(3.5rem, 8vw, 6.5rem);
+  --radius: 0.75rem;
+  --radius-klein: 0.5rem;
+  --handyleiste: 0px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--sand);
+  color: var(--text);
+  font-family: var(--schrift-text);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-kerning: normal;
+  padding-bottom: var(--handyleiste);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--schrift-titel);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--tanne);
+  margin: 0;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.1rem, 1.4rem + 3vw, 3.6rem);
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 1.3rem + 1.8vw, 2.6rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+}
+
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--tanne);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  color: var(--kupfer-dunkel);
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+:focus-visible {
+  outline: 3px solid var(--kupfer);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.huelle {
+  width: 100%;
+  max-width: var(--breite);
+  margin-inline: auto;
+  padding-inline: var(--rand);
+}
+
+.abschnitt {
+  padding-block: var(--abstand-abschnitt);
+}
+
+.kicker {
+  font-family: var(--schrift-text);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--kupfer-dunkel);
+}
+
+.einleitung {
+  font-size: clamp(1.125rem, 1.05rem + 0.35vw, 1.3rem);
+  color: var(--text-weich);
+  max-width: 40rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.sprunglink {
+  position: absolute;
+  left: 1rem;
+  top: -10rem;
+  z-index: 100;
+  background: var(--tanne);
+  color: var(--weiss);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-klein);
+}
+
+.sprunglink:focus {
+  top: 1rem;
+  color: var(--weiss);
+}
+
+/* Schaltflächen */
+.knopf {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 3.25rem;
+  padding: 0.75rem 1.4rem;
+  border-radius: var(--radius-klein);
+  border: 2px solid transparent;
+  font-family: var(--schrift-text);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.knopf svg {
+  width: 1.3em;
+  height: 1.3em;
+  flex-shrink: 0;
+}
+
+.knopf--haupt {
+  background: var(--kupfer);
+  color: var(--weiss);
+}
+
+.knopf--haupt:hover {
+  background: var(--kupfer-dunkel);
+  color: var(--weiss);
+}
+
+.knopf--rahmen {
+  border-color: var(--tanne);
+  color: var(--tanne);
+  background: transparent;
+}
+
+.knopf--rahmen:hover {
+  background: var(--tanne);
+  color: var(--weiss);
+}
+
+.knopf--hell {
+  border-color: var(--auf-dunkel);
+  color: var(--auf-dunkel);
+  background: transparent;
+}
+
+.knopf--hell:hover {
+  background: var(--auf-dunkel);
+  color: var(--tanne);
+}
+
+/* Logo (Farben per Klasse, siehe Logo.astro) */
+.logo {
+  display: block;
+  height: auto;
+  color: var(--tanne);
+}
+
+.logo .logo-akzent {
+  fill: var(--kupfer);
+}
+
+.logo--negativ {
+  color: var(--auf-dunkel);
+}
+
+.logo--negativ .logo-akzent {
+  fill: var(--kupfer-hell);
+}
+
+/* Platzhalter für Fotos, bis echte Bilder vorliegen */
+.foto-platzhalter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background: var(--nebel);
+  color: var(--tanne);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.foto-platzhalter svg {
+  width: 3.5rem;
+  height: auto;
+  opacity: 0.35;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Platz für die feste Handy-Leiste, damit sie nichts verdeckt */
+@media (max-width: 47.99rem) {
+  :root {
+    --handyleiste: calc(3.75rem + env(safe-area-inset-bottom));
+  }
+}

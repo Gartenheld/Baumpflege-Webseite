@@ -1,6 +1,6 @@
 // Astro-Konfiguration für die Website "Baumpflege Happe".
 // Ergebnis ist eine rein statische Website im Ordner dist/, die per GitHub Actions zu Hostinger hochgeladen wird.
-import { defineConfig, envField } from 'astro/config';
+import { defineConfig, envField, fontProviders } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { satteri } from '@astrojs/markdown-satteri';
 
@@ -19,6 +19,27 @@ export default defineConfig({
   },
   // Zwischenspeicher für optimierte Bilder außerhalb von node_modules, damit GitHub Actions ihn behalten kann.
   cacheDir: './.astro-cache',
+  // Schriften liegen als Datei im Projekt (src/assets/fonts), kein Abruf bei Google oder anderen Diensten.
+  fonts: [
+    {
+      provider: fontProviders.local(),
+      name: 'Source Serif 4',
+      cssVariable: '--font-serif',
+      fallbacks: ['Georgia', 'serif'],
+      options: {
+        variants: [{ src: ['./src/assets/fonts/source-serif-4-display.woff2'], weight: '500 700', style: 'normal' }],
+      },
+    },
+    {
+      provider: fontProviders.local(),
+      name: 'Source Sans 3',
+      cssVariable: '--font-sans',
+      fallbacks: ['Arial', 'sans-serif'],
+      options: {
+        variants: [{ src: ['./src/assets/fonts/source-sans-3.woff2'], weight: '400 700', style: 'normal' }],
+      },
+    },
+  ],
   env: {
     schema: {
       // true für die Vorschau-Umgebung: Suchmaschinen werden ausgesperrt (robots.txt und noindex).

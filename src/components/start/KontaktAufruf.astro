@@ -1,0 +1,150 @@
+---
+import Icon from '../Icon.astro';
+import { betrieb, telefonLink, whatsappLink, mailLink } from '../../config/betrieb';
+---
+
+<section class="abschnitt kontakt" aria-labelledby="kontakt-titel">
+  <div class="huelle raster">
+    <div class="text">
+      <p class="kicker">Kontakt</p>
+      <h2 id="kontakt-titel">Schicken Sie uns Fotos Ihres Baumes</h2>
+      <p>
+        Ein paar Fotos und eine kurze Beschreibung genügen. Sie erhalten eine kostenlose Ersteinschätzung,
+        {betrieb.antwortzeit}.
+      </p>
+      <div class="knoepfe">
+        <a class="knopf knopf--haupt" href="/kontakt/"><Icon name="kamera" />Anfrage mit Fotos senden</a>
+        <a class="knopf knopf--hell" href={whatsappLink}><Icon name="whatsapp" />Per WhatsApp</a>
+      </div>
+    </div>
+    <ul class="wege">
+      <li>
+        <Icon name="telefon" />
+        <div>
+          <span class="etikett">Telefon</span>
+          <a href={telefonLink}>{betrieb.telefon.anzeige}</a>
+          <span class="zusatz">{betrieb.erreichbarkeit}</span>
+        </div>
+      </li>
+      <li>
+        <Icon name="mail" />
+        <div>
+          <span class="etikett">E-Mail</span>
+          <a href={mailLink}>{betrieb.email}</a>
+        </div>
+      </li>
+      <li>
+        <Icon name="ort" />
+        <div>
+          <span class="etikett">Betrieb</span>
+          <span>{betrieb.adresse.strasse}, {betrieb.adresse.plz} {betrieb.adresse.ort}</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<style>
+  .kontakt {
+    background: var(--tanne);
+    color: var(--auf-dunkel);
+  }
+
+  .raster {
+    display: grid;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .text {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .kicker {
+    color: var(--kupfer-hell);
+  }
+
+  h2 {
+    color: var(--auf-dunkel);
+  }
+
+  .text p {
+    color: var(--auf-dunkel-weich);
+    font-size: 1.15rem;
+    max-width: 36rem;
+  }
+
+  .knoepfe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .wege {
+    list-style: none;
+    margin: 0;
+    padding: 1.75rem;
+    display: grid;
+    gap: 1.4rem;
+    border: 1px solid rgb(243 238 230 / 0.22);
+    border-radius: var(--radius);
+  }
+
+  .wege li {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .wege li > :global(.icon) {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--kupfer-hell);
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+  }
+
+  .wege div {
+    display: grid;
+    gap: 0.1rem;
+    overflow-wrap: anywhere;
+  }
+
+  .etikett {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--auf-dunkel-weich);
+  }
+
+  .wege a {
+    color: var(--auf-dunkel);
+    font-weight: 700;
+    font-size: 1.15rem;
+  }
+
+  .wege a:hover {
+    color: var(--kupfer-hell);
+  }
+
+  .zusatz {
+    color: var(--auf-dunkel-weich);
+    font-size: 1rem;
+  }
+
+  @media (max-width: 29.99rem) {
+    .knoepfe .knopf {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 60rem) {
+    .raster {
+      grid-template-columns: 1.2fr 1fr;
+      gap: 4rem;
+    }
+  }
+</style>

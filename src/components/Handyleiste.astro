@@ -1,0 +1,53 @@
+---
+// Feste Leiste am unteren Rand auf dem Handy: Anrufen und WhatsApp.
+import Icon from './Icon.astro';
+import { telefonLink, whatsappLink } from '../config/betrieb';
+---
+
+<nav class="handyleiste" aria-label="Schnellkontakt">
+  <a href={telefonLink}><Icon name="telefon" />Anrufen</a>
+  <a href={whatsappLink}><Icon name="whatsapp" />WhatsApp</a>
+</nav>
+
+<style>
+  .handyleiste {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--weiss);
+    border-top: 1px solid var(--linie);
+    padding-bottom: env(safe-area-inset-bottom);
+    box-shadow: 0 -6px 18px rgb(23 63 60 / 0.08);
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 3.75rem;
+    font-weight: 700;
+    font-size: 1.0625rem;
+    color: var(--tanne);
+    text-decoration: none;
+  }
+
+  a + a {
+    border-left: 1px solid var(--linie);
+  }
+
+  a :global(.icon) {
+    width: 1.35rem;
+    height: 1.35rem;
+  }
+
+  @media (min-width: 48rem) {
+    .handyleiste {
+      display: none;
+    }
+  }
+</style>

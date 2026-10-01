@@ -2,6 +2,8 @@
 
 Schritt 2 von 5. Stand: 1. Oktober 2026.
 
+**Entscheidung (1. Oktober 2026): Logo 1 (klassisch) mit Symbol, Farbwelt C „Tanne und Kupfer“.** Endfassungen, Schutzzone und Mindestgrößen: [brand/README.md](../brand/README.md). Die Übersicht unten dokumentiert die Auswahl.
+
 Zur Auswahl auf dem Design-Canvas: https://claude.ai/artifact/KMmaJdHmugUFEsR9kLNWWn (privat, nur für dich sichtbar, solange du ihn nicht teilst). Dort lassen sich in den drei Anwendungen (Website, Pritschenwagen, Arbeitskleidung) Logo und Farbwelt per Klick umschalten.
 
 Logo und Farbwelt sind frei kombinierbar. Jedes Logo gibt es mit und ohne Symbol und als Kurzfassung ohne Unterzeile für kleine Größen (Kopfzeile, Brustlogo).

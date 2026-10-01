@@ -1,0 +1,7 @@
+# Platzhalter: Text aus dem Google-Unternehmensprofil übernehmen, Name gekürzt (Vorname und Anfangsbuchstabe).
+# Erst mit veroeffentlichen: true erscheint die Bewertung auf der Live-Seite.
+name: "[Platzhalter Name]"
+sterne: 5
+datum: "[Platzhalter Monat Jahr]"
+text: "[Platzhalter: Text einer echten Google-Bewertung, gekürzt auf zwei bis drei Sätze.]"
+veroeffentlichen: false

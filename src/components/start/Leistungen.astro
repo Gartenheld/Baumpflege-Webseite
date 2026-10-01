@@ -1,0 +1,217 @@
+---
+import Icon from '../Icon.astro';
+import FotoPlatzhalter from '../FotoPlatzhalter.astro';
+import { sichtbareLeistungen, leistungsUrl } from '../../lib/inhalte';
+
+const leistungen = await sichtbareLeistungen();
+const schwerpunkte = leistungen.filter((l) => l.data.schwerpunkt);
+const weitere = leistungen.filter((l) => !l.data.schwerpunkt);
+---
+
+<section class="abschnitt" aria-labelledby="leistungen-titel">
+  <div class="huelle">
+    <div class="kopfzeile">
+      <p class="kicker">Leistungen</p>
+      <h2 id="leistungen-titel">Alles rund um Ihre Bäume</h2>
+      <p class="einleitung">
+        Unser Schwerpunkt sind Baumpflege und Baumfällung. Dazu übernehmen wir die Arbeiten, die drumherum anfallen,
+        vom Häckseln bis zur Wurzelstockentfernung.
+      </p>
+    </div>
+
+    <div class="schwerpunkte">
+      {
+        schwerpunkte.map((l) => (
+          <article class="karte karte--gross">
+            <FotoPlatzhalter text={l.data.titel} class="karte__bild" />
+            <div class="karte__text">
+              <h3>
+                <a href={leistungsUrl(l.id)}>{l.data.titel}</a>
+              </h3>
+              <p>{l.data.kurz}</p>
+              <span class="mehr" aria-hidden="true">
+                Mehr erfahren <Icon name="pfeil" />
+              </span>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+
+    <ul class="weitere">
+      {
+        weitere.map((l) => (
+          <li class="karte">
+            <h3>
+              <a href={leistungsUrl(l.id)}>{l.data.titel}</a>
+            </h3>
+            <p>{l.data.kurz}</p>
+            <Icon name="pfeil" class="karte__pfeil" />
+          </li>
+        ))
+      }
+    </ul>
+
+    <aside class="gewerbe" aria-labelledby="gewerbe-titel">
+      <div>
+        <h3 id="gewerbe-titel">Für Hausverwaltungen und Gewerbe</h3>
+        <p>
+          Regelmäßige Pflege, Rahmenverträge und ein fester Ansprechpartner. Wir unterstützen Sie bei der
+          Verkehrssicherungspflicht, mit planbaren Kosten und wenig Aufwand für Sie.
+        </p>
+      </div>
+      <a class="knopf knopf--hell" href="/gewerbe-hausverwaltungen/">Angebot für Gewerbe <Icon name="pfeil" /></a>
+    </aside>
+  </div>
+</section>
+
+<style>
+  .kopfzeile {
+    display: grid;
+    gap: 0.9rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .karte {
+    position: relative;
+    background: var(--weiss);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    display: grid;
+    gap: 0.6rem;
+    align-content: start;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+  }
+
+  .karte:hover {
+    box-shadow: 0 10px 28px rgb(23 63 60 / 0.12);
+  }
+
+  .karte:focus-within {
+    box-shadow: 0 0 0 3px var(--kupfer);
+  }
+
+  /* Die ganze Karte ist klickbar, der Link steht in der Überschrift */
+  .karte h3 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .karte h3 a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+  }
+
+  .karte h3 a:focus-visible {
+    outline: none;
+  }
+
+  .karte p {
+    color: var(--text-weich);
+    font-size: 1.05rem;
+  }
+
+  .schwerpunkte {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .karte--gross {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .karte--gross :global(.karte__bild) {
+    aspect-ratio: 16 / 10;
+  }
+
+  .karte__text {
+    padding: 1.5rem 1.5rem 1.75rem;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .karte--gross h3 {
+    font-size: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+  }
+
+  .mehr {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 700;
+    color: var(--kupfer-dunkel);
+    margin-top: 0.25rem;
+  }
+
+  .mehr :global(.icon),
+  :global(.karte__pfeil) {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .weitere {
+    list-style: none;
+    margin: 1.25rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  }
+
+  .weitere .karte {
+    padding-right: 3rem;
+  }
+
+  .weitere :global(.karte__pfeil) {
+    position: absolute;
+    right: 1.25rem;
+    top: 1.6rem;
+    color: var(--kupfer);
+  }
+
+  .gewerbe {
+    margin-top: 1.25rem;
+    background: var(--tanne);
+    color: var(--auf-dunkel);
+    border-radius: var(--radius);
+    padding: clamp(1.5rem, 3vw, 2.25rem);
+    display: grid;
+    gap: 1.25rem;
+    align-items: center;
+  }
+
+  .gewerbe h3 {
+    color: var(--auf-dunkel);
+    margin-bottom: 0.5rem;
+  }
+
+  .gewerbe p {
+    color: var(--auf-dunkel-weich);
+    max-width: 44rem;
+  }
+
+  .gewerbe .knopf {
+    justify-self: start;
+  }
+
+  @media (min-width: 48rem) {
+    .schwerpunkte {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .gewerbe {
+      grid-template-columns: 1fr auto;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .karte:hover {
+      transform: translateY(-2px);
+    }
+  }
+</style>
