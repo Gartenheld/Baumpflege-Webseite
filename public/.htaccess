@@ -1,0 +1,48 @@
+# Serverkonfiguration für Hostinger (LiteSpeed, Apache-kompatibel).
+# Diese Datei wird bei jedem Deployment hochgeladen und ist die einzige gültige Version.
+# Schalter im hPanel, die selbst in die .htaccess schreiben (z. B. "HTTPS erzwingen"), bitte nicht nutzen.
+
+Options -Indexes
+DirectoryIndex index.html index.php
+ErrorDocument 404 /404.html
+
+AddType image/avif .avif
+AddType image/webp .webp
+AddType video/webm .webm
+AddType font/woff2 .woff2
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Immer HTTPS
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+  # Eine einzige Schreibweise der Domain (mit www). Aktivieren, sobald die Domain feststeht:
+  # RewriteCond %{HTTP_HOST} ^NEUE-DOMAIN\.de$ [NC]
+  # RewriteRule ^ https://www.NEUE-DOMAIN.de%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Sicherheits-Header. Die Content-Security-Policy für Skripte, Styles und Bilder steht als <meta> in jeder Seite.
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+  Header always set Content-Security-Policy "frame-ancestors 'self'; base-uri 'self'; form-action 'self'; object-src 'none'"
+  # HSTS erst bei der Liveschaltung aktivieren, wenn HTTPS für alle Schreibweisen der Domain funktioniert:
+  # Header always set Strict-Transport-Security "max-age=31536000"
+
+  # HTML immer frisch prüfen, damit Änderungen sofort sichtbar sind
+  <FilesMatch "\.(html|xml|txt)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  # Bilder, Videos und Schriften ohne Versionsnummer im Namen: 7 Tage
+  <FilesMatch "\.(avif|webp|jpe?g|png|svg|ico|mp4|webm|woff2)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json application/xml image/svg+xml
+</IfModule>

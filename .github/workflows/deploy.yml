@@ -1,0 +1,74 @@
+# Baut die Website bei jeder Änderung und lädt sie von "main" aus per SSH/rsync zu Hostinger hoch.
+# Einrichtung (Secrets und Variablen): siehe docs/01-technik-und-deployment.md, Abschnitt Deployment.
+name: Build und Deployment
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Nie zwei Deployments gleichzeitig
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code holen
+        uses: actions/checkout@v6
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Abhängigkeiten installieren
+        run: npm ci
+
+      - name: Website bauen
+        run: npm run build
+        env:
+          # Bis zur Liveschaltung: Adresse der Vorschau und NOINDEX=true (Variablen im Repository setzen)
+          SITE_URL: ${{ vars.SITE_URL }}
+          PUBLIC_NOINDEX: ${{ vars.NOINDEX || 'true' }}
+
+      - name: PHP-Dateien auf Syntaxfehler prüfen
+        run: |
+          files=$(find dist -name '*.php')
+          if [ -n "$files" ]; then for f in $files; do php -l "$f"; done; else echo "Keine PHP-Dateien"; fi
+
+      # Ab hier nur auf "main" und erst, wenn DEPLOY_ENABLED=true gesetzt ist
+      - name: SSH-Zugang vorbereiten
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.DEPLOY_ENABLED == 'true'
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+
+      - name: Zu Hostinger hochladen
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.DEPLOY_ENABLED == 'true'
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          DEPLOY_PATH: ${{ vars.DEPLOY_PATH }}
+        run: |
+          # --delete entfernt Dateien, die es in der neuen Version nicht mehr gibt.
+          # Geschützt bleiben Dateien, die nur auf dem Server liegen (Zertifikatsprüfung, PHP-Einstellungen).
+          rsync -rlzv --delete --checksum \
+            --filter='P .well-known/' \
+            --filter='P .user.ini' \
+            --filter='P php.ini' \
+            -e "ssh -i ~/.ssh/deploy_key -p ${SSH_PORT} -o StrictHostKeyChecking=yes" \
+            dist/ "${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH%/}/"

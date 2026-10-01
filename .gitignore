@@ -1,0 +1,13 @@
+# Build-Ergebnis und Abhängigkeiten
+dist/
+node_modules/
+.astro/
+
+# Lokale Umgebungsdateien und Zugangsdaten nie einchecken
+.env
+.env.*
+anfrage-config.php
+
+# System
+.DS_Store
+Thumbs.db

@@ -1,0 +1,19 @@
+---
+// Platzhalter-Startseite für Schritt 1 (Test des Deployments).
+// Die eigentliche Startseite entsteht in Schritt 3.
+import Basis from '../layouts/Basis.astro';
+import { betrieb } from '../config/betrieb';
+---
+
+<Basis
+  title={`${betrieb.name}: Baumpflege und Baumfällung in Bornheim, Köln und Bonn`}
+  description="Die neue Website von Baumpflege Happe aus Bornheim entsteht gerade."
+  noindex
+>
+  <main>
+    <h1>{betrieb.name}</h1>
+    <p>{betrieb.unterzeile}</p>
+    <p>{betrieb.claim}</p>
+    <p>Die neue Website entsteht gerade.</p>
+  </main>
+</Basis>

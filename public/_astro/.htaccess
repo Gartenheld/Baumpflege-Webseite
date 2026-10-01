@@ -1,0 +1,4 @@
+# Dateien in /_astro/ haben eine Prüfsumme im Namen und ändern sich nie: 1 Jahr zwischenspeichern.
+<IfModule mod_headers.c>
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</IfModule>

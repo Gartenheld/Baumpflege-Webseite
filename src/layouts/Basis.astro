@@ -1,0 +1,39 @@
+---
+// Grundlayout aller Seiten: Kopfbereich mit Title, Description, Canonical, Robots und Open Graph.
+// Gestaltung, Navigation und Footer folgen in Schritt 3 nach Freigabe von Logo und Farben.
+import { PUBLIC_NOINDEX } from 'astro:env/client';
+import { betrieb } from '../config/betrieb';
+
+interface Props {
+  title: string;
+  description: string;
+  noindex?: boolean;
+}
+
+const { title, description, noindex = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const robots = PUBLIC_NOINDEX || noindex ? 'noindex, nofollow' : 'index, follow';
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
+    <link rel="canonical" href={canonical} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content={betrieb.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
