@@ -6,6 +6,7 @@ Konzept und Hintergründe:
 
 - [docs/01-technik-und-deployment.md](docs/01-technik-und-deployment.md): Technik, Hosting, Deployment, Formular, Datenschutz, SEO, Search Console, alte Domain
 - [docs/02-weiterleitungen.md](docs/02-weiterleitungen.md): Weiterleitungen von gartenheldservice.com
+- [docs/03-logo-und-farben.md](docs/03-logo-und-farben.md): Logo-Vorschläge und Farbwelten zur Auswahl (Schritt 2)
 - [redirects/gartenheldservice.com/.htaccess](redirects/gartenheldservice.com/.htaccess): fertige Weiterleitungsdatei für die alte Domain (wird von Hand hochgeladen, nicht über das Deployment)
 
 ## Inhalte selbst ändern
