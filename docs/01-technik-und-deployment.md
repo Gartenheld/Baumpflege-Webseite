@@ -785,9 +785,9 @@ Nicht verwenden für http zu https, www zu ohne www oder einen reinen Hosterwech
 
 **Schritt 3: Startseite als Entwurf**
 
-- [ ] Grundlayout, Navigation, Footer, Handy-Leiste (Anrufen, WhatsApp).
-- [ ] Startseite mit Hero (Foto, optional Video), Leistungsübersicht, Ablauf, Bewertungen, Einsatzgebiet, Kontakt.
-- [ ] Freigabe durch dich auf der Vorschau.
+- [x] Grundlayout, Navigation, Footer, Handy-Leiste (Anrufen, WhatsApp).
+- [x] Startseite mit Hero (Foto, optional Video), Leistungsübersicht, Ablauf, Bewertungen, Einsatzgebiet, Kontakt.
+- [x] Freigabe durch dich (01.10.2026). Offen: echte Fotos statt Platzhalter.
 
 **Schritt 4: Alle weiteren Seiten**
 
