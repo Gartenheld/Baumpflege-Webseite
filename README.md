@@ -6,6 +6,7 @@ Konzept und Hintergründe:
 
 - [docs/01-technik-und-deployment.md](docs/01-technik-und-deployment.md): Technik, Hosting, Deployment, Formular, Datenschutz, SEO, Search Console, alte Domain
 - [docs/02-weiterleitungen.md](docs/02-weiterleitungen.md): Weiterleitungen von gartenheldservice.com
+- [redirects/gartenheldservice.com/.htaccess](redirects/gartenheldservice.com/.htaccess): fertige Weiterleitungsdatei für die alte Domain (wird von Hand hochgeladen, nicht über das Deployment)
 
 ## Inhalte selbst ändern
 
@@ -13,7 +14,7 @@ Die ausführliche Anleitung für Texte, Fotos, Referenzen und Bewertungen folgt,
 
 1. Datei im Repository auf github.com öffnen, auf den Stift klicken, ändern.
 2. Unten "Commit changes" klicken.
-3. Nach etwa zwei Minuten ist die Änderung online. Den Fortschritt siehst du unter "Actions".
+3. Nach etwa 2 bis 4 Minuten ist die Änderung online. Den Fortschritt siehst du unter "Actions".
 
 Zentrale Betriebsdaten (Telefon, E-Mail, WhatsApp, Erreichbarkeit, Antwortzeit, USt-IdNr., Profil-Links) stehen in einer einzigen Datei: [src/config/betrieb.ts](src/config/betrieb.ts). Alles mit `PLATZHALTER` muss vor der Liveschaltung ersetzt werden.
 

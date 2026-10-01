@@ -6,6 +6,7 @@
 Options -Indexes
 DirectoryIndex index.html index.php
 ErrorDocument 404 /404.html
+AddDefaultCharset utf-8
 
 AddType image/avif .avif
 AddType image/webp .webp
@@ -18,6 +19,9 @@ AddType font/woff2 .woff2
   # Eine einzige Schreibweise der Domain: ohne www
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+  # Übliche Sitemap-Adresse auf die von Astro erzeugte Sitemap
+  RewriteRule ^sitemap\.xml$ /sitemap-index.xml [R=301,L]
 
   # Versteckte Dateien sperren (z. B. .git), .well-known für Zertifikate erlauben
   RewriteCond %{REQUEST_URI} !^/\.well-known/
