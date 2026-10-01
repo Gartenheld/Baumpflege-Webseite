@@ -19,7 +19,7 @@ Zentrale Betriebsdaten (Telefon, E-Mail, WhatsApp, Erreichbarkeit, Antwortzeit, 
 
 ## Für Entwickler
 
-Voraussetzung: Node.js 22.12 oder neuer.
+Voraussetzung: Node.js 22.12 oder neuer (empfohlen 24).
 
 ```sh
 npm ci          # Abhängigkeiten installieren
@@ -32,7 +32,7 @@ Umgebungsvariablen beim Build:
 
 | Variable | Bedeutung |
 | --- | --- |
-| `SITE_URL` | Adresse der Website, z. B. `https://www.NEUE-DOMAIN.de`. Ohne Angabe gilt der Platzhalter `https://www.example.com`. |
+| `SITE_URL` | Adresse der Website, z. B. `https://NEUE-DOMAIN.de`. Ohne Angabe gilt der Platzhalter `https://example.com`. |
 | `PUBLIC_NOINDEX` | `true` sperrt Suchmaschinen aus (Vorschau). Zur Liveschaltung auf `false`. |
 
 Deployment: [.github/workflows/deploy.yml](.github/workflows/deploy.yml). Benötigte Secrets und Variablen stehen im Konzept unter "Deployment".

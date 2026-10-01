@@ -2,10 +2,11 @@
 // Ergebnis ist eine rein statische Website im Ordner dist/, die per GitHub Actions zu Hostinger hochgeladen wird.
 import { defineConfig, envField } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { satteri } from '@astrojs/markdown-satteri';
 
 // Die Domain ist noch offen. Bis zur Liveschaltung gilt der Platzhalter example.com.
 // Im Deployment wird SITE_URL als GitHub-Variable gesetzt (siehe docs/01-technik-und-deployment.md).
-const SITE_URL = process.env.SITE_URL || 'https://www.example.com';
+const SITE_URL = process.env.SITE_URL || 'https://example.com';
 
 export default defineConfig({
   site: SITE_URL,
@@ -15,6 +16,8 @@ export default defineConfig({
   build: {
     format: 'directory',
   },
+  // Zwischenspeicher für optimierte Bilder außerhalb von node_modules, damit GitHub Actions ihn behalten kann.
+  cacheDir: './.astro-cache',
   env: {
     schema: {
       // true für die Vorschau-Umgebung: Suchmaschinen werden ausgesperrt (robots.txt und noindex).
@@ -23,13 +26,16 @@ export default defineConfig({
   },
   integrations: [
     sitemap({
-      // Danke-Seite des Formulars gehört nicht in die Sitemap.
+      // Danke-Seite des Formulars gehört nicht in die Sitemap (sie trägt zusätzlich noindex).
       filter: (page) => !page.includes('/kontakt/danke/'),
     }),
   ],
   markdown: {
     // Keine Code-Hervorhebung nötig (verträgt sich nicht mit der Content-Security-Policy).
     syntaxHighlight: false,
+    // Keine automatische Typografie: sonst würden aus "--" lange Gedankenstriche
+    // und aus deutschen Anführungszeichen englische.
+    processor: satteri({ features: { smartPunctuation: false } }),
   },
   security: {
     // Content-Security-Policy als <meta>-Element mit Hashes für Skripte und Styles.

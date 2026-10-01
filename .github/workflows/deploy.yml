@@ -1,10 +1,10 @@
-# Baut die Website bei jeder Änderung und lädt sie von "main" aus per SSH/rsync zu Hostinger hoch.
-# Einrichtung (Secrets und Variablen): siehe docs/01-technik-und-deployment.md, Abschnitt Deployment.
+# Baut die Website bei jeder Änderung (Prüfung auf allen Branches)
+# und lädt sie nur von "main" aus per rsync über SSH zu Hostinger hoch.
+# Einrichtung der Secrets und Variablen: docs/01-technik-und-deployment.md, Abschnitt Deployment.
 name: Build und Deployment
 
 on:
   push:
-    branches: [main]
   pull_request:
   workflow_dispatch:
 
@@ -18,7 +18,13 @@ concurrency:
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    env:
+      # Hochladen nur von "main" und erst, wenn die Variable DEPLOY_ENABLED auf true steht
+      DEPLOY: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.DEPLOY_ENABLED == 'true' }}
+      # Bis zur Liveschaltung ist NOINDEX nicht gesetzt oder true: Suchmaschinen bleiben ausgesperrt
+      PUBLIC_NOINDEX: ${{ vars.NOINDEX || 'true' }}
+      SITE_URL: ${{ vars.SITE_URL }}
     steps:
       - name: Code holen
         uses: actions/checkout@v6
@@ -32,43 +38,56 @@ jobs:
       - name: Abhängigkeiten installieren
         run: npm ci
 
+      - name: Inhalte und Code prüfen
+        run: npm run check
+
       - name: Website bauen
         run: npm run build
-        env:
-          # Bis zur Liveschaltung: Adresse der Vorschau und NOINDEX=true (Variablen im Repository setzen)
-          SITE_URL: ${{ vars.SITE_URL }}
-          PUBLIC_NOINDEX: ${{ vars.NOINDEX || 'true' }}
 
       - name: PHP-Dateien auf Syntaxfehler prüfen
         run: |
-          files=$(find dist -name '*.php')
-          if [ -n "$files" ]; then for f in $files; do php -l "$f"; done; else echo "Keine PHP-Dateien"; fi
+          find dist -name '*.php' -print0 | xargs -0 -r -n1 php -l
 
-      # Ab hier nur auf "main" und erst, wenn DEPLOY_ENABLED=true gesetzt ist
-      - name: SSH-Zugang vorbereiten
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.DEPLOY_ENABLED == 'true'
+      - name: Vorschau kennzeichnen (noindex, optional Passwortschutz)
+        if: env.PUBLIC_NOINDEX != 'false'
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+          HTPASSWD_PATH: ${{ vars.PREVIEW_HTPASSWD_PATH }}
+        run: |
+          {
+            printf '\n# Vorschau: nicht indexieren\n'
+            printf '<IfModule mod_headers.c>\n  Header always set X-Robots-Tag "noindex, nofollow"\n</IfModule>\n'
+            if [ -n "$HTPASSWD_PATH" ]; then
+              printf '\n# Vorschau: Passwortschutz\n'
+              printf 'AuthType Basic\nAuthName "Vorschau"\nAuthUserFile %s\nRequire valid-user\n' "$HTPASSWD_PATH"
+            fi
+          } >> dist/.htaccess
+          tail -n 12 dist/.htaccess
+
+      - name: SSH-Zugang vorbereiten
+        if: env.DEPLOY == 'true'
+        env:
+          SSH_KEY: ${{ secrets.HOSTINGER_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.HOSTINGER_KNOWN_HOSTS }}
         run: |
           install -m 700 -d ~/.ssh
-          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
 
       - name: Zu Hostinger hochladen
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.DEPLOY_ENABLED == 'true'
+        if: env.DEPLOY == 'true'
         env:
-          SSH_HOST: ${{ secrets.SSH_HOST }}
-          SSH_PORT: ${{ secrets.SSH_PORT }}
-          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_HOST: ${{ vars.HOSTINGER_SSH_HOST }}
+          SSH_PORT: ${{ vars.HOSTINGER_SSH_PORT || '65002' }}
+          SSH_USER: ${{ vars.HOSTINGER_SSH_USER }}
           DEPLOY_PATH: ${{ vars.DEPLOY_PATH }}
         run: |
           # --delete entfernt Dateien, die es in der neuen Version nicht mehr gibt.
-          # Geschützt bleiben Dateien, die nur auf dem Server liegen (Zertifikatsprüfung, PHP-Einstellungen).
-          rsync -rlzv --delete --checksum \
-            --filter='P .well-known/' \
-            --filter='P .user.ini' \
-            --filter='P php.ini' \
-            -e "ssh -i ~/.ssh/deploy_key -p ${SSH_PORT} -o StrictHostKeyChecking=yes" \
+          # Deshalb liegt nichts Eigenes des Servers in public_html (Formular-Zugangsdaten liegen außerhalb).
+          # Geschützt bleiben .well-known (Zertifikate) und PHP-Einstellungsdateien.
+          rsync -rlcz --delete --delay-updates --chmod=D755,F644 \
+            --filter='P /.well-known/' \
+            --filter='P /.user.ini' \
+            --filter='P /php.ini' \
+            -e "ssh -i $HOME/.ssh/deploy_key -p ${SSH_PORT} -o StrictHostKeyChecking=yes" \
             dist/ "${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH%/}/"

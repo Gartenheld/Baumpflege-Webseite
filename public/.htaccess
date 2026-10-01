@@ -1,6 +1,7 @@
 # Serverkonfiguration für Hostinger (LiteSpeed, Apache-kompatibel).
-# Diese Datei wird bei jedem Deployment hochgeladen und ist die einzige gültige Version.
-# Schalter im hPanel, die selbst in die .htaccess schreiben (z. B. "HTTPS erzwingen"), bitte nicht nutzen.
+# Diese Datei wird bei jedem Deployment hochgeladen und überschreibt die Datei auf dem Server.
+# Deshalb im hPanel keine Werkzeuge nutzen, die in die .htaccess schreiben ("Redirects", "Password Protect Directories").
+# HTTPS erzwingt der hPanel-Schalter "Force HTTPS" (Security -> SSL), nicht diese Datei.
 
 Options -Indexes
 DirectoryIndex index.html index.php
@@ -14,13 +15,13 @@ AddType font/woff2 .woff2
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Immer HTTPS
-  RewriteCond %{HTTPS} !=on
-  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+  # Eine einzige Schreibweise der Domain: ohne www
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 
-  # Eine einzige Schreibweise der Domain (mit www). Aktivieren, sobald die Domain feststeht:
-  # RewriteCond %{HTTP_HOST} ^NEUE-DOMAIN\.de$ [NC]
-  # RewriteRule ^ https://www.NEUE-DOMAIN.de%{REQUEST_URI} [R=301,L]
+  # Versteckte Dateien sperren (z. B. .git), .well-known für Zertifikate erlauben
+  RewriteCond %{REQUEST_URI} !^/\.well-known/
+  RewriteRule (^|/)\. - [F]
 </IfModule>
 
 <IfModule mod_headers.c>
@@ -30,14 +31,14 @@ AddType font/woff2 .woff2
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
   Header always set Content-Security-Policy "frame-ancestors 'self'; base-uri 'self'; form-action 'self'; object-src 'none'"
-  # HSTS erst bei der Liveschaltung aktivieren, wenn HTTPS für alle Schreibweisen der Domain funktioniert:
+  # HSTS erst bei der Liveschaltung aktivieren, wenn HTTPS stabil läuft:
   # Header always set Strict-Transport-Security "max-age=31536000"
 
   # HTML immer frisch prüfen, damit Änderungen sofort sichtbar sind
   <FilesMatch "\.(html|xml|txt)$">
     Header set Cache-Control "no-cache"
   </FilesMatch>
-  # Bilder, Videos und Schriften ohne Versionsnummer im Namen: 7 Tage
+  # Bilder, Videos und Schriften ohne Prüfsumme im Namen: 7 Tage
   <FilesMatch "\.(avif|webp|jpe?g|png|svg|ico|mp4|webm|woff2)$">
     Header set Cache-Control "public, max-age=604800"
   </FilesMatch>

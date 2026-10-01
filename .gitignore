@@ -11,3 +11,4 @@ anfrage-config.php
 # System
 .DS_Store
 Thumbs.db
+.astro-cache/
