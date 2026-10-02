@@ -149,7 +149,7 @@ Die Leistungsdatei `seilklettertechnik.md` trägt `benoetigt: skt-a`. Solange `v
 
 Weitere Qualifikationen sind einfach eine neue Datei. Wichtig: Der Schalter ändert keine Texte.
 
-**Stand 02.10.2026:** SKT-A liegt vor (`vorhanden: true`), die Seite Seilklettertechnik ist sichtbar. SKT-B ist nicht selbst vorhanden, wird aber bei Bedarf von einem Subunternehmer gestellt: `skt-b.yaml` mit `vorhanden: false`, `partner: true` und einem Hinweistext. Die Website zeigt SKT-B mit dem Etikett „über Subunternehmer“, und die Texte zu Seilklettertechnik, Fällung auf engem Raum und Über uns nennen den Subunternehmer für Arbeiten mit der Motorsäge im Baum.
+**Stand 02.10.2026:** SKT-A liegt vor (`vorhanden: true`), die Seite Seilklettertechnik ist sichtbar. SKT-B ist nicht selbst vorhanden, Arbeiten mit der Motorsäge im Baum übernimmt bei Bedarf ein Subunternehmer. Auf Wunsch von Heinrich Happe wird der Subunternehmer auf der Website nicht erwähnt: SKT-B steht nicht in der Liste der eigenen Qualifikationen (`vorhanden: false`), die Texte zu Seilklettertechnik und Fällung auf engem Raum bieten die Arbeiten an, „ausgeführt mit der dafür nötigen Qualifikation SKT-B“. So behauptet die Website nicht, dass der Inhaber selbst SKT-B hat.
 
 ---
 

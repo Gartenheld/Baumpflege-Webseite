@@ -14,12 +14,6 @@ export async function vorhandeneQualifikationen() {
   return alle.sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
 }
 
-/** Qualifikationen, die ein Subunternehmer bei Bedarf stellt (vorhanden: false, partner: true). */
-export async function partnerQualifikationen() {
-  const alle = await getCollection('qualifikationen', ({ data }) => !data.vorhanden && data.partner);
-  return alle.sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
-}
-
 /** Leistungen, deren benötigte Qualifikation vorhanden ist (z. B. Seilklettertechnik erst mit SKT-A). */
 export async function sichtbareLeistungen() {
   const vorhanden = new Set((await vorhandeneQualifikationen()).map((q) => q.id));

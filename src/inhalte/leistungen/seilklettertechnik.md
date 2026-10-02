@@ -46,7 +46,7 @@ Grundlage ist die Qualifikation SKT-A. Sie umfasst das sichere Klettern am Seil,
 
 ## Wenn die Motorsäge in die Krone muss
 
-Starke Äste lassen sich mit Handwerkzeug nicht sauber schneiden, und manche Bäume müssen Stück für Stück von oben abgetragen werden. Dafür ist die Motorsäge im Baum nötig, und dafür braucht es die Qualifikation SKT-B. Diese Arbeiten übernimmt bei Bedarf ein Subunternehmer mit SKT-B, den wir für den Auftrag hinzuziehen. Angebot und Absprachen laufen dabei über uns. Welche Arbeiten bei Ihrem Baum anstehen und ob dafür ein Subunternehmer nötig ist, sagen wir Ihnen nach Sichtung Ihrer Fotos und vor Beginn der Arbeiten.
+Starke Äste lassen sich mit Handwerkzeug nicht sauber schneiden, und manche Bäume müssen Stück für Stück von oben abgetragen werden. Dafür ist die Motorsäge im Baum nötig. Auch diese Arbeiten übernehmen wir für Sie, ausgeführt mit der dafür nötigen Qualifikation SKT-B. Welche Arbeiten bei Ihrem Baum anstehen, sagen wir Ihnen nach Sichtung Ihrer Fotos und vor Beginn der Arbeiten.
 
 ## Warum ohne schweres Gerät
 
@@ -55,7 +55,7 @@ Eine Hubarbeitsbühne braucht eine feste Zufahrt und eine tragfähige Standfläc
 ## So gehen wir vor
 
 1. **Anfrage mit Fotos:** Sie schicken uns Fotos der Krone und der Fläche unter dem Baum.
-2. **Kostenlose Ersteinschätzung:** Wir prüfen, welche Arbeiten am Seil möglich sind und ob dafür ein Subunternehmer mit SKT-B nötig ist.
+2. **Kostenlose Ersteinschätzung:** Wir prüfen, welche Arbeiten in der Krone nötig sind und wie sie sich am besten erledigen lassen.
 3. **Besichtigung bei Bedarf:** Reichen die Fotos nicht aus, sehen wir uns Baum und Umgebung vor Ort an.
 4. **Schriftliches Angebot:** Sie erhalten ein Angebot, in dem alle Arbeiten aufgeführt sind.
 5. **Arbeit in der Krone und Aufräumen:** Wir erledigen die Schnitte, häckseln das Schnittgut vor Ort und fahren es ab oder lassen es Ihnen als Mulch da.

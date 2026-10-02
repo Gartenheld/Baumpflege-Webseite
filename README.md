@@ -88,8 +88,8 @@ Rechtliche Themen bitte allgemein halten und auf die zuständige Stelle verweise
 Jede Qualifikation ist eine Datei in [src/inhalte/qualifikationen](src/inhalte/qualifikationen) mit Titel, einem Satz Erklärung und `vorhanden`.
 
 - **AS Baum I, AS Baum II, SKT-A:** `vorhanden: true`. Mit SKT-A erscheint die Seite Seilklettertechnik in der Leistungsübersicht, im Fußbereich und in der Sitemap.
-- **SKT-B:** `vorhanden: false` und `partner: true`. Die Website zeigt SKT-B mit dem Hinweis „über Subunternehmer“. Die Texte zu Seilklettertechnik und Fällung auf engem Raum sagen, dass Arbeiten mit der Motorsäge im Baum ein Subunternehmer mit SKT-B übernimmt.
-- **SKT-B selbst bestanden:** in `skt-b.yaml` `vorhanden: true` und `partner: false` setzen und mir Bescheid geben, dann passen wir die Texte an.
+- **SKT-B:** `vorhanden: false`, erscheint deshalb nicht in der Liste. Die Texte zu Seilklettertechnik und Fällung auf engem Raum bieten Arbeiten mit der Motorsäge im Baum trotzdem an, „ausgeführt mit der dafür nötigen Qualifikation SKT-B“, ohne zu sagen, wer sie ausführt.
+- **SKT-B selbst bestanden:** in `skt-b.yaml` `vorhanden: true` setzen, dann steht SKT-B mit in der Liste.
 - **Neue Qualifikation:** eine Datei kopieren und anpassen. Nur Qualifikationen eintragen, die nachweisbar vorliegen.
 
 ### Instagram und Facebook

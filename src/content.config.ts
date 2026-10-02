@@ -123,9 +123,6 @@ const qualifikationen = defineCollection({
     titel: z.string(),
     erklaerung: z.string().min(20),
     vorhanden: z.boolean(),
-    // Nicht selbst vorhanden, aber bei Bedarf über einen Subunternehmer abgedeckt (z. B. SKT-B)
-    partner: z.boolean().default(false),
-    partnerHinweis: z.string().optional(),
     reihenfolge: z.number().int(),
   }),
 });

@@ -50,7 +50,7 @@ Lässt sich ein Baum mit einer fachgerechten Pflege noch erhalten, sagen wir Ihn
 
 Bevor wir sägen, klären wir die wichtigen Fragen: In welche Richtung kann der Baum sicher fallen? Wie viel Platz ist vorhanden? Was steht in der Nähe, etwa Gebäude, Zäune, Leitungen oder Beete? Daraus ergibt sich, wie die Fällung abläuft und welche Bereiche wir vorher absichern.
 
-Ist wenig Platz vorhanden, klären wir vorab, ob und wie eine Fällung sicher möglich ist. Kann ein Baum nicht im Ganzen fallen, lässt er sich oft Stück für Stück von oben abtragen. Dafür ist die Arbeit mit der Motorsäge im Baum nötig. Diese Arbeiten übernimmt ein Subunternehmer mit der Qualifikation SKT-B, den wir für den Auftrag hinzuziehen. Ob und wie das bei Ihrem Baum möglich ist, sagen wir Ihnen offen, bevor ein Angebot entsteht.
+Ist wenig Platz vorhanden, klären wir vorab, ob und wie eine Fällung sicher möglich ist. Kann ein Baum nicht im Ganzen fallen, lässt er sich oft Stück für Stück von oben abtragen. Dafür ist die Arbeit mit der Motorsäge im Baum nötig. Auch das übernehmen wir, ausgeführt mit der dafür nötigen Qualifikation SKT-B. Ob und wie das bei Ihrem Baum möglich ist, sagen wir Ihnen offen, bevor ein Angebot entsteht.
 
 ## Genehmigung und Schonzeit
 

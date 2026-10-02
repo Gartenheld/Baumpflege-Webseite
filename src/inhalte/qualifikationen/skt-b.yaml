@@ -1,9 +1,7 @@
-# Nicht selbst vorhanden. Bei Aufträgen, die SKT-B verlangen, stellt ein Subunternehmer die Qualifikation.
-# partner: true zeigt SKT-B mit diesem Hinweis auf der Website an.
-# Nach eigener bestandener Prüfung: vorhanden: true und partner: false setzen und die Texte zur Seilklettertechnik anpassen.
+# Nicht selbst vorhanden, deshalb nicht in der Liste der Qualifikationen auf der Website.
+# Arbeiten mit der Motorsäge im Baum werden trotzdem angeboten (Texte zu Seilklettertechnik und Baumfällung).
+# Nach eigener bestandener Prüfung: vorhanden: true setzen.
 titel: SKT-B
 erklaerung: Arbeiten mit der Motorsäge in der Baumkrone am Seil, etwa an starken Ästen oder beim stückweisen Abtragen eines Baumes.
 vorhanden: false
-partner: true
-partnerHinweis: Diese Arbeiten übernimmt bei Bedarf ein Subunternehmer mit SKT-B, den wir für den Auftrag hinzuziehen.
 reihenfolge: 4
