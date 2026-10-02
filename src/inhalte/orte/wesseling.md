@@ -30,4 +30,4 @@ Mit rund 7 Kilometern Luftlinie gehört Wesseling zu den Orten, die wir von Born
 
 ## Aufräumen gehört dazu
 
-Wenn wir fertig sind, soll Ihr Garten aufgeräumt sein. Äste zerkleinern wir mit unserem Häcksler gleich vor Ort, Stammholz und Häckselgut laden wir auf den Pritschenwagen und kümmern uns um die Entsorgung.
+Wenn wir fertig sind, soll Ihr Garten aufgeräumt sein. Äste zerkleinern wir mit unserem Häcksler gleich vor Ort, Stammholz und Häckselgut nehmen wir mit und kümmern uns um die Entsorgung.

@@ -29,6 +29,8 @@ kosten:
       text: "Steht der Baum dicht an Gebäuden, Zäunen oder Wegen, braucht die Arbeit mehr Vorsicht und Zeit."
     - titel: "Zugang zum Grundstück"
       text: "Lange Wege vom Baum bis zu Häcksler und Fahrzeug verlängern das Aufräumen."
+    - titel: "Hubarbeitsbühne oder Seil"
+      text: "Welche Technik passt, hängt von Zufahrt und Krone ab. Der Einsatz einer Hubarbeitsbühne ist ein eigener Posten im Angebot."
     - titel: "Mulch oder Abtransport"
       text: "Bleibt das Häckselgut als Mulch bei Ihnen, entfällt der Abtransport."
 ---
@@ -43,7 +45,7 @@ Bäume wachsen über Jahrzehnte. Wer sie früh und regelmäßig pflegt, vermeide
 - **Lichtraumprofil:** Über Gehwegen, Zufahrten und Stellplätzen schaffen wir wieder ausreichend Durchgangs- und Durchfahrtshöhe.
 - **Pflegeschnitt bei Jungbäumen:** Frühe Korrekturen lenken das Wachstum in die richtige Richtung und ersparen dem Baum später große Schnittwunden.
 
-In die Krone gelangen wir mit [Seilklettertechnik](/leistungen/seilklettertechnik/), auch dort, wo kein Fahrzeug hinkommt.
+In die Krone gelangen wir mit der Hubarbeitsbühne oder mit [Seilklettertechnik](/leistungen/seilklettertechnik/), am Seil auch dort, wo keine Bühne hinkommt.
 
 ## Gesund, stabil und sicher
 

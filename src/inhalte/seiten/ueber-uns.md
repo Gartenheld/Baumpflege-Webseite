@@ -1,6 +1,6 @@
 ---
 seitentitel: "Über uns: Baumpflege Happe aus Bornheim bei Köln und Bonn"
-beschreibung: "Baumpflege Happe aus Bornheim: Baumpflege und Baumfällung zwischen Köln und Bonn, mit eigenem Häcksler, Pritschenwagen und festem Ansprechpartner."
+beschreibung: "Baumpflege Happe aus Bornheim: Baumpflege und Baumfällung zwischen Köln und Bonn, mit Hubarbeitsbühne, Seilklettertechnik und festem Ansprechpartner."
 kicker: Über uns
 h1: "Ihr Baumspezialist aus Bornheim"
 einleitung: "Baumpflege Happe ist ein Betrieb für Baumpflege und Baumfällung mit Sitz in Bornheim. Wir arbeiten zwischen Köln und Bonn für private Grundstücke, Hausverwaltungen und Gewerbe. Ihr Ansprechpartner ist Heinrich Happe, der mehrjährige Erfahrung in Baumpflege und Baumfällung mitbringt."
@@ -27,7 +27,9 @@ Arbeiten an Bäumen verlangen Sorgfalt und eine gute Vorbereitung. Vor jeder Fä
 
 ## Ausstattung
 
+- **Hubarbeitsbühne:** Für hohe Kronen, Bäume an Straßen und Wegen oder Äste über Dächern arbeiten wir mit der Hubarbeitsbühne, wo eine feste Zufahrt vorhanden ist.
+- **Seilklettertechnik:** Wo keine Bühne hinkommt, etwa in Gärten hinter dem Haus, gelangen wir am Seil in die Krone.
 - **Eigener Häcksler:** Äste und Kronenholz zerkleinern wir direkt vor Ort. Auf Ihrem Grundstück bleiben keine Reisighaufen liegen.
-- **Pritschenwagen mit Kipper:** Damit fahren wir Häckselgut und Holz ab. Sie müssen sich nicht selbst um Abfuhr oder Container kümmern.
+- **Abtransport:** Häckselgut und Holz fahren wir ab. Sie müssen sich nicht selbst um Abfuhr oder Container kümmern.
 
 Für Sie heißt das: Schnitt, Häckseln und Abtransport erledigen wir in einem Arbeitsgang, und Sie erhalten ein aufgeräumtes Grundstück zurück. Möchten Sie Häckselgut oder Holz behalten, etwa zum Mulchen oder als Brennholz, lassen wir es auf Wunsch bei Ihnen.

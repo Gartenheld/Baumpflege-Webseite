@@ -18,7 +18,7 @@ export const fotos: Record<string, { zeigt: string; alt: string }> = {
     alt: '',
   },
   'ueber-uns-ausstattung': {
-    zeigt: 'Arbeitsfoto mit Häcksler oder Pritschenwagen',
+    zeigt: 'Arbeitsfoto mit Hubarbeitsbühne oder Häcksler',
     alt: '',
   },
   gewerbe: {

@@ -50,7 +50,7 @@ Starke Äste lassen sich mit Handwerkzeug nicht sauber schneiden, und manche Bä
 
 ## Warum ohne schweres Gerät
 
-Eine Hubarbeitsbühne braucht eine feste Zufahrt und eine tragfähige Standfläche. In vielen Gärten gibt es beides nicht, oder Rasen und Wurzelbereich würden unter dem Gewicht leiden. Am Seil kommen wir ohne Fahrzeug an den Baum. Ausrüstung und Schnittgut tragen wir zu Fuß, der Häcksler bleibt an der Zufahrt. Ihr Garten bleibt, wie er ist, und der Baum wird nur dort berührt, wo wir schneiden.
+Mit der Hubarbeitsbühne arbeiten wir dort, wo sie hinkommt. Sie braucht aber eine feste Zufahrt und eine tragfähige Standfläche. In vielen Gärten gibt es beides nicht, oder Rasen und Wurzelbereich würden unter dem Gewicht leiden. Am Seil kommen wir ohne Fahrzeug an den Baum. Ausrüstung und Schnittgut tragen wir zu Fuß, der Häcksler bleibt an der Zufahrt. Ihr Garten bleibt, wie er ist, und der Baum wird nur dort berührt, wo wir schneiden.
 
 ## So gehen wir vor
 

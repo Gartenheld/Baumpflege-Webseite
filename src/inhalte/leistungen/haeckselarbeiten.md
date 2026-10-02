@@ -15,7 +15,7 @@ vorteile:
   - titel: "Eigener Häcksler"
     text: "Der Häcksler gehört zu unserer Ausstattung. Wir sind nicht auf Leihgeräte angewiesen."
   - titel: "Abtransport auf Wunsch"
-    text: "Was Sie nicht als Mulch behalten möchten, laden wir auf unseren Pritschenwagen mit Kipper und fahren es ab."
+    text: "Was Sie nicht als Mulch behalten möchten, laden wir auf und fahren es ab."
 fragenTitel: "Fragen zu Häckselarbeiten"
 kosten:
   frage: "Was kosten Häckselarbeiten?"

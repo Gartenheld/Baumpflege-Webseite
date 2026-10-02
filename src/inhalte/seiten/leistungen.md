@@ -9,7 +9,7 @@ karten: []
 
 ## Schwerpunkt Bäume
 
-Unsere Schwerpunkte sind Baumpflege und Baumfällung. Wir schneiden Bäume so, dass sie gesund und sicher bleiben, und fällen Bäume, die nicht mehr zu halten sind oder weichen müssen. Nach einem Sturm beseitigen wir umgestürzte Bäume und Bruchholz, auf Wunsch entfernen wir auch den verbliebenen Wurzelstock.
+Unsere Schwerpunkte sind Baumpflege und Baumfällung. Wir schneiden Bäume so, dass sie gesund und sicher bleiben, und fällen Bäume, die nicht mehr zu halten sind oder weichen müssen. Nach einem Sturm beseitigen wir umgestürzte Bäume und Bruchholz, auf Wunsch entfernen wir auch den verbliebenen Wurzelstock. In die Krone kommen wir mit der Hubarbeitsbühne oder mit Seilklettertechnik, je nachdem, was Zufahrt und Baum zulassen.
 
 ## Garten und Grundstück
 

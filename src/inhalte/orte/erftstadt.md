@@ -26,7 +26,7 @@ In den Dörfern stehen auf größeren Grundstücken oft alte Laub- und Obstbäum
 
 ## Viel Schnittgut, eigener Häcksler
 
-Auf großen Grundstücken fällt schnell eine Menge Holz und Reisig an. Mit unserem eigenen Häcksler zerkleinern wir Äste und Zweige direkt vor Ort. Auf Wunsch bleibt das Häckselgut als Mulch für Beete und Baumscheiben bei Ihnen, ansonsten nehmen wir es mit dem Pritschenwagen mit. Ob Erftstadt für Ihren Baum besondere Schutzvorschriften kennt, kann Ihnen die Stadtverwaltung beantworten.
+Auf großen Grundstücken fällt schnell eine Menge Holz und Reisig an. Mit unserem eigenen Häcksler zerkleinern wir Äste und Zweige direkt vor Ort. Auf Wunsch bleibt das Häckselgut als Mulch für Beete und Baumscheiben bei Ihnen, ansonsten nehmen wir es mit. Ob Erftstadt für Ihren Baum besondere Schutzvorschriften kennt, kann Ihnen die Stadtverwaltung beantworten.
 
 ## Anfahrt aus Bornheim
 

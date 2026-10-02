@@ -52,7 +52,7 @@ Fotografieren Sie die Schäden, bevor aufgeräumt wird: den Baum, abgebrochene �
 - beschädigte Bäume fällen, die nicht mehr zu erhalten sind
 - das Grundstück aufräumen und das Schnittgut abfahren
 
-Hängen abgebrochene Äste noch hoch in der Krone, klären wir vorab, ob sie sich sicher entfernen lassen. Ist das mit unseren Mitteln nicht möglich, sagen wir Ihnen das offen.
+Hängen abgebrochene Äste noch hoch in der Krone, holen wir sie je nach Lage mit der Hubarbeitsbühne oder am Seil herunter. Vorher klären wir, wie sich das sicher machen lässt.
 
 ## So gehen wir vor
 

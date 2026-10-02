@@ -7,7 +7,7 @@ Der Dateiname bestimmt den Platz, die Endung darf `.jpg`, `.jpeg`, `.png` oder `
 | --- | --- |
 | `startseite.jpg` | Startseite, großes Foto oben |
 | `ueber-uns.jpg` | Über uns, oben |
-| `ueber-uns-ausstattung.jpg` | Über uns, neben Arbeitsweise und Ansprechpartner (Häcksler, Pritschenwagen) |
+| `ueber-uns-ausstattung.jpg` | Über uns, neben Arbeitsweise und Ansprechpartner (Hubarbeitsbühne, Häcksler) |
 | `gewerbe.jpg` | Gewerbe und Hausverwaltungen, oben |
 | `leistung-baumpflege.jpg` | Leistung Baumpflege, oben und auf der Karte in der Übersicht |
 | `leistung-baumfaellung.jpg` | Leistung Baumfällung, oben und auf der Karte in der Übersicht |
