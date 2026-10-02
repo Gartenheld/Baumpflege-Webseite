@@ -18,7 +18,8 @@ Ziel: jede Datei unter 3 MB, damit die Seite auch mobil schnell bleibt.
 Ruhige Motive wirken am professionellsten: Blick in eine Baumkrone, Licht durch Blätter, Arbeit in der Krone
 aus der Ferne. Keine Namen oder Logos anderer Baumpflegebetriebe im Bild.
 
-Aktuell: Blick vom Stamm hinauf in eine Laubkrone (Pexels, frei nutzbar), ab Sekunde 6,5 geschnitten
-(davor sind Gebäude im Bild), um 15 % verlangsamt, als Schleife von 8,5 Sekunden mit weicher Überblendung,
-leicht entrauscht. Größen: 2,0 MB (MP4), 2,2 MB (WebM), Handy rund 1,2 MB.
+Aktuell: Blick vom Stamm hinauf in eine Laubkrone (Pexels, frei nutzbar), 10 Sekunden ab Sekunde 5
+verwendet, leicht eingezoomt (unterer Rand abgeschnitten, dort standen Gebäude), um 15 % verlangsamt,
+Schleife von gut 10 Sekunden mit weicher Überblendung, leicht entrauscht.
+Größen: 2,1 MB (MP4), 2,3 MB (WebM), Handy rund 1,4 MB.
 Vorherige Fassung (Drohnenflug über Baumkronen) liegt in der Git-Historie (Commit „Startseite: Hintergrundvideo eingebaut“).
