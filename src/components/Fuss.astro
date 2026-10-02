@@ -1,5 +1,5 @@
 ---
-import Logo from './Logo.astro';
+import Marke from './Marke.astro';
 import Icon from './Icon.astro';
 import { betrieb, telefonLink, whatsappLink, mailLink } from '../config/betrieb';
 import { fussmenue, rechtliches } from '../config/navigation';
@@ -14,7 +14,7 @@ const jahr = new Date().getFullYear();
 <footer class="fuss">
   <div class="huelle fuss__raster">
     <div class="fuss__betrieb">
-      <a href="/" class="fuss__logo"><Logo variante="querKurz" negativ titel="Baumpflege Happe, zur Startseite" /></a>
+      <a href="/" class="fuss__logo"><Marke negativ titel="Baumpflege Happe, zur Startseite" sizes="4.75rem" /></a>
       <p class="fuss__unterzeile">{betrieb.unterzeile}</p>
       <address>
         {betrieb.name}<br />
@@ -100,9 +100,10 @@ const jahr = new Date().getFullYear();
     grid-column: 1 / -1;
   }
 
-  .fuss__logo :global(.logo) {
-    width: 14rem;
-    height: auto;
+  .fuss__logo {
+    display: inline-block;
+    --emblem: 4.75rem;
+    --schriftzug: 3.1rem;
   }
 
   .fuss__unterzeile {

@@ -1,0 +1,53 @@
+---
+// Logo für Kopf und Fuß: rundes Emblem (vorläufig, Bilddatei src/assets/logo/emblem.png) und daneben der Schriftzug.
+// Neues Emblem: Datei mit gleichem Namen ersetzen (quadratisch, transparenter Hintergrund, mindestens 512 x 512 Pixel).
+import { Picture } from 'astro:assets';
+import Logo from './Logo.astro';
+import emblem from '../assets/logo/emblem.png';
+
+interface Props {
+  negativ?: boolean;
+  titel?: string;
+  // Angezeigte Größe des Emblems für die Bildauswahl des Browsers, z. B. "(min-width: 70rem) 3.75rem, 3rem"
+  sizes: string;
+  eager?: boolean;
+}
+
+const { negativ = false, titel = 'Baumpflege Happe', sizes, eager = false } = Astro.props;
+---
+
+<span class="marke">
+  <Picture
+    src={emblem}
+    formats={['avif', 'webp']}
+    width={128}
+    height={128}
+    widths={[64, 96, 128, 192, 256]}
+    sizes={sizes}
+    alt=""
+    class="marke__emblem"
+    loading={eager ? 'eager' : 'lazy'}
+  />
+  <Logo variante="wortKurz" negativ={negativ} titel={titel} />
+</span>
+
+<style>
+  .marke {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+  }
+
+  .marke :global(.marke__emblem) {
+    display: block;
+    width: var(--emblem, 3rem);
+    height: var(--emblem, 3rem);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .marke :global(.logo) {
+    width: auto;
+    height: var(--schriftzug, 2.2rem);
+  }
+</style>

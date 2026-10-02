@@ -40,6 +40,7 @@ Mehrere Dateien auf einmal bearbeiten: im Repository die Taste „.“ drücken,
 | Datenschutzerklärung | [src/inhalte/seiten/datenschutz.md](src/inhalte/seiten/datenschutz.md) |
 | Impressum (Angaben kommen aus `betrieb.ts`, dazu der Satz zur Verbraucherschlichtung) | [src/pages/impressum.astro](src/pages/impressum.astro) |
 | Menü | [src/config/navigation.ts](src/config/navigation.ts) |
+| Logo (rundes Emblem in Kopf und Fuß) | [src/assets/logo/emblem.png](src/assets/logo/emblem.png), Favicons und `logo.png` in [public](public), Vorschaubild zum Teilen nach [tools/og-bild](tools/og-bild) |
 
 ### Texte ändern
 

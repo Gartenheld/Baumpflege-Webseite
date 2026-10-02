@@ -1,5 +1,5 @@
 ---
-import Logo from './Logo.astro';
+import Marke from './Marke.astro';
 import Icon from './Icon.astro';
 import { hauptmenue } from '../config/navigation';
 import { telefonLink } from '../config/betrieb';
@@ -11,7 +11,7 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
 <header class="kopf">
   <div class="huelle kopf__innen">
     <a href="/" class="kopf__logo">
-      <Logo variante="querKurz" titel="Baumpflege Happe, zur Startseite" />
+      <Marke titel="Baumpflege Happe, zur Startseite" sizes="(min-width: 70rem) 3.75rem, 3.1rem" eager />
     </a>
 
     <nav class="kopf__nav" aria-label="Hauptmenü">
@@ -74,12 +74,9 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
   .kopf__logo {
     display: block;
     flex-shrink: 0;
-    padding-block: 0.6rem;
-  }
-
-  .kopf__logo :global(.logo) {
-    width: auto;
-    height: 2.6rem;
+    padding-block: 0.5rem;
+    --emblem: 3.1rem;
+    --schriftzug: 2.3rem;
   }
 
   .kopf__nav {
@@ -164,8 +161,9 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
       gap: 1.6rem;
     }
 
-    .kopf__logo :global(.logo) {
-      height: 3rem;
+    .kopf__logo {
+      --emblem: 3.75rem;
+      --schriftzug: 2.7rem;
     }
   }
 </style>

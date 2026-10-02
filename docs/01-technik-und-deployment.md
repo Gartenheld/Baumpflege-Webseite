@@ -177,7 +177,7 @@ Baumpflege-Webseite/
         .htaccess              gesperrt
         anfrage.php            Token, Rate-Limit, Feldprüfung
         PHPMailer/             Exception.php, PHPMailer.php, SMTP.php, LICENSE
-    favicon.svg, apple-touch-icon.png
+    favicon.ico, icon-192.png, apple-touch-icon.png, logo.png, og-standard.jpg
   scripts/
     formular-php.mjs           macht nach dem Build aus der Kontaktseite eine index.php
     pruefe-links.mjs           findet tote interne Links
@@ -198,7 +198,7 @@ Baumpflege-Webseite/
       fotos/                   Originalfotos (JPEG)
       videos/                  Hero-Video und Clips (MP4, optional WebM)
       fonts/                   Schriftdateien (WOFF2) und Lizenz
-      logo/                    Logo als SVG (Schritt 2)
+      logo/                    rundes Emblem (PNG) für Kopf und Fuß
     components/                Bausteine: Kopf, Fuß, Handy-Leiste, Formular, FAQ, Bewertungen, ...
     layouts/                   Grundlayout mit Title, Description, Canonical, Open Graph
     lib/                       Hilfsfunktionen (sichtbare Leistungen, FAQ je Leistung, ...)
