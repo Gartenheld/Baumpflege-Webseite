@@ -40,13 +40,7 @@ const rhein = glatt([
   [50.9184, 6.9736], [50.934, 6.9646], [50.9528, 6.9663], [50.9624, 6.9839], [50.9802, 6.9863], [50.99, 6.968],
 ]);
 
-// Weitere Flüsse und Flächen bewusst grob, nur zur Orientierung
-const erft = glatt([
-  [50.66, 6.83], [50.70, 6.842], [50.735, 6.85], [50.758, 6.856], [50.785, 6.835], [50.81, 6.81], [50.84, 6.78],
-  [50.87, 6.75], [50.91, 6.715], [50.95, 6.68],
-]);
-const sieg = glatt([[50.80, 7.23], [50.79, 7.19], [50.785, 7.15], [50.779, 7.11], [50.774, 7.08]]);
-// Höhenzug Ville mit Wald und Seen zwischen Erft und Rhein
+// Waldgebiete bewusst grob, nur zur Orientierung: Höhenzug Ville zwischen Erft und Rhein, Kottenforst bei Bonn
 const ville = glatt(
   [
     [50.872, 6.835], [50.866, 6.872], [50.84, 6.888], [50.805, 6.9], [50.778, 6.93], [50.75, 6.958], [50.733, 6.962],
@@ -58,24 +52,6 @@ const kottenforst = glatt(
   [[50.722, 7.0], [50.72, 7.045], [50.705, 7.085], [50.675, 7.095], [50.67, 7.0], [50.69, 6.975], [50.71, 6.978]],
   true,
 );
-// Stadtgebiete von Köln und Bonn, sehr vereinfacht
-const koelnFlaeche = glatt(
-  [
-    [50.99, 6.84], [50.99, 7.09], [50.955, 7.1], [50.915, 7.085], [50.88, 7.06], [50.875, 7.0], [50.885, 6.94],
-    [50.91, 6.88], [50.94, 6.84],
-  ],
-  true,
-);
-const bonnFlaeche = glatt(
-  [
-    [50.775, 7.06], [50.772, 7.13], [50.75, 7.165], [50.715, 7.18], [50.68, 7.17], [50.675, 7.13], [50.7, 7.085],
-    [50.725, 7.06], [50.75, 7.05],
-  ],
-  true,
-);
-
-// Maßstab: 5 km in Nord-Süd-Richtung (1 Grad Breite rund 111,2 km)
-const fuenfKm = (5 / 111.2) * K;
 
 // Beschriftung je Ort: rechts (r) oder links (l) vom Punkt
 const seite: Record<string, 'r' | 'l'> = {
@@ -92,24 +68,12 @@ const id = `karte-${hervorheben ?? 'gebiet'}`;
   <svg viewBox="0 0 520 480" role="group" aria-labelledby={id}>
     <title id={id}>{titel}</title>
     <g aria-hidden="true">
-      <path class="stadt" d={koelnFlaeche} />
-      <path class="stadt" d={bonnFlaeche} />
       <path class="wald" d={ville} />
       <path class="wald" d={kottenforst} />
-      <path class="nebenfluss" d={erft} />
-      <path class="nebenfluss" d={sieg} />
       <path class="rhein" d={rhein} />
       <text class="gebiet" x="176" y="282" transform="rotate(58 176 282)">Ville</text>
       <text class="gebiet" x="343" y="463">Kottenforst</text>
       <text class="fluss" x="388" y="182">Rhein</text>
-      <g class="nord" transform="translate(28 34)">
-        <path d="M0 -16 L7 6 L0 1 L-7 6 Z" />
-        <text x="0" y="24" text-anchor="middle">N</text>
-      </g>
-      <g class="massstab" transform="translate(24 456)">
-        <path d={`M0 -5 V0 H${fuenfKm.toFixed(1)} V-5`} />
-        <text x={(fuenfKm / 2).toFixed(1)} y="-9" text-anchor="middle">5 km</text>
-      </g>
     </g>
     {
       punkte.map((p) => {
@@ -158,20 +122,9 @@ const id = `karte-${hervorheben ?? 'gebiet'}`;
     font-style: italic;
   }
 
-  /* Hintergrund: Stadtgebiete, Wald, Nebenflüsse. Zurückhaltend, damit die Orte vorne bleiben. */
-  .stadt {
-    fill: #e8dfd2;
-  }
-
+  /* Hintergrund: Waldgebiete, zurückhaltend, damit die Orte vorne bleiben. */
   .wald {
     fill: #d9e3d3;
-  }
-
-  .nebenfluss {
-    fill: none;
-    stroke: #a9c3c9;
-    stroke-width: 3;
-    stroke-linecap: round;
   }
 
   .gebiet {
@@ -179,24 +132,6 @@ const id = `karte-${hervorheben ?? 'gebiet'}`;
     font-size: 15px;
     font-style: italic;
     letter-spacing: 0.06em;
-  }
-
-  .nord path {
-    fill: var(--text-weich);
-  }
-
-  .nord text,
-  .massstab text {
-    fill: var(--text-weich);
-    font-family: var(--schrift-text);
-    font-size: 13px;
-    font-weight: 600;
-  }
-
-  .massstab path {
-    fill: none;
-    stroke: var(--text-weich);
-    stroke-width: 1.5;
   }
 
   .ort circle {
