@@ -83,9 +83,18 @@ Eine vorhandene Datei in [src/inhalte/faq](src/inhalte/faq) kopieren und anpasse
 
 Rechtliche Themen bitte allgemein halten und auf die zuständige Stelle verweisen, keine Rechtsberatung.
 
-### Qualifikation SKT-A freischalten
+### Qualifikationen
 
-In [src/inhalte/qualifikationen/skt-a.yaml](src/inhalte/qualifikationen/skt-a.yaml) `vorhanden: true` setzen, sobald der Nachweis vorliegt. Dann erscheinen SKT-A bei den Qualifikationen und die Seite Seilklettertechnik, verlinkt in der Leistungsübersicht, im Fußbereich und in der Sitemap. Die Seite verspricht nur Arbeiten mit Handwerkzeug in der Krone. Kommt SKT-B dazu, muss der Text der Seite bewusst überarbeitet werden.
+Jede Qualifikation ist eine Datei in [src/inhalte/qualifikationen](src/inhalte/qualifikationen) mit Titel, einem Satz Erklärung und `vorhanden`.
+
+- **AS Baum I, AS Baum II, SKT-A:** `vorhanden: true`. Mit SKT-A erscheint die Seite Seilklettertechnik in der Leistungsübersicht, im Fußbereich und in der Sitemap.
+- **SKT-B:** `vorhanden: false` und `partner: true`. Die Website zeigt SKT-B mit dem Hinweis „über Subunternehmer“. Die Texte zu Seilklettertechnik und Fällung auf engem Raum sagen, dass Arbeiten mit der Motorsäge im Baum ein Subunternehmer mit SKT-B übernimmt.
+- **SKT-B selbst bestanden:** in `skt-b.yaml` `vorhanden: true` und `partner: false` setzen und mir Bescheid geben, dann passen wir die Texte an.
+- **Neue Qualifikation:** eine Datei kopieren und anpassen. Nur Qualifikationen eintragen, die nachweisbar vorliegen.
+
+### Instagram und Facebook
+
+In [src/config/betrieb.ts](src/config/betrieb.ts) unter `profile` die komplette Adresse eintragen, zum Beispiel `instagram: 'https://www.instagram.com/baumpflege.happe/'`. Dann erscheinen die Links mit Symbol im Fußbereich jeder Seite (unter „Folgen Sie uns“) und auf der Kontaktseite, außerdem in den Daten für Google. Solange ein Feld leer ist, steht in der Vorschau „Link folgt“, auf der Live-Seite erscheint an der Stelle nichts.
 
 ### Nach jeder Änderung am Formular oder am Server
 

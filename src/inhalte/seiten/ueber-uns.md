@@ -3,7 +3,7 @@ seitentitel: "Über uns: Baumpflege Happe aus Bornheim bei Köln und Bonn"
 beschreibung: "Baumpflege Happe aus Bornheim: Baumpflege und Baumfällung zwischen Köln und Bonn, mit eigenem Häcksler, Pritschenwagen und festem Ansprechpartner."
 kicker: Über uns
 h1: "Ihr Baumspezialist aus Bornheim"
-einleitung: "Baumpflege Happe ist ein Betrieb für Baumpflege und Baumfällung mit Sitz in Bornheim. Wir arbeiten zwischen Köln und Bonn für private Grundstücke, Hausverwaltungen und Gewerbe. Ihr Ansprechpartner ist Heinrich Happe."
+einleitung: "Baumpflege Happe ist ein Betrieb für Baumpflege und Baumfällung mit Sitz in Bornheim. Wir arbeiten zwischen Köln und Bonn für private Grundstücke, Hausverwaltungen und Gewerbe. Ihr Ansprechpartner ist Heinrich Happe, der mehrjährige Erfahrung in Baumpflege und Baumfällung mitbringt."
 karten:
   - titel: "Ehrliche Einschätzung"
     text: "Wir sagen Ihnen offen, was Ihr Baum braucht und was nicht. Nicht jeder Baum muss gefällt werden."
@@ -23,7 +23,7 @@ Bei der Pflege schneiden wir so viel wie nötig und so wenig wie möglich, damit
 
 ## Sicherheit
 
-Arbeiten an Bäumen verlangen Sorgfalt und eine gute Vorbereitung. Vor jeder Fällung legen wir die Fallrichtung fest und sichern den Arbeitsbereich ab. Gebäude, Leitungen, Zäune und Beete in der Nähe beziehen wir in die Planung ein. Während der Arbeiten achten wir darauf, dass niemand den Gefahrenbereich betritt. Wir übernehmen nur Arbeiten, für die wir qualifiziert und ausgerüstet sind. Für die Arbeit mit der Motorsäge haben wir die Qualifikationen AS Baum I und AS Baum II, die Sie im Überblick auf dieser Seite finden.
+Arbeiten an Bäumen verlangen Sorgfalt und eine gute Vorbereitung. Vor jeder Fällung legen wir die Fallrichtung fest und sichern den Arbeitsbereich ab. Gebäude, Leitungen, Zäune und Beete in der Nähe beziehen wir in die Planung ein. Während der Arbeiten achten wir darauf, dass niemand den Gefahrenbereich betritt. Wir übernehmen nur Arbeiten, für die wir qualifiziert und ausgerüstet sind. Für die Arbeit mit der Motorsäge haben wir die Qualifikationen AS Baum I und AS Baum II, für das Arbeiten am Seil in der Krone die Qualifikation SKT-A. Ist bei einem Auftrag die Motorsäge im Baum nötig, wofür es die Qualifikation SKT-B braucht, ziehen wir einen Subunternehmer mit SKT-B hinzu. Alle Qualifikationen finden Sie im Überblick auf dieser Seite.
 
 ## Ausstattung
 

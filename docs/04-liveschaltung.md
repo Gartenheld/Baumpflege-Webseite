@@ -38,7 +38,7 @@ Der Live-Build bricht ab, solange irgendwo „Platzhalter“ oder die Nummer aus
 - [ ] **Datenschutzerklärung** aus einem Generator in [src/inhalte/seiten/datenschutz.md](../src/inhalte/seiten/datenschutz.md) einfügen. Angaben dafür: Konzept 9.4 (Hosting bei Hostinger, Server-Logs, Kontaktformular mit Fotos und Mailversand, WhatsApp-Link, keine Cookies, kein Tracking, keine externen Schriften).
 - [ ] **Fotos:** mindestens das Startseitenfoto, besser auch Über uns, Baumpflege und Baumfällung (Anleitung in [src/bilder/README.md](../src/bilder/README.md)). Ohne Foto zeigt die Live-Seite eine ruhige Fläche mit dem Baumsymbol statt „Foto folgt“.
 - [ ] **Referenzen und Bewertungen:** zum Start gern zwei bis drei echte Referenzen und drei bis vier echte Google-Bewertungen. Ohne freigegebene Einträge blendet die Live-Seite die Bewertungen aus, die Referenzseite nennt „in Kürze“.
-- [ ] **Offene Fragen** aus der Freigabe von Schritt 4 beantworten: Kronenpflege ohne Seilklettertechnik, Wurzelstock-Gerät, Partner, Rollrasen, Zusagen wie Mulch und Rahmenvertrag.
+- [ ] **Offene Fragen** aus der Freigabe von Schritt 4 beantworten: Wurzelstock-Gerät, weitere Partner (z. B. Hubbühne), Rollrasen, Zusagen wie Mulch und Rahmenvertrag. (Geklärt am 02.10.2026: SKT-A liegt vor, SKT-B über Subunternehmer.)
 - [ ] **Ich:** Baumschutzsatzung je Ort prüfen und `baumschutz.status` sowie `geprueft` in den Ortsdateien setzen.
 
 ## E. Starttag (Abend)

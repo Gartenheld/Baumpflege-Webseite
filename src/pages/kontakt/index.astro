@@ -8,10 +8,12 @@ import Icon from '../../components/Icon.astro';
 import { render } from 'astro:content';
 import { seite, sichtbareLeistungen } from '../../lib/inhalte';
 import { betrieb, telefonLink, whatsappLink, mailLink } from '../../config/betrieb';
+import { socialProfile } from '../../lib/profile';
 
 const s = await seite('kontakt');
 const { Content } = await render(s);
 const leistungen = await sichtbareLeistungen();
+const social = socialProfile();
 ---
 
 <Basis title={s.data.seitentitel} description={s.data.beschreibung}>
@@ -122,6 +124,23 @@ const leistungen = await sichtbareLeistungen();
               <a href={mailLink}>{betrieb.email}</a>
             </div>
           </li>
+          {
+            social.map((p) => (
+              <li>
+                <Icon name={p.icon} />
+                <div>
+                  <span class="etikett">{p.name}</span>
+                  {p.href ? (
+                    <a href={p.href} rel="noopener">
+                      {betrieb.name} auf {p.name}
+                    </a>
+                  ) : (
+                    <span class="zusatz">Link folgt</span>
+                  )}
+                </div>
+              </li>
+            ))
+          }
           <li>
             <Icon name="uhr" />
             <div>

@@ -43,6 +43,8 @@ Bäume wachsen über Jahrzehnte. Wer sie früh und regelmäßig pflegt, vermeide
 - **Lichtraumprofil:** Über Gehwegen, Zufahrten und Stellplätzen schaffen wir wieder ausreichend Durchgangs- und Durchfahrtshöhe.
 - **Pflegeschnitt bei Jungbäumen:** Frühe Korrekturen lenken das Wachstum in die richtige Richtung und ersparen dem Baum später große Schnittwunden.
 
+In die Krone gelangen wir mit [Seilklettertechnik](/leistungen/seilklettertechnik/), auch dort, wo kein Fahrzeug hinkommt.
+
 ## Gesund, stabil und sicher
 
 Jeder Schnitt ist eine Wunde, die der Baum selbst verschließen muss. Deshalb setzen wir Schnitte gezielt und an der richtigen Stelle, damit die Wunde gut überwallen kann. Von großen Schnittflächen und vom Kappen ganzer Kronen raten wir ab: Über solche Wunden dringen Pilze und Fäulnis ein, und der Baum reagiert mit vielen dünnen Trieben, die schlecht verankert sind und später leicht ausbrechen.

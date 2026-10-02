@@ -147,7 +147,9 @@ reihenfolge: 3
 
 Die Leistungsdatei `seilklettertechnik.md` trägt `benoetigt: skt-a`. Solange `vorhanden: false` gilt, wird die Seite nicht gebaut, nicht verlinkt, nicht in die Sitemap aufgenommen, und SKT-A erscheint nicht unter den Qualifikationen (getestet). Ein Schalter, eine Stelle (umgesetzt in Schritt 3, `src/lib/inhalte.ts`).
 
-Weitere Qualifikationen sind einfach eine neue Datei. `skt-b.yaml` legen wir gleich mit `vorhanden: false` an. Wichtig: Der Schalter ändert keine Texte. Die SKT-Seite verspricht keine Motorsägenarbeit im Baum. Kommt später SKT-B dazu, überarbeiten wir den Text bewusst.
+Weitere Qualifikationen sind einfach eine neue Datei. Wichtig: Der Schalter ändert keine Texte.
+
+**Stand 02.10.2026:** SKT-A liegt vor (`vorhanden: true`), die Seite Seilklettertechnik ist sichtbar. SKT-B ist nicht selbst vorhanden, wird aber bei Bedarf von einem Subunternehmer gestellt: `skt-b.yaml` mit `vorhanden: false`, `partner: true` und einem Hinweistext. Die Website zeigt SKT-B mit dem Etikett „über Subunternehmer“, und die Texte zu Seilklettertechnik, Fällung auf engem Raum und Über uns nennen den Subunternehmer für Arbeiten mit der Motorsäge im Baum.
 
 ---
 

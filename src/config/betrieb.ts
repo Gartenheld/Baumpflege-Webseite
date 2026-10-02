@@ -44,7 +44,10 @@ export const betrieb = {
     stand: '[Platzhalter: Monat Jahr]',
   },
 
-  // Links zu den Profilen (leer lassen, wenn es das Profil nicht gibt):
+  // Links zu den Profilen: komplette Adresse zwischen die Anführungszeichen, zum Beispiel
+  // instagram: 'https://www.instagram.com/baumpflege.happe/'
+  // Mit Adresse erscheinen Instagram und Facebook im Fußbereich jeder Seite und auf der Kontaktseite.
+  // Solange leer, steht dort in der Vorschau „Link folgt“, auf der Live-Seite erscheint nichts.
   profile: {
     google: '',
     instagram: '',

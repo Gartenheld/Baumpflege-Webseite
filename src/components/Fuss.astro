@@ -4,13 +4,10 @@ import Icon from './Icon.astro';
 import { betrieb, telefonLink, whatsappLink, mailLink } from '../config/betrieb';
 import { fussmenue, rechtliches } from '../config/navigation';
 import { sichtbareLeistungen, leistungsUrl } from '../lib/inhalte';
+import { socialProfile } from '../lib/profile';
 
 const leistungen = await sichtbareLeistungen();
-const profile = [
-  { name: 'Google', href: betrieb.profile.google },
-  { name: 'Instagram', href: betrieb.profile.instagram },
-  { name: 'Facebook', href: betrieb.profile.facebook },
-].filter((p) => p.href);
+const social = socialProfile();
 const jahr = new Date().getFullYear();
 ---
 
@@ -49,6 +46,30 @@ const jahr = new Date().getFullYear();
         <li><a href={mailLink}><Icon name="mail" />{betrieb.email}</a></li>
         <li class="fuss__zeiten"><Icon name="uhr" /><span>{betrieb.erreichbarkeit}</span></li>
       </ul>
+      {
+        social.length > 0 && (
+          <>
+            <h2 class="fuss__folgen">Folgen Sie uns</h2>
+            <ul class="fuss__kontakt">
+              {social.map((p) =>
+                p.href ? (
+                  <li>
+                    <a href={p.href} rel="noopener">
+                      <Icon name={p.icon} />
+                      {p.name}
+                    </a>
+                  </li>
+                ) : (
+                  <li class="fuss__folgt">
+                    <Icon name={p.icon} />
+                    <span>{p.name} (Link folgt)</span>
+                  </li>
+                ),
+              )}
+            </ul>
+          </>
+        )
+      }
     </div>
   </div>
 
@@ -56,7 +77,7 @@ const jahr = new Date().getFullYear();
     <p>© {jahr} {betrieb.name}</p>
     <ul>
       {rechtliches.map((p) => <li><a href={p.href}>{p.titel}</a></li>)}
-      {profile.map((p) => <li><a href={p.href} rel="noopener">{p.name}</a></li>)}
+      {betrieb.profile.google && <li><a href={betrieb.profile.google} rel="noopener">Google</a></li>}
     </ul>
   </div>
 </footer>
@@ -127,7 +148,8 @@ const jahr = new Date().getFullYear();
   }
 
   .fuss__kontakt a,
-  .fuss__zeiten {
+  .fuss__zeiten,
+  .fuss__folgt {
     display: inline-flex;
     align-items: flex-start;
     gap: 0.6rem;
@@ -142,8 +164,13 @@ const jahr = new Date().getFullYear();
     color: var(--kupfer-hell);
   }
 
-  .fuss__zeiten {
+  .fuss__zeiten,
+  .fuss__folgt {
     color: var(--auf-dunkel-weich);
+  }
+
+  .fuss__folgen {
+    margin-top: 1.75rem;
   }
 
   .fuss__unten {
