@@ -10,6 +10,7 @@ import Handyleiste from '../components/Handyleiste.astro';
 import { sichtbareLeistungen, orteSortiert, leistungsUrl } from '../lib/inhalte';
 import { foto as fotoPlatz } from '../lib/fotos';
 import { grunddaten, alsJson } from '../lib/strukturdaten';
+import { versioniert } from '../lib/versioniert';
 import '../styles/global.css';
 
 interface Props {
@@ -34,7 +35,7 @@ const ogBild = f?.bild
       url: new URL((await getImage({ src: f.bild, width: 1200, height: 630, fit: 'cover', format: 'jpg', quality: 80 })).src, site).href,
       alt: f.alt,
     }
-  : { url: new URL('/og-standard.jpg', site).href, alt: `Logo ${betrieb.name}: ${betrieb.claim}` };
+  : { url: new URL(versioniert('og-standard.jpg'), site).href, alt: `Logo ${betrieb.name}: ${betrieb.claim}` };
 
 const leistungen = (await sichtbareLeistungen()).map((l) => ({ name: l.data.titel, url: leistungsUrl(l.id) }));
 const orte = (await orteSortiert()).map((o) => o.data.name);
@@ -55,9 +56,9 @@ const jsonLd = alsJson([...grunddaten(site, leistungen, orte), ...strukturdaten]
     <Font cssVariable="--font-sans" preload />
     <Font cssVariable="--font-serif" preload />
 
-    <link rel="icon" href="/favicon.ico" sizes="32x32" />
-    <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" href={versioniert('favicon.ico')} sizes="32x32" />
+    <link rel="icon" href={versioniert('icon-192.png')} type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href={versioniert('apple-touch-icon.png')} />
     <meta name="theme-color" content="#173f3c" />
 
     <meta property="og:type" content="website" />
