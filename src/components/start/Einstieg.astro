@@ -1,24 +1,57 @@
 ---
+// Einstieg der Startseite in voller Breite: Hintergrundvideo (src/videos/startseite.mp4), sonst eigenes Foto
+// (src/bilder/startseite.jpg), sonst ruhiger Hintergrund in Tanne mit Baumsymbol. Text liegt abgedunkelt darüber.
+import { getImage } from 'astro:assets';
+import { PUBLIC_NOINDEX } from 'astro:env/client';
 import Icon from '../Icon.astro';
 import Foto from '../Foto.astro';
+import { LOGO } from '../logo-daten';
 import { betrieb, telefonLink } from '../../config/betrieb';
+import { video } from '../../lib/videos';
+import { foto } from '../../lib/fotos';
+
+const v = video('startseite');
+const hatFoto = !v && Boolean(foto('startseite').bild);
+const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1920, format: 'webp', quality: 70 })).src : undefined;
 ---
 
-<section class="einstieg" aria-labelledby="einstieg-titel">
-  <div class="einstieg__bild">
-    <Foto name="startseite" oben sizes="(min-width: 60rem) 46vw, 100vw" widths={[640, 960, 1280, 1920, 2560]} />
+<section class:list={['einstieg', { 'einstieg--video': v, 'einstieg--foto': hatFoto }]} aria-labelledby="einstieg-titel">
+  <div class="einstieg__hintergrund" aria-hidden="true">
+    {
+      v ? (
+        <video
+          class="einstieg__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          disablepictureinpicture
+          poster={standbild}
+        >
+          {v.kleinWebm && <source src={v.kleinWebm} type="video/webm" media="(max-width: 47.99rem)" />}
+          {v.klein && <source src={v.klein} type="video/mp4" media="(max-width: 47.99rem)" />}
+          {v.webm && <source src={v.webm} type="video/webm" />}
+          <source src={v.mp4} type="video/mp4" />
+        </video>
+      ) : hatFoto ? (
+        <Foto name="startseite" oben sizes="100vw" widths={[640, 960, 1280, 1920, 2560]} />
+      ) : (
+        <svg class="einstieg__symbol" viewBox={LOGO.symbol.viewBox} fill="currentColor" set:html={LOGO.symbol.inhalt} />
+      )
+    }
   </div>
-  <div class="huelle einstieg__raster">
+
+  <div class="huelle einstieg__inhalt">
     <div class="einstieg__text">
       <p class="einstieg__claim">{betrieb.claim}</p>
       <h1 id="einstieg-titel">Baumpflege und Baumfällung in Bornheim, Köln und Bonn</h1>
-      <p class="einleitung">
+      <p class="einstieg__einleitung">
         Fachgerechter Schnitt, sorgfältige Fällung und ein aufgeräumtes Grundstück. Schicken Sie uns Fotos Ihres Baumes,
         Sie erhalten eine kostenlose Ersteinschätzung.
       </p>
       <div class="einstieg__knoepfe">
         <a class="knopf knopf--haupt" href="/kontakt/"><Icon name="kamera" />Anfrage mit Fotos senden</a>
-        <a class="knopf knopf--rahmen" href={telefonLink}><Icon name="telefon" />Anrufen</a>
+        <a class="knopf knopf--hell" href={telefonLink}><Icon name="telefon" />Anrufen</a>
       </div>
       <ul class="einstieg__punkte">
         <li><Icon name="haken" />Kostenlose Ersteinschätzung</li>
@@ -27,37 +60,115 @@ import { betrieb, telefonLink } from '../../config/betrieb';
       </ul>
     </div>
   </div>
+
+  {
+    v && (
+      <button class="einstieg__pause" type="button" data-zustand="laeuft" hidden>
+        <Icon name="pause" class="symbol-pause" />
+        <Icon name="abspielen" class="symbol-abspielen" />
+        <span class="sr-only">Hintergrundvideo anhalten</span>
+      </button>
+    )
+  }
+  {!v && !hatFoto && PUBLIC_NOINDEX && <p class="einstieg__hinweis">Hintergrundvideo folgt</p>}
 </section>
+
+<script>
+  // Pause-Knopf für das Hintergrundvideo. Bei „Bewegung reduzieren“ oder Datensparmodus startet es nicht.
+  const film = document.querySelector<HTMLVideoElement>('.einstieg__video');
+  const knopf = document.querySelector<HTMLButtonElement>('.einstieg__pause');
+  if (film && knopf) {
+    const text = knopf.querySelector('.sr-only');
+    const zeige = () => {
+      const laeuft = !film.paused;
+      knopf.dataset.zustand = laeuft ? 'laeuft' : 'pause';
+      if (text) text.textContent = laeuft ? 'Hintergrundvideo anhalten' : 'Hintergrundvideo abspielen';
+    };
+    const sparen = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData === true;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || sparen) {
+      film.autoplay = false;
+      film.pause();
+    }
+    film.addEventListener('play', zeige);
+    film.addEventListener('pause', zeige);
+    knopf.addEventListener('click', () => (film.paused ? film.play() : film.pause()));
+    zeige();
+    knopf.hidden = false;
+  }
+</script>
 
 <style>
   .einstieg {
     position: relative;
-    background: var(--sand);
+    isolation: isolate;
+    overflow: hidden;
+    background: var(--tanne-dunkel);
+    color: var(--auf-dunkel);
+    display: flex;
+    align-items: center;
+    min-height: clamp(34rem, 78vh, 46rem);
   }
 
-  .einstieg__bild :global(.foto) {
-    aspect-ratio: 16 / 9;
+  /* Hintergrund: Video, Foto oder Symbol, darüber eine Abdunklung für gut lesbaren Text */
+  .einstieg__hintergrund {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+
+  .einstieg__hintergrund::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(15 45 43 / 0.8);
+  }
+
+  .einstieg__video,
+  .einstieg__hintergrund :global(.foto) {
+    position: absolute;
+    inset: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
   }
 
-  .einstieg h1 {
-    font-size: clamp(2.1rem, 1.4rem + 2.6vw, 3.3rem);
+  .einstieg__symbol {
+    position: absolute;
+    right: -6%;
+    bottom: -12%;
+    height: 115%;
+    width: auto;
+    color: var(--auf-dunkel);
+    opacity: 0.05;
   }
 
-  .einstieg__raster {
-    padding-block: 2rem 3.5rem;
+  .einstieg__inhalt {
+    width: 100%;
+    padding-block: 3.5rem 4rem;
   }
 
   .einstieg__text {
     display: grid;
     gap: 1.25rem;
-    max-width: 38rem;
+    max-width: 40rem;
   }
 
   .einstieg__claim {
     font-weight: 700;
     font-size: 1.125rem;
-    color: var(--kupfer-dunkel);
+    color: var(--kupfer-hell);
+  }
+
+  .einstieg h1 {
+    font-size: clamp(2.2rem, 1.4rem + 3vw, 3.7rem);
+    color: var(--auf-dunkel);
+  }
+
+  .einstieg__einleitung {
+    font-size: clamp(1.125rem, 1rem + 0.4vw, 1.3rem);
+    line-height: 1.55;
+    color: var(--auf-dunkel);
   }
 
   .einstieg__knoepfe {
@@ -75,7 +186,7 @@ import { betrieb, telefonLink } from '../../config/betrieb';
     flex-wrap: wrap;
     gap: 0.5rem 1.5rem;
     font-size: 1rem;
-    color: var(--text-weich);
+    color: var(--auf-dunkel);
   }
 
   .einstieg__punkte li {
@@ -87,7 +198,48 @@ import { betrieb, telefonLink } from '../../config/betrieb';
   .einstieg__punkte :global(.icon) {
     width: 1.15rem;
     height: 1.15rem;
-    color: var(--kupfer);
+    color: var(--kupfer-hell);
+  }
+
+  .einstieg__pause {
+    position: absolute;
+    right: var(--rand);
+    bottom: 1.25rem;
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    border: 1px solid rgb(243 238 230 / 0.5);
+    background: rgb(15 45 43 / 0.55);
+    color: var(--auf-dunkel);
+    cursor: pointer;
+  }
+
+  .einstieg__pause[hidden] {
+    display: none;
+  }
+
+  .einstieg__pause:hover {
+    background: rgb(15 45 43 / 0.85);
+  }
+
+  .einstieg__pause :global(.icon) {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+
+  .einstieg__pause[data-zustand='laeuft'] :global(.symbol-abspielen),
+  .einstieg__pause[data-zustand='pause'] :global(.symbol-pause) {
+    display: none;
+  }
+
+  .einstieg__hinweis {
+    position: absolute;
+    right: var(--rand);
+    bottom: 1rem;
+    font-size: 0.8rem;
+    color: var(--auf-dunkel-weich);
   }
 
   @media (max-width: 29.99rem) {
@@ -96,31 +248,14 @@ import { betrieb, telefonLink } from '../../config/betrieb';
     }
   }
 
-  /* Ab Tablet quer: Foto rechts bis zum Rand, Text links */
+  /* Breite Bildschirme: links dunkler für den Text, rechts mehr vom Video sichtbar */
   @media (min-width: 60rem) {
-    .einstieg {
-      min-height: min(44rem, 82vh);
-      display: flex;
-      align-items: center;
+    .einstieg__hintergrund::after {
+      background: linear-gradient(90deg, rgb(15 45 43 / 0.86) 0%, rgb(15 45 43 / 0.78) 40%, rgb(15 45 43 / 0.4) 100%);
     }
 
-    .einstieg__bild {
-      position: absolute;
-      inset: 0 0 0 54%;
-    }
-
-    .einstieg__bild :global(.foto) {
-      aspect-ratio: auto;
-      height: 100%;
-      border-radius: 0;
-    }
-
-    .einstieg__raster {
-      padding-block: 4.5rem;
-    }
-
-    .einstieg__text {
-      max-width: calc(54% - 3rem);
+    .einstieg__inhalt {
+      padding-block: 5rem;
     }
   }
 </style>

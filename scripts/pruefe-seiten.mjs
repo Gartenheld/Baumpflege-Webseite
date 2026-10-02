@@ -123,6 +123,12 @@ for (const [d, html] of inhalt) {
   if (strich) hinweise.push(`${url}: langer Gedankenstrich in „${strich[0].trim()}“`);
 }
 
+// Große Videos bremsen die Seite auf dem Handy
+for (const d of alle.filter((d) => /\.(mp4|webm)$/i.test(d))) {
+  const mb = statSync(d).size / 1024 / 1024;
+  if (mb > 5) hinweise.push(`${relative(DIST, d)}: Video hat ${mb.toFixed(1)} MB (empfohlen höchstens 5 MB)`);
+}
+
 // Platzhalter in Sitemap, Robots oder anderen Textdateien
 if (live) {
   for (const d of alle.filter((d) => /\.(xml|txt|webmanifest)$/.test(d))) {
