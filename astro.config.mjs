@@ -1,8 +1,26 @@
 // Astro-Konfiguration für die Website "Baumpflege Happe".
-// Ergebnis ist eine rein statische Website im Ordner dist/, die per GitHub Actions zu Hostinger hochgeladen wird.
+// Ergebnis ist eine statische Website im Ordner dist/ (plus PHP für das Formular), gebaut von Hostinger oder GitHub Actions.
+import { execFileSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 import { defineConfig, envField, fontProviders } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { satteri } from '@astrojs/markdown-satteri';
+
+// Nachbearbeitung direkt im Build, damit sie auch läuft, wenn der Hoster nur "astro build" aufruft:
+// 1. Kontaktseite wird zur index.php (frischer Zeitstempel für den Spamschutz, ohne ihn gehen Anfragen verloren)
+// 2. unverkleinerte Originalfotos (mit GPS-Daten) entfernen
+// 3. Seitenprüfung: Links, Titles, im Live-Build keine Platzhalter (bricht den Build bei Fehlern ab)
+const nachbearbeitung = {
+  name: 'baumpflege-nachbearbeitung',
+  hooks: {
+    'astro:build:done': ({ dir }) => {
+      const projekt = fileURLToPath(new URL('..', dir));
+      for (const skript of ['formular-php.mjs', 'originale-entfernen.mjs', 'pruefe-seiten.mjs']) {
+        execFileSync(process.execPath, [`scripts/${skript}`], { cwd: projekt, stdio: 'inherit' });
+      }
+    },
+  },
+};
 
 // Endgültige Adresse: https://baumpflege-happe.de (ohne www).
 // In der Vorschau setzt GitHub Actions SITE_URL auf die temporäre Hostinger-Adresse
@@ -52,6 +70,8 @@ export default defineConfig({
       // Danke- und Fehlerseite des Formulars gehören nicht in die Sitemap (sie tragen zusätzlich noindex).
       filter: (page) => !page.includes('/kontakt/danke/') && !page.includes('/kontakt/fehler/'),
     }),
+    // Muss nach der Sitemap stehen, weil die Seitenprüfung auch den Link zur Sitemap prüft
+    nachbearbeitung,
   ],
   markdown: {
     // Keine Code-Hervorhebung nötig (verträgt sich nicht mit der Content-Security-Policy).

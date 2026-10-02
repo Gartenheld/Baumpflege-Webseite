@@ -5,7 +5,7 @@
 // - strukturierte Daten sind gültiges JSON, das Vorschaubild zum Teilen ist vorhanden
 // - Live-Build (PUBLIC_NOINDEX=false): kein „Platzhalter“ und keine Platzhalter-Nummer mehr, Startseite indexierbar
 // Lange Gedankenstriche werden nur als Hinweis gemeldet.
-// Aufruf: node scripts/pruefe-seiten.mjs (läuft in "npm run build" automatisch mit)
+// Läuft in jedem Build automatisch mit (Nachbearbeitung in astro.config.mjs), einzeln: node scripts/pruefe-seiten.mjs
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join, relative, sep } from 'node:path';
 

@@ -15,10 +15,12 @@ Stand der Website: Alle Seiten sind fertig und freigegeben (Schritt 4). Lighthou
 
 ## B. Technik verbinden (du, ich helfe)
 
-- [ ] **Deploy-Schlüssel** erzeugen und im hPanel hinterlegen, Fingerabdruck festhalten (Konzept 7.2). Den privaten Schlüssel nie per Chat oder Mail schicken, nur in GitHub als Secret eintragen.
-- [ ] **GitHub Secrets und Variablen** anlegen (Konzept 7.3): `HOSTINGER_SSH_KEY`, `HOSTINGER_KNOWN_HOSTS`, `HOSTINGER_SSH_HOST`, `HOSTINGER_SSH_PORT`, `HOSTINGER_SSH_USER`, `DEPLOY_PATH`, `SITE_URL`, `NOINDEX` = `true`, `DEPLOY_ENABLED` = `true`, optional `PREVIEW_HTPASSWD_PATH`.
+**Stand 02.10.2026:** Hostinger ist direkt mit GitHub verbunden und baut die Website selbst. Sie läuft auf einer Test-Domain. Der Weg über SSH und GitHub Actions (Konzept 7.2 und 7.3) wird damit nicht gebraucht, der Workflow in GitHub prüft nur noch.
+
+- [x] GitHub mit Hostinger verbunden, Test-Domain läuft.
+- [ ] **Build-Einstellungen bei Hostinger** ansehen und mir als Screenshot schicken: Build-Befehl `npm run build` (oder `astro build`, beides funktioniert), Ausgabeordner `dist`, Node.js 22 oder neuer, Umgebungsvariablen.
+- [ ] **Läuft PHP?** Auf der Test-Domain `/kontakt/` öffnen, Formular ausfüllen und senden. Solange `anfrage-config.php` fehlt, ist die richtige Antwort eine Seite im Design der Website: „Ihre Anfrage wurde noch nicht gesendet“ mit dem Hinweis, dass das Formular gerade nicht erreichbar ist. Kommt stattdessen ein Download, eine leere Seite oder „404“, läuft dort kein PHP, und wir müssen die Art der Anbindung ändern.
 - [ ] **Formular-Zugangsdaten:** `anfrage-config.php` nach Vorlage [server/anfrage-config.beispiel.php](../server/anfrage-config.beispiel.php) eine Ebene **über** `public_html` anlegen, z. B. `/home/u123456789/domains/baumpflege-happe.de/anfrage-config.php`. Passwort des Versand-Postfachs eintragen, als `secret` eine lange Zufallsfolge (z. B. aus dem Passwortmanager, 64 Zeichen). `test_modus` auf `false`.
-- [ ] **Ich:** Pull Request von meinem Branch nach `main`. Nach deinem Merge lädt GitHub die Vorschau hoch (noindex, optional mit Passwort).
 
 ## C. Vorschau testen (wir beide)
 
@@ -43,7 +45,7 @@ Der Live-Build bricht ab, solange irgendwo „Platzhalter“ oder die Nummer aus
 
 ## E. Starttag (Abend)
 
-- [ ] **Du:** In GitHub `NOINDEX` auf `false`, `PREVIEW_HTPASSWD_PATH` leeren, `SITE_URL` = `https://baumpflege-happe.de`. Dann *Actions -> Build und Deployment -> Run workflow*.
+- [ ] **Du:** Domain `baumpflege-happe.de` mit der Website verbinden, SSL aktiv. In den Build-Einstellungen bei Hostinger die Umgebungsvariablen `PUBLIC_NOINDEX` = `false` und `SITE_URL` = `https://baumpflege-happe.de` setzen und neu bauen lassen. Ohne `PUBLIC_NOINDEX` = `false` bleibt die Seite für Google gesperrt. Mit `false` bricht der Build ab, solange noch ein Platzhalter übrig ist, die alte Version bleibt dann online.
 - [ ] **Ich:** Live-Seite prüfen: kein noindex, robots.txt mit Sitemap, Canonical-Adressen, Formular-Testanfrage, höchstens zwei Weiterleitungssprünge.
 - [ ] **Ich:** HSTS in `public/.htaccess` zunächst kurz einschalten (`max-age=300`), sobald HTTPS sicher läuft.
 - [ ] **Alte Domain** gartenheldservice.com umstellen nach Konzept 13.3 (Variante B): Weiterleitungs-Website bei Hostinger, A-Records bei STRATO. Weiterleitungen testen.
