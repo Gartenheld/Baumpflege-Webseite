@@ -14,6 +14,12 @@ export async function vorhandeneQualifikationen() {
   return alle.sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
 }
 
+/** Qualifikationen, die nicht selbst vorhanden sind, deren Leistung aber angeboten wird (beiBedarf: true). */
+export async function qualifikationenBeiBedarf() {
+  const alle = await getCollection('qualifikationen', ({ data }) => !data.vorhanden && data.beiBedarf);
+  return alle.sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
+}
+
 /** Leistungen, deren benötigte Qualifikation vorhanden ist (z. B. Seilklettertechnik erst mit SKT-A). */
 export async function sichtbareLeistungen() {
   const vorhanden = new Set((await vorhandeneQualifikationen()).map((q) => q.id));

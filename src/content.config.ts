@@ -123,6 +123,9 @@ const qualifikationen = defineCollection({
     titel: z.string(),
     erklaerung: z.string().min(20),
     vorhanden: z.boolean(),
+    // Nicht selbst vorhanden, die Leistung wird aber angeboten (z. B. SKT-B): erscheint mit „bei Bedarf im Einsatz“
+    beiBedarf: z.boolean().default(false),
+    hinweis: z.string().optional(),
     reihenfolge: z.number().int(),
   }),
 });

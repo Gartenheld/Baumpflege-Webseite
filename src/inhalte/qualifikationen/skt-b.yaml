@@ -1,7 +1,10 @@
-# Nicht selbst vorhanden, deshalb nicht in der Liste der Qualifikationen auf der Website.
-# Arbeiten mit der Motorsäge im Baum werden trotzdem angeboten (Texte zu Seilklettertechnik und Baumfällung).
-# Nach eigener bestandener Prüfung: vorhanden: true setzen.
+# Nicht selbst vorhanden. Die Leistung wird trotzdem angeboten:
+# beiBedarf: true zeigt SKT-B in der Liste mit dem Zusatz „bei Bedarf im Einsatz“ und dem Hinweis unten,
+# ohne zu behaupten, dass der Inhaber den Schein selbst hat.
+# Nach eigener bestandener Prüfung: vorhanden: true setzen, beiBedarf und hinweis löschen.
 titel: SKT-B
 erklaerung: Arbeiten mit der Motorsäge in der Baumkrone am Seil, etwa an starken Ästen oder beim stückweisen Abtragen eines Baumes.
 vorhanden: false
-reihenfolge: 4
+beiBedarf: true
+hinweis: Auch diese Arbeiten bieten wir an, ausgeführt mit der dafür nötigen Qualifikation SKT-B.
+reihenfolge: 5

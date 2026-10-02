@@ -1,8 +1,9 @@
 ---
 import Icon from '../Icon.astro';
-import { vorhandeneQualifikationen } from '../../lib/inhalte';
+import { vorhandeneQualifikationen, qualifikationenBeiBedarf } from '../../lib/inhalte';
 
 const qualifikationen = await vorhandeneQualifikationen();
+const beiBedarf = await qualifikationenBeiBedarf();
 ---
 
 <section class="abschnitt qualifikation" aria-labelledby="qualifikation-titel">
@@ -23,6 +24,17 @@ const qualifikationen = await vorhandeneQualifikationen();
           <li>
             <h3>{q.data.titel}</h3>
             <p>{q.data.erklaerung}</p>
+          </li>
+        ))
+      }
+      {
+        beiBedarf.map((q) => (
+          <li class="bei-bedarf">
+            <h3>
+              {q.data.titel} <span class="etikett">bei Bedarf im Einsatz</span>
+            </h3>
+            <p>{q.data.erklaerung}</p>
+            {q.data.hinweis && <p>{q.data.hinweis}</p>}
           </li>
         ))
       }
@@ -85,6 +97,24 @@ const qualifikationen = await vorhandeneQualifikationen();
   .liste p {
     color: var(--auf-dunkel-weich);
     font-size: 1.05rem;
+  }
+
+  .liste .bei-bedarf {
+    border-style: dashed;
+  }
+
+  .etikett {
+    display: inline-block;
+    margin-left: 0.4rem;
+    padding: 0.1rem 0.55rem;
+    border-radius: 999px;
+    background: rgb(243 238 230 / 0.12);
+    color: var(--kupfer-hell);
+    font-family: var(--schrift-text);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    vertical-align: middle;
   }
 
   @media (min-width: 60rem) {

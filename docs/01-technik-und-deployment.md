@@ -149,7 +149,9 @@ Die Leistungsdatei `seilklettertechnik.md` trägt `benoetigt: skt-a`. Solange `v
 
 Weitere Qualifikationen sind einfach eine neue Datei. Wichtig: Der Schalter ändert keine Texte.
 
-**Stand 02.10.2026:** SKT-A liegt vor (`vorhanden: true`), die Seite Seilklettertechnik ist sichtbar. SKT-B ist nicht selbst vorhanden, Arbeiten mit der Motorsäge im Baum übernimmt bei Bedarf ein Subunternehmer. Auf Wunsch von Heinrich Happe wird der Subunternehmer auf der Website nicht erwähnt: SKT-B steht nicht in der Liste der eigenen Qualifikationen (`vorhanden: false`), die Texte zu Seilklettertechnik und Fällung auf engem Raum bieten die Arbeiten an, „ausgeführt mit der dafür nötigen Qualifikation SKT-B“. So behauptet die Website nicht, dass der Inhaber selbst SKT-B hat.
+**Stand 02.10.2026:** SKT-A liegt vor (`vorhanden: true`), die Seite Seilklettertechnik ist sichtbar. SKT-B ist nicht selbst vorhanden, Arbeiten mit der Motorsäge im Baum übernimmt bei Bedarf ein Subunternehmer. Auf Wunsch von Heinrich Happe wird der Subunternehmer auf der Website nicht erwähnt, die Leistung soll aber sichtbar angeboten werden: SKT-B steht in der Liste mit `beiBedarf: true` und dem Zusatz „bei Bedarf im Einsatz“, die Texte bieten die Arbeiten an, „ausgeführt mit der dafür nötigen Qualifikation SKT-B“. So behauptet die Website nicht, dass der Inhaber selbst SKT-B hat (irreführende Angaben zur Qualifikation wären nach § 5 UWG abmahnfähig).
+
+**BSB 1** (Baumbeurteilung, Grundlagen der Beurteilung von Bruch- und Standsicherheit, bei Kursanbietern als „Baumbeurteilung / BSB 1“, früher „VTA 1“, geführt) ist seit 02.10.2026 als vorhandene Qualifikation eingetragen. Sie ersetzt keine Baumkontrolle nach FLL oder ein Gutachten, deshalb bleiben die entsprechenden Hinweise auf der Gewerbe-Seite und in den FAQ stehen.
 
 ---
 
