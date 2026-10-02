@@ -61,7 +61,7 @@ Fotos haben feste Plätze, zum Beispiel `startseite.jpg` oder `leistung-baumfael
 3. Vorher- und Nachher-Foto in denselben Ordner hochladen und die Bildzeilen in der Datei aktivieren (das `#` am Zeilenanfang entfernen).
 4. Erst wenn der Kunde mit der Veröffentlichung einverstanden ist: `veroeffentlichen: true`.
 
-Die Referenz erscheint auf der Referenzseite und, wenn `ort` einer der neun Orte ist, auch auf der Ortsseite. Die drei Platzhalter-Referenzen (`platzhalter-1` bis `-3`) sind nur in der Vorschau sichtbar. Sobald echte Referenzen da sind, kannst du die Platzhalter-Ordner löschen.
+Die Referenz erscheint auf der Referenzseite und, wenn `ort` einer der neun Orte ist und `veroeffentlichen: true` gilt, auch auf der Ortsseite (Platzhalter erscheinen dort nie, auch nicht in der Vorschau). Die drei Platzhalter-Referenzen (`platzhalter-1` bis `-3`) sind nur in der Vorschau sichtbar. Sobald echte Referenzen da sind, kannst du die Platzhalter-Ordner löschen.
 
 ### Google-Bewertungen
 

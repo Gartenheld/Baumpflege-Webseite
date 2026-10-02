@@ -19,7 +19,8 @@ export async function getStaticPaths() {
 const { ort } = Astro.props;
 const d = ort.data;
 const { Content } = await render(ort);
-const { liste: referenzen, nurPlatzhalter } = await sichtbareReferenzen(ort.id);
+// Auf Ortsseiten nur echte, freigegebene Referenzen, keine Platzhalter (auch nicht in der Vorschau)
+const referenzen = (await sichtbareReferenzen(ort.id)).liste.filter((r) => r.data.veroeffentlichen);
 const service = dienstleistung(Astro.site!, ortUrl(ort.id), `Baumpflege und Baumfällung in ${d.name}`, 'Baumpflege und Baumfällung', d.beschreibung, [d.name]);
 ---
 
@@ -49,7 +50,6 @@ const service = dienstleistung(Astro.site!, ortUrl(ort.id), `Baumpflege und Baum
           <div class="abschnittskopf">
             <p class="kicker">Referenzen</p>
             <h2 id="referenzen-titel">Projekte in {d.name}</h2>
-            {nurPlatzhalter && <p class="hinweis">Entwurf: Platzhalter, erscheinen so nicht auf der Live-Seite.</p>}
           </div>
           <ReferenzKarten referenzen={referenzen} />
         </div>
@@ -80,11 +80,6 @@ const service = dienstleistung(Astro.site!, ortUrl(ort.id), `Baumpflege und Baum
   .seite {
     display: grid;
     gap: 1.5rem;
-  }
-
-  .hinweis {
-    color: var(--text-weich);
-    font-size: 0.95rem;
   }
 
   @media (min-width: 60rem) {
