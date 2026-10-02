@@ -54,11 +54,12 @@ export async function sichtbareReferenzen(ort?: string) {
   return { liste: freigegeben.length > 0 || !PUBLIC_NOINDEX ? freigegeben : alle, nurPlatzhalter: freigegeben.length === 0 };
 }
 
-const THEMEN = ['genehmigung', 'kosten', 'nachbarn', 'haftung', 'ablauf', 'leistung'] as const;
+const THEMEN = ['genehmigung', 'baum', 'kosten', 'nachbarn', 'haftung', 'ablauf', 'leistung'] as const;
 export const themenTitel: Record<(typeof THEMEN)[number], string> = {
   genehmigung: 'Fällgenehmigung und Schonzeit',
+  baum: 'Rund um Ihren Baum',
   kosten: 'Kosten und Abrechnung',
-  nachbarn: 'Nachbarbäume und überhängende Äste',
+  nachbarn: 'Nachbarn, Grenzbäume und überhängende Äste',
   haftung: 'Haftung und Verkehrssicherungspflicht',
   ablauf: 'Anfrage und Ablauf',
   leistung: 'Zu unseren Leistungen',
@@ -86,9 +87,9 @@ export async function faqNachThema() {
   })).filter((g) => g.fragen.length > 0);
 }
 
-/** Fragen zu bestimmten Themen (z. B. Haftung auf der Gewerbe-Seite). */
-export async function faqZuThemen(themen: string[]) {
-  const alle = await getCollection('faq', ({ data }) => themen.includes(data.thema));
+/** Fragen für die Seite Gewerbe und Hausverwaltungen: alle zur Haftung und die mit "gewerbe: true". */
+export async function faqFuerGewerbe() {
+  const alle = await getCollection('faq', ({ data }) => data.thema === 'haftung' || data.gewerbe);
   return alle.sort((a, b) => themaRang(a.data.thema) - themaRang(b.data.thema) || a.data.reihenfolge - b.data.reihenfolge);
 }
 

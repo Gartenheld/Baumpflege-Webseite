@@ -5,11 +5,11 @@ import Karten from '../components/Karten.astro';
 import FaqListe from '../components/FaqListe.astro';
 import KontaktAufruf from '../components/start/KontaktAufruf.astro';
 import { render } from 'astro:content';
-import { seite, faqZuThemen } from '../lib/inhalte';
+import { seite, faqFuerGewerbe } from '../lib/inhalte';
 
 const s = await seite('gewerbe-hausverwaltungen');
 const { Content } = await render(s);
-const fragen = await faqZuThemen(['haftung']);
+const fragen = await faqFuerGewerbe();
 ---
 
 <Basis title={s.data.seitentitel} description={s.data.beschreibung} foto="gewerbe">

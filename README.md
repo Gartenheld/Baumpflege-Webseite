@@ -77,9 +77,10 @@ Es werden nur echte Bewertungen wörtlich (gern gekürzt) übernommen, keine erf
 Eine vorhandene Datei in [src/inhalte/faq](src/inhalte/faq) kopieren und anpassen:
 
 - `frage` endet mit einem Fragezeichen.
-- `thema`: `genehmigung`, `kosten`, `nachbarn`, `haftung`, `ablauf` oder `leistung` (Fragen zu einer einzelnen Leistung).
+- `thema`: `genehmigung`, `baum` (Zustand, Schnitt und Pflege des Baumes), `kosten`, `nachbarn`, `haftung`, `ablauf` oder `leistung` (Fragen zu einer einzelnen Leistung).
 - `leistungen`: auf welchen Leistungsseiten die Frage zusätzlich erscheint, zum Beispiel `[baumfaellung, baumpflege]`.
 - `aufFaqSeite: false` zeigt eine Frage nur auf den Leistungsseiten.
+- `gewerbe: true` zeigt eine Frage zusätzlich auf der Seite Gewerbe und Hausverwaltungen. Fragen zum Thema `haftung` stehen dort immer.
 - `reihenfolge`: kleinere Zahl steht weiter oben.
 
 Rechtliche Themen bitte allgemein halten und auf die zuständige Stelle verweisen, keine Rechtsberatung.

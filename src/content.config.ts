@@ -69,10 +69,12 @@ const faq = defineCollection({
   loader: glob({ pattern: '[^_]*.md', base: './src/inhalte/faq' }),
   schema: z.object({
     frage: z.string().endsWith('?', 'Eine Frage endet mit einem Fragezeichen.'),
-    thema: z.enum(['genehmigung', 'kosten', 'nachbarn', 'haftung', 'ablauf', 'leistung']),
+    thema: z.enum(['genehmigung', 'baum', 'kosten', 'nachbarn', 'haftung', 'ablauf', 'leistung']),
     // Auf welchen Leistungsseiten die Frage zusätzlich erscheint (Dateinamen aus src/inhalte/leistungen)
     leistungen: z.array(z.string()).default([]),
     aufFaqSeite: z.boolean().default(true),
+    // Zusätzlich auf der Seite Gewerbe und Hausverwaltungen (Fragen zum Thema Haftung stehen dort immer)
+    gewerbe: z.boolean().default(false),
     reihenfolge: z.number().int().default(50),
   }),
 });
