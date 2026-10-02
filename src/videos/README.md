@@ -17,3 +17,6 @@ Ziel: jede Datei unter 3 MB, damit die Seite auch mobil schnell bleibt.
 
 Ruhige Motive wirken am professionellsten: Blick in eine Baumkrone, Licht durch Blätter, Arbeit in der Krone
 aus der Ferne. Keine Namen oder Logos anderer Baumpflegebetriebe im Bild.
+
+Aktuell: Drohnenflug über Baumkronen (Pexels, frei nutzbar), um 20 % verlangsamt, als nahtlose Schleife von
+10,5 Sekunden, leicht entrauscht. Größen: 2,0 MB (MP4), 2,3 MB (WebM), Handy rund 1 MB.

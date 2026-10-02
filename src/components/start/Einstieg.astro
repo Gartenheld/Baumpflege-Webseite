@@ -12,7 +12,7 @@ import { foto } from '../../lib/fotos';
 
 const v = video('startseite');
 const hatFoto = !v && Boolean(foto('startseite').bild);
-const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1920, format: 'webp', quality: 70 })).src : undefined;
+const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280, format: 'webp', quality: 50 })).src : undefined;
 ---
 
 <section class:list={['einstieg', { 'einstieg--video': v, 'einstieg--foto': hatFoto }]} aria-labelledby="einstieg-titel">
@@ -120,7 +120,7 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1920
     content: '';
     position: absolute;
     inset: 0;
-    background: rgb(15 45 43 / 0.8);
+    background: rgb(15 45 43 / 0.82);
   }
 
   .einstieg__video,
