@@ -4,7 +4,7 @@ kurz: "Äste und Strauchschnitt vor Ort häckseln. Auf Wunsch bleibt das Häckse
 reihenfolge: 6
 schwerpunkt: false
 seitentitel: "Häckselarbeiten in Bornheim, Köln und Bonn | Baumpflege Happe"
-beschreibung: "Häckselarbeiten zwischen Köln und Bonn: Äste und Strauchschnitt vor Ort gehäckselt, als Mulch für Ihren Garten oder abgefahren. Anfrage mit Fotos senden."
+beschreibung: "Häckselarbeiten zwischen Köln und Bonn: Äste, Strauch- und Grünschnitt vor Ort gehäckselt, als Mulch für Ihren Garten oder abgefahren. Anfrage mit Fotos senden."
 h1: "Häckselarbeiten in Bornheim, Köln und Bonn"
 einleitung: "Nach dem Baum- oder Heckenschnitt türmen sich Äste und Zweige im Garten? Mit unserem eigenen Häcksler zerkleinern wir das Schnittgut direkt bei Ihnen. Auf Wunsch bleibt das Häckselgut als Mulch im Garten, sonst fahren wir es ab."
 vorteile:
@@ -36,7 +36,7 @@ kosten:
 ## Was wir häckseln
 
 - Äste und Kronenholz aus Baumpflege, Fällung oder Sturmschaden
-- Heckenschnitt und Strauchschnitt
+- Heckenschnitt, Strauchschnitt und anderer Grünschnitt
 - Schnittgut, das Sie selbst gesammelt haben, nach Absprache
 
 Das Material sollte frei von Erde, Steinen, Draht, Kunststoff und anderen Fremdstoffen sein. Diese beschädigen die Messer und gehören nicht in den Mulch. Wurzeln mit anhaftender Erde eignen sich nicht zum Häckseln. Ob einzelne sehr starke Äste in den Häcksler passen oder anders verarbeitet werden, klären wir anhand Ihrer Fotos.

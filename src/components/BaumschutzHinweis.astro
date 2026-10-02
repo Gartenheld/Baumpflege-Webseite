@@ -7,9 +7,10 @@ interface Props {
   status: 'satzung' | 'keine' | 'unklar';
   stelle: string;
   link: string;
+  regel?: string;
 }
 
-const { ort, status, stelle, link } = Astro.props;
+const { ort, status, stelle, link, regel } = Astro.props;
 ---
 
 <aside class="baumschutz" aria-labelledby="baumschutz-titel">
@@ -17,6 +18,7 @@ const { ort, status, stelle, link } = Astro.props;
   {status === 'satzung' && <p>In {ort} gilt eine Baumschutzsatzung. Ob Ihr Baum darunter fällt und ob eine Fällung genehmigt werden muss, entscheidet die Verwaltung.</p>}
   {status === 'keine' && <p>Für {ort} ist uns keine Baumschutzsatzung bekannt. Trotzdem können Schonzeit und Artenschutz gelten.</p>}
   {status === 'unklar' && <p>Ob in {ort} eine Baumschutzsatzung gilt und welche Bäume sie schützt, erfahren Sie bei der Verwaltung.</p>}
+  {regel && <p>{regel} Maßgeblich ist die jeweils aktuelle Satzung.</p>}
   <p>Vom 1. März bis 30. September gilt außerdem die Schonzeit nach dem Bundesnaturschutzgesetz, brütende Vögel und ihre Nester sind ganzjährig geschützt. Wir sprechen das bei der Planung mit Ihnen an.</p>
   <p class="link"><a href={link} rel="noopener">{stelle}: Website der Verwaltung <Icon name="pfeil" /></a></p>
   <p class="hinweis">Allgemeine Information, keine Rechtsberatung. Verbindlich ist die Auskunft der Verwaltung.</p>

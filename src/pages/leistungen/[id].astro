@@ -7,6 +7,7 @@ import Karten from '../../components/Karten.astro';
 import Kosten from '../../components/Kosten.astro';
 import FaqListe from '../../components/FaqListe.astro';
 import LeistungsKarten from '../../components/LeistungsKarten.astro';
+import OrteLinks from '../../components/OrteLinks.astro';
 import KontaktAufruf from '../../components/start/KontaktAufruf.astro';
 import { render } from 'astro:content';
 import { sichtbareLeistungen, faqFuerLeistung, orteSortiert, leistungsUrl } from '../../lib/inhalte';
@@ -77,6 +78,8 @@ const service = dienstleistung(Astro.site!, leistungsUrl(leistung.id), d.titel, 
       <LeistungsKarten ohne={leistung.id} kompakt />
     </div>
   </section>
+
+  <OrteLinks leistung={d.titel} />
 </Basis>
 
 <style>

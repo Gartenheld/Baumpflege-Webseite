@@ -10,8 +10,14 @@ export const betriebId = (site: URL) => new URL('/#betrieb', site).href;
 
 const stadt = (name: string) => ({ '@type': 'City', name });
 
-/** Der Betrieb und die Website, auf jeder Seite. */
-export function grunddaten(site: URL, leistungen: string[], orte: string[]): Knoten[] {
+// Fachbegriffe, unter denen Kunden die Leistungen suchen (ergänzt die Leistungsnamen)
+const FACHBEGRIFFE = [
+  'Baumschnitt', 'Kronenpflege', 'Totholzentfernung', 'Kroneneinkürzung', 'Lichtraumprofilschnitt',
+  'Problemfällung', 'Hubarbeitsbühne', 'Baumstumpf entfernen', 'Heckenschnitt',
+];
+
+/** Der Betrieb und die Website, auf jeder Seite. Leistungen als Name und Adresse der Leistungsseite. */
+export function grunddaten(site: URL, leistungen: { name: string; url: string }[], orte: string[]): Knoten[] {
   const profile = Object.values(betrieb.profile).filter((p) => p !== '');
   return [
     {
@@ -41,7 +47,15 @@ export function grunddaten(site: URL, leistungen: string[], orte: string[]): Kno
         availableLanguage: 'de',
       },
       areaServed: orte.map(stadt),
-      knowsAbout: leistungen,
+      knowsAbout: [...leistungen.map((l) => l.name), ...FACHBEGRIFFE],
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Leistungen',
+        itemListElement: leistungen.map((l) => ({
+          '@type': 'Offer',
+          itemOffered: { '@type': 'Service', name: l.name, url: new URL(l.url, site).href },
+        })),
+      },
       ...(profile.length > 0 ? { sameAs: profile } : {}),
     },
     {

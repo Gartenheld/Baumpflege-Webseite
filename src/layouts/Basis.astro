@@ -7,7 +7,7 @@ import { betrieb } from '../config/betrieb';
 import Kopf from '../components/Kopf.astro';
 import Fuss from '../components/Fuss.astro';
 import Handyleiste from '../components/Handyleiste.astro';
-import { sichtbareLeistungen, orteSortiert } from '../lib/inhalte';
+import { sichtbareLeistungen, orteSortiert, leistungsUrl } from '../lib/inhalte';
 import { foto as fotoPlatz } from '../lib/fotos';
 import { grunddaten, alsJson } from '../lib/strukturdaten';
 import '../styles/global.css';
@@ -36,7 +36,7 @@ const ogBild = f?.bild
     }
   : { url: new URL('/og-standard.jpg', site).href, alt: `Logo ${betrieb.name}: ${betrieb.claim}` };
 
-const leistungen = (await sichtbareLeistungen()).map((l) => l.data.titel);
+const leistungen = (await sichtbareLeistungen()).map((l) => ({ name: l.data.titel, url: leistungsUrl(l.id) }));
 const orte = (await orteSortiert()).map((o) => o.data.name);
 const jsonLd = alsJson([...grunddaten(site, leistungen, orte), ...strukturdaten]);
 ---

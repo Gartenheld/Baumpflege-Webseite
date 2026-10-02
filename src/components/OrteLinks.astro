@@ -1,0 +1,66 @@
+---
+// Kurze Liste der Ortsseiten für Leistungsseiten: zeigt Suchmaschinen und Besuchern,
+// in welchen Orten die Leistung angeboten wird (interne Verlinkung).
+import Icon from './Icon.astro';
+import { orteSortiert, ortUrl } from '../lib/inhalte';
+
+interface Props {
+  leistung: string;
+}
+
+const { leistung } = Astro.props;
+const orte = await orteSortiert();
+---
+
+<section class="abschnitt abschnitt--weiss" aria-labelledby="orte-titel">
+  <div class="huelle">
+    <div class="abschnittskopf">
+      <p class="kicker">Einsatzgebiet</p>
+      <h2 id="orte-titel">{leistung} in Ihrer Nähe</h2>
+      <p>Unser Betrieb sitzt in Bornheim. Von hier aus sind wir zwischen Köln und Bonn unterwegs, unter anderem in diesen Orten:</p>
+    </div>
+    <ul class="orte">
+      {
+        orte.map((o) => (
+          <li>
+            <a href={ortUrl(o.id)}>
+              <Icon name="ort" />
+              {o.data.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .orte {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    gap: 0.5rem 1rem;
+    max-width: 48rem;
+  }
+
+  .orte a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 2.75rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .orte a:hover {
+    text-decoration: underline;
+  }
+
+  .orte :global(.icon) {
+    width: 1.15rem;
+    height: 1.15rem;
+    color: var(--kupfer);
+  }
+</style>

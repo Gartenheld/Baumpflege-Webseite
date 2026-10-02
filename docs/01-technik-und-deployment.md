@@ -654,6 +654,26 @@ Die H1 nennt ebenfalls Leistung und Ort. Ortsseiten bekommen jeweils eigenen Tex
 
 ---
 
+### 11.5 SEO-Abgleich mit Wettbewerbern (02.10.2026)
+
+Grundlage: Suchergebnisse für Baumpflege und Baumfällung in Köln, Bonn und Bornheim. Die vorderen Plätze belegen neben Fachbetrieben vor allem Branchenverzeichnisse (Gelbe Seiten, Das Örtliche, Cylex, sellwerk, MyHammer, wer-kennt-den-BESTEN). Wettbewerber nennen ihre Leistungen mit den Fachbegriffen, nach denen Kunden suchen: Baumschnitt, Kronenpflege, Auslichtung, Totholzentfernung, Kroneneinkürzung, Lichtraumprofil, Problemfällung, Kletterfällung, Stubbenfräsen, Grünschnitt.
+
+Übernommen, ohne die Seite grundlegend zu ändern:
+
+- Titles, Descriptions und einzelne H1/H2 mit diesen Begriffen und den Suchformen „Baum fällen lassen“, „Baumstumpf entfernen“, „Hecke schneiden lassen“; Startseite mit Bornheim im Title.
+- Baumpflege: Auslichtung, Kroneneinkürzung, Lichtraumprofilschnitt, Erhaltungsschnitt an Obstbäumen. Baumfällung: eigener Abschnitt „Problemfällung auf engem Raum“.
+- Jede Leistungsseite verlinkt auf die neun Ortsseiten („… in Ihrer Nähe“).
+- Ortsseiten Köln und Bonn: wichtigste Regel der Baumschutzsatzung (Stammumfang) mit Hinweis auf die Verwaltung. Quelle: Stadt Köln (Baumfällung auf Privatgrundstücken) und Satzungstext der Stadt Bonn, Stand 02.10.2026, bitte vor der Liveschaltung an der Quelle gegenprüfen.
+- Strukturierte Daten: Leistungen als `OfferCatalog`, Fachbegriffe in `knowsAbout`.
+
+Bewusst nicht übernommen: Baumkontrolle und Gutachten (keine entsprechende Zertifizierung), Kronensicherung (nicht im Leistungsangebot), Notdienst rund um die Uhr, Preisangaben.
+
+Wichtiger als weitere Änderungen an der Website (Aufgaben für dich nach der Liveschaltung):
+
+1. Google-Unternehmensprofil vollständig pflegen: Kategorie Baumpflege, alle Leistungen, Einzugsgebiet, eigene Fotos, regelmäßig um Bewertungen bitten.
+2. Einträge in den Branchenverzeichnissen oben anlegen oder umstellen, überall mit exakt gleichem Namen, gleicher Anschrift, Telefonnummer und Website.
+3. Eigene Fotos und echte Referenzen mit Ort: Sie machen die Orts- und Leistungsseiten einzigartig.
+
 ## 12. Google Search Console einrichten
 
 Zeitpunkt: Die **Bestätigung** geht, sobald die neue Domain registriert ist, auch vor der Liveschaltung. **Sitemap und Indexierung** erst nach der Liveschaltung mit `NOINDEX` = `false`. Nimm das Google-Konto des Betriebs, mit dem du auch das Unternehmensprofil verwaltest. Menüpfade nach unserem Wissensstand, Google ändert die Oberfläche gelegentlich.

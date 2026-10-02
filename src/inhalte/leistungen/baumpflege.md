@@ -3,9 +3,9 @@ titel: Baumpflege
 kurz: "Fachgerechter Schnitt und Pflege, damit Ihr Baum gesund, stabil und sicher bleibt."
 reihenfolge: 1
 schwerpunkt: true
-seitentitel: "Baumpflege in Bornheim, Köln und Bonn | Baumpflege Happe"
-beschreibung: "Baumpflege zwischen Köln und Bonn: Kronenpflege, Rückschnitt und Totholz entfernen, für gesunde und sichere Bäume. Anfrage mit Fotos senden."
-h1: "Baumpflege in Bornheim, Köln und Bonn"
+seitentitel: "Baumpflege und Baumschnitt in Bornheim, Köln, Bonn | Happe"
+beschreibung: "Baumpflege und Baumschnitt zwischen Köln und Bonn: Kronenpflege, Auslichtung, Totholzentfernung und Kroneneinkürzung für gesunde, sichere Bäume. Anfrage mit Fotos."
+h1: "Baumpflege und Baumschnitt in Bornheim, Köln und Bonn"
 einleitung: "Ein gepflegter Baum bleibt gesund, wächst stabil und gefährdet weder Menschen noch Gebäude. Wir schneiden mit Augenmaß und nehmen nur so viel weg, wie Ihr Baum wirklich braucht. So haben Sie lange Freude an ihm."
 vorteile:
   - titel: "Gesunde Bäume"
@@ -39,11 +39,12 @@ kosten:
 
 Bäume wachsen über Jahrzehnte. Wer sie früh und regelmäßig pflegt, vermeidet später starke Eingriffe. Zur Baumpflege gehören bei uns:
 
-- **Kronenpflege:** Wir entfernen Äste, die sich kreuzen, aneinander scheuern oder nach innen wachsen. Die Krone wird lichter und stabiler.
-- **Totholz entfernen:** Abgestorbene Äste können ohne Vorwarnung abbrechen. Wir nehmen sie heraus, bevor sie zur Gefahr werden.
-- **Rückschnitt:** Reichen Äste an Fassade, Dach oder Dachrinne, kürzen wir sie fachgerecht ein, ohne die Krone zu verunstalten.
-- **Lichtraumprofil:** Über Gehwegen, Zufahrten und Stellplätzen schaffen wir wieder ausreichend Durchgangs- und Durchfahrtshöhe.
+- **Kronenpflege und Auslichtung:** Wir entfernen Äste, die sich kreuzen, aneinander scheuern oder nach innen wachsen. Die Krone wird lichter und stabiler.
+- **Totholzentfernung:** Abgestorbene Äste können ohne Vorwarnung abbrechen. Wir nehmen sie heraus, bevor sie zur Gefahr werden.
+- **Rückschnitt und Kroneneinkürzung:** Reichen Äste an Fassade, Dach oder Dachrinne, kürzen wir sie fachgerecht ein. Auch eine zu groß gewordene Krone lässt sich behutsam einkürzen, ohne sie zu verunstalten.
+- **Lichtraumprofilschnitt:** Über Gehwegen, Zufahrten und Stellplätzen schaffen wir wieder ausreichend Durchgangs- und Durchfahrtshöhe.
 - **Pflegeschnitt bei Jungbäumen:** Frühe Korrekturen lenken das Wachstum in die richtige Richtung und ersparen dem Baum später große Schnittwunden.
+- **Obstbäume:** Ältere Obstbäume, wie sie in vielen Gärten am Vorgebirge stehen, erhalten wir mit einem behutsamen Erhaltungsschnitt.
 
 In die Krone gelangen wir mit der Hubarbeitsbühne oder mit [Seilklettertechnik](/leistungen/seilklettertechnik/), am Seil auch dort, wo keine Bühne hinkommt.
 

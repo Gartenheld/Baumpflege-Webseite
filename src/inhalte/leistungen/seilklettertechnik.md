@@ -5,7 +5,7 @@ reihenfolge: 3
 schwerpunkt: false
 benoetigt: skt-a
 seitentitel: "Seilklettertechnik in Bornheim, Köln und Bonn | Baumpflege Happe"
-beschreibung: "Seilklettertechnik zwischen Köln und Bonn: schonende Arbeiten in der Krone mit Handwerkzeug, ohne schweres Gerät im Garten. Anfrage mit Fotos senden."
+beschreibung: "Baumpflege mit Seilklettertechnik zwischen Köln und Bonn: Arbeiten in der Krone ohne schweres Gerät, auch an schwer erreichbaren Bäumen. Anfrage mit Fotos senden."
 h1: "Seilklettertechnik in Bornheim, Köln und Bonn"
 einleitung: "Am Seil gelangen wir in die Krone, ohne ein Fahrzeug auf Ihr Grundstück zu bringen. So lassen sich kleinere Pflegearbeiten gezielt und schonend erledigen, auch in engen Gärten und Hinterhöfen."
 vorteile:

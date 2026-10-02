@@ -3,8 +3,8 @@ titel: Wurzelstockentfernung
 kurz: "Baumstümpfe und Wurzelstöcke entfernen, damit die Fläche wieder nutzbar ist."
 reihenfolge: 5
 schwerpunkt: false
-seitentitel: "Wurzelstock entfernen in Bornheim, Köln, Bonn | Baumpflege Happe"
-beschreibung: "Wurzelstock entfernen zwischen Köln und Bonn: je nach Lage gefräst oder ausgegraben, damit Sie die Fläche wieder nutzen können. Anfrage mit Fotos senden."
+seitentitel: "Baumstumpf und Wurzelstock entfernen in Bornheim, Köln, Bonn"
+beschreibung: "Wurzelstock und Baumstumpf entfernen zwischen Köln und Bonn: Stubben fräsen oder ausgraben, damit Sie die Fläche wieder nutzen können. Anfrage mit Fotos senden."
 h1: "Wurzelstock entfernen in Bornheim, Köln und Bonn"
 einleitung: "Nach einer Fällung bleibt der Baumstumpf oft jahrelang im Boden. Er stört beim Mähen, ist eine Stolperfalle und steht einer neuen Gestaltung im Weg. Wir entfernen Wurzelstöcke so, dass Sie den Platz wieder nutzen können."
 vorteile:
@@ -35,7 +35,7 @@ kosten:
       text: "Die Menge an Spänen, Wurzelholz und Erde, die abgefahren werden muss, fließt in den Aufwand ein."
 ---
 
-## Fräsen oder ausgraben?
+## Stubben fräsen oder ausgraben?
 
 Es gibt nicht die eine richtige Methode. Je nach Lage und Größe wird ein Wurzelstock gefräst oder ausgegraben.
 

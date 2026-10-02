@@ -3,8 +3,8 @@ titel: Landschaftspflege und Heckenschnitt
 kurz: "Hecken in Form bringen, Gehölze pflegen und kleine Gartenprojekte ohne große Maschinen umsetzen."
 reihenfolge: 7
 schwerpunkt: false
-seitentitel: "Heckenschnitt in Bornheim, Köln und Bonn | Baumpflege Happe"
-beschreibung: "Heckenschnitt und Gehölzpflege zwischen Köln und Bonn: Hecken in Form, Sträucher gepflegt, Schnittgut gehäckselt und abgefahren. Anfrage mit Fotos senden."
+seitentitel: "Heckenschnitt und Gehölzpflege in Bornheim, Köln, Bonn | Happe"
+beschreibung: "Hecke schneiden lassen zwischen Köln und Bonn: Formschnitt, Heckenrückschnitt und Gehölzpflege, Schnittgut gehäckselt und abgefahren. Anfrage mit Fotos senden."
 h1: "Heckenschnitt und Landschaftspflege in Bornheim, Köln und Bonn"
 einleitung: "Hecken und Sträucher brauchen einen regelmäßigen, fachkundigen Schnitt, damit sie dicht, gesund und in Form bleiben. Wir schneiden Hecken, pflegen Gehölze und übernehmen kleine Gartenprojekte, für die keine großen Maschinen nötig sind."
 vorteile:
@@ -36,7 +36,7 @@ kosten:
 ## Heckenschnitt
 
 - **Formschnitt:** Ein regelmäßiger Schnitt hält die Hecke in Form und fördert dichten Wuchs. Wir schneiden sie leicht trapezförmig, unten etwas breiter als oben, damit auch die unteren Bereiche genug Licht bekommen und nicht verkahlen.
-- **Rückschnitt:** Ist eine Hecke zu hoch, zu breit oder von innen kahl geworden, kann ein stärkerer Rückschnitt sie verjüngen. Ob das gelingt, hängt von der Pflanze ab: Hainbuche oder Liguster treiben auch aus altem Holz wieder aus, Thuja und Scheinzypresse dagegen kaum.
+- **Heckenrückschnitt:** Ist eine Hecke zu hoch, zu breit oder von innen kahl geworden, kann ein stärkerer Rückschnitt sie verjüngen. Ob das gelingt, hängt von der Pflanze ab: Hainbuche oder Liguster treiben auch aus altem Holz wieder aus, Thuja und Scheinzypresse dagegen kaum.
 
 Starke Rückschnitte sind wegen der allgemeinen Schonzeit vom 1. März bis 30. September in der Regel nur außerhalb dieser Zeit erlaubt. Schonende Form- und Pflegeschnitte sind auch im Sommer möglich. Vor dem Schnitt achten wir darauf, ob in der Hecke Vögel brüten.
 

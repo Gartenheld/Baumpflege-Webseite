@@ -59,6 +59,8 @@ const orte = defineCollection({
       link: z.url(),
       // Datum der letzten Prüfung (JJJJ-MM-TT), leer = noch nicht geprüft
       geprueft: z.string().nullable().default(null),
+      // Optional: wichtigste Regel der Satzung in einem Satz (mit Quelle prüfen)
+      regel: z.string().optional(),
     }),
   }),
 });

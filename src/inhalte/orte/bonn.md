@@ -14,6 +14,7 @@ baumschutz:
   stelle: "Bundesstadt Bonn"
   link: "https://www.bonn.de/"
   geprueft: null
+  regel: "Nach der Baumschutzsatzung der Stadt Bonn sind unter anderem Laubbäume ab 80 cm und Nadelbäume ab 100 cm Stammumfang geschützt, gemessen in 1 m Höhe."
 ---
 
 ## Alte Bäume in einer grünen Stadt

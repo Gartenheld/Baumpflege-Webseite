@@ -3,8 +3,8 @@ titel: Baumfällung
 kurz: "Sorgfältig geplant und sauber abgewickelt. Das Schnittgut wird vor Ort gehäckselt und abgefahren."
 reihenfolge: 2
 schwerpunkt: true
-seitentitel: "Baumfällung in Bornheim, Köln und Bonn | Baumpflege Happe"
-beschreibung: "Baumfällung zwischen Köln und Bonn: sorgfältig geplant, sicher gefällt, Schnittgut vor Ort gehäckselt und abgefahren. Anfrage mit Fotos senden."
+seitentitel: "Baumfällung in Bornheim, Köln, Bonn: Baum fällen lassen | Happe"
+beschreibung: "Baum fällen lassen zwischen Köln und Bonn: sorgfältig geplant, auch Problemfällung auf engem Raum, Schnittgut gehäckselt und abgefahren. Anfrage mit Fotos senden."
 h1: "Baumfällung in Bornheim, Köln und Bonn"
 einleitung: "Manchmal lässt sich ein Baum nicht mehr erhalten, weil er abgestorben, beschädigt oder zu groß für seinen Standort geworden ist. Wir planen die Fällung sorgfältig, führen sie sicher aus und hinterlassen Ihr Grundstück aufgeräumt."
 vorteile:
@@ -48,9 +48,11 @@ Lässt sich ein Baum mit einer fachgerechten Pflege noch erhalten, sagen wir Ihn
 
 ## Sorgfältige Planung vor der Fällung
 
-Bevor wir sägen, klären wir die wichtigen Fragen: In welche Richtung kann der Baum sicher fallen? Wie viel Platz ist vorhanden? Was steht in der Nähe, etwa Gebäude, Zäune, Leitungen oder Beete? Daraus ergibt sich, wie die Fällung abläuft und welche Bereiche wir vorher absichern.
+Bevor wir sägen, klären wir die wichtigen Fragen: In welche Richtung kann der Baum sicher fallen? Wie viel Platz ist vorhanden? Was steht in der Nähe, etwa Gebäude, Zäune, Leitungen oder Beete? Daraus ergibt sich, wie die Fällung abläuft und welche Bereiche wir vorher absichern. Hat der Baum genug Platz, fällen wir ihn im Ganzen in die geplante Richtung.
 
-Ist wenig Platz vorhanden, klären wir vorab, ob und wie eine Fällung sicher möglich ist. Kann ein Baum nicht im Ganzen fallen, lässt er sich oft Stück für Stück von oben abtragen. Ist eine feste Zufahrt vorhanden, arbeiten wir dabei von der Hubarbeitsbühne aus. Wo keine Bühne hinkommt, ist die Arbeit mit der Motorsäge am Seil im Baum nötig. Auch das übernehmen wir, ausgeführt mit der dafür nötigen Qualifikation SKT-B. Ob und wie das bei Ihrem Baum möglich ist, sagen wir Ihnen offen, bevor ein Angebot entsteht.
+## Problemfällung auf engem Raum
+
+Ist wenig Platz vorhanden, klären wir vorab, ob und wie eine Fällung sicher möglich ist. Kann ein Baum nicht im Ganzen fallen, lässt er sich oft Stück für Stück von oben abtragen. Ist eine feste Zufahrt vorhanden, arbeiten wir dabei von der Hubarbeitsbühne aus. Wo keine Bühne hinkommt, ist eine Kletterfällung mit der Motorsäge am Seil nötig. Auch das übernehmen wir, ausgeführt mit der dafür nötigen Qualifikation SKT-B. Ob und wie das bei Ihrem Baum möglich ist, sagen wir Ihnen offen, bevor ein Angebot entsteht.
 
 ## Genehmigung und Schonzeit
 
