@@ -26,7 +26,10 @@ export const fotos: Record<string, { zeigt: string; alt: string }> = {
     alt: '',
   },
   // Leistungsseiten: Foto oben auf der Seite und, bei Schwerpunkten, auf der Karte in der Übersicht
-  'leistung-baumpflege': { zeigt: 'Baumpflege', alt: '' },
+  'leistung-baumpflege': {
+    zeigt: 'Baumpflege',
+    alt: 'Baumpfleger mit Helm im Korb einer Hubarbeitsbühne an der Krone eines Laubbaums',
+  },
   'leistung-baumfaellung': {
     zeigt: 'Baumfällung',
     alt: 'Baumkletterer mit Helm und Gehörschutz sägt in der Krone einen Ast ab, mit Seil am Stamm gesichert',
