@@ -1,5 +1,7 @@
 ---
-import { betrieb } from '../../config/betrieb';
+// Ablauf der Anfrage mit zwei Wegen: online mit Fotos (Schritte) oder persönlich per Telefon, WhatsApp oder E-Mail.
+import Icon from '../Icon.astro';
+import { betrieb, telefonLink, whatsappLink, mailLink } from '../../config/betrieb';
 
 const schritte = [
   { titel: 'Anfrage mit Fotos', text: 'Sie schicken uns Fotos des Baumes und eine kurze Beschreibung, per Formular oder WhatsApp.' },
@@ -8,6 +10,12 @@ const schritte = [
   { titel: 'Schriftliches Angebot', text: 'Sie bekommen ein schriftliches Angebot mit Pauschalpreis und allen Arbeiten im Überblick.' },
   { titel: 'Ausführung', text: 'Wir führen die Arbeiten aus, räumen auf und entsorgen das Schnittgut.' },
 ];
+
+const kanaele = [
+  { icon: 'telefon', titel: 'Anrufen', wert: betrieb.telefon.anzeige, zusatz: betrieb.erreichbarkeit, href: telefonLink },
+  { icon: 'whatsapp', titel: 'WhatsApp', wert: 'Nachricht schreiben', zusatz: 'gern auch als Sprachnachricht', href: whatsappLink },
+  { icon: 'mail', titel: 'E-Mail', wert: betrieb.email, zusatz: `Antwort ${betrieb.antwortzeit}`, href: mailLink },
+] as const;
 ---
 
 <section class="abschnitt ablauf" aria-labelledby="ablauf-titel">
@@ -15,17 +23,55 @@ const schritte = [
     <div class="kopfzeile">
       <p class="kicker">Ablauf</p>
       <h2 id="ablauf-titel">So einfach geht Ihre Anfrage</h2>
+      <p class="einleitung">
+        Online mit Fotos oder ganz persönlich am Telefon: Sie wählen den Weg, der Ihnen am liebsten ist.
+      </p>
     </div>
+
+    <h3 class="weg"><Icon name="kamera" />Online mit Fotos</h3>
     <ol>
       {
         schritte.map((s) => (
           <li>
-            <h3>{s.titel}</h3>
+            <h4>{s.titel}</h4>
             <p>{s.text}</p>
           </li>
         ))
       }
     </ol>
+
+    <div class="persoenlich">
+      <div class="persoenlich__text">
+        <h3 class="weg"><Icon name="telefon" />Persönlich</h3>
+        <p class="persoenlich__titel">Lieber persönlich? Rufen Sie einfach an.</p>
+        <p>
+          Sie müssen keine Fotos schicken und kein Formular ausfüllen. Rufen Sie uns an oder schreiben Sie uns, ganz wie
+          es Ihnen lieber ist. Wir besprechen Ihr Anliegen in Ruhe und vereinbaren bei Bedarf einen Termin vor Ort.
+          Danach erhalten Sie wie gewohnt ein schriftliches Angebot mit Pauschalpreis.
+        </p>
+        <p class="persoenlich__hinweis">
+          Sind wir gerade im Einsatz und können nicht abheben, rufen wir Sie zurück, auch hier {betrieb.antwortzeit}.
+        </p>
+      </div>
+      <ul class="kanaele">
+        {
+          kanaele.map((k) => (
+            <li>
+              <a href={k.href}>
+                <span class="kanal__symbol">
+                  <Icon name={k.icon} />
+                </span>
+                <span class="kanal__text">
+                  <strong>{k.titel}</strong>
+                  <span class="kanal__wert">{k.wert}</span>
+                  <span class="kanal__zusatz">{k.zusatz}</span>
+                </span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -38,6 +84,25 @@ const schritte = [
     display: grid;
     gap: 0.9rem;
     margin-bottom: 2.5rem;
+  }
+
+  /* Bezeichnung der beiden Wege */
+  .weg {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--schrift-text);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-dunkel);
+  }
+
+  .weg :global(.icon) {
+    width: 1.2rem;
+    height: 1.2rem;
   }
 
   ol {
@@ -58,7 +123,7 @@ const schritte = [
     align-content: start;
   }
 
-  li::before {
+  ol li::before {
     content: counter(schritt);
     position: absolute;
     left: 0;
@@ -76,28 +141,141 @@ const schritte = [
     font-size: 1.3rem;
   }
 
-  h3 {
+  h4 {
+    margin: 0;
+    font-family: var(--schrift-titel);
+    font-weight: 600;
     font-size: 1.3rem;
+    line-height: 1.15;
+    color: var(--dunkelgruen);
+    text-wrap: balance;
   }
 
-  p {
+  ol p,
+  .persoenlich__text p:not(.persoenlich__titel) {
     color: var(--text-weich);
     font-size: 1.05rem;
   }
 
-  /* Ab Desktop: Schritte nebeneinander mit Verbindungslinie */
+  /* Zweiter Weg: persönlich per Telefon, WhatsApp oder E-Mail */
+  .persoenlich {
+    margin-top: clamp(2.5rem, 5vw, 3.5rem);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    background: var(--creme);
+    border-radius: var(--radius);
+    border-top: 3px solid var(--gold);
+    display: grid;
+    gap: 2rem;
+  }
+
+  .persoenlich__text {
+    display: grid;
+    gap: 0.9rem;
+    align-content: start;
+  }
+
+  .persoenlich__text .weg {
+    margin-bottom: 0;
+  }
+
+  .persoenlich__titel {
+    font-family: var(--schrift-titel);
+    font-weight: 600;
+    font-size: clamp(1.4rem, 1.2rem + 0.8vw, 1.8rem);
+    line-height: 1.2;
+    color: var(--dunkelgruen);
+  }
+
+  .persoenlich__hinweis {
+    font-size: 0.98rem;
+  }
+
+  .kanaele {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.75rem;
+    align-content: center;
+  }
+
+  .kanaele li {
+    padding: 0;
+  }
+
+  .kanaele a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--weiss);
+    border: 1px solid var(--linie);
+    border-radius: var(--radius);
+    color: var(--text);
+    text-decoration: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .kanaele a:hover {
+    border-color: var(--gold);
+    box-shadow: 0 8px 22px color-mix(in srgb, var(--dunkelgruen) 10%, transparent);
+  }
+
+  .kanal__symbol {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 2.9rem;
+    height: 2.9rem;
+    border-radius: 50%;
+    background: var(--creme);
+    border: 1.5px solid var(--gold);
+    color: var(--gold-dunkel);
+  }
+
+  .kanal__symbol :global(.icon) {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .kanal__text {
+    display: grid;
+    gap: 0.1rem;
+    min-width: 0;
+  }
+
+  .kanal__text strong {
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold-dunkel);
+  }
+
+  .kanal__wert {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--dunkelgruen);
+    overflow-wrap: anywhere;
+  }
+
+  .kanal__zusatz {
+    font-size: 0.92rem;
+    color: var(--text-weich);
+  }
+
+  /* Ab Desktop: Schritte nebeneinander mit Verbindungslinie, persönlicher Weg zweispaltig */
   @media (min-width: 64rem) {
     ol {
       grid-template-columns: repeat(5, 1fr);
       gap: 1.5rem;
     }
 
-    li {
+    ol li {
       padding-left: 0;
       padding-top: 4rem;
     }
 
-    li::after {
+    ol li::after {
       content: '';
       position: absolute;
       top: 1.2rem;
@@ -107,8 +285,14 @@ const schritte = [
       background: color-mix(in srgb, var(--gold) 45%, transparent);
     }
 
-    li:last-child::after {
+    ol li:last-child::after {
       display: none;
+    }
+
+    .persoenlich {
+      grid-template-columns: 1.15fr 1fr;
+      gap: 3rem;
+      align-items: center;
     }
   }
 </style>
