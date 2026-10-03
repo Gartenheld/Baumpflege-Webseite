@@ -216,12 +216,11 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     color: var(--kupfer-hell);
   }
 
-  /* unten mittig, damit der Knopf auch auffällt, wenn der Browser den automatischen Start blockiert */
+  /* Handy unten rechts, breite Bildschirme rechts mittig über dem sichtbaren Video */
   .einstieg__pause {
     position: absolute;
-    left: 50%;
+    right: var(--rand);
     bottom: 0.75rem;
-    transform: translateX(-50%);
     display: grid;
     place-items: center;
     width: 3.25rem;
@@ -277,7 +276,9 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     }
 
     .einstieg__pause {
-      bottom: 1.5rem;
+      top: 50%;
+      bottom: auto;
+      transform: translateY(-50%);
       width: 3.5rem;
       height: 3.5rem;
     }
