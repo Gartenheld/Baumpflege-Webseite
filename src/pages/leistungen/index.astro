@@ -44,7 +44,12 @@ const { Content } = await render(s);
 
   .gewerbe {
     background: var(--salbei);
-    --fokus: var(--gold-hell);
+    /* RAL 6018 ist ein helles Grün: dunkle Schrift, sonst reicht der Kontrast nicht */
+    --auf-dunkel: var(--tiefgruen);
+    --auf-dunkel-weich: var(--tiefgruen);
+    --gold-hell: var(--tiefgruen);
+    --fokus: var(--tiefgruen);
+    --knopf-hell-hover: var(--creme);
     color: var(--auf-dunkel-weich);
     border-radius: var(--radius);
     padding: 1.75rem;

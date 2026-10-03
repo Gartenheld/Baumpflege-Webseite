@@ -3,7 +3,7 @@
 
 :root {
   /* Farben: Farbwelt „Salbei und Gold“, abgeleitet aus dem Logo (Stand 3. Oktober 2026) */
-  --salbei: #5c6c46; /* grüne Flächen */
+  --salbei: #48a43f; /* grüne Flächen, Test: RAL 6018 Gelbgrün (vorher #5c6c46) */
   --salbei-dunkel: #3e4a32; /* Fußbereich */
   --dunkelgruen: #253021; /* Überschriften, Links, Rahmenknöpfe, Logo-Schriftzug */
   --tiefgruen: #1c2418; /* Grund und Abdunklung des Videos, Schrift auf Gold */
@@ -237,7 +237,7 @@ svg {
 
 .knopf--hell:hover {
   background: var(--auf-dunkel);
-  color: var(--dunkelgruen);
+  color: var(--knopf-hell-hover, var(--dunkelgruen));
 }
 
 /* Logo (Farben per Klasse, siehe Logo.astro) */
