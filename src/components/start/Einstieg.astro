@@ -26,12 +26,14 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
           loop
           playsinline
           disablepictureinpicture
+          preload="auto"
           poster={standbild}
         >
-          {v.kleinWebm && <source src={v.kleinWebm} type="video/webm" media="(max-width: 47.99rem)" />}
+          {/* MP4 zuerst: läuft in allen gängigen Browsern, auch in Safari auf iPhone und Mac. WebM nur als Ausweich. */}
           {v.klein && <source src={v.klein} type="video/mp4" media="(max-width: 47.99rem)" />}
-          {v.webm && <source src={v.webm} type="video/webm" />}
+          {v.kleinWebm && <source src={v.kleinWebm} type="video/webm" media="(max-width: 47.99rem)" />}
           <source src={v.mp4} type="video/mp4" />
+          {v.webm && <source src={v.webm} type="video/webm" />}
         </video>
       ) : hatFoto ? (
         <Foto name="startseite" oben sizes="100vw" widths={[640, 960, 1280, 1920, 2560]} />
