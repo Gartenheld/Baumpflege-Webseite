@@ -18,7 +18,8 @@ Ziel: jede Datei unter 3 MB, damit die Seite auch mobil schnell bleibt.
 Ruhige Motive wirken am professionellsten: Blick in eine Baumkrone, Licht durch Blätter, Arbeit in der Krone
 aus der Ferne. Keine Namen oder Logos anderer Baumpflegebetriebe im Bild.
 
-Aktuell: Drohnenflug über Baumkronen (Pexels, frei nutzbar), um 20 % verlangsamt, als nahtlose Schleife von
-10,5 Sekunden, leicht entrauscht. Größen: 2,0 MB (MP4), 2,3 MB (WebM), Handy rund 1 MB.
-Am 3. Oktober 2026 wieder eingesetzt. Die Alternative (Blick vom Stamm hinauf in die Krone) liegt in der
-Git-Historie (Commit „Startseite: Hintergrundvideo länger (10 Sekunden Material)“).
+Aktuell (Test seit 3. Oktober 2026): Motorsäge in Zeitlupe beim Durchtrennen eines Stammes, mit fliegenden
+Spänen (Pexels, frei nutzbar). 11 Sekunden ab Sekunde 0,5 verwendet, als Schleife von gut 10 Sekunden mit weicher
+Überblendung. Größen: 2,5 MB (MP4), 2,0 MB (WebM), Handy rund 1,3 MB.
+Vorher: Drohnenflug über Baumkronen, liegt in der Git-Historie (Commit „Startseite: wieder das Hintergrundvideo
+mit dem Drohnenflug über Baumkronen“).
