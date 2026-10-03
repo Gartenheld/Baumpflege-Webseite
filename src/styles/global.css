@@ -3,7 +3,7 @@
 
 :root {
   /* Farben: Farbwelt „Salbei und Gold“, abgeleitet aus dem Logo (Stand 3. Oktober 2026) */
-  --salbei: #427d3d; /* grüne Flächen, Test: nahe RAL 6017 Maigrün (#468641), minimal dunkler für lesbare weiße Schrift. Vorher #5c6c46 */
+  --salbei: #5c6c46; /* grüne Flächen */
   --salbei-dunkel: #3e4a32; /* Fußbereich */
   --dunkelgruen: #253021; /* Überschriften, Links, Rahmenknöpfe, Logo-Schriftzug */
   --tiefgruen: #1c2418; /* Grund und Abdunklung des Videos, Schrift auf Gold */
