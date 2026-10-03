@@ -1,22 +1,16 @@
 ---
-// Ablauf der Anfrage mit zwei Wegen: online mit Fotos (Schritte) oder persönlich per Telefon, WhatsApp oder E-Mail.
+// Ablauf der Anfrage in fünf Schritten, darunter eine schlanke Zeile für den persönlichen Kontakt
+// (Telefon, WhatsApp, E-Mail) für alle, die lieber anrufen als ein Formular auszufüllen.
 import Icon from '../Icon.astro';
 import { betrieb, telefonLink, whatsappLink, mailLink } from '../../config/betrieb';
 
-// Schritt 1 zeigt beide Wege (Fotos oder persönlich), die übrigen Schritte gelten für beide.
 const schritte = [
-  { titel: 'Anfrage stellen', text: '' },
-  { titel: 'Antwort in 24 Stunden', text: `Wir melden uns ${betrieb.antwortzeit} persönlich bei Ihnen. Die Ersteinschätzung ist kostenlos.` },
-  { titel: 'Besichtigung bei Bedarf', text: 'Wenn nötig, vereinbaren wir einen Termin vor Ort und beurteilen Baum, Standort und Zufahrt persönlich.' },
-  { titel: 'Schriftliches Angebot', text: 'Sie bekommen ein schriftliches Angebot mit Pauschalpreis und allen Arbeiten im Überblick.' },
-  { titel: 'Ausführung', text: 'Wir führen die Arbeiten aus, räumen auf und entsorgen das Schnittgut.' },
+  { titel: 'Anfrage', text: 'Mit Fotos über das Formular oder ganz persönlich per Telefon, WhatsApp oder E-Mail.' },
+  { titel: 'Antwort in 24 Stunden', text: 'Persönlich und an Werktagen. Die Ersteinschätzung ist kostenlos.' },
+  { titel: 'Besichtigung', text: 'Wenn nötig, beurteilen wir Baum, Standort und Zufahrt vor Ort.' },
+  { titel: 'Angebot', text: 'Schriftlich und mit Pauschalpreis.' },
+  { titel: 'Ausführung', text: 'Fachgerecht, mit Aufräumen und Entsorgung.' },
 ];
-
-const kanaele = [
-  { icon: 'telefon', titel: 'Anrufen', wert: betrieb.telefon.anzeige, zusatz: betrieb.erreichbarkeit, href: telefonLink },
-  { icon: 'whatsapp', titel: 'WhatsApp', wert: 'Nachricht schreiben', zusatz: 'gern auch als Sprachnachricht', href: whatsappLink },
-  { icon: 'mail', titel: 'E-Mail', wert: betrieb.email, zusatz: `Antwort ${betrieb.antwortzeit}`, href: mailLink },
-] as const;
 ---
 
 <section class="abschnitt ablauf" aria-labelledby="ablauf-titel">
@@ -24,72 +18,31 @@ const kanaele = [
     <div class="kopfzeile">
       <p class="kicker">Ablauf</p>
       <h2 id="ablauf-titel">So einfach geht Ihre Anfrage</h2>
-      <p class="einleitung">
-        Online mit Fotos oder ganz persönlich am Telefon: Sie wählen den Weg, der Ihnen am liebsten ist.
-      </p>
     </div>
 
     <ol>
       {
-        schritte.map((s, i) => (
+        schritte.map((s) => (
           <li>
             <h3>{s.titel}</h3>
-            {i === 0 ? (
-              <div class="wahl">
-                <a class="wahl__option" href="/kontakt/">
-                  <Icon name="kamera" />
-                  <span>
-                    <strong>Mit Fotos</strong>
-                    per Formular oder WhatsApp
-                  </span>
-                </a>
-                <span class="wahl__oder">oder</span>
-                <a class="wahl__option" href="#persoenlich">
-                  <Icon name="telefon" />
-                  <span>
-                    <strong>Persönlich</strong>
-                    per Anruf oder E-Mail
-                  </span>
-                </a>
-              </div>
-            ) : (
-              <p>{s.text}</p>
-            )}
+            <p>{s.text}</p>
           </li>
         ))
       }
     </ol>
 
-    <div class="persoenlich" id="persoenlich">
-      <div class="persoenlich__text">
-        <h3 class="weg"><Icon name="telefon" />Persönlich</h3>
-        <p class="persoenlich__titel">Lieber persönlich? Rufen Sie einfach an.</p>
-        <p>
-          Sie müssen keine Fotos schicken und kein Formular ausfüllen. Rufen Sie uns an oder schreiben Sie uns, ganz wie
-          es Ihnen lieber ist. Wir besprechen Ihr Anliegen in Ruhe und vereinbaren bei Bedarf einen Termin vor Ort.
-          Danach erhalten Sie wie gewohnt ein schriftliches Angebot mit Pauschalpreis.
-        </p>
-        <p class="persoenlich__hinweis">
-          Sind wir gerade im Einsatz und können nicht abheben, rufen wir Sie zurück, auch hier {betrieb.antwortzeit}.
-        </p>
-      </div>
-      <ul class="kanaele">
-        {
-          kanaele.map((k) => (
-            <li>
-              <a href={k.href}>
-                <span class="kanal__symbol">
-                  <Icon name={k.icon} />
-                </span>
-                <span class="kanal__text">
-                  <strong>{k.titel}</strong>
-                  <span class="kanal__wert">{k.wert}</span>
-                  <span class="kanal__zusatz">{k.zusatz}</span>
-                </span>
-              </a>
-            </li>
-          ))
-        }
+    <div class="direkt">
+      <p class="direkt__frage">Lieber persönlich?</p>
+      <ul>
+        <li>
+          <a href={telefonLink}><Icon name="telefon" />{betrieb.telefon.anzeige}</a>
+        </li>
+        <li>
+          <a href={whatsappLink}><Icon name="whatsapp" />WhatsApp</a>
+        </li>
+        <li>
+          <a href={mailLink}><Icon name="mail" />{betrieb.email}</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -103,30 +56,11 @@ const kanaele = [
   .kopfzeile {
     display: grid;
     gap: 0.9rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.75rem;
   }
 
   .kopfzeile .kicker {
     font-size: 1.15rem;
-  }
-
-  /* Bezeichnung der beiden Wege */
-  .weg {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    margin-bottom: 1.5rem;
-    font-family: var(--schrift-text);
-    font-size: 0.95rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--gold-dunkel);
-  }
-
-  .weg :global(.icon) {
-    width: 1.2rem;
-    height: 1.2rem;
   }
 
   ol {
@@ -135,15 +69,15 @@ const kanaele = [
     padding: 0;
     counter-reset: schritt;
     display: grid;
-    gap: 1.75rem;
+    gap: 1.6rem;
   }
 
   li {
     counter-increment: schritt;
     position: relative;
-    padding-left: 4rem;
+    padding-left: 3.75rem;
     display: grid;
-    gap: 0.35rem;
+    gap: 0.3rem;
     align-content: start;
   }
 
@@ -151,220 +85,117 @@ const kanaele = [
     content: counter(schritt);
     position: absolute;
     left: 0;
-    top: -0.15rem;
-    width: 2.75rem;
-    height: 2.75rem;
+    top: -0.2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     display: grid;
     place-items: center;
-    background: var(--creme);
     border: 1.5px solid var(--gold);
     color: var(--gold-dunkel);
     font-family: var(--schrift-titel);
-    font-weight: 700;
-    font-size: 1.3rem;
+    font-weight: 600;
+    font-size: 1.15rem;
   }
 
-  ol h3 {
-    font-size: 1.3rem;
+  h3 {
+    font-size: 1.25rem;
+    text-wrap: balance;
   }
 
-  /* Schritt 1: Wahl zwischen Fotos und persönlichem Kontakt */
-  .wahl {
-    display: grid;
-    gap: 0.35rem;
-    margin-top: 0.4rem;
-  }
-
-  .wahl__option {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.6rem;
-    padding: 0.6rem 0.75rem;
-    border: 1px solid var(--linie);
-    border-radius: var(--radius-klein);
-    background: var(--creme);
+  ol p {
     color: var(--text-weich);
-    font-size: 0.95rem;
-    line-height: 1.35;
-    text-decoration: none;
-    transition: border-color 0.15s ease;
-  }
-
-  .wahl__option:hover {
-    border-color: var(--gold);
-    color: var(--text-weich);
-  }
-
-  .wahl__option :global(.icon) {
-    width: 1.15rem;
-    height: 1.15rem;
-    margin-top: 0.15rem;
-    flex-shrink: 0;
-    color: var(--gold-dunkel);
-  }
-
-  .wahl__option strong {
-    display: block;
-    color: var(--dunkelgruen);
     font-size: 1rem;
+    line-height: 1.5;
   }
 
-  .wahl__oder {
-    justify-self: center;
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--gold-dunkel);
-  }
-
-  .persoenlich {
-    scroll-margin-top: 1.5rem;
-  }
-
-  ol p,
-  .persoenlich__text p:not(.persoenlich__titel) {
-    color: var(--text-weich);
-    font-size: 1.05rem;
-  }
-
-  /* Zweiter Weg: persönlich per Telefon, WhatsApp oder E-Mail */
-  .persoenlich {
+  /* Persönlicher Kontakt als schlanke Zeile unter den Schritten */
+  .direkt {
     margin-top: clamp(2.5rem, 5vw, 3.5rem);
-    padding: clamp(1.5rem, 4vw, 2.5rem);
-    background: var(--creme);
-    border-radius: var(--radius);
-    border-top: 3px solid var(--gold);
-    display: grid;
-    gap: 2rem;
-  }
-
-  .persoenlich__text {
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--linie);
     display: grid;
     gap: 0.9rem;
-    align-content: start;
   }
 
-  .persoenlich__text .weg {
-    margin-bottom: 0;
-  }
-
-  .persoenlich__titel {
+  .direkt__frage {
     font-family: var(--schrift-titel);
+    font-size: 1.3rem;
     font-weight: 600;
-    font-size: clamp(1.4rem, 1.2rem + 0.8vw, 1.8rem);
-    line-height: 1.2;
     color: var(--dunkelgruen);
   }
 
-  .persoenlich__hinweis {
-    font-size: 0.98rem;
-  }
-
-  .kanaele {
+  .direkt ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: grid;
-    gap: 0.75rem;
-    align-content: center;
+    gap: 0.6rem;
   }
 
-  .kanaele li {
+  .direkt li {
     padding: 0;
   }
 
-  .kanaele a {
-    display: flex;
+  .direkt a {
+    display: inline-flex;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem 1.25rem;
-    background: var(--weiss);
-    border: 1px solid var(--linie);
-    border-radius: var(--radius);
-    color: var(--text);
-    text-decoration: none;
-    transition: border-color 0.15s ease, box-shadow 0.15s ease;
-  }
-
-  .kanaele a:hover {
-    border-color: var(--gold);
-    box-shadow: 0 8px 22px color-mix(in srgb, var(--dunkelgruen) 10%, transparent);
-  }
-
-  .kanal__symbol {
-    flex-shrink: 0;
-    display: grid;
-    place-items: center;
-    width: 2.9rem;
-    height: 2.9rem;
-    border-radius: 50%;
-    background: var(--creme);
-    border: 1.5px solid var(--gold);
-    color: var(--gold-dunkel);
-  }
-
-  .kanal__symbol :global(.icon) {
-    width: 1.3rem;
-    height: 1.3rem;
-  }
-
-  .kanal__text {
-    display: grid;
-    gap: 0.1rem;
-    min-width: 0;
-  }
-
-  .kanal__text strong {
-    font-size: 0.85rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--gold-dunkel);
-  }
-
-  .kanal__wert {
-    font-size: 1.1rem;
-    font-weight: 700;
+    gap: 0.55rem;
+    min-height: 2.75rem;
+    font-weight: 600;
     color: var(--dunkelgruen);
+    text-decoration: none;
     overflow-wrap: anywhere;
   }
 
-  .kanal__zusatz {
-    font-size: 0.92rem;
-    color: var(--text-weich);
+  .direkt a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
   }
 
-  /* Ab Desktop: Schritte nebeneinander mit Verbindungslinie, persönlicher Weg zweispaltig */
+  .direkt :global(.icon) {
+    width: 1.2rem;
+    height: 1.2rem;
+    flex-shrink: 0;
+    color: var(--gold-dunkel);
+  }
+
+  /* Ab Desktop: Schritte nebeneinander mit feiner Verbindungslinie, Kontakt in einer Zeile */
   @media (min-width: 64rem) {
     ol {
       grid-template-columns: repeat(5, 1fr);
-      gap: 1.5rem;
+      gap: 2rem;
     }
 
     ol li {
       padding-left: 0;
-      padding-top: 4rem;
+      padding-top: 3.6rem;
     }
 
     ol li::after {
       content: '';
       position: absolute;
-      top: 1.2rem;
-      left: 3.5rem;
-      right: -0.75rem;
-      height: 2px;
-      background: color-mix(in srgb, var(--gold) 45%, transparent);
+      top: 1.05rem;
+      left: 3.25rem;
+      right: -1.25rem;
+      height: 1px;
+      background: color-mix(in srgb, var(--gold) 55%, transparent);
     }
 
     ol li:last-child::after {
       display: none;
     }
 
-    .persoenlich {
-      grid-template-columns: 1.15fr 1fr;
-      gap: 3rem;
+    .direkt {
+      grid-template-columns: auto 1fr;
       align-items: center;
+      gap: 2.5rem;
+    }
+
+    .direkt ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 2.25rem;
     }
   }
 </style>
