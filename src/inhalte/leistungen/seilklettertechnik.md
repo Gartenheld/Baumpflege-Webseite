@@ -1,13 +1,13 @@
 ---
 titel: Seilklettertechnik
-kurz: "Schonende Arbeiten in der Baumkrone am Seil, mit Handwerkzeug und ohne schwere Maschinen auf Ihrem Grundstück."
+kurz: "Pflege, Rückschnitt und Fällung am Seil, auch an schwer erreichbaren Bäumen und ohne schwere Maschinen auf Ihrem Grundstück."
 reihenfolge: 3
 schwerpunkt: false
 benoetigt: skt-a
 seitentitel: "Seilklettertechnik in Bornheim, Köln und Bonn | Baumpflege Happe"
-beschreibung: "Baumpflege mit Seilklettertechnik zwischen Köln und Bonn: Arbeiten in der Krone ohne schweres Gerät, auch an schwer erreichbaren Bäumen. Anfrage mit Fotos senden."
+beschreibung: "Seilklettertechnik zwischen Köln und Bonn: Baumpflege, Rückschnitt und Fällung am Seil, auch an schwer erreichbaren Bäumen. Anfrage mit Fotos senden."
 h1: "Seilklettertechnik in Bornheim, Köln und Bonn"
-einleitung: "Am Seil gelangen wir in die Krone, ohne ein Fahrzeug auf Ihr Grundstück zu bringen. So lassen sich kleinere Pflegearbeiten gezielt und schonend erledigen, auch in engen Gärten und Hinterhöfen."
+einleitung: "Am Seil gelangen wir in die Krone, ohne ein Fahrzeug auf Ihr Grundstück zu bringen. So lassen sich Pflegeschnitte, größere Rückschnitte und Fällungen gezielt und schonend erledigen, auch in engen Gärten und Hinterhöfen."
 vorteile:
   - titel: "Schonend für den Garten"
     text: "Kein schweres Fahrzeug unter dem Baum: Rasen, Beete und Wege bleiben geschont, der Boden im Wurzelbereich wird nicht verdichtet."
@@ -15,8 +15,8 @@ vorteile:
     text: "Bäume hinter dem Haus, in Innenhöfen oder an Hängen sind am Seil oft gut erreichbar."
   - titel: "Gezielte Schnitte"
     text: "Direkt in der Krone setzen wir jeden Schnitt genau dort, wo er hingehört."
-  - titel: "Leise Arbeit"
-    text: "Mit Handsäge und Astschere arbeiten wir in der Krone ohne Motorenlärm."
+  - titel: "Vom Pflegeschnitt bis zur Fällung"
+    text: "Totholz, Kronenpflege, Rückschnitt oder ein Baum, der Stück für Stück abgetragen werden muss: Am Seil erreichen wir jeden Teil der Krone."
 fragenTitel: "Fragen zur Seilklettertechnik"
 kosten:
   frage: "Was kosten Arbeiten mit Seilklettertechnik?"
@@ -25,7 +25,7 @@ kosten:
     - titel: "Höhe und Größe der Krone"
       text: "Eine große, hohe Krone braucht mehr Zeit für den Aufstieg und die Arbeit darin."
     - titel: "Art und Umfang der Arbeiten"
-      text: "Einzelne trockene Äste sind schneller entfernt als ein Pflegeschnitt in der ganzen Krone."
+      text: "Einzelne trockene Äste sind schneller entfernt als ein Rückschnitt der ganzen Krone oder eine Fällung Stück für Stück."
     - titel: "Zustand des Baums"
       text: "Ist der Baum geschwächt, braucht die Wahl sicherer Anschlagpunkte mehr Zeit und Sorgfalt."
     - titel: "Umgebung unter dem Baum"
@@ -36,17 +36,16 @@ kosten:
 
 ## Was wir am Seil erledigen
 
-In der Krone arbeiten wir mit Handwerkzeug, also mit Handsäge und Astschere. Damit eignet sich die Seilklettertechnik vor allem für:
+Am Seil erreichen wir jeden Teil der Krone, auch dort, wo keine Hubarbeitsbühne hinkommt. Die Seilklettertechnik eignet sich deshalb für fast alle Arbeiten am Baum:
 
 - **Totholz entfernen:** trockene und abgestorbene Äste, die sonst herabfallen könnten.
-- **Leichte Pflegeschnitte:** Äste, die sich kreuzen, aneinander scheuern oder nach innen wachsen.
-- **Einzelne störende Zweige:** etwa an Dach, Fassade oder Dachrinne, solange sie sich mit Handwerkzeug sauber schneiden lassen.
+- **Kronenpflege:** Äste, die sich kreuzen, aneinander scheuern oder nach innen wachsen, und eine zu dichte Krone auslichten.
+- **Rückschnitt und Kroneneinkürzung:** Äste an Dach, Fassade oder Dachrinne zurücknehmen und eine zu groß gewordene Krone fachgerecht verkleinern.
+- **Fällung Stück für Stück:** Kann ein Baum nicht im Ganzen fallen, tragen wir ihn von oben ab, Ast für Ast und Stammstück für Stammstück.
 
-Grundlage ist die Qualifikation SKT-A. Sie umfasst das sichere Klettern am Seil, das Arbeiten in der Krone mit Handwerkzeug und die Rettung aus dem Baum.
+## Größere Schnitte und Fällungen am Seil
 
-## Wenn die Motorsäge in die Krone muss
-
-Starke Äste lassen sich mit Handwerkzeug nicht sauber schneiden, und manche Bäume müssen Stück für Stück von oben abgetragen werden. Dafür ist die Motorsäge im Baum nötig. Auch diese Arbeiten übernehmen wir für Sie, ausgeführt mit der dafür nötigen Qualifikation SKT-B. Welche Arbeiten bei Ihrem Baum anstehen, sagen wir Ihnen nach Sichtung Ihrer Fotos und vor Beginn der Arbeiten.
+Für starke Äste, deutliche Rückschnitte und Fällungen ist die Motorsäge im Baum nötig. Auch diese Arbeiten übernehmen wir für Sie, ausgeführt mit der dafür nötigen Qualifikation SKT-B. Größere Teile werden dabei am Seil kontrolliert abgelassen, so bleiben Dach, Zaun und Beete unter dem Baum geschützt. Welche Arbeiten bei Ihrem Baum anstehen, sagen wir Ihnen nach Sichtung Ihrer Fotos und vor Beginn der Arbeiten.
 
 ## Warum ohne schweres Gerät
 
