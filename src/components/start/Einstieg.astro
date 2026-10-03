@@ -154,6 +154,11 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     padding-block: 3.5rem 4rem;
   }
 
+  /* Handy: oben etwas enger, unten Platz für den Abspielknopf, damit alles über die Leiste am unteren Rand passt */
+  .einstieg--video .einstieg__inhalt {
+    padding-block: 2.25rem 4.75rem;
+  }
+
   .einstieg__text {
     display: grid;
     gap: 1.25rem;
@@ -211,14 +216,16 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     color: var(--kupfer-hell);
   }
 
+  /* unten mittig, damit der Knopf auch auffällt, wenn der Browser den automatischen Start blockiert */
   .einstieg__pause {
     position: absolute;
-    right: var(--rand);
-    bottom: 1.25rem;
+    left: 50%;
+    bottom: 0.75rem;
+    transform: translateX(-50%);
     display: grid;
     place-items: center;
-    width: 2.75rem;
-    height: 2.75rem;
+    width: 3.25rem;
+    height: 3.25rem;
     border-radius: 50%;
     border: 1px solid rgb(243 238 230 / 0.5);
     background: rgb(15 45 43 / 0.55);
@@ -235,8 +242,8 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
   }
 
   .einstieg__pause :global(.icon) {
-    width: 1.1rem;
-    height: 1.1rem;
+    width: 1.4rem;
+    height: 1.4rem;
   }
 
   .einstieg__pause[data-zustand='laeuft'] :global(.symbol-abspielen),
@@ -264,8 +271,15 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
       background: linear-gradient(90deg, rgb(15 45 43 / 0.86) 0%, rgb(15 45 43 / 0.78) 40%, rgb(15 45 43 / 0.4) 100%);
     }
 
-    .einstieg__inhalt {
+    .einstieg__inhalt,
+    .einstieg--video .einstieg__inhalt {
       padding-block: 5rem;
+    }
+
+    .einstieg__pause {
+      bottom: 1.5rem;
+      width: 3.5rem;
+      height: 3.5rem;
     }
   }
 </style>
