@@ -92,8 +92,13 @@ const social = socialProfile();
         </div>
 
         <p class="datenschutz">
-          Ihre Angaben und Fotos verwenden wir nur, um Ihre Anfrage zu beantworten. Mehr dazu in der
-          <a href="/datenschutz/">Datenschutzerklärung</a>.
+          Ihre Angaben und Fotos verwenden wir nur, um Ihre Anfrage zu beantworten.
+          Mehr dazu in der <a href="/datenschutz/">Datenschutzerklärung</a>.
+        </p>
+
+        <p class="versprechen">
+          <Icon name="uhr" />
+          <span><strong>Unser Versprechen:</strong> Auf jede neue Anfrage antworten wir {betrieb.antwortzeit} persönlich.</span>
         </p>
 
         <button class="knopf knopf--haupt" type="submit" data-senden><Icon name="kamera" />Anfrage senden</button>
@@ -145,7 +150,7 @@ const social = socialProfile();
             <Icon name="uhr" />
             <div>
               <span class="etikett">Antwort</span>
-              <span>Ersteinschätzung kostenlos, {betrieb.antwortzeit}</span>
+              <span>Persönlich {betrieb.antwortzeit}, Ersteinschätzung kostenlos</span>
             </div>
           </li>
         </ul>
@@ -438,5 +443,29 @@ const social = socialProfile();
       grid-template-columns: 1.5fr 1fr;
       gap: 4rem;
     }
+  }
+
+  /* Antwortversprechen direkt über dem Senden-Knopf */
+  .versprechen {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+    padding: 0.9rem 1.1rem;
+    border-left: 3px solid var(--gold);
+    border-radius: var(--radius-klein);
+    background: var(--flaeche);
+    color: var(--text);
+  }
+
+  .versprechen :global(.icon) {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+    color: var(--gold-dunkel);
+  }
+
+  .versprechen strong {
+    color: var(--dunkelgruen);
   }
 </style>

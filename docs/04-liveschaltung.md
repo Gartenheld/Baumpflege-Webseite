@@ -32,9 +32,9 @@ Stand der Website: Alle Seiten sind fertig und freigegeben (Schritt 4). Lighthou
 
 Der Live-Build bricht ab, solange irgendwo „Platzhalter“ oder die Nummer aus lauter Nullen steht. Das Wort „Platzhalter“ in Vorlagen und Kommentaren stört nicht.
 
-- [ ] **Betriebsdaten** in [src/config/betrieb.ts](../src/config/betrieb.ts): Telefon (Anzeige und Wählnummer), WhatsApp-Nummer, E-Mail, Erreichbarkeit, Antwortzeit, USt-IdNr., Google-Bewertungen (Durchschnitt, Anzahl, Stand), Profil-Links.
+- [ ] **Betriebsdaten** in [src/config/betrieb.ts](../src/config/betrieb.ts): Telefon (Anzeige und Wählnummer), WhatsApp-Nummer, E-Mail, Erreichbarkeit, USt-IdNr., Google-Bewertungen (Durchschnitt, Anzahl, Stand), Profil-Links.
 - [ ] **Häufige Fragen** mit offenen Angaben:
-  - [src/inhalte/faq/kosten-ersteinschaetzung.md](../src/inhalte/faq/kosten-ersteinschaetzung.md): Antwortzeit und ob die Besichtigung kostenlos ist
+  - [src/inhalte/faq/kosten-ersteinschaetzung.md](../src/inhalte/faq/kosten-ersteinschaetzung.md): ob die Besichtigung kostenlos ist (Antwortzeit geklärt: 24 Stunden an Werktagen)
 - [ ] **Impressum:** Satz zur Verbraucherschlichtung in [src/pages/impressum.astro](../src/pages/impressum.astro) bestätigen.
 - [ ] **Datenschutzerklärung** aus einem Generator in [src/inhalte/seiten/datenschutz.md](../src/inhalte/seiten/datenschutz.md) einfügen. Angaben dafür: Konzept 9.4 (Hosting bei Hostinger, Server-Logs, Kontaktformular mit Fotos und Mailversand, WhatsApp-Link, keine Cookies, kein Tracking, keine externen Schriften).
 - [ ] **Fotos:** mindestens das Startseitenfoto, besser auch Über uns, Baumpflege und Baumfällung (Anleitung in [src/bilder/README.md](../src/bilder/README.md)). Ohne Foto zeigt die Live-Seite eine ruhige Fläche mit dem Baumsymbol statt „Foto folgt“.

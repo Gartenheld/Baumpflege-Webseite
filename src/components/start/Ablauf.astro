@@ -3,9 +3,9 @@ import { betrieb } from '../../config/betrieb';
 
 const schritte = [
   { titel: 'Anfrage mit Fotos', text: 'Sie schicken uns Fotos des Baumes und eine kurze Beschreibung, per Formular oder WhatsApp.' },
-  { titel: 'Ersteinschätzung', text: `Sie erhalten eine kostenlose Ersteinschätzung, ${betrieb.antwortzeit}.` },
+  { titel: 'Antwort in 24 Stunden', text: `Wir melden uns ${betrieb.antwortzeit} persönlich bei Ihnen. Die Ersteinschätzung ist kostenlos.` },
   { titel: 'Besichtigung bei Bedarf', text: 'Reichen die Fotos nicht aus, sehen wir uns den Baum vor Ort an.' },
-  { titel: 'Schriftliches Angebot', text: 'Sie bekommen ein schriftliches Angebot mit allen Arbeiten im Überblick.' },
+  { titel: 'Schriftliches Angebot', text: 'Sie bekommen ein schriftliches Angebot mit Pauschalpreis und allen Arbeiten im Überblick.' },
   { titel: 'Ausführung', text: 'Wir führen die Arbeiten aus, räumen auf und entsorgen das Schnittgut.' },
 ];
 ---
@@ -55,6 +55,7 @@ const schritte = [
     padding-left: 4rem;
     display: grid;
     gap: 0.35rem;
+    align-content: start;
   }
 
   li::before {

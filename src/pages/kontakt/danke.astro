@@ -5,18 +5,18 @@ import Icon from '../../components/Icon.astro';
 import { betrieb, telefonLink, whatsappLink } from '../../config/betrieb';
 ---
 
-<Basis title="Vielen Dank für Ihre Anfrage | Baumpflege Happe" description="Ihre Anfrage an Baumpflege Happe ist angekommen. Wir melden uns mit einer kostenlosen Ersteinschätzung bei Ihnen." noindex>
+<Basis title="Vielen Dank für Ihre Anfrage | Baumpflege Happe" description="Ihre Anfrage an Baumpflege Happe ist angekommen. Wir melden uns innerhalb von 24 Stunden an Werktagen persönlich bei Ihnen." noindex>
   <section class="abschnitt">
     <div class="huelle text">
       <Brotkrumen pfad={[{ titel: 'Kontakt', href: '/kontakt/' }, { titel: 'Vielen Dank' }]} />
       <p class="kicker">Anfrage gesendet</p>
       <h1>Vielen Dank für Ihre Anfrage</h1>
-      <p class="einleitung">Ihre Nachricht ist bei uns angekommen. Sie erhalten eine kostenlose Ersteinschätzung, {betrieb.antwortzeit}.</p>
+      <p class="einleitung">Ihre Nachricht ist bei uns angekommen. Wir melden uns {betrieb.antwortzeit} persönlich bei Ihnen.</p>
       <h2>So geht es weiter</h2>
       <ol class="prosa">
         <li>Wir sehen uns Ihre Angaben und Fotos an.</li>
-        <li>Sie erhalten unsere Ersteinschätzung per E-Mail oder Telefon. Falls nötig, vereinbaren wir einen Termin vor Ort.</li>
-        <li>Danach bekommen Sie ein schriftliches Angebot.</li>
+        <li>Wir melden uns {betrieb.antwortzeit} per E-Mail oder Telefon, mit einer kostenlosen Ersteinschätzung oder mit Rückfragen. Falls nötig, vereinbaren wir einen Termin vor Ort.</li>
+        <li>Danach bekommen Sie ein schriftliches Angebot mit Pauschalpreis.</li>
       </ol>
       <p>Haben Sie etwas vergessen oder möchten Fotos nachreichen?</p>
       <div class="knoepfe">

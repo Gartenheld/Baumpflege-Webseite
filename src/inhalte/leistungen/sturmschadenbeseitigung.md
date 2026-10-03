@@ -39,7 +39,7 @@ Liegt ein Baum auf einer Straße oder auf einer Leitung, oder droht er auf Mensc
 
 ## Wie schnell wir kommen können
 
-Nach einem Sturm erreichen uns oft viele Anfragen gleichzeitig. Wir melden uns so schnell wie möglich und sehen uns jede Anfrage an. Fälle, in denen Gefahr für Menschen, Gebäude oder Wege besteht, erledigen wir zuerst. Einen Notdienst rund um die Uhr bieten wir nicht an. Bei akuter Gefahr ist deshalb immer die Feuerwehr der erste Ansprechpartner.
+Nach einem Sturm erreichen uns oft viele Anfragen gleichzeitig. Auch dann antworten wir auf jede neue Anfrage innerhalb von 24 Stunden an Werktagen. Fälle, in denen Gefahr für Menschen, Gebäude oder Wege besteht, erledigen wir zuerst. Einen Notdienst rund um die Uhr bieten wir nicht an. Bei akuter Gefahr ist deshalb immer die Feuerwehr der erste Ansprechpartner.
 
 ## Fotos für die Versicherung
 
@@ -58,6 +58,6 @@ Hängen abgebrochene Äste noch hoch in der Krone, holen wir sie je nach Lage mi
 
 1. **Sicherheit zuerst:** Bei akuter Gefahr rufen Sie die Feuerwehr unter 112 und halten Abstand.
 2. **Anfrage mit Fotos:** Sie schicken uns Fotos der Schäden und beschreiben kurz die Lage.
-3. **Kostenlose Ersteinschätzung:** Wir sichten Ihre Anfrage und melden uns so schnell wie möglich.
+3. **Kostenlose Ersteinschätzung:** Wir sichten Ihre Anfrage und melden uns innerhalb von 24 Stunden an Werktagen.
 4. **Besichtigung und Angebot:** Bei Bedarf sehen wir uns den Schaden vor Ort an. Danach erhalten Sie ein schriftliches Angebot.
 5. **Beseitigung und Aufräumen:** Wir arbeiten das Holz auf, häckseln das Schnittgut vor Ort und fahren es ab.

@@ -32,8 +32,9 @@ export const betrieb = {
 
   // Erreichbarkeit für Telefon und Rückrufe:
   erreichbarkeit: '[Platzhalter: Mo bis Fr 8 bis 17 Uhr]',
-  // Antwortzeit auf Anfragen (wird im Ablauf und am Formular genannt):
-  antwortzeit: '[Platzhalter: innerhalb von zwei Werktagen]',
+  // Versprechen: erste persönliche Antwort auf eine neue Anfrage (noch kein Angebot).
+  // Steht auf der Startseite, im Ablauf, am Formular, auf der Danke-Seite und im FAQ.
+  antwortzeit: 'innerhalb von 24 Stunden an Werktagen',
 
   ustId: '[Platzhalter USt-IdNr.]',
 
