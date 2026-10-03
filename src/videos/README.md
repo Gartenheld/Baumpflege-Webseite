@@ -20,6 +20,7 @@ aus der Ferne. Keine Namen oder Logos anderer Baumpflegebetriebe im Bild.
 
 Aktuell (Test seit 3. Oktober 2026): Motorsäge in Zeitlupe beim Durchtrennen eines Stammes, mit fliegenden
 Spänen (Pexels, frei nutzbar). 11 Sekunden ab Sekunde 0,5 verwendet, als Schleife von gut 10 Sekunden mit weicher
-Überblendung. Größen: 2,5 MB (MP4), 2,0 MB (WebM), Handy rund 1,3 MB.
+Überblendung. Horizontal gespiegelt, damit die Säge rechts neben dem Text liegt (der Schriftzug auf der Säge
+ist dadurch spiegelverkehrt). Größen: 2,5 MB (MP4), 2,0 MB (WebM), Handy rund 1,3 MB.
 Vorher: Drohnenflug über Baumkronen, liegt in der Git-Historie (Commit „Startseite: wieder das Hintergrundvideo
 mit dem Drohnenflug über Baumkronen“).
