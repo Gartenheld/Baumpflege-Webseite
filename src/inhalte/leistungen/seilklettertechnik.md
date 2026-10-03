@@ -57,4 +57,4 @@ Mit der Hubarbeitsbühne arbeiten wir dort, wo sie hinkommt. Sie braucht aber ei
 2. **Kostenlose Ersteinschätzung:** Wir prüfen, welche Arbeiten in der Krone nötig sind und wie sie sich am besten erledigen lassen.
 3. **Besichtigung bei Bedarf:** Wenn nötig, vereinbaren wir einen Termin vor Ort und beurteilen Baum und Umgebung persönlich.
 4. **Schriftliches Angebot:** Sie erhalten ein Angebot, in dem alle Arbeiten aufgeführt sind.
-5. **Arbeit in der Krone und Aufräumen:** Wir erledigen die Schnitte, häckseln das Schnittgut vor Ort und fahren es ab oder lassen es Ihnen als Mulch da. Die Einsatzstelle hinterlassen wir sauberer, als wir sie vorgefunden haben.
+5. **Arbeit in der Krone und Aufräumen:** Wir erledigen die Schnitte, häckseln das Schnittgut vor Ort und fahren es ab oder lassen es Ihnen als Mulch da. Ihr Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben.

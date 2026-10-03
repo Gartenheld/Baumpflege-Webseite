@@ -60,4 +60,4 @@ Hängen abgebrochene Äste noch hoch in der Krone, holen wir sie je nach Lage mi
 2. **Anfrage mit Fotos:** Sie schicken uns Fotos der Schäden und beschreiben kurz die Lage.
 3. **Kostenlose Ersteinschätzung:** Wir sichten Ihre Anfrage und melden uns innerhalb von 24 Stunden an Werktagen.
 4. **Besichtigung und Angebot:** Bei Bedarf sehen wir uns den Schaden vor Ort an. Danach erhalten Sie ein schriftliches Angebot.
-5. **Beseitigung und Aufräumen:** Wir arbeiten das Holz auf, häckseln das Schnittgut vor Ort und fahren es ab. Die Einsatzstelle hinterlassen wir sauberer, als wir sie vorgefunden haben.
+5. **Beseitigung und Aufräumen:** Wir arbeiten das Holz auf, häckseln das Schnittgut vor Ort und fahren es ab. Ihr Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben.

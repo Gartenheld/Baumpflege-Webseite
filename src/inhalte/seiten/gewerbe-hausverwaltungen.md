@@ -25,7 +25,7 @@ karten:
 2. **Besichtigung bei Bedarf:** Wenn nötig, vereinbaren wir einen Termin vor Ort und sehen uns Bäume und Grünflächen gemeinsam mit Ihnen an.
 3. **Pflegeplan und Angebot:** Wir schlagen vor, welche Arbeiten in welchem Abstand sinnvoll sind, und Sie erhalten ein schriftliches Angebot.
 4. **Rahmenvertrag:** Für wiederkehrende Arbeiten halten wir Leistungen und Zeiträume in einem Rahmenvertrag fest.
-5. **Ausführung:** Wir stimmen die Termine rechtzeitig mit Ihnen ab, damit Sie Bewohner, Mieter oder Mitarbeiter informieren können. Aufräumen und Entsorgung gehören dazu, die Einsatzstelle hinterlassen wir sauberer, als wir sie vorgefunden haben.
+5. **Ausführung:** Wir stimmen die Termine rechtzeitig mit Ihnen ab, damit Sie Bewohner, Mieter oder Mitarbeiter informieren können. Aufräumen und Entsorgung gehören dazu, das Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben.
 6. **Dokumentation:** Nach jedem Einsatz erhalten Sie eine schriftliche Übersicht der durchgeführten Arbeiten.
 
 ## Dokumentation der Arbeiten

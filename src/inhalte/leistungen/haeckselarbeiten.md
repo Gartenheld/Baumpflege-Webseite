@@ -57,4 +57,4 @@ Ein großer Haufen Äste nimmt viel Platz ein. Gehäckselt schrumpft das Volumen
 2. **Kostenlose Ersteinschätzung:** Wir schätzen Menge und Aufwand ein.
 3. **Besichtigung bei Bedarf:** Bei großen Mengen oder schwierigem Zugang sehen wir uns alles vor Ort an.
 4. **Schriftliches Angebot:** Sie erhalten ein Angebot, ob mit Mulch für Ihren Garten oder mit Abtransport.
-5. **Häckseln und Aufräumen:** Wir häckseln vor Ort, laden das Häckselgut nach Ihren Wünschen ab oder fahren es ab. Die Einsatzstelle hinterlassen wir sauberer, als wir sie vorgefunden haben.
+5. **Häckseln und Aufräumen:** Wir häckseln vor Ort, laden das Häckselgut nach Ihren Wünschen ab oder fahren es ab. Ihr Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben.

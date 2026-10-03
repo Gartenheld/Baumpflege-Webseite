@@ -64,4 +64,4 @@ Nicht jeder Wurzelstock muss heraus. In einem naturnahen Garten kann ein Stumpf 
 2. **Kostenlose Ersteinschätzung:** Wir schlagen Ihnen eine passende Methode vor.
 3. **Besichtigung bei Bedarf:** Bei engen Lagen oder Leitungen in der Nähe sehen wir uns alles vor Ort an.
 4. **Schriftliches Angebot:** Sie erhalten ein Angebot mit allen Arbeiten im Überblick.
-5. **Entfernung und Abschluss:** Wir entfernen den Wurzelstock, verfüllen das Loch und räumen Späne und Wurzelreste auf. Die Einsatzstelle hinterlassen wir sauberer, als wir sie vorgefunden haben. Auf Wunsch legen wir danach Rollrasen oder säen Rasen ein.
+5. **Entfernung und Abschluss:** Wir entfernen den Wurzelstock, verfüllen das Loch und räumen Späne und Wurzelreste auf. Ihr Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben. Auf Wunsch legen wir danach Rollrasen oder säen Rasen ein.
