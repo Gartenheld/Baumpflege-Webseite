@@ -10,7 +10,8 @@
   --gold: #c9a24e; /* Hauptknopf mit dunkler Schrift, Sterne */
   --gold-hover: #b8913d;
   --gold-dunkel: #7a5c1e; /* kleine goldene Schrift und Symbole auf hellem Grund */
-  --gold-hell: #f4e8c4; /* goldene Schrift auf grünem und dunklem Grund */
+  --gold-hell: #f4e8c4; /* goldene Schrift auf grünem Grund */
+  --gold-licht: #e2c67e; /* goldene Schrift und Symbole auf sehr dunklem Grund (Video, Fußbereich) */
   --creme: #f3f5ec; /* Seitenhintergrund */
   --flaeche: #e4e9db; /* Foto-Platzhalter, Hinweiskästen */
   --weiss: #ffffff;
@@ -99,6 +100,7 @@ a {
   color: var(--dunkelgruen);
   text-underline-offset: 0.18em;
   text-decoration-thickness: 1px;
+  text-decoration-color: var(--gold);
 }
 
 a:hover {
@@ -139,14 +141,13 @@ svg {
   color: var(--gold-dunkel);
 }
 
-/* feine Linie vor der kleinen Überschrift */
+/* feine goldene Linie vor der kleinen Überschrift */
 .kicker::before {
   content: '';
   flex-shrink: 0;
   width: 2rem;
   height: 2px;
-  background: currentColor;
-  opacity: 0.6;
+  background: var(--gold);
 }
 
 .einleitung {

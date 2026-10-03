@@ -102,6 +102,15 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
     color: var(--gold-dunkel) !important;
   }
 
+  /* goldene Unterstreichung für die aktuelle Seite und beim Überfahren */
+  .kopf__nav a:not(.knopf):hover,
+  .kopf__nav [aria-current='page'] {
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.55em;
+  }
+
   /* Handy und Tablet */
   .kopf__menue summary {
     display: flex;

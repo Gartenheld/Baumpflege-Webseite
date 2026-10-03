@@ -63,7 +63,9 @@ const weitere = kompakt ? leistungen : leistungen.filter((l) => !l.data.schwerpu
   }
 
   .karte:hover {
-    box-shadow: 0 10px 28px color-mix(in srgb, var(--dunkelgruen) 12%, transparent);
+    box-shadow:
+      inset 0 0 0 1px var(--gold),
+      0 10px 28px color-mix(in srgb, var(--dunkelgruen) 12%, transparent);
   }
 
   .karte:focus-within {
