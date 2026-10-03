@@ -30,11 +30,11 @@ const beiBedarf = await qualifikationenBeiBedarf();
       {
         beiBedarf.map((q) => (
           <li class="bei-bedarf">
-            <h3>
-              {q.data.titel} <span class="etikett">bei Bedarf im Einsatz</span>
-            </h3>
-            <p>{q.data.erklaerung}</p>
-            {q.data.hinweis && <p>{q.data.hinweis}</p>}
+            <h3>{q.data.titel}</h3>
+            <p>
+              <span class="etikett">bei Bedarf im Einsatz</span>
+              {q.data.erklaerung} {q.data.hinweis}
+            </p>
           </li>
         ))
       }
@@ -79,50 +79,59 @@ const beiBedarf = await qualifikationenBeiBedarf();
     margin-top: 0.5rem;
   }
 
+  /* kompakte Liste: Titel links, Erklärung rechts, feine Trennlinien, oben eine goldene Linie */
   .liste {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    gap: 1rem;
+    border-top: 2px solid var(--gold);
   }
 
   .liste li {
-    border: 1px solid color-mix(in srgb, var(--auf-dunkel) 22%, transparent);
-    border-left: 3px solid var(--gold);
-    border-radius: var(--radius);
-    padding: 1.4rem 1.5rem;
     display: grid;
-    gap: 0.4rem;
+    gap: 0.2rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--auf-dunkel) 22%, transparent);
+  }
+
+  .liste h3 {
+    font-size: 1.15rem;
+    color: var(--gold-hell);
   }
 
   .liste p {
     color: var(--auf-dunkel-weich);
-    font-size: 1.05rem;
+    font-size: 0.98rem;
+    line-height: 1.5;
   }
 
-  .liste .bei-bedarf {
-    border-style: dashed;
+  @media (min-width: 30rem) {
+    .liste li {
+      grid-template-columns: 7rem 1fr;
+      gap: 1rem;
+      align-items: baseline;
+    }
   }
 
   .etikett {
     display: inline-block;
-    margin-left: 0.4rem;
-    padding: 0.1rem 0.55rem;
+    margin: 0 0.4rem 0.2rem 0;
+    padding: 0.05rem 0.55rem;
     border-radius: 999px;
     background: var(--gold);
     color: var(--tiefgruen);
     font-family: var(--schrift-text);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.02em;
-    vertical-align: middle;
+    vertical-align: 0.1em;
   }
 
   @media (min-width: 60rem) {
     .raster {
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
+      align-items: center;
     }
   }
 </style>
