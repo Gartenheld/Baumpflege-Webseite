@@ -9,7 +9,7 @@ h1: "Wurzelstock entfernen in Bornheim, Köln und Bonn"
 einleitung: "Nach einer Fällung bleibt der Baumstumpf oft jahrelang im Boden. Er stört beim Mähen, ist eine Stolperfalle und steht einer neuen Gestaltung im Weg. Wir entfernen Wurzelstöcke so, dass Sie den Platz wieder nutzen können."
 vorteile:
   - titel: "Fläche wieder nutzbar"
-    text: "Wo der Stumpf stand, können Sie Rasen anlegen, Beete gestalten oder neu pflanzen."
+    text: "Wo der Stumpf stand, ist wieder Platz für Rasen, Beet oder Neupflanzung. Auf Wunsch stellen wir die Rasenfläche gleich mit her."
   - titel: "Passende Methode"
     text: "Je nach Lage und Größe wird der Wurzelstock gefräst oder ausgegraben, mit der Technik, die zum Standort passt."
   - titel: "Kein neuer Austrieb am Stumpf"
@@ -33,6 +33,8 @@ kosten:
       text: "Für eine Neupflanzung muss gründlicher entfernt werden als für eine Rasenfläche."
     - titel: "Entsorgung"
       text: "Die Menge an Spänen, Wurzelholz und Erde, die abgefahren werden muss, fließt in den Aufwand ein."
+    - titel: "Wiederherstellung der Fläche"
+      text: "Soll die Stelle anschließend mit Rollrasen belegt oder eingesät werden, kommt das als eigene Position hinzu."
 ---
 
 ## Stubben fräsen oder ausgraben?
@@ -48,6 +50,10 @@ Welche Methode passt, besprechen wir mit Ihnen anhand der Fotos oder vor Ort. Wi
 
 Im Bereich von Wurzeln verlaufen nicht selten Wasser-, Strom- oder Gasleitungen. Bitte sagen Sie uns, wenn Sie wissen, wo Leitungen liegen, oder wenn Pläne dazu vorhanden sind. Im Zweifel gibt Ihr Versorger Auskunft über den Verlauf. In solchen Bereichen arbeiten wir besonders vorsichtig.
 
+## Fläche wiederherstellen
+
+Nach der Entfernung verfüllen wir das Loch und ebnen es ein. Auf Wunsch stellen wir die Fläche anschließend wieder her: mit **Rollrasen**, wenn sie schnell wieder grün und nutzbar sein soll, oder mit einer **Rasenansaat**. Weil frisch verfüllter Boden noch etwas nachsacken kann, stimmen wir den passenden Zeitpunkt mit Ihnen ab.
+
 ## Wenn der Stumpf bleiben darf
 
 Nicht jeder Wurzelstock muss heraus. In einem naturnahen Garten kann ein Stumpf langsam verrotten und dabei Insekten, Pilzen und Kleintieren Lebensraum bieten. Manchmal reicht es auch, den Stumpf bodennah abzusägen. Was in Ihrem Fall sinnvoll ist, besprechen wir gemeinsam.
@@ -58,4 +64,4 @@ Nicht jeder Wurzelstock muss heraus. In einem naturnahen Garten kann ein Stumpf 
 2. **Kostenlose Ersteinschätzung:** Wir schlagen Ihnen eine passende Methode vor.
 3. **Besichtigung bei Bedarf:** Bei engen Lagen oder Leitungen in der Nähe sehen wir uns alles vor Ort an.
 4. **Schriftliches Angebot:** Sie erhalten ein Angebot mit allen Arbeiten im Überblick.
-5. **Entfernung und Abschluss:** Wir entfernen den Wurzelstock, verfüllen das Loch und räumen Späne und Wurzelreste auf.
+5. **Entfernung und Abschluss:** Wir entfernen den Wurzelstock, verfüllen das Loch und räumen Späne und Wurzelreste auf. Auf Wunsch legen wir danach Rollrasen oder säen Rasen ein.

@@ -12,5 +12,6 @@ Jeder Baum und jedes Grundstück ist anders, deshalb nennen wir keine Pauschalpr
 - **Zugang:** Zufahrt für unser Fahrzeug und Wege, über die das Schnittgut getragen werden muss
 - **Schnittgut:** Menge sowie Aufwand für Häckseln, Abtransport und Entsorgung
 - **Zusatzarbeiten:** zum Beispiel das Entfernen des Wurzelstocks
+- **Bündelung:** Mehrere Arbeiten an einem Termin sparen zusätzliche Anfahrten und Rüstzeiten
 
 Die wichtigsten Preisfaktoren der einzelnen Arbeiten finden Sie zusätzlich auf den jeweiligen Leistungsseiten. Anhand Ihrer Fotos erhalten Sie eine kostenlose Ersteinschätzung und danach ein schriftliches Angebot.
