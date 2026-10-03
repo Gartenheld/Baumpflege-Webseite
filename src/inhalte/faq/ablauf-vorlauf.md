@@ -5,4 +5,4 @@ leistungen: []
 aufFaqSeite: true
 reihenfolge: 25
 ---
-Am besten früh. Fällungen und starke Rückschnitte sind in der Regel nur von Oktober bis Ende Februar möglich, deshalb ist der Winter die arbeitsreichste Zeit. Wer schon im Spätsommer oder Herbst anfragt, hat die größte Auswahl an Terminen. Ist eine Fällgenehmigung nötig, kommt deren Bearbeitungszeit hinzu. Pflegeschnitte, Heckenschnitt und kleinere Arbeiten lassen sich über das Jahr meist flexibler einplanen.
+Am besten früh. Der Winter ist die arbeitsreichste Zeit, weil für Hecken und für Bäume außerhalb von Gärten von März bis September eine Schonzeit gilt. Wer schon im Spätsommer oder Herbst anfragt, hat die größte Auswahl an Terminen. Ist eine Fällgenehmigung nötig, kommt deren Bearbeitungszeit hinzu. Fällungen im Garten, Pflegeschnitte und kleinere Arbeiten lassen sich oft auch im Sommer einplanen.

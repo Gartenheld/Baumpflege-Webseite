@@ -5,6 +5,13 @@ leistungen: [baumfaellung, baumpflege, landschaftspflege-heckenschnitt]
 aufFaqSeite: true
 reihenfolge: 20
 ---
-Das Bundesnaturschutzgesetz legt in **§ 39 Abs. 5 BNatSchG** eine Schonzeit vom **1. März bis 30. September** fest. In dieser Zeit dürfen Hecken, Gebüsche und viele Bäume grundsätzlich nicht gefällt, auf den Stock gesetzt oder stark zurückgeschnitten werden. Erlaubt bleiben schonende Form- und Pflegeschnitte, die den Zuwachs zurücknehmen oder den Baum gesund erhalten. Bäume auf gärtnerisch genutzten Flächen, etwa in vielen Hausgärten, nimmt das Gesetz vom Fällverbot aus; für Hecken und Gebüsche gilt diese Ausnahme nicht. Der Artenschutz gilt trotzdem überall und das ganze Jahr. Fällungen und starke Rückschnitte planen wir deshalb für die Zeit von Oktober bis Ende Februar.
 
-Geht von einem Baum eine Gefahr aus, etwa nach einem Sturm, kann eine Ausnahme in Betracht kommen; das stimmen wir vorher mit der zuständigen Behörde ab. Ob für Ihren Baum Besonderheiten gelten, etwa durch eine Baumschutzsatzung, erfragen Sie am besten bei Ihrer Stadt oder Gemeinde.
+**In vielen Fällen ja.** Steht der Baum in Ihrem Garten, darf er grundsätzlich auch im Sommer gefällt werden. Wenn das Gesetz es erlaubt, fällen wir deshalb auch zwischen März und September.
+
+Vorher prüfen wir drei Dinge:
+
+- **Tiere im Baum:** Brüten Vögel im Baum oder nutzen Fledermäuse eine Höhle, muss die Fällung warten. Das gilt das ganze Jahr. Wir sehen uns jeden Baum vorher genau an.
+- **Baumschutzsatzung:** Hat Ihre Stadt oder Gemeinde eine Baumschutzsatzung, kann eine Genehmigung nötig sein.
+- **Standort:** Für Bäume außerhalb von Gärten, etwa am Feldrand, sowie für Hecken und Gebüsche gilt vom 1. März bis 30. September eine Schonzeit (**§ 39 Abs. 5 BNatSchG**). Gefällt oder stark zurückgeschnitten wird dann erst ab Oktober. Geht von einem Baum eine akute Gefahr aus, kann die Behörde eine Ausnahme zulassen.
+
+Schicken Sie uns Fotos. Wir sagen Ihnen, ob Ihr Baum im Sommer gefällt werden kann.

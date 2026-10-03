@@ -19,7 +19,7 @@ karten:
 
 Jeder Auftrag beginnt mit Ihren Fotos. Daraus erstellen wir eine kostenlose Ersteinschätzung, bei Bedarf sehen wir uns den Baum vor Ort an. Danach erhalten Sie ein schriftliches Angebot, in dem die vereinbarten Arbeiten, das Aufräumen und die Entsorgung aufgeführt sind. Den Termin stimmen wir mit Ihnen ab. Vorher klären wir, wie wir auf das Grundstück kommen und wo unser Fahrzeug stehen kann, damit am Arbeitstag alles reibungslos läuft.
 
-Bei der Pflege schneiden wir so viel wie nötig und so wenig wie möglich, damit der Baum gesund und stabil bleibt. Eine Fällung empfehlen wir nur, wenn ein Baum nicht mehr zu halten ist oder weichen muss. Fällungen und starke Rückschnitte planen wir außerhalb der Schonzeit, und vor Fällungen und größeren Schnitten achten wir auf Nester und geschützte Tiere.
+Bei der Pflege schneiden wir so viel wie nötig und so wenig wie möglich, damit der Baum gesund und stabil bleibt. Eine Fällung empfehlen wir nur, wenn ein Baum nicht mehr zu halten ist oder weichen muss. Schonzeit und Artenschutz halten wir ein, und vor Fällungen und größeren Schnitten achten wir auf Nester und geschützte Tiere.
 
 ## Sicherheit
 

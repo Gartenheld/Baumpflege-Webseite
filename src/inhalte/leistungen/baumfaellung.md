@@ -58,7 +58,7 @@ Ist wenig Platz vorhanden, klären wir vorab, ob und wie eine Fällung sicher m�
 
 Viele Städte und Gemeinden schützen größere Bäume durch eine Baumschutzsatzung. Dann kann für die Fällung eine Genehmigung nötig sein. Welche Regeln für Ihren Baum gelten, erfragen Sie im Einzelfall bei Ihrer Stadt oder Gemeinde. Wir sprechen das Thema bei der Planung mit Ihnen an.
 
-Außerdem gilt vom 1. März bis 30. September die allgemeine Schonzeit nach dem Bundesnaturschutzgesetz. Sie verbietet in dieser Zeit das Fällen von Bäumen außerhalb von Wald und gärtnerisch genutzten Flächen sowie das Roden von Hecken und Gebüschen. Bäume in Hausgärten sind davon in vielen Fällen ausgenommen. Der Artenschutz gilt aber das ganze Jahr: Brüten Vögel im Baum oder nutzen Fledermäuse eine Höhle, darf er nicht ohne Weiteres gefällt werden. Wir planen Fällungen deshalb bevorzugt von Oktober bis Ende Februar und sehen uns jeden Baum vorher auf Nester und Höhlen an. Ob im Einzelfall eine Ausnahme möglich ist, etwa bei akuter Gefahr, klärt die zuständige Behörde.
+Bäume in Ihrem Garten dürfen grundsätzlich auch im Sommer gefällt werden. Wenn das Gesetz es erlaubt, fällen wir deshalb auch zwischen März und September. Die Schonzeit vom 1. März bis 30. September nach dem Bundesnaturschutzgesetz gilt vor allem für Hecken, Gebüsche und Bäume außerhalb von Gärten. Der Artenschutz gilt dagegen das ganze Jahr: Brüten Vögel im Baum oder nutzen Fledermäuse eine Höhle, muss die Fällung warten. Wir sehen uns deshalb jeden Baum vorher auf Nester und Höhlen an.
 
 ## So gehen wir vor
 
