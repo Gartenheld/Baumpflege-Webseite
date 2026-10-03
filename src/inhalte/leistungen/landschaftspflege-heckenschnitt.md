@@ -61,4 +61,4 @@ Klassischen Garten- und Landschaftsbau wie Pflasterarbeiten oder Terrassenbau bi
 2. **Kostenlose Ersteinschätzung:** Wir sagen Ihnen, welcher Schnitt sinnvoll ist und wann er erfolgen sollte.
 3. **Besichtigung bei Bedarf:** Wenn nötig, vereinbaren wir einen Termin vor Ort und sehen uns Hecke und Fläche persönlich an.
 4. **Schriftliches Angebot:** Sie erhalten ein Angebot mit allen Arbeiten im Überblick.
-5. **Schnitt und Aufräumen:** Wir schneiden, häckseln das Schnittgut vor Ort und hinterlassen die Fläche aufgeräumt.
+5. **Schnitt und Aufräumen:** Wir schneiden, häckseln das Schnittgut vor Ort und hinterlassen die Einsatzstelle sauberer, als wir sie vorgefunden haben.

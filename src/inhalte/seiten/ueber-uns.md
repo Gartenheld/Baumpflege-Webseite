@@ -12,7 +12,7 @@ karten:
   - titel: "Sicherheit zuerst"
     text: "Jeder Einsatz wird vorher geplant, der Arbeitsbereich wird abgesichert."
   - titel: "Sauber hinterlassen"
-    text: "Aufräumen und Entsorgung gehören zu jedem Auftrag. Ihr Grundstück ist danach ordentlich."
+    text: "Aufräumen und Entsorgung gehören zu jedem Auftrag. Wir hinterlassen die Einsatzstelle sauberer, als wir sie vorgefunden haben."
 ---
 
 ## Arbeitsweise

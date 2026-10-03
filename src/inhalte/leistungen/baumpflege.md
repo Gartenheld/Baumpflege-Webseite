@@ -15,7 +15,7 @@ vorteile:
   - titel: "Schnitt mit Augenmaß"
     text: "So wenig wie möglich, so viel wie nötig. Das schont den Baum und erhält seine natürliche Form."
   - titel: "Sauber hinterlassen"
-    text: "Das Schnittgut häckseln wir vor Ort mit unserem eigenen Häcksler und fahren es ab. Auf Wunsch bleibt es als Mulch bei Ihnen."
+    text: "Das Schnittgut häckseln wir vor Ort und fahren es ab. Die Einsatzstelle hinterlassen wir sauberer, als wir sie vorgefunden haben."
 fragenTitel: "Fragen zur Baumpflege"
 kosten:
   frage: "Was kostet Baumpflege?"
@@ -64,4 +64,4 @@ Vom 1. März bis 30. September gilt zum Schutz brütender Vögel eine allgemeine
 2. **Kostenlose Ersteinschätzung:** Wir sehen uns die Fotos an und sagen Ihnen, welche Pflege sinnvoll ist.
 3. **Besichtigung bei Bedarf:** Wenn nötig, vereinbaren wir einen Termin vor Ort und beurteilen den Baum persönlich.
 4. **Schriftliches Angebot:** Sie erhalten ein Angebot, in dem alle Arbeiten aufgeführt sind.
-5. **Pflege und Aufräumen:** Wir schneiden den Baum, häckseln das Schnittgut vor Ort und hinterlassen Ihr Grundstück aufgeräumt.
+5. **Pflege und Aufräumen:** Wir schneiden den Baum, häckseln das Schnittgut vor Ort und hinterlassen die Einsatzstelle sauberer, als wir sie vorgefunden haben.

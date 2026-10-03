@@ -13,7 +13,7 @@ vorteile:
   - titel: "Qualifiziert für Fällungen"
     text: "Heinrich Happe bringt mehrjährige Erfahrung mit und hat die Motorsägen-Qualifikationen AS Baum I und AS Baum II, die auch anspruchsvollere Fällungen umfassen."
   - titel: "Aufräumen inklusive"
-    text: "Äste und Kronenholz häckseln wir mit unserem eigenen Häcksler vor Ort und fahren das Schnittgut ab."
+    text: "Äste und Kronenholz häckseln wir vor Ort und fahren das Schnittgut ab. Die Einsatzstelle ist danach sauberer als vorher."
   - titel: "Wurzelstock nach Wunsch"
     text: "Ob der Stumpf im Boden bleibt oder entfernt wird, entscheiden Sie. Beides planen wir von Anfang an mit ein."
 fragenTitel: "Fragen zur Baumfällung"
@@ -67,4 +67,4 @@ Außerdem gilt vom 1. März bis 30. September die allgemeine Schonzeit nach dem 
 3. **Besichtigung bei Bedarf:** Bei engen oder schwierigen Lagen sehen wir uns alles vor Ort an.
 4. **Schriftliches Angebot:** Sie erhalten ein Angebot mit allen Arbeiten, auf Wunsch einschließlich Wurzelstock.
 5. **Fällung:** Wir sichern den Arbeitsbereich und fällen den Baum kontrolliert in die geplante Richtung.
-6. **Aufräumen:** Äste und Kronenholz häckseln wir vor Ort und fahren das Schnittgut ab. Stammholz bleibt auf Wunsch bei Ihnen.
+6. **Aufräumen:** Äste und Kronenholz häckseln wir vor Ort und fahren das Schnittgut ab. Stammholz bleibt auf Wunsch bei Ihnen. Die Einsatzstelle hinterlassen wir sauberer, als wir sie vorgefunden haben.
