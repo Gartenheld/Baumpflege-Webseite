@@ -1,21 +1,25 @@
-/* Grundstile Baumpflege Happe: Farbwelt „Tanne und Kupfer“, Schriften Source Serif 4 und Source Sans 3.
+/* Grundstile Baumpflege Happe: Farbwelt „Salbei und Gold“, Schriften Source Serif 4 und Source Sans 3.
    Keine Inline-Styles verwenden: Die Content-Security-Policy erlaubt nur Stylesheets. */
 
 :root {
-  /* Farben */
-  --tanne: #173f3c;
-  --tanne-dunkel: #0f2d2b;
-  --kupfer: #a65a2e;
-  --kupfer-dunkel: #8e4b25; /* kleine Kupfer-Schrift auf Sand und Hover */
-  --kupfer-hell: #de9a68; /* auf dunklem Grund */
-  --sand: #f3eee6;
-  --nebel: #dce6e2;
+  /* Farben: Farbwelt „Salbei und Gold“, abgeleitet aus dem Logo (Stand 3. Oktober 2026) */
+  --salbei: #5c6c46; /* grüne Flächen */
+  --salbei-dunkel: #3e4a32; /* Fußbereich */
+  --dunkelgruen: #253021; /* Überschriften, Links, Rahmenknöpfe, Logo-Schriftzug */
+  --tiefgruen: #1c2418; /* Grund und Abdunklung des Videos, Schrift auf Gold */
+  --gold: #c9a24e; /* Hauptknopf mit dunkler Schrift, Sterne */
+  --gold-hover: #b8913d;
+  --gold-dunkel: #7a5c1e; /* kleine goldene Schrift und Symbole auf hellem Grund */
+  --gold-hell: #f4e8c4; /* goldene Schrift auf grünem und dunklem Grund */
+  --creme: #f3f5ec; /* Seitenhintergrund */
+  --flaeche: #e4e9db; /* Foto-Platzhalter, Hinweiskästen */
   --weiss: #ffffff;
-  --text: #1a2120;
-  --text-weich: #4a5553;
-  --linie: #ddd5c8;
-  --auf-dunkel: #f3eee6;
-  --auf-dunkel-weich: #c9d6d2;
+  --text: #1f261c;
+  --text-weich: #4f584a;
+  --linie: #d7ddcc;
+  --auf-dunkel: #f3f5ec;
+  --auf-dunkel-weich: #e6eadd;
+  --fokus: var(--gold-dunkel); /* Fokusrahmen, auf dunklen Flächen var(--gold-hell) */
 
   /* Schrift */
   --schrift-text: var(--font-sans), Arial, sans-serif;
@@ -43,7 +47,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--sand);
+  background: var(--creme);
   color: var(--text);
   font-family: var(--schrift-text);
   font-size: 1.125rem;
@@ -58,7 +62,7 @@ h3 {
   font-family: var(--schrift-titel);
   font-weight: 600;
   line-height: 1.15;
-  color: var(--tanne);
+  color: var(--dunkelgruen);
   margin: 0;
   text-wrap: balance;
   /* Lange Wörter wie „Eigentümergemeinschaften“ dürfen auf schmalen Bildschirmen nicht über den Rand ragen */
@@ -92,13 +96,13 @@ p {
 }
 
 a {
-  color: var(--tanne);
+  color: var(--dunkelgruen);
   text-underline-offset: 0.18em;
   text-decoration-thickness: 1px;
 }
 
 a:hover {
-  color: var(--kupfer-dunkel);
+  color: var(--gold-dunkel);
 }
 
 img,
@@ -107,7 +111,7 @@ svg {
 }
 
 :focus-visible {
-  outline: 3px solid var(--kupfer);
+  outline: 3px solid var(--fokus);
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -124,12 +128,25 @@ svg {
 }
 
 .kicker {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   font-family: var(--schrift-text);
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--kupfer-dunkel);
+  color: var(--gold-dunkel);
+}
+
+/* feine Linie vor der kleinen Überschrift */
+.kicker::before {
+  content: '';
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2px;
+  background: currentColor;
+  opacity: 0.6;
 }
 
 .einleitung {
@@ -155,7 +172,7 @@ svg {
   left: 1rem;
   top: -10rem;
   z-index: 100;
-  background: var(--tanne);
+  background: var(--dunkelgruen);
   color: var(--weiss);
   padding: 0.75rem 1rem;
   border-radius: var(--radius-klein);
@@ -173,8 +190,8 @@ svg {
   justify-content: center;
   gap: 0.6rem;
   min-height: 3.25rem;
-  padding: 0.75rem 1.4rem;
-  border-radius: var(--radius-klein);
+  padding: 0.75rem 1.6rem;
+  border-radius: 999px;
   border: 2px solid transparent;
   font-family: var(--schrift-text);
   font-size: 1.0625rem;
@@ -192,23 +209,23 @@ svg {
 }
 
 .knopf--haupt {
-  background: var(--kupfer);
-  color: var(--weiss);
+  background: var(--gold);
+  color: var(--tiefgruen);
 }
 
 .knopf--haupt:hover {
-  background: var(--kupfer-dunkel);
-  color: var(--weiss);
+  background: var(--gold-hover);
+  color: var(--tiefgruen);
 }
 
 .knopf--rahmen {
-  border-color: var(--tanne);
-  color: var(--tanne);
+  border-color: var(--dunkelgruen);
+  color: var(--dunkelgruen);
   background: transparent;
 }
 
 .knopf--rahmen:hover {
-  background: var(--tanne);
+  background: var(--dunkelgruen);
   color: var(--weiss);
 }
 
@@ -220,18 +237,18 @@ svg {
 
 .knopf--hell:hover {
   background: var(--auf-dunkel);
-  color: var(--tanne);
+  color: var(--dunkelgruen);
 }
 
 /* Logo (Farben per Klasse, siehe Logo.astro) */
 .logo {
   display: block;
   height: auto;
-  color: var(--tanne);
+  color: var(--dunkelgruen);
 }
 
 .logo .logo-akzent {
-  fill: var(--kupfer);
+  fill: var(--gold-dunkel);
 }
 
 .logo--negativ {
@@ -239,7 +256,7 @@ svg {
 }
 
 .logo--negativ .logo-akzent {
-  fill: var(--kupfer-hell);
+  fill: var(--gold-hell);
 }
 
 /* Platzhalter für Fotos, bis echte Bilder vorliegen */
@@ -249,8 +266,8 @@ svg {
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  background: var(--nebel);
-  color: var(--tanne);
+  background: var(--flaeche);
+  color: var(--dunkelgruen);
   text-align: center;
   padding: 1.5rem;
   font-size: 0.95rem;
@@ -329,12 +346,12 @@ img.foto {
 }
 
 .prosa li::marker {
-  color: var(--kupfer-dunkel);
+  color: var(--gold-dunkel);
   font-weight: 700;
 }
 
 .prosa strong {
-  color: var(--tanne);
+  color: var(--dunkelgruen);
 }
 
 /* Raster für Abschnitte mit Überschrift */

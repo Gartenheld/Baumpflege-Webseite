@@ -1,6 +1,6 @@
 ---
 // Einstieg der Startseite in voller Breite: Hintergrundvideo (src/videos/startseite.mp4), sonst eigenes Foto
-// (src/bilder/startseite.jpg), sonst ruhiger Hintergrund in Tanne mit Baumsymbol. Text liegt abgedunkelt darüber.
+// (src/bilder/startseite.jpg), sonst ruhiger dunkelgrüner Hintergrund mit Baumsymbol. Text liegt abgedunkelt darüber.
 import { getImage } from 'astro:assets';
 import { PUBLIC_NOINDEX } from 'astro:env/client';
 import Icon from '../Icon.astro';
@@ -107,7 +107,8 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    background: var(--tanne-dunkel);
+    background: var(--tiefgruen);
+    --fokus: var(--gold-hell);
     color: var(--auf-dunkel);
     display: flex;
     align-items: center;
@@ -126,7 +127,7 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     position: absolute;
     inset: 0;
     /* Handy: so hell, dass die Bewegung sichtbar bleibt, Text und Claim behalten genug Kontrast */
-    background: rgb(15 45 43 / 0.7);
+    background: color-mix(in srgb, var(--tiefgruen) 70%, transparent);
   }
 
   .einstieg__video,
@@ -168,11 +169,11 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
   .einstieg__claim {
     font-weight: 700;
     font-size: 1.125rem;
-    color: var(--kupfer-hell);
+    color: var(--gold-hell);
     /* dunkler Schein, damit der Claim auch über hellen Stellen im Video lesbar bleibt */
     text-shadow:
-      0 0 0.5em rgb(15 45 43 / 0.9),
-      0 1px 2px rgb(15 45 43 / 0.9);
+      0 0 0.5em color-mix(in srgb, var(--tiefgruen) 90%, transparent),
+      0 1px 2px color-mix(in srgb, var(--tiefgruen) 90%, transparent);
   }
 
   .einstieg h1 {
@@ -213,7 +214,7 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
   .einstieg__punkte :global(.icon) {
     width: 1.15rem;
     height: 1.15rem;
-    color: var(--kupfer-hell);
+    color: var(--gold-hell);
   }
 
   /* Handy unten rechts, breite Bildschirme rechts mittig über dem sichtbaren Video */
@@ -226,8 +227,8 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     width: 3.25rem;
     height: 3.25rem;
     border-radius: 50%;
-    border: 1px solid rgb(243 238 230 / 0.5);
-    background: rgb(15 45 43 / 0.55);
+    border: 1px solid color-mix(in srgb, var(--auf-dunkel) 50%, transparent);
+    background: color-mix(in srgb, var(--tiefgruen) 55%, transparent);
     color: var(--auf-dunkel);
     cursor: pointer;
   }
@@ -237,7 +238,7 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
   }
 
   .einstieg__pause:hover {
-    background: rgb(15 45 43 / 0.85);
+    background: color-mix(in srgb, var(--tiefgruen) 85%, transparent);
   }
 
   .einstieg__pause :global(.icon) {
@@ -267,7 +268,7 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
   /* Breite Bildschirme: links dunkler für den Text, rechts mehr vom Video sichtbar */
   @media (min-width: 60rem) {
     .einstieg__hintergrund::after {
-      background: linear-gradient(90deg, rgb(15 45 43 / 0.86) 0%, rgb(15 45 43 / 0.78) 40%, rgb(15 45 43 / 0.4) 100%);
+      background: linear-gradient(90deg, color-mix(in srgb, var(--tiefgruen) 86%, transparent) 0%, color-mix(in srgb, var(--tiefgruen) 78%, transparent) 40%, color-mix(in srgb, var(--tiefgruen) 40%, transparent) 100%);
     }
 
     .einstieg__inhalt,

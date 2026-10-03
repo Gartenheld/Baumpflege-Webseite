@@ -99,7 +99,7 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
   .kopf__nav a:not(.knopf):hover,
   .kopf__menue nav a:not(.knopf):hover,
   [aria-current='page'] {
-    color: var(--kupfer-dunkel) !important;
+    color: var(--gold-dunkel) !important;
   }
 
   /* Handy und Tablet */
@@ -112,7 +112,7 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
     border: 1px solid var(--linie);
     border-radius: var(--radius-klein);
     font-weight: 700;
-    color: var(--tanne);
+    color: var(--dunkelgruen);
     cursor: pointer;
     list-style: none;
   }
@@ -122,7 +122,7 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
   }
 
   .kopf__menue[open] summary {
-    background: var(--sand);
+    background: var(--creme);
   }
 
   .kopf__menue nav {
@@ -135,7 +135,7 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
     padding: 0.5rem var(--rand) 1.5rem;
     display: grid;
     gap: 0.75rem;
-    box-shadow: 0 12px 24px rgb(23 63 60 / 0.08);
+    box-shadow: 0 12px 24px color-mix(in srgb, var(--dunkelgruen) 8%, transparent);
   }
 
   .kopf__menue li a {

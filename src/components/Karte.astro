@@ -97,7 +97,7 @@ const id = `karte-${hervorheben ?? 'gebiet'}`;
 <style>
   .karte {
     margin: 0;
-    background: var(--sand);
+    background: var(--creme);
     border-radius: var(--radius);
     padding: clamp(1rem, 3vw, 2rem);
   }
@@ -124,18 +124,18 @@ const id = `karte-${hervorheben ?? 'gebiet'}`;
 
   /* Hintergrund: Waldgebiete, zurückhaltend, damit die Orte vorne bleiben. */
   .wald {
-    fill: #d9e3d3;
+    fill: #d9e1cc;
   }
 
   .gebiet {
-    fill: #56645c;
+    fill: var(--text-weich);
     font-size: 15px;
     font-style: italic;
     letter-spacing: 0.06em;
   }
 
   .ort circle {
-    fill: var(--tanne);
+    fill: var(--dunkelgruen);
   }
 
   .ort text {
@@ -147,16 +147,16 @@ const id = `karte-${hervorheben ?? 'gebiet'}`;
 
   .ort:hover text,
   .ort:focus-visible text {
-    fill: var(--kupfer-dunkel);
+    fill: var(--gold-dunkel);
     text-decoration: underline;
   }
 
   .ort--sitz circle {
-    fill: var(--kupfer);
+    fill: var(--gold-dunkel);
   }
 
   .ort--aktiv circle {
-    fill: var(--tanne);
+    fill: var(--dunkelgruen);
   }
 
   .ring {
@@ -166,11 +166,11 @@ const id = `karte-${hervorheben ?? 'gebiet'}`;
   }
 
   .ort--sitz .ring {
-    stroke: var(--kupfer);
+    stroke: var(--gold-dunkel);
   }
 
   .ort--aktiv .ring {
-    stroke: var(--tanne);
+    stroke: var(--dunkelgruen);
   }
 
   .ort--sitz text,

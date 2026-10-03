@@ -2,7 +2,7 @@
 
 Hier liegt das Hintergrundvideo der Startseite. Es läuft stumm in Schleife hinter der Überschrift,
 leicht abgedunkelt, mit Pause-Knopf. Ohne Video zeigt die Startseite das Foto `src/bilder/startseite.jpg`
-oder, wenn auch das fehlt, einen ruhigen Hintergrund in Tanne.
+oder, wenn auch das fehlt, einen ruhigen dunkelgrünen Hintergrund.
 
 | Datei | Inhalt |
 | --- | --- |

@@ -11,7 +11,26 @@ Auf der Website steht statt des Baumsymbols ein rundes Emblem: Baum mit Baumklet
 
 Daraus erzeugt: `src/assets/logo/emblem.png` (Kopf und Fuß), `public/logo.png`, `public/favicon.ico`, `public/icon-192.png`, `public/apple-touch-icon.png` und `public/og-standard.jpg`. Das Emblem ist eine Pixelgrafik. Für Druck, Folie und Stick braucht es später eine Vektorfassung (SVG oder PDF).
 
-## Farben
+## Farben der Website: „Salbei und Gold“ (seit 3. Oktober 2026)
+
+Abgeleitet aus dem vorläufigen Emblem: Salbeigrün und Dunkelgrün aus der Baumkrone, Gold vom Ring, Creme vom hellen Grund.
+
+| Name | Verwendung | HEX | RGB | RAL-Richtwert |
+|---|---|---|---|---|
+| Salbei | grüne Flächen auf der Website | `#5C6C46` | 92 108 70 | nahe RAL 6025 Farngrün |
+| Salbei dunkel | Fußbereich, dunkle Flächen | `#3E4A32` | 62 74 50 | nahe RAL 6020 Chromoxidgrün |
+| Dunkelgrün | Überschriften, Schriftzug, Rahmenknöpfe | `#253021` | 37 48 33 | nahe RAL 6007 Flaschengrün |
+| Gold | Hauptknopf, Sterne, Akzente | `#C9A24E` | 201 162 78 | nahe RAL 1002 Sandgelb |
+| Gold dunkel | kleine goldene Schrift auf hellem Grund | `#7A5C1E` | 122 92 30 |  |
+| Gold hell | goldene Schrift auf grünem Grund | `#F4E8C4` | 244 232 196 |  |
+| Creme | Hintergrund der Website | `#F3F5EC` | 243 245 236 | nahe RAL 9010 Reinweiß |
+| Fläche | Foto-Platzhalter, Hinweiskästen | `#E4E9DB` | 228 233 219 | nahe RAL 9002 Grauweiß |
+
+Im Code stehen die Farben in `src/styles/global.css` (Abschnitt „Farben“). RAL-Angaben sind rechnerische Richtwerte. Folierer, Sticker und Druckerei stimmen die Farben mit ihrem Farbfächer ab.
+
+## Bisherige Farben von Logo 1: „Tanne und Kupfer“
+
+Die Logodateien in `logo/` (Schriftzug und Baumsymbol) sind noch in diesen Farben angelegt.
 
 | Name | Verwendung | HEX | RGB | RAL-Richtwert |
 |---|---|---|---|---|

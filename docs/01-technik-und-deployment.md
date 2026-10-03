@@ -811,6 +811,7 @@ Nicht verwenden für http zu https, www zu ohne www oder einen reinen Hosterwech
 - [x] Zwei bis drei Farbwelten, geprüft auf Kontrast (Website) und Eignung für Fahrzeug und Kleidung.
 - [x] Schriftwahl aus den drei Paarungen (Abschnitt 10.3).
 - [x] Deine Auswahl: Logo 1 mit Symbol, Farbwelt C „Tanne und Kupfer“. Endfassungen in `brand/`.
+- [x] Seit 2. und 3. Oktober 2026: vorläufiges rundes Emblem und Farbwelt „Salbei und Gold“ (Tabelle in `brand/README.md`).
 
 **Schritt 3: Startseite als Entwurf**
 

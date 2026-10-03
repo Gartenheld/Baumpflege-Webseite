@@ -52,12 +52,12 @@ const { karten, dunkel = false, nummeriert = false } = Astro.props;
 
   .karten--nummer h3::before {
     content: counter(karte) '. ';
-    color: var(--kupfer-dunkel);
+    color: var(--gold-dunkel);
   }
 
   .karten--dunkel li {
     background: transparent;
-    border: 1px solid rgb(243 238 230 / 0.22);
+    border: 1px solid color-mix(in srgb, var(--auf-dunkel) 22%, transparent);
   }
 
   .karten--dunkel h3 {

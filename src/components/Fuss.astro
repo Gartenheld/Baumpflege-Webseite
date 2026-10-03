@@ -84,7 +84,8 @@ const jahr = new Date().getFullYear();
 
 <style>
   .fuss {
-    background: var(--tanne-dunkel);
+    background: var(--salbei-dunkel);
+    --fokus: var(--gold-hell);
     color: var(--auf-dunkel);
     font-size: 1rem;
     padding-top: clamp(3rem, 6vw, 4.5rem);
@@ -112,7 +113,7 @@ const jahr = new Date().getFullYear();
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--kupfer-hell);
+    color: var(--gold-hell);
   }
 
   address {
@@ -126,7 +127,7 @@ const jahr = new Date().getFullYear();
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--kupfer-hell);
+    color: var(--gold-hell);
     margin-bottom: 0.9rem;
   }
 
@@ -144,7 +145,7 @@ const jahr = new Date().getFullYear();
   }
 
   a:hover {
-    color: var(--kupfer-hell);
+    color: var(--gold-hell);
     text-decoration: underline;
   }
 
@@ -162,7 +163,7 @@ const jahr = new Date().getFullYear();
     height: 1.2rem;
     margin-top: 0.2rem;
     flex-shrink: 0;
-    color: var(--kupfer-hell);
+    color: var(--gold-hell);
   }
 
   .fuss__zeiten,
@@ -181,7 +182,7 @@ const jahr = new Date().getFullYear();
     gap: 1rem;
     margin-top: 3rem;
     padding-block: 1.5rem;
-    border-top: 1px solid rgb(243 238 230 / 0.18);
+    border-top: 1px solid color-mix(in srgb, var(--auf-dunkel) 18%, transparent);
     color: var(--auf-dunkel-weich);
     font-size: 0.95rem;
   }

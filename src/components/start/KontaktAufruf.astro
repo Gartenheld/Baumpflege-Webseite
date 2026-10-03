@@ -55,7 +55,8 @@ const {
 
 <style>
   .kontakt {
-    background: var(--tanne);
+    background: var(--salbei);
+    --fokus: var(--gold-hell);
     color: var(--auf-dunkel);
   }
 
@@ -71,7 +72,7 @@ const {
   }
 
   .kicker {
-    color: var(--kupfer-hell);
+    color: var(--gold-hell);
   }
 
   h2 {
@@ -97,7 +98,7 @@ const {
     padding: 1.75rem;
     display: grid;
     gap: 1.4rem;
-    border: 1px solid rgb(243 238 230 / 0.22);
+    border: 1px solid color-mix(in srgb, var(--auf-dunkel) 22%, transparent);
     border-radius: var(--radius);
   }
 
@@ -110,7 +111,7 @@ const {
   .wege li > :global(.icon) {
     width: 1.5rem;
     height: 1.5rem;
-    color: var(--kupfer-hell);
+    color: var(--gold-hell);
     flex-shrink: 0;
     margin-top: 0.2rem;
   }
@@ -136,7 +137,7 @@ const {
   }
 
   .wege a:hover {
-    color: var(--kupfer-hell);
+    color: var(--gold-hell);
   }
 
   .zusatz {
