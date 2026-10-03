@@ -2,14 +2,16 @@
 
 Gewählt am 1. Oktober 2026: **Logo 1 (klassisch) mit Symbol, Farbwelt C „Tanne und Kupfer“.**
 
-## Vorläufiges Emblem (seit 2. Oktober 2026)
+## Vorläufiges Logo (seit 3. Oktober 2026)
 
-Auf der Website steht statt des Baumsymbols ein rundes Emblem: Baum mit Baumkletterer im goldenen Ring. Daneben bleibt der Schriftzug aus Logo 1 (`wort-kurz`).
+Rundes Emblem (Baum mit Baumkletterer auf hellem Kreis) und darunter der Schriftzug „BAUMPFLEGE“, Linie mit Eichenblatt, „HAPPE“. Auf der Website stehen Emblem und Schriftzug nebeneinander.
 
-- `logo/vorlaeufig/baumpflege-happe_emblem_original.jpg`: die gelieferte Datei
-- `logo/vorlaeufig/baumpflege-happe_emblem.png`: rund freigestellt, transparenter Hintergrund
+- `logo/vorlaeufig/baumpflege-happe_logo_original.jpg`: die gelieferte Datei (ganzes Logo auf Weiß)
+- `logo/vorlaeufig/baumpflege-happe_emblem.png`: Emblem freigestellt, transparenter Hintergrund
+- `logo/vorlaeufig/baumpflege-happe_schriftzug_dunkel.png`: Schriftzug für hellen Grund
+- `logo/vorlaeufig/baumpflege-happe_schriftzug_hell.png`: Schriftzug für dunklen Grund (Creme, Blatt in Gold)
 
-Daraus erzeugt: `src/assets/logo/emblem.png` (Kopf und Fuß), `public/logo.png`, `public/favicon.ico`, `public/icon-192.png`, `public/apple-touch-icon.png` und `public/og-standard.jpg`. Das Emblem ist eine Pixelgrafik. Für Druck, Folie und Stick braucht es später eine Vektorfassung (SVG oder PDF).
+Daraus erzeugt: `src/assets/logo/` (Kopf und Fuß der Website), `public/logo.png` (ganzes Logo für Google), `public/favicon.ico`, `public/icon-192.png`, `public/apple-touch-icon.png` und `public/og-standard.jpg`. Das Logo ist eine Pixelgrafik. Für Druck, Folie und Stick braucht es später eine Vektorfassung (SVG oder PDF).
 
 ## Farben der Website: „Salbei und Gold“ (seit 3. Oktober 2026)
 

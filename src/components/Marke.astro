@@ -1,9 +1,11 @@
 ---
-// Logo für Kopf und Fuß: rundes Emblem (vorläufig, Bilddatei src/assets/logo/emblem.png) und daneben der Schriftzug.
-// Neues Emblem: Datei mit gleichem Namen ersetzen (quadratisch, transparenter Hintergrund, mindestens 512 x 512 Pixel).
+// Logo für Kopf und Fuß (vorläufiges Logo): rundes Emblem und daneben der Schriftzug „Baumpflege Happe“.
+// Bilddateien in src/assets/logo: emblem.png, schriftzug-dunkel.png (heller Grund), schriftzug-hell.png (dunkler Grund).
+// Neues Logo: Dateien mit gleichem Namen ersetzen (transparenter Hintergrund).
 import { Picture } from 'astro:assets';
-import Logo from './Logo.astro';
 import emblem from '../assets/logo/emblem.png';
+import schriftzugDunkel from '../assets/logo/schriftzug-dunkel.png';
+import schriftzugHell from '../assets/logo/schriftzug-hell.png';
 
 interface Props {
   negativ?: boolean;
@@ -14,6 +16,8 @@ interface Props {
 }
 
 const { negativ = false, titel = 'Baumpflege Happe', sizes, eager = false } = Astro.props;
+const schriftzug = negativ ? schriftzugHell : schriftzugDunkel;
+const laden = eager ? 'eager' : 'lazy';
 ---
 
 <span class="marke">
@@ -26,28 +30,37 @@ const { negativ = false, titel = 'Baumpflege Happe', sizes, eager = false } = As
     sizes={sizes}
     alt=""
     class="marke__emblem"
-    loading={eager ? 'eager' : 'lazy'}
+    loading={laden}
   />
-  <Logo variante="wortKurz" negativ={negativ} titel={titel} />
+  <Picture
+    src={schriftzug}
+    formats={['avif', 'webp']}
+    width={240}
+    widths={[180, 270, 360, 480, 720]}
+    sizes="(min-width: 70rem) 13rem, 11rem"
+    alt={titel}
+    class="marke__schriftzug"
+    loading={laden}
+  />
 </span>
 
 <style>
   .marke {
     display: flex;
     align-items: center;
-    gap: 0.65rem;
+    gap: 0.75rem;
   }
 
   .marke :global(.marke__emblem) {
     display: block;
     width: var(--emblem, 3rem);
     height: var(--emblem, 3rem);
-    border-radius: 50%;
     flex-shrink: 0;
   }
 
-  .marke :global(.logo) {
+  .marke :global(.marke__schriftzug) {
+    display: block;
     width: auto;
-    height: var(--schriftzug, 2.2rem);
+    height: var(--schriftzug, 2.4rem);
   }
 </style>

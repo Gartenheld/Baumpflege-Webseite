@@ -76,7 +76,7 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
     flex-shrink: 0;
     padding-block: 0.5rem;
     --emblem: 3.1rem;
-    --schriftzug: 2.3rem;
+    --schriftzug: clamp(2.2rem, 10vw, 2.6rem);
   }
 
   .kopf__nav {
@@ -172,7 +172,7 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
 
     .kopf__logo {
       --emblem: 3.75rem;
-      --schriftzug: 2.7rem;
+      --schriftzug: 3rem;
     }
   }
 </style>
