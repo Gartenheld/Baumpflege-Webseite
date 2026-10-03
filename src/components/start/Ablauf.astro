@@ -3,10 +3,11 @@
 import Icon from '../Icon.astro';
 import { betrieb, telefonLink, whatsappLink, mailLink } from '../../config/betrieb';
 
+// Schritt 1 zeigt beide Wege (Fotos oder persönlich), die übrigen Schritte gelten für beide.
 const schritte = [
-  { titel: 'Anfrage mit Fotos', text: 'Sie schicken uns Fotos des Baumes und eine kurze Beschreibung, per Formular oder WhatsApp.' },
+  { titel: 'Anfrage stellen', text: '' },
   { titel: 'Antwort in 24 Stunden', text: `Wir melden uns ${betrieb.antwortzeit} persönlich bei Ihnen. Die Ersteinschätzung ist kostenlos.` },
-  { titel: 'Besichtigung bei Bedarf', text: 'Reichen die Fotos nicht aus, sehen wir uns den Baum vor Ort an.' },
+  { titel: 'Besichtigung bei Bedarf', text: 'Ohne Fotos, oder wenn sie nicht ausreichen, sehen wir uns den Baum vor Ort an.' },
   { titel: 'Schriftliches Angebot', text: 'Sie bekommen ein schriftliches Angebot mit Pauschalpreis und allen Arbeiten im Überblick.' },
   { titel: 'Ausführung', text: 'Wir führen die Arbeiten aus, räumen auf und entsorgen das Schnittgut.' },
 ];
@@ -28,19 +29,38 @@ const kanaele = [
       </p>
     </div>
 
-    <h3 class="weg"><Icon name="kamera" />Online mit Fotos</h3>
     <ol>
       {
-        schritte.map((s) => (
+        schritte.map((s, i) => (
           <li>
-            <h4>{s.titel}</h4>
-            <p>{s.text}</p>
+            <h3>{s.titel}</h3>
+            {i === 0 ? (
+              <div class="wahl">
+                <a class="wahl__option" href="/kontakt/">
+                  <Icon name="kamera" />
+                  <span>
+                    <strong>Mit Fotos</strong>
+                    per Formular oder WhatsApp
+                  </span>
+                </a>
+                <span class="wahl__oder">oder</span>
+                <a class="wahl__option" href="#persoenlich">
+                  <Icon name="telefon" />
+                  <span>
+                    <strong>Persönlich</strong>
+                    per Anruf oder E-Mail
+                  </span>
+                </a>
+              </div>
+            ) : (
+              <p>{s.text}</p>
+            )}
           </li>
         ))
       }
     </ol>
 
-    <div class="persoenlich">
+    <div class="persoenlich" id="persoenlich">
       <div class="persoenlich__text">
         <h3 class="weg"><Icon name="telefon" />Persönlich</h3>
         <p class="persoenlich__titel">Lieber persönlich? Rufen Sie einfach an.</p>
@@ -141,14 +161,62 @@ const kanaele = [
     font-size: 1.3rem;
   }
 
-  h4 {
-    margin: 0;
-    font-family: var(--schrift-titel);
-    font-weight: 600;
+  ol h3 {
     font-size: 1.3rem;
-    line-height: 1.15;
+  }
+
+  /* Schritt 1: Wahl zwischen Fotos und persönlichem Kontakt */
+  .wahl {
+    display: grid;
+    gap: 0.35rem;
+    margin-top: 0.4rem;
+  }
+
+  .wahl__option {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid var(--linie);
+    border-radius: var(--radius-klein);
+    background: var(--creme);
+    color: var(--text-weich);
+    font-size: 0.95rem;
+    line-height: 1.35;
+    text-decoration: none;
+    transition: border-color 0.15s ease;
+  }
+
+  .wahl__option:hover {
+    border-color: var(--gold);
+    color: var(--text-weich);
+  }
+
+  .wahl__option :global(.icon) {
+    width: 1.15rem;
+    height: 1.15rem;
+    margin-top: 0.15rem;
+    flex-shrink: 0;
+    color: var(--gold-dunkel);
+  }
+
+  .wahl__option strong {
+    display: block;
     color: var(--dunkelgruen);
-    text-wrap: balance;
+    font-size: 1rem;
+  }
+
+  .wahl__oder {
+    justify-self: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-dunkel);
+  }
+
+  .persoenlich {
+    scroll-margin-top: 1.5rem;
   }
 
   ol p,
