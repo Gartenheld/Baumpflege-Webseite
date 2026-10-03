@@ -19,7 +19,7 @@ vorteile:
 fragenTitel: "Fragen zur Baumpflege"
 kosten:
   frage: "Was kostet Baumpflege?"
-  einleitung: "Die Kosten hängen davon ab, was Ihr Baum braucht und wie gut er erreichbar ist. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot."
+  einleitung: "Die Kosten hängen davon ab, was Ihr Baum braucht und wie gut er erreichbar ist. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
   faktoren:
     - titel: "Größe und Höhe des Baums"
       text: "Je größer die Krone, desto mehr Schnittarbeit fällt an und desto mehr Schnittgut entsteht."

@@ -35,7 +35,7 @@ Der Live-Build bricht ab, solange irgendwo „Platzhalter“ oder die Nummer aus
 - [ ] **Betriebsdaten** in [src/config/betrieb.ts](../src/config/betrieb.ts): Telefon (Anzeige und Wählnummer), WhatsApp-Nummer, E-Mail, Erreichbarkeit, Antwortzeit, USt-IdNr., Google-Bewertungen (Durchschnitt, Anzahl, Stand), Profil-Links.
 - [ ] **Häufige Fragen** mit offenen Angaben:
   - [src/inhalte/faq/kosten-ersteinschaetzung.md](../src/inhalte/faq/kosten-ersteinschaetzung.md): Antwortzeit und ob die Besichtigung kostenlos ist
-  - [src/inhalte/faq/kosten-angebot.md](../src/inhalte/faq/kosten-angebot.md): Abrechnungsart und Zahlungsbedingungen
+  - [src/inhalte/faq/kosten-angebot.md](../src/inhalte/faq/kosten-angebot.md): Zahlungsbedingungen (Abrechnung geklärt: Pauschalpreis laut Angebot)
 - [ ] **Impressum:** Satz zur Verbraucherschlichtung in [src/pages/impressum.astro](../src/pages/impressum.astro) bestätigen.
 - [ ] **Datenschutzerklärung** aus einem Generator in [src/inhalte/seiten/datenschutz.md](../src/inhalte/seiten/datenschutz.md) einfügen. Angaben dafür: Konzept 9.4 (Hosting bei Hostinger, Server-Logs, Kontaktformular mit Fotos und Mailversand, WhatsApp-Link, keine Cookies, kein Tracking, keine externen Schriften).
 - [ ] **Fotos:** mindestens das Startseitenfoto, besser auch Über uns, Baumpflege und Baumfällung (Anleitung in [src/bilder/README.md](../src/bilder/README.md)). Ohne Foto zeigt die Live-Seite eine ruhige Fläche mit dem Baumsymbol statt „Foto folgt“.

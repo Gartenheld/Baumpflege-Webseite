@@ -19,7 +19,7 @@ vorteile:
 fragenTitel: "Fragen zu Hecke und Landschaftspflege"
 kosten:
   frage: "Was kosten Heckenschnitt und Gehölzpflege?"
-  einleitung: "Der Aufwand hängt von Größe, Zustand und Zugänglichkeit ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot."
+  einleitung: "Der Aufwand hängt von Größe, Zustand und Zugänglichkeit ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
   faktoren:
     - titel: "Länge und Höhe der Hecke"
       text: "Eine lange, hohe Hecke bedeutet mehr Schnittfläche und mehr Schnittgut."

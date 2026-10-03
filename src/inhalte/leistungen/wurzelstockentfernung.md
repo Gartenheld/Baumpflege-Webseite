@@ -19,7 +19,7 @@ vorteile:
 fragenTitel: "Fragen zur Wurzelstockentfernung"
 kosten:
   frage: "Was kostet es, einen Wurzelstock zu entfernen?"
-  einleitung: "Der Aufwand hängt vor allem vom Stumpf und seiner Lage ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot."
+  einleitung: "Der Aufwand hängt vor allem vom Stumpf und seiner Lage ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
   faktoren:
     - titel: "Durchmesser des Stumpfs"
       text: "Ein dicker Stumpf hat ein größeres Wurzelwerk und braucht entsprechend mehr Zeit."

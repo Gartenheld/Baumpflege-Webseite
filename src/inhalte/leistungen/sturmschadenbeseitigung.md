@@ -19,7 +19,7 @@ vorteile:
 fragenTitel: "Fragen zur Sturmschadenbeseitigung"
 kosten:
   frage: "Was kostet die Beseitigung eines Sturmschadens?"
-  einleitung: "Das hängt stark davon ab, was der Sturm angerichtet hat. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot."
+  einleitung: "Das hängt stark davon ab, was der Sturm angerichtet hat. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
   faktoren:
     - titel: "Art des Schadens"
       text: "Ein abgebrochener Ast ist schneller beseitigt als ein umgestürzter Baum."

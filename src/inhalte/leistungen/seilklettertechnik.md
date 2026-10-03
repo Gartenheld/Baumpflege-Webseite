@@ -20,7 +20,7 @@ vorteile:
 fragenTitel: "Fragen zur Seilklettertechnik"
 kosten:
   frage: "Was kosten Arbeiten mit Seilklettertechnik?"
-  einleitung: "Der Aufwand hängt vom Baum und von den gewünschten Arbeiten ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot."
+  einleitung: "Der Aufwand hängt vom Baum und von den gewünschten Arbeiten ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
   faktoren:
     - titel: "Höhe und Größe der Krone"
       text: "Eine große, hohe Krone braucht mehr Zeit für den Aufstieg und die Arbeit darin."

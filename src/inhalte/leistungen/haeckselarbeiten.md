@@ -19,7 +19,7 @@ vorteile:
 fragenTitel: "Fragen zu Häckselarbeiten"
 kosten:
   frage: "Was kosten Häckselarbeiten?"
-  einleitung: "Der Preis richtet sich nach Menge und Aufwand. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot."
+  einleitung: "Der Preis richtet sich nach Menge und Aufwand. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
   faktoren:
     - titel: "Menge des Schnittguts"
       text: "Je größer der Haufen, desto länger läuft der Häcksler."

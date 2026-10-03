@@ -5,7 +5,7 @@ leistungen: []
 aufFaqSeite: true
 reihenfolge: 10
 ---
-Jeder Baum und jedes Grundstück ist anders, deshalb nennen wir keine Pauschalpreise. Den Aufwand bestimmen vor allem diese Punkte:
+Jeder Baum und jedes Grundstück ist anders. Deshalb stehen auf der Website keine Preise. Für Ihren Auftrag erhalten Sie ein schriftliches Angebot mit einem Pauschalpreis, der sich vor allem nach diesen Punkten richtet:
 
 - **Baum oder Hecke:** Größe, Art und Zustand
 - **Lage:** Abstand zu Gebäuden, Leitungen, Zäunen und Nachbargrundstücken
@@ -14,4 +14,4 @@ Jeder Baum und jedes Grundstück ist anders, deshalb nennen wir keine Pauschalpr
 - **Zusatzarbeiten:** zum Beispiel das Entfernen des Wurzelstocks
 - **Bündelung:** Mehrere Arbeiten an einem Termin sparen zusätzliche Anfahrten und Rüstzeiten
 
-Die wichtigsten Preisfaktoren der einzelnen Arbeiten finden Sie zusätzlich auf den jeweiligen Leistungsseiten. Anhand Ihrer Fotos erhalten Sie eine kostenlose Ersteinschätzung und danach ein schriftliches Angebot.
+Die wichtigsten Preisfaktoren der einzelnen Arbeiten finden Sie zusätzlich auf den jeweiligen Leistungsseiten. Anhand Ihrer Fotos erhalten Sie eine kostenlose Ersteinschätzung und danach Ihr Angebot mit Pauschalpreis.

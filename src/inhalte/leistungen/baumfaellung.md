@@ -19,7 +19,7 @@ vorteile:
 fragenTitel: "Fragen zur Baumfällung"
 kosten:
   frage: "Was kostet eine Baumfällung?"
-  einleitung: "Jede Fällung ist anders, deshalb gibt es keinen Pauschalpreis. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot."
+  einleitung: "Jede Fällung ist anders, deshalb nennen wir hier keine Preise. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
   faktoren:
     - titel: "Größe und Höhe des Baums"
       text: "Ein großer Baum bedeutet mehr Sägearbeit und deutlich mehr Holz und Schnittgut."
