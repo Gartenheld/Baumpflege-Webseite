@@ -17,6 +17,6 @@ karten:
 
 ## Gut zu wissen
 
-Bitte fotografieren Sie möglichst ohne Personen und ohne Autokennzeichen. Reichen die Fotos für eine Einschätzung nicht aus, vereinbaren wir eine Besichtigung vor Ort. Sie können uns auch anrufen oder per WhatsApp schreiben.
+Bitte fotografieren Sie möglichst ohne Personen und ohne Autokennzeichen. Bei Bedarf vereinbaren wir einen Termin vor Ort. Sie können uns auch anrufen oder per WhatsApp schreiben.
 
 Einen Notdienst rund um die Uhr bieten wir nicht an. Droht ein Baum auf eine Straße, einen Weg oder ein Gebäude zu stürzen, rufen Sie bitte die Feuerwehr unter 112.

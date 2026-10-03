@@ -62,6 +62,6 @@ Vom 1. März bis 30. September gilt zum Schutz brütender Vögel eine allgemeine
 
 1. **Anfrage mit Fotos:** Sie schicken uns Fotos des Baums und beschreiben kurz, was Sie stört oder was Sie sich wünschen.
 2. **Kostenlose Ersteinschätzung:** Wir sehen uns die Fotos an und sagen Ihnen, welche Pflege sinnvoll ist.
-3. **Besichtigung bei Bedarf:** Reichen die Fotos nicht aus, sehen wir uns den Baum vor Ort an.
+3. **Besichtigung bei Bedarf:** Wenn nötig, vereinbaren wir einen Termin vor Ort und beurteilen den Baum persönlich.
 4. **Schriftliches Angebot:** Sie erhalten ein Angebot, in dem alle Arbeiten aufgeführt sind.
 5. **Pflege und Aufräumen:** Wir schneiden den Baum, häckseln das Schnittgut vor Ort und hinterlassen Ihr Grundstück aufgeräumt.

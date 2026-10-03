@@ -22,7 +22,7 @@ karten:
 ## So funktioniert die regelmäßige Pflege
 
 1. **Anfrage:** Sie nennen uns die Objekte und schicken Fotos oder einen Lageplan der Flächen.
-2. **Besichtigung bei Bedarf:** Reichen Fotos und Pläne nicht aus, sehen wir uns Bäume und Grünflächen vor Ort an.
+2. **Besichtigung bei Bedarf:** Wenn nötig, vereinbaren wir einen Termin vor Ort und sehen uns Bäume und Grünflächen gemeinsam mit Ihnen an.
 3. **Pflegeplan und Angebot:** Wir schlagen vor, welche Arbeiten in welchem Abstand sinnvoll sind, und Sie erhalten ein schriftliches Angebot.
 4. **Rahmenvertrag:** Für wiederkehrende Arbeiten halten wir Leistungen und Zeiträume in einem Rahmenvertrag fest.
 5. **Ausführung:** Wir stimmen die Termine rechtzeitig mit Ihnen ab, damit Sie Bewohner, Mieter oder Mitarbeiter informieren können. Aufräumen und Entsorgung gehören dazu.

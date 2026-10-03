@@ -7,7 +7,7 @@ import { betrieb, telefonLink, whatsappLink, mailLink } from '../../config/betri
 const schritte = [
   { titel: 'Anfrage stellen', text: '' },
   { titel: 'Antwort in 24 Stunden', text: `Wir melden uns ${betrieb.antwortzeit} persönlich bei Ihnen. Die Ersteinschätzung ist kostenlos.` },
-  { titel: 'Besichtigung bei Bedarf', text: 'Ohne Fotos, oder wenn sie nicht ausreichen, sehen wir uns den Baum vor Ort an.' },
+  { titel: 'Besichtigung bei Bedarf', text: 'Wenn nötig, vereinbaren wir einen Termin vor Ort und beurteilen Baum, Standort und Zufahrt persönlich.' },
   { titel: 'Schriftliches Angebot', text: 'Sie bekommen ein schriftliches Angebot mit Pauschalpreis und allen Arbeiten im Überblick.' },
   { titel: 'Ausführung', text: 'Wir führen die Arbeiten aus, räumen auf und entsorgen das Schnittgut.' },
 ];
@@ -104,6 +104,10 @@ const kanaele = [
     display: grid;
     gap: 0.9rem;
     margin-bottom: 2.5rem;
+  }
+
+  .kopfzeile .kicker {
+    font-size: 1.15rem;
   }
 
   /* Bezeichnung der beiden Wege */
