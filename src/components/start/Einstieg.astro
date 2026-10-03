@@ -74,7 +74,8 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
 </section>
 
 <script>
-  // Pause-Knopf für das Hintergrundvideo. Bei „Bewegung reduzieren“ oder Datensparmodus startet es nicht.
+  // Hintergrundvideo starten und Pause-Knopf. Blockiert der Browser den automatischen Start (z. B. Stromsparmodus
+  // am iPhone), zeigt der Knopf „abspielen“. Im Datensparmodus startet das Video nicht von selbst.
   const film = document.querySelector<HTMLVideoElement>('.einstieg__video');
   const knopf = document.querySelector<HTMLButtonElement>('.einstieg__pause');
   if (film && knopf) {
@@ -85,13 +86,15 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
       if (text) text.textContent = laeuft ? 'Hintergrundvideo anhalten' : 'Hintergrundvideo abspielen';
     };
     const sparen = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData === true;
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || sparen) {
-      film.autoplay = false;
-      film.pause();
-    }
     film.addEventListener('play', zeige);
     film.addEventListener('pause', zeige);
-    knopf.addEventListener('click', () => (film.paused ? film.play() : film.pause()));
+    knopf.addEventListener('click', () => (film.paused ? film.play().catch(zeige) : film.pause()));
+    if (sparen) {
+      film.autoplay = false;
+      film.pause();
+    } else {
+      film.play().catch(zeige);
+    }
     zeige();
     knopf.hidden = false;
   }
@@ -120,7 +123,8 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     content: '';
     position: absolute;
     inset: 0;
-    background: rgb(15 45 43 / 0.82);
+    /* Handy: so hell, dass die Bewegung sichtbar bleibt, Text und Claim behalten genug Kontrast */
+    background: rgb(15 45 43 / 0.7);
   }
 
   .einstieg__video,
@@ -158,6 +162,10 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     font-weight: 700;
     font-size: 1.125rem;
     color: var(--kupfer-hell);
+    /* dunkler Schein, damit der Claim auch über hellen Stellen im Video lesbar bleibt */
+    text-shadow:
+      0 0 0.5em rgb(15 45 43 / 0.9),
+      0 1px 2px rgb(15 45 43 / 0.9);
   }
 
   .einstieg h1 {
