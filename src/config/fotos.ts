@@ -38,5 +38,8 @@ export const fotos: Record<string, { zeigt: string; alt: string }> = {
   'leistung-wurzelstockentfernung': { zeigt: 'Wurzelstockentfernung', alt: '' },
   'leistung-haeckselarbeiten': { zeigt: 'Häckselarbeiten', alt: '' },
   'leistung-landschaftspflege-heckenschnitt': { zeigt: 'Landschaftspflege und Heckenschnitt', alt: '' },
-  'leistung-seilklettertechnik': { zeigt: 'Seilklettertechnik', alt: '' },
+  'leistung-seilklettertechnik': {
+    zeigt: 'Seilklettertechnik',
+    alt: 'Nahaufnahme am Seil: Hand mit Schutzhandschuh am Kletterseil, Klettergurt mit Karabinern und Motorsäge',
+  },
 };

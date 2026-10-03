@@ -49,7 +49,7 @@ Für starke Äste, deutliche Rückschnitte und Fällungen ist die Motorsäge im 
 
 ## Warum ohne schweres Gerät
 
-Mit der Hubarbeitsbühne arbeiten wir dort, wo sie hinkommt. Sie braucht aber eine feste Zufahrt und eine tragfähige Standfläche. In vielen Gärten gibt es beides nicht, oder Rasen und Wurzelbereich würden unter dem Gewicht leiden. Am Seil kommen wir ohne Fahrzeug an den Baum. Ausrüstung und Schnittgut tragen wir zu Fuß, der Häcksler bleibt an der Zufahrt. Ihr Garten bleibt, wie er ist, und der Baum wird nur dort berührt, wo wir schneiden.
+Mit der Hubarbeitsbühne arbeiten wir dort, wo sie hinkommt. Sie braucht aber eine feste Zufahrt und eine tragfähige Standfläche. In vielen Gärten gibt es beides nicht, oder Rasen und Wurzelbereich würden unter dem Gewicht leiden. Am Seil kommen wir ohne Fahrzeug an den Baum. Ausrüstung und Schnittgut tragen wir zu Fuß, der Häcksler bleibt an der Zufahrt. Wir führen nur die Arbeiten aus, die wirklich nötig sind, und schonen so den Baum und seine Umgebung. Ihren Garten hinterlassen wir sauberer, als wir ihn vorgefunden haben.
 
 ## So gehen wir vor
 
