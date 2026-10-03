@@ -16,7 +16,10 @@ interface Props {
 
 const { name, sizes, widths = [480, 800, 1200, 1600], class: klasse, oben = false } = Astro.props;
 const f = foto(name);
-const breiten = f.bild ? widths.filter((w) => w <= f.bild!.width) : [];
+// Kleinere Fotos zusätzlich in Originalbreite anbieten, damit der Browser nicht eine kleinere Stufe hochrechnet
+const breiten = f.bild
+  ? [...new Set([...widths.filter((w) => w <= f.bild!.width), Math.min(f.bild.width, Math.max(...widths))])]
+  : [];
 ---
 
 {
@@ -25,7 +28,7 @@ const breiten = f.bild ? widths.filter((w) => w <= f.bild!.width) : [];
       src={f.bild}
       alt={f.alt}
       formats={['avif', 'webp']}
-      widths={breiten.length ? breiten : [f.bild.width]}
+      widths={breiten}
       sizes={sizes}
       class:list={['foto', klasse]}
       pictureAttributes={{ class: 'foto-rahmen' }}

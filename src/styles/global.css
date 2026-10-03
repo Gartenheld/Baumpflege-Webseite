@@ -279,6 +279,11 @@ svg {
   display: contents;
 }
 
+/* Die source-Elemente würden sonst als leere Zellen im Raster des Elternelements mitzählen */
+.foto-rahmen source {
+  display: none;
+}
+
 img.foto {
   display: block;
   width: 100%;

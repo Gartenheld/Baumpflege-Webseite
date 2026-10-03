@@ -27,7 +27,10 @@ export const fotos: Record<string, { zeigt: string; alt: string }> = {
   },
   // Leistungsseiten: Foto oben auf der Seite und, bei Schwerpunkten, auf der Karte in der Übersicht
   'leistung-baumpflege': { zeigt: 'Baumpflege', alt: '' },
-  'leistung-baumfaellung': { zeigt: 'Baumfällung', alt: '' },
+  'leistung-baumfaellung': {
+    zeigt: 'Baumfällung',
+    alt: 'Baumkletterer mit Helm und Gehörschutz sägt in der Krone einen Ast ab, mit Seil am Stamm gesichert',
+  },
   'leistung-sturmschadenbeseitigung': { zeigt: 'Sturmschadenbeseitigung', alt: '' },
   'leistung-wurzelstockentfernung': { zeigt: 'Wurzelstockentfernung', alt: '' },
   'leistung-haeckselarbeiten': { zeigt: 'Häckselarbeiten', alt: '' },
