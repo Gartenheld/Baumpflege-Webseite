@@ -32,7 +32,7 @@ export const fotos: Record<string, { zeigt: string; alt: string }> = {
   },
   'leistung-baumfaellung': {
     zeigt: 'Baumfällung',
-    alt: 'Arbeit mit der Motorsäge im Wald: Schutzhelm mit Visier und Gehörschutz, Sägespäne fliegen im Gegenlicht',
+    alt: 'Baumkletterer mit Helm und Gehörschutz sägt in der Krone einen Ast ab, mit Seil am Stamm gesichert',
   },
   'leistung-sturmschadenbeseitigung': { zeigt: 'Sturmschadenbeseitigung', alt: '' },
   'leistung-wurzelstockentfernung': { zeigt: 'Wurzelstockentfernung', alt: '' },
