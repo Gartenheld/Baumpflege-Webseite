@@ -10,7 +10,7 @@ karten:
   - titel: "Stamm"
     text: "Der untere Stamm bis zum Boden, gern mit einem Gegenstand zum Größenvergleich."
   - titel: "Krone"
-    text: "Die Krone von unten, besonders Stellen mit trockenen oder gebrochenen Ästen."
+    text: "Die Krone von unten, besonders Stellen mit trockenen oder gebrochenen Ästen, Nestern oder Höhlen."
   - titel: "Zufahrt"
     text: "Der Weg von der Straße bis zum Baum, mit Toren, Durchgängen und Hindernissen wie Leitungen."
 ---

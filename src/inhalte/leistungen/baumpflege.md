@@ -56,7 +56,7 @@ Ziel ist ein Baum, der aus eigener Kraft gesund bleibt und Wind und Wetter stand
 
 ## Pflege auch in der Schonzeit
 
-Vom 1. März bis 30. September gilt zum Schutz brütender Vögel eine allgemeine Schonzeit. Schonende Pflegeschnitte, etwa das Entfernen von Totholz oder ein leichter Formschnitt, sind in dieser Zeit in der Regel möglich. Stärkere Eingriffe planen wir in der Regel für die Monate außerhalb der Schonzeit. Vor dem Schnitt achten wir auf Nester und bewohnte Höhlen. Ob für Ihren Baum zusätzliche Regeln gelten, etwa durch eine Baumschutzsatzung, erfragen Sie im Einzelfall bei Ihrer Stadt oder Gemeinde.
+Vom 1. März bis 30. September gilt zum Schutz brütender Vögel eine allgemeine Schonzeit. Schonende Pflegeschnitte, etwa das Entfernen von Totholz oder ein leichter Formschnitt, sind in dieser Zeit in der Regel möglich. Stärkere Eingriffe planen wir in der Regel für die Monate außerhalb der Schonzeit. Vor dem Schnitt achten wir auf Nester und bewohnte Höhlen. Brütet ein Vogel im Baum, schneiden wir nicht in der Nähe des Nests und verschieben größere Arbeiten an diesem Baum, bis die Jungen ausgeflogen sind. Ob für Ihren Baum zusätzliche Regeln gelten, etwa durch eine Baumschutzsatzung, erfragen Sie im Einzelfall bei Ihrer Stadt oder Gemeinde.
 
 ## So gehen wir vor
 

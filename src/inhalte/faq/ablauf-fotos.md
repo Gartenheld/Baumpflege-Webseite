@@ -12,5 +12,6 @@ Mit guten Fotos können wir den Aufwand oft schon ohne Besichtigung einschätzen
 - die **Krone** von unten, besonders Stellen mit trockenen oder gebrochenen Ästen
 - die **Umgebung und Zufahrt**, also der Weg von der Straße bis zum Baum
 - **Hindernisse** wie Leitungen, Gebäude, Zäune oder Beete in der Nähe
+- **Nester oder Baumhöhlen**, falls Ihnen welche aufgefallen sind
 
 Bitte fotografieren Sie möglichst ohne Personen und ohne Autokennzeichen. Eine kurze Beschreibung, was gemacht werden soll, hilft zusätzlich.

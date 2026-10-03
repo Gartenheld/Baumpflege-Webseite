@@ -38,7 +38,7 @@ kosten:
 - **Formschnitt:** Ein regelmäßiger Schnitt hält die Hecke in Form und fördert dichten Wuchs. Wir schneiden sie leicht trapezförmig, unten etwas breiter als oben, damit auch die unteren Bereiche genug Licht bekommen und nicht verkahlen.
 - **Heckenrückschnitt:** Ist eine Hecke zu hoch, zu breit oder von innen kahl geworden, kann ein stärkerer Rückschnitt sie verjüngen. Ob das gelingt, hängt von der Pflanze ab: Hainbuche oder Liguster treiben auch aus altem Holz wieder aus, Thuja und Scheinzypresse dagegen kaum.
 
-Starke Rückschnitte sind wegen der allgemeinen Schonzeit vom 1. März bis 30. September in der Regel nur außerhalb dieser Zeit erlaubt. Schonende Form- und Pflegeschnitte sind auch im Sommer möglich. Vor dem Schnitt achten wir darauf, ob in der Hecke Vögel brüten.
+Starke Rückschnitte sind wegen der allgemeinen Schonzeit vom 1. März bis 30. September in der Regel nur außerhalb dieser Zeit erlaubt. Schonende Form- und Pflegeschnitte sind auch im Sommer möglich. Vor dem Schnitt achten wir darauf, ob in der Hecke Vögel brüten. Finden wir ein besetztes Nest, lassen wir diesen Abschnitt aus, bis die Jungen ausgeflogen sind.
 
 ## Gehölzpflege und Strauchschnitt
 

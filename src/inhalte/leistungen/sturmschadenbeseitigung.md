@@ -54,6 +54,8 @@ Fotografieren Sie die Schäden, bevor aufgeräumt wird: den Baum, abgebrochene �
 
 Hängen abgebrochene Äste noch hoch in der Krone, holen wir sie je nach Lage mit der Hubarbeitsbühne oder am Seil herunter. Vorher klären wir, wie sich das sicher machen lässt.
 
+Auch nach einem Sturm gilt der Artenschutz. Entdecken wir in einem beschädigten Baum ein Nest oder Fledermäuse, sichern wir zunächst nur das Nötigste und stimmen alles Weitere mit der Unteren Naturschutzbehörde ab.
+
 ## So gehen wir vor
 
 1. **Sicherheit zuerst:** Bei akuter Gefahr rufen Sie die Feuerwehr unter 112 und halten Abstand.
