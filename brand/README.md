@@ -4,10 +4,11 @@ Gewählt am 1. Oktober 2026: **Logo 1 (klassisch) mit Symbol, Farbwelt C „Tann
 
 ## Vorläufiges Logo (seit 3. Oktober 2026)
 
-Rundes Emblem (Baum mit Baumkletterer auf hellem Kreis) und darunter der Schriftzug „BAUMPFLEGE“, Linie mit Eichenblatt, „HAPPE“. Auf der Website stehen Emblem und Schriftzug nebeneinander.
+Rundes Emblem (Eiche mit Baumkletterer, Baumkrone in Kreisform) und darunter der Schriftzug „BAUMPFLEGE“, Linie mit Eichenblatt, „HAPPE“. Auf der Website stehen Emblem und Schriftzug nebeneinander. Auf dunklem Grund liegt das Emblem auf einer hellen Scheibe, damit der Kletterer gut zu sehen bleibt.
 
 - `logo/vorlaeufig/baumpflege-happe_logo_original.jpg`: die gelieferte Datei (ganzes Logo auf Weiß)
 - `logo/vorlaeufig/baumpflege-happe_emblem.png`: Emblem freigestellt, transparenter Hintergrund
+- `logo/vorlaeufig/baumpflege-happe_emblem_scheibe.png`: Emblem auf heller Scheibe (für dunklen Grund, Favicon)
 - `logo/vorlaeufig/baumpflege-happe_schriftzug_dunkel.png`: Schriftzug für hellen Grund
 - `logo/vorlaeufig/baumpflege-happe_schriftzug_hell.png`: Schriftzug für dunklen Grund (Creme, Blatt in Gold)
 

@@ -1,9 +1,11 @@
 ---
 // Logo für Kopf und Fuß (vorläufiges Logo): rundes Emblem und daneben der Schriftzug „Baumpflege Happe“.
-// Bilddateien in src/assets/logo: emblem.png, schriftzug-dunkel.png (heller Grund), schriftzug-hell.png (dunkler Grund).
+// Bilddateien in src/assets/logo: emblem.png und schriftzug-dunkel.png für hellen Grund,
+// emblem-scheibe.png (Emblem auf heller Scheibe) und schriftzug-hell.png für dunklen Grund.
 // Neues Logo: Dateien mit gleichem Namen ersetzen (transparenter Hintergrund).
 import { Picture } from 'astro:assets';
-import emblem from '../assets/logo/emblem.png';
+import emblemHell from '../assets/logo/emblem.png';
+import emblemScheibe from '../assets/logo/emblem-scheibe.png';
 import schriftzugDunkel from '../assets/logo/schriftzug-dunkel.png';
 import schriftzugHell from '../assets/logo/schriftzug-hell.png';
 
@@ -16,6 +18,7 @@ interface Props {
 }
 
 const { negativ = false, titel = 'Baumpflege Happe', sizes, eager = false } = Astro.props;
+const emblem = negativ ? emblemScheibe : emblemHell;
 const schriftzug = negativ ? schriftzugHell : schriftzugDunkel;
 const laden = eager ? 'eager' : 'lazy';
 ---
