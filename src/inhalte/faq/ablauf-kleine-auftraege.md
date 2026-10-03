@@ -1,7 +1,7 @@
 ---
 frage: "Kommen Sie auch für kleine Aufträge?"
 thema: ablauf
-leistungen: [wurzelstockentfernung, landschaftspflege-heckenschnitt, rollrasen]
+leistungen: [wurzelstockentfernung, landschaftspflege-heckenschnitt]
 aufFaqSeite: true
 reihenfolge: 20
 ---

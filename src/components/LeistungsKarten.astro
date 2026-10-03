@@ -160,6 +160,26 @@ const weitere = kompakt ? leistungen : leistungen.filter((l) => !l.data.schwerpu
     }
   }
 
+  /* Breite Bildschirme: drei Karten je Reihe, eine unvollständige letzte Reihe füllt die ganze Breite */
+  @media (min-width: 60rem) {
+    .weitere {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    .weitere .karte {
+      grid-column: span 2;
+    }
+
+    .weitere .karte:nth-child(3n + 1):nth-last-child(2),
+    .weitere .karte:nth-child(3n + 2):last-child {
+      grid-column: span 3;
+    }
+
+    .weitere .karte:nth-child(3n + 1):last-child {
+      grid-column: span 6;
+    }
+  }
+
   @media (prefers-reduced-motion: no-preference) {
     .karte:hover {
       transform: translateY(-2px);

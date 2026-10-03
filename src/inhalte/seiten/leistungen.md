@@ -1,6 +1,6 @@
 ---
 seitentitel: "Leistungen: Baumpflege, Baumfällung und mehr | Baumpflege Happe"
-beschreibung: "Baumpflege, Baumfällung, Sturmschäden, Wurzelstöcke, Häckseln, Heckenschnitt und Rollrasen zwischen Köln und Bonn. Kostenlose Ersteinschätzung per Foto."
+beschreibung: "Baumpflege, Baumfällung, Seilklettertechnik, Sturmschäden, Wurzelstöcke, Häckseln und Heckenschnitt zwischen Köln und Bonn. Kostenlose Ersteinschätzung per Foto."
 kicker: Leistungen
 h1: "Baumpflege, Baumfällung und mehr zwischen Köln und Bonn"
 einleitung: "Von der fachgerechten Pflege bis zur sorgfältigen Fällung kümmern wir uns um Ihre Bäume und hinterlassen ein aufgeräumtes Grundstück. Auch Hecken, Grünflächen und kleinere Gartenprojekte übernehmen wir."
@@ -13,7 +13,7 @@ Unsere Schwerpunkte sind Baumpflege und Baumfällung. Wir schneiden Bäume so, d
 
 ## Garten und Grundstück
 
-Für Hecken und Grünflächen bieten wir Landschaftspflege und Heckenschnitt an, dazu kleine Gartenprojekte ohne große Maschinen und das Verlegen von Rollrasen. Mit unserem eigenen Häcksler zerkleinern wir Schnittgut direkt vor Ort, auch als eigene Leistung.
+Für Hecken und Grünflächen bieten wir Landschaftspflege und Heckenschnitt an, dazu kleine Gartenprojekte ohne große Maschinen. Mit unserem eigenen Häcksler zerkleinern wir Schnittgut direkt vor Ort, auch als eigene Leistung.
 
 ## Bei jeder Leistung gleich
 

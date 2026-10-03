@@ -22,7 +22,7 @@ Wesseling ist geprägt vom Rhein und von großen Industrieanlagen, daneben gibt 
 
 ## Gärten in Berzdorf, Keldenich und Urfeld
 
-In den Wohngebieten der Stadtteile finden sich viele Einfamilien- und Reihenhäuser mit Gärten unterschiedlicher Größe. Typische Aufgaben sind dort der Schnitt von Hecken und Gartenbäumen, die Fällung zu groß gewordener Nadelbäume und das Entfernen alter Wurzelstöcke. Ist der Baum weg, legen wir auf Wunsch neuen Rollrasen an, damit die Fläche bald wieder nutzbar ist. So bekommen Sie Fällung, Wurzelstockentfernung und neue Rasenfläche aus einer Hand.
+In den Wohngebieten der Stadtteile finden sich viele Einfamilien- und Reihenhäuser mit Gärten unterschiedlicher Größe. Typische Aufgaben sind dort der Schnitt von Hecken und Gartenbäumen, die Fällung zu groß gewordener Nadelbäume und das Entfernen alter Wurzelstöcke. So bekommen Sie Fällung und Wurzelstockentfernung aus einer Hand.
 
 ## Kurzer Weg aus Bornheim
 

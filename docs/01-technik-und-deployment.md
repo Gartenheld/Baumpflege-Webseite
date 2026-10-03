@@ -70,7 +70,6 @@ Regeln für alle Adressen:
 | Baumfällung | `/leistungen/baumfaellung/` | |
 | Seilklettertechnik | `/leistungen/seilklettertechnik/` | per Schalter ausblendbar, nur sichtbar, wenn SKT-A zum Start vorliegt |
 | Landschaftspflege und Heckenschnitt | `/leistungen/landschaftspflege-heckenschnitt/` | mit Abschnitt zu kleinen Gartenprojekten ohne große Maschinen |
-| Rollrasen | `/leistungen/rollrasen/` | |
 | Häckselarbeiten | `/leistungen/haeckselarbeiten/` | |
 | Wurzelstockentfernung | `/leistungen/wurzelstockentfernung/` | |
 | Sturmschadenbeseitigung | `/leistungen/sturmschadenbeseitigung/` | |

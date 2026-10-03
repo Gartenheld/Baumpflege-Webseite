@@ -50,9 +50,8 @@ Die erste passende Regel gewinnt. Steht in einer Adresse eine Leistung und ein O
 | stubben, wurzel, stumpf | `/leistungen/wurzelstockentfernung/` |
 | fällung, faellung, fällen, rodung | `/leistungen/baumfaellung/` |
 | häcksel, haecksel, schredder | `/leistungen/haeckselarbeiten/` |
-| rasen, vertikutieren, nachsaat | `/leistungen/rollrasen/` (einzige Rasen-Seite der neuen Website) |
 | hecke, strauch, sträucher, gehölz, formschnitt | `/leistungen/landschaftspflege-heckenschnitt/` |
-| pflaster, terrasse, einfahrt, naturstein, zaun, mauer | `/leistungen/` (wird nicht mehr angeboten, die Übersicht zeigt das neue Angebot) |
+| pflaster, terrasse, einfahrt, naturstein, zaun, mauer, rasen, vertikutieren, nachsaat | `/leistungen/` (wird nicht mehr angeboten, die Übersicht zeigt das neue Angebot) |
 | baum, bäume, obst, krone, totholz | `/leistungen/baumpflege/` |
 | garten, beet, unkraut, landschaft, laub, galabau | `/leistungen/landschaftspflege-heckenschnitt/` (Abschnitt kleine Gartenprojekte) |
 | leistung, service, angebot | `/leistungen/` |
@@ -121,7 +120,7 @@ Nicht nur auf die Weiterleitung verlassen. Nach dem Start direkt auf neue Domain
    ```
 7. **Backup** der alten Website ziehen (Dateien, Datenbank, Mediathek). Nach dem Umschalten ist sie nicht mehr erreichbar.
 
-Zwei Zuordnungen kannst du gern anders entscheiden, sag dann Bescheid: Alte Pflaster- und Terrassenseiten zeigen auf die Leistungsübersicht, alte Rasenpflege-Seiten auf Rollrasen.
+Zwei Zuordnungen kannst du gern anders entscheiden, sag dann Bescheid: Alte Pflaster-, Terrassen- und Rasenseiten zeigen auf die Leistungsübersicht (Rollrasen wird seit 3. Oktober 2026 nicht mehr angeboten).
 
 ---
 
@@ -234,10 +233,9 @@ RewriteRule (sturm|unwetter|notfall|notdienst) https://baumpflege-happe.de/leist
 RewriteRule (stubben|wurzel|stumpf) https://baumpflege-happe.de/leistungen/wurzelstockentfernung/? [R=301,L,NC]
 RewriteRule (f.{1,2}llung|f.{1,2}llen|felling|rodung) https://baumpflege-happe.de/leistungen/baumfaellung/? [R=301,L,NC]
 RewriteRule (h.{1,2}cksel|schredder) https://baumpflege-happe.de/leistungen/haeckselarbeiten/? [R=301,L,NC]
-RewriteRule (rasen|vertikutier|nachsaat) https://baumpflege-happe.de/leistungen/rollrasen/? [R=301,L,NC]
 RewriteRule (hecke|strauch|str.{1,2}ucher|geh.{1,2}lz|formschnitt) https://baumpflege-happe.de/leistungen/landschaftspflege-heckenschnitt/? [R=301,L,NC]
 # Nicht mehr angeboten -> Leistungsübersicht
-RewriteRule (pflaster|terrass|einfahrt|naturstein|zaun|mauer) https://baumpflege-happe.de/leistungen/? [R=301,L,NC]
+RewriteRule (pflaster|terrass|einfahrt|naturstein|zaun|mauer|rasen|vertikutier|nachsaat) https://baumpflege-happe.de/leistungen/? [R=301,L,NC]
 RewriteRule (baum|b(ae|..)ume|obst|krone|totholz) https://baumpflege-happe.de/leistungen/baumpflege/? [R=301,L,NC]
 RewriteRule (garten|beet|unkraut|landschaft|gr.{1,2}npflege|(^|[-_/])laub|galabau) https://baumpflege-happe.de/leistungen/landschaftspflege-heckenschnitt/? [R=301,L,NC]
 RewriteRule (leistung|service|angebot) https://baumpflege-happe.de/leistungen/? [R=301,L,NC]

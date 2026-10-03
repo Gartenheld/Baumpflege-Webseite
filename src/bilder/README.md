@@ -15,7 +15,6 @@ Der Dateiname bestimmt den Platz, die Endung darf `.jpg`, `.jpeg`, `.png` oder `
 | `leistung-wurzelstockentfernung.jpg` | Leistung Wurzelstockentfernung |
 | `leistung-haeckselarbeiten.jpg` | Leistung Häckselarbeiten |
 | `leistung-landschaftspflege-heckenschnitt.jpg` | Leistung Landschaftspflege und Heckenschnitt |
-| `leistung-rollrasen.jpg` | Leistung Rollrasen |
 | `leistung-seilklettertechnik.jpg` | Leistung Seilklettertechnik |
 
 So geht es:

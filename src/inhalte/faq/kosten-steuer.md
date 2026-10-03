@@ -1,7 +1,7 @@
 ---
 frage: "Kann ich die Kosten von der Steuer absetzen?"
 thema: kosten
-leistungen: [baumpflege, landschaftspflege-heckenschnitt, wurzelstockentfernung, rollrasen]
+leistungen: [baumpflege, landschaftspflege-heckenschnitt, wurzelstockentfernung]
 aufFaqSeite: true
 reihenfolge: 40
 ---

@@ -32,6 +32,5 @@ export const fotos: Record<string, { zeigt: string; alt: string }> = {
   'leistung-wurzelstockentfernung': { zeigt: 'Wurzelstockentfernung', alt: '' },
   'leistung-haeckselarbeiten': { zeigt: 'Häckselarbeiten', alt: '' },
   'leistung-landschaftspflege-heckenschnitt': { zeigt: 'Landschaftspflege und Heckenschnitt', alt: '' },
-  'leistung-rollrasen': { zeigt: 'Rollrasen', alt: '' },
   'leistung-seilklettertechnik': { zeigt: 'Seilklettertechnik', alt: '' },
 };
