@@ -14,7 +14,7 @@ const jahr = new Date().getFullYear();
 <footer class="fuss">
   <div class="huelle fuss__raster">
     <div class="fuss__betrieb">
-      <a href="/" class="fuss__logo"><Marke negativ titel="Baumpflege Happe, zur Startseite" sizes="4.75rem" /></a>
+      <a href="/" class="fuss__logo"><Marke negativ mitEmblem={false} titel="Baumpflege Happe, zur Startseite" sizes="4.75rem" /></a>
       <p class="fuss__unterzeile">{betrieb.unterzeile}</p>
       <address>
         {betrieb.name}<br />
@@ -104,8 +104,7 @@ const jahr = new Date().getFullYear();
 
   .fuss__logo {
     display: inline-block;
-    --emblem: 4.75rem;
-    --schriftzug: 3.4rem;
+    --schriftzug: 3.6rem;
   }
 
   .fuss__unterzeile {

@@ -11,30 +11,36 @@ import schriftzugHell from '../assets/logo/schriftzug-hell.png';
 
 interface Props {
   negativ?: boolean;
+  // false zeigt nur den Schriftzug (Fußbereich)
+  mitEmblem?: boolean;
   titel?: string;
   // Angezeigte Größe des Emblems für die Bildauswahl des Browsers, z. B. "(min-width: 70rem) 3.75rem, 3rem"
   sizes: string;
   eager?: boolean;
 }
 
-const { negativ = false, titel = 'Baumpflege Happe', sizes, eager = false } = Astro.props;
+const { negativ = false, mitEmblem = true, titel = 'Baumpflege Happe', sizes, eager = false } = Astro.props;
 const emblem = negativ ? emblemScheibe : emblemHell;
 const schriftzug = negativ ? schriftzugHell : schriftzugDunkel;
 const laden = eager ? 'eager' : 'lazy';
 ---
 
 <span class="marke">
-  <Picture
-    src={emblem}
-    formats={['avif', 'webp']}
-    width={128}
-    height={128}
-    widths={[64, 96, 128, 192, 256]}
-    sizes={sizes}
-    alt=""
-    class="marke__emblem"
-    loading={laden}
-  />
+  {
+    mitEmblem && (
+      <Picture
+        src={emblem}
+        formats={['avif', 'webp']}
+        width={128}
+        height={128}
+        widths={[64, 96, 128, 192, 256]}
+        sizes={sizes}
+        alt=""
+        class="marke__emblem"
+        loading={laden}
+      />
+    )
+  }
   <Picture
     src={schriftzug}
     formats={['avif', 'webp']}
