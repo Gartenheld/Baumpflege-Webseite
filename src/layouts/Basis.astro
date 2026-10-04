@@ -28,9 +28,10 @@ const site = Astro.site!;
 const canonical = new URL(Astro.url.pathname, site);
 const robots = PUBLIC_NOINDEX || noindex ? 'noindex, nofollow' : 'index, follow';
 
-// Vorschaubild zum Teilen: eigenes Foto der Seite oder das Standardbild mit Logo
+// Vorschaubild zum Teilen: eigenes Foto der Seite oder das Standardbild mit Logo.
+// Freigestellte PNG-Motive (z. B. Über uns) taugen nicht als Vorschaubild, dort gilt das Standardbild.
 const f = foto ? fotoPlatz(foto) : undefined;
-const ogBild = f?.bild
+const ogBild = f?.bild && f.bild.format !== 'png'
   ? {
       url: new URL((await getImage({ src: f.bild, width: 1200, height: 630, fit: 'cover', format: 'jpg', quality: 80 })).src, site).href,
       alt: f.alt,

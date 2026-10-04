@@ -12,7 +12,7 @@ Das Logo ist der Schriftzug „BAUMPFLEGE“, goldene Linie, „HAPPE“. Kopf u
 - `logo/vorlaeufig/baumpflege-happe_emblem.png`: Bildmotiv freigestellt, transparenter Hintergrund (Über uns, Favicon)
 - `logo/vorlaeufig/baumpflege-happe_emblem_scheibe.png`: Bildmotiv auf heller Scheibe (derzeit nicht verwendet)
 
-Daraus erzeugt: `src/assets/logo/` (Kopf und Fuß), `src/bilder/ueber-uns.jpg` (Bildmotiv auf Weiß), `public/logo.png` (Logo für Google), `public/favicon.ico`, `public/icon-192.png`, `public/apple-touch-icon.png` (Bildmotiv) und `public/og-standard.jpg` (Vorschaubild beim Teilen, Vorlage `tools/og-bild/og-standard.html`). Schriftzug neu erzeugen: `tools/logo-generator/schriftzug_vorlaeufig.py`. Das Logo ist eine Pixelgrafik. Für Druck, Folie und Stick braucht es später eine Vektorfassung (SVG oder PDF).
+Daraus erzeugt: `src/assets/logo/` (Kopf und Fuß), `src/bilder/ueber-uns.png` (Bildmotiv freigestellt, ohne Hintergrund), `public/logo.png` (Logo für Google), `public/favicon.ico`, `public/icon-192.png`, `public/apple-touch-icon.png` (Bildmotiv) und `public/og-standard.jpg` (Vorschaubild beim Teilen, Vorlage `tools/og-bild/og-standard.html`). Schriftzug neu erzeugen: `tools/logo-generator/schriftzug_vorlaeufig.py`, Bildmotiv freistellen: `tools/logo-generator/motiv_freistellen.py`. Das Logo ist eine Pixelgrafik. Für Druck, Folie und Stick braucht es später eine Vektorfassung (SVG oder PDF).
 
 ## Farben der Website: „Salbei und Gold“ (seit 3. Oktober 2026)
 
