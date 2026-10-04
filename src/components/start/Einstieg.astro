@@ -140,6 +140,11 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     border-radius: 0;
   }
 
+  /* Handy und Tablet: Ausschnitt nach rechts, damit die Motorsäge im Bild ist */
+  .einstieg__video {
+    object-position: 85% 50%;
+  }
+
   .einstieg__symbol {
     position: absolute;
     right: -6%;
@@ -274,6 +279,10 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     .einstieg__inhalt,
     .einstieg--video .einstieg__inhalt {
       padding-block: 5rem;
+    }
+
+    .einstieg__video {
+      object-position: 50% 50%;
     }
 
     .einstieg__pause {
