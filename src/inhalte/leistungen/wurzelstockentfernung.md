@@ -17,6 +17,18 @@ vorteile:
   - titel: "Sauberer Abschluss"
     text: "Das Loch wird verfüllt und eingeebnet, Späne und Wurzelreste nehmen wir mit oder lassen sie auf Wunsch als Mulch da."
 fragenTitel: "Fragen zur Wurzelstockentfernung"
+aufruf: "Stört ein Wurzelstock?"
+ablauf:
+  - titel: "Anfrage mit Fotos"
+    text: "Fotos vom Stumpf, seiner Umgebung und dem Weg dorthin."
+  - titel: "Kostenlose Ersteinschätzung"
+    text: "Wir schlagen Ihnen die passende Methode vor."
+  - titel: "Besichtigung bei Bedarf"
+    text: "Bei engen Lagen oder Leitungen in der Nähe sehen wir uns alles vor Ort an."
+  - titel: "Angebot mit Pauschalpreis"
+    text: "Schriftlich, mit allen Arbeiten im Überblick."
+  - titel: "Entfernen und Aufräumen"
+    text: "Loch verfüllt, Späne und Wurzelreste aufgeräumt, auf Wunsch mit Rollrasen oder Rasenansaat."
 kosten:
   frage: "Was kostet es, einen Wurzelstock zu entfernen?"
   einleitung: "Der Aufwand hängt vor allem vom Stumpf und seiner Lage ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
@@ -37,31 +49,17 @@ kosten:
       text: "Soll die Stelle anschließend mit Rollrasen belegt oder eingesät werden, kommt das als eigene Position hinzu."
 ---
 
-## Stubben fräsen oder ausgraben?
+## Fräsen oder ausgraben?
 
-Es gibt nicht die eine richtige Methode. Je nach Lage und Größe wird ein Wurzelstock gefräst oder ausgegraben.
+- **Fräsen:** Die Stubbenfräse zerkleinert den Stumpf bis unter die Bodenoberfläche. Das geht schnell und bewegt wenig Erde. Feine Wurzeln bleiben im Boden und verrotten.
+- **Ausgraben:** Der Stock wird freigelegt und mit den Hauptwurzeln herausgenommen. Das ist aufwendiger, aber gründlicher.
 
-- **Fräsen:** Der Stumpf wird mit einer Stubbenfräse unter die Bodenoberfläche zerkleinert. Das geht vergleichsweise schnell und schont die Umgebung, weil nur wenig Erde bewegt wird. Feinere Wurzeln bleiben im Boden und verrotten mit der Zeit.
-- **Ausgraben:** Der Wurzelstock wird freigelegt, die Wurzeln werden durchtrennt und der Stock wird herausgenommen. Das ist aufwendiger, entfernt aber auch die Hauptwurzeln.
+Welche Methode passt, besprechen wir anhand Ihrer Fotos oder vor Ort. Wichtig ist auch, was danach an der Stelle entstehen soll. Nicht jeder Stumpf muss heraus: Im naturnahen Garten darf er verrotten und bietet Insekten und Pilzen Lebensraum.
 
-Welche Methode passt, besprechen wir mit Ihnen anhand der Fotos oder vor Ort. Wichtig ist dabei auch, was danach an der Stelle entstehen soll.
+## Leitungen im Boden
 
-## Vorher klären: Leitungen im Boden
-
-Im Bereich von Wurzeln verlaufen nicht selten Wasser-, Strom- oder Gasleitungen. Bitte sagen Sie uns, wenn Sie wissen, wo Leitungen liegen, oder wenn Pläne dazu vorhanden sind. Im Zweifel gibt Ihr Versorger Auskunft über den Verlauf. In solchen Bereichen arbeiten wir besonders vorsichtig.
+Im Wurzelbereich verlaufen oft Wasser-, Strom- oder Gasleitungen. Sagen Sie uns bitte, wenn Sie wissen, wo Leitungen liegen. Im Zweifel gibt Ihr Versorger Auskunft. In solchen Bereichen arbeiten wir besonders vorsichtig.
 
 ## Fläche wiederherstellen
 
-Nach der Entfernung verfüllen wir das Loch und ebnen es ein. Auf Wunsch stellen wir die Fläche anschließend wieder her: mit **Rollrasen**, wenn sie schnell wieder grün und nutzbar sein soll, oder mit einer **Rasenansaat**. Weil frisch verfüllter Boden noch etwas nachsacken kann, stimmen wir den passenden Zeitpunkt mit Ihnen ab.
-
-## Wenn der Stumpf bleiben darf
-
-Nicht jeder Wurzelstock muss heraus. In einem naturnahen Garten kann ein Stumpf langsam verrotten und dabei Insekten, Pilzen und Kleintieren Lebensraum bieten. Manchmal reicht es auch, den Stumpf bodennah abzusägen. Was in Ihrem Fall sinnvoll ist, besprechen wir gemeinsam.
-
-## So gehen wir vor
-
-1. **Anfrage mit Fotos:** Sie schicken uns Fotos vom Stumpf, seiner Umgebung und dem Weg dorthin, zum Beispiel durch Tor oder Einfahrt.
-2. **Kostenlose Ersteinschätzung:** Wir schlagen Ihnen eine passende Methode vor.
-3. **Besichtigung bei Bedarf:** Bei engen Lagen oder Leitungen in der Nähe sehen wir uns alles vor Ort an.
-4. **Schriftliches Angebot:** Sie erhalten ein Angebot mit allen Arbeiten im Überblick.
-5. **Entfernung und Abschluss:** Wir entfernen den Wurzelstock, verfüllen das Loch und räumen Späne und Wurzelreste auf. Ihr Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben. Auf Wunsch legen wir danach Rollrasen oder säen Rasen ein.
+Nach der Entfernung verfüllen wir das Loch und ebnen es ein. Auf Wunsch stellen wir die Fläche wieder her: mit **Rollrasen**, wenn sie schnell wieder grün sein soll, oder mit einer **Rasenansaat**. Weil frisch verfüllter Boden noch nachsacken kann, stimmen wir den Zeitpunkt mit Ihnen ab.

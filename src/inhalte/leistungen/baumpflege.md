@@ -17,6 +17,18 @@ vorteile:
   - titel: "Sauber hinterlassen"
     text: "Das Schnittgut häckseln wir vor Ort und fahren es ab. Ihr Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben."
 fragenTitel: "Fragen zur Baumpflege"
+aufruf: "Braucht Ihr Baum einen Schnitt?"
+ablauf:
+  - titel: "Anfrage mit Fotos"
+    text: "Fotos vom Baum und ein paar Worte dazu, was Sie stört oder sich wünschen."
+  - titel: "Kostenlose Ersteinschätzung"
+    text: "Wir sagen Ihnen, welche Pflege sinnvoll ist."
+  - titel: "Besichtigung bei Bedarf"
+    text: "Wenn nötig, beurteilen wir den Baum vor Ort."
+  - titel: "Angebot mit Pauschalpreis"
+    text: "Schriftlich, mit allen Arbeiten im Überblick."
+  - titel: "Pflege und Aufräumen"
+    text: "Schnittgut gehäckselt und abgefahren. Ihr Grundstück ist danach sauberer als vorher."
 kosten:
   frage: "Was kostet Baumpflege?"
   einleitung: "Die Kosten hängen davon ab, was Ihr Baum braucht und wie gut er erreichbar ist. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
@@ -37,31 +49,20 @@ kosten:
 
 ## Was zur Baumpflege gehört
 
-Bäume wachsen über Jahrzehnte. Wer sie früh und regelmäßig pflegt, vermeidet später starke Eingriffe. Zur Baumpflege gehören bei uns:
+- **Kronenpflege und Auslichtung:** Äste, die sich kreuzen, scheuern oder nach innen wachsen, nehmen wir heraus. Die Krone wird lichter und stabiler.
+- **Totholz entfernen:** Abgestorbene Äste kommen heraus, bevor sie abbrechen.
+- **Rückschnitt und Kroneneinkürzung:** Äste an Dach, Fassade oder Dachrinne kürzen wir ein, eine zu große Krone verkleinern wir behutsam.
+- **Lichtraumprofilschnitt:** wieder genug Durchgangs- und Durchfahrtshöhe über Gehwegen, Zufahrten und Stellplätzen.
+- **Jungbäume und Obstbäume:** Erziehungsschnitt für junge Bäume, behutsamer Erhaltungsschnitt für ältere Obstbäume.
 
-- **Kronenpflege und Auslichtung:** Wir entfernen Äste, die sich kreuzen, aneinander scheuern oder nach innen wachsen. Die Krone wird lichter und stabiler.
-- **Totholzentfernung:** Abgestorbene Äste können ohne Vorwarnung abbrechen. Wir nehmen sie heraus, bevor sie zur Gefahr werden.
-- **Rückschnitt und Kroneneinkürzung:** Reichen Äste an Fassade, Dach oder Dachrinne, kürzen wir sie fachgerecht ein. Auch eine zu groß gewordene Krone lässt sich behutsam einkürzen, ohne sie zu verunstalten.
-- **Lichtraumprofilschnitt:** Über Gehwegen, Zufahrten und Stellplätzen schaffen wir wieder ausreichend Durchgangs- und Durchfahrtshöhe.
-- **Pflegeschnitt bei Jungbäumen:** Frühe Korrekturen lenken das Wachstum in die richtige Richtung und ersparen dem Baum später große Schnittwunden.
-- **Obstbäume:** Ältere Obstbäume, wie sie in vielen Gärten am Vorgebirge stehen, erhalten wir mit einem behutsamen Erhaltungsschnitt.
+In die Krone gelangen wir mit der Hubarbeitsbühne oder mit [Seilklettertechnik](/leistungen/seilklettertechnik/).
 
-In die Krone gelangen wir mit der Hubarbeitsbühne oder mit [Seilklettertechnik](/leistungen/seilklettertechnik/), am Seil auch dort, wo keine Bühne hinkommt.
+## So viel wie nötig, so wenig wie möglich
 
-## Gesund, stabil und sicher
+Jeder Schnitt ist eine Wunde, die der Baum selbst verschließen muss. Wir schneiden deshalb gezielt und an der richtigen Stelle. Vom Kappen ganzer Kronen raten wir ab: Über große Wunden dringen Pilze und Fäulnis ein, und die vielen neuen Triebe brechen später leicht aus. Fallen uns Pilze, Risse oder Höhlungen auf, sprechen wir Sie darauf an.
 
-Jeder Schnitt ist eine Wunde, die der Baum selbst verschließen muss. Deshalb setzen wir Schnitte gezielt und an der richtigen Stelle, damit die Wunde gut überwallen kann. Von großen Schnittflächen und vom Kappen ganzer Kronen raten wir ab: Über solche Wunden dringen Pilze und Fäulnis ein, und der Baum reagiert mit vielen dünnen Trieben, die schlecht verankert sind und später leicht ausbrechen.
+## Pflege auch im Sommer
 
-Ziel ist ein Baum, der aus eigener Kraft gesund bleibt und Wind und Wetter standhält. Fallen uns bei der Arbeit Auffälligkeiten wie Pilzfruchtkörper, Risse oder Höhlungen auf, sprechen wir Sie darauf an.
-
-## Pflege auch in der Schonzeit
-
-Vom 1. März bis 30. September gilt zum Schutz brütender Vögel eine allgemeine Schonzeit. Schonende Pflegeschnitte, etwa das Entfernen von Totholz oder ein leichter Formschnitt, sind in dieser Zeit in der Regel möglich. Stärkere Eingriffe planen wir in der Regel für die Monate außerhalb der Schonzeit. Vor dem Schnitt achten wir auf Nester und bewohnte Höhlen. Brütet ein Vogel im Baum, schneiden wir nicht in der Nähe des Nests und verschieben größere Arbeiten an diesem Baum, bis die Jungen ausgeflogen sind. Ob für Ihren Baum zusätzliche Regeln gelten, etwa durch eine Baumschutzsatzung, erfragen Sie im Einzelfall bei Ihrer Stadt oder Gemeinde.
-
-## So gehen wir vor
-
-1. **Anfrage mit Fotos:** Sie schicken uns Fotos des Baums und beschreiben kurz, was Sie stört oder was Sie sich wünschen.
-2. **Kostenlose Ersteinschätzung:** Wir sehen uns die Fotos an und sagen Ihnen, welche Pflege sinnvoll ist.
-3. **Besichtigung bei Bedarf:** Wenn nötig, vereinbaren wir einen Termin vor Ort und beurteilen den Baum persönlich.
-4. **Schriftliches Angebot:** Sie erhalten ein Angebot, in dem alle Arbeiten aufgeführt sind.
-5. **Pflege und Aufräumen:** Wir schneiden den Baum, häckseln das Schnittgut vor Ort und hinterlassen Ihr Grundstück sauberer, als wir es vorgefunden haben.
+- **Schonende Pflegeschnitte** wie das Entfernen von Totholz oder ein leichter Formschnitt sind auch in der Schonzeit vom 1. März bis 30. September möglich. Stärkere Eingriffe planen wir in der Regel außerhalb dieser Zeit.
+- **Brütende Vögel:** In der Nähe eines besetzten Nests schneiden wir nicht. Größere Arbeiten an diesem Baum verschieben wir, bis die Jungen ausgeflogen sind.
+- **Baumschutzsatzung:** Ob für Ihren Baum zusätzliche Regeln gelten, erfahren Sie bei Ihrer Stadt oder Gemeinde.

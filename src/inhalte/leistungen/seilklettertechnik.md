@@ -18,6 +18,18 @@ vorteile:
   - titel: "Vom Pflegeschnitt bis zur Fällung"
     text: "Totholz, Kronenpflege, Rückschnitt oder ein Baum, der Stück für Stück abgetragen werden muss: Am Seil erreichen wir jeden Teil der Krone."
 fragenTitel: "Fragen zur Seilklettertechnik"
+aufruf: "Kein Platz für eine Hubarbeitsbühne?"
+ablauf:
+  - titel: "Anfrage mit Fotos"
+    text: "Fotos der Krone und der Fläche unter dem Baum."
+  - titel: "Kostenlose Ersteinschätzung"
+    text: "Wir prüfen, welche Arbeiten nötig sind und wie sie sich am besten erledigen lassen."
+  - titel: "Besichtigung bei Bedarf"
+    text: "Wenn nötig, beurteilen wir Baum und Umgebung vor Ort."
+  - titel: "Angebot mit Pauschalpreis"
+    text: "Schriftlich, mit allen Arbeiten im Überblick."
+  - titel: "Arbeit in der Krone"
+    text: "Schnittgut gehäckselt, abgefahren oder als Mulch für Sie. Ihr Grundstück ist danach sauberer als vorher."
 kosten:
   frage: "Was kosten Arbeiten mit Seilklettertechnik?"
   einleitung: "Der Aufwand hängt vom Baum und von den gewünschten Arbeiten ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
@@ -36,25 +48,17 @@ kosten:
 
 ## Was wir am Seil erledigen
 
-Am Seil erreichen wir jeden Teil der Krone, auch dort, wo keine Hubarbeitsbühne hinkommt. Die Seilklettertechnik eignet sich deshalb für fast alle Arbeiten am Baum:
+Am Seil erreichen wir jeden Teil der Krone, auch dort, wo keine Hubarbeitsbühne hinkommt:
 
-- **Totholz entfernen:** trockene und abgestorbene Äste, die sonst herabfallen könnten.
-- **Kronenpflege:** Äste, die sich kreuzen, aneinander scheuern oder nach innen wachsen, und eine zu dichte Krone auslichten.
-- **Rückschnitt und Kroneneinkürzung:** Äste an Dach, Fassade oder Dachrinne zurücknehmen und eine zu groß gewordene Krone fachgerecht verkleinern.
-- **Fällung Stück für Stück:** Kann ein Baum nicht im Ganzen fallen, tragen wir ihn von oben ab, Ast für Ast und Stammstück für Stammstück.
+- **Totholz entfernen,** bevor trockene Äste herabfallen.
+- **Kronenpflege:** kreuzende, scheuernde und nach innen wachsende Äste entfernen, dichte Kronen auslichten.
+- **Rückschnitt und Kroneneinkürzung** an Dach, Fassade oder Dachrinne.
+- **Fällung Stück für Stück,** wenn ein Baum nicht im Ganzen fallen kann.
 
-## Größere Schnitte und Fällungen am Seil
-
-Für starke Äste, deutliche Rückschnitte und Fällungen ist die Motorsäge im Baum nötig. Auch diese Arbeiten übernehmen wir für Sie, ausgeführt mit der dafür nötigen Qualifikation SKT-B. Größere Teile werden dabei am Seil kontrolliert abgelassen, so bleiben Dach, Zaun und Beete unter dem Baum geschützt. Welche Arbeiten bei Ihrem Baum anstehen, sagen wir Ihnen nach Sichtung Ihrer Fotos und vor Beginn der Arbeiten.
+Für starke Äste, deutliche Rückschnitte und Fällungen ist die Motorsäge im Baum nötig. Auch das übernehmen wir, ausgeführt mit der dafür nötigen Qualifikation SKT-B. Größere Teile lassen wir am Seil kontrolliert ab, so bleiben Dach, Zaun und Beete geschützt.
 
 ## Warum ohne schweres Gerät
 
-Mit der Hubarbeitsbühne arbeiten wir dort, wo sie hinkommt. Sie braucht aber eine feste Zufahrt und eine tragfähige Standfläche. In vielen Gärten gibt es beides nicht, oder Rasen und Wurzelbereich würden unter dem Gewicht leiden. Am Seil kommen wir ohne Fahrzeug an den Baum. Ausrüstung und Schnittgut tragen wir zu Fuß, der Häcksler bleibt an der Zufahrt. Wir führen nur die Arbeiten aus, die wirklich nötig sind, und schonen so den Baum und seine Umgebung. Ihren Garten hinterlassen wir sauberer, als wir ihn vorgefunden haben.
+Eine Hubarbeitsbühne braucht eine feste Zufahrt und eine tragfähige Standfläche. In vielen Gärten gibt es beides nicht, oder Rasen und Wurzeln würden unter dem Gewicht leiden. Am Seil kommen wir ohne Fahrzeug an den Baum, der Häcksler bleibt an der Zufahrt.
 
-## So gehen wir vor
-
-1. **Anfrage mit Fotos:** Sie schicken uns Fotos der Krone und der Fläche unter dem Baum.
-2. **Kostenlose Ersteinschätzung:** Wir prüfen, welche Arbeiten in der Krone nötig sind und wie sie sich am besten erledigen lassen.
-3. **Besichtigung bei Bedarf:** Wenn nötig, vereinbaren wir einen Termin vor Ort und beurteilen Baum und Umgebung persönlich.
-4. **Schriftliches Angebot:** Sie erhalten ein Angebot, in dem alle Arbeiten aufgeführt sind.
-5. **Arbeit in der Krone und Aufräumen:** Wir erledigen die Schnitte, häckseln das Schnittgut vor Ort und fahren es ab oder lassen es Ihnen als Mulch da. Ihr Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben.
+Wir führen nur die Arbeiten aus, die wirklich nötig sind, und schonen so den Baum und seine Umgebung. Ihren Garten hinterlassen wir sauberer, als wir ihn vorgefunden haben.

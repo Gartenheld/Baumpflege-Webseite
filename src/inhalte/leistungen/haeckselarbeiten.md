@@ -17,6 +17,18 @@ vorteile:
   - titel: "Abtransport auf Wunsch"
     text: "Was Sie nicht als Mulch behalten möchten, laden wir auf und fahren es ab."
 fragenTitel: "Fragen zu Häckselarbeiten"
+aufruf: "Zu viel Schnittgut im Garten?"
+ablauf:
+  - titel: "Anfrage mit Fotos"
+    text: "Fotos des Schnittguts und des Wegs bis zur Zufahrt."
+  - titel: "Kostenlose Ersteinschätzung"
+    text: "Wir schätzen Menge und Aufwand ein."
+  - titel: "Besichtigung bei Bedarf"
+    text: "Bei großen Mengen oder schwierigem Zugang sehen wir uns alles vor Ort an."
+  - titel: "Angebot mit Pauschalpreis"
+    text: "Schriftlich, mit Mulch für Ihren Garten oder mit Abtransport."
+  - titel: "Häckseln und Aufräumen"
+    text: "Häckselgut abgeladen, wo Sie es möchten, oder abgefahren. Ihr Grundstück ist danach sauberer als vorher."
 kosten:
   frage: "Was kosten Häckselarbeiten?"
   einleitung: "Der Preis richtet sich nach Menge und Aufwand. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
@@ -36,25 +48,16 @@ kosten:
 ## Was wir häckseln
 
 - Äste und Kronenholz aus Baumpflege, Fällung oder Sturmschaden
-- Heckenschnitt, Strauchschnitt und anderer Grünschnitt
+- Hecken-, Strauch- und anderen Grünschnitt
 - Schnittgut, das Sie selbst gesammelt haben, nach Absprache
 
-Das Material sollte frei von Erde, Steinen, Draht, Kunststoff und anderen Fremdstoffen sein. Diese beschädigen die Messer und gehören nicht in den Mulch. Wurzeln mit anhaftender Erde eignen sich nicht zum Häckseln. Ob einzelne sehr starke Äste in den Häcksler passen oder anders verarbeitet werden, klären wir anhand Ihrer Fotos.
+Das Material sollte frei von Erde, Steinen, Draht und Kunststoff sein. Wurzeln mit anhaftender Erde eignen sich nicht. Ob sehr starke Äste in den Häcksler passen, klären wir anhand Ihrer Fotos.
 
-## Häckselgut als Mulch
+## Mulch oder Abtransport
 
-Häckselgut ist ein guter Mulch für Gehölzflächen, unter Hecken und für naturnahe Wege. Eine Schicht von einigen Zentimetern hält den Boden feucht, unterdrückt Unkraut und wird nach und nach zu Humus. Gleichzeitig bleibt das Material im Kreislauf Ihres Gartens, statt abgefahren zu werden.
+Gehäckselt schrumpft ein großer Asthaufen deutlich, viele Fahrten zur Grünschnittannahme entfallen. Das Häckselgut nehmen wir mit oder laden es dort ab, wo Sie es haben möchten:
 
-Für Gemüsebeete und frisch gesäte Flächen ist frisches Häckselgut weniger geeignet, weil es beim Verrotten dem Boden Stickstoff entzieht. Sagen Sie uns einfach, wo das Häckselgut hin soll. Wir laden es dort ab, wo Sie es haben möchten, oder nehmen alles mit.
+- **Als Mulch** unter Hecken, auf Gehölzflächen und naturnahen Wegen. Er hält den Boden feucht, unterdrückt Unkraut und wird nach und nach zu Humus.
+- **Nicht für Gemüsebeete** und frisch gesäte Flächen, weil frisches Häckselgut beim Verrotten Stickstoff bindet.
 
-## Weniger Arbeit für Sie
-
-Ein großer Haufen Äste nimmt viel Platz ein. Gehäckselt schrumpft das Volumen deutlich. Was sonst viele Fahrten mit Anhänger oder Kofferraum bedeutet, ist so in kurzer Zeit erledigt. Fällt das Schnittgut bei unseren eigenen Arbeiten an, etwa bei Baumpflege oder Fällung, häckseln wir es ohnehin direkt vor Ort.
-
-## So gehen wir vor
-
-1. **Anfrage mit Fotos:** Sie schicken uns Fotos des Schnittguts und des Wegs bis zur Straße oder Zufahrt.
-2. **Kostenlose Ersteinschätzung:** Wir schätzen Menge und Aufwand ein.
-3. **Besichtigung bei Bedarf:** Bei großen Mengen oder schwierigem Zugang sehen wir uns alles vor Ort an.
-4. **Schriftliches Angebot:** Sie erhalten ein Angebot, ob mit Mulch für Ihren Garten oder mit Abtransport.
-5. **Häckseln und Aufräumen:** Wir häckseln vor Ort, laden das Häckselgut nach Ihren Wünschen ab oder fahren es ab. Ihr Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben.
+Fällt Schnittgut bei unseren eigenen Arbeiten an, etwa bei Baumpflege oder Fällung, häckseln wir es ohnehin direkt vor Ort.

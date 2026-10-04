@@ -17,6 +17,18 @@ vorteile:
   - titel: "Ehrliche Auskunft"
     text: "Sie erfahren offen, wann wir kommen können und welche Arbeiten mit unseren Mitteln möglich sind."
 fragenTitel: "Fragen zur Sturmschadenbeseitigung"
+aufruf: "Schaden nach dem Sturm?"
+ablauf:
+  - titel: "Sicherheit zuerst"
+    text: "Bei akuter Gefahr rufen Sie die Feuerwehr unter 112 und halten Abstand."
+  - titel: "Anfrage mit Fotos"
+    text: "Fotos der Schäden und eine kurze Beschreibung der Lage."
+  - titel: "Antwort in 24 Stunden"
+    text: "Persönlich an Werktagen, mit kostenloser Ersteinschätzung."
+  - titel: "Angebot mit Pauschalpreis"
+    text: "Schriftlich, bei Bedarf nach einer Besichtigung vor Ort."
+  - titel: "Beseitigung und Aufräumen"
+    text: "Holz aufgearbeitet, Schnittgut gehäckselt und abgefahren. Ihr Grundstück ist danach sauberer als vorher."
 kosten:
   frage: "Was kostet die Beseitigung eines Sturmschadens?"
   einleitung: "Das hängt stark davon ab, was der Sturm angerichtet hat. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
@@ -35,31 +47,18 @@ kosten:
 
 ## Bei akuter Gefahr: zuerst 112
 
-Liegt ein Baum auf einer Straße oder auf einer Leitung, oder droht er auf Menschen oder ein bewohntes Haus zu stürzen, rufen Sie bitte sofort die Feuerwehr unter 112. Halten Sie Abstand und betreten Sie den Bereich unter beschädigten Kronen nicht. Abgebrochene Äste können noch in der Krone hängen und später ohne Vorwarnung herunterfallen.
-
-## Wie schnell wir kommen können
-
-Nach einem Sturm erreichen uns oft viele Anfragen gleichzeitig. Auch dann antworten wir auf jede neue Anfrage innerhalb von 24 Stunden an Werktagen. Fälle, in denen Gefahr für Menschen, Gebäude oder Wege besteht, erledigen wir zuerst. Einen Notdienst rund um die Uhr bieten wir nicht an. Bei akuter Gefahr ist deshalb immer die Feuerwehr der erste Ansprechpartner.
-
-## Fotos für die Versicherung
-
-Fotografieren Sie die Schäden, bevor aufgeräumt wird: den Baum, abgebrochene Äste und beschädigte Gegenstände, am besten aus mehreren Blickwinkeln. Solche Bilder können für die Meldung bei Ihrer Versicherung hilfreich sein. Welche Kosten übernommen werden, klären Sie bitte direkt mit Ihrer Versicherung. Die Fotos helfen uns außerdem bei der Ersteinschätzung.
+Liegt ein Baum auf einer Straße oder Leitung, oder droht er auf Menschen oder ein bewohntes Haus zu stürzen, rufen Sie bitte sofort die Feuerwehr unter 112. Halten Sie Abstand: Abgebrochene Äste können noch in der Krone hängen und ohne Vorwarnung herabfallen.
 
 ## Was wir übernehmen
 
 - umgestürzte Bäume und Stämme zersägen und abtransportieren
-- abgebrochene Äste aufnehmen, zerkleinern und vor Ort häckseln
+- hängende Äste aus der Krone holen, mit der Hubarbeitsbühne oder am Seil
 - beschädigte Bäume fällen, die nicht mehr zu erhalten sind
-- das Grundstück aufräumen und das Schnittgut abfahren
+- Schnittgut vor Ort häckseln, aufräumen und alles abfahren
 
-Hängen abgebrochene Äste noch hoch in der Krone, holen wir sie je nach Lage mit der Hubarbeitsbühne oder am Seil herunter. Vorher klären wir, wie sich das sicher machen lässt.
+Nach einem Sturm erreichen uns oft viele Anfragen gleichzeitig. Auch dann antworten wir auf jede neue Anfrage innerhalb von 24 Stunden an Werktagen. Fälle mit Gefahr für Menschen, Gebäude oder Wege erledigen wir zuerst. Einen Notdienst rund um die Uhr bieten wir nicht an.
 
-Auch nach einem Sturm gilt der Artenschutz. Entdecken wir in einem beschädigten Baum ein Nest oder Fledermäuse, sichern wir zunächst nur das Nötigste und stimmen alles Weitere mit der Unteren Naturschutzbehörde ab.
+## Gut zu wissen
 
-## So gehen wir vor
-
-1. **Sicherheit zuerst:** Bei akuter Gefahr rufen Sie die Feuerwehr unter 112 und halten Abstand.
-2. **Anfrage mit Fotos:** Sie schicken uns Fotos der Schäden und beschreiben kurz die Lage.
-3. **Kostenlose Ersteinschätzung:** Wir sichten Ihre Anfrage und melden uns innerhalb von 24 Stunden an Werktagen.
-4. **Besichtigung und Angebot:** Bei Bedarf sehen wir uns den Schaden vor Ort an. Danach erhalten Sie ein schriftliches Angebot.
-5. **Beseitigung und Aufräumen:** Wir arbeiten das Holz auf, häckseln das Schnittgut vor Ort und fahren es ab. Ihr Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben.
+- **Versicherung:** Fotografieren Sie die Schäden, bevor aufgeräumt wird. Welche Kosten übernommen werden, klären Sie bitte direkt mit Ihrer Versicherung.
+- **Artenschutz:** Entdecken wir in einem beschädigten Baum ein Nest oder Fledermäuse, sichern wir zunächst nur das Nötigste und stimmen alles Weitere mit der Unteren Naturschutzbehörde ab.

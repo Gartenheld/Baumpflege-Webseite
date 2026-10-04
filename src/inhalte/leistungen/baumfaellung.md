@@ -17,6 +17,18 @@ vorteile:
   - titel: "Wurzelstock nach Wunsch"
     text: "Ob der Stumpf im Boden bleibt oder entfernt wird, entscheiden Sie. Beides planen wir von Anfang an mit ein."
 fragenTitel: "Fragen zur Baumfällung"
+aufruf: "Muss Ihr Baum weg?"
+ablauf:
+  - titel: "Anfrage mit Fotos"
+    text: "Fotos vom Baum und seiner Umgebung, gern aus mehreren Blickwinkeln."
+  - titel: "Kostenlose Ersteinschätzung"
+    text: "Wir prüfen, ob und wie die Fällung sicher möglich ist."
+  - titel: "Besichtigung bei Bedarf"
+    text: "Bei engen oder schwierigen Lagen sehen wir uns alles vor Ort an."
+  - titel: "Angebot mit Pauschalpreis"
+    text: "Schriftlich und auf Wunsch einschließlich Wurzelstock."
+  - titel: "Fällung und Aufräumen"
+    text: "Schnittgut gehäckselt und abgefahren. Ihr Grundstück ist danach sauberer als vorher."
 kosten:
   frage: "Was kostet eine Baumfällung?"
   einleitung: "Jede Fällung ist anders, deshalb nennen wir hier keine Preise. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
@@ -37,34 +49,24 @@ kosten:
 
 ## Wann eine Fällung nötig wird
 
-Wir fällen einen Baum nicht leichtfertig. Häufige Gründe sind:
+Wir fällen nur, wenn ein Baum nicht mehr zu halten ist oder weichen muss, zum Beispiel:
 
-- Der Baum ist abgestorben oder so stark geschädigt, dass er nicht mehr sicher steht.
-- Ein Sturm hat ihn so beschädigt, dass er nicht mehr zu erhalten ist.
+- Der Baum ist abgestorben oder steht nicht mehr sicher.
+- Ein Sturm hat ihn zu stark beschädigt.
 - Er ist für seinen Standort zu groß geworden und bedrängt Haus, Zufahrt oder Leitungen.
-- Der Platz wird für einen Umbau oder eine neue Gestaltung gebraucht.
+- Der Platz wird für einen Umbau gebraucht.
 
-Lässt sich ein Baum mit einer fachgerechten Pflege noch erhalten, sagen wir Ihnen das.
+Lässt sich Ihr Baum mit einer fachgerechten Pflege noch erhalten, sagen wir Ihnen das.
 
-## Sorgfältige Planung vor der Fällung
+## Sicher fällen, auch auf engem Raum
 
-Bevor wir sägen, klären wir die wichtigen Fragen: In welche Richtung kann der Baum sicher fallen? Wie viel Platz ist vorhanden? Was steht in der Nähe, etwa Gebäude, Zäune, Leitungen oder Beete? Daraus ergibt sich, wie die Fällung abläuft und welche Bereiche wir vorher absichern. Hat der Baum genug Platz, fällen wir ihn im Ganzen in die geplante Richtung.
+- **Mit genug Platz:** Wir legen die Fallrichtung fest, sichern den Arbeitsbereich und fällen den Baum im Ganzen.
+- **Auf engem Raum:** Wir tragen den Baum Stück für Stück von oben ab, von der Hubarbeitsbühne aus oder als Kletterfällung am Seil, ausgeführt mit der dafür nötigen Qualifikation SKT-B.
 
-## Problemfällung auf engem Raum
+Ob und wie eine Fällung bei Ihrem Baum möglich ist, sagen wir Ihnen offen, bevor ein Angebot entsteht.
 
-Ist wenig Platz vorhanden, klären wir vorab, ob und wie eine Fällung sicher möglich ist. Kann ein Baum nicht im Ganzen fallen, lässt er sich oft Stück für Stück von oben abtragen. Ist eine feste Zufahrt vorhanden, arbeiten wir dabei von der Hubarbeitsbühne aus. Wo keine Bühne hinkommt, ist eine Kletterfällung mit der Motorsäge am Seil nötig. Auch das übernehmen wir, ausgeführt mit der dafür nötigen Qualifikation SKT-B. Ob und wie das bei Ihrem Baum möglich ist, sagen wir Ihnen offen, bevor ein Angebot entsteht.
+## Genehmigung, Schonzeit und Artenschutz
 
-## Genehmigung und Schonzeit
-
-Viele Städte und Gemeinden schützen größere Bäume durch eine Baumschutzsatzung. Dann kann für die Fällung eine Genehmigung nötig sein. Welche Regeln für Ihren Baum gelten, erfragen Sie im Einzelfall bei Ihrer Stadt oder Gemeinde. Wir sprechen das Thema bei der Planung mit Ihnen an.
-
-Bäume in Ihrem Garten dürfen grundsätzlich auch im Sommer gefällt werden. Wenn das Gesetz es erlaubt, fällen wir deshalb auch zwischen März und September. Die Schonzeit vom 1. März bis 30. September nach dem Bundesnaturschutzgesetz gilt vor allem für Hecken, Gebüsche und Bäume außerhalb von Gärten. Der Artenschutz gilt dagegen das ganze Jahr: Brüten Vögel im Baum, warten wir, bis die Jungen ausgeflogen sind. Bei Baumhöhlen und Fledermausquartieren stimmen wir das weitere Vorgehen mit der Unteren Naturschutzbehörde ab. Wir sehen uns deshalb jeden Baum vorher auf Nester und Höhlen an.
-
-## So gehen wir vor
-
-1. **Anfrage mit Fotos:** Sie schicken uns Fotos des Baums und seiner Umgebung, gern aus mehreren Blickwinkeln.
-2. **Kostenlose Ersteinschätzung:** Wir schätzen ein, ob und wie die Fällung sicher möglich ist.
-3. **Besichtigung bei Bedarf:** Bei engen oder schwierigen Lagen sehen wir uns alles vor Ort an.
-4. **Schriftliches Angebot:** Sie erhalten ein Angebot mit allen Arbeiten, auf Wunsch einschließlich Wurzelstock.
-5. **Fällung:** Wir sichern den Arbeitsbereich und fällen den Baum kontrolliert in die geplante Richtung.
-6. **Aufräumen:** Äste und Kronenholz häckseln wir vor Ort und fahren das Schnittgut ab. Stammholz bleibt auf Wunsch bei Ihnen. Ihr Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben.
+- **Baumschutzsatzung:** Viele Städte und Gemeinden schützen größere Bäume. Dann kann eine Genehmigung nötig sein. Wir sprechen das bei der Planung mit Ihnen an.
+- **Fällen im Sommer:** Bäume in Ihrem Garten dürfen grundsätzlich auch im Sommer gefällt werden. Wenn das Gesetz es erlaubt, fällen wir auch zwischen März und September. Die Schonzeit gilt vor allem für Hecken, Gebüsche und Bäume außerhalb von Gärten.
+- **Tiere im Baum:** Brüten Vögel im Baum, warten wir, bis die Jungen ausgeflogen sind. Bei Baumhöhlen und Fledermausquartieren stimmen wir uns mit der Unteren Naturschutzbehörde ab. Wir sehen uns jeden Baum vorher auf Nester und Höhlen an.

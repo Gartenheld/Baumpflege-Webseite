@@ -17,6 +17,18 @@ vorteile:
   - titel: "Kleine Projekte ohne großes Gerät"
     text: "Überschaubare Arbeiten im Garten erledigen wir ohne schwere Maschinen, die Rasen und Beete beanspruchen."
 fragenTitel: "Fragen zu Hecke und Landschaftspflege"
+aufruf: "Ist Ihre Hecke aus der Form geraten?"
+ablauf:
+  - titel: "Anfrage mit Fotos"
+    text: "Fotos der Hecke oder Fläche, gern mit ungefährer Länge und Höhe."
+  - titel: "Kostenlose Ersteinschätzung"
+    text: "Wir sagen Ihnen, welcher Schnitt sinnvoll ist und wann."
+  - titel: "Besichtigung bei Bedarf"
+    text: "Wenn nötig, sehen wir uns Hecke und Fläche vor Ort an."
+  - titel: "Angebot mit Pauschalpreis"
+    text: "Schriftlich, mit allen Arbeiten im Überblick."
+  - titel: "Schnitt und Aufräumen"
+    text: "Schnittgut gehäckselt und abgefahren. Ihr Grundstück ist danach sauberer als vorher."
 kosten:
   frage: "Was kosten Heckenschnitt und Gehölzpflege?"
   einleitung: "Der Aufwand hängt von Größe, Zustand und Zugänglichkeit ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
@@ -35,30 +47,18 @@ kosten:
 
 ## Heckenschnitt
 
-- **Formschnitt:** Ein regelmäßiger Schnitt hält die Hecke in Form und fördert dichten Wuchs. Wir schneiden sie leicht trapezförmig, unten etwas breiter als oben, damit auch die unteren Bereiche genug Licht bekommen und nicht verkahlen.
-- **Heckenrückschnitt:** Ist eine Hecke zu hoch, zu breit oder von innen kahl geworden, kann ein stärkerer Rückschnitt sie verjüngen. Ob das gelingt, hängt von der Pflanze ab: Hainbuche oder Liguster treiben auch aus altem Holz wieder aus, Thuja und Scheinzypresse dagegen kaum.
+- **Formschnitt:** Ein regelmäßiger, leicht trapezförmiger Schnitt hält die Hecke dicht. Unten etwas breiter als oben, damit auch die unteren Zweige Licht bekommen.
+- **Heckenrückschnitt:** Eine zu hohe, zu breite oder von innen kahle Hecke lässt sich oft verjüngen. Hainbuche und Liguster treiben gut wieder aus, Thuja und Scheinzypresse kaum.
 
-Starke Rückschnitte sind wegen der allgemeinen Schonzeit vom 1. März bis 30. September in der Regel nur außerhalb dieser Zeit erlaubt. Schonende Form- und Pflegeschnitte sind auch im Sommer möglich. Vor dem Schnitt achten wir darauf, ob in der Hecke Vögel brüten. Finden wir ein besetztes Nest, lassen wir diesen Abschnitt aus, bis die Jungen ausgeflogen sind.
+Starke Rückschnitte sind wegen der Schonzeit vom 1. März bis 30. September in der Regel nur außerhalb dieser Zeit erlaubt, schonende Formschnitte auch im Sommer. Brütet ein Vogel in der Hecke, lassen wir diesen Abschnitt aus, bis die Jungen ausgeflogen sind.
 
-## Gehölzpflege und Strauchschnitt
+## Gehölzpflege und kleine Gartenprojekte
 
-Ziersträucher, Gehölzgruppen und frei wachsende Hecken bleiben vital, wenn sie regelmäßig ausgelichtet werden. Wir nehmen alte, vergreiste Triebe heraus, damit junge nachwachsen können, und wählen den Zeitpunkt passend zur Blüte. Frühjahrsblüher wie die Forsythie schneidet man zum Beispiel erst nach der Blüte, damit die Blütenknospen für das nächste Jahr erhalten bleiben.
-
-## Kleine Gartenprojekte ohne große Maschinen
-
-Neben dem Schnitt übernehmen wir überschaubare Arbeiten im Garten, für die kein schweres Gerät nötig ist, zum Beispiel:
+Ziersträucher und Gehölzgruppen lichten wir aus, damit junge Triebe nachwachsen, und schneiden passend zur Blüte. Außerdem übernehmen wir überschaubare Arbeiten ohne schweres Gerät:
 
 - verwilderte Ecken zurückschneiden und wieder nutzbar machen
 - einzelne Sträucher oder kleine Gehölze entfernen
-- kleine Pflanzarbeiten, etwa neue Sträucher oder eine junge Hecke
-- Mulchflächen anlegen, gern mit Häckselgut aus Ihrem eigenen Garten
+- kleine Pflanzarbeiten, etwa eine junge Hecke
+- Mulchflächen anlegen, gern mit Häckselgut aus Ihrem Garten
 
-Klassischen Garten- und Landschaftsbau wie Pflasterarbeiten oder Terrassenbau bieten wir nicht an.
-
-## So gehen wir vor
-
-1. **Anfrage mit Fotos:** Sie schicken uns Fotos der Hecke oder Fläche, gern mit einer groben Angabe zu Länge und Höhe.
-2. **Kostenlose Ersteinschätzung:** Wir sagen Ihnen, welcher Schnitt sinnvoll ist und wann er erfolgen sollte.
-3. **Besichtigung bei Bedarf:** Wenn nötig, vereinbaren wir einen Termin vor Ort und sehen uns Hecke und Fläche persönlich an.
-4. **Schriftliches Angebot:** Sie erhalten ein Angebot mit allen Arbeiten im Überblick.
-5. **Schnitt und Aufräumen:** Wir schneiden, häckseln das Schnittgut vor Ort und hinterlassen Ihr Grundstück sauberer, als wir es vorgefunden haben.
+Klassischen Garten- und Landschaftsbau wie Pflaster- oder Terrassenbau bieten wir nicht an.

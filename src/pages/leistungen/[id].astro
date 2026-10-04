@@ -9,6 +9,8 @@ import FaqListe from '../../components/FaqListe.astro';
 import LeistungsKarten from '../../components/LeistungsKarten.astro';
 import OrteLinks from '../../components/OrteLinks.astro';
 import KontaktAufruf from '../../components/start/KontaktAufruf.astro';
+import AufrufBand from '../../components/AufrufBand.astro';
+import Schritte from '../../components/Schritte.astro';
 import { render } from 'astro:content';
 import { sichtbareLeistungen, faqFuerLeistung, orteSortiert, leistungsUrl } from '../../lib/inhalte';
 import { dienstleistung } from '../../lib/strukturdaten';
@@ -47,9 +49,13 @@ const service = dienstleistung(Astro.site!, leistungsUrl(leistung.id), d.titel, 
 
   <section class="abschnitt" aria-label={d.titel}>
     <div class="huelle">
-      <div class="prosa"><Content /></div>
+      <div class="prosa gegliedert"><Content /></div>
     </div>
   </section>
+
+  <AufrufBand frage={d.aufruf} anfrageLink={anfrageLink} />
+
+  <Schritte schritte={d.ablauf} />
 
   <Kosten frage={d.kosten.frage} einleitung={d.kosten.einleitung} faktoren={d.kosten.faktoren} anfrageLink={anfrageLink} />
 
@@ -90,5 +96,41 @@ const service = dienstleistung(Astro.site!, leistungsUrl(leistung.id), d.titel, 
 
   .abschnitt :global(.karten) li {
     background: var(--creme);
+  }
+
+  /* Leistungstext: ab Desktop Überschrift links, Text rechts, Abschnitte durch feine Linien getrennt */
+  @media (min-width: 60rem) {
+    .gegliedert {
+      max-width: none;
+      display: grid;
+      grid-template-columns: minmax(0, 17rem) minmax(0, 44rem);
+      column-gap: clamp(2.5rem, 5vw, 5rem);
+      align-items: start;
+    }
+
+    /* Im Raster fallen Außenabstände nicht zusammen, deshalb nur Abstände nach oben */
+    .gegliedert > :global(*) {
+      grid-column: 2;
+      margin-bottom: 0;
+    }
+
+    /* Überschrift über mehrere Rasterzeilen, damit eine zweizeilige Überschrift keine Lücke im Text erzeugt */
+    .gegliedert > :global(h2) {
+      grid-column: 1;
+      grid-row: span 12;
+      font-size: 1.6rem;
+      margin-top: 0;
+    }
+
+    .gegliedert > :global(h2 + *) {
+      margin-top: 0;
+    }
+
+    .gegliedert > :global(h2:not(:first-child)),
+    .gegliedert > :global(h2:not(:first-child) + *) {
+      margin-top: 2.75rem;
+      padding-top: 2.75rem;
+      border-top: 1px solid var(--linie);
+    }
   }
 </style>
