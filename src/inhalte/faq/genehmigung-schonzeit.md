@@ -10,7 +10,7 @@ reihenfolge: 20
 
 Vorher prüfen wir drei Dinge:
 
-- **Tiere im Baum:** Brüten Vögel im Baum oder nutzen Fledermäuse eine Höhle, muss die Fällung warten. Das gilt das ganze Jahr. Wir sehen uns jeden Baum vorher genau an.
+- **Tiere im Baum:** Brüten Vögel im Baum oder nutzen Fledermäuse eine Höhle, muss die Fällung warten. Das gilt das ganze Jahr. Vor Beginn der Arbeiten sehen wir uns jeden Baum genau daraufhin an.
 - **Baumschutzsatzung:** Hat Ihre Stadt oder Gemeinde eine Baumschutzsatzung, kann eine Genehmigung nötig sein.
 - **Standort:** Für Bäume außerhalb von Gärten, etwa am Feldrand, sowie für Hecken und Gebüsche gilt vom 1. März bis 30. September eine Schonzeit (**§ 39 Abs. 5 BNatSchG**). Gefällt oder stark zurückgeschnitten wird dann erst ab Oktober. Geht von einem Baum eine akute Gefahr aus, kann die Behörde eine Ausnahme zulassen.
 
