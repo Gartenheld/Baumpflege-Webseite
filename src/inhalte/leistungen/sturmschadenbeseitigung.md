@@ -20,12 +20,12 @@ fragenTitel: "Fragen zur Sturmschadenbeseitigung"
 aufruf: "Schaden nach dem Sturm?"
 kosten:
   frage: "Was kostet die Beseitigung eines Sturmschadens?"
-  einleitung: "Das hängt stark davon ab, was der Sturm angerichtet hat. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
+  einleitung: "Das hängt stark davon ab, was der Sturm angerichtet hat. Nach Ihren Fotos oder, wenn nötig, einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
   faktoren:
     - titel: "Art des Schadens"
       text: "Ein abgebrochener Ast ist schneller beseitigt als ein umgestürzter Baum."
     - titel: "Spannung und Lage"
-      text: "Liegt ein Stamm verkeilt oder unter Spannung, braucht das Aufarbeiten mehr Zeit und Sorgfalt."
+      text: "Ist ein Stamm verkeilt oder steht er unter Spannung, braucht das Aufarbeiten mehr Zeit und Sorgfalt."
     - titel: "Umgebung"
       text: "Liegen Äste oder Stämme auf Zäunen oder anderen Gegenständen, muss besonders vorsichtig gearbeitet werden."
     - titel: "Menge an Holz und Schnittgut"
@@ -40,14 +40,14 @@ Liegt ein Baum auf einer Straße oder Leitung, oder droht er auf Menschen oder e
 
 ## Was wir übernehmen
 
-- umgestürzte Bäume und Stämme zersägen und abtransportieren
+- umgestürzte Bäume und Stämme zersägen und abtransportieren, auf Wunsch bleibt das Stammholz bei Ihnen
 - hängende Äste aus der Krone holen, mit der Hubarbeitsbühne oder am Seil
 - beschädigte Bäume fällen, die nicht mehr zu erhalten sind
 - Schnittgut vor Ort häckseln, aufräumen und alles abfahren
 
-Nach einem Sturm erreichen uns oft viele Anfragen gleichzeitig. Auch dann antworten wir auf jede neue Anfrage innerhalb von 24 Stunden an Werktagen. Fälle mit Gefahr für Menschen, Gebäude oder Wege erledigen wir zuerst. Einen Notdienst rund um die Uhr bieten wir nicht an.
+Nach einem Sturm erreichen uns oft viele Anfragen gleichzeitig. Auch dann antworten wir persönlich auf jede neue Anfrage innerhalb von 24 Stunden an Werktagen. Fälle mit Gefahr für Menschen, Gebäude oder Wege erledigen wir zuerst. Einen Notdienst rund um die Uhr bieten wir nicht an.
 
 ## Gut zu wissen
 
 - **Versicherung:** Fotografieren Sie die Schäden, bevor aufgeräumt wird. Welche Kosten übernommen werden, klären Sie bitte direkt mit Ihrer Versicherung.
-- **Artenschutz:** Entdecken wir in einem beschädigten Baum ein Nest oder Fledermäuse, sichern wir zunächst nur das Nötigste und stimmen alles Weitere mit der Unteren Naturschutzbehörde ab.
+- **Artenschutz:** Entdecken wir in einem beschädigten Baum ein Nest oder Fledermäuse, ruhen die Arbeiten an diesem Baum, bis das Vorgehen geklärt ist. Droht akute Gefahr, sichern wir zunächst nur das Nötigste und stimmen alles Weitere mit der Unteren Naturschutzbehörde ab.

@@ -3,7 +3,7 @@ seitentitel: "Referenzen aus Bornheim, Köln und Bonn | Baumpflege Happe"
 beschreibung: "Einblicke in unsere Arbeit: ausgewählte Projekte zu Baumpflege, Baumfällung und Gartenpflege in Bornheim, Köln, Bonn und Umgebung."
 kicker: Referenzen
 h1: "Projekte aus der Region"
-einleitung: "Hier zeigen wir ausgewählte Arbeiten aus unserem Einsatzgebiet zwischen Köln und Bonn. Zu jedem Projekt nennen wir Ort, Baumart und Aufgabe."
+einleitung: "Hier zeigen wir nach und nach ausgewählte Arbeiten aus unserem Einsatzgebiet zwischen Köln und Bonn. Zu jedem Projekt nennen wir Ort, Baum- oder Gehölzart und Aufgabe."
 karten: []
 ---
 

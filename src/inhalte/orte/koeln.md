@@ -27,8 +27,8 @@ Köln ist von Grünflächen durchzogen, der Grüngürtel und die Rheinufer präg
 
 ## Gut geplant in der Großstadt
 
-In Köln gibt es eine Baumschutzsatzung; ob Ihr Baum darunter fällt und eine Fällung genehmigt werden muss, beantwortet die Stadt Köln. Bei der Planung der Arbeiten berücksichtigen wir die Gegebenheiten vor Ort, etwa Parkmöglichkeiten in engen Straßen oder Nachbargrundstücke, die betroffen sein könnten.
+In Köln gibt es eine Baumschutzsatzung; ob Ihr Baum darunterfällt und eine Fällung genehmigt werden muss, beantwortet die Stadt Köln. Bei der Planung der Arbeiten berücksichtigen wir die Gegebenheiten vor Ort, etwa Parkmöglichkeiten in engen Straßen oder Nachbargrundstücke, die betroffen sein könnten.
 
 ## Anfahrt aus Bornheim
 
-Die Kölner Innenstadt ist rund 20 Kilometer Luftlinie von Bornheim entfernt, der Kölner Süden mit Sürth, Weiß und Godorf liegt deutlich näher. Damit wir die Anfahrt sinnvoll planen können, nennen Sie uns bei der Anfrage am besten gleich Adresse und Stadtteil und schicken Fotos mit. Auf dieser Grundlage schätzen wir den Aufwand kostenlos ein. Einen Termin vor Ort machen wir aus, wenn die Fotos nicht ausreichen, das Angebot bekommen Sie danach schriftlich.
+Die Kölner Innenstadt ist rund 20 Kilometer Luftlinie von Bornheim entfernt, der Kölner Süden mit Sürth, Weiß und Godorf liegt deutlich näher. Damit wir die Anfahrt sinnvoll planen können, nennen Sie uns bei der Anfrage am besten gleich Adresse und Stadtteil und schicken Fotos mit. Auf dieser Grundlage schätzen wir den Aufwand kostenlos ein. Einen Termin vor Ort machen wir aus, wenn die Fotos nicht ausreichen. Das Angebot bekommen Sie danach schriftlich.

@@ -9,7 +9,7 @@ h1: "Wurzelstock entfernen in Bornheim, Köln und Bonn"
 einleitung: "Nach einer Fällung bleibt der Baumstumpf oft jahrelang im Boden. Er stört beim Mähen, ist eine Stolperfalle und steht einer neuen Gestaltung im Weg. Wir entfernen Wurzelstöcke so, dass Sie den Platz wieder nutzen können."
 vorteile:
   - titel: "Fläche wieder nutzbar"
-    text: "Wo der Stumpf stand, ist wieder Platz für Rasen, Beet oder Neupflanzung. Auf Wunsch stellen wir die Rasenfläche gleich mit her."
+    text: "Wo der Stumpf stand, ist wieder Platz für Rasen, Beet oder Neupflanzung. Auf Wunsch stellen wir die Fläche mit Rollrasen oder Rasenansaat wieder her."
   - titel: "Passende Methode"
     text: "Je nach Lage und Größe wird der Wurzelstock gefräst oder ausgegraben, mit der Technik, die zum Standort passt."
   - titel: "Kein neuer Austrieb am Stumpf"
@@ -20,7 +20,7 @@ fragenTitel: "Fragen zur Wurzelstockentfernung"
 aufruf: "Stört ein Wurzelstock?"
 kosten:
   frage: "Was kostet es, einen Wurzelstock zu entfernen?"
-  einleitung: "Der Aufwand hängt vor allem vom Stumpf und seiner Lage ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
+  einleitung: "Der Aufwand hängt vor allem vom Stumpf und seiner Lage ab. Nach Ihren Fotos oder, wenn nötig, einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
   faktoren:
     - titel: "Durchmesser des Stumpfs"
       text: "Ein dicker Stumpf hat ein größeres Wurzelwerk und braucht entsprechend mehr Zeit."
@@ -40,14 +40,14 @@ kosten:
 
 ## Fräsen oder ausgraben?
 
-- **Fräsen:** Die Stubbenfräse zerkleinert den Stumpf bis unter die Bodenoberfläche. Das geht schnell und bewegt wenig Erde. Feine Wurzeln bleiben im Boden und verrotten.
+- **Fräsen:** Die Stubbenfräse zerkleinert den Stumpf bis unter die Bodenoberfläche. Das geht schnell und bewegt wenig Erde. Die übrigen Wurzeln bleiben im Boden und verrotten mit der Zeit.
 - **Ausgraben:** Der Stock wird freigelegt und mit den Hauptwurzeln herausgenommen. Das ist aufwendiger, aber gründlicher.
 
 Welche Methode passt, besprechen wir anhand Ihrer Fotos oder vor Ort. Wichtig ist auch, was danach an der Stelle entstehen soll. Nicht jeder Stumpf muss heraus: Im naturnahen Garten darf er verrotten und bietet Insekten und Pilzen Lebensraum.
 
 ## Leitungen im Boden
 
-Im Wurzelbereich verlaufen oft Wasser-, Strom- oder Gasleitungen. Sagen Sie uns bitte, wenn Sie wissen, wo Leitungen liegen. Im Zweifel gibt Ihr Versorger Auskunft. In solchen Bereichen arbeiten wir besonders vorsichtig.
+Im Wurzelbereich verlaufen oft Wasser-, Strom- oder Gasleitungen. Dort arbeiten wir besonders vorsichtig. Sagen Sie uns bitte, wenn Sie wissen, wo Leitungen liegen. Im Zweifel gibt Ihr Versorger Auskunft.
 
 ## Fläche wiederherstellen
 

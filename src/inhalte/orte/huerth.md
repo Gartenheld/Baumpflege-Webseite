@@ -18,7 +18,7 @@ baumschutz:
 
 ## Eine Stadt mit Bergbaugeschichte
 
-Hürth war lange vom Braunkohleabbau und von der Industrie in Knapsack geprägt. In der Ville rund um Hürth sind auf ehemaligen Abbauflächen inzwischen Wälder und Seen entstanden. Wer am Waldrand wohnt, hat oft Bäume in direkter Nachbarschaft, deren Äste über die Grundstücksgrenze wachsen oder nach einem Sturm im Garten liegen. Wir beseitigen solche Schäden, sägen umgestürzte Stämme auf und räumen die Fläche wieder frei.
+Hürth ist seit Langem vom Braunkohleabbau und von der Industrie in Knapsack geprägt. In der Ville rund um Hürth sind auf ehemaligen Abbauflächen inzwischen Wälder und Seen entstanden. Wer am Waldrand wohnt, hat oft Bäume in direkter Nachbarschaft, deren Äste über die Grundstücksgrenze wachsen oder nach einem Sturm im Garten liegen. Wir beseitigen solche Schäden, sägen umgestürzte Stämme auf und räumen die Fläche wieder frei.
 
 ## Wohngebiete nah an Köln
 

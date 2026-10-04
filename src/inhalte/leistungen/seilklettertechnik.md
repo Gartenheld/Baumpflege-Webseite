@@ -16,28 +16,28 @@ vorteile:
   - titel: "Gezielte Schnitte"
     text: "Direkt in der Krone setzen wir jeden Schnitt genau dort, wo er hingehört."
   - titel: "Vom Pflegeschnitt bis zur Fällung"
-    text: "Totholz, Kronenpflege, Rückschnitt oder ein Baum, der Stück für Stück abgetragen werden muss: Am Seil erreichen wir jeden Teil der Krone."
+    text: "Totholz, Kronenpflege, Rückschnitt oder ein Baum, der Stück für Stück abgetragen werden muss: Am Seil erreichen wir fast jeden Teil der Krone."
 fragenTitel: "Fragen zur Seilklettertechnik"
 aufruf: "Kein Platz für eine Hubarbeitsbühne?"
 kosten:
   frage: "Was kosten Arbeiten mit Seilklettertechnik?"
-  einleitung: "Der Aufwand hängt vom Baum und von den gewünschten Arbeiten ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
+  einleitung: "Der Aufwand hängt vom Baum und von den gewünschten Arbeiten ab. Nach Ihren Fotos oder, wenn nötig, einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
   faktoren:
     - titel: "Höhe und Größe der Krone"
       text: "Eine große, hohe Krone braucht mehr Zeit für den Aufstieg und die Arbeit darin."
     - titel: "Art und Umfang der Arbeiten"
-      text: "Einzelne trockene Äste sind schneller entfernt als ein Rückschnitt der ganzen Krone oder eine Fällung Stück für Stück."
+      text: "Einzelne trockene Äste zu entfernen geht schneller als ein Rückschnitt der ganzen Krone oder eine Fällung Stück für Stück."
     - titel: "Zustand des Baums"
       text: "Ist der Baum geschwächt, braucht die Wahl sicherer Anschlagpunkte mehr Zeit und Sorgfalt."
     - titel: "Umgebung unter dem Baum"
-      text: "Stehen Gewächshaus, Teich oder empfindliche Beete unter der Krone, muss das Schnittgut besonders vorsichtig nach unten gebracht werden."
+      text: "Befinden sich Gewächshaus, Teich oder empfindliche Beete unter der Krone, muss das Schnittgut besonders vorsichtig nach unten gebracht werden."
     - titel: "Schnittgut"
       text: "Menge und Weg bis zum Häcksler bestimmen, wie lange das Aufräumen dauert."
 ---
 
 ## Was wir am Seil erledigen
 
-Am Seil erreichen wir jeden Teil der Krone, auch dort, wo keine Hubarbeitsbühne hinkommt:
+Am Seil erreichen wir fast jeden Teil der Krone, auch dort, wo keine Hubarbeitsbühne hinkommt:
 
 - **Totholz entfernen,** bevor trockene Äste herabfallen.
 - **Kronenpflege:** kreuzende, scheuernde und nach innen wachsende Äste entfernen, dichte Kronen auslichten.

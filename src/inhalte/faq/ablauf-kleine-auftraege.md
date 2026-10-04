@@ -1,7 +1,7 @@
 ---
 frage: "Übernehmen Sie auch kleine Arbeiten?"
 thema: ablauf
-leistungen: [wurzelstockentfernung, landschaftspflege-heckenschnitt]
+leistungen: [wurzelstockentfernung, landschaftspflege-heckenschnitt, haeckselarbeiten]
 aufFaqSeite: true
 reihenfolge: 20
 ---

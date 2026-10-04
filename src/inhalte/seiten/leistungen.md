@@ -17,4 +17,4 @@ Für Hecken und Grünflächen bieten wir Landschaftspflege und Heckenschnitt an,
 
 ## Bei jeder Leistung gleich
 
-Sie schicken uns Fotos und erhalten eine kostenlose Ersteinschätzung. Danach bekommen Sie ein schriftliches Angebot. Aufräumen und Entsorgung gehören zur Ausführung dazu.
+Sie schicken uns Fotos und erhalten eine kostenlose Ersteinschätzung. Wenn nötig, sehen wir uns die Arbeiten vor Ort an. Danach bekommen Sie ein schriftliches Angebot mit Pauschalpreis. Aufräumen und Entsorgung gehören zur Ausführung dazu.

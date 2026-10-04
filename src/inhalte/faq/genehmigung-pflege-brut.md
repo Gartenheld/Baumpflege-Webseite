@@ -5,8 +5,8 @@ leistungen: [baumpflege, seilklettertechnik, landschaftspflege-heckenschnitt]
 aufFaqSeite: true
 reihenfolge: 35
 ---
-**Ja, aber nicht in der Nähe des Nests.** Ein Pflegeschnitt ist möglich, solange das Nest und die Tiere keinen Schaden nehmen. Finden wir ein besetztes Nest oder Fledermäuse, ruhen die Arbeiten an diesem Baum oder Heckenabschnitt aber, bis das weitere Vorgehen geklärt ist.
+**Am Baum oder Heckenabschnitt mit dem Nest meist erst, wenn die Jungen ausgeflogen sind.** Finden wir ein besetztes Nest, ruhen die Arbeiten dort, bis das weitere Vorgehen geklärt ist. Schon Arbeiten direkt daneben können die Altvögel so stören, dass sie die Brut aufgeben. Bei vielen Gartenvögeln dauert das nur wenige Wochen.
 
-- **Brütende Vögel:** Rund um das Nest schneiden wir nicht. Arbeiten direkt daneben können die Altvögel so stören, dass sie die Brut aufgeben. Den Schnitt an diesem Baum oder Heckenabschnitt verschieben wir deshalb meist, bis die Jungen ausgeflogen sind. Andere Bäume und Hecken auf Ihrem Grundstück können wir mit genug Abstand trotzdem pflegen.
+- **Andere Bäume und Hecken** auf Ihrem Grundstück können wir mit genug Abstand trotzdem pflegen.
 - **Fledermäuse:** Den Ast oder Stammteil mit dem Quartier schneiden wir nicht, und die Höhle bleibt offen. Ob andere Teile der Krone mit Abstand gepflegt werden können, stimmen wir vorher mit der Unteren Naturschutzbehörde ab.
 - **Im Zweifel** fragen wir vorher bei der Unteren Naturschutzbehörde nach.

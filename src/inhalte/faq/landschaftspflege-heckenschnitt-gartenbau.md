@@ -5,4 +5,4 @@ leistungen: [landschaftspflege-heckenschnitt]
 aufFaqSeite: true
 reihenfolge: 30
 ---
-Nein. Wir haben uns auf Bäume, Hecken und Gehölze spezialisiert und bieten keinen klassischen Garten- und Landschaftsbau an. Kleinere Gartenarbeiten ohne große Maschinen übernehmen wir aber gern, zum Beispiel das Zurückschneiden verwilderter Ecken, kleine Pflanzarbeiten oder das Anlegen von Mulchflächen.
+Nein. Wir haben uns auf Bäume, Hecken und Gehölze spezialisiert und bieten keinen klassischen Garten- und Landschaftsbau an. Kleinere Gartenarbeiten ohne große Maschinen übernehmen wir aber gern, zum Beispiel das Zurückschneiden verwilderter Ecken, kleine Pflanzarbeiten oder das Anlegen von Mulchflächen. Am wirtschaftlichsten ist es, solche Arbeiten mit einem Baum- oder Heckenschnitt an einem Termin zu verbinden.

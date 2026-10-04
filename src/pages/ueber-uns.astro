@@ -3,7 +3,7 @@ import Basis from '../layouts/Basis.astro';
 import Seitenkopf from '../components/Seitenkopf.astro';
 import Karten from '../components/Karten.astro';
 import Foto from '../components/Foto.astro';
-import Qualifikation from '../components/start/Qualifikation.astro';
+import QualifikationListe from '../components/QualifikationListe.astro';
 import KontaktAufruf from '../components/start/KontaktAufruf.astro';
 import Icon from '../components/Icon.astro';
 import { render } from 'astro:content';
@@ -48,7 +48,7 @@ const { Content } = await render(s);
     </div>
   </section>
 
-  <Qualifikation />
+  <QualifikationListe />
 
   <KontaktAufruf />
 </Basis>

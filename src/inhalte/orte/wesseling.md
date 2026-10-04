@@ -22,11 +22,11 @@ Wesseling ist geprägt vom Rhein und von großen Industrieanlagen, daneben gibt 
 
 ## Gärten in Berzdorf, Keldenich und Urfeld
 
-In den Wohngebieten der Stadtteile finden sich viele Einfamilien- und Reihenhäuser mit Gärten unterschiedlicher Größe. Typische Aufgaben sind dort der Schnitt von Hecken und Gartenbäumen, die Fällung zu groß gewordener Nadelbäume und das Entfernen alter Wurzelstöcke. So bekommen Sie Fällung und Wurzelstockentfernung aus einer Hand.
+In den Wohngebieten der Stadtteile finden sich viele Einfamilien- und Reihenhäuser mit Gärten unterschiedlicher Größe. Typische Aufgaben sind dort der Schnitt von Hecken und Gartenbäumen, die Fällung zu groß gewordener Nadelbäume und das Entfernen alter Wurzelstöcke. Fällung und Wurzelstockentfernung erhalten Sie dabei aus einer Hand.
 
 ## Kurzer Weg aus Bornheim
 
-Mit rund 7 Kilometern Luftlinie gehört Wesseling zu den Orten, die wir von Bornheim aus gut erreichen. Die Nähe macht Besichtigungen unkompliziert. Für eine Einschätzung brauchen wir zunächst nur Fotos vom Baum und seinem Umfeld, etwa vom Abstand zu Haus, Zaun und Nachbargrundstück. Wir melden uns mit einer ersten Einschätzung, die Sie nichts kostet, und schicken Ihnen danach ein schriftliches Angebot. Ob die Stadt Wesseling für Ihren Baum eine Genehmigung verlangt, klären Sie bitte vor der Fällung mit der Verwaltung.
+Mit rund 7 Kilometern Luftlinie gehört Wesseling zu den Orten, die wir von Bornheim aus gut erreichen. Für eine Einschätzung brauchen wir zunächst nur Fotos vom Baum und seinem Umfeld, auf denen etwa der Abstand zu Haus, Zaun und Nachbargrundstück zu erkennen ist. Wir melden uns mit einer ersten Einschätzung, die Sie nichts kostet. Ist eine Besichtigung nötig, lässt sie sich dank der kurzen Anfahrt unkompliziert einrichten. Danach erhalten Sie ein schriftliches Angebot. Ob die Stadt Wesseling für Ihren Baum eine Genehmigung verlangt, klären Sie bitte vor der Fällung mit der Verwaltung.
 
 ## Aufräumen gehört dazu
 

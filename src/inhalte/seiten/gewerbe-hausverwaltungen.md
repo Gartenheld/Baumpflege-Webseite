@@ -32,7 +32,7 @@ karten:
 
 Für Bäume auf Ihren Flächen gilt die Verkehrssicherungspflicht. Das heißt: Die Bäume müssen in zumutbaren Abständen auf erkennbare Gefahren geprüft werden, und solche Gefahren müssen beseitigt werden. Dabei unterstützen wir Sie. Schäden, die bei unserer Arbeit erkennbar sind, etwa Totholz, Risse oder lose Äste, benennen wir und beseitigen sie nach Absprache. Jede durchgeführte Arbeit halten wir schriftlich fest, mit Datum, Objekt und Art der Arbeiten. So können Sie die Pflege Ihrer Bäume jederzeit nachvollziehen und belegen.
 
-Unsere Dokumentation ersetzt keine Baumkontrolle durch einen Sachverständigen. Ob eine solche Kontrolle für Ihre Bäume sinnvoll ist, hängt von Größe, Zustand und Standort ab.
+Unsere Dokumentation ersetzt keine regelmäßige Baumkontrolle durch eine dafür qualifizierte Fachkraft. Ob eine solche Kontrolle für Ihre Bäume sinnvoll ist, hängt von Größe, Zustand und Standort ab.
 
 ## Für wen das passt
 

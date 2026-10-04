@@ -17,13 +17,13 @@ karten:
 
 ## Arbeitsweise
 
-Jeder Auftrag beginnt mit Ihren Fotos. Daraus erstellen wir eine kostenlose Ersteinschätzung, bei Bedarf sehen wir uns den Baum vor Ort an. Danach erhalten Sie ein schriftliches Angebot, in dem die vereinbarten Arbeiten, das Aufräumen und die Entsorgung aufgeführt sind. Den Termin stimmen wir mit Ihnen ab. Vorher klären wir, wie wir auf das Grundstück kommen und wo unser Fahrzeug stehen kann, damit am Arbeitstag alles reibungslos läuft.
+Am Anfang stehen meist Ihre Fotos. Daraus erstellen wir eine kostenlose Ersteinschätzung, bei Bedarf sehen wir uns den Baum vor Ort an. Danach erhalten Sie ein schriftliches Angebot, in dem die vereinbarten Arbeiten, das Aufräumen und die Entsorgung aufgeführt sind. Den Termin stimmen wir mit Ihnen ab. Vorher klären wir, wie wir auf das Grundstück kommen und wo unser Fahrzeug stehen kann, damit am Arbeitstag alles reibungslos läuft.
 
 Bei der Pflege schneiden wir so viel wie nötig und so wenig wie möglich, damit der Baum gesund und stabil bleibt. Eine Fällung empfehlen wir nur, wenn ein Baum nicht mehr zu halten ist oder weichen muss. Schonzeit und Artenschutz halten wir ein, und vor Fällungen und größeren Schnitten achten wir auf Nester und geschützte Tiere.
 
 ## Sicherheit
 
-Arbeiten an Bäumen verlangen Sorgfalt und eine gute Vorbereitung. Vor jeder Fällung legen wir die Fallrichtung fest und sichern den Arbeitsbereich ab. Gebäude, Leitungen, Zäune und Beete in der Nähe beziehen wir in die Planung ein. Während der Arbeiten achten wir darauf, dass niemand den Gefahrenbereich betritt. Wir übernehmen nur Arbeiten, für die wir qualifiziert und ausgerüstet sind. Für die Arbeit mit der Motorsäge haben wir die Qualifikationen AS Baum I und AS Baum II, für das Arbeiten am Seil in der Krone die Qualifikation SKT-A. Die Qualifikation BSB 1 ist die Grundlage, um vor dem Klettern und vor Fällungen die Bruch- und Standsicherheit eines Baumes einzuschätzen. Arbeiten mit der Motorsäge im Baum bieten wir ebenfalls an, ausgeführt mit der dafür nötigen Qualifikation SKT-B. Alle Qualifikationen finden Sie im Überblick auf dieser Seite.
+Arbeiten an Bäumen verlangen Sorgfalt und eine gute Vorbereitung. Vor jeder Fällung legen wir die Fallrichtung fest und sichern den Arbeitsbereich ab. Gebäude, Leitungen, Zäune und Beete in der Nähe beziehen wir in die Planung ein. Während der Arbeiten achten wir darauf, dass niemand den Gefahrenbereich betritt. Wir übernehmen nur Arbeiten, für die wir qualifiziert und ausgerüstet sind. Für die Arbeit mit der Motorsäge haben wir die Qualifikationen AS Baum I und AS Baum II, für das Arbeiten am Seil in der Krone die Qualifikation SKT-A. Die Qualifikation BSB 1 ist die Grundlage, um vor dem Klettern und vor Fällungen die Bruch- und Standsicherheit eines Baumes einzuschätzen. Arbeiten mit der Motorsäge im Baum bieten wir ebenfalls an, ausgeführt mit der dafür nötigen Qualifikation SKT-B. Alle Qualifikationen finden Sie im Überblick weiter unten auf dieser Seite.
 
 ## Ausstattung
 

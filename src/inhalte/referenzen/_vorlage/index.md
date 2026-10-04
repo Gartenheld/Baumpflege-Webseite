@@ -16,7 +16,7 @@ titel: "[Platzhalter: Fällung einer Fichte in Bornheim-Merten]"
 # Dann erscheint die Referenz auch auf der passenden Ortsseite. Für andere Orte freier Text, zum Beispiel "Meckenheim".
 ort: bornheim
 # Eine oder mehrere Leistungen (Dateinamen aus src/inhalte/leistungen): baumpflege, baumfaellung,
-# sturmschadenbeseitigung, wurzelstockentfernung, haeckselarbeiten, landschaftspflege-heckenschnitt
+# sturmschadenbeseitigung, wurzelstockentfernung, haeckselarbeiten, landschaftspflege-heckenschnitt, seilklettertechnik
 leistungen: [baumfaellung]
 baumart: "[Platzhalter: Fichte]"
 # Ein Satz, was zu tun war, zum Beispiel "Fällung einer abgestorbenen Fichte dicht am Wohnhaus":

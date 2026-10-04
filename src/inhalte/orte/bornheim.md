@@ -17,7 +17,7 @@ baumschutz:
 
 ## Ihr Baumpflegebetrieb vor Ort
 
-Unser Betrieb sitzt in Bornheim, und hier sind wir am häufigsten unterwegs. Ob Hersel, Widdig und Uedorf am Rhein oder Merten, Rösberg und Walberberg am Hang: Die Wege zu Ihnen sind kurz. Eine Besichtigung lässt sich deshalb meist gut in unsere Touren einplanen, und auch ein einzelner Baum ist für uns kein zu kleiner Auftrag.
+Unser Betrieb sitzt in Bornheim, und hier sind wir am häufigsten unterwegs. Ob Hersel, Widdig und Uedorf am Rhein oder Merten, Rösberg und Walberberg am Hang: Die Wege zu Ihnen sind kurz. Ist eine Besichtigung nötig, lässt sie sich deshalb meist gut in unsere Touren einplanen, und auch ein einzelner Baum ist für uns kein zu kleiner Auftrag. Stehen mehrere Arbeiten an, lohnt es sich, sie an einem Termin zu bündeln.
 
 ## Obstbäume, Altbäume und Hecken am Vorgebirge
 

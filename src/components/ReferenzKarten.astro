@@ -48,7 +48,7 @@ const eintraege = await Promise.all(
             <dl>
               <div><dt>Ort</dt><dd>{ortName}</dd></div>
               <div><dt>Baumart</dt><dd>{r.data.baumart}</dd></div>
-              <div><dt>Leistung</dt><dd>{leistungen.join(', ')}</dd></div>
+              <div><dt>{leistungen.length > 1 ? 'Leistungen' : 'Leistung'}</dt><dd>{leistungen.join(', ')}</dd></div>
               <div><dt>Zeitpunkt</dt><dd>{datumText(r.data.datum)}</dd></div>
             </dl>
             <p>{r.data.aufgabe}</p>

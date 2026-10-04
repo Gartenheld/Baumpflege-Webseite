@@ -18,7 +18,7 @@ baumschutz:
 
 ## Ländlich zwischen Erft und Swist
 
-Weilerswist gehört zum Kreis Euskirchen und liegt dort, wo die Swist in die Erft mündet. Die Gemeinde ist ländlich geprägt, mit Feldern, kleinen Ortschaften und Gärten, die oft großzügig geschnitten sind. Entlang von Bächen und Feldwegen wachsen Gehölze, die mitunter bis an die Grundstücke heranreichen.
+Weilerswist gehört zum Kreis Euskirchen und liegt dort, wo die Swist in die Erft mündet. Die Gemeinde ist ländlich geprägt, mit Feldern, kleinen Ortschaften und Gärten, die oft großzügig angelegt sind. Entlang von Bächen und Feldwegen wachsen Gehölze, die mitunter bis an die Grundstücke heranreichen.
 
 ## Was in Weilerswist häufig ansteht
 
@@ -26,7 +26,7 @@ In den Ortsteilen stehen auf älteren Grundstücken häufig Obstbäume und groß
 
 ## Wenn der Wind über das offene Land geht
 
-Freie Lagen bekommen Sturm oft ungebremster ab als dicht bebaute Viertel. Nach einem Unwetter helfen wir, umgestürzte Bäume und abgebrochene Äste zu beseitigen, und sprechen mit Ihnen ab, was zuerst erledigt werden muss. Auch Bäume, die nach einem Sturm schief stehen oder angerissen sind, schauen wir uns an und sagen Ihnen offen, ob sich eine Pflege noch lohnt.
+In freien Lagen trifft ein Sturm die Bäume oft härter als in dicht bebauten Vierteln. Nach einem Unwetter helfen wir, umgestürzte Bäume und abgebrochene Äste zu beseitigen, und sprechen mit Ihnen ab, was zuerst erledigt werden muss. Auch Bäume, die nach einem Sturm schief stehen oder angerissen sind, schauen wir uns an und sagen Ihnen offen, ob sich eine Pflege noch lohnt.
 
 ## Anfahrt über die Ville
 

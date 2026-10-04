@@ -10,7 +10,7 @@
 
 export const fotos: Record<string, { zeigt: string; alt: string }> = {
   startseite: {
-    zeigt: 'großes eigenes Foto, zum Beispiel Baumkrone bei der Arbeit',
+    zeigt: 'großes eigenes Foto, zum Beispiel Arbeit in einer Baumkrone',
     alt: '',
   },
   'ueber-uns': {

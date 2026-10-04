@@ -22,7 +22,7 @@ Alfter grenzt unmittelbar an Bornheim. Die Luftlinie zu unserem Betriebssitz bet
 
 ## Zwischen Feldern und Kottenforst
 
-Das Gemeindegebiet reicht von den landwirtschaftlich genutzten Flächen am Hang des Vorgebirges bis an den Kottenforst. Diese Lage zeigt sich auch in den Gärten. In den älteren Ortslagen von Alfter, Gielsdorf und Oedekoven stehen häufig gewachsene Hausbäume und Obstbäume, die regelmäßig geschnitten werden wollen. Rund um Witterschlick, Impekoven und Volmershoven-Heidgen ist der Wald nicht weit, und manche Gärten liegen nah an Gehölzen oder Waldrand. Dort geht es oft um überhängende Äste, Bäume mit Totholz und um Aufräumarbeiten nach einem Sturm.
+Das Gemeindegebiet reicht von den landwirtschaftlich genutzten Flächen am Hang des Vorgebirges bis an den Kottenforst. Diese Lage zeigt sich auch in den Gärten. In den älteren Ortslagen von Alfter, Gielsdorf und Oedekoven stehen häufig gewachsene Hausbäume und Obstbäume, die regelmäßig geschnitten werden wollen. Rund um Witterschlick, Impekoven und Volmershoven-Heidgen ist der Wald nicht weit, und manche Gärten liegen nah an Gehölzen oder am Waldrand. Dort geht es oft um überhängende Äste, Bäume mit Totholz und um Aufräumarbeiten nach einem Sturm.
 
 ## Leistungen für Ihr Grundstück in Alfter
 

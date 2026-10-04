@@ -1,0 +1,131 @@
+---
+// Ausführliche Liste der Qualifikationen für die Seite „Über uns“ (die Startseite zeigt eine kurze Fassung ohne Kürzel).
+// Inhalte: src/inhalte/qualifikationen
+import { vorhandeneQualifikationen, qualifikationenBeiBedarf } from '../lib/inhalte';
+
+const qualifikationen = await vorhandeneQualifikationen();
+const beiBedarf = await qualifikationenBeiBedarf();
+---
+
+<section class="abschnitt qualifikation" aria-labelledby="qualifikation-titel">
+  <div class="huelle raster">
+    <div class="text">
+      <p class="kicker">Qualifikationen</p>
+      <h2 id="qualifikation-titel">Ausgebildet für die Arbeit am Baum</h2>
+      <p>
+        Arbeiten an Bäumen verlangen Erfahrung, Sorgfalt und die passende Ausbildung. Diese Qualifikationen bringen wir
+        für Ihren Auftrag mit.
+      </p>
+    </div>
+    <ul class="liste">
+      {
+        qualifikationen.map((q) => (
+          <li>
+            <h3>{q.data.titel}</h3>
+            <p>{q.data.erklaerung}</p>
+          </li>
+        ))
+      }
+      {
+        beiBedarf.map((q) => (
+          <li class="bei-bedarf">
+            <h3>{q.data.titel}</h3>
+            <p>
+              <span class="etikett">bei Bedarf im Einsatz</span>
+              {q.data.erklaerung} {q.data.hinweis}
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .qualifikation {
+    background: var(--salbei);
+    --fokus: var(--gold-hell);
+    color: var(--auf-dunkel);
+  }
+
+  .raster {
+    display: grid;
+    gap: 2.5rem;
+  }
+
+  .text {
+    display: grid;
+    gap: 1rem;
+    align-content: start;
+  }
+
+  .kicker {
+    color: var(--gold-hell);
+  }
+
+  h2,
+  h3 {
+    color: var(--auf-dunkel);
+  }
+
+  .text p {
+    color: var(--auf-dunkel-weich);
+    max-width: 34rem;
+  }
+
+  /* kompakte Liste: Titel links, Erklärung rechts, feine Trennlinien, oben eine goldene Linie */
+  .liste {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid var(--gold);
+  }
+
+  .liste li {
+    display: grid;
+    gap: 0.2rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--auf-dunkel) 22%, transparent);
+  }
+
+  .liste h3 {
+    font-size: 1.15rem;
+    color: var(--gold-hell);
+  }
+
+  .liste p {
+    color: var(--auf-dunkel-weich);
+    font-size: 0.98rem;
+    line-height: 1.5;
+  }
+
+  @media (min-width: 30rem) {
+    .liste li {
+      grid-template-columns: 7rem 1fr;
+      gap: 1rem;
+      align-items: baseline;
+    }
+  }
+
+  .etikett {
+    display: inline-block;
+    margin: 0 0.4rem 0.2rem 0;
+    padding: 0.05rem 0.55rem;
+    border-radius: 999px;
+    background: var(--gold);
+    color: var(--tiefgruen);
+    font-family: var(--schrift-text);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    vertical-align: 0.1em;
+  }
+
+  @media (min-width: 60rem) {
+    .raster {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+  }
+</style>

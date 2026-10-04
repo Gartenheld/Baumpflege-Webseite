@@ -19,7 +19,7 @@ baumschutz:
 
 ## Alte Bäume in einer grünen Stadt
 
-Viele Bonner Gärten sind Jahrzehnte alt, und mit ihnen die Bäume. In den Villenvierteln von Bad Godesberg, aber auch in Endenich, Kessenich oder Beuel stehen großkronige Laubbäume oft dicht am Haus. Sie spenden Schatten und prägen das Straßenbild, brauchen aber Pflege: Totholz muss heraus, lange Äste über Dächern und Wegen werden eingekürzt, und die Krone wird so ausgelichtet, dass der Baum seine natürliche Form behält. In Bonn gilt eine Baumschutzsatzung; ob Ihr Baum darunter fällt, beantwortet im Zweifel die Stadtverwaltung.
+Viele Bonner Gärten sind Jahrzehnte alt, und mit ihnen die Bäume. In den Villenvierteln von Bad Godesberg, aber auch in Endenich, Kessenich oder Beuel stehen großkronige Laubbäume oft dicht am Haus. Sie spenden Schatten und prägen das Straßenbild, brauchen aber Pflege: Totholz muss heraus, lange Äste über Dächern und Wegen werden eingekürzt, und die Krone wird so ausgelichtet, dass der Baum seine natürliche Form behält. In Bonn gilt eine Baumschutzsatzung; ob Ihr Baum darunterfällt, beantwortet im Zweifel die Stadtverwaltung.
 
 ## Bäume am Haus und an der Straße
 

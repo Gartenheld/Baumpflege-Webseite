@@ -6,7 +6,7 @@ schwerpunkt: true
 seitentitel: "Baumpflege und Baumschnitt in Bornheim, Köln, Bonn | Happe"
 beschreibung: "Baumpflege und Baumschnitt zwischen Köln und Bonn: Kronenpflege, Auslichtung, Totholzentfernung und Kroneneinkürzung für gesunde, sichere Bäume. Anfrage mit Fotos."
 h1: "Baumpflege und Baumschnitt in Bornheim, Köln und Bonn"
-einleitung: "Ein gepflegter Baum bleibt gesund, wächst stabil und gefährdet weder Menschen noch Gebäude. Wir schneiden mit Augenmaß und nehmen nur so viel weg, wie Ihr Baum wirklich braucht. So haben Sie lange Freude an ihm."
+einleitung: "Ein gepflegter Baum bleibt länger gesund, wächst stabil und wird seltener zur Gefahr für Menschen und Gebäude. Wir schneiden mit Augenmaß und nehmen nur so viel weg, wie Ihr Baum wirklich braucht. So haben Sie lange Freude an ihm."
 vorteile:
   - titel: "Gesunde Bäume"
     text: "Gezielte Schnitte entlasten die Krone und fördern einen kräftigen, gleichmäßigen Wuchs."
@@ -20,7 +20,7 @@ fragenTitel: "Fragen zur Baumpflege"
 aufruf: "Braucht Ihr Baum einen Schnitt?"
 kosten:
   frage: "Was kostet Baumpflege?"
-  einleitung: "Die Kosten hängen davon ab, was Ihr Baum braucht und wie gut er erreichbar ist. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
+  einleitung: "Die Kosten hängen davon ab, was Ihr Baum braucht und wie gut er erreichbar ist. Nach Ihren Fotos oder, wenn nötig, einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
   faktoren:
     - titel: "Größe und Höhe des Baums"
       text: "Je größer die Krone, desto mehr Schnittarbeit fällt an und desto mehr Schnittgut entsteht."
@@ -41,7 +41,7 @@ kosten:
 - **Kronenpflege und Auslichtung:** Äste, die sich kreuzen, scheuern oder nach innen wachsen, nehmen wir heraus. Die Krone wird lichter und stabiler.
 - **Totholz entfernen:** Abgestorbene Äste kommen heraus, bevor sie abbrechen.
 - **Rückschnitt und Kroneneinkürzung:** Äste an Dach, Fassade oder Dachrinne kürzen wir ein, eine zu große Krone verkleinern wir behutsam.
-- **Lichtraumprofilschnitt:** wieder genug Durchgangs- und Durchfahrtshöhe über Gehwegen, Zufahrten und Stellplätzen.
+- **Lichtraumprofilschnitt:** Über Gehwegen, Zufahrten und Stellplätzen schaffen wir wieder genug Durchgangs- und Durchfahrtshöhe.
 - **Jungbäume und Obstbäume:** Erziehungsschnitt für junge Bäume, behutsamer Erhaltungsschnitt für ältere Obstbäume.
 
 In die Krone gelangen wir mit der Hubarbeitsbühne oder mit [Seilklettertechnik](/leistungen/seilklettertechnik/).
@@ -52,6 +52,6 @@ Jeder Schnitt ist eine Wunde, die der Baum selbst verschließen muss. Wir schnei
 
 ## Pflege auch im Sommer
 
-- **Schonende Pflegeschnitte** wie das Entfernen von Totholz oder ein leichter Formschnitt sind auch in der Schonzeit vom 1. März bis 30. September möglich. Stärkere Eingriffe planen wir in der Regel außerhalb dieser Zeit.
-- **Brütende Vögel:** In der Nähe eines besetzten Nests schneiden wir nicht. Größere Arbeiten an diesem Baum verschieben wir, bis die Jungen ausgeflogen sind.
+- **Schonende Pflegeschnitte** wie das Entfernen von Totholz oder ein leichter Formschnitt sind das ganze Jahr möglich. Stärkere Eingriffe planen wir in der Regel von Oktober bis Ende Februar. Die gesetzliche Schonzeit vom 1. März bis 30. September betrifft vor allem Hecken, Gebüsche und Bäume außerhalb von Gärten.
+- **Brütende Vögel:** In der Nähe eines besetzten Nests schneiden wir nicht. Die Arbeiten an diesem Baum ruhen, bis das Vorgehen geklärt ist, meist bis die Jungen ausgeflogen sind.
 - **Baumschutzsatzung:** Ob für Ihren Baum zusätzliche Regeln gelten, erfahren Sie bei Ihrer Stadt oder Gemeinde.

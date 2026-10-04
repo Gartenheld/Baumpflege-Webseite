@@ -62,6 +62,10 @@ const titel = hervorheben && hervorheben !== 'bornheim'
   ? `Schematische Karte: ${orte.find((o) => o.id === hervorheben)?.data.name} und der Standort Bornheim zwischen Köln und Bonn`
   : 'Schematische Karte des Einsatzgebiets zwischen Köln und Bonn mit Standort Bornheim';
 const id = `karte-${hervorheben ?? 'gebiet'}`;
+const ortName = hervorheben && hervorheben !== 'bornheim' ? orte.find((o) => o.id === hervorheben)?.data.name : undefined;
+const unterschrift = ortName
+  ? `Schematische Darstellung, ${ortName} und Standort Bornheim hervorgehoben`
+  : 'Schematische Darstellung, Standort Bornheim hervorgehoben';
 ---
 
 <figure class="karte">
@@ -91,7 +95,7 @@ const id = `karte-${hervorheben ?? 'gebiet'}`;
       })
     }
   </svg>
-  <figcaption>Schematische Darstellung, Standort Bornheim hervorgehoben</figcaption>
+  <figcaption>{unterschrift}</figcaption>
 </figure>
 
 <style>
