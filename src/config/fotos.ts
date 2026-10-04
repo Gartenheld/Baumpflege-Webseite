@@ -34,7 +34,10 @@ export const fotos: Record<string, { zeigt: string; alt: string }> = {
     zeigt: 'Baumfällung',
     alt: 'Baumkletterer am Seil trägt einen Stamm von oben Stück für Stück ab, Sägespäne fliegen durch die Luft',
   },
-  'leistung-sturmschadenbeseitigung': { zeigt: 'Sturmschadenbeseitigung', alt: '' },
+  'leistung-sturmschadenbeseitigung': {
+    zeigt: 'Sturmschadenbeseitigung',
+    alt: 'Vom Sturm entwurzelte Kiefer liegt mit aufgerissenem Wurzelballen auf einer Rasenfläche',
+  },
   'leistung-wurzelstockentfernung': { zeigt: 'Wurzelstockentfernung', alt: '' },
   'leistung-haeckselarbeiten': { zeigt: 'Häckselarbeiten', alt: '' },
   'leistung-landschaftspflege-heckenschnitt': { zeigt: 'Landschaftspflege und Heckenschnitt', alt: '' },
