@@ -11,7 +11,7 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
 <header class="kopf">
   <div class="huelle kopf__innen">
     <a href="/" class="kopf__logo">
-      <Marke titel="Baumpflege Happe, zur Startseite" sizes="(min-width: 70rem) 3.75rem, 3.1rem" eager />
+      <Marke titel="Baumpflege Happe, zur Startseite" sizes="(min-width: 75rem) 4.4rem, 3.5rem" eager />
     </a>
 
     <nav class="kopf__nav" aria-label="Hauptmenü">
@@ -67,16 +67,29 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.5rem;
-    min-height: 4.5rem;
+    gap: 1rem;
+    min-height: 5rem;
   }
 
+  /* Emblem und Schriftzug im festen Verhältnis, auf kleinen Handys so groß, wie es neben dem Menüknopf passt */
   .kopf__logo {
     display: block;
     flex-shrink: 0;
-    padding-block: 0.5rem;
-    --emblem: 3.1rem;
-    --schriftzug: clamp(2.2rem, 10vw, 2.6rem);
+    padding-block: 0.6rem;
+    --emblem: clamp(3rem, 15vw, 3.5rem);
+    --schriftzug: clamp(2.1rem, 9.6vw, 3rem);
+  }
+
+  /* Sehr schmale Handys: Menüknopf nur mit Symbol, das Wort bleibt für Screenreader erhalten */
+  @media (max-width: 22.99rem) {
+    .kopf__menue summary span {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
   }
 
   .kopf__nav {
@@ -154,7 +167,13 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
     font-size: 1.15rem;
   }
 
-  @media (min-width: 70rem) {
+  /* Volle Menüleiste erst, wenn größeres Logo, Menü und Knopf nebeneinander Platz haben */
+  @media (min-width: 75rem) {
+    .kopf__innen {
+      gap: 1.5rem;
+      min-height: 5.75rem;
+    }
+
     .kopf__menue {
       display: none;
     }
@@ -170,9 +189,15 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
       gap: 1.6rem;
     }
 
+    .kopf__nav a:not(.knopf) {
+      font-size: 1.0625rem;
+      white-space: nowrap;
+    }
+
     .kopf__logo {
-      --emblem: 3.75rem;
-      --schriftzug: 3rem;
+      padding-block: 0.75rem;
+      --emblem: 4.4rem;
+      --schriftzug: 3.5rem;
     }
   }
 </style>

@@ -14,12 +14,21 @@ interface Props {
   // false zeigt nur den Schriftzug (Fußbereich)
   mitEmblem?: boolean;
   titel?: string;
-  // Angezeigte Größe des Emblems für die Bildauswahl des Browsers, z. B. "(min-width: 70rem) 3.75rem, 3rem"
+  // Angezeigte Größe des Emblems für die Bildauswahl des Browsers, z. B. "(min-width: 75rem) 4.25rem, 3.5rem"
   sizes: string;
+  // Angezeigte Breite des Schriftzugs (etwa 4,5 mal seine Höhe)
+  schriftzugSizes?: string;
   eager?: boolean;
 }
 
-const { negativ = false, mitEmblem = true, titel = 'Baumpflege Happe', sizes, eager = false } = Astro.props;
+const {
+  negativ = false,
+  mitEmblem = true,
+  titel = 'Baumpflege Happe',
+  sizes,
+  schriftzugSizes = '(min-width: 75rem) 16rem, 13.5rem',
+  eager = false,
+} = Astro.props;
 const emblem = negativ ? emblemScheibe : emblemHell;
 const schriftzug = negativ ? schriftzugHell : schriftzugDunkel;
 const laden = eager ? 'eager' : 'lazy';
@@ -46,7 +55,7 @@ const laden = eager ? 'eager' : 'lazy';
     formats={['avif', 'webp']}
     width={240}
     widths={[180, 270, 360, 480, 720]}
-    sizes="(min-width: 70rem) 13rem, 11rem"
+    sizes={schriftzugSizes}
     alt={titel}
     class="marke__schriftzug"
     loading={laden}

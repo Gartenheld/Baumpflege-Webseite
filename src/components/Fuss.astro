@@ -9,13 +9,24 @@ import { socialProfile } from '../lib/profile';
 const leistungen = await sichtbareLeistungen();
 const social = socialProfile();
 const jahr = new Date().getFullYear();
+// Unterzeile in Teilen: auf schmalen Handys untereinander, sonst in einer Zeile mit Punkten dazwischen
+const unterzeile = betrieb.unterzeile.split(' · ');
 ---
 
 <footer class="fuss">
   <div class="huelle fuss__raster">
     <div class="fuss__betrieb">
-      <a href="/" class="fuss__logo"><Marke negativ mitEmblem={false} titel="Baumpflege Happe, zur Startseite" sizes="4.75rem" /></a>
-      <p class="fuss__unterzeile">{betrieb.unterzeile}</p>
+      <a href="/" class="fuss__logo"><Marke negativ mitEmblem={false} titel="Baumpflege Happe, zur Startseite" sizes="4.75rem" schriftzugSizes="17rem" /></a>
+      <p class="fuss__unterzeile">
+        {
+          unterzeile.map((teil, i) => (
+            <>
+              {i > 0 && <span class="trenner" aria-hidden="true"> · </span>}
+              <span class="teil">{teil}</span>
+            </>
+          ))
+        }
+      </p>
       <address>
         {betrieb.name}<br />
         Inhaber {betrieb.inhaber}<br />
@@ -98,17 +109,41 @@ const jahr = new Date().getFullYear();
     grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   }
 
+  /* Schriftzug, Leistungen und Anschrift mittig als eigener Block über den Spalten */
   .fuss__betrieb {
     grid-column: 1 / -1;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--gold) 40%, transparent);
   }
 
   .fuss__logo {
     display: inline-block;
-    --schriftzug: 3.6rem;
+    --schriftzug: 3.75rem;
+  }
+
+  .fuss__unterzeile .teil {
+    display: block;
+  }
+
+  .fuss__unterzeile .trenner {
+    display: none;
+  }
+
+  @media (min-width: 36rem) {
+    .fuss__unterzeile .teil {
+      display: inline;
+    }
+
+    .fuss__unterzeile .trenner {
+      display: inline;
+    }
   }
 
   .fuss__unterzeile {
-    margin: 0.75rem 0 1.25rem;
+    margin: 1rem 0 1.1rem;
     font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -195,11 +230,7 @@ const jahr = new Date().getFullYear();
 
   @media (min-width: 64rem) {
     .fuss__raster {
-      grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
-    }
-
-    .fuss__betrieb {
-      grid-column: auto;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 </style>
