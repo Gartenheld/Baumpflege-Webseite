@@ -1,5 +1,6 @@
 ---
-// Logo für Kopf und Fuß (vorläufiges Logo): rundes Emblem und daneben der Schriftzug „Baumpflege Happe“.
+// Logo für Kopf und Fuß: Schriftzug „BAUMPFLEGE / goldene Linie / HAPPE“, optional mit rundem Emblem davor.
+// Seit 5. Oktober 2026 zeigen Kopf und Fuß nur den Schriftzug (mitEmblem={false}).
 // Bilddateien in src/assets/logo: emblem.png und schriftzug-dunkel.png für hellen Grund,
 // emblem-scheibe.png (Emblem auf heller Scheibe) und schriftzug-hell.png für dunklen Grund.
 // Neues Logo: Dateien mit gleichem Namen ersetzen (transparenter Hintergrund).
@@ -26,7 +27,7 @@ const {
   mitEmblem = true,
   titel = 'Baumpflege Happe',
   sizes,
-  schriftzugSizes = '(min-width: 75rem) 16rem, 13.5rem',
+  schriftzugSizes = '(min-width: 75rem) 19.5rem, 16rem',
   eager = false,
 } = Astro.props;
 const emblem = negativ ? emblemScheibe : emblemHell;
@@ -53,8 +54,8 @@ const laden = eager ? 'eager' : 'lazy';
   <Picture
     src={schriftzug}
     formats={['avif', 'webp']}
-    width={240}
-    widths={[180, 270, 360, 480, 720]}
+    width={320}
+    widths={[240, 320, 480, 640, 960]}
     sizes={schriftzugSizes}
     alt={titel}
     class="marke__schriftzug"

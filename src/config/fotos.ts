@@ -15,7 +15,7 @@ export const fotos: Record<string, { zeigt: string; alt: string }> = {
   },
   'ueber-uns': {
     zeigt: 'bei der Arbeit, mit Ausrüstung',
-    alt: '',
+    alt: 'Bildmotiv von Baumpflege Happe: Baumkletterer am Seil in der Krone einer Eiche',
   },
   'ueber-uns-ausstattung': {
     zeigt: 'Arbeitsfoto mit Hubarbeitsbühne oder Häcksler',

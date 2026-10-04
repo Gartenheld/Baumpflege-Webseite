@@ -11,7 +11,7 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
 <header class="kopf">
   <div class="huelle kopf__innen">
     <a href="/" class="kopf__logo">
-      <Marke titel="Baumpflege Happe, zur Startseite" sizes="(min-width: 75rem) 4.4rem, 3.5rem" eager />
+      <Marke titel="Baumpflege Happe, zur Startseite" mitEmblem={false} sizes="4rem" eager />
     </a>
 
     <nav class="kopf__nav" aria-label="Hauptmenü">
@@ -71,13 +71,12 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
     min-height: 5rem;
   }
 
-  /* Emblem und Schriftzug im festen Verhältnis, auf kleinen Handys so groß, wie es neben dem Menüknopf passt */
+  /* Schriftzug als Logo, auf kleinen Handys so groß, wie es neben dem Menüknopf passt */
   .kopf__logo {
     display: block;
     flex-shrink: 0;
     padding-block: 0.6rem;
-    --emblem: clamp(3rem, 15vw, 3.5rem);
-    --schriftzug: clamp(2.1rem, 9.6vw, 3rem);
+    --schriftzug: clamp(2.6rem, 12.5vw, 3.6rem);
   }
 
   /* Sehr schmale Handys: Menüknopf nur mit Symbol, das Wort bleibt für Screenreader erhalten */
@@ -167,7 +166,7 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
     font-size: 1.15rem;
   }
 
-  /* Volle Menüleiste erst, wenn größeres Logo, Menü und Knopf nebeneinander Platz haben */
+  /* Volle Menüleiste erst, wenn Logo, Menü und Knopf nebeneinander Platz haben */
   @media (min-width: 75rem) {
     .kopf__innen {
       gap: 1.5rem;
@@ -196,8 +195,7 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
 
     .kopf__logo {
       padding-block: 0.75rem;
-      --emblem: 4.4rem;
-      --schriftzug: 3.5rem;
+      --schriftzug: 4.25rem;
     }
   }
 </style>

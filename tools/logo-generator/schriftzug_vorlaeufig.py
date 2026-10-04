@@ -1,8 +1,8 @@
-# Erzeugt den Schriftzug „BAUMPFLEGE / Linie / HAPPE“ (dunkel und hell) aus dem gelieferten Logo
+# Erzeugt den Schriftzug „BAUMPFLEGE / goldene Linie / HAPPE“ (dunkel und hell) aus dem gelieferten Logo
 # (brand/logo/vorlaeufig/baumpflege-happe_logo_original.jpg, 2000 x 2000, weißer Grund).
 # Aufruf: python schriftzug_vorlaeufig.py <logo.jpg> <zielordner>
-# Ergebnis: schriftzug-dunkel-voll.png (Originalfarben) und schriftzug-hell-voll.png (Creme, Linie in Gold),
-# beide mit transparentem Hintergrund und eng beschnitten.
+# Ergebnis: schriftzug-dunkel-voll.png (Originalfarben: dunkle Schrift, goldene Linie) und
+# schriftzug-hell-voll.png (Schrift in Creme, Linie in Gold), beide transparent und eng beschnitten.
 import sys
 from PIL import Image
 import numpy as np
@@ -10,23 +10,24 @@ import numpy as np
 IM, ZIEL = sys.argv[1], sys.argv[2]
 a = np.asarray(Image.open(IM).convert('RGB')).astype(float)
 
-# Bereich des Schriftzugs unterhalb des Emblems
-box = (185, 1600, 1815, 1985)
+# Bereich des Schriftzugs und Zeilen der Linie (im Gesamtbild)
+box = (20, 885, 1985, 1345)
+linie_von, linie_bis = 1106, 1140
 w = a[box[1]:box[3], box[0]:box[2]].copy()
+linie = np.zeros(w.shape[:2], bool)
+linie[linie_von - box[1]:linie_bis - box[1], :] = True
 
-# Deckkraft aus dem dunkelsten Farbkanal, leichtes Rauschen des weißen Grundes entfernen
-mc = w.min(2)
-cov = np.clip((255 - mc - 14) / (255 - 20 - 14), 0, 1)
+gold = np.array([201, 162, 78.])
+creme = np.array([243, 245, 236.])
 
-# Zeilen der Linie (im Gesamtbild etwa 1797 bis 1806)
-linie = np.zeros(cov.shape, bool)
-linie[1790 - box[1]:1814 - box[1], :] = True
+# Deckkraft: Schrift über den dunkelsten Kanal, Linie über den Blaukanal (dort ist Gold am kräftigsten)
+deck_schrift = np.clip((255 - w.min(2) - 14) / (255 - 20 - 14), 0, 1)
+deck_linie = np.clip((255 - w[..., 2] - 10) / (255 - gold[2] - 10), 0, 1)
+cov = np.where(linie, deck_linie, deck_schrift)
 
 alv = np.maximum(cov, 1e-3)[..., None]
 dunkel_rgb = np.clip((w - 255 * (1 - alv)) / alv, 0, 255)
-
-creme = np.array([243, 245, 236.])
-gold = np.array([201, 162, 78.])
+dunkel_rgb[linie] = gold
 hell_rgb = np.where(linie[..., None], gold, creme) * np.ones_like(w)
 
 

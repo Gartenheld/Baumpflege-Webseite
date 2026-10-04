@@ -27,12 +27,6 @@ const unterzeile = betrieb.unterzeile.split(' · ');
           ))
         }
       </p>
-      <address>
-        {betrieb.name}<br />
-        Inhaber {betrieb.inhaber}<br />
-        {betrieb.adresse.strasse}<br />
-        {betrieb.adresse.plz} {betrieb.adresse.ort}
-      </address>
     </div>
 
     <nav aria-labelledby="fuss-leistungen">
@@ -109,7 +103,7 @@ const unterzeile = betrieb.unterzeile.split(' · ');
     grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   }
 
-  /* Schriftzug, Leistungen und Anschrift mittig als eigener Block über den Spalten */
+  /* Schriftzug und Leistungen mittig als eigener Block über den Spalten (Anschrift steht im Impressum) */
   .fuss__betrieb {
     grid-column: 1 / -1;
     display: grid;
@@ -143,17 +137,12 @@ const unterzeile = betrieb.unterzeile.split(' · ');
   }
 
   .fuss__unterzeile {
-    margin: 1rem 0 1.1rem;
+    margin: 1rem 0 0;
     font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--gold-licht);
-  }
-
-  address {
-    font-style: normal;
-    color: var(--auf-dunkel-weich);
   }
 
   h2 {

@@ -2,18 +2,17 @@
 
 Gewählt am 1. Oktober 2026: **Logo 1 (klassisch) mit Symbol, Farbwelt C „Tanne und Kupfer“.**
 
-## Vorläufiges Logo (seit 3. Oktober 2026)
+## Vorläufiges Logo (seit 5. Oktober 2026)
 
-Rundes Emblem (Eiche mit Baumkletterer, Baumkrone in Kreisform) und darunter der Schriftzug „BAUMPFLEGE“, durchgehende Linie, „HAPPE“. Seit 4. Oktober 2026 ohne Eichenblatt auf der Linie. Auf der Website stehen Emblem und Schriftzug nebeneinander. Auf dunklem Grund liegt das Emblem auf einer hellen Scheibe, damit der Kletterer gut zu sehen bleibt.
+Das Logo ist der Schriftzug „BAUMPFLEGE“, goldene Linie, „HAPPE“. Kopf und Fuß der Website zeigen nur diesen Schriftzug, auf dunklem Grund in Creme mit goldener Linie. Das runde Bildmotiv (Eiche mit Baumkletterer) gehört nicht mehr zum Logo. Es erscheint oben auf der Seite „Über uns“ und als Favicon.
 
-- `logo/vorlaeufig/baumpflege-happe_logo_original.jpg`: die gelieferte Datei (ganzes Logo auf Weiß, 2000 x 2000)
-- `logo/vorlaeufig/baumpflege-happe_emblem.png`: Emblem freigestellt, transparenter Hintergrund
-- `logo/vorlaeufig/baumpflege-happe_emblem_scheibe.png`: Emblem auf heller Scheibe (für dunklen Grund, Vorschaubild)
-- Favicon (`public/favicon.ico`, `public/icon-192.png`): Emblem ohne Scheibe, transparent, wie im Logo
-- `logo/vorlaeufig/baumpflege-happe_schriftzug_dunkel.png`: Schriftzug für hellen Grund
+- `logo/vorlaeufig/baumpflege-happe_logo_original.jpg`: die gelieferte Datei (Schriftzug mit goldener Linie auf Weiß, 2000 x 2000)
+- `logo/vorlaeufig/baumpflege-happe_schriftzug_dunkel.png`: Schriftzug für hellen Grund (dunkle Schrift, goldene Linie)
 - `logo/vorlaeufig/baumpflege-happe_schriftzug_hell.png`: Schriftzug für dunklen Grund (Creme, Linie in Gold)
+- `logo/vorlaeufig/baumpflege-happe_emblem.png`: Bildmotiv freigestellt, transparenter Hintergrund (Über uns, Favicon)
+- `logo/vorlaeufig/baumpflege-happe_emblem_scheibe.png`: Bildmotiv auf heller Scheibe (derzeit nicht verwendet)
 
-Daraus erzeugt: `src/assets/logo/` (Kopf und Fuß der Website), `public/logo.png` (ganzes Logo für Google), `public/favicon.ico`, `public/icon-192.png`, `public/apple-touch-icon.png` und `public/og-standard.jpg`. Das Logo ist eine Pixelgrafik. Für Druck, Folie und Stick braucht es später eine Vektorfassung (SVG oder PDF).
+Daraus erzeugt: `src/assets/logo/` (Kopf und Fuß), `src/bilder/ueber-uns.jpg` (Bildmotiv auf Weiß), `public/logo.png` (Logo für Google), `public/favicon.ico`, `public/icon-192.png`, `public/apple-touch-icon.png` (Bildmotiv) und `public/og-standard.jpg` (Vorschaubild beim Teilen, Vorlage `tools/og-bild/og-standard.html`). Schriftzug neu erzeugen: `tools/logo-generator/schriftzug_vorlaeufig.py`. Das Logo ist eine Pixelgrafik. Für Druck, Folie und Stick braucht es später eine Vektorfassung (SVG oder PDF).
 
 ## Farben der Website: „Salbei und Gold“ (seit 3. Oktober 2026)
 
