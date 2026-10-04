@@ -8,7 +8,8 @@ Rundes Emblem (Eiche mit Baumkletterer, Baumkrone in Kreisform) und darunter der
 
 - `logo/vorlaeufig/baumpflege-happe_logo_original.jpg`: die gelieferte Datei (ganzes Logo auf Weiß, 2000 x 2000)
 - `logo/vorlaeufig/baumpflege-happe_emblem.png`: Emblem freigestellt, transparenter Hintergrund
-- `logo/vorlaeufig/baumpflege-happe_emblem_scheibe.png`: Emblem auf heller Scheibe (für dunklen Grund, Favicon)
+- `logo/vorlaeufig/baumpflege-happe_emblem_scheibe.png`: Emblem auf heller Scheibe (für dunklen Grund, Vorschaubild)
+- Favicon (`public/favicon.ico`, `public/icon-192.png`): Emblem ohne Scheibe, transparent, wie im Logo
 - `logo/vorlaeufig/baumpflege-happe_schriftzug_dunkel.png`: Schriftzug für hellen Grund
 - `logo/vorlaeufig/baumpflege-happe_schriftzug_hell.png`: Schriftzug für dunklen Grund (Creme, Linie in Gold)
 
