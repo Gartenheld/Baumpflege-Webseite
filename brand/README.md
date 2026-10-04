@@ -4,13 +4,13 @@ Gewählt am 1. Oktober 2026: **Logo 1 (klassisch) mit Symbol, Farbwelt C „Tann
 
 ## Vorläufiges Logo (seit 3. Oktober 2026)
 
-Rundes Emblem (Eiche mit Baumkletterer, Baumkrone in Kreisform) und darunter der Schriftzug „BAUMPFLEGE“, Linie mit Eichenblatt, „HAPPE“. Auf der Website stehen Emblem und Schriftzug nebeneinander. Auf dunklem Grund liegt das Emblem auf einer hellen Scheibe, damit der Kletterer gut zu sehen bleibt.
+Rundes Emblem (Eiche mit Baumkletterer, Baumkrone in Kreisform) und darunter der Schriftzug „BAUMPFLEGE“, durchgehende Linie, „HAPPE“. Seit 4. Oktober 2026 ohne Eichenblatt auf der Linie. Auf der Website stehen Emblem und Schriftzug nebeneinander. Auf dunklem Grund liegt das Emblem auf einer hellen Scheibe, damit der Kletterer gut zu sehen bleibt.
 
-- `logo/vorlaeufig/baumpflege-happe_logo_original.jpg`: die gelieferte Datei (ganzes Logo auf Weiß)
+- `logo/vorlaeufig/baumpflege-happe_logo_original.jpg`: die gelieferte Datei (ganzes Logo auf Weiß, 2000 x 2000)
 - `logo/vorlaeufig/baumpflege-happe_emblem.png`: Emblem freigestellt, transparenter Hintergrund
 - `logo/vorlaeufig/baumpflege-happe_emblem_scheibe.png`: Emblem auf heller Scheibe (für dunklen Grund, Favicon)
 - `logo/vorlaeufig/baumpflege-happe_schriftzug_dunkel.png`: Schriftzug für hellen Grund
-- `logo/vorlaeufig/baumpflege-happe_schriftzug_hell.png`: Schriftzug für dunklen Grund (Creme, Blatt in Gold)
+- `logo/vorlaeufig/baumpflege-happe_schriftzug_hell.png`: Schriftzug für dunklen Grund (Creme, Linie in Gold)
 
 Daraus erzeugt: `src/assets/logo/` (Kopf und Fuß der Website), `public/logo.png` (ganzes Logo für Google), `public/favicon.ico`, `public/icon-192.png`, `public/apple-touch-icon.png` und `public/og-standard.jpg`. Das Logo ist eine Pixelgrafik. Für Druck, Folie und Stick braucht es später eine Vektorfassung (SVG oder PDF).
 
