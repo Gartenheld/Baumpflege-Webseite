@@ -18,17 +18,6 @@ vorteile:
     text: "Das Schnittgut häckseln wir vor Ort und fahren es ab. Ihr Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben."
 fragenTitel: "Fragen zur Baumpflege"
 aufruf: "Braucht Ihr Baum einen Schnitt?"
-ablauf:
-  - titel: "Anfrage mit Fotos"
-    text: "Fotos vom Baum und ein paar Worte dazu, was Sie stört oder sich wünschen."
-  - titel: "Kostenlose Ersteinschätzung"
-    text: "Wir sagen Ihnen, welche Pflege sinnvoll ist."
-  - titel: "Besichtigung bei Bedarf"
-    text: "Wenn nötig, beurteilen wir den Baum vor Ort."
-  - titel: "Angebot mit Pauschalpreis"
-    text: "Schriftlich, mit allen Arbeiten im Überblick."
-  - titel: "Pflege und Aufräumen"
-    text: "Schnittgut gehäckselt und abgefahren. Ihr Grundstück ist danach sauberer als vorher."
 kosten:
   frage: "Was kostet Baumpflege?"
   einleitung: "Die Kosten hängen davon ab, was Ihr Baum braucht und wie gut er erreichbar ist. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."

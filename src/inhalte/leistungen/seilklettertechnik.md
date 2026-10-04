@@ -19,17 +19,6 @@ vorteile:
     text: "Totholz, Kronenpflege, Rückschnitt oder ein Baum, der Stück für Stück abgetragen werden muss: Am Seil erreichen wir jeden Teil der Krone."
 fragenTitel: "Fragen zur Seilklettertechnik"
 aufruf: "Kein Platz für eine Hubarbeitsbühne?"
-ablauf:
-  - titel: "Anfrage mit Fotos"
-    text: "Fotos der Krone und der Fläche unter dem Baum."
-  - titel: "Kostenlose Ersteinschätzung"
-    text: "Wir prüfen, welche Arbeiten nötig sind und wie sie sich am besten erledigen lassen."
-  - titel: "Besichtigung bei Bedarf"
-    text: "Wenn nötig, beurteilen wir Baum und Umgebung vor Ort."
-  - titel: "Angebot mit Pauschalpreis"
-    text: "Schriftlich, mit allen Arbeiten im Überblick."
-  - titel: "Arbeit in der Krone"
-    text: "Schnittgut gehäckselt, abgefahren oder als Mulch für Sie. Ihr Grundstück ist danach sauberer als vorher."
 kosten:
   frage: "Was kosten Arbeiten mit Seilklettertechnik?"
   einleitung: "Der Aufwand hängt vom Baum und von den gewünschten Arbeiten ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."

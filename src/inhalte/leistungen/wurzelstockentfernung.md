@@ -18,17 +18,6 @@ vorteile:
     text: "Das Loch wird verfüllt und eingeebnet, Späne und Wurzelreste nehmen wir mit oder lassen sie auf Wunsch als Mulch da."
 fragenTitel: "Fragen zur Wurzelstockentfernung"
 aufruf: "Stört ein Wurzelstock?"
-ablauf:
-  - titel: "Anfrage mit Fotos"
-    text: "Fotos vom Stumpf, seiner Umgebung und dem Weg dorthin."
-  - titel: "Kostenlose Ersteinschätzung"
-    text: "Wir schlagen Ihnen die passende Methode vor."
-  - titel: "Besichtigung bei Bedarf"
-    text: "Bei engen Lagen oder Leitungen in der Nähe sehen wir uns alles vor Ort an."
-  - titel: "Angebot mit Pauschalpreis"
-    text: "Schriftlich, mit allen Arbeiten im Überblick."
-  - titel: "Entfernen und Aufräumen"
-    text: "Loch verfüllt, Späne und Wurzelreste aufgeräumt, auf Wunsch mit Rollrasen oder Rasenansaat."
 kosten:
   frage: "Was kostet es, einen Wurzelstock zu entfernen?"
   einleitung: "Der Aufwand hängt vor allem vom Stumpf und seiner Lage ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."

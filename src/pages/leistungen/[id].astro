@@ -10,7 +10,7 @@ import LeistungsKarten from '../../components/LeistungsKarten.astro';
 import OrteLinks from '../../components/OrteLinks.astro';
 import KontaktAufruf from '../../components/start/KontaktAufruf.astro';
 import AufrufBand from '../../components/AufrufBand.astro';
-import Schritte from '../../components/Schritte.astro';
+import Ablauf from '../../components/start/Ablauf.astro';
 import { render } from 'astro:content';
 import { sichtbareLeistungen, faqFuerLeistung, orteSortiert, leistungsUrl } from '../../lib/inhalte';
 import { dienstleistung } from '../../lib/strukturdaten';
@@ -55,7 +55,7 @@ const service = dienstleistung(Astro.site!, leistungsUrl(leistung.id), d.titel, 
 
   <AufrufBand frage={d.aufruf} anfrageLink={anfrageLink} />
 
-  <Schritte schritte={d.ablauf} />
+  <Ablauf hintergrund="creme" />
 
   <Kosten frage={d.kosten.frage} einleitung={d.kosten.einleitung} faktoren={d.kosten.faktoren} anfrageLink={anfrageLink} />
 

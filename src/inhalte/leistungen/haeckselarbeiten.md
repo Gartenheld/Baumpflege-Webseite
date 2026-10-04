@@ -18,17 +18,6 @@ vorteile:
     text: "Was Sie nicht als Mulch behalten möchten, laden wir auf und fahren es ab."
 fragenTitel: "Fragen zu Häckselarbeiten"
 aufruf: "Zu viel Schnittgut im Garten?"
-ablauf:
-  - titel: "Anfrage mit Fotos"
-    text: "Fotos des Schnittguts und des Wegs bis zur Zufahrt."
-  - titel: "Kostenlose Ersteinschätzung"
-    text: "Wir schätzen Menge und Aufwand ein."
-  - titel: "Besichtigung bei Bedarf"
-    text: "Bei großen Mengen oder schwierigem Zugang sehen wir uns alles vor Ort an."
-  - titel: "Angebot mit Pauschalpreis"
-    text: "Schriftlich, mit Mulch für Ihren Garten oder mit Abtransport."
-  - titel: "Häckseln und Aufräumen"
-    text: "Häckselgut abgeladen, wo Sie es möchten, oder abgefahren. Ihr Grundstück ist danach sauberer als vorher."
 kosten:
   frage: "Was kosten Häckselarbeiten?"
   einleitung: "Der Preis richtet sich nach Menge und Aufwand. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."

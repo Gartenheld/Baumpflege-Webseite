@@ -18,17 +18,6 @@ vorteile:
     text: "Sie erfahren offen, wann wir kommen können und welche Arbeiten mit unseren Mitteln möglich sind."
 fragenTitel: "Fragen zur Sturmschadenbeseitigung"
 aufruf: "Schaden nach dem Sturm?"
-ablauf:
-  - titel: "Sicherheit zuerst"
-    text: "Bei akuter Gefahr rufen Sie die Feuerwehr unter 112 und halten Abstand."
-  - titel: "Anfrage mit Fotos"
-    text: "Fotos der Schäden und eine kurze Beschreibung der Lage."
-  - titel: "Antwort in 24 Stunden"
-    text: "Persönlich an Werktagen, mit kostenloser Ersteinschätzung."
-  - titel: "Angebot mit Pauschalpreis"
-    text: "Schriftlich, bei Bedarf nach einer Besichtigung vor Ort."
-  - titel: "Beseitigung und Aufräumen"
-    text: "Holz aufgearbeitet, Schnittgut gehäckselt und abgefahren. Ihr Grundstück ist danach sauberer als vorher."
 kosten:
   frage: "Was kostet die Beseitigung eines Sturmschadens?"
   einleitung: "Das hängt stark davon ab, was der Sturm angerichtet hat. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."

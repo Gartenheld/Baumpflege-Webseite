@@ -18,17 +18,6 @@ vorteile:
     text: "Überschaubare Arbeiten im Garten erledigen wir ohne schwere Maschinen, die Rasen und Beete beanspruchen."
 fragenTitel: "Fragen zu Hecke und Landschaftspflege"
 aufruf: "Ist Ihre Hecke aus der Form geraten?"
-ablauf:
-  - titel: "Anfrage mit Fotos"
-    text: "Fotos der Hecke oder Fläche, gern mit ungefährer Länge und Höhe."
-  - titel: "Kostenlose Ersteinschätzung"
-    text: "Wir sagen Ihnen, welcher Schnitt sinnvoll ist und wann."
-  - titel: "Besichtigung bei Bedarf"
-    text: "Wenn nötig, sehen wir uns Hecke und Fläche vor Ort an."
-  - titel: "Angebot mit Pauschalpreis"
-    text: "Schriftlich, mit allen Arbeiten im Überblick."
-  - titel: "Schnitt und Aufräumen"
-    text: "Schnittgut gehäckselt und abgefahren. Ihr Grundstück ist danach sauberer als vorher."
 kosten:
   frage: "Was kosten Heckenschnitt und Gehölzpflege?"
   einleitung: "Der Aufwand hängt von Größe, Zustand und Zugänglichkeit ab. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."

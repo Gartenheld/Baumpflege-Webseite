@@ -28,11 +28,6 @@ const leistungen = defineCollection({
       vorteile: z.array(karte).min(3).max(4),
       // Frage im Kontaktbalken nach dem Text, z. B. „Muss Ihr Baum weg?“
       aufruf: z.string().endsWith('?'),
-      // Ablauf in kurzen Schritten („So gehen wir vor“), Text je Schritt höchstens ein bis zwei kurze Sätze
-      ablauf: z
-        .array(z.object({ titel: z.string(), text: z.string().max(130, 'Ablauf: Text je Schritt höchstens 130 Zeichen.') }))
-        .min(3)
-        .max(5),
       // Abschnitt „Was kostet …?“: Preisfaktoren ohne Zahlen
       // Überschrift über den häufigen Fragen auf der Leistungsseite, z. B. „Fragen zur Baumfällung“
       fragenTitel: z.string().optional(),

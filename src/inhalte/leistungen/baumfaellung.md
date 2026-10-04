@@ -18,17 +18,6 @@ vorteile:
     text: "Ob der Stumpf im Boden bleibt oder entfernt wird, entscheiden Sie. Beides planen wir von Anfang an mit ein."
 fragenTitel: "Fragen zur Baumfällung"
 aufruf: "Muss Ihr Baum weg?"
-ablauf:
-  - titel: "Anfrage mit Fotos"
-    text: "Fotos vom Baum und seiner Umgebung, gern aus mehreren Blickwinkeln."
-  - titel: "Kostenlose Ersteinschätzung"
-    text: "Wir prüfen, ob und wie die Fällung sicher möglich ist."
-  - titel: "Besichtigung bei Bedarf"
-    text: "Bei engen oder schwierigen Lagen sehen wir uns alles vor Ort an."
-  - titel: "Angebot mit Pauschalpreis"
-    text: "Schriftlich und auf Wunsch einschließlich Wurzelstock."
-  - titel: "Fällung und Aufräumen"
-    text: "Schnittgut gehäckselt und abgefahren. Ihr Grundstück ist danach sauberer als vorher."
 kosten:
   frage: "Was kostet eine Baumfällung?"
   einleitung: "Jede Fällung ist anders, deshalb nennen wir hier keine Preise. Nach Ihren Fotos oder einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."

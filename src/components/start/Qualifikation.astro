@@ -1,40 +1,54 @@
 ---
+// Fachlichkeit auf der Startseite: vier Punkte in Alltagssprache, ohne Kürzel. Die einzelnen
+// Qualifikationen (AS Baum, SKT, BSB) stehen auf der Seite „Über uns“.
+// Die Punkte richten sich nach den vorhandenen Qualifikationen in src/inhalte/qualifikationen.
 import Icon from '../Icon.astro';
-import { vorhandeneQualifikationen, qualifikationenBeiBedarf } from '../../lib/inhalte';
+import { vorhandeneQualifikationen } from '../../lib/inhalte';
 
-const qualifikationen = await vorhandeneQualifikationen();
-const beiBedarf = await qualifikationenBeiBedarf();
+const vorhanden = new Set((await vorhandeneQualifikationen()).map((q) => q.id));
+
+const punkte = [
+  (vorhanden.has('as-baum-1') || vorhanden.has('as-baum-2')) && {
+    titel: 'Ausgebildet für Fällungen',
+    text: vorhanden.has('as-baum-2')
+      ? 'Auch anspruchsvolle Fällungen führen wir mit der dafür nötigen Ausbildung sicher aus.'
+      : 'Fällungen führen wir mit der dafür nötigen Ausbildung sicher aus.',
+  },
+  {
+    titel: 'Sicher in der Krone',
+    text: vorhanden.has('skt-a')
+      ? 'Am Seil oder mit der Hubarbeitsbühne kommen wir sicher in die Krone, auch in engen Gärten.'
+      : 'Mit der Hubarbeitsbühne kommen wir sicher in die Krone.',
+  },
+  vorhanden.has('bsb-1') && {
+    titel: 'Erst prüfen, dann arbeiten',
+    text: 'Bevor wir klettern oder fällen, schätzen wir ein, wie sicher der Baum noch steht.',
+  },
+  {
+    titel: 'Sauber bis zum Schluss',
+    text: 'Schnittgut häckseln wir mit dem eigenen Häcksler vor Ort. Ihr Grundstück ist danach sauberer als vorher.',
+  },
+].filter((p): p is { titel: string; text: string } => Boolean(p));
 ---
 
 <section class="abschnitt qualifikation" aria-labelledby="qualifikation-titel">
-  <div class="huelle raster">
-    <div class="text">
-      <p class="kicker">Fachlichkeit</p>
-      <h2 id="qualifikation-titel">Erfahren, qualifiziert und gut ausgerüstet</h2>
-      <p>
-        Arbeiten an Bäumen verlangen Erfahrung, Sorgfalt und die passende Qualifikation. Wir bringen mehrjährige
-        Erfahrung in Baumpflege und Baumfällung mit und planen jeden Einsatz sorgfältig. In die Krone kommen wir mit
-        der Hubarbeitsbühne oder am Seil, das Schnittgut häckseln wir mit dem eigenen Häcksler vor Ort.
-      </p>
+  <div class="huelle">
+    <div class="kopf">
+      <div class="abschnittskopf">
+        <p class="kicker">Fachlichkeit</p>
+        <h2 id="qualifikation-titel">Erfahren, ausgebildet und gut ausgerüstet</h2>
+      </div>
       <a class="knopf knopf--hell" href="/ueber-uns/">Mehr über uns <Icon name="pfeil" /></a>
     </div>
-    <ul class="liste">
+    <ul class="punkte">
       {
-        qualifikationen.map((q) => (
+        punkte.map((p) => (
           <li>
-            <h3>{q.data.titel}</h3>
-            <p>{q.data.erklaerung}</p>
-          </li>
-        ))
-      }
-      {
-        beiBedarf.map((q) => (
-          <li class="bei-bedarf">
-            <h3>{q.data.titel}</h3>
-            <p>
-              <span class="etikett">bei Bedarf im Einsatz</span>
-              {q.data.erklaerung} {q.data.hinweis}
-            </p>
+            <span class="zeichen" aria-hidden="true">
+              <Icon name="haken" />
+            </span>
+            <h3>{p.titel}</h3>
+            <p>{p.text}</p>
           </li>
         ))
       }
@@ -49,15 +63,18 @@ const beiBedarf = await qualifikationenBeiBedarf();
     color: var(--auf-dunkel);
   }
 
-  .raster {
+  .kopf {
     display: grid;
-    gap: 2.5rem;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
   }
 
-  .text {
-    display: grid;
-    gap: 1rem;
-    align-content: start;
+  .kopf .abschnittskopf {
+    margin-bottom: 0;
+  }
+
+  .kopf .knopf {
+    justify-self: start;
   }
 
   .kicker {
@@ -69,69 +86,64 @@ const beiBedarf = await qualifikationenBeiBedarf();
     color: var(--auf-dunkel);
   }
 
-  .text p {
-    color: var(--auf-dunkel-weich);
-    max-width: 34rem;
-  }
-
-  .text .knopf {
-    justify-self: start;
-    margin-top: 0.5rem;
-  }
-
-  /* kompakte Liste: Titel links, Erklärung rechts, feine Trennlinien, oben eine goldene Linie */
-  .liste {
+  .punkte {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    gap: 1.75rem;
+  }
+
+  .punkte li {
+    display: grid;
+    gap: 0.4rem;
+    align-content: start;
+    padding-top: 1.25rem;
     border-top: 2px solid var(--gold);
   }
 
-  .liste li {
+  .zeichen {
     display: grid;
-    gap: 0.2rem;
-    padding: 0.85rem 0;
-    border-bottom: 1px solid color-mix(in srgb, var(--auf-dunkel) 22%, transparent);
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-bottom: 0.35rem;
+    border-radius: 50%;
+    border: 1.5px solid var(--gold-licht);
+    color: var(--gold-licht);
   }
 
-  .liste h3 {
-    font-size: 1.15rem;
-    color: var(--gold-hell);
+  .zeichen :global(.icon) {
+    width: 1.15rem;
+    height: 1.15rem;
   }
 
-  .liste p {
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .punkte p {
     color: var(--auf-dunkel-weich);
-    font-size: 0.98rem;
     line-height: 1.5;
   }
 
-  @media (min-width: 30rem) {
-    .liste li {
-      grid-template-columns: 7rem 1fr;
-      gap: 1rem;
-      align-items: baseline;
+  @media (min-width: 40rem) {
+    .punkte {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2rem;
     }
   }
 
-  .etikett {
-    display: inline-block;
-    margin: 0 0.4rem 0.2rem 0;
-    padding: 0.05rem 0.55rem;
-    border-radius: 999px;
-    background: var(--gold);
-    color: var(--tiefgruen);
-    font-family: var(--schrift-text);
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    vertical-align: 0.1em;
-  }
+  @media (min-width: 64rem) {
+    .kopf {
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: end;
+    }
 
-  @media (min-width: 60rem) {
-    .raster {
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
+    .punkte {
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(0, 1fr);
+      grid-template-columns: none;
     }
   }
 </style>

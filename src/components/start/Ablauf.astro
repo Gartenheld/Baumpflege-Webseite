@@ -1,8 +1,15 @@
 ---
 // Ablauf der Anfrage in fünf Schritten, darunter eine schlanke Zeile für den persönlichen Kontakt
 // (Telefon, WhatsApp, E-Mail) für alle, die lieber anrufen als ein Formular auszufüllen.
+// Wird auf der Startseite und auf allen Leistungsseiten gleich gezeigt, nur der Hintergrund ist wählbar.
 import Icon from '../Icon.astro';
 import { betrieb, telefonLink, whatsappLink, mailLink } from '../../config/betrieb';
+
+interface Props {
+  hintergrund?: 'weiss' | 'creme';
+}
+
+const { hintergrund = 'weiss' } = Astro.props;
 
 const schritte = [
   { titel: 'Anfrage', text: 'Mit Fotos über das Formular oder ganz persönlich per Telefon, WhatsApp oder E-Mail.' },
@@ -13,7 +20,7 @@ const schritte = [
 ];
 ---
 
-<section class="abschnitt ablauf" aria-labelledby="ablauf-titel">
+<section class:list={['abschnitt', 'ablauf', `ablauf--${hintergrund}`]} aria-labelledby="ablauf-titel">
   <div class="huelle">
     <div class="kopfzeile">
       <p class="kicker">Ablauf</p>
@@ -49,8 +56,12 @@ const schritte = [
 </section>
 
 <style>
-  .ablauf {
+  .ablauf--weiss {
     background: var(--weiss);
+  }
+
+  .ablauf--creme {
+    background: var(--creme);
   }
 
   .kopfzeile {
