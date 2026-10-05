@@ -42,7 +42,10 @@ export const fotos: Record<string, { zeigt: string; alt: string }> = {
     zeigt: 'Wurzelstockentfernung',
     alt: 'Stubbenfräse auf Raupenketten fräst in einem Garten einen Wurzelstock aus dem Boden',
   },
-  'leistung-haeckselarbeiten': { zeigt: 'Häckselarbeiten', alt: '' },
+  'leistung-haeckselarbeiten': {
+    zeigt: 'Häckselarbeiten',
+    alt: 'Häcksler zerkleinert Äste und bläst die Hackschnitzel in einen Anhänger',
+  },
   'leistung-landschaftspflege-heckenschnitt': { zeigt: 'Landschaftspflege und Heckenschnitt', alt: '' },
   'leistung-seilklettertechnik': {
     zeigt: 'Seilklettertechnik',
