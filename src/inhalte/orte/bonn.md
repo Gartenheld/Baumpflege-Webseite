@@ -23,7 +23,7 @@ Viele Bonner Gärten sind Jahrzehnte alt, und mit ihnen die Bäume. In den Ville
 
 ## Bäume am Haus und an der Straße
 
-In vielen Bonner Straßen stehen Bäume in Vorgärten dicht an Gehweg und Fahrbahn, anderswo wachsen sie in Reihenhausgärten, die nur über einen schmalen Weg erreichbar sind. Beides verlangt Planung: Wo kann unser Fahrzeug halten, und wie kommen Holz und Schnittgut heraus, ohne Pflaster, Rasen oder Nachbargrundstück zu belasten? Das klären wir vor Beginn mit Ihnen. Die Äste zerkleinert unser eigener Häcksler direkt vor Ort, das Holz laden wir auf und fahren es ab.
+In vielen Bonner Straßen stehen Bäume in Vorgärten dicht an Gehweg und Fahrbahn, anderswo wachsen sie in Reihenhausgärten, die nur über einen schmalen Weg erreichbar sind. Beides verlangt Planung: Wo kann unser Fahrzeug halten, und wie kommen Holz und Schnittgut heraus, ohne Pflaster, Rasen oder Nachbargrundstück zu belasten? Das klären wir vor Beginn mit Ihnen. Die Äste häckseln wir direkt vor Ort, das Holz laden wir auf und fahren es ab.
 
 ## Am Rand von Kottenforst und Venusberg
 

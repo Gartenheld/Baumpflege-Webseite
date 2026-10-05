@@ -29,7 +29,7 @@ Arbeiten an Bäumen verlangen Sorgfalt und eine gute Vorbereitung. Vor jeder Fä
 
 - **Hubarbeitsbühne:** Für hohe Kronen, Bäume an Straßen und Wegen oder Äste über Dächern arbeiten wir mit der Hubarbeitsbühne, wo eine feste Zufahrt vorhanden ist.
 - **Seilklettertechnik:** Wo keine Bühne hinkommt, etwa in Gärten hinter dem Haus, gelangen wir am Seil in die Krone.
-- **Eigener Häcksler:** Äste und Kronenholz zerkleinern wir direkt vor Ort. Auf Ihrem Grundstück bleiben keine Reisighaufen liegen.
+- **Häcksler:** Äste und Kronenholz zerkleinern wir direkt vor Ort. Auf Ihrem Grundstück bleiben keine Reisighaufen liegen.
 - **Abtransport:** Häckselgut und Holz fahren wir ab. Sie müssen sich nicht selbst um Abfuhr oder Container kümmern.
 
 Für Sie heißt das: Schnitt, Häckseln und Abtransport erledigen wir in einem Arbeitsgang, und Sie erhalten ein aufgeräumtes Grundstück zurück. Möchten Sie Häckselgut oder Holz behalten, etwa zum Mulchen oder als Brennholz, lassen wir es auf Wunsch bei Ihnen.

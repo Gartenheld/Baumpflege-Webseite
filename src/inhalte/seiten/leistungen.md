@@ -13,7 +13,7 @@ Unsere Schwerpunkte sind Baumpflege und Baumfällung. Wir schneiden Bäume so, d
 
 ## Garten und Grundstück
 
-Für Hecken und Grünflächen bieten wir Landschaftspflege und Heckenschnitt an, dazu kleine Gartenprojekte ohne große Maschinen. Mit unserem eigenen Häcksler zerkleinern wir Schnittgut direkt vor Ort, auch als eigene Leistung.
+Für Hecken und Grünflächen bieten wir Landschaftspflege und Heckenschnitt an, dazu kleine Gartenprojekte ohne große Maschinen. Schnittgut häckseln wir direkt vor Ort, auf Wunsch auch als eigenständige Leistung.
 
 ## Bei jeder Leistung gleich
 

@@ -26,7 +26,7 @@ Am Rand der Ville bringen Herbst- und Winterstürme immer wieder Äste und mitun
 
 ## Saubere Arbeit bis zum Schluss
 
-Schnittgut bleibt bei uns nicht im Garten liegen. Wir häckseln es mit der eigenen Maschine und fahren es ab, zum Schluss fegen wir Wege und Einfahrt. Ob für eine Fällung in Brühl eine Genehmigung nötig ist, fragen Sie im Zweifel direkt bei der Stadt Brühl nach.
+Schnittgut bleibt bei uns nicht im Garten liegen. Wir häckseln es direkt vor Ort und fahren es ab, zum Schluss fegen wir Wege und Einfahrt. Ob für eine Fällung in Brühl eine Genehmigung nötig ist, fragen Sie im Zweifel direkt bei der Stadt Brühl nach.
 
 ## Anfahrt und Ablauf
 

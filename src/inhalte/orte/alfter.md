@@ -26,7 +26,7 @@ Das Gemeindegebiet reicht von den landwirtschaftlich genutzten Flächen am Hang 
 
 ## Leistungen für Ihr Grundstück in Alfter
 
-Ob Kronenpflege, die Fällung eines kranken Baumes oder das Entfernen eines alten Wurzelstocks: Wir planen jede Arbeit mit Rücksicht auf Haus, Zaun und Beete. Hecken entlang der Straße oder zum Nachbarn schneiden wir sauber in Form. Wächst eine Hecke seit Jahren unbeachtet in die Breite, nehmen wir sie schrittweise zurück, damit sie wieder dicht austreiben kann. Äste und Zweige zerkleinern wir mit dem eigenen Häcksler an Ort und Stelle und fahren sie ab. Ob für eine Fällung eine Genehmigung erforderlich ist, kann Ihnen die Gemeinde Alfter sagen.
+Ob Kronenpflege, die Fällung eines kranken Baumes oder das Entfernen eines alten Wurzelstocks: Wir planen jede Arbeit mit Rücksicht auf Haus, Zaun und Beete. Hecken entlang der Straße oder zum Nachbarn schneiden wir sauber in Form. Wächst eine Hecke seit Jahren unbeachtet in die Breite, nehmen wir sie schrittweise zurück, damit sie wieder dicht austreiben kann. Äste und Zweige häckseln wir an Ort und Stelle und fahren sie ab. Ob für eine Fällung eine Genehmigung erforderlich ist, kann Ihnen die Gemeinde Alfter sagen.
 
 ## Ihre Anfrage aus Alfter
 

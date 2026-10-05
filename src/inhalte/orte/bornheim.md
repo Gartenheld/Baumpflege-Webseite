@@ -25,7 +25,7 @@ Die Orte am Vorgebirge sind seit langer Zeit vom Obst- und Gemüseanbau geprägt
 
 ## Von der Pflege bis zur Fällung
 
-Wir schneiden und pflegen Bäume, fällen sie, wenn es nötig ist, entfernen Wurzelstöcke und beseitigen Sturmschäden. Wir bringen Hecken in Form. Äste und Strauchschnitt häckseln wir mit unserem eigenen Häcksler direkt vor Ort und fahren das Material ab. Ob eine Fällung genehmigt werden muss, erfragen Sie am besten vorher bei der Stadt Bornheim.
+Wir schneiden und pflegen Bäume, fällen sie, wenn es nötig ist, entfernen Wurzelstöcke und beseitigen Sturmschäden. Wir bringen Hecken in Form. Äste und Strauchschnitt häckseln wir direkt vor Ort und fahren das Material ab. Ob eine Fällung genehmigt werden muss, erfragen Sie am besten vorher bei der Stadt Bornheim.
 
 ## So kommen wir ins Gespräch
 

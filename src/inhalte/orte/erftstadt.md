@@ -24,9 +24,9 @@ Erftstadt erstreckt sich von den Wäldern der Ville im Osten bis in die flache, 
 
 In den Dörfern stehen auf größeren Grundstücken oft alte Laub- und Obstbäume, deren Kronen mit den Jahren ausladend geworden sind. Hier geht es meist um einen Erhaltungsschnitt, um Totholz und um Äste, die über Straße oder Nachbargrundstück ragen. In den Wohngebieten von Liblar und Lechenich sind dagegen eher Heckenschnitt, die Fällung einzelner Gartenbäume und das Entfernen von Wurzelstöcken gefragt. Auch Gehölzstreifen und lange Hecken am Rand größerer Grundstücke pflegen wir, damit sie dicht bleiben und nicht in Wege oder Felder hineinwachsen.
 
-## Viel Schnittgut, eigener Häcksler
+## Viel Schnittgut, direkt vor Ort gehäckselt
 
-Auf großen Grundstücken fällt schnell eine Menge Holz und Reisig an. Mit unserem eigenen Häcksler zerkleinern wir Äste und Zweige direkt vor Ort. Auf Wunsch bleibt das Häckselgut als Mulch für Beete und Baumscheiben bei Ihnen, ansonsten nehmen wir es mit. Ob Erftstadt für Ihren Baum besondere Schutzvorschriften kennt, kann Ihnen die Stadtverwaltung beantworten.
+Auf großen Grundstücken fällt schnell eine Menge Holz und Reisig an. Äste und Zweige zerkleinern wir mit dem Häcksler direkt vor Ort. Auf Wunsch bleibt das Häckselgut als Mulch für Beete und Baumscheiben bei Ihnen, ansonsten nehmen wir es mit. Ob Erftstadt für Ihren Baum besondere Schutzvorschriften kennt, kann Ihnen die Stadtverwaltung beantworten.
 
 ## Anfahrt aus Bornheim
 
