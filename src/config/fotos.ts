@@ -38,7 +38,10 @@ export const fotos: Record<string, { zeigt: string; alt: string }> = {
     zeigt: 'Sturmschadenbeseitigung',
     alt: 'Vom Sturm entwurzelte Kiefer liegt mit aufgerissenem Wurzelballen auf einer Rasenfläche',
   },
-  'leistung-wurzelstockentfernung': { zeigt: 'Wurzelstockentfernung', alt: '' },
+  'leistung-wurzelstockentfernung': {
+    zeigt: 'Wurzelstockentfernung',
+    alt: 'Stubbenfräse auf Raupenketten fräst in einem Garten einen Wurzelstock aus dem Boden',
+  },
   'leistung-haeckselarbeiten': { zeigt: 'Häckselarbeiten', alt: '' },
   'leistung-landschaftspflege-heckenschnitt': { zeigt: 'Landschaftspflege und Heckenschnitt', alt: '' },
   'leistung-seilklettertechnik': {
