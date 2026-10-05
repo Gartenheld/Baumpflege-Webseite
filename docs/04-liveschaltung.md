@@ -39,6 +39,7 @@ Der Live-Build bricht ab, solange irgendwo „Platzhalter“ oder die Nummer aus
 - [ ] **Bildnachweise im Impressum** als eigenen Abschnitt ergänzen (vermerkt am 05.10.2026):
   - Häckselarbeiten ([src/bilder/leistung-haeckselarbeiten.jpg](../src/bilder/leistung-haeckselarbeiten.jpg)): „Symbolbild, mit KI erstellt“ (KI-bearbeitetes Foto). Der Markenname FÖRST bleibt laut Inhaber sichtbar (05.10.2026). Nutzungsbedingungen des KI-Programms auf gewerbliche Nutzung prüfen.
   - Wurzelstockentfernung ([src/bilder/leistung-wurzelstockentfernung.jpg](../src/bilder/leistung-wurzelstockentfernung.jpg)): „Symbolbild, mit KI erstellt“. Herstellerlogo und Modell sind aus dem Bild entfernt.
+  - Landschaftspflege und Heckenschnitt ([src/bilder/leistung-landschaftspflege-heckenschnitt.jpg](../src/bilder/leistung-landschaftspflege-heckenschnitt.jpg)): eigenes Foto, mit KI bearbeitet. Hinweis „Foto mit KI bearbeitet“.
   - Startseite, Hintergrundvideo: Pexels (Video 14076048), Urheber eintragen. Link, Name und Downloaddatum aufbewahren.
   - Übrige Fotos (Baumfällung, Baumpflege, Seilklettertechnik, Sturmschadenbeseitigung): Quelle klären. Bei Pexels Urheber nennen, bei KI „Symbolbild, mit KI erstellt“, eigene Fotos brauchen keinen Nachweis.
 - [ ] **Datenschutzerklärung** aus einem Generator in [src/inhalte/seiten/datenschutz.md](../src/inhalte/seiten/datenschutz.md) einfügen. Angaben dafür: Konzept 9.4 (Hosting bei Hostinger, Server-Logs, Kontaktformular mit Fotos und Mailversand, WhatsApp-Link, keine Cookies, kein Tracking, keine externen Schriften).

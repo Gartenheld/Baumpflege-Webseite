@@ -46,7 +46,10 @@ export const fotos: Record<string, { zeigt: string; alt: string }> = {
     zeigt: 'Häckselarbeiten',
     alt: 'Symbolbild, mit KI erstellt: Häcksler mit Einzugstrichter und Auswurf, dahinter ein Kastenanhänger',
   },
-  'leistung-landschaftspflege-heckenschnitt': { zeigt: 'Landschaftspflege und Heckenschnitt', alt: '' },
+  'leistung-landschaftspflege-heckenschnitt': {
+    zeigt: 'Landschaftspflege und Heckenschnitt',
+    alt: 'Mit KI bearbeitetes Foto: Baumpfleger mit Helm, Gehörschutz und Klettergurt in einem winterlichen Garten, daneben Schnittgut und Werkzeug',
+  },
   'leistung-seilklettertechnik': {
     zeigt: 'Seilklettertechnik',
     alt: 'Baumkletterer mit Helm und Klettergurt hängt am Seil neben dem Stamm einer Kiefer',
