@@ -40,7 +40,7 @@ export const fotos: Record<string, { zeigt: string; alt: string }> = {
   },
   'leistung-wurzelstockentfernung': {
     zeigt: 'Wurzelstockentfernung',
-    alt: 'Stubbenfräse auf Raupenketten fräst in einem Garten einen Wurzelstock aus dem Boden',
+    alt: 'Symbolbild, mit KI erstellt: Stubbenfräse auf Raupenketten fräst in einem Garten einen Baumstumpf aus dem Boden',
   },
   'leistung-haeckselarbeiten': {
     zeigt: 'Häckselarbeiten',
