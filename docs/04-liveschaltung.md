@@ -36,6 +36,10 @@ Der Live-Build bricht ab, solange irgendwo „Platzhalter“ oder die Nummer aus
 - [ ] **Häufige Fragen** mit offenen Angaben:
   - [src/inhalte/faq/kosten-ersteinschaetzung.md](../src/inhalte/faq/kosten-ersteinschaetzung.md): ob die Besichtigung kostenlos ist (Antwortzeit geklärt: 24 Stunden an Werktagen)
 - [ ] **Impressum:** Satz zur Verbraucherschlichtung in [src/pages/impressum.astro](../src/pages/impressum.astro) bestätigen.
+- [ ] **Bildnachweise im Impressum** als eigenen Abschnitt ergänzen (vermerkt am 05.10.2026):
+  - Häckselarbeiten ([src/bilder/leistung-haeckselarbeiten.jpg](../src/bilder/leistung-haeckselarbeiten.jpg)): „Symbolbild, mit KI erstellt“. Herstellername und Modell sind aus dem Bild entfernt. Ersetzen, sobald ein Foto des eigenen Häckslers vorliegt. Nutzungsbedingungen des KI-Programms auf gewerbliche Nutzung prüfen.
+  - Startseite, Hintergrundvideo: Pexels (Video 14076048), Urheber eintragen. Link, Name und Downloaddatum aufbewahren.
+  - Übrige Fotos (Baumfällung, Baumpflege, Seilklettertechnik, Sturmschadenbeseitigung, Wurzelstockentfernung): Quelle klären. Bei Pexels Urheber nennen, bei KI „Symbolbild, mit KI erstellt“, eigene Fotos brauchen keinen Nachweis.
 - [ ] **Datenschutzerklärung** aus einem Generator in [src/inhalte/seiten/datenschutz.md](../src/inhalte/seiten/datenschutz.md) einfügen. Angaben dafür: Konzept 9.4 (Hosting bei Hostinger, Server-Logs, Kontaktformular mit Fotos und Mailversand, WhatsApp-Link, keine Cookies, kein Tracking, keine externen Schriften).
 - [ ] **Fotos:** mindestens das Startseitenfoto, besser auch Über uns, Baumpflege und Baumfällung (Anleitung in [src/bilder/README.md](../src/bilder/README.md)). Ohne Foto zeigt die Live-Seite eine ruhige Fläche mit dem Baumsymbol statt „Foto folgt“.
 - [ ] **Referenzen und Bewertungen:** zum Start gern zwei bis drei echte Referenzen und drei bis vier echte Google-Bewertungen. Ohne freigegebene Einträge blendet die Live-Seite die Bewertungen aus, die Referenzseite nennt „in Kürze“.
