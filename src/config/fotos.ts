@@ -44,7 +44,7 @@ export const fotos: Record<string, { zeigt: string; alt: string }> = {
   },
   'leistung-haeckselarbeiten': {
     zeigt: 'Häckselarbeiten',
-    alt: 'Symbolbild, mit KI erstellt: Häcksler zerkleinert Äste und bläst die Hackschnitzel in einen Anhänger',
+    alt: 'Symbolbild, mit KI erstellt: Häcksler mit Einzugstrichter und Auswurf, dahinter ein Anhänger mit Gitteraufsatz',
   },
   'leistung-landschaftspflege-heckenschnitt': { zeigt: 'Landschaftspflege und Heckenschnitt', alt: '' },
   'leistung-seilklettertechnik': {

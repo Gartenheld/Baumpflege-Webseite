@@ -37,7 +37,7 @@ Der Live-Build bricht ab, solange irgendwo „Platzhalter“ oder die Nummer aus
   - [src/inhalte/faq/kosten-ersteinschaetzung.md](../src/inhalte/faq/kosten-ersteinschaetzung.md): ob die Besichtigung kostenlos ist (Antwortzeit geklärt: 24 Stunden an Werktagen)
 - [ ] **Impressum:** Satz zur Verbraucherschlichtung in [src/pages/impressum.astro](../src/pages/impressum.astro) bestätigen.
 - [ ] **Bildnachweise im Impressum** als eigenen Abschnitt ergänzen (vermerkt am 05.10.2026):
-  - Häckselarbeiten ([src/bilder/leistung-haeckselarbeiten.jpg](../src/bilder/leistung-haeckselarbeiten.jpg)): „Symbolbild, mit KI erstellt“. Herstellername und Modell sind aus dem Bild entfernt. Ersetzen, sobald ein Foto des eigenen Häckslers vorliegt. Nutzungsbedingungen des KI-Programms auf gewerbliche Nutzung prüfen.
+  - Häckselarbeiten ([src/bilder/leistung-haeckselarbeiten.jpg](../src/bilder/leistung-haeckselarbeiten.jpg)): „Symbolbild, mit KI erstellt“ (KI-bearbeitetes Foto). Der Markenname FÖRST bleibt laut Inhaber sichtbar (05.10.2026). Nutzungsbedingungen des KI-Programms auf gewerbliche Nutzung prüfen.
   - Wurzelstockentfernung ([src/bilder/leistung-wurzelstockentfernung.jpg](../src/bilder/leistung-wurzelstockentfernung.jpg)): „Symbolbild, mit KI erstellt“. Herstellerlogo und Modell sind aus dem Bild entfernt.
   - Startseite, Hintergrundvideo: Pexels (Video 14076048), Urheber eintragen. Link, Name und Downloaddatum aufbewahren.
   - Übrige Fotos (Baumfällung, Baumpflege, Seilklettertechnik, Sturmschadenbeseitigung): Quelle klären. Bei Pexels Urheber nennen, bei KI „Symbolbild, mit KI erstellt“, eigene Fotos brauchen keinen Nachweis.
