@@ -21,12 +21,11 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
       v ? (
         <video
           class="einstieg__video"
-          autoplay
           muted
           loop
           playsinline
           disablepictureinpicture
-          preload="auto"
+          preload="none"
           poster={standbild}
         >
           {/* MP4 zuerst: läuft in allen gängigen Browsern, auch in Safari auf iPhone und Mac. WebM nur als Ausweich. */}
@@ -76,8 +75,10 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
 </section>
 
 <script>
-  // Hintergrundvideo starten und Pause-Knopf. Blockiert der Browser den automatischen Start (z. B. Stromsparmodus
-  // am iPhone), zeigt der Knopf „abspielen“. Im Datensparmodus startet das Video nicht von selbst.
+  // Hintergrundvideo starten und Pause-Knopf. Das Video lädt erst, wenn die Seite fertig geladen ist: Bis dahin
+  // zeigt das Standbild, und Text, Schriften und Fotos werden nicht ausgebremst. Blockiert der Browser den
+  // automatischen Start (z. B. Stromsparmodus am iPhone), zeigt der Knopf „abspielen“.
+  // Im Datensparmodus startet das Video nicht von selbst.
   const film = document.querySelector<HTMLVideoElement>('.einstieg__video');
   const knopf = document.querySelector<HTMLButtonElement>('.einstieg__pause');
   if (film && knopf) {
@@ -91,13 +92,14 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     film.addEventListener('play', zeige);
     film.addEventListener('pause', zeige);
     knopf.addEventListener('click', () => (film.paused ? film.play().catch(zeige) : film.pause()));
+    const starten = () => film.play().catch(zeige);
     if (sparen) {
-      film.autoplay = false;
-      film.pause();
+      zeige();
+    } else if (document.readyState === 'complete') {
+      starten();
     } else {
-      film.play().catch(zeige);
+      window.addEventListener('load', starten, { once: true });
     }
-    zeige();
     knopf.hidden = false;
   }
 </script>
