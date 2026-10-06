@@ -63,7 +63,7 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     </div>
   </div>
 
-  {/* Monogramm dezent unten rechts (ab Desktop), unter dem Pause-Knopf über Holz und Spänen, nicht über der Säge */}
+  {/* Monogramm dezent rechts in der Mitte (ab Desktop), der Pause-Knopf steht darunter unten rechts */}
   <div class="einstieg__marke" aria-hidden="true">
     <Monogramm negativ sizes="4rem" eager />
   </div>
@@ -235,7 +235,7 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     color: var(--gold-licht);
   }
 
-  /* Handy unten rechts, breite Bildschirme rechts mittig über dem sichtbaren Video */
+  /* Unten rechts (Handy und Desktop); auf breiten Bildschirmen steht rechts in der Mitte das Monogramm */
   .einstieg__pause {
     position: absolute;
     right: var(--rand);
@@ -297,7 +297,8 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     .einstieg__marke {
       display: block;
       position: absolute;
-      bottom: 2.5rem;
+      top: 50%;
+      transform: translateY(-50%);
       right: var(--rand);
       --monogramm: 4rem;
       opacity: 0.85;
@@ -309,10 +310,10 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
       object-position: 50% 50%;
     }
 
+    /* Unten rechts, mittig unter dem Monogramm */
     .einstieg__pause {
-      top: 50%;
-      bottom: auto;
-      transform: translateY(-50%);
+      bottom: 2.5rem;
+      right: calc(var(--rand) + 0.15rem);
       width: 3.5rem;
       height: 3.5rem;
     }
