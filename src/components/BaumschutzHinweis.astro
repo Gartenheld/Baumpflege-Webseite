@@ -12,7 +12,6 @@ interface Props {
 }
 
 const { ort, status, stelle, link, linktext = 'Website der Verwaltung', regel } = Astro.props;
-const pdf = /\.pdf($|\?)/i.test(link);
 ---
 
 <aside class="baumschutz" aria-labelledby="baumschutz-titel">
@@ -22,7 +21,7 @@ const pdf = /\.pdf($|\?)/i.test(link);
   {status === 'unklar' && <p>Ob in {ort} eine Baumschutzsatzung gilt und welche Bäume sie schützt, erfahren Sie bei der Verwaltung.</p>}
   {regel && <p>{regel} Maßgeblich ist die jeweils aktuelle Satzung.</p>}
   <p>Vom 1. März bis 30. September gilt außerdem die Schonzeit nach dem Bundesnaturschutzgesetz. Sie betrifft vor allem Hecken, Gebüsche und Bäume außerhalb von Gärten. Brütende Vögel und ihre Nester sind ganzjährig geschützt. Wir sprechen das bei der Planung mit Ihnen an.</p>
-  <p class="link"><a href={link} rel="noopener" type={pdf ? 'application/pdf' : undefined}>{stelle}: {linktext} <Icon name="pfeil" /></a></p>
+  <p class="link"><a href={link} rel="noopener">{stelle}: {linktext} <Icon name="pfeil" /></a></p>
   <p class="hinweis">Allgemeine Information, keine Rechtsberatung. Verbindlich ist die Auskunft der Verwaltung.</p>
 </aside>
 

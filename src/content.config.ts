@@ -64,7 +64,8 @@ const orte = defineCollection({
       // satzung = Baumschutzsatzung bekannt, keine = keine Satzung, unklar = noch nicht geprüft
       status: z.enum(['satzung', 'keine', 'unklar']),
       stelle: z.string(),
-      link: z.url(),
+      // Webseite der Kommune, keine PDF-Datei
+      link: z.url().refine((u) => !/\.pdf($|[?#])/i.test(u), 'Bitte auf eine Webseite der Kommune verlinken, nicht auf eine PDF-Datei.'),
       // Beschriftung des Links, z. B. „Baumschutzsatzung (PDF)“; ohne Angabe „Website der Verwaltung“
       linktext: z.string().optional(),
       // Datum der letzten Prüfung (JJJJ-MM-TT), leer = noch nicht geprüft

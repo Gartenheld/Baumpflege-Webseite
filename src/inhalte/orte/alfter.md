@@ -12,8 +12,7 @@ entfernungKm: 3
 baumschutz:
   status: satzung
   stelle: "Gemeinde Alfter"
-  link: "https://www.alfter.de/fileadmin/redaktion/downloads/Rathaus-Politik/Ortsrecht/5._Bereich/2023-09-26_Teil_5.5_Baumschutzsatzung_Alfter.pdf"
-  linktext: "Baumschutzsatzung (PDF)"
+  link: "https://www.alfter.de/"
   geprueft: null
 ---
 

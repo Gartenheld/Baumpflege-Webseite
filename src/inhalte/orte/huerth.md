@@ -12,8 +12,7 @@ entfernungKm: 16
 baumschutz:
   status: satzung
   stelle: "Stadt Hürth"
-  link: "https://www.huerth.de/vv/baumschutzsatzung_genehmigung_20231213.pdf"
-  linktext: "Antrag nach der Baumschutzsatzung (PDF)"
+  link: "https://www.huerth.de/"
   geprueft: null
 ---
 

@@ -12,8 +12,7 @@ entfernungKm: 15
 baumschutz:
   status: unklar
   stelle: "Stadt Erftstadt"
-  link: "https://www.erftstadt.de/vv/produkte/baumfaellgenehmigung.php"
-  linktext: "Baumfällgenehmigung"
+  link: "https://www.erftstadt.de/"
   geprueft: null
 ---
 
