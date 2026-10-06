@@ -12,7 +12,7 @@ import { tmpdir } from 'node:os';
 const BASIS = process.env.BASIS_URL ?? 'http://127.0.0.1:8080';
 const LIGHTHOUSE = process.env.LIGHTHOUSE_BIN ?? join('node_modules', '.bin', 'lighthouse');
 const GRENZEN = { performance: 85, accessibility: 95, 'best-practices': 90, seo: 95 };
-const TYPISCH = ['/', '/leistungen/baumfaellung/', '/einsatzgebiet/bornheim/', '/referenzen/', '/kontakt/'];
+const TYPISCH = ['/', '/leistungen/baumfaellung/', '/einsatzgebiet/bornheim/', '/faq/', '/kontakt/'];
 
 const sitemap = readFileSync('dist/sitemap-0.xml', 'utf8');
 const alle = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname);

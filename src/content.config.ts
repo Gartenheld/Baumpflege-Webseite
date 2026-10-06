@@ -74,6 +74,7 @@ const faq = defineCollection({
     thema: z.enum(['genehmigung', 'baum', 'kosten', 'nachbarn', 'haftung', 'ablauf', 'leistung']),
     // Auf welchen Leistungsseiten die Frage zusätzlich erscheint (Dateinamen aus src/inhalte/leistungen)
     leistungen: z.array(z.string()).default([]),
+    // false blendet die Frage auf der FAQ-Seite aus (dort stehen sonst alle Fragen, auch die zu einzelnen Leistungen)
     aufFaqSeite: z.boolean().default(true),
     // Zusätzlich auf der Seite Gewerbe und Hausverwaltungen (Fragen zum Thema Haftung stehen dort immer)
     gewerbe: z.boolean().default(false),

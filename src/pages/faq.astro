@@ -1,47 +1,422 @@
 ---
+// Häufige Fragen: alle Fragen aus src/inhalte/faq an einem Ort, nach Themen gegliedert. Die Fragen zu einzelnen
+// Leistungen stehen unter der jeweiligen Leistung. Links: Verzeichnis (Desktop), Sprungmarken (Handy), Suche.
 import Basis from '../layouts/Basis.astro';
 import Seitenkopf from '../components/Seitenkopf.astro';
-import FaqListe from '../components/FaqListe.astro';
 import Sprungmarken from '../components/Sprungmarken.astro';
+import FaqListe from '../components/FaqListe.astro';
+import Icon from '../components/Icon.astro';
 import KontaktAufruf from '../components/start/KontaktAufruf.astro';
-import { render } from 'astro:content';
-import { seite, faqNachThema } from '../lib/inhalte';
+import { seite, faqSeite, leistungsUrl } from '../lib/inhalte';
 import { fragenSeite } from '../lib/strukturdaten';
 
 const s = await seite('faq');
-const { Content } = await render(s);
-const gruppen = await faqNachThema();
+const gruppen = await faqSeite();
+const anzahl = gruppen.reduce((n, g) => n + g.fragen.length, 0);
 const faqDaten = fragenSeite(gruppen.flatMap((g) => g.fragen));
+const nr = (i: number) => String(i + 1).padStart(2, '0');
+
+// Weiterführende Seiten zu einzelnen Themen
+const weiter: Record<string, { href: string; text: string }> = {
+  kosten: { href: '/kosten/', text: 'Mehr zu den Kosten' },
+  haftung: { href: '/gewerbe-hausverwaltungen/', text: 'Für Hausverwaltungen und Gewerbe' },
+};
 ---
 
 <Basis title={s.data.seitentitel} description={s.data.beschreibung} strukturdaten={[faqDaten]}>
   <Seitenkopf pfad={[{ titel: 'Häufige Fragen' }]} kicker={s.data.kicker} titel={s.data.h1} einleitung={s.data.einleitung}>
-    <div class="prosa"><Content /></div>
-    <Sprungmarken label="Themen" marken={gruppen.map((g) => ({ titel: g.titel, ziel: g.thema }))} />
+    <div class="suche" data-suche hidden>
+      <label for="faq-suche">Frage suchen</label>
+      <div class="suche__feld">
+        <Icon name="suche" />
+        <input id="faq-suche" type="search" autocomplete="off" placeholder="Zum Beispiel Schonzeit oder Kosten" />
+      </div>
+      <p class="suche__status" aria-live="polite"></p>
+    </div>
+    <div class="nur-handy">
+      <Sprungmarken label="Themen" marken={gruppen.map((g) => ({ titel: g.kurz, ziel: g.thema }))} />
+    </div>
   </Seitenkopf>
 
-  {
-    gruppen.map((g, i) => (
-      <section class:list={['abschnitt', { 'abschnitt--weiss': i % 2 === 0 }]} id={g.thema} aria-labelledby={`${g.thema}-titel`}>
-        <div class="huelle raster-seitlich">
-          <div class="abschnittskopf">
-            <h2 id={`${g.thema}-titel`}>{g.titel}</h2>
-          </div>
-          <FaqListe eintraege={g.fragen} />
-        </div>
-      </section>
-    ))
-  }
+  <section class="abschnitt abschnitt--weiss" aria-label="Fragen und Antworten">
+    <div class="huelle raster">
+      <nav class="verzeichnis" aria-label="Themen">
+        <p class="verzeichnis__titel">Themen</p>
+        <ol>
+          {
+            gruppen.map((g, i) => (
+              <li>
+                <a href={`#${g.thema}`} data-ziel={g.thema}>
+                  <span class="verzeichnis__nr">{nr(i)}</span>
+                  <span>{g.kurz}</span>
+                </a>
+                {g.unter.length > 0 && (
+                  <ul>
+                    {g.unter.map((u) => (
+                      <li>
+                        <a href={`#leistung-${u.id}`}>{u.titel}</a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))
+          }
+        </ol>
+        <p class="verzeichnis__anzahl">{anzahl} Fragen und Antworten</p>
+      </nav>
 
-  <KontaktAufruf titel="Ihre Frage ist nicht dabei?" text="Schicken Sie uns Fotos und eine kurze Beschreibung oder rufen Sie uns an. Wir helfen Ihnen gern weiter." />
+      <div class="inhalt">
+        {
+          gruppen.map((g, i) => (
+            <section class="gruppe" id={g.thema} aria-labelledby={`${g.thema}-titel`} data-gruppe>
+              <header class="gruppe__kopf">
+                <p class="gruppe__nr" aria-hidden="true">{nr(i)}</p>
+                <h2 id={`${g.thema}-titel`}>{g.titel}</h2>
+                <p class="gruppe__einleitung">{g.einleitung}</p>
+                {weiter[g.thema] && (
+                  <a class="weiter" href={weiter[g.thema].href}>
+                    {weiter[g.thema].text} <Icon name="pfeil" />
+                  </a>
+                )}
+              </header>
+              {g.unter.length > 0 ? (
+                g.unter.map((u) => (
+                  <div class="unter" id={`leistung-${u.id}`} data-teil>
+                    <div class="unter__kopf">
+                      <h3>{u.titel}</h3>
+                      <a class="weiter" href={leistungsUrl(u.id)}>
+                        Zur Leistung <Icon name="pfeil" />
+                      </a>
+                    </div>
+                    <FaqListe eintraege={u.fragen} />
+                  </div>
+                ))
+              ) : (
+                <FaqListe eintraege={g.fragen} />
+              )}
+            </section>
+          ))
+        }
+        <div class="leer" data-leer hidden>
+          <p>Zu Ihrer Suche haben wir keine passende Frage gefunden.</p>
+          <a class="weiter" href="/kontakt/">Stellen Sie uns Ihre Frage direkt <Icon name="pfeil" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <KontaktAufruf
+    titel="Ihre Frage ist nicht dabei?"
+    text="Schreiben Sie uns oder rufen Sie an. Geht es um einen bestimmten Baum, senden Sie uns gern einige Fotos, Sie erhalten eine persönliche Einschätzung."
+  />
 </Basis>
 
-<style>
-  .abschnitt--weiss :global(.faq details) {
-    background: var(--creme);
+<script>
+  // Suche: blendet Fragen aus, in deren Frage und Antwort nicht alle Suchwörter vorkommen.
+  // Ohne JavaScript bleibt das Suchfeld verborgen, alle Fragen sind sichtbar.
+  const kasten = document.querySelector<HTMLElement>('[data-suche]');
+  const feld = document.querySelector<HTMLInputElement>('#faq-suche');
+  const status = document.querySelector<HTMLElement>('.suche__status');
+  const leer = document.querySelector<HTMLElement>('[data-leer]');
+  if (kasten && feld && status && leer) {
+    kasten.hidden = false;
+    const glatt = (t: string) => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ß/g, 'ss');
+    const fragen = [...document.querySelectorAll<HTMLDetailsElement>('.inhalt details')].map((d) => ({ d, text: glatt(d.textContent ?? '') }));
+    const teile = [...document.querySelectorAll<HTMLElement>('.inhalt [data-teil], .inhalt [data-gruppe]')];
+    const suchen = () => {
+      const woerter = glatt(feld.value).split(/\s+/).filter(Boolean);
+      let treffer = 0;
+      for (const { d, text } of fragen) {
+        const passt = woerter.every((w) => text.includes(w));
+        d.hidden = !passt;
+        if (passt) treffer++;
+      }
+      for (const t of teile) t.hidden = !t.querySelector('details:not([hidden])');
+      leer.hidden = treffer > 0;
+      status.textContent = woerter.length === 0 ? '' : treffer === 1 ? '1 Frage gefunden' : `${treffer} Fragen gefunden`;
+    };
+    feld.addEventListener('input', suchen);
   }
 
-  section[id] {
-    scroll-margin-top: 1rem;
+  // Verzeichnis: das Thema hervorheben, das gerade im oberen Drittel des Fensters beginnt oder läuft
+  const links = [...document.querySelectorAll<HTMLAnchorElement>('.verzeichnis a[data-ziel]')];
+  const gruppen = [...document.querySelectorAll<HTMLElement>('.inhalt [data-gruppe]')];
+  let geplant = false;
+  const markieren = () => {
+    geplant = false;
+    const grenze = window.innerHeight * 0.3;
+    const aktuell = gruppen.filter((g) => !g.hidden && g.getBoundingClientRect().top <= grenze).pop();
+    const imBereich = aktuell && aktuell.getBoundingClientRect().bottom > 0;
+    for (const a of links) {
+      if (imBereich && a.dataset.ziel === aktuell?.id) a.setAttribute('aria-current', 'true');
+      else a.removeAttribute('aria-current');
+    }
+  };
+  window.addEventListener('scroll', () => {
+    if (!geplant) {
+      geplant = true;
+      requestAnimationFrame(markieren);
+    }
+  }, { passive: true });
+  markieren();
+</script>
+
+<style>
+  /* Suche im Seitenkopf */
+  .suche {
+    display: grid;
+    gap: 0.5rem;
+    max-width: 34rem;
+    margin-top: 0.75rem;
+  }
+
+  .suche[hidden] {
+    display: none;
+  }
+
+  .suche label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold-dunkel);
+  }
+
+  .suche__feld {
+    position: relative;
+  }
+
+  .suche__feld :global(.icon) {
+    position: absolute;
+    left: 1.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.2rem;
+    height: 1.2rem;
+    color: var(--text-weich);
+    pointer-events: none;
+  }
+
+  .suche input {
+    width: 100%;
+    min-height: 3.4rem;
+    padding: 0.75rem 1.25rem 0.75rem 3.1rem;
+    border: 1px solid var(--linie);
+    border-radius: 999px;
+    background: var(--weiss);
+    font: inherit;
+    font-size: 1.05rem;
+    color: var(--text);
+  }
+
+  .suche input::placeholder {
+    color: var(--text-weich);
+  }
+
+  .suche input:focus-visible {
+    outline: 2px solid var(--gold-dunkel);
+    outline-offset: 2px;
+    border-color: var(--gold-dunkel);
+  }
+
+  .suche__status {
+    min-height: 1.5em;
+    font-size: 0.95rem;
+    color: var(--text-weich);
+  }
+
+  /* Zweispaltig ab Desktop: Verzeichnis links, Fragen rechts */
+  .raster {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .verzeichnis {
+    display: none;
+  }
+
+  .inhalt {
+    display: grid;
+    gap: clamp(3.5rem, 6vw, 5rem);
+    min-width: 0;
+  }
+
+  .gruppe {
+    display: grid;
+    gap: 2rem;
+    scroll-margin-top: 1.5rem;
+  }
+
+  .gruppe[hidden],
+  .unter[hidden],
+  .leer[hidden] {
+    display: none;
+  }
+
+  .gruppe__kopf {
+    display: grid;
+    gap: 0.6rem;
+    max-width: 44rem;
+  }
+
+  .gruppe__nr {
+    font-family: var(--schrift-titel);
+    font-size: 1.05rem;
+    letter-spacing: 0.12em;
+    color: var(--gold-dunkel);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .gruppe__nr::after {
+    content: '';
+    width: 2.5rem;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .gruppe__kopf h2 {
+    font-size: clamp(1.6rem, 1.3rem + 1.1vw, 2.2rem);
+  }
+
+  .gruppe__einleitung {
+    color: var(--text-weich);
+    font-size: 1.1rem;
+  }
+
+  .weiter {
+    justify-self: start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .weiter :global(.icon) {
+    width: 1.05em;
+    height: 1.05em;
+  }
+
+  .unter {
+    display: grid;
+    gap: 0.9rem;
+    scroll-margin-top: 1.5rem;
+  }
+
+  .unter + .unter {
+    margin-top: 1.5rem;
+  }
+
+  .unter__kopf {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.25rem 1.5rem;
+    max-width: 50rem;
+  }
+
+  .unter__kopf h3 {
+    font-size: 1.3rem;
+  }
+
+  .unter__kopf .weiter {
+    font-size: 0.95rem;
+  }
+
+  .leer {
+    display: grid;
+    gap: 0.75rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--linie);
+    color: var(--text-weich);
+  }
+
+  @media (min-width: 64rem) {
+    .nur-handy {
+      display: none;
+    }
+
+    .raster {
+      grid-template-columns: 15rem minmax(0, 1fr);
+      column-gap: clamp(3rem, 6vw, 6rem);
+      align-items: start;
+    }
+
+    .verzeichnis {
+      display: block;
+      position: sticky;
+      top: 1.5rem;
+      padding-right: 1.5rem;
+      border-right: 1px solid var(--linie);
+    }
+
+    .verzeichnis__titel {
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-dunkel);
+      margin-bottom: 1rem;
+    }
+
+    .verzeichnis ol,
+    .verzeichnis ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .verzeichnis ol {
+      display: grid;
+      gap: 0.15rem;
+    }
+
+    .verzeichnis a {
+      display: flex;
+      gap: 0.75rem;
+      padding: 0.4rem 0;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+
+    .verzeichnis a:hover,
+    .verzeichnis a[aria-current] {
+      color: var(--gold-dunkel);
+    }
+
+    .verzeichnis a[aria-current] {
+      font-weight: 700;
+    }
+
+    .verzeichnis__nr {
+      font-family: var(--schrift-titel);
+      color: var(--gold-dunkel);
+      min-width: 1.5rem;
+    }
+
+    .verzeichnis ul {
+      margin: 0.1rem 0 0.4rem 2.25rem;
+      display: grid;
+    }
+
+    .verzeichnis ul a {
+      font-size: 0.92rem;
+      padding: 0.2rem 0;
+      color: var(--text-weich);
+    }
+
+    .verzeichnis__anzahl {
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--linie);
+      font-size: 0.9rem;
+      color: var(--text-weich);
+    }
   }
 </style>

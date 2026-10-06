@@ -1,5 +1,6 @@
 ---
 // Fragen und Antworten zum Aufklappen (ohne JavaScript). Antworttext aus src/inhalte/faq.
+// Jede Frage hat eine eigene Adresse, z. B. /faq/#frage-kosten-steuer: Wer sie aufruft, sieht die Antwort aufgeklappt.
 import { render, type CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -13,7 +14,7 @@ const mitInhalt = await Promise.all(eintraege.map(async (e) => ({ e, Inhalt: (aw
 <div class="faq">
   {
     mitInhalt.map(({ e, Inhalt }) => (
-      <details>
+      <details id={`frage-${e.id}`}>
         <summary>
           <span>{e.data.frage}</span>
         </summary>
@@ -25,21 +26,26 @@ const mitInhalt = await Promise.all(eintraege.map(async (e) => ({ e, Inhalt: (aw
   }
 </div>
 
+<script>
+  // Aufruf über einen Link auf eine einzelne Frage: Antwort aufklappen
+  const oeffnen = () => {
+    const ziel = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (ziel instanceof HTMLDetailsElement && ziel.id.startsWith('frage-')) ziel.open = true;
+  };
+  oeffnen();
+  window.addEventListener('hashchange', oeffnen);
+</script>
+
 <style>
+  /* Ruhige Liste mit feinen Linien statt Kästen, Fragen in der Titelschrift */
   .faq {
-    display: grid;
-    gap: 0.75rem;
-    max-width: 52rem;
+    max-width: 50rem;
+    border-top: 1px solid var(--linie);
   }
 
   details {
-    background: var(--weiss);
-    border-radius: var(--radius);
-    border: 1px solid transparent;
-  }
-
-  details[open] {
-    border-color: var(--linie);
+    border-bottom: 1px solid var(--linie);
+    scroll-margin-top: 1.5rem;
   }
 
   summary {
@@ -47,40 +53,56 @@ const mitInhalt = await Promise.all(eintraege.map(async (e) => ({ e, Inhalt: (aw
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    padding: 1.1rem 1.4rem;
-    font-weight: 700;
-    font-size: 1.1rem;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.2rem 0;
+    font-family: var(--schrift-titel);
+    font-weight: 600;
+    font-size: clamp(1.08rem, 1rem + 0.3vw, 1.2rem);
+    line-height: 1.35;
     color: var(--dunkelgruen);
-    min-height: 3.5rem;
+    transition: color 0.15s ease;
+  }
+
+  summary:hover {
+    color: var(--gold-dunkel);
   }
 
   summary::-webkit-details-marker {
     display: none;
   }
 
+  /* Plus aus zwei feinen Linien, aufgeklappt bleibt der Strich */
   summary::after {
-    content: '+';
+    content: '';
     flex-shrink: 0;
-    width: 2rem;
-    height: 2rem;
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-top: -0.15rem;
     border-radius: 50%;
-    display: grid;
-    place-items: center;
-    background: var(--creme);
-    border: 1.5px solid var(--gold);
-    color: var(--gold-dunkel);
-    font-size: 1.4rem;
-    line-height: 1;
+    border: 1px solid var(--gold);
+    background:
+      linear-gradient(var(--gold-dunkel), var(--gold-dunkel)) center / 0.75rem 1.5px no-repeat,
+      linear-gradient(var(--gold-dunkel), var(--gold-dunkel)) center / 1.5px 0.75rem no-repeat;
+    transition: background-size 0.2s ease, background-color 0.2s ease;
   }
 
   details[open] summary::after {
-    content: '\2212';
+    background-color: color-mix(in srgb, var(--gold) 18%, transparent);
+    background-size:
+      0.75rem 1.5px,
+      1.5px 0;
   }
 
   .antwort {
-    padding: 0 1.4rem 1.4rem;
+    padding: 0 3.4rem 1.6rem 0;
     font-size: 1.05rem;
+    color: var(--text);
+  }
+
+  @media (max-width: 39.99rem) {
+    .antwort {
+      padding-right: 0;
+    }
   }
 </style>

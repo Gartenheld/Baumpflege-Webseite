@@ -3,6 +3,7 @@ import Basis from '../layouts/Basis.astro';
 import Seitenkopf from '../components/Seitenkopf.astro';
 import Karten from '../components/Karten.astro';
 import FaqListe from '../components/FaqListe.astro';
+import Icon from '../components/Icon.astro';
 import KontaktAufruf from '../components/start/KontaktAufruf.astro';
 import { render } from 'astro:content';
 import { seite, faqFuerGewerbe } from '../lib/inhalte';
@@ -47,6 +48,9 @@ const fragen = await faqFuerGewerbe();
             <h2 id="faq-titel">Haftung, Verkehrssicherung und mehr</h2>
           </div>
           <FaqListe eintraege={fragen} />
+          <p class="mehr-fragen">
+            <a href="/faq/#haftung">Alle häufigen Fragen ansehen <Icon name="pfeil" /></a>
+          </p>
         </div>
       </section>
     )
@@ -64,7 +68,19 @@ const fragen = await faqFuerGewerbe();
     background: var(--creme);
   }
 
-  .abschnitt--weiss :global(.faq details) {
-    background: var(--creme);
+  .mehr-fragen {
+    margin-top: 1.5rem;
+  }
+
+  .mehr-fragen a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 700;
+  }
+
+  .mehr-fragen :global(.icon) {
+    width: 1.1em;
+    height: 1.1em;
   }
 </style>

@@ -84,9 +84,9 @@ Regeln für alle Adressen:
 | Hürth | `/einsatzgebiet/huerth/` | |
 | Erftstadt | `/einsatzgebiet/erftstadt/` | |
 | Weilerswist | `/einsatzgebiet/weilerswist/` | |
-| Referenzen | `/referenzen/` | |
 | Über uns | `/ueber-uns/` | mit Qualifikationen und Ausstattung |
-| FAQ | `/faq/` | |
+| Häufige Fragen | `/faq/` | alle Fragen nach Themen, mit Verzeichnis und Suche; im Hauptmenü (seit 06.10.2026 statt Referenzen) |
+| Kosten | `/kosten/` | Preisfaktoren ohne Preise, Fragen zu Kosten |
 | Kontakt und Anfrage | `/kontakt/` | Anfrageformular. Technisch eine `index.php` (wegen des Spamschutzes, siehe Abschnitt 8), die Adresse bleibt `/kontakt/` |
 | Danke-Seite | `/kontakt/danke/` | noindex, nicht in der Sitemap |
 | Impressum | `/impressum/` | |
@@ -118,8 +118,8 @@ Alles, was du später selbst änderst, liegt in drei Bereichen: `src/inhalte/`, 
 | Leistungen | `src/inhalte/leistungen/*.md` | Titel, Kurztext, Seitentitel, Description, H1, Einleitung, Reihenfolge, Schwerpunkt, benötigte Qualifikation, Nutzen (3 bis 4 Punkte), Kostenfaktoren, Überschrift der Fragen; Fließtext mit Vorgehen und Technik | Leistungsseiten, Übersicht, Startseite, Fußbereich |
 | Fotos | `src/bilder/<platz>.jpg`, alt-Texte in `src/config/fotos.ts` | fester Platz pro Foto (Startseite, Über uns, Gewerbe, je Leistung), alt-Text Pflicht | Seitenkopf, Leistungskarten; Platzhalter, solange kein Foto da ist |
 | Orte | `src/inhalte/orte/*.md` | Ort, Lage für die Karte, Seitentitel, Description, H1, Einleitung, Ortsteile, Entfernung, Baumschutz (Satzung ja/nein/unklar, zuständige Stelle, Link zur Stadt, geprüft am); eigener Fließtext mit Anfahrt aus Bornheim | Ortsseiten, Einsatzgebiet mit Karte. Referenzen aus dem Ort erscheinen automatisch. |
-| Referenzen | `src/inhalte/referenzen/<jahr-monat-ort-baum>/index.md` plus Fotos im selben Ordner | Titel, Ort, Leistungen, Baumart, Aufgabe, Datum, Fotos vorher und nachher mit Alt-Text, `veroeffentlichen` | Referenzseite, passende Ortsseite |
-| FAQ | `src/inhalte/faq/*.md` | Frage (endet mit „?“), Thema, zugehörige Leistungen, auf FAQ-Seite ja/nein, Reihenfolge; Antwort als Fließtext | FAQ-Seite und verteilt auf die Leistungsseiten |
+| Referenzen | `src/inhalte/referenzen/<jahr-monat-ort-baum>/index.md` plus Fotos im selben Ordner | Titel, Ort, Leistungen, Baumart, Aufgabe, Datum, Fotos vorher und nachher mit Alt-Text, `veroeffentlichen` | passende Ortsseite (eine eigene Referenzseite gibt es seit 06.10.2026 nicht mehr) |
+| FAQ | `src/inhalte/faq/*.md` | Frage (endet mit „?“), Thema, zugehörige Leistungen, auf FAQ-Seite ja/nein, Reihenfolge; Antwort als Fließtext | FAQ-Seite (alle Fragen, die zu einzelnen Leistungen unter der Leistung) und verteilt auf Leistungs-, Kosten- und Gewerbeseite |
 | Bewertungen | `src/inhalte/bewertungen/*.yaml` | Name gekürzt (Vorname und Anfangsbuchstabe), Sterne, Datum, Text, `veroeffentlichen` | Startseite |
 | Qualifikationen | `src/inhalte/qualifikationen/*.yaml` | Titel, Erklärung in einem Satz für Laien, `vorhanden`, Reihenfolge | Über uns, Schalter für Leistungen |
 | Seiten | `src/inhalte/seiten/*.md` | Seitentitel, Description, Oberbegriff, H1, Einleitung, Karten (Nutzen, Grundsätze, Preisfaktoren), Punkte („Gut zu wissen“) | Leistungsübersicht, Über uns, Gewerbe, Einsatzgebiet, Referenzen, FAQ, Kosten, Kontakt, Datenschutz |
@@ -564,7 +564,7 @@ Blockierend (im Deployment, schnell und eindeutig), umgesetzt in Schritt 4:
 
 Nicht blockierend (eigener Workflow `qualitaet.yml`, nach Änderungen an `main` und jeden Montag), umgesetzt in Schritt 5 mit Lighthouse statt pa11y (Lighthouse enthält die axe-Regeln für Barrierefreiheit):
 
-- **Lighthouse** (`scripts/qualitaet.mjs`) für 5 typische Seiten (Startseite, eine Leistung, ein Ort, Referenzen, Kontakt) mit allen vier Kategorien, für alle übrigen Seiten der Sitemap Barrierefreiheit und SEO
+- **Lighthouse** (`scripts/qualitaet.mjs`) für 5 typische Seiten (Startseite, eine Leistung, ein Ort, Häufige Fragen, Kontakt) mit allen vier Kategorien, für alle übrigen Seiten der Sitemap Barrierefreiheit und SEO
 - Grenzen: Leistung 85, Barrierefreiheit 95, Best Practices 90, SEO 95. Die Tabelle aller Werte steht in der Zusammenfassung des Laufs.
 
 Ist dieser Workflow rot, bekommst du eine Mail, das Deployment läuft trotzdem. Messwerte auf GitHub schwanken, deshalb liegt die Grenze für Leistung niedriger als die lokal gemessenen 99.

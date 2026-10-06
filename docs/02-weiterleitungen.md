@@ -41,7 +41,8 @@ Die erste passende Regel gewinnt. Steht in einer Adresse eine Leistung und ein O
 | Schlagwörter in der alten Adresse (Beispiele) | Neue URL |
 |---|---|
 | gewerbe, hausverwaltung, firmenkunden, hausmeister, objektpflege, verkehrssicherung | `/gewerbe-hausverwaltungen/` |
-| referenz, projekt, galerie, portfolio, vorher-nachher, bewertung, rezension | `/referenzen/` |
+| referenz, projekt, galerie, portfolio, vorher-nachher | `/leistungen/` (eine Referenzseite gibt es nicht mehr, seit 06.10.2026) |
+| bewertung, rezension, kundenstimme | `/` (Bewertungen stehen auf der Startseite) |
 | ueber-uns, ueber-mich, about, team, unser-team, unternehmen, author | `/ueber-uns/` |
 | kontakt, anfrage, anfordern, rueckruf, danke | `/kontakt/` (nicht auf `/kontakt/danke/`, die Seite ist noindex) |
 | faq, fragen | `/faq/` |
@@ -218,7 +219,8 @@ RewriteRule (datenschutz|privacy|dsgvo|cookie) https://baumpflege-happe.de/daten
 
 # --- 6. Seitentypen (vermutet) -------------------------------------------------
 RewriteRule (gewerbe|hausverwaltung|firmenkunden|unternehmenskunden|wohnungswirtschaft|hausmeister|objektpflege|verkehrssicherung) https://baumpflege-happe.de/gewerbe-hausverwaltungen/? [R=301,L,NC]
-RewriteRule (referenz|projekt|galerie|gallery|portfolio|vorher-nachher|bewertung|rezension|kundenstimme|testimonial) https://baumpflege-happe.de/referenzen/? [R=301,L,NC]
+RewriteRule (referenz|projekt|galerie|gallery|portfolio|vorher-nachher) https://baumpflege-happe.de/leistungen/? [R=301,L,NC]
+RewriteRule (bewertung|rezension|kundenstimme|testimonial) https://baumpflege-happe.de/? [R=301,L,NC]
 RewriteRule (ber-uns|ber-mich|about|unser-team|(^|/)(team|unternehmen|wir|philosophie)(/|$)) https://baumpflege-happe.de/ueber-uns/? [R=301,L,NC]
 RewriteRule (^|/)author/ https://baumpflege-happe.de/ueber-uns/? [R=301,L,NC]
 # Kontakt vor FAQ, weil "anfragen" sonst als "fragen" erkannt würde

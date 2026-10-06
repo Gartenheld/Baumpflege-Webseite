@@ -4,14 +4,13 @@ export const hauptmenue = [
   { titel: 'Kosten', href: '/kosten/' },
   { titel: 'Gewerbe', href: '/gewerbe-hausverwaltungen/' },
   { titel: 'Einsatzgebiet', href: '/einsatzgebiet/' },
-  { titel: 'Referenzen', href: '/referenzen/' },
+  { titel: 'FAQ', href: '/faq/' },
   { titel: 'Über uns', href: '/ueber-uns/' },
 ] as const;
 
 export const fussmenue = [
   { titel: 'Gewerbe und Hausverwaltungen', href: '/gewerbe-hausverwaltungen/' },
   { titel: 'Einsatzgebiet', href: '/einsatzgebiet/' },
-  { titel: 'Referenzen', href: '/referenzen/' },
   { titel: 'Über uns', href: '/ueber-uns/' },
   { titel: 'Kosten', href: '/kosten/' },
   { titel: 'Häufige Fragen', href: '/faq/' },

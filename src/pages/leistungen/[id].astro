@@ -6,6 +6,7 @@ import Seitenkopf from '../../components/Seitenkopf.astro';
 import Karten from '../../components/Karten.astro';
 import Kosten from '../../components/Kosten.astro';
 import FaqListe from '../../components/FaqListe.astro';
+import Icon from '../../components/Icon.astro';
 import LeistungsKarten from '../../components/LeistungsKarten.astro';
 import OrteLinks from '../../components/OrteLinks.astro';
 import KontaktAufruf from '../../components/start/KontaktAufruf.astro';
@@ -68,7 +69,7 @@ const service = dienstleistung(Astro.site!, leistungsUrl(leistung.id), d.titel, 
             <h2 id="faq-titel">{d.fragenTitel ?? `Fragen und Antworten: ${d.titel}`}</h2>
           </div>
           <FaqListe eintraege={fragen} />
-          <p class="mehr-fragen"><a href="/faq/">Alle häufigen Fragen ansehen</a></p>
+          <p class="mehr-fragen"><a href={`/faq/#leistung-${leistung.id}`}>Alle häufigen Fragen ansehen <Icon name="pfeil" /></a></p>
         </div>
       </section>
     )
@@ -93,6 +94,17 @@ const service = dienstleistung(Astro.site!, leistungsUrl(leistung.id), d.titel, 
   .mehr-fragen {
     margin-top: 1.5rem;
     font-weight: 700;
+  }
+
+  .mehr-fragen a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .mehr-fragen :global(.icon) {
+    width: 1.1em;
+    height: 1.1em;
   }
 
   .abschnitt :global(.karten) li {

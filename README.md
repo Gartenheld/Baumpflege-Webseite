@@ -36,7 +36,7 @@ Mehrere Dateien auf einmal bearbeiten: im Repository die Taste „.“ drücken,
 | Referenzen | [src/inhalte/referenzen](src/inhalte/referenzen), ein Ordner pro Projekt |
 | Google-Bewertungen | [src/inhalte/bewertungen](src/inhalte/bewertungen), eine Datei pro Bewertung |
 | Qualifikationen (AS Baum I, AS Baum II, SKT-A, SKT-B) | [src/inhalte/qualifikationen](src/inhalte/qualifikationen) |
-| Texte von Über uns, Gewerbe, Einsatzgebiet, Referenzen, FAQ, Kontakt, Leistungsübersicht | [src/inhalte/seiten](src/inhalte/seiten) |
+| Texte von Über uns, Gewerbe, Einsatzgebiet, Kosten, FAQ, Kontakt, Leistungsübersicht | [src/inhalte/seiten](src/inhalte/seiten) |
 | Datenschutzerklärung | [src/inhalte/seiten/datenschutz.md](src/inhalte/seiten/datenschutz.md) |
 | Impressum (Angaben kommen aus `betrieb.ts`, dazu der Satz zur Verbraucherschlichtung) | [src/pages/impressum.astro](src/pages/impressum.astro) |
 | Menü | [src/config/navigation.ts](src/config/navigation.ts) |
@@ -63,7 +63,7 @@ Fotos haben feste Plätze, zum Beispiel `startseite.jpg` oder `leistung-baumfael
 3. Vorher- und Nachher-Foto in denselben Ordner hochladen und die Bildzeilen in der Datei aktivieren (das `#` am Zeilenanfang entfernen).
 4. Erst wenn der Kunde mit der Veröffentlichung einverstanden ist: `veroeffentlichen: true`.
 
-Die Referenz erscheint auf der Referenzseite und, wenn `ort` einer der neun Orte ist und `veroeffentlichen: true` gilt, auch auf der Ortsseite (Platzhalter erscheinen dort nie, auch nicht in der Vorschau). Die drei Platzhalter-Referenzen (`platzhalter-1` bis `-3`) sind nur in der Vorschau sichtbar. Sobald echte Referenzen da sind, kannst du die Platzhalter-Ordner löschen.
+Eine eigene Referenzseite gibt es nicht mehr (seit 06.10.2026). Die Referenz erscheint auf der Ortsseite, wenn `ort` einer der neun Orte ist und `veroeffentlichen: true` gilt (Platzhalter erscheinen dort nie). Die drei Platzhalter-Referenzen (`platzhalter-1` bis `-3`) werden nirgends angezeigt und können gelöscht werden.
 
 ### Google-Bewertungen
 

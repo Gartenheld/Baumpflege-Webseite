@@ -65,6 +65,59 @@ export const themenTitel: Record<(typeof THEMEN)[number], string> = {
   leistung: 'Zu unseren Leistungen',
 };
 const themaRang = (t: string) => THEMEN.indexOf(t as (typeof THEMEN)[number]);
+type Thema = (typeof THEMEN)[number];
+
+/** Kurze Namen der Themen für Verzeichnis und Sprungmarken auf der FAQ-Seite. */
+export const themenKurz: Record<Thema, string> = {
+  ablauf: 'Anfrage und Ablauf',
+  kosten: 'Kosten',
+  leistung: 'Leistungen',
+  baum: 'Ihr Baum',
+  genehmigung: 'Genehmigung und Schonzeit',
+  nachbarn: 'Nachbarn',
+  haftung: 'Haftung',
+};
+
+/** Ein Satz unter jeder Themenüberschrift auf der FAQ-Seite. */
+export const themenEinleitung: Record<Thema, string> = {
+  ablauf: 'Von der ersten Nachricht bis zum aufgeräumten Grundstück: So arbeiten wir mit Ihnen zusammen.',
+  kosten: 'Worauf es beim Preis ankommt und was Ihr Angebot enthält.',
+  leistung: 'Fragen zu den einzelnen Arbeiten, geordnet nach Leistung.',
+  baum: 'Zustand, Schnitt und Pflege: Antworten rund um Ihren Baum.',
+  genehmigung: 'Wann eine Genehmigung nötig ist und was in der Schonzeit gilt.',
+  nachbarn: 'Was gilt, wenn ein Baum an der Grenze steht oder Äste hinüberragen.',
+  haftung: 'Verkehrssicherungspflicht und Haftung für Eigentümer, Hausverwaltungen und Gewerbe.',
+};
+
+/** Reihenfolge der Themen auf der FAQ-Seite: erst Praktisches, dann Fachliches, dann Rechtliches. */
+const SEITENTHEMEN: Thema[] = ['ablauf', 'kosten', 'leistung', 'baum', 'genehmigung', 'nachbarn', 'haftung'];
+
+/**
+ * Alle Fragen für die FAQ-Seite, nach Themen gegliedert. Die Fragen zu einzelnen Leistungen
+ * (thema: leistung) stehen dort unter der jeweiligen Leistung, maßgeblich ist die erste in `leistungen`.
+ */
+export async function faqSeite() {
+  const alle = await getCollection('faq', ({ data }) => data.aufFaqSeite);
+  const leistungen = await sichtbareLeistungen();
+  const nachReihenfolge = <T extends { data: { reihenfolge: number } }>(l: T[]) => l.sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
+  return SEITENTHEMEN.map((thema) => {
+    const fragen = nachReihenfolge(alle.filter((f) => f.data.thema === thema));
+    const unter =
+      thema === 'leistung'
+        ? leistungen
+            .map((l) => ({ id: l.id, titel: l.data.titel, fragen: fragen.filter((f) => f.data.leistungen[0] === l.id) }))
+            .filter((u) => u.fragen.length > 0)
+        : [];
+    return {
+      thema,
+      titel: themenTitel[thema],
+      kurz: themenKurz[thema],
+      einleitung: themenEinleitung[thema],
+      fragen: unter.length > 0 ? unter.flatMap((u) => u.fragen) : fragen,
+      unter,
+    };
+  }).filter((g) => g.fragen.length > 0);
+}
 
 /** Fragen, die auf einer Leistungsseite erscheinen: erst die zur Leistung, dann allgemeine Themen. */
 export async function faqFuerLeistung(id: string) {
@@ -77,7 +130,7 @@ export async function faqFuerLeistung(id: string) {
   );
 }
 
-/** Fragen für die FAQ-Seite, gruppiert nach Thema. */
+/** Fragen nach Thema gruppiert (z. B. für die Seite Kosten). */
 export async function faqNachThema() {
   const alle = await getCollection('faq', ({ data }) => data.aufFaqSeite);
   return THEMEN.map((thema) => ({
