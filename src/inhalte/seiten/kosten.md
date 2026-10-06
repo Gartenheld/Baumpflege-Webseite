@@ -20,8 +20,8 @@ karten:
     text: "Zum Beispiel das Entfernen des Wurzelstocks. Muss für die Arbeit eine Straße oder ein Gehweg genutzt werden, kann außerdem eine Genehmigung nötig sein."
 # Abschnitt „Gut zu wissen“
 punkte:
-  - titel: "Einschätzung kostenlos"
-    text: "Schicken Sie uns Fotos vom ganzen Baum, vom Stamm und von der Zufahrt. Die Ersteinschätzung und, wenn nötig, die Besichtigung vor Ort sind kostenlos."
+  - titel: "Bis zum Angebot kostenlos"
+    text: "Ersteinschätzung, Besichtigung und Angebot kosten Sie nichts. Am besten schicken Sie uns Fotos vom ganzen Baum, vom Stamm und von der Zufahrt."
   - titel: "Aufräumen inklusive"
     text: "Aufräumen und Entsorgung gehören bei uns zur Arbeit dazu und sind im Angebot enthalten."
   - titel: "Mehraufwand nur nach Absprache"
