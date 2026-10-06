@@ -5,6 +5,7 @@ import { getImage } from 'astro:assets';
 import { PUBLIC_NOINDEX } from 'astro:env/client';
 import Icon from '../Icon.astro';
 import Foto from '../Foto.astro';
+import Monogramm from '../Monogramm.astro';
 import { LOGO } from '../logo-daten';
 import { betrieb, telefonLink } from '../../config/betrieb';
 import { video } from '../../lib/videos';
@@ -60,6 +61,11 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
         <li><Icon name="haken" />Aufräumen und Entsorgung inklusive</li>
       </ul>
     </div>
+  </div>
+
+  {/* Monogramm dezent unten rechts (ab Desktop), unter dem Pause-Knopf über Holz und Spänen, nicht über der Säge */}
+  <div class="einstieg__marke" aria-hidden="true">
+    <Monogramm negativ sizes="4rem" eager />
   </div>
 
   {
@@ -160,6 +166,11 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
   .einstieg__inhalt {
     width: 100%;
     padding-block: 3.5rem 4rem;
+  }
+
+  /* Monogramm erst ab Desktop, auf dem Handy bleibt der Platz für den Text */
+  .einstieg__marke {
+    display: none;
   }
 
   /* Handy: oben etwas enger, unten Platz für den Abspielknopf, damit alles über die Leiste am unteren Rand passt */
@@ -281,6 +292,17 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     .einstieg__inhalt,
     .einstieg--video .einstieg__inhalt {
       padding-block: 5rem;
+    }
+
+    .einstieg__marke {
+      display: block;
+      position: absolute;
+      bottom: 2.5rem;
+      right: var(--rand);
+      --monogramm: 4rem;
+      opacity: 0.85;
+      filter: drop-shadow(0 2px 12px color-mix(in srgb, var(--tiefgruen) 80%, transparent));
+      pointer-events: none;
     }
 
     .einstieg__video {

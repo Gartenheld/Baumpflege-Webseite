@@ -9,9 +9,10 @@ interface Props {
   negativ?: boolean;
   sizes?: string;
   class?: string;
+  eager?: boolean;
 }
 
-const { negativ = false, sizes = '3rem', class: klasse } = Astro.props;
+const { negativ = false, sizes = '3rem', class: klasse, eager = false } = Astro.props;
 ---
 
 <Picture
@@ -22,7 +23,7 @@ const { negativ = false, sizes = '3rem', class: klasse } = Astro.props;
   sizes={sizes}
   alt=""
   class:list={['monogramm', klasse]}
-  loading="lazy"
+  loading={eager ? 'eager' : 'lazy'}
 />
 
 <style>
