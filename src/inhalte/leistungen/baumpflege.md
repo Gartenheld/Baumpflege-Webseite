@@ -17,6 +17,13 @@ vorteile:
   - titel: "Sauber hinterlassen"
     text: "Das Schnittgut häckseln wir vor Ort und fahren es ab. Ihr Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben."
 fragenTitel: "Fragen zur Baumpflege"
+fragen:
+  - baumpflege-anzeichen
+  - baumpflege-zeitpunkt
+  - baum-schnitt-umfang
+  - baumpflege-kappen
+  - genehmigung-rueckschnitt
+  - kosten-steuer
 aufruf: "Braucht Ihr Baum einen Schnitt?"
 kosten:
   frage: "Was kostet Baumpflege?"

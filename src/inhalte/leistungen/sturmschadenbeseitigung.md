@@ -17,6 +17,13 @@ vorteile:
   - titel: "Klare Absprachen"
     text: "Sie erfahren offen, wann wir kommen können und welche Arbeiten bei Ihnen möglich sind."
 fragenTitel: "Fragen zur Sturmschadenbeseitigung"
+fragen:
+  - sturmschadenbeseitigung-erste-schritte
+  - sturmschadenbeseitigung-reaktionszeit
+  - sturmschadenbeseitigung-versicherung
+  - haftung-baum-umgestuerzt
+  - nachbarn-instabiler-baum
+  - genehmigung-artenschutz
 aufruf: "Hat ein Sturm Ihren Baum beschädigt?"
 kosten:
   frage: "Was kostet die Beseitigung eines Sturmschadens?"

@@ -17,6 +17,11 @@ vorteile:
   - titel: "Abtransport auf Wunsch"
     text: "Was Sie nicht als Mulch behalten möchten, laden wir auf und fahren es ab."
 fragenTitel: "Fragen zu Häckselarbeiten"
+fragen:
+  - haeckselarbeiten-mulch
+  - haeckselarbeiten-eigenes-schnittgut
+  - kosten-angebot
+  - ablauf-kleine-auftraege
 aufruf: "Zu viel Schnittgut im Garten?"
 kosten:
   frage: "Was kosten Häckselarbeiten?"

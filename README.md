@@ -79,10 +79,16 @@ Eine vorhandene Datei in [src/inhalte/faq](src/inhalte/faq) kopieren und anpasse
 
 - `frage` endet mit einem Fragezeichen.
 - `thema`: `genehmigung`, `baum` (Zustand, Schnitt und Pflege des Baumes), `kosten`, `nachbarn`, `haftung`, `ablauf` oder `leistung` (Fragen zu einer einzelnen Leistung).
-- `leistungen`: auf welchen Leistungsseiten die Frage zusätzlich erscheint, zum Beispiel `[baumfaellung, baumpflege]`.
-- `aufFaqSeite: false` zeigt eine Frage nur auf den Leistungsseiten.
+- `leistungen`: zu welchen Leistungen die Frage gehört, zum Beispiel `[baumfaellung, baumpflege]`. Bei `thema: leistung` steht die Frage auf der FAQ-Seite unter der ersten genannten Leistung.
+- `aufFaqSeite: false` blendet eine Frage auf der FAQ-Seite aus. Sonst stehen dort alle Fragen.
 - `gewerbe: true` zeigt eine Frage zusätzlich auf der Seite Gewerbe und Hausverwaltungen. Fragen zum Thema `haftung` stehen dort immer.
 - `reihenfolge`: kleinere Zahl steht weiter oben.
+
+**Welche Fragen wo stehen:**
+
+- Auf jeder Leistungsseite stehen höchstens 6 Top-Fragen, danach ein Verweis auf die FAQ-Seite. Welche das sind, steht in der Leistungsdatei (zum Beispiel [src/inhalte/leistungen/baumpflege.md](src/inhalte/leistungen/baumpflege.md)) unter `fragen:`, als Liste der Dateinamen ohne `.md`, in der gewünschten Reihenfolge.
+- Oben auf der FAQ-Seite stehen „Die häufigsten Fragen“. Die Auswahl steht in [src/inhalte/seiten/faq.md](src/inhalte/seiten/faq.md) unter `fragen:`.
+- Ein Tippfehler in einem Dateinamen bricht den Build mit Hinweis ab, die alte Version bleibt online.
 
 Rechtliche Themen bitte allgemein halten und auf die zuständige Stelle verweisen, keine Rechtsberatung.
 

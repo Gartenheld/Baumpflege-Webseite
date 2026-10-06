@@ -17,6 +17,13 @@ vorteile:
   - titel: "Sauberer Abschluss"
     text: "Das Loch wird verfüllt und eingeebnet, Späne und Wurzelreste nehmen wir mit oder lassen sie auf Wunsch als Mulch da."
 fragenTitel: "Fragen zur Wurzelstockentfernung"
+fragen:
+  - wurzelstockentfernung-methode
+  - wurzelstockentfernung-danach
+  - baumfaellung-wurzelstock
+  - genehmigung-ersatzpflanzung
+  - kosten-steuer
+  - ablauf-kleine-auftraege
 aufruf: "Stört ein Wurzelstock?"
 kosten:
   frage: "Was kostet es, einen Wurzelstock zu entfernen?"

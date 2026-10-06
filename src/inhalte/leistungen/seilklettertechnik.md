@@ -18,6 +18,11 @@ vorteile:
   - titel: "Vom Pflegeschnitt bis zur Fällung"
     text: "Totholz, Kronenpflege, Rückschnitt oder ein Baum, der Stück für Stück abgetragen werden muss: All das ist am Seil möglich."
 fragenTitel: "Fragen zur Seilklettertechnik"
+fragen:
+  - seilklettertechnik-arbeiten
+  - seilklettertechnik-zufahrt
+  - ablauf-garten-schonen
+  - genehmigung-pflege-brut
 aufruf: "Kein Platz für eine Hubarbeitsbühne?"
 kosten:
   frage: "Was kosten Arbeiten mit Seilklettertechnik?"

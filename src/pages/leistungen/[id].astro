@@ -13,7 +13,7 @@ import KontaktAufruf from '../../components/start/KontaktAufruf.astro';
 import AufrufBand from '../../components/AufrufBand.astro';
 import Ablauf from '../../components/start/Ablauf.astro';
 import { render } from 'astro:content';
-import { sichtbareLeistungen, faqFuerLeistung, orteSortiert, leistungsUrl } from '../../lib/inhalte';
+import { sichtbareLeistungen, faqFuerLeistung, faqNachIds, orteSortiert, leistungsUrl } from '../../lib/inhalte';
 import { dienstleistung } from '../../lib/strukturdaten';
 
 export async function getStaticPaths() {
@@ -24,7 +24,10 @@ export async function getStaticPaths() {
 const { leistung } = Astro.props;
 const d = leistung.data;
 const { Content } = await render(leistung);
-const fragen = await faqFuerLeistung(leistung.id);
+// Höchstens 6 ausgewählte Fragen (Feld fragen in der Leistungsdatei), alle übrigen stehen auf der FAQ-Seite
+const fragen = d.fragen
+  ? await faqNachIds(d.fragen, `src/inhalte/leistungen/${leistung.id}.md`)
+  : (await faqFuerLeistung(leistung.id)).slice(0, 6);
 const anfrageLink = `/kontakt/?leistung=${leistung.id}`;
 const orte = (await orteSortiert()).map((o) => o.data.name);
 const service = dienstleistung(Astro.site!, leistungsUrl(leistung.id), d.titel, d.titel, d.beschreibung, orte);
@@ -69,7 +72,10 @@ const service = dienstleistung(Astro.site!, leistungsUrl(leistung.id), d.titel, 
             <h2 id="faq-titel">{d.fragenTitel ?? `Fragen und Antworten: ${d.titel}`}</h2>
           </div>
           <FaqListe eintraege={fragen} />
-          <p class="mehr-fragen"><a href={`/faq/#leistung-${leistung.id}`}>Alle häufigen Fragen ansehen <Icon name="pfeil" /></a></p>
+          <div class="mehr-fragen">
+            <p>Weitere Antworten, etwa zu Genehmigung, Kosten und Nachbarrecht, finden Sie in unseren häufigen Fragen.</p>
+            <a href={`/faq/#leistung-${leistung.id}`}>Alle Fragen und Antworten <Icon name="pfeil" /></a>
+          </div>
         </div>
       </section>
     )
@@ -92,14 +98,22 @@ const service = dienstleistung(Astro.site!, leistungsUrl(leistung.id), d.titel, 
 
 <style>
   .mehr-fragen {
-    margin-top: 1.5rem;
-    font-weight: 700;
+    margin-top: 1.75rem;
+    display: grid;
+    gap: 0.5rem;
+    max-width: 50rem;
+  }
+
+  .mehr-fragen p {
+    color: var(--text-weich);
   }
 
   .mehr-fragen a {
+    justify-self: start;
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
+    font-weight: 700;
   }
 
   .mehr-fragen :global(.icon) {

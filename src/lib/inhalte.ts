@@ -89,8 +89,19 @@ export const themenEinleitung: Record<Thema, string> = {
   haftung: 'Verkehrssicherungspflicht und Haftung für Eigentümer, Hausverwaltungen und Gewerbe.',
 };
 
-/** Reihenfolge der Themen auf der FAQ-Seite: erst Praktisches, dann Fachliches, dann Rechtliches. */
-const SEITENTHEMEN: Thema[] = ['ablauf', 'kosten', 'leistung', 'baum', 'genehmigung', 'nachbarn', 'haftung'];
+/** Reihenfolge der Themen auf der FAQ-Seite: die meistgefragten zuerst. */
+const SEITENTHEMEN: Thema[] = ['kosten', 'genehmigung', 'ablauf', 'leistung', 'baum', 'nachbarn', 'haftung'];
+
+/** Ausgewählte Fragen in der angegebenen Reihenfolge. Bricht den Build ab, wenn es eine Frage nicht gibt. */
+export async function faqNachIds(ids: string[], wo: string) {
+  return Promise.all(
+    ids.map(async (id) => {
+      const f = await getEntry('faq', id);
+      if (!f) throw new Error(`${wo}: Die Frage „${id}“ gibt es nicht in src/inhalte/faq.`);
+      return f;
+    }),
+  );
+}
 
 /**
  * Alle Fragen für die FAQ-Seite, nach Themen gegliedert. Die Fragen zu einzelnen Leistungen

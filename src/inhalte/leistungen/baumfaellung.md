@@ -17,6 +17,13 @@ vorteile:
   - titel: "Wurzelstock nach Wunsch"
     text: "Ob der Stumpf im Boden bleibt oder entfernt wird, entscheiden Sie. Beides planen wir von Anfang an mit ein."
 fragenTitel: "Fragen zur Baumfällung"
+fragen:
+  - genehmigung-baumschutzsatzung
+  - genehmigung-schonzeit
+  - baumfaellung-wenig-platz
+  - baumfaellung-holz
+  - baumfaellung-wurzelstock
+  - nachbarn-grenzbaum
 aufruf: "Steht bei Ihnen eine Fällung an?"
 kosten:
   frage: "Was kostet eine Baumfällung?"

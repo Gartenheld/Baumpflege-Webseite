@@ -1,17 +1,19 @@
 ---
-// Häufige Fragen: alle Fragen aus src/inhalte/faq an einem Ort, nach Themen gegliedert. Die Fragen zu einzelnen
-// Leistungen stehen unter der jeweiligen Leistung. Links: Verzeichnis (Desktop), Sprungmarken (Handy), Suche.
+// Häufige Fragen: oben die häufigsten Fragen als Links (Auswahl in src/inhalte/seiten/faq.md), darunter alle Fragen
+// aus src/inhalte/faq nach Themen, die meistgefragten zuerst. Die Fragen zu einzelnen Leistungen stehen unter der
+// jeweiligen Leistung. Links: Verzeichnis (Desktop), Sprungmarken (Handy), Suche.
 import Basis from '../layouts/Basis.astro';
 import Seitenkopf from '../components/Seitenkopf.astro';
 import Sprungmarken from '../components/Sprungmarken.astro';
 import FaqListe from '../components/FaqListe.astro';
 import Icon from '../components/Icon.astro';
 import KontaktAufruf from '../components/start/KontaktAufruf.astro';
-import { seite, faqSeite, leistungsUrl } from '../lib/inhalte';
+import { seite, faqSeite, faqNachIds, leistungsUrl } from '../lib/inhalte';
 import { fragenSeite } from '../lib/strukturdaten';
 
 const s = await seite('faq');
 const gruppen = await faqSeite();
+const haeufigste = await faqNachIds(s.data.fragen, 'src/inhalte/seiten/faq.md');
 const anzahl = gruppen.reduce((n, g) => n + g.fragen.length, 0);
 const faqDaten = fragenSeite(gruppen.flatMap((g) => g.fragen));
 const nr = (i: number) => String(i + 1).padStart(2, '0');
@@ -42,6 +44,13 @@ const weiter: Record<string, { href: string; text: string }> = {
     <div class="huelle raster">
       <nav class="verzeichnis" aria-label="Themen">
         <p class="verzeichnis__titel">Themen</p>
+        {
+          haeufigste.length > 0 && (
+            <a class="verzeichnis__top" href="#haeufigste" data-ziel="haeufigste">
+              Die häufigsten Fragen
+            </a>
+          )
+        }
         <ol>
           {
             gruppen.map((g, i) => (
@@ -67,6 +76,27 @@ const weiter: Record<string, { href: string; text: string }> = {
       </nav>
 
       <div class="inhalt">
+        {
+          haeufigste.length > 0 && (
+            <section class="top" id="haeufigste" aria-labelledby="haeufigste-titel" data-top>
+              <header class="gruppe__kopf">
+                <p class="top__etikett">Am häufigsten gefragt</p>
+                <h2 id="haeufigste-titel">Die häufigsten Fragen</h2>
+              </header>
+              <ol class="top__liste">
+                {haeufigste.map((f, i) => (
+                  <li>
+                    <a href={`#frage-${f.id}`}>
+                      <span class="top__nr" aria-hidden="true">{i + 1}</span>
+                      <span class="top__frage">{f.data.frage}</span>
+                      <Icon name="pfeil" />
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </section>
+          )
+        }
         {
           gruppen.map((g, i) => (
             <section class="gruppe" id={g.thema} aria-labelledby={`${g.thema}-titel`} data-gruppe>
@@ -134,6 +164,8 @@ const weiter: Record<string, { href: string; text: string }> = {
       }
       for (const t of teile) t.hidden = !t.querySelector('details:not([hidden])');
       leer.hidden = treffer > 0;
+      const top = document.querySelector<HTMLElement>('[data-top]');
+      if (top) top.hidden = woerter.length > 0;
       status.textContent = woerter.length === 0 ? '' : treffer === 1 ? '1 Frage gefunden' : `${treffer} Fragen gefunden`;
     };
     feld.addEventListener('input', suchen);
@@ -141,7 +173,7 @@ const weiter: Record<string, { href: string; text: string }> = {
 
   // Verzeichnis: das Thema hervorheben, das gerade im oberen Drittel des Fensters beginnt oder läuft
   const links = [...document.querySelectorAll<HTMLAnchorElement>('.verzeichnis a[data-ziel]')];
-  const gruppen = [...document.querySelectorAll<HTMLElement>('.inhalt [data-gruppe]')];
+  const gruppen = [...document.querySelectorAll<HTMLElement>('.inhalt [data-top], .inhalt [data-gruppe]')];
   let geplant = false;
   const markieren = () => {
     geplant = false;
@@ -327,6 +359,88 @@ const weiter: Record<string, { href: string; text: string }> = {
     font-size: 0.95rem;
   }
 
+  /* Die häufigsten Fragen: ruhige Kacheln mit Nummer, führen zur aufgeklappten Antwort weiter unten */
+  .top {
+    display: grid;
+    gap: 1.5rem;
+    scroll-margin-top: 1.5rem;
+  }
+
+  .top[hidden] {
+    display: none;
+  }
+
+  .top__etikett {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold-dunkel);
+  }
+
+  .top h2 {
+    font-size: clamp(1.6rem, 1.3rem + 1.1vw, 2.2rem);
+  }
+
+  .top__liste {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.75rem;
+    max-width: 50rem;
+  }
+
+  .top__liste a {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+    padding: 1.1rem 1.25rem;
+    border: 1px solid var(--linie);
+    border-radius: var(--radius);
+    background: var(--creme);
+    text-decoration: none;
+    color: var(--dunkelgruen);
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+  }
+
+  .top__liste a:hover {
+    border-color: var(--gold);
+    background: var(--weiss);
+  }
+
+  .top__nr {
+    display: grid;
+    place-items: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    border: 1px solid var(--gold);
+    font-family: var(--schrift-titel);
+    color: var(--gold-dunkel);
+  }
+
+  .top__frage {
+    font-family: var(--schrift-titel);
+    font-weight: 600;
+    font-size: 1.08rem;
+    line-height: 1.35;
+  }
+
+  .top__liste :global(.icon) {
+    width: 1.1rem;
+    height: 1.1rem;
+    color: var(--gold-dunkel);
+  }
+
+  @media (min-width: 48rem) {
+    .top__liste {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
   .leer {
     display: grid;
     gap: 0.75rem;
@@ -361,6 +475,15 @@ const weiter: Record<string, { href: string; text: string }> = {
       text-transform: uppercase;
       color: var(--gold-dunkel);
       margin-bottom: 1rem;
+    }
+
+    .verzeichnis a.verzeichnis__top {
+      display: block;
+      padding: 0.4rem 0 0.75rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid var(--linie);
+      font-family: var(--schrift-titel);
+      font-weight: 600;
     }
 
     .verzeichnis ol,

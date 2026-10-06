@@ -17,6 +17,13 @@ vorteile:
   - titel: "Rücksicht auf Ihren Garten"
     text: "Überschaubare Arbeiten führen wir ohne schwere Maschinen aus. So bleiben Rasen, Beete und Pflanzungen geschont."
 fragenTitel: "Fragen zu Hecke und Landschaftspflege"
+fragen:
+  - landschaftspflege-heckenschnitt-zeitpunkt
+  - genehmigung-schonzeit
+  - landschaftspflege-heckenschnitt-verjuengen
+  - nachbarn-grenzabstand
+  - haftung-lichtraumprofil
+  - landschaftspflege-heckenschnitt-gartenbau
 aufruf: "Ist Ihre Hecke aus der Form geraten?"
 kosten:
   frage: "Was kosten Heckenschnitt und Gehölzpflege?"

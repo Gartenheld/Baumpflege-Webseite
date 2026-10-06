@@ -31,6 +31,9 @@ const leistungen = defineCollection({
       // Abschnitt „Was kostet …?“: Preisfaktoren ohne Zahlen
       // Überschrift über den häufigen Fragen auf der Leistungsseite, z. B. „Fragen zur Baumfällung“
       fragenTitel: z.string().optional(),
+      // Die wichtigsten Fragen auf der Leistungsseite (Dateinamen aus src/inhalte/faq ohne .md), höchstens 6,
+      // in dieser Reihenfolge. Alle übrigen stehen auf der FAQ-Seite.
+      fragen: z.array(z.string()).min(1).max(6, 'Höchstens 6 Fragen je Leistungsseite.').optional(),
       kosten: z.object({
         frage: z.string().endsWith('?'),
         einleitung: z.string(),
@@ -112,6 +115,8 @@ const seiten = defineCollection({
     karten: z.array(karte).default([]),
     // Kurze Hinweise mit Haken, z. B. „Gut zu wissen“ auf der Seite Kosten
     punkte: z.array(karte).default([]),
+    // Ausgewählte Fragen (Dateinamen aus src/inhalte/faq), z. B. „Die häufigsten Fragen“ oben auf der FAQ-Seite
+    fragen: z.array(z.string()).default([]),
   }),
 });
 
