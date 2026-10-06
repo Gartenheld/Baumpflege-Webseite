@@ -23,7 +23,7 @@ export const fotos: Record<string, { zeigt: string; alt: string }> = {
   },
   gewerbe: {
     zeigt: 'gepflegte Bäume, z. B. eine Allee oder Bäume an einer Wohnanlage',
-    alt: 'Lange Allee aus hohen Laubbäumen im Frühjahr, ein Weg führt unter dem grünen Blätterdach hindurch',
+    alt: 'Allee aus in Form geschnittenen Bäumen, ein breiter Kiesweg führt zwischen den grünen Baumwänden auf ein Schloss zu',
   },
   // Leistungsseiten: Foto oben auf der Seite und, bei Schwerpunkten, auf der Karte in der Übersicht
   'leistung-baumpflege': {
