@@ -3,6 +3,7 @@ titel: Seilklettertechnik
 kurz: "Pflege, Rückschnitt und Fällung am Seil, auch an schwer erreichbaren Bäumen und ohne schwere Maschinen auf Ihrem Grundstück."
 reihenfolge: 3
 schwerpunkt: false
+imFormular: false
 benoetigt: skt-a
 seitentitel: "Seilklettertechnik in Bornheim, Köln und Bonn | Baumpflege Happe"
 beschreibung: "Seilklettertechnik zwischen Köln und Bonn: Baumpflege, Rückschnitt und Fällung am Seil, auch an schwer erreichbaren Bäumen. Anfrage mit Fotos senden."

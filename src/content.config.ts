@@ -18,6 +18,9 @@ const leistungen = defineCollection({
       kurz: z.string().min(20).max(160, 'Der Kurztext soll höchstens 160 Zeichen haben.'),
       reihenfolge: z.number().int(),
       schwerpunkt: z.boolean().default(false),
+      // false: erscheint nicht in der Auswahl „Worum geht es?“ im Anfrageformular (z. B. Seilklettertechnik,
+      // denn ob sie nötig ist, entscheiden wir; für Kunden fällt das unter Baumpflege oder Baumfällung)
+      imFormular: z.boolean().default(true),
       // Kennung einer Qualifikation (Dateiname in src/inhalte/qualifikationen), ohne die die Leistung nicht erscheint
       benoetigt: z.string().optional(),
       seitentitel,

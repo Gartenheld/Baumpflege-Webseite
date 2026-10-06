@@ -45,7 +45,7 @@ const social = socialProfile();
           <label for="leistung">Worum geht es?</label>
           <select id="leistung" name="leistung">
             <option value="">Bitte wählen (optional)</option>
-            {leistungen.map((l) => <option value={l.data.titel} data-id={l.id}>{l.data.titel}</option>)}
+            {leistungen.filter((l) => l.data.imFormular).map((l) => <option value={l.data.titel} data-id={l.id}>{l.data.titel}</option>)}
             <option value="Regelmäßige Pflege für Gewerbe oder Hausverwaltung" data-id="gewerbe">Regelmäßige Pflege für Gewerbe oder Hausverwaltung</option>
             <option value="Sonstiges">Sonstiges</option>
           </select>
