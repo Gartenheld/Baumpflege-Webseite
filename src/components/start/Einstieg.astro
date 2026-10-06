@@ -251,6 +251,15 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
     cursor: pointer;
   }
 
+  /* Handy: über die Leiste mit Anrufen und WhatsApp heben, wenn sie den Knopf sonst halb verdeckt,
+     aber höchstens bis neben die Haken-Punkte, nie in den Text darüber */
+  @supports (top: 1svh) {
+    .einstieg__pause {
+      top: clamp(calc(100% - 7rem), calc(100svh - 13rem), calc(100% - 4rem));
+      bottom: auto;
+    }
+  }
+
   .einstieg__pause[hidden] {
     display: none;
   }
@@ -316,6 +325,15 @@ const standbild = v?.standbild ? (await getImage({ src: v.standbild, width: 1280
       right: calc(var(--rand) + 0.15rem);
       width: 3.5rem;
       height: 3.5rem;
+    }
+
+    /* Beim Öffnen der Seite ganz sichtbar: Ist der Einstieg höher als das Fenster, rückt der Knopf
+       nach oben (Fensterhöhe minus Kopfzeile, Abstand und Knopf), aber nie über das Monogramm */
+    @supports (top: 1svh) {
+      .einstieg__pause {
+        top: clamp(calc(50% + 3rem), calc(100svh - 11rem), calc(100% - 6rem));
+        bottom: auto;
+      }
     }
   }
 </style>
