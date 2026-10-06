@@ -2,6 +2,7 @@
 import Basis from '../../layouts/Basis.astro';
 import Brotkrumen from '../../components/Brotkrumen.astro';
 import Icon from '../../components/Icon.astro';
+import Monogramm from '../../components/Monogramm.astro';
 import { betrieb, telefonLink, whatsappLink } from '../../config/betrieb';
 ---
 
@@ -9,6 +10,7 @@ import { betrieb, telefonLink, whatsappLink } from '../../config/betrieb';
   <section class="abschnitt">
     <div class="huelle text">
       <Brotkrumen pfad={[{ titel: 'Kontakt', href: '/kontakt/' }, { titel: 'Vielen Dank' }]} />
+      <Monogramm class="danke__monogramm" sizes="4rem" />
       <p class="kicker">Anfrage gesendet</p>
       <h1>Vielen Dank für Ihre Anfrage</h1>
       <p class="einleitung">Ihre Nachricht ist bei uns angekommen. Wir melden uns {betrieb.antwortzeit} persönlich bei Ihnen.</p>
@@ -33,6 +35,11 @@ import { betrieb, telefonLink, whatsappLink } from '../../config/betrieb';
     display: grid;
     gap: 1.1rem;
     max-width: 46rem;
+  }
+
+  .text :global(.danke__monogramm) {
+    --monogramm: 4rem;
+    margin-top: 0.5rem;
   }
 
   h2 {

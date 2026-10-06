@@ -1,56 +1,25 @@
 ---
-// Logo für Kopf und Fuß: Schriftzug „BAUMPFLEGE / goldene Linie / HAPPE“, optional mit rundem Emblem davor.
-// Seit 5. Oktober 2026 zeigen Kopf und Fuß nur den Schriftzug (mitEmblem={false}).
-// Bilddateien in src/assets/logo: emblem.png und schriftzug-dunkel.png für hellen Grund,
-// emblem-scheibe.png (Emblem auf heller Scheibe) und schriftzug-hell.png für dunklen Grund.
-// Neues Logo: Dateien mit gleichem Namen ersetzen (transparenter Hintergrund).
+// Logo für Kopf und Fuß: Schriftzug „BAUMPFLEGE / goldene Linie / HAPPE“ (Stand 6. Oktober 2026).
+// Bilddateien in src/assets/logo: schriftzug-dunkel.png für hellen Grund, schriftzug-hell.png für dunklen Grund.
+// Das Monogramm „H“ ist eine eigene Komponente (Monogramm.astro).
+// Neues Logo: Dateien mit gleichem Namen ersetzen (transparenter Hintergrund), siehe brand/README.md.
 import { Picture } from 'astro:assets';
-import emblemHell from '../assets/logo/emblem.png';
-import emblemScheibe from '../assets/logo/emblem-scheibe.png';
 import schriftzugDunkel from '../assets/logo/schriftzug-dunkel.png';
 import schriftzugHell from '../assets/logo/schriftzug-hell.png';
 
 interface Props {
   negativ?: boolean;
-  // false zeigt nur den Schriftzug (Fußbereich)
-  mitEmblem?: boolean;
   titel?: string;
-  // Angezeigte Größe des Emblems für die Bildauswahl des Browsers, z. B. "(min-width: 75rem) 4.25rem, 3.5rem"
-  sizes: string;
-  // Angezeigte Breite des Schriftzugs (etwa 4,5 mal seine Höhe)
+  // Angezeigte Breite des Schriftzugs (etwa 3,4 mal seine Höhe) für die Bildauswahl des Browsers
   schriftzugSizes?: string;
   eager?: boolean;
 }
 
-const {
-  negativ = false,
-  mitEmblem = true,
-  titel = 'Baumpflege Happe',
-  sizes,
-  schriftzugSizes = '(min-width: 75rem) 19.5rem, 16rem',
-  eager = false,
-} = Astro.props;
-const emblem = negativ ? emblemScheibe : emblemHell;
+const { negativ = false, titel = 'Baumpflege Happe', schriftzugSizes = '(min-width: 75rem) 15.5rem, 13.5rem', eager = false } = Astro.props;
 const schriftzug = negativ ? schriftzugHell : schriftzugDunkel;
-const laden = eager ? 'eager' : 'lazy';
 ---
 
 <span class="marke">
-  {
-    mitEmblem && (
-      <Picture
-        src={emblem}
-        formats={['avif', 'webp']}
-        width={128}
-        height={128}
-        widths={[64, 96, 128, 192, 256]}
-        sizes={sizes}
-        alt=""
-        class="marke__emblem"
-        loading={laden}
-      />
-    )
-  }
   <Picture
     src={schriftzug}
     formats={['avif', 'webp']}
@@ -59,7 +28,7 @@ const laden = eager ? 'eager' : 'lazy';
     sizes={schriftzugSizes}
     alt={titel}
     class="marke__schriftzug"
-    loading={laden}
+    loading={eager ? 'eager' : 'lazy'}
   />
 </span>
 
@@ -67,14 +36,6 @@ const laden = eager ? 'eager' : 'lazy';
   .marke {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-  }
-
-  .marke :global(.marke__emblem) {
-    display: block;
-    width: var(--emblem, 3rem);
-    height: var(--emblem, 3rem);
-    flex-shrink: 0;
   }
 
   .marke :global(.marke__schriftzug) {

@@ -2,17 +2,22 @@
 
 Gewählt am 1. Oktober 2026: **Logo 1 (klassisch) mit Symbol, Farbwelt C „Tanne und Kupfer“.**
 
-## Vorläufiges Logo (seit 5. Oktober 2026)
+## Logo (seit 6. Oktober 2026)
 
-Das Logo ist der Schriftzug „BAUMPFLEGE“, goldene Linie, „HAPPE“. Kopf und Fuß der Website zeigen nur diesen Schriftzug, auf dunklem Grund in Creme mit goldener Linie. Das runde Bildmotiv (Eiche mit Baumkletterer) gehört nicht mehr zum Logo. Es erscheint oben auf der Seite „Über uns“ und als Favicon.
+Zwei Teile, beide vom Inhaber geliefert:
 
-- `logo/vorlaeufig/baumpflege-happe_logo_original.jpg`: die gelieferte Datei (Schriftzug mit goldener Linie auf Weiß, 2000 x 2000)
-- `logo/vorlaeufig/baumpflege-happe_schriftzug_dunkel.png`: Schriftzug für hellen Grund (dunkle Schrift, goldene Linie)
-- `logo/vorlaeufig/baumpflege-happe_schriftzug_hell.png`: Schriftzug für dunklen Grund (Creme, Linie in Gold)
-- `logo/vorlaeufig/baumpflege-happe_emblem.png`: Bildmotiv freigestellt, transparenter Hintergrund (Über uns, Favicon)
-- `logo/vorlaeufig/baumpflege-happe_emblem_scheibe.png`: Bildmotiv auf heller Scheibe (derzeit nicht verwendet)
+- **Schriftzug** „BAUMPFLEGE“, goldene Linie, „HAPPE“: das Hauptlogo. Kopf und Fuß der Website zeigen ihn, auf dunklem Grund in Creme mit goldener Linie.
+- **Monogramm** „H“ mit goldenen Blattlinien: das Zeichen für kleine Flächen. Favicon und App-Symbol, über dem Schriftzug im Fuß, in der Karte „Ihr Ansprechpartner“ auf Über uns, auf der Danke-Seite nach einer Anfrage, im Vorschaubild beim Teilen und zusammen mit dem Schriftzug im Logo für Google.
 
-Daraus erzeugt: `src/assets/logo/` (Kopf und Fuß), `src/bilder/ueber-uns.png` (Bildmotiv freigestellt, ohne Hintergrund), `public/logo.png` (Logo für Google), `public/favicon.ico`, `public/icon-192.png`, `public/apple-touch-icon.png` (Bildmotiv) und `public/og-standard.jpg` (Vorschaubild beim Teilen, Vorlage `tools/og-bild/og-standard.html`). Schriftzug neu erzeugen: `tools/logo-generator/schriftzug_vorlaeufig.py`, Bildmotiv freistellen: `tools/logo-generator/motiv_freistellen.py`. Das Logo ist eine Pixelgrafik. Für Druck, Folie und Stick braucht es später eine Vektorfassung (SVG oder PDF).
+Dateien in `logo/aktuell/`:
+
+- `baumpflege-happe_schriftzug_original.jpg`, `baumpflege-happe_monogramm_original.jpg`: die gelieferten Dateien (weißer Grund)
+- `baumpflege-happe_schriftzug_dunkel.png` / `_hell.png`: Schriftzug freigestellt für hellen bzw. dunklen Grund (hell: Creme ohne den feinen Schatten der Vorlage)
+- `baumpflege-happe_monogramm_dunkel.png` / `_hell.png`: Monogramm freigestellt für hellen bzw. dunklen Grund (hell: H in Creme, Blattlinien in Gold)
+
+Daraus erzeugt: `src/assets/logo/` (Schriftzug und Monogramm für die Website), `public/favicon.ico`, `public/icon-192.png`, `public/apple-touch-icon.png` (Monogramm auf cremefarbener Kachel), `public/logo.png` (Monogramm über Schriftzug, für Google) mit `tools/logo-generator/icons.py`, und `public/og-standard.jpg` (Vorschaubild beim Teilen, Vorlage `tools/og-bild/og-standard.html`). Schriftzug neu freistellen: `tools/logo-generator/schriftzug.py`, Monogramm: `tools/logo-generator/motiv_freistellen.py`. Das Logo ist eine Pixelgrafik. Für Druck, Folie und Stick braucht es später eine Vektorfassung (SVG oder PDF).
+
+Das runde Bildmotiv (Eiche mit Baumkletterer) aus dem vorläufigen Logo steht weiter oben auf der Seite „Über uns“ (`src/bilder/ueber-uns.png`). Die vorläufigen Dateien liegen zur Nachverfolgung in `logo/vorlaeufig/`.
 
 ## Farben der Website: „Salbei und Gold“ (seit 3. Oktober 2026)
 

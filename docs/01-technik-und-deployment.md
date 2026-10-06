@@ -197,7 +197,7 @@ Baumpflege-Webseite/
       fotos/                   Originalfotos (JPEG)
       videos/                  Hero-Video und Clips (MP4, optional WebM)
       fonts/                   Schriftdateien (WOFF2) und Lizenz
-      logo/                    rundes Emblem (PNG) für Kopf und Fuß
+      logo/                    Schriftzug und Monogramm „H“ (PNG, hell und dunkel)
     components/                Bausteine: Kopf, Fuß, Handy-Leiste, Formular, FAQ, Bewertungen, ...
     layouts/                   Grundlayout mit Title, Description, Canonical, Open Graph
     lib/                       Hilfsfunktionen (sichtbare Leistungen, FAQ je Leistung, ...)

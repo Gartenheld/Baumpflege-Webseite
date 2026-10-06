@@ -1,5 +1,6 @@
 ---
 import Marke from './Marke.astro';
+import Monogramm from './Monogramm.astro';
 import Icon from './Icon.astro';
 import { betrieb, telefonLink, whatsappLink, mailLink } from '../config/betrieb';
 import { fussmenue, rechtliches } from '../config/navigation';
@@ -16,7 +17,8 @@ const unterzeile = betrieb.unterzeile.split(' · ');
 <footer class="fuss">
   <div class="huelle fuss__raster">
     <div class="fuss__betrieb">
-      <a href="/" class="fuss__logo"><Marke negativ mitEmblem={false} titel="Baumpflege Happe, zur Startseite" sizes="4.75rem" schriftzugSizes="17rem" /></a>
+      <Monogramm negativ class="fuss__monogramm" sizes="3.5rem" />
+      <a href="/" class="fuss__logo"><Marke negativ titel="Baumpflege Happe, zur Startseite" schriftzugSizes="13.5rem" /></a>
       <p class="fuss__unterzeile">
         {
           unterzeile.map((teil, i) => (
@@ -120,9 +122,14 @@ const unterzeile = betrieb.unterzeile.split(' · ');
     border-bottom: 1px solid color-mix(in srgb, var(--gold) 40%, transparent);
   }
 
+  .fuss__betrieb :global(.fuss__monogramm) {
+    --monogramm: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .fuss__logo {
     display: inline-block;
-    --schriftzug: 3.75rem;
+    --schriftzug: 4rem;
   }
 
   .fuss__unterzeile .teil {

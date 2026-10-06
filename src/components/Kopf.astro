@@ -11,7 +11,7 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
 <header class="kopf">
   <div class="huelle kopf__innen">
     <a href="/" class="kopf__logo">
-      <Marke titel="Baumpflege Happe, zur Startseite" mitEmblem={false} sizes="4rem" eager />
+      <Marke titel="Baumpflege Happe, zur Startseite" eager />
     </a>
 
     <nav class="kopf__nav" aria-label="Hauptmenü">
@@ -76,7 +76,7 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
     display: block;
     flex-shrink: 0;
     padding-block: 0.6rem;
-    --schriftzug: clamp(2.6rem, 12.5vw, 3.6rem);
+    --schriftzug: clamp(3rem, 14.5vw, 4rem);
   }
 
   /* Sehr schmale Handys: Menüknopf nur mit Symbol, das Wort bleibt für Screenreader erhalten */
@@ -198,8 +198,8 @@ const aktiv = (href: string) => pfad === href || pfad.startsWith(href);
     }
 
     .kopf__logo {
-      padding-block: 0.75rem;
-      --schriftzug: 4.25rem;
+      padding-block: 0.6rem;
+      --schriftzug: 4.6rem;
     }
   }
 </style>

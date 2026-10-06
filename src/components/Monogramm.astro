@@ -1,0 +1,35 @@
+---
+// Monogramm „H“ mit goldenen Blattlinien (src/assets/logo). Dekorativ, die Marke steht daneben als Text oder Schriftzug.
+// Größe über die CSS-Variable --monogramm (Höhe), Standard 3rem. negativ: helle Fassung für dunklen Grund.
+import { Picture } from 'astro:assets';
+import dunkel from '../assets/logo/monogramm.png';
+import hell from '../assets/logo/monogramm-hell.png';
+
+interface Props {
+  negativ?: boolean;
+  sizes?: string;
+  class?: string;
+}
+
+const { negativ = false, sizes = '3rem', class: klasse } = Astro.props;
+---
+
+<Picture
+  src={negativ ? hell : dunkel}
+  formats={['avif', 'webp']}
+  width={96}
+  widths={[48, 64, 96, 128, 192]}
+  sizes={sizes}
+  alt=""
+  class:list={['monogramm', klasse]}
+  loading="lazy"
+/>
+
+<style>
+  /* global, weil das img-Element von Picture erzeugt wird */
+  :global(img.monogramm) {
+    display: block;
+    width: auto;
+    height: var(--monogramm, 3rem);
+  }
+</style>
