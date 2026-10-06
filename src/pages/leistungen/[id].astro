@@ -40,7 +40,7 @@ const service = dienstleistung(Astro.site!, leistungsUrl(leistung.id), d.titel, 
     foto={`leistung-${leistung.id}`}
   />
 
-  <section class="abschnitt abschnitt--weiss" aria-labelledby="vorteile-titel">
+  <section class="abschnitt abschnitt--weiss vorteile" aria-labelledby="vorteile-titel">
     <div class="huelle">
       <h2 id="vorteile-titel" class="sr-only">Ihre Vorteile</h2>
       <Karten karten={d.vorteile} />
@@ -96,6 +96,21 @@ const service = dienstleistung(Astro.site!, leistungsUrl(leistung.id), d.titel, 
 
   .abschnitt :global(.karten) li {
     background: var(--creme);
+  }
+
+  /* Vorteile: nur eine Reihe kurzer Karten, deshalb deutlich weniger Abstand oben und unten */
+  .vorteile {
+    padding-block: clamp(2.25rem, 4vw, 3.25rem);
+  }
+
+  /* Die Karten liegen weiß auf weiß: ohne Innenabstand, dafür mit klarem Spaltenabstand */
+  .vorteile :global(.karten) {
+    gap: 1.75rem 2.5rem;
+  }
+
+  .vorteile :global(.karten li) {
+    padding: 0;
+    background: none;
   }
 
   /* Leistungstext: ab Desktop Überschrift links, Text rechts, Abschnitte durch feine Linien getrennt */
