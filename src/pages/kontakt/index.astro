@@ -41,21 +41,27 @@ const social = socialProfile();
         </div>
         <p class="hinweis" id="erreichbar-hinweis">Bitte geben Sie E-Mail oder Telefon an, damit wir Ihnen antworten können.</p>
 
-        <div class="zwei">
+        <div class="feld">
+          <label for="leistung">Worum geht es?</label>
+          <select id="leistung" name="leistung">
+            <option value="">Bitte wählen (optional)</option>
+            {leistungen.map((l) => <option value={l.data.titel} data-id={l.id}>{l.data.titel}</option>)}
+            <option value="Regelmäßige Pflege für Gewerbe oder Hausverwaltung" data-id="gewerbe">Regelmäßige Pflege für Gewerbe oder Hausverwaltung</option>
+            <option value="Sonstiges">Sonstiges</option>
+          </select>
+        </div>
+
+        <div class="zwei adresse">
+          <div class="feld">
+            <label for="strasse">Straße und Hausnummer <span class="pflicht">(optional)</span></label>
+            <input id="strasse" name="strasse" type="text" autocomplete="address-line1" maxlength="120" aria-describedby="adresse-hinweis" />
+          </div>
           <div class="feld">
             <label for="ort">Ort oder PLZ des Grundstücks</label>
-            <input id="ort" name="ort" type="text" autocomplete="postal-code" maxlength="100" />
-          </div>
-          <div class="feld">
-            <label for="leistung">Worum geht es?</label>
-            <select id="leistung" name="leistung">
-              <option value="">Bitte wählen (optional)</option>
-              {leistungen.map((l) => <option value={l.data.titel} data-id={l.id}>{l.data.titel}</option>)}
-              <option value="Regelmäßige Pflege für Gewerbe oder Hausverwaltung" data-id="gewerbe">Regelmäßige Pflege für Gewerbe oder Hausverwaltung</option>
-              <option value="Sonstiges">Sonstiges</option>
-            </select>
+            <input id="ort" name="ort" type="text" autocomplete="postal-code" maxlength="100" aria-describedby="adresse-hinweis" />
           </div>
         </div>
+        <p class="hinweis" id="adresse-hinweis">Mit der genauen Adresse können wir Anfahrt und Zufahrt schon vorab einplanen.</p>
 
         <div class="feld">
           <label for="nachricht">Ihre Nachricht <span class="pflicht">(Pflichtfeld)</span></label>
@@ -429,6 +435,10 @@ const social = socialProfile();
   @media (min-width: 40rem) {
     .zwei {
       grid-template-columns: 1fr 1fr;
+    }
+
+    .zwei.adresse {
+      grid-template-columns: 3fr 2fr;
     }
   }
 

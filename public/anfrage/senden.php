@@ -90,6 +90,7 @@ if ($t === 'abgelaufen') {
 $name      = feld('name', 100);
 $email     = feld('email', 254);
 $telefon   = feld('telefon', 40);
+$strasse   = feld('strasse', 120);
 $ort       = feld('ort', 100);
 $leistung  = feld('leistung', 80);
 $nachricht = feld('nachricht', 5000, true);
@@ -159,7 +160,7 @@ try {
     $m->isHTML(false); // nur Text: keine Kundeneingaben als HTML in der Mail
     $m->Body = "Name: $name\nE-Mail: " . ($email ?: '-') . "\nTelefon: " . ($telefon ?: '-')
         . "\nRückruf gewünscht: " . ($rueckruf ? "ja, $zeit" : 'nein')
-        . "\nOrt des Grundstücks: " . ($ort ?: '-') . "\nAnliegen: " . ($leistung ?: '-')
+        . "\nGrundstück: " . (implode(', ', array_filter([$strasse, $ort], fn($x) => $x !== '')) ?: '-') . "\nAnliegen: " . ($leistung ?: '-')
         . "\nFotos: " . count($fotos) . "\n\nNachricht:\n$nachricht\n";
     foreach ($fotos as [$tmp, $dateiname, $mime]) {
         $m->addAttachment($tmp, $dateiname, PHPMailer::ENCODING_BASE64, $mime);
