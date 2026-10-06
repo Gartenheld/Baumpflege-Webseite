@@ -2,6 +2,7 @@
 import Basis from '../layouts/Basis.astro';
 import Seitenkopf from '../components/Seitenkopf.astro';
 import FaqListe from '../components/FaqListe.astro';
+import Sprungmarken from '../components/Sprungmarken.astro';
 import KontaktAufruf from '../components/start/KontaktAufruf.astro';
 import { render } from 'astro:content';
 import { seite, faqNachThema } from '../lib/inhalte';
@@ -16,11 +17,7 @@ const faqDaten = fragenSeite(gruppen.flatMap((g) => g.fragen));
 <Basis title={s.data.seitentitel} description={s.data.beschreibung} strukturdaten={[faqDaten]}>
   <Seitenkopf pfad={[{ titel: 'Häufige Fragen' }]} kicker={s.data.kicker} titel={s.data.h1} einleitung={s.data.einleitung}>
     <div class="prosa"><Content /></div>
-    <nav aria-label="Themen" class="themen">
-      <ul>
-        {gruppen.map((g) => <li><a href={`#${g.thema}`}>{g.titel}</a></li>)}
-      </ul>
-    </nav>
+    <Sprungmarken label="Themen" marken={gruppen.map((g) => ({ titel: g.titel, ziel: g.thema }))} />
   </Seitenkopf>
 
   {
@@ -40,32 +37,6 @@ const faqDaten = fragenSeite(gruppen.flatMap((g) => g.fragen));
 </Basis>
 
 <style>
-  .themen ul {
-    list-style: none;
-    margin: 0.5rem 0 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-  }
-
-  .themen a {
-    display: inline-flex;
-    align-items: center;
-    min-height: 2.75rem;
-    padding: 0.4rem 0.9rem;
-    border: 1px solid var(--linie);
-    border-radius: 999px;
-    background: var(--weiss);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-
-  .themen a:hover {
-    border-color: var(--gold-dunkel);
-  }
-
   .abschnitt--weiss :global(.faq details) {
     background: var(--creme);
   }

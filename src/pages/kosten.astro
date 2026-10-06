@@ -1,0 +1,163 @@
+---
+// Seite Kosten: worauf es beim Preis ankommt, ohne Preise zu nennen. Texte in src/inhalte/seiten/kosten.md,
+// die Fragen unten sind alle Fragen zum Thema Kosten aus src/inhalte/faq.
+import Basis from '../layouts/Basis.astro';
+import Seitenkopf from '../components/Seitenkopf.astro';
+import Sprungmarken from '../components/Sprungmarken.astro';
+import Karten from '../components/Karten.astro';
+import Icon from '../components/Icon.astro';
+import AufrufBand from '../components/AufrufBand.astro';
+import Ablauf from '../components/start/Ablauf.astro';
+import FaqListe from '../components/FaqListe.astro';
+import KontaktAufruf from '../components/start/KontaktAufruf.astro';
+import { seite, faqNachThema } from '../lib/inhalte';
+
+const s = await seite('kosten');
+// Die Preisfaktoren stehen schon oben auf der Seite, die Frage danach entfällt hier
+const fragen = (await faqNachThema()).find((g) => g.thema === 'kosten')?.fragen.filter((f) => f.id !== 'kosten-preisfaktoren') ?? [];
+
+const marken = [
+  { titel: 'Preisfaktoren', ziel: 'preisfaktoren' },
+  { titel: 'Gut zu wissen', ziel: 'gut-zu-wissen' },
+  { titel: 'Ablauf', ziel: 'ablauf-titel' },
+  ...(fragen.length > 0 ? [{ titel: 'Häufige Fragen', ziel: 'fragen' }] : []),
+];
+---
+
+<Basis title={s.data.seitentitel} description={s.data.beschreibung}>
+  <Seitenkopf pfad={[{ titel: 'Kosten' }]} kicker={s.data.kicker} titel={s.data.h1} einleitung={s.data.einleitung} knoepfe>
+    <Sprungmarken marken={marken} />
+  </Seitenkopf>
+
+  <section class="abschnitt abschnitt--weiss" id="preisfaktoren" aria-labelledby="preisfaktoren-titel">
+    <div class="huelle">
+      <div class="abschnittskopf">
+        <p class="kicker">Preisfaktoren</p>
+        <h2 id="preisfaktoren-titel">Worauf es beim Preis ankommt</h2>
+        <p class="einleitung">Diese Punkte sehen wir uns bei jeder Anfrage an, auf Ihren Fotos oder, wenn nötig, vor Ort.</p>
+      </div>
+      <Karten karten={s.data.karten} nummeriert />
+    </div>
+  </section>
+
+  <section class="abschnitt" id="gut-zu-wissen" aria-labelledby="gut-zu-wissen-titel">
+    <div class="huelle">
+      <div class="abschnittskopf">
+        <p class="kicker">Ihr Pauschalpreis</p>
+        <h2 id="gut-zu-wissen-titel">Gut zu wissen</h2>
+      </div>
+      <ul class="punkte">
+        {
+          s.data.punkte.map((p) => (
+            <li>
+              <span class="zeichen" aria-hidden="true">
+                <Icon name="haken" />
+              </span>
+              <h3>{p.titel}</h3>
+              <p>{p.text}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <AufrufBand frage="Was kostet Ihr Auftrag?" />
+
+  <Ablauf />
+
+  {
+    fragen.length > 0 && (
+      <section class="abschnitt" id="fragen" aria-labelledby="fragen-titel">
+        <div class="huelle raster-seitlich">
+          <div class="abschnittskopf">
+            <p class="kicker">Häufige Fragen</p>
+            <h2 id="fragen-titel">Fragen zu Kosten und Abrechnung</h2>
+          </div>
+          <FaqListe eintraege={fragen} />
+          <p class="alle-fragen">
+            <a href="/faq/">Alle häufigen Fragen ansehen <Icon name="pfeil" /></a>
+          </p>
+        </div>
+      </section>
+    )
+  }
+
+  <KontaktAufruf />
+</Basis>
+
+<style>
+  .punkte {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1.75rem;
+  }
+
+  .punkte li {
+    display: grid;
+    gap: 0.4rem;
+    align-content: start;
+    padding-top: 1.25rem;
+    border-top: 2px solid var(--gold);
+  }
+
+  .zeichen {
+    display: grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-bottom: 0.35rem;
+    border-radius: 50%;
+    border: 1.5px solid var(--gold-dunkel);
+    color: var(--gold-dunkel);
+  }
+
+  .zeichen :global(.icon) {
+    width: 1.15rem;
+    height: 1.15rem;
+  }
+
+  .punkte h3 {
+    font-size: 1.2rem;
+  }
+
+  .punkte p {
+    color: var(--text-weich);
+    line-height: 1.5;
+  }
+
+  .alle-fragen {
+    margin-top: 1.5rem;
+  }
+
+  .alle-fragen a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 700;
+  }
+
+  .alle-fragen :global(.icon) {
+    width: 1.1em;
+    height: 1.1em;
+  }
+
+  section[id] {
+    scroll-margin-top: 1rem;
+  }
+
+  @media (min-width: 40rem) {
+    .punkte {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2rem;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .punkte {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+</style>

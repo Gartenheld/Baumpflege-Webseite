@@ -1,0 +1,43 @@
+---
+// Sprungmarken zu den Abschnitten einer Seite, als Reihe kleiner Knöpfe im Seitenkopf (z. B. Häufige Fragen, Kosten).
+interface Props {
+  marken: { titel: string; ziel: string }[];
+  label?: string;
+}
+
+const { marken, label = 'Auf dieser Seite' } = Astro.props;
+---
+
+<nav aria-label={label} class="sprungmarken">
+  <ul>
+    {marken.map((m) => <li><a href={`#${m.ziel}`}>{m.titel}</a></li>)}
+  </ul>
+</nav>
+
+<style>
+  ul {
+    list-style: none;
+    margin: 0.5rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid var(--linie);
+    border-radius: 999px;
+    background: var(--weiss);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  a:hover {
+    border-color: var(--gold-dunkel);
+  }
+</style>

@@ -14,4 +14,4 @@ Jeder Baum und jedes Grundstück ist anders. Deshalb stehen auf der Website kein
 - **Zusatzarbeiten:** zum Beispiel das Entfernen des Wurzelstocks
 - **Bündelung:** Mehrere Arbeiten an einem Termin sparen zusätzliche Anfahrten und Rüstzeiten
 
-Die wichtigsten Preisfaktoren der einzelnen Arbeiten finden Sie zusätzlich auf den jeweiligen Leistungsseiten. Anhand Ihrer Fotos erhalten Sie eine kostenlose Ersteinschätzung und danach Ihr Angebot mit Pauschalpreis.
+Mehr dazu lesen Sie auf unserer Seite [Kosten](/kosten/), die wichtigsten Preisfaktoren der einzelnen Arbeiten zusätzlich auf den jeweiligen Leistungsseiten. Anhand Ihrer Fotos erhalten Sie eine kostenlose Ersteinschätzung und danach Ihr Angebot mit Pauschalpreis.

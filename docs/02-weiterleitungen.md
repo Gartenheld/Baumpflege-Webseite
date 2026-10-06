@@ -27,7 +27,7 @@ Spalte „Beleg“:
 | `/` | `/` | gefunden in Suche | Startseite |
 | `/kontakt/` | `/kontakt/` | gefunden in Suche | gleiches Thema |
 | `/dienstleistungen/` | `/leistungen/` | gefunden in Suche | Sammelseite aller alten Leistungen, daher auf die Übersicht statt auf eine einzelne Leistung |
-| `/preise/` | `/faq/` | gefunden in Suche | Es gibt keine Preisseite mehr. Die FAQ „Kosten und Abrechnung“ erklärt die Preisfaktoren allgemein, die Leistungsseiten im Einzelnen. |
+| `/preise/` | `/kosten/` | gefunden in Suche | Die Seite Kosten erklärt die Preisfaktoren ohne Preise zu nennen, die Leistungsseiten im Einzelnen. |
 | `/impressum/` | `/impressum/` | Seite vorhanden, Pfad vermutet | Regel greift für jede Adresse mit „impressum“ |
 | `/datenschutz/`, `/datenschutzerklaerung/`, `/privacy-policy/` | `/datenschutz/` | Seite vorhanden, Pfad vermutet | Regel greift für jede Adresse mit „datenschutz“, „privacy“, „dsgvo“ oder „cookie“ |
 | `/index.php`, `/index.html` | `/` | typischer WordPress-Pfad vermutet | |
@@ -56,7 +56,7 @@ Die erste passende Regel gewinnt. Steht in einer Adresse eine Leistung und ein O
 | garten, beet, unkraut, landschaft, laub, galabau | `/leistungen/landschaftspflege-heckenschnitt/` (Abschnitt kleine Gartenprojekte) |
 | leistung, service, angebot | `/leistungen/` |
 | beratung, besichtigung, termin | `/kontakt/` |
-| preis, kosten, tarif | `/faq/` |
+| preis, kosten, tarif | `/kosten/` |
 | bornheim und Ortsteile (Brenig, Dersdorf, Hemmerich, Hersel, Kardorf, Merten, Roisdorf, Rösberg, Sechtem, Uedorf, Walberberg, Waldorf, Widdig) | `/einsatzgebiet/bornheim/` |
 | alfter, gielsdorf, impekoven, oedekoven, volmershoven, heidgen, witterschlick | `/einsatzgebiet/alfter/` |
 | bonn | `/einsatzgebiet/bonn/` |
@@ -208,7 +208,7 @@ RewriteRule (^|/)(feed|rss|rss2|atom|rdf)(/.*)?$ https://baumpflege-happe.de/? [
 RewriteRule ^(index\.(php|html?))?$ https://baumpflege-happe.de/? [R=301,L,NC]
 RewriteRule ^kontakt/?$ https://baumpflege-happe.de/kontakt/? [R=301,L,NC]
 RewriteRule ^dienstleistungen/?$ https://baumpflege-happe.de/leistungen/? [R=301,L,NC]
-RewriteRule ^preise/?$ https://baumpflege-happe.de/faq/? [R=301,L,NC]
+RewriteRule ^preise/?$ https://baumpflege-happe.de/kosten/? [R=301,L,NC]
 # Hier weitere exakt bekannte alte Adressen eintragen (vor den Schlagwort-Regeln), Muster:
 # RewriteRule ^alter-pfad/?$ https://baumpflege-happe.de/neuer-pfad/? [R=301,L,NC]
 
@@ -244,7 +244,7 @@ RewriteRule (leistung|service|angebot) https://baumpflege-happe.de/leistungen/? 
 RewriteRule (beratung|besichtigung|termin) https://baumpflege-happe.de/kontakt/? [R=301,L,NC]
 
 # --- 8. Kosten (nach den Leistungen, damit z. B. "baumfaellung-kosten" zur Leistung führt)
-RewriteRule (preis|kosten|tarif) https://baumpflege-happe.de/faq/? [R=301,L,NC]
+RewriteRule (preis|kosten|tarif) https://baumpflege-happe.de/kosten/? [R=301,L,NC]
 
 # --- 9. Orte (vermutet) ---------------------------------------------------------
 RewriteRule (bornheim|brenig|dersdorf|merten|roisdorf|sechtem|hersel|walberberg|waldorf|kardorf|hemmerich|r.{1,2}sberg|widdig|uedorf) https://baumpflege-happe.de/einsatzgebiet/bornheim/? [R=301,L,NC]
@@ -283,7 +283,7 @@ curl -sI http://gartenheldservice.com/preise/ | grep -iE "^(HTTP|location)"
 curl -sIL -o /dev/null -w '%{num_redirects} %{http_code} %{url_effective}\n' https://www.gartenheldservice.com/dienstleistungen/
 ```
 
-Erwartet: `301` mit `location: https://baumpflege-happe.de/faq/` bzw. `1 200 https://baumpflege-happe.de/leistungen/`.
+Erwartet: `301` mit `location: https://baumpflege-happe.de/kosten/` bzw. `1 200 https://baumpflege-happe.de/leistungen/`.
 
 Ohne Terminal: Online-Statuscode-Prüfer (z. B. httpstatus.io) oder Screaming Frog im Listenmodus (*Mode -> List*, Adressen einfügen, Spalte „Redirect URL“).
 

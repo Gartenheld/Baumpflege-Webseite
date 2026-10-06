@@ -122,7 +122,7 @@ Alles, was du später selbst änderst, liegt in drei Bereichen: `src/inhalte/`, 
 | FAQ | `src/inhalte/faq/*.md` | Frage (endet mit „?“), Thema, zugehörige Leistungen, auf FAQ-Seite ja/nein, Reihenfolge; Antwort als Fließtext | FAQ-Seite und verteilt auf die Leistungsseiten |
 | Bewertungen | `src/inhalte/bewertungen/*.yaml` | Name gekürzt (Vorname und Anfangsbuchstabe), Sterne, Datum, Text, `veroeffentlichen` | Startseite |
 | Qualifikationen | `src/inhalte/qualifikationen/*.yaml` | Titel, Erklärung in einem Satz für Laien, `vorhanden`, Reihenfolge | Über uns, Schalter für Leistungen |
-| Seiten | `src/inhalte/seiten/*.md` | Seitentitel, Description, Oberbegriff, H1, Einleitung, Karten (Nutzen, Grundsätze) | Leistungsübersicht, Über uns, Gewerbe, Einsatzgebiet, Referenzen, FAQ, Kontakt, Datenschutz |
+| Seiten | `src/inhalte/seiten/*.md` | Seitentitel, Description, Oberbegriff, H1, Einleitung, Karten (Nutzen, Grundsätze, Preisfaktoren), Punkte („Gut zu wissen“) | Leistungsübersicht, Über uns, Gewerbe, Einsatzgebiet, Referenzen, FAQ, Kosten, Kontakt, Datenschutz |
 
 Grundsätze:
 

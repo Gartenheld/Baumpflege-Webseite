@@ -109,6 +109,8 @@ const seiten = defineCollection({
     h1: z.string(),
     einleitung: z.string(),
     karten: z.array(karte).default([]),
+    // Kurze Hinweise mit Haken, z. B. „Gut zu wissen“ auf der Seite Kosten
+    punkte: z.array(karte).default([]),
   }),
 });
 

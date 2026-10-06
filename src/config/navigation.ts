@@ -1,6 +1,7 @@
 // Hauptmenü und Links im Fuß. Reihenfolge hier ändern, dann überall gleich.
 export const hauptmenue = [
   { titel: 'Leistungen', href: '/leistungen/' },
+  { titel: 'Kosten', href: '/kosten/' },
   { titel: 'Gewerbe', href: '/gewerbe-hausverwaltungen/' },
   { titel: 'Einsatzgebiet', href: '/einsatzgebiet/' },
   { titel: 'Referenzen', href: '/referenzen/' },
@@ -12,6 +13,7 @@ export const fussmenue = [
   { titel: 'Einsatzgebiet', href: '/einsatzgebiet/' },
   { titel: 'Referenzen', href: '/referenzen/' },
   { titel: 'Über uns', href: '/ueber-uns/' },
+  { titel: 'Kosten', href: '/kosten/' },
   { titel: 'Häufige Fragen', href: '/faq/' },
   { titel: 'Kontakt und Anfrage', href: '/kontakt/' },
 ] as const;
