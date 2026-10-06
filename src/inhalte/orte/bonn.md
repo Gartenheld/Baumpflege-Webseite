@@ -12,9 +12,10 @@ entfernungKm: 8
 baumschutz:
   status: satzung
   stelle: "Bundesstadt Bonn"
-  link: "https://www.bonn.de/"
+  link: "https://www.bonn.de/vv/produkte/Baumschutz.php"
+  linktext: "Baumfällarbeiten und Baumschnitt"
   geprueft: null
-  regel: "Nach der Baumschutzsatzung der Stadt Bonn sind unter anderem Laubbäume ab 80 cm und Nadelbäume ab 100 cm Stammumfang geschützt, gemessen in 1 m Höhe."
+  regel: "Nach Angaben der Stadt Bonn sind unter anderem Laubbäume ab 100 cm Stammumfang geschützt, gemessen in 1 m Höhe."
 ---
 
 ## Alte Bäume in einer grünen Stadt

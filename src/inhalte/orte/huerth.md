@@ -10,9 +10,10 @@ einleitung: "Hürth liegt am Rand der Ville und grenzt im Norden an Köln. Zwisc
 ortsteile: [Hermülheim, Efferen, Fischenich, Gleuel, Kendenich, Stotzheim, Berrenrath, Kalscheuren]
 entfernungKm: 16
 baumschutz:
-  status: unklar
+  status: satzung
   stelle: "Stadt Hürth"
-  link: "https://www.huerth.de/"
+  link: "https://www.huerth.de/vv/baumschutzsatzung_genehmigung_20231213.pdf"
+  linktext: "Antrag nach der Baumschutzsatzung (PDF)"
   geprueft: null
 ---
 

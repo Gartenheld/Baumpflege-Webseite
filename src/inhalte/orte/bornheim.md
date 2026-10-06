@@ -9,9 +9,10 @@ h1: "Baumpflege und Baumfällung in Bornheim"
 einleitung: "Bornheim ist unser Betriebssitz. Vom Rheinufer bis zu den Hangorten am Vorgebirge haben wir kurze Wege zu Ihnen und kennen die Gärten und Baumbestände der Gegend aus eigener Anschauung."
 ortsteile: [Merten, Roisdorf, Sechtem, Hersel, Walberberg, Waldorf, Kardorf, Hemmerich, Rösberg, Brenig, Dersdorf, Widdig, Uedorf]
 baumschutz:
-  status: unklar
+  status: keine
   stelle: "Stadt Bornheim"
-  link: "https://www.bornheim.de/"
+  link: "https://www.bornheim.de/buergerservice/dienstleistungen/baumschutz"
+  linktext: "Baumschutz"
   geprueft: null
 ---
 

@@ -10,7 +10,7 @@ einleitung: "Weilerswist liegt ländlich an Erft und Swist, westlich der Ville. 
 ortsteile: [Metternich, Großvernich, Kleinvernich, Lommersum, Derkum, Müggenhausen]
 entfernungKm: 10
 baumschutz:
-  status: unklar
+  status: keine
   stelle: "Gemeinde Weilerswist"
   link: "https://www.weilerswist.de/"
   geprueft: null

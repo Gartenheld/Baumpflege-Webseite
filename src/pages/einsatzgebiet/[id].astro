@@ -38,7 +38,7 @@ const service = dienstleistung(Astro.site!, ortUrl(ort.id), `Baumpflege und Baum
       <div class="prosa"><Content /></div>
       <div class="seite">
         <Karte hervorheben={ort.id} />
-        <BaumschutzHinweis ort={d.name} status={d.baumschutz.status} stelle={d.baumschutz.stelle} link={d.baumschutz.link} regel={d.baumschutz.regel} />
+        <BaumschutzHinweis ort={d.name} status={d.baumschutz.status} stelle={d.baumschutz.stelle} link={d.baumschutz.link} linktext={d.baumschutz.linktext} regel={d.baumschutz.regel} />
       </div>
     </div>
   </section>

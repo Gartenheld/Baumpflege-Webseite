@@ -65,6 +65,8 @@ const orte = defineCollection({
       status: z.enum(['satzung', 'keine', 'unklar']),
       stelle: z.string(),
       link: z.url(),
+      // Beschriftung des Links, z. B. „Baumschutzsatzung (PDF)“; ohne Angabe „Website der Verwaltung“
+      linktext: z.string().optional(),
       // Datum der letzten Prüfung (JJJJ-MM-TT), leer = noch nicht geprüft
       geprueft: z.string().nullable().default(null),
       // Optional: wichtigste Regel der Satzung in einem Satz (mit Quelle prüfen)

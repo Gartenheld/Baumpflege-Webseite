@@ -10,9 +10,10 @@ einleitung: "Alfter ist unser direkter Nachbar am Vorgebirge. Zwischen den Felde
 ortsteile: [Oedekoven, Gielsdorf, Impekoven, Witterschlick, Volmershoven, Heidgen]
 entfernungKm: 3
 baumschutz:
-  status: unklar
+  status: satzung
   stelle: "Gemeinde Alfter"
-  link: "https://www.alfter.de/"
+  link: "https://www.alfter.de/fileadmin/redaktion/downloads/Rathaus-Politik/Ortsrecht/5._Bereich/2023-09-26_Teil_5.5_Baumschutzsatzung_Alfter.pdf"
+  linktext: "Baumschutzsatzung (PDF)"
   geprueft: null
 ---
 

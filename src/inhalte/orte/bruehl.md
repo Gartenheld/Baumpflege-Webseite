@@ -10,9 +10,10 @@ einleitung: "Brühl liegt am Osthang der Ville, zwischen Waldgebieten, Schlosspa
 ortsteile: [Badorf, Pingsdorf, Vochem, Kierberg, Schwadorf]
 entfernungKm: 10
 baumschutz:
-  status: unklar
+  status: satzung
   stelle: "Stadt Brühl"
-  link: "https://www.bruehl.de/"
+  link: "https://www.bruehl.de/pbku/gruenflachen-und-baeume/baumschutz.php"
+  linktext: "Baumschutz"
   geprueft: null
 ---
 

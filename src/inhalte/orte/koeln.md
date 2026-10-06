@@ -12,7 +12,8 @@ entfernungKm: 20
 baumschutz:
   status: satzung
   stelle: "Stadt Köln"
-  link: "https://www.stadt-koeln.de/service/produkt/baumfaellung-rueckschnitt-auf-privatgrundstuecken"
+  link: "https://www.stadt-koeln.de/service/produkte/00652/index.html"
+  linktext: "Baumfällung und Rückschnitt auf Privatgrundstücken"
   geprueft: null
   regel: "Nach Angaben der Stadt Köln sind unter anderem Laubbäume ab 80 cm Stammumfang geschützt. Für ihre Fällung ist ein kostenpflichtiger Antrag bei der Stadt nötig."
 ---

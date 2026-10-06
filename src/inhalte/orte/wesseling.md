@@ -10,9 +10,10 @@ einleitung: "Wesseling liegt am Rhein, nur wenige Kilometer rheinabwärts von Bo
 ortsteile: [Berzdorf, Keldenich, Urfeld]
 entfernungKm: 7
 baumschutz:
-  status: unklar
+  status: satzung
   stelle: "Stadt Wesseling"
-  link: "https://www.wesseling.de/"
+  link: "https://serviceportal.wesseling.de/detail/-/vr-bis-detail/dienstleistung/13432/show"
+  linktext: "Baumfällgenehmigung"
   geprueft: null
 ---
 
