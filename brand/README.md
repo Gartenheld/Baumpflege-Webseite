@@ -7,7 +7,7 @@ Gewählt am 1. Oktober 2026: **Logo 1 (klassisch) mit Symbol, Farbwelt C „Tann
 Zwei Teile, beide vom Inhaber geliefert:
 
 - **Schriftzug** „BAUMPFLEGE“, goldene Linie, „HAPPE“: das Hauptlogo. Kopf und Fuß der Website zeigen ihn, auf dunklem Grund in Creme mit goldener Linie.
-- **Monogramm** „H“ mit goldenen Blattlinien: das Zeichen für kleine Flächen. Favicon und App-Symbol, über dem Schriftzug im Fuß, in der Karte „Ihr Ansprechpartner“ auf Über uns, auf der Danke-Seite nach einer Anfrage, im Vorschaubild beim Teilen und zusammen mit dem Schriftzug im Logo für Google.
+- **Monogramm** „H“ mit goldenen Blattlinien: das Zeichen für kleine Flächen. Favicon und App-Symbol, groß oben auf der Seite „Über uns“ (`src/bilder/ueber-uns.png`), über dem Schriftzug im Fuß, auf der Danke-Seite nach einer Anfrage, im Vorschaubild beim Teilen und zusammen mit dem Schriftzug im Logo für Google.
 
 Dateien in `logo/aktuell/`:
 
@@ -17,7 +17,7 @@ Dateien in `logo/aktuell/`:
 
 Daraus erzeugt: `src/assets/logo/` (Schriftzug und Monogramm für die Website), `public/favicon.ico`, `public/icon-192.png`, `public/apple-touch-icon.png` (Monogramm auf cremefarbener Kachel), `public/logo.png` (Monogramm über Schriftzug, für Google) mit `tools/logo-generator/icons.py`, und `public/og-standard.jpg` (Vorschaubild beim Teilen, Vorlage `tools/og-bild/og-standard.html`). Schriftzug neu freistellen: `tools/logo-generator/schriftzug.py`, Monogramm: `tools/logo-generator/motiv_freistellen.py`. Das Logo ist eine Pixelgrafik. Für Druck, Folie und Stick braucht es später eine Vektorfassung (SVG oder PDF).
 
-Das runde Bildmotiv (Eiche mit Baumkletterer) aus dem vorläufigen Logo steht weiter oben auf der Seite „Über uns“ (`src/bilder/ueber-uns.png`). Die vorläufigen Dateien liegen zur Nachverfolgung in `logo/vorlaeufig/`.
+Das runde Bildmotiv (Eiche mit Baumkletterer) aus dem vorläufigen Logo wird seit 6. Oktober 2026 nicht mehr verwendet. Die vorläufigen Dateien liegen zur Nachverfolgung in `logo/vorlaeufig/`.
 
 ## Farben der Website: „Salbei und Gold“ (seit 3. Oktober 2026)
 

@@ -6,7 +6,6 @@ import Foto from '../components/Foto.astro';
 import QualifikationListe from '../components/QualifikationListe.astro';
 import KontaktAufruf from '../components/start/KontaktAufruf.astro';
 import Icon from '../components/Icon.astro';
-import Monogramm from '../components/Monogramm.astro';
 import { render } from 'astro:content';
 import { seite } from '../lib/inhalte';
 import { betrieb, telefonLink, mailLink } from '../config/betrieb';
@@ -37,10 +36,7 @@ const { Content } = await render(s);
       <aside class="ansprechpartner" aria-labelledby="ansprechpartner-titel">
         <Foto name="ueber-uns-ausstattung" class="bild" sizes="(min-width: 75rem) 26rem, (min-width: 60rem) 35vw, 100vw" />
         <div class="karte">
-          <div class="karte__kopf">
-            <p class="kicker">Ihr Ansprechpartner</p>
-            <Monogramm class="karte__monogramm" sizes="2.75rem" />
-          </div>
+          <p class="kicker">Ihr Ansprechpartner</p>
           <h2 id="ansprechpartner-titel">{betrieb.inhaber}</h2>
           <p>{betrieb.name}, {betrieb.adresse.strasse}, {betrieb.adresse.plz} {betrieb.adresse.ort}</p>
           <ul>
@@ -80,18 +76,6 @@ const { Content } = await render(s);
     padding: 1.5rem;
     display: grid;
     gap: 0.6rem;
-  }
-
-  .karte__kopf {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-
-  .karte__kopf :global(.karte__monogramm) {
-    --monogramm: 2.75rem;
-    flex-shrink: 0;
   }
 
   .karte h2 {
