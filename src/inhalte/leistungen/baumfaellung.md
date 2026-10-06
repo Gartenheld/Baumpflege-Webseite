@@ -11,7 +11,7 @@ vorteile:
   - titel: "Sorgfältige Planung"
     text: "Fallrichtung, Umgebung und die Frage nach einer Genehmigung klären wir, bevor die Säge angesetzt wird."
   - titel: "Erfahrung und Qualifikation"
-    text: "Heinrich Happe ist Ihr persönlicher Ansprechpartner. Er hat mehrjährige Erfahrung und die Motorsägen-Qualifikationen AS Baum I und II, die auch anspruchsvollere Fällungen umfassen."
+    text: "Heinrich Happe betreut Ihre Fällung persönlich. Er hat mehrjährige Erfahrung und die Motorsägen-Qualifikationen AS Baum I und II, die auch anspruchsvollere Fällungen umfassen."
   - titel: "Aufräumen inklusive"
     text: "Äste und Kronenholz häckseln wir vor Ort und fahren das Schnittgut ab, Stammholz bleibt auf Wunsch bei Ihnen. Ihr Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben."
   - titel: "Wurzelstock nach Wunsch"
