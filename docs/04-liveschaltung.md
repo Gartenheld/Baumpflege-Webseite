@@ -33,8 +33,8 @@ Stand der Website: Alle Seiten sind fertig und freigegeben (Schritt 4). Lighthou
 Der Live-Build bricht ab, solange irgendwo „Platzhalter“ oder die Nummer aus lauter Nullen steht. Das Wort „Platzhalter“ in Vorlagen und Kommentaren stört nicht.
 
 - [ ] **Betriebsdaten** in [src/config/betrieb.ts](../src/config/betrieb.ts): Telefon (Anzeige und Wählnummer), WhatsApp-Nummer, E-Mail, Erreichbarkeit, USt-IdNr., Google-Bewertungen (Durchschnitt, Anzahl, Stand), Profil-Links.
-- [ ] **Häufige Fragen** mit offenen Angaben:
-  - [src/inhalte/faq/kosten-ersteinschaetzung.md](../src/inhalte/faq/kosten-ersteinschaetzung.md): ob die Besichtigung kostenlos ist (Antwortzeit geklärt: 24 Stunden an Werktagen)
+- [x] **Häufige Fragen** mit offenen Angaben:
+  - [src/inhalte/faq/kosten-ersteinschaetzung.md](../src/inhalte/faq/kosten-ersteinschaetzung.md): Besichtigung ist kostenlos (geklärt am 06.10.2026), Antwortzeit 24 Stunden an Werktagen. Ob ab einem bestimmten Auftragsvolumen eine Gebühr für das Angebot verlangt wird, ist offen; die Website verspricht bisher nur Ersteinschätzung und Besichtigung kostenlos, nicht das Angebot.
 - [ ] **Impressum:** Satz zur Verbraucherschlichtung in [src/pages/impressum.astro](../src/pages/impressum.astro) bestätigen.
 - [ ] **Bildnachweise im Impressum** als eigenen Abschnitt ergänzen (vermerkt am 05.10.2026):
   - Häckselarbeiten ([src/bilder/leistung-haeckselarbeiten.jpg](../src/bilder/leistung-haeckselarbeiten.jpg)): „Symbolbild, mit KI erstellt“ (KI-bearbeitetes Foto). Der Markenname FÖRST bleibt laut Inhaber sichtbar (05.10.2026). Nutzungsbedingungen des KI-Programms auf gewerbliche Nutzung prüfen.
