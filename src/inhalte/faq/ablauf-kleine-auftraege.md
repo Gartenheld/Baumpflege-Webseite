@@ -7,6 +7,6 @@ reihenfolge: 20
 ---
 Ja. Auch kleinere Arbeiten gehören dazu, etwa der Schnitt einer einzelnen Hecke, die Pflege eines kleinen Baumes oder das Entfernen eines Wurzelstocks.
 
-Für Sie am wirtschaftlichsten ist es, mehrere Arbeiten an einem Termin zu bündeln. Jeder Einsatz bringt unabhängig von seiner Größe einen festen Aufwand mit sich: Anfahrt, Einrichten und Absichern des Arbeitsbereichs, Häcksler oder Hubarbeitsbühne sowie Abtransport und Entsorgung des Schnittguts. Bei einem einzelnen Strauch steht dieser Aufwand meist in keinem guten Verhältnis zur eigentlichen Arbeit. Fassen Sie deshalb am besten zusammen, was auf Ihrem Grundstück ansteht, zum Beispiel den Heckenschnitt mit der Pflege eines Baumes. Auch eine Absprache mit Ihren Nachbarn lohnt sich: Liegen mehrere Aufträge in derselben Straße, lassen sie sich oft an einem Tag erledigen.
+Ist auf Ihrem Grundstück noch mehr zu tun, planen wir es gern mit ein, zum Beispiel den Heckenschnitt zusammen mit der Pflege eines Baumes. Zu jedem Einsatz gehören Anfahrt, Einrichten und Absichern des Arbeitsbereichs, Häcksler oder Hubarbeitsbühne sowie Abtransport und Entsorgung des Schnittguts. Werden die Arbeiten zusammen geplant, bleibt es bei einem Termin auf Ihrem Grundstück, und Ihr Garten ist nur einmal Baustelle. Stehen bei Ihren Nachbarn ähnliche Arbeiten an, stimmen wir die Termine gern aufeinander ab.
 
 Schicken Sie uns Fotos von allem, was ansteht. Wir sagen Ihnen, was sich sinnvoll zusammenfassen lässt.

@@ -1,23 +1,23 @@
 ---
 titel: Baumfällung
-kurz: "Sorgfältig geplant und sauber abgewickelt. Das Schnittgut wird vor Ort gehäckselt und abgefahren."
+kurz: "Sorgfältig geplant und mit Rücksicht auf Ihr Grundstück ausgeführt. Das Schnittgut wird vor Ort gehäckselt und abgefahren."
 reihenfolge: 2
 schwerpunkt: true
 seitentitel: "Baumfällung in Bornheim, Köln, Bonn: Baum fällen lassen | Happe"
 beschreibung: "Baum fällen lassen zwischen Köln und Bonn: sorgfältig geplant, auch Problemfällung auf engem Raum, Schnittgut gehäckselt und abgefahren. Anfrage mit Fotos senden."
 h1: "Baumfällung in Bornheim, Köln und Bonn"
-einleitung: "Manchmal lässt sich ein Baum nicht mehr erhalten, weil er abgestorben, beschädigt oder zu groß für seinen Standort geworden ist. Wir planen die Fällung sorgfältig, führen sie sicher aus und hinterlassen Ihr Grundstück aufgeräumt."
+einleitung: "Manchmal lässt sich ein Baum nicht mehr erhalten, weil er abgestorben, beschädigt oder zu groß für seinen Standort geworden ist. Wir planen die Fällung sorgfältig, arbeiten mit Rücksicht auf Haus und Garten und hinterlassen Ihr Grundstück aufgeräumt."
 vorteile:
   - titel: "Sorgfältige Planung"
     text: "Fallrichtung, Umgebung und die Frage nach einer Genehmigung klären wir, bevor die Säge angesetzt wird."
-  - titel: "Qualifiziert für Fällungen"
-    text: "Heinrich Happe bringt mehrjährige Erfahrung mit und hat die Motorsägen-Qualifikationen AS Baum I und AS Baum II, die auch anspruchsvollere Fällungen umfassen."
+  - titel: "Erfahrung und Qualifikation"
+    text: "Heinrich Happe ist Ihr persönlicher Ansprechpartner. Er hat mehrjährige Erfahrung und die Motorsägen-Qualifikationen AS Baum I und II, die auch anspruchsvollere Fällungen umfassen."
   - titel: "Aufräumen inklusive"
-    text: "Äste und Kronenholz häckseln wir vor Ort und fahren das Schnittgut ab, Stammholz bleibt auf Wunsch bei Ihnen. Ihr Grundstück ist danach sauberer als vorher."
+    text: "Äste und Kronenholz häckseln wir vor Ort und fahren das Schnittgut ab, Stammholz bleibt auf Wunsch bei Ihnen. Ihr Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben."
   - titel: "Wurzelstock nach Wunsch"
     text: "Ob der Stumpf im Boden bleibt oder entfernt wird, entscheiden Sie. Beides planen wir von Anfang an mit ein."
 fragenTitel: "Fragen zur Baumfällung"
-aufruf: "Muss Ihr Baum weg?"
+aufruf: "Steht bei Ihnen eine Fällung an?"
 kosten:
   frage: "Was kostet eine Baumfällung?"
   einleitung: "Jede Fällung ist anders, deshalb nennen wir hier keine Preise. Nach Ihren Fotos oder, wenn nötig, einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
@@ -29,7 +29,7 @@ kosten:
     - titel: "Zustand des Baums"
       text: "Morsches oder abgestorbenes Holz verhält sich beim Fällen weniger berechenbar und erfordert besondere Sorgfalt."
     - titel: "Zufahrt und Wege"
-      text: "Je weiter der Weg vom Baum bis zu Häcksler und Fahrzeug, desto mehr Zeit braucht das Aufräumen."
+      text: "Je weiter der Weg vom Baum bis zu Häcksler und Fahrzeug, desto aufwendiger ist das Aufräumen."
     - titel: "Holz und Schnittgut"
       text: "Ob Sie Stammholz behalten möchten oder alles abgefahren wird, verändert den Aufwand."
     - titel: "Wurzelstock"

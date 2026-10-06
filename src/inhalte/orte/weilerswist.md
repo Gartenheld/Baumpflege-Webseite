@@ -22,12 +22,12 @@ Weilerswist gehört zum Kreis Euskirchen und liegt dort, wo die Swist in die Erf
 
 ## Was in Weilerswist häufig ansteht
 
-In den Ortsteilen stehen auf älteren Grundstücken häufig Obstbäume und große Laubbäume, die über Jahrzehnte gewachsen sind. Ein fachgerechter Schnitt hält sie vital und verringert das Risiko, dass schwere Äste brechen. Ist ein Baum nicht mehr zu erhalten, fällen wir ihn und entfernen auf Wunsch den Wurzelstock. Lange Hecken zu Feld oder Straße schneiden wir gleich mit, und das gesamte Schnittgut wird gehäckselt und abgefahren.
+In den Ortsteilen stehen auf älteren Grundstücken häufig Obstbäume und große Laubbäume, die über Jahrzehnte gewachsen sind. Ein fachgerechter Schnitt hält sie vital und verringert das Risiko, dass schwere Äste brechen. Ist ein Baum nicht mehr zu erhalten, fällen wir ihn und entfernen auf Wunsch den Wurzelstock. Lange Hecken zu Feld oder Straße schneiden wir auf Wunsch im selben Termin mit, und das gesamte Schnittgut wird gehäckselt und abgefahren.
 
 ## Wenn der Wind über das offene Land geht
 
-In freien Lagen trifft ein Sturm die Bäume oft härter als in dicht bebauten Vierteln. Nach einem Unwetter helfen wir, umgestürzte Bäume und abgebrochene Äste zu beseitigen, und sprechen mit Ihnen ab, was zuerst erledigt werden muss. Auch Bäume, die nach einem Sturm schief stehen oder angerissen sind, schauen wir uns an und sagen Ihnen offen, ob sich eine Pflege noch lohnt.
+In freien Lagen trifft ein Sturm die Bäume oft härter als in dicht bebauten Vierteln. Nach einem Unwetter beseitigen wir umgestürzte Bäume und abgebrochene Äste und sprechen mit Ihnen ab, was zuerst erledigt werden muss. Auch Bäume, die nach einem Sturm schief stehen oder angerissen sind, sehen wir uns an und sagen Ihnen offen, ob sie sich mit einer Pflege erhalten lassen.
 
 ## Anfahrt über die Ville
 
-Zwischen unserem Betrieb in Bornheim und Weilerswist liegen rund 10 Kilometer Luftlinie, dazwischen der Höhenrücken der Ville. Fragen zum Baumschutz in Weilerswist beantwortet die Gemeindeverwaltung. Für Ihre Anfrage reichen zunächst einige Fotos und ein paar Sätze zur Situation. Ein erster Rat dazu kostet Sie nichts. Braucht es eine Besichtigung, kommen wir nach Weilerswist, und erst danach erhalten Sie ein schriftliches Angebot.
+Zwischen unserem Betrieb in Bornheim und Weilerswist liegen rund 10 Kilometer Luftlinie, dazwischen der Höhenrücken der Ville. Fragen zum Baumschutz in Weilerswist beantwortet die Gemeindeverwaltung. Für Ihre Anfrage genügen zunächst einige Fotos und wenige Sätze zur Situation. Wir antworten persönlich mit einer ersten Einschätzung. Braucht es eine Besichtigung, kommen wir nach Weilerswist. Das schriftliche Angebot erstellen wir erst, wenn wir uns ein vollständiges Bild gemacht haben.

@@ -18,11 +18,11 @@ baumschutz:
 
 ## Nachbarschaft am Vorgebirge
 
-Alfter grenzt unmittelbar an Bornheim. Die Luftlinie zu unserem Betriebssitz beträgt gerade einmal rund 3 Kilometer. Für Sie bedeutet das eine kurze Anfahrt und einen Ansprechpartner, der die Gegend kennt.
+Alfter grenzt unmittelbar an Bornheim, unser Betriebssitz liegt rund 3 Kilometer Luftlinie entfernt. Für Sie bedeutet das kurze Wege und einen Ansprechpartner, der die Gegend kennt.
 
 ## Zwischen Feldern und Kottenforst
 
-Das Gemeindegebiet reicht von den landwirtschaftlich genutzten Flächen am Hang des Vorgebirges bis an den Kottenforst. Diese Lage zeigt sich auch in den Gärten. In den älteren Ortslagen von Alfter, Gielsdorf und Oedekoven stehen häufig gewachsene Hausbäume und Obstbäume, die regelmäßig geschnitten werden wollen. Rund um Witterschlick, Impekoven und Volmershoven-Heidgen ist der Wald nicht weit, und manche Gärten liegen nah an Gehölzen oder am Waldrand. Dort geht es oft um überhängende Äste, Bäume mit Totholz und um Aufräumarbeiten nach einem Sturm.
+Das Gemeindegebiet reicht von den landwirtschaftlich genutzten Flächen am Hang des Vorgebirges bis an den Kottenforst. Diese Lage zeigt sich auch in den Gärten. In den älteren Ortslagen von Alfter, Gielsdorf und Oedekoven stehen häufig gewachsene Hausbäume und Obstbäume, die den Gärten über Jahrzehnte ihren Charakter geben und einen regelmäßigen, fachgerechten Schnitt brauchen. Rund um Witterschlick, Impekoven und Volmershoven-Heidgen ist der Wald nicht weit, und manche Gärten liegen nah an Gehölzen oder am Waldrand. Dort geht es oft um überhängende Äste, Bäume mit Totholz und um Aufräumarbeiten nach einem Sturm.
 
 ## Leistungen für Ihr Grundstück in Alfter
 
@@ -30,4 +30,4 @@ Ob Kronenpflege, die Fällung eines kranken Baumes oder das Entfernen eines alte
 
 ## Ihre Anfrage aus Alfter
 
-Am einfachsten beginnt es mit ein paar Fotos: Sie zeigen uns den Baum, wir melden uns mit einer kostenlosen Ersteinschätzung. Falls nötig, schauen wir uns die Situation bei Ihnen an. Danach erhalten Sie ein schriftliches Angebot, mit dem Sie in Ruhe entscheiden können.
+Zeigen Sie uns den Baum zunächst auf einigen Fotos. Wir melden uns persönlich mit einer ersten Einschätzung und kommen, wenn nötig, zur Besichtigung zu Ihnen. Anschließend erhalten Sie ein schriftliches Angebot, über das Sie in Ruhe entscheiden können.

@@ -9,4 +9,4 @@ karten: []
 
 ## Fragen zu Ihrem Baum
 
-Die Fragen sind nach Themen geordnet, etwa Genehmigung, Zustand und Schnitt Ihres Baumes, Kosten, Nachbarn, Haftung und Ablauf. Fragen zu einzelnen Leistungen beantworten wir zusätzlich auf den jeweiligen Leistungsseiten. Ist Ihre Frage nicht dabei, schreiben Sie uns oder rufen Sie an. Geht es um einen bestimmten Baum, schicken Sie uns am besten Fotos. Sie erhalten dann eine kostenlose Ersteinschätzung.
+Die Fragen sind nach Themen geordnet, etwa Genehmigung, Zustand und Schnitt Ihres Baumes, Kosten, Nachbarn, Haftung und Ablauf. Fragen zu einzelnen Leistungen beantworten wir zusätzlich auf den jeweiligen Leistungsseiten. Ist Ihre Frage nicht dabei, schreiben Sie uns oder rufen Sie an. Geht es um einen bestimmten Baum, senden Sie uns gern einige Fotos. Sie erhalten dann eine persönliche Ersteinschätzung.

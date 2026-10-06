@@ -1,5 +1,5 @@
 ---
-frage: "Braucht es für Arbeiten am Seil eine Zufahrt bis zum Baum?"
+frage: "Ist für Arbeiten am Seil eine Zufahrt bis zum Baum nötig?"
 thema: leistung
 leistungen: [seilklettertechnik]
 aufFaqSeite: false

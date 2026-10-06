@@ -6,26 +6,26 @@ h1: "Baumpflege für Hausverwaltungen, Eigentümer­gemeinschaften und Gewerbe"
 einleitung: "Sie betreuen Wohnanlagen, vermieten Häuser oder verantworten ein Firmengelände? Wir übernehmen die regelmäßige Pflege Ihrer Bäume, Hecken und Grünflächen, mit einem festen Ansprechpartner und schriftlich dokumentiert."
 karten:
   - titel: "Weniger Organisationsaufwand"
-    text: "Bäume, Hecken und Grünflächen aus einer Hand. Sie müssen nicht für jede Aufgabe einen eigenen Betrieb suchen und koordinieren."
+    text: "Bäume, Hecken und Grünflächen aus einer Hand. Sie müssen nicht für jede Aufgabe einen eigenen Betrieb beauftragen und koordinieren."
   - titel: "Verlässliche Pflege"
     text: "Wiederkehrende Arbeiten planen wir fest im Jahreslauf ein, abgestimmt auf Schonzeit und Vegetation."
   - titel: "Planbare Kosten"
-    text: "Sie erhalten vorab ein schriftliches Angebot und können die vereinbarten Arbeiten in Ihrem Budget einplanen."
+    text: "Sie erhalten vorab ein schriftliches Angebot und können die vereinbarten Arbeiten verlässlich in Ihrem Budget einplanen."
   - titel: "Fester Ansprechpartner"
-    text: "Heinrich Happe ist Ihr direkter Ansprechpartner, von der ersten Anfrage bis zur Ausführung."
+    text: "Heinrich Happe betreut Sie persönlich, von der ersten Anfrage bis zur Ausführung."
   - titel: "Rahmenvertrag"
-    text: "Für regelmäßige Pflege vereinbaren wir einen Rahmenvertrag, damit Sie nicht jedes Jahr neu anfragen müssen."
-  - titel: "Hilfe bei der Verkehrssicherung"
+    text: "Regelmäßige Pflege halten wir in einem Rahmenvertrag fest. So müssen Sie nicht jedes Jahr neu anfragen."
+  - titel: "Unterstützung bei der Verkehrssicherung"
     text: "Erkannte Schäden wie Totholz oder Risse benennen wir, beseitigen sie nach Absprache und halten die Arbeiten schriftlich fest."
 ---
 
-## So funktioniert die regelmäßige Pflege
+## So läuft die regelmäßige Pflege ab
 
-1. **Anfrage:** Sie nennen uns die Objekte und schicken Fotos oder einen Lageplan der Flächen.
+1. **Anfrage:** Sie nennen uns die Objekte und senden uns Fotos oder einen Lageplan der Flächen.
 2. **Besichtigung bei Bedarf:** Wenn nötig, vereinbaren wir einen Termin vor Ort und sehen uns Bäume und Grünflächen gemeinsam mit Ihnen an.
 3. **Pflegeplan und Angebot:** Wir schlagen vor, welche Arbeiten in welchem Abstand sinnvoll sind, und Sie erhalten ein schriftliches Angebot.
 4. **Rahmenvertrag:** Für wiederkehrende Arbeiten halten wir Leistungen und Zeiträume in einem Rahmenvertrag fest.
-5. **Ausführung:** Wir stimmen die Termine rechtzeitig mit Ihnen ab, damit Sie Bewohner, Mieter oder Mitarbeiter informieren können. Aufräumen und Entsorgung gehören dazu, das Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben.
+5. **Ausführung:** Wir stimmen die Termine rechtzeitig mit Ihnen ab, damit Sie Bewohner, Mieter oder Mitarbeiter informieren können. Aufräumen und Entsorgung gehören immer dazu. Ihr Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben.
 6. **Dokumentation:** Nach jedem Einsatz erhalten Sie eine schriftliche Übersicht der durchgeführten Arbeiten.
 
 ## Dokumentation der Arbeiten
@@ -34,11 +34,11 @@ Für Bäume auf Ihren Flächen gilt die Verkehrssicherungspflicht. Das heißt: D
 
 Unsere Dokumentation ersetzt keine regelmäßige Baumkontrolle durch eine dafür qualifizierte Fachkraft. Ob eine solche Kontrolle für Ihre Bäume sinnvoll ist, hängt von Größe, Zustand und Standort ab.
 
-## Für wen das passt
+## Für wen sich das eignet
 
 - Hausverwaltungen mit einer oder mehreren Wohnanlagen
 - Wohnungseigentümergemeinschaften
 - Vermieter von Ein- und Mehrfamilienhäusern
 - Gewerbe- und Firmengelände mit Bäumen, Hecken und Grünflächen
 
-Wir arbeiten im Raum zwischen Köln und Bonn. Neben der regelmäßigen Pflege übernehmen wir auch einzelne Aufträge, etwa eine Fällung oder die Beseitigung von Sturmschäden. Schicken Sie uns Ihre Anfrage, gern mit Fotos, und Sie erhalten eine kostenlose Ersteinschätzung.
+Wir arbeiten im Raum zwischen Köln und Bonn. Neben der regelmäßigen Pflege übernehmen wir auch einzelne Aufträge, etwa eine Fällung oder die Beseitigung von Sturmschäden. Senden Sie uns Ihre Anfrage, gern mit Fotos. Wir melden uns persönlich mit einer ersten Einschätzung.

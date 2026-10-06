@@ -5,7 +5,7 @@ leistungen: [baumfaellung]
 aufFaqSeite: true
 reihenfolge: 10
 ---
-Nicht jeder Schaden bedeutet das Aus für einen Baum. Sind nur einzelne Äste abgestorben, genügt oft ein fachgerechter Schnitt. Eine Fällung kommt vor allem dann in Betracht, wenn der Baum nicht mehr sicher steht oder bruchgefährdet ist und sich das mit Pflege nicht beheben lässt. Hinweise darauf sind zum Beispiel:
+Nicht jeder Schaden bedeutet das Ende für einen Baum. Sind nur einzelne Äste abgestorben, genügt oft ein fachgerechter Schnitt. Eine Fällung kommt vor allem dann in Betracht, wenn der Baum nicht mehr sicher steht oder bruchgefährdet ist und sich das mit Pflege nicht beheben lässt. Hinweise darauf sind zum Beispiel:
 
 - große abgestorbene Teile der Krone
 - Pilze oder Fäulnis am Stammfuß oder an den Wurzeln

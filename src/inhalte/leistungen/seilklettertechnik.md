@@ -7,16 +7,16 @@ benoetigt: skt-a
 seitentitel: "Seilklettertechnik in Bornheim, Köln und Bonn | Baumpflege Happe"
 beschreibung: "Seilklettertechnik zwischen Köln und Bonn: Baumpflege, Rückschnitt und Fällung am Seil, auch an schwer erreichbaren Bäumen. Anfrage mit Fotos senden."
 h1: "Seilklettertechnik in Bornheim, Köln und Bonn"
-einleitung: "Am Seil gelangen wir in die Krone, ohne ein Fahrzeug auf Ihr Grundstück zu bringen. So lassen sich Pflegeschnitte, größere Rückschnitte und Fällungen gezielt und schonend erledigen, auch in engen Gärten und Hinterhöfen."
+einleitung: "Am Seil gelangen wir in die Krone, ohne ein Fahrzeug auf Ihr Grundstück zu bringen. So lassen sich Pflegeschnitte, größere Rückschnitte und Fällungen gezielt und schonend ausführen, auch in engen Gärten und Hinterhöfen."
 vorteile:
-  - titel: "Schonend für den Garten"
+  - titel: "Rücksicht auf den Garten"
     text: "Kein schweres Fahrzeug unter dem Baum: Rasen, Beete und Wege bleiben geschont, der Boden im Wurzelbereich wird nicht verdichtet."
   - titel: "Auch an schwer erreichbaren Bäumen"
     text: "Bäume hinter dem Haus, in Innenhöfen oder an Hängen sind am Seil oft gut erreichbar."
   - titel: "Gezielte Schnitte"
     text: "Direkt in der Krone setzen wir jeden Schnitt genau dort, wo er hingehört."
   - titel: "Vom Pflegeschnitt bis zur Fällung"
-    text: "Totholz, Kronenpflege, Rückschnitt oder ein Baum, der Stück für Stück abgetragen werden muss: Am Seil erreichen wir fast jeden Teil der Krone."
+    text: "Totholz, Kronenpflege, Rückschnitt oder ein Baum, der Stück für Stück abgetragen werden muss: All das ist am Seil möglich."
 fragenTitel: "Fragen zur Seilklettertechnik"
 aufruf: "Kein Platz für eine Hubarbeitsbühne?"
 kosten:
@@ -26,13 +26,13 @@ kosten:
     - titel: "Höhe und Größe der Krone"
       text: "Eine große, hohe Krone braucht mehr Zeit für den Aufstieg und die Arbeit darin."
     - titel: "Art und Umfang der Arbeiten"
-      text: "Einzelne trockene Äste zu entfernen geht schneller als ein Rückschnitt der ganzen Krone oder eine Fällung Stück für Stück."
+      text: "Einzelne trockene Äste zu entfernen erfordert weniger Aufwand als ein Rückschnitt der ganzen Krone oder eine Fällung Stück für Stück."
     - titel: "Zustand des Baums"
       text: "Ist der Baum geschwächt, braucht die Wahl sicherer Anschlagpunkte mehr Zeit und Sorgfalt."
     - titel: "Umgebung unter dem Baum"
       text: "Befinden sich Gewächshaus, Teich oder empfindliche Beete unter der Krone, muss das Schnittgut besonders vorsichtig nach unten gebracht werden."
     - titel: "Schnittgut"
-      text: "Menge und Weg bis zum Häcksler bestimmen, wie lange das Aufräumen dauert."
+      text: "Menge und Weg bis zum Häcksler bestimmen, wie viel Arbeit das Aufräumen macht."
 ---
 
 ## Was wir am Seil erledigen

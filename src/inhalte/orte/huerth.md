@@ -30,4 +30,4 @@ Zu unseren Arbeiten gehören Kronenpflege und das Entfernen von Totholz, Fällun
 
 ## Anfahrt und erste Einschätzung
 
-Nach Hürth sind es von unserem Betrieb in Bornheim rund 16 Kilometer Luftlinie, in nordwestlicher Richtung am Höhenzug der Ville entlang. Bevor wir losfahren, verschaffen wir uns anhand Ihrer Fotos einen ersten Eindruck. Diese Ersteinschätzung ist für Sie kostenlos. Wenn wir den Baum vor Ort sehen müssen, vereinbaren wir einen Termin. Das schriftliche Angebot erhalten Sie im Anschluss.
+Nach Hürth sind es von unserem Betrieb in Bornheim rund 16 Kilometer Luftlinie, in nordwestlicher Richtung am Höhenzug der Ville entlang. Bevor wir losfahren, verschaffen wir uns anhand Ihrer Fotos einen ersten Eindruck und melden uns persönlich mit unserer Einschätzung. Wenn wir den Baum vor Ort sehen müssen, vereinbaren wir einen Termin. Das schriftliche Angebot erhalten Sie im Anschluss.

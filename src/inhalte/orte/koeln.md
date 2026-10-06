@@ -31,4 +31,4 @@ In Köln gibt es eine Baumschutzsatzung; ob Ihr Baum darunterfällt und eine Fä
 
 ## Anfahrt aus Bornheim
 
-Die Kölner Innenstadt ist rund 20 Kilometer Luftlinie von Bornheim entfernt, der Kölner Süden mit Sürth, Weiß und Godorf liegt deutlich näher. Damit wir die Anfahrt sinnvoll planen können, nennen Sie uns bei der Anfrage am besten gleich Adresse und Stadtteil und schicken Fotos mit. Auf dieser Grundlage schätzen wir den Aufwand kostenlos ein. Einen Termin vor Ort machen wir aus, wenn die Fotos nicht ausreichen. Das Angebot bekommen Sie danach schriftlich.
+Die Kölner Innenstadt ist rund 20 Kilometer Luftlinie von Bornheim entfernt, der Kölner Süden mit Sürth, Weiß und Godorf liegt deutlich näher. Damit wir die Anfahrt gut planen können, nennen Sie uns in Ihrer Anfrage bitte Adresse und Stadtteil und fügen einige Fotos bei. Auf dieser Grundlage schätzen wir den Aufwand ein und melden uns persönlich bei Ihnen. Reichen die Fotos nicht aus, vereinbaren wir einen Termin vor Ort. Das Angebot erhalten Sie anschließend schriftlich.

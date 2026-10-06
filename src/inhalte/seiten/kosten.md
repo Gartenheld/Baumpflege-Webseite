@@ -9,7 +9,7 @@ karten:
   - titel: "Größe und Zustand"
     text: "Höhe, Krone und Stamm bestimmen, wie viel Arbeit anfällt. Ist ein Baum geschwächt oder voller Totholz, braucht die Arbeit mehr Vorsicht und Zeit."
   - titel: "Lage auf dem Grundstück"
-    text: "Steht der Baum frei, geht es oft schneller. Stehen Haus, Leitungen, Zaun oder Nachbargrundstück nah, tragen wir ihn Stück für Stück ab."
+    text: "Ein frei stehender Baum erfordert meist weniger Aufwand. Stehen Haus, Leitungen, Zaun oder Nachbargrundstück nah, tragen wir ihn Stück für Stück ab."
   - titel: "Zugang und Zufahrt"
     text: "Kommen Fahrzeug, Hubarbeitsbühne und Häcksler nah an den Baum, oder muss das Schnittgut über längere Wege getragen werden?"
   - titel: "Arbeitstechnik"
@@ -20,12 +20,12 @@ karten:
     text: "Zum Beispiel das Entfernen des Wurzelstocks. Muss für die Arbeit eine Straße oder ein Gehweg genutzt werden, kann außerdem eine Genehmigung nötig sein."
 # Abschnitt „Gut zu wissen“
 punkte:
-  - titel: "Angebot kostenlos"
-    text: "Ersteinschätzung, Besichtigung und Angebot sind für Sie kostenlos. Am besten schicken Sie uns Fotos vom ganzen Baum, vom Stamm und von der Zufahrt."
+  - titel: "Einschätzung und Angebot kostenlos"
+    text: "Das gilt auch für eine Besichtigung vor Ort, wenn sie nötig ist. Für den Anfang genügen meist Fotos vom ganzen Baum, vom Stamm und von der Zufahrt."
   - titel: "Aufräumen inklusive"
-    text: "Aufräumen und Entsorgung gehören bei uns zur Arbeit dazu und sind im Angebot enthalten."
+    text: "Aufräumen und Entsorgung gehören immer dazu und sind im Angebot enthalten."
   - titel: "Mehraufwand nur nach Absprache"
-    text: "Zeigt sich bei der Arbeit ein Mehraufwand, der vorher nicht erkennbar war, sprechen wir Sie an, bevor wir weitermachen."
+    text: "Zeigt sich bei der Arbeit ein Mehraufwand, der vorher nicht erkennbar war, sprechen wir Sie an, bevor wir fortfahren."
   - titel: "Arbeiten bündeln"
-    text: "Mehrere Arbeiten an einem Termin sparen zusätzliche Anfahrten und Rüstzeiten. Sagen Sie uns, was sonst noch im Garten zu tun ist."
+    text: "Ist im Garten noch mehr zu tun, planen wir es gern mit ein. So bleibt es bei einem Termin auf Ihrem Grundstück."
 ---

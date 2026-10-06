@@ -26,8 +26,8 @@ In den Dörfern stehen auf größeren Grundstücken oft alte Laub- und Obstbäum
 
 ## Viel Schnittgut, direkt vor Ort gehäckselt
 
-Auf großen Grundstücken fällt schnell eine Menge Holz und Reisig an. Äste und Zweige zerkleinern wir mit dem Häcksler direkt vor Ort. Auf Wunsch bleibt das Häckselgut als Mulch für Beete und Baumscheiben bei Ihnen, ansonsten nehmen wir es mit. Ob Erftstadt für Ihren Baum besondere Schutzvorschriften kennt, kann Ihnen die Stadtverwaltung beantworten.
+Auf großen Grundstücken fällt viel Holz und Reisig an. Äste und Zweige zerkleinern wir mit dem Häcksler direkt vor Ort. Auf Wunsch bleibt das Häckselgut als Mulch für Beete und Baumscheiben bei Ihnen, ansonsten nehmen wir es mit. Ob Erftstadt für Ihren Baum besondere Schutzvorschriften kennt, kann Ihnen die Stadtverwaltung beantworten.
 
 ## Anfahrt aus Bornheim
 
-Rund 15 Kilometer Luftlinie trennen Erftstadt von unserem Betrieb in Bornheim. Größere Arbeiten planen wir nach Möglichkeit so, dass sie an einem Stück erledigt werden. Am Anfang stehen Ihre Fotos und eine kurze Beschreibung. Wir sagen Ihnen kostenlos, was wir für sinnvoll halten, und erstellen nach einer eventuellen Besichtigung ein schriftliches Angebot.
+Rund 15 Kilometer Luftlinie trennen Erftstadt von unserem Betrieb in Bornheim. Größere Arbeiten planen wir nach Möglichkeit so, dass sie in einem Zug ausgeführt werden. So ist Ihr Garten nur einmal Baustelle. Am Anfang stehen Ihre Fotos und eine kurze Beschreibung. Wir sagen Ihnen offen, was wir für sinnvoll halten, und erstellen, falls nötig nach einer Besichtigung, ein schriftliches Angebot mit Pauschalpreis.

@@ -1,5 +1,5 @@
 ---
-frage: "Bleiben Rasen und Beete bei den Arbeiten heil?"
+frage: "Werden Rasen und Beete bei den Arbeiten geschont?"
 thema: ablauf
 leistungen: [seilklettertechnik]
 aufFaqSeite: true

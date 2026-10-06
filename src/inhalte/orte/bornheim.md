@@ -17,11 +17,11 @@ baumschutz:
 
 ## Ihr Baumpflegebetrieb vor Ort
 
-Unser Betrieb sitzt in Bornheim, und hier sind wir am häufigsten unterwegs. Ob Hersel, Widdig und Uedorf am Rhein oder Merten, Rösberg und Walberberg am Hang: Die Wege zu Ihnen sind kurz. Ist eine Besichtigung nötig, lässt sie sich deshalb meist gut in unsere Touren einplanen, und auch ein einzelner Baum ist für uns kein zu kleiner Auftrag. Stehen mehrere Arbeiten an, lohnt es sich, sie an einem Termin zu bündeln.
+Unser Betrieb sitzt in Bornheim, und hier sind wir am häufigsten unterwegs. Ob Hersel, Widdig und Uedorf am Rhein oder Merten, Rösberg und Walberberg am Hang: Die Wege zu Ihnen sind kurz. Ist eine Besichtigung nötig, lässt sie sich deshalb meist gut einplanen. Auch ein einzelner Baum bekommt bei uns dieselbe Sorgfalt wie ein großer Auftrag. Stehen mehrere Arbeiten an, planen wir sie gern zusammen. So bleibt es bei einem Termin auf Ihrem Grundstück.
 
 ## Obstbäume, Altbäume und Hecken am Vorgebirge
 
-Die Orte am Vorgebirge sind seit langer Zeit vom Obst- und Gemüseanbau geprägt. Entsprechend stehen in vielen Gärten ältere Obstbäume, die einen behutsamen Erhaltungsschnitt brauchen statt eines radikalen Rückschnitts. Auf größeren Grundstücken in den alten Ortskernen finden sich zudem mächtige Laubbäume, bei denen Totholz und lange Äste über Dach oder Weg zum Thema werden. In den neueren Wohngebieten geht es dagegen oft um Hecken an der Grundstücksgrenze und um Bäume, die dem Haus zu nahe gekommen sind. Oberhalb der Hangorte schließen die Wälder der Ville an. Wer dort am Waldrand wohnt, findet nach einem Sturm eher einmal abgebrochene Äste im Garten.
+Die Orte am Vorgebirge sind seit langer Zeit vom Obst- und Gemüseanbau geprägt. Entsprechend stehen in vielen Gärten ältere Obstbäume, die einen behutsamen Erhaltungsschnitt brauchen statt eines radikalen Rückschnitts. Auf größeren Grundstücken in den alten Ortskernen finden sich zudem mächtige Laubbäume, bei denen Totholz und lange Äste über Dach oder Weg Aufmerksamkeit verlangen. In den neueren Wohngebieten geht es dagegen oft um Hecken an der Grundstücksgrenze und um Bäume, die dem Haus zu nahe gekommen sind. Oberhalb der Hangorte schließen die Wälder der Ville an. Wer dort am Waldrand wohnt, findet nach einem Sturm häufiger abgebrochene Äste im Garten.
 
 ## Von der Pflege bis zur Fällung
 
@@ -29,4 +29,4 @@ Wir schneiden und pflegen Bäume, fällen sie, wenn es nötig ist, entfernen Wur
 
 ## So kommen wir ins Gespräch
 
-Schicken Sie uns ein paar Fotos des Baumes und schreiben Sie kurz dazu, was Sie sich wünschen. Darauf bekommen Sie von uns eine kostenlose Ersteinschätzung. Ist ein Blick vor Ort nötig, kommen wir vorbei und erstellen anschließend ein schriftliches Angebot. Nach getaner Arbeit räumen wir auf und nehmen das Schnittgut mit.
+Senden Sie uns einige Fotos des Baumes und schreiben Sie kurz dazu, was Sie sich wünschen. Heinrich Happe meldet sich persönlich mit einer ersten Einschätzung. Ist ein Blick vor Ort nötig, kommen wir zu Ihnen und erstellen anschließend ein schriftliches Angebot. Nach getaner Arbeit räumen wir auf und nehmen das Schnittgut mit.

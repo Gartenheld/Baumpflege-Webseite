@@ -1,5 +1,5 @@
 ---
-frage: "Die Äste vom Nachbarbaum hängen auf mein Grundstück. Was kann ich tun?"
+frage: "Die Äste des Nachbarbaums ragen auf mein Grundstück. Was kann ich tun?"
 thema: nachbarn
 leistungen: [baumpflege]
 aufFaqSeite: true

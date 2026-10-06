@@ -1,5 +1,5 @@
 ---
-frage: "Wie schnell können Sie nach einem Sturm vor Ort sein?"
+frage: "Wann können Sie nach einem Sturm vor Ort sein?"
 thema: leistung
 leistungen: [sturmschadenbeseitigung]
 aufFaqSeite: false

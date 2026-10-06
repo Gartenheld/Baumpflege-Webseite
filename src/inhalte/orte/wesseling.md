@@ -18,7 +18,7 @@ baumschutz:
 
 ## Am Rhein zu Hause
 
-Wesseling ist geprägt vom Rhein und von großen Industrieanlagen, daneben gibt es ruhige Wohngebiete mit Gärten. In Rheinnähe wachsen häufig Weiden und Pappeln. Beide Arten legen schnell an Höhe zu, und ihr Holz gilt als vergleichsweise bruchanfällig. Stehen solche Bäume nah am Haus, an der Terrasse oder an einem Weg, lohnt sich ein regelmäßiger Blick in die Krone. Rechtzeitig entferntes Totholz und eingekürzte, schwere Äste verringern das Risiko, dass beim nächsten Unwetter etwas herunterkommt.
+Wesseling ist geprägt vom Rhein und von großen Industrieanlagen, daneben gibt es ruhige Wohngebiete mit Gärten. In Rheinnähe wachsen häufig Weiden und Pappeln. Beide Arten legen schnell an Höhe zu, und ihr Holz gilt als vergleichsweise bruchanfällig. Stehen solche Bäume nah am Haus, an der Terrasse oder an einem Weg, empfiehlt sich ein regelmäßiger Blick in die Krone. Rechtzeitig entferntes Totholz und eingekürzte, schwere Äste verringern das Risiko, dass beim nächsten Unwetter etwas herunterkommt.
 
 ## Gärten in Berzdorf, Keldenich und Urfeld
 
@@ -26,8 +26,8 @@ In den Wohngebieten der Stadtteile finden sich viele Einfamilien- und Reihenhäu
 
 ## Kurzer Weg aus Bornheim
 
-Mit rund 7 Kilometern Luftlinie gehört Wesseling zu den Orten, die wir von Bornheim aus gut erreichen. Für eine Einschätzung brauchen wir zunächst nur Fotos vom Baum und seinem Umfeld, auf denen etwa der Abstand zu Haus, Zaun und Nachbargrundstück zu erkennen ist. Wir melden uns mit einer ersten Einschätzung, die Sie nichts kostet. Ist eine Besichtigung nötig, lässt sie sich dank der kurzen Anfahrt unkompliziert einrichten. Danach erhalten Sie ein schriftliches Angebot. Ob die Stadt Wesseling für Ihren Baum eine Genehmigung verlangt, klären Sie bitte vor der Fällung mit der Verwaltung.
+Mit rund 7 Kilometern Luftlinie gehört Wesseling zu den Orten, die wir von Bornheim aus gut erreichen. Für eine erste Einschätzung bitten wir um Fotos vom Baum und seinem Umfeld, auf denen etwa der Abstand zu Haus, Zaun und Nachbargrundstück zu erkennen ist. Wir melden uns persönlich mit unserer Einschätzung. Ist eine Besichtigung nötig, lässt sie sich dank der kurzen Anfahrt gut einplanen. Danach erhalten Sie ein schriftliches Angebot. Ob die Stadt Wesseling für Ihren Baum eine Genehmigung verlangt, klären Sie bitte vor der Fällung mit der Verwaltung.
 
 ## Aufräumen gehört dazu
 
-Wenn wir fertig sind, soll Ihr Garten aufgeräumt sein. Äste häckseln wir gleich vor Ort, Stammholz und Häckselgut nehmen wir mit und kümmern uns um die Entsorgung.
+Ihren Garten hinterlassen wir sauberer, als wir ihn vorgefunden haben. Äste häckseln wir gleich vor Ort, Stammholz und Häckselgut nehmen wir mit. Aufräumen und Entsorgung gehören immer dazu.

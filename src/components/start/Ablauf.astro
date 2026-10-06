@@ -12,10 +12,10 @@ interface Props {
 const { hintergrund = 'weiss' } = Astro.props;
 
 const schritte = [
-  { titel: 'Anfrage', text: 'Mit Fotos über das Formular oder ganz persönlich per Telefon, WhatsApp oder E-Mail.' },
-  { titel: 'Antwort in 24 Stunden', text: 'Persönlich und an Werktagen. Die Ersteinschätzung ist kostenlos.' },
-  { titel: 'Besichtigung', text: 'Wenn nötig, beurteilen wir Baum, Standort und Zufahrt vor Ort, ebenfalls kostenlos.' },
-  { titel: 'Angebot', text: 'Schriftlich, mit Pauschalpreis und für Sie kostenlos.' },
+  { titel: 'Anfrage', text: 'Mit Fotos über das Formular oder persönlich per Telefon, WhatsApp oder E-Mail.' },
+  { titel: 'Antwort in 24 Stunden', text: 'Persönlich und an Werktagen, mit einer ersten Einschätzung oder Rückfragen.' },
+  { titel: 'Besichtigung', text: 'Wenn nötig, beurteilen wir Baum, Standort und Zufahrt vor Ort.' },
+  { titel: 'Angebot', text: 'Schriftlich und mit Pauschalpreis. Ersteinschätzung, Besichtigung und Angebot sind für Sie kostenlos.' },
   { titel: 'Ausführung', text: 'Fachgerecht und sorgfältig. Ihr Grundstück hinterlassen wir sauberer, als wir es vorgefunden haben.' },
 ];
 ---
@@ -24,7 +24,7 @@ const schritte = [
   <div class="huelle">
     <div class="kopfzeile">
       <p class="kicker">Ablauf</p>
-      <h2 id="ablauf-titel">So einfach geht Ihre Anfrage</h2>
+      <h2 id="ablauf-titel">Von der Anfrage bis zur Ausführung</h2>
     </div>
 
     <ol>

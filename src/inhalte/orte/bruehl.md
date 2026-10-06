@@ -30,4 +30,4 @@ Schnittgut bleibt bei uns nicht im Garten liegen. Wir häckseln es direkt vor Or
 
 ## Anfahrt und Ablauf
 
-Brühl liegt nordwestlich von Bornheim, unser Betrieb ist rund 10 Kilometer Luftlinie entfernt. Schicken Sie uns zunächst Fotos und eine kurze Beschreibung der Lage. Wir sehen uns die Bilder an, geben Ihnen kostenlos eine erste Einschätzung und kommen bei Bedarf zur Besichtigung vorbei. Was wir für Ihren Baum vorschlagen, steht anschließend schriftlich im Angebot.
+Brühl liegt nordwestlich von Bornheim, unser Betrieb ist rund 10 Kilometer Luftlinie entfernt. Zu Beginn genügen einige Fotos und eine kurze Beschreibung der Lage. Wir sehen uns die Bilder in Ruhe an, geben Ihnen eine erste Einschätzung und kommen bei Bedarf zur Besichtigung. Was wir für Ihren Baum vorschlagen, halten wir anschließend in einem schriftlichen Angebot fest.

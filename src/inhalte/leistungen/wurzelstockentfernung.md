@@ -6,12 +6,12 @@ schwerpunkt: false
 seitentitel: "Baumstumpf und Wurzelstock entfernen in Bornheim, Köln, Bonn"
 beschreibung: "Wurzelstock und Baumstumpf entfernen zwischen Köln und Bonn: Stubben fräsen oder ausgraben, damit Sie die Fläche wieder nutzen können. Anfrage mit Fotos senden."
 h1: "Wurzelstock entfernen in Bornheim, Köln und Bonn"
-einleitung: "Nach einer Fällung bleibt der Baumstumpf oft jahrelang im Boden. Er stört beim Mähen, ist eine Stolperfalle und steht einer neuen Gestaltung im Weg. Wir entfernen Wurzelstöcke so, dass Sie den Platz wieder nutzen können."
+einleitung: "Nach einer Fällung bleibt der Baumstumpf oft jahrelang im Boden. Er stört beim Mähen, ist eine Stolperfalle und steht einer neuen Gestaltung im Weg. Wir entfernen Wurzelstöcke sorgfältig, damit Sie den Platz wieder nutzen können."
 vorteile:
   - titel: "Fläche wieder nutzbar"
     text: "Wo der Stumpf stand, ist wieder Platz für Rasen, Beet oder Neupflanzung. Auf Wunsch stellen wir die Fläche mit Rollrasen oder Rasenansaat wieder her."
   - titel: "Passende Methode"
-    text: "Je nach Lage und Größe wird der Wurzelstock gefräst oder ausgegraben, mit der Technik, die zum Standort passt."
+    text: "Je nach Lage und Größe fräsen wir den Wurzelstock oder graben ihn aus, mit Rücksicht auf den umliegenden Garten."
   - titel: "Kein neuer Austrieb am Stumpf"
     text: "Manche Baumarten treiben aus dem Stumpf immer wieder aus. Ist der Wurzelstock entfernt, entfallen diese Stockaustriebe."
   - titel: "Sauberer Abschluss"
@@ -23,7 +23,7 @@ kosten:
   einleitung: "Der Aufwand hängt vor allem vom Stumpf und seiner Lage ab. Nach Ihren Fotos oder, wenn nötig, einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis."
   faktoren:
     - titel: "Durchmesser des Stumpfs"
-      text: "Ein dicker Stumpf hat ein größeres Wurzelwerk und braucht entsprechend mehr Zeit."
+      text: "Ein dicker Stumpf hat ein größeres Wurzelwerk, entsprechend mehr ist zu fräsen oder auszugraben."
     - titel: "Baumart und Wurzelwerk"
       text: "Manche Arten wurzeln flach und weit, andere tief. Das bestimmt, wie viel entfernt werden muss."
     - titel: "Lage und Zugänglichkeit"
