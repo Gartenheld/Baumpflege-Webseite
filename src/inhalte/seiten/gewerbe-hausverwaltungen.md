@@ -2,7 +2,7 @@
 seitentitel: "Baumpflege für Hausverwaltungen und Gewerbe | Baumpflege Happe"
 beschreibung: "Regelmäßige Baumpflege für Hausverwaltungen, Eigentümergemeinschaften und Gewerbe zwischen Köln und Bonn, mit festem Ansprechpartner und Dokumentation."
 kicker: Gewerbe
-h1: "Baumpflege für Hausverwaltungen, Eigentümergemeinschaften und Gewerbe"
+h1: "Baumpflege für Hausverwaltungen, Eigentümer­gemeinschaften und Gewerbe"
 einleitung: "Sie betreuen Wohnanlagen, vermieten Häuser oder verantworten ein Firmengelände? Wir übernehmen die regelmäßige Pflege Ihrer Bäume, Hecken und Grünflächen, mit einem festen Ansprechpartner und schriftlich dokumentiert."
 karten:
   - titel: "Weniger Organisationsaufwand"

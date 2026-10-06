@@ -26,7 +26,7 @@ const faqDaten = fragenSeite(gruppen.flatMap((g) => g.fragen));
   {
     gruppen.map((g, i) => (
       <section class:list={['abschnitt', { 'abschnitt--weiss': i % 2 === 0 }]} id={g.thema} aria-labelledby={`${g.thema}-titel`}>
-        <div class="huelle">
+        <div class="huelle raster-seitlich">
           <div class="abschnittskopf">
             <h2 id={`${g.thema}-titel`}>{g.titel}</h2>
           </div>

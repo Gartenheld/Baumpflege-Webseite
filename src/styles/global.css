@@ -29,7 +29,7 @@
   /* Maße */
   --breite: 74rem;
   --rand: clamp(1rem, 4vw, 2.5rem);
-  --abstand-abschnitt: clamp(3.5rem, 8vw, 6.5rem);
+  --abstand-abschnitt: clamp(3.5rem, 7vw, 5.5rem);
   --radius: 0.75rem;
   --radius-klein: 0.5rem;
   --handyleiste: 0px;
@@ -54,7 +54,6 @@ body {
   font-size: 1.125rem;
   line-height: 1.6;
   font-kerning: normal;
-  padding-bottom: var(--handyleiste);
 }
 
 h1,
@@ -369,4 +368,44 @@ img.foto {
 
 .abschnitt--weiss {
   background: var(--weiss);
+}
+
+/* Folgt auf den Seitenkopf ein Abschnitt mit demselben Hintergrund, entfällt der doppelte Abstand */
+.seitenkopf + .abschnitt:not(.abschnitt--weiss) {
+  padding-top: 0;
+}
+
+/* Karten auf weißem Grund: ohne eigene Fläche, bündig zum übrigen Inhalt */
+.abschnitt--weiss .karten {
+  column-gap: 2.5rem;
+  row-gap: 1.75rem;
+}
+
+.abschnitt--weiss .karten li {
+  background: none;
+  padding: 0;
+}
+
+/* Abschnitt mit Überschrift links und Inhalt rechts (ab Desktop), z. B. Häufige Fragen */
+@media (min-width: 60rem) {
+  .raster-seitlich {
+    display: grid;
+    grid-template-columns: minmax(0, 17rem) minmax(0, 1fr);
+    column-gap: clamp(2.5rem, 5vw, 5rem);
+    align-items: start;
+  }
+
+  .raster-seitlich > .abschnittskopf {
+    margin-bottom: 0;
+    position: sticky;
+    top: 1.5rem;
+  }
+
+  .raster-seitlich > .abschnittskopf h2 {
+    font-size: 1.75rem;
+  }
+
+  .raster-seitlich > :not(.abschnittskopf) {
+    grid-column: 2;
+  }
 }

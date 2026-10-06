@@ -9,7 +9,7 @@ interface Props {
 const { karten, dunkel = false, nummeriert = false } = Astro.props;
 ---
 
-<ul class:list={['karten', { 'karten--dunkel': dunkel, 'karten--nummer': nummeriert }]}>
+<ul class:list={['karten', { 'karten--dunkel': dunkel, 'karten--nummer': nummeriert, 'karten--drei': karten.length % 3 === 0 && karten.length > 3 }]}>
   {
     karten.map((k) => (
       <li>
@@ -29,6 +29,13 @@ const { karten, dunkel = false, nummeriert = false } = Astro.props;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
     counter-reset: karte;
+  }
+
+  /* Sechs Karten: drei je Reihe statt vier und zwei */
+  @media (min-width: 60rem) {
+    .karten--drei {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
   }
 
   li {

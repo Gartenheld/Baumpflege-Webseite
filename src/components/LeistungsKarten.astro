@@ -13,6 +13,16 @@ const { ohne, kompakt = false } = Astro.props;
 const leistungen = (await sichtbareLeistungen()).filter((l) => l.id !== ohne);
 const schwerpunkte = kompakt ? [] : leistungen.filter((l) => l.data.schwerpunkt);
 const weitere = kompakt ? leistungen : leistungen.filter((l) => !l.data.schwerpunkt);
+
+// Weiche Trennstellen in langen zusammengesetzten Titeln, damit sie in schmalen Karten sauber umbrechen
+// („Sturmschaden-beseitigung“ statt eines Wortes, das über den Kartenrand ragt)
+const TRENNUNG: [RegExp, string][] = [
+  [/Sturmschadenbeseitigung/g, 'Sturmschaden\u00adbeseitigung'],
+  [/Wurzelstockentfernung/g, 'Wurzelstock\u00adentfernung'],
+  [/Seilklettertechnik/g, 'Seilkletter\u00adtechnik'],
+  [/Landschaftspflege/g, 'Landschafts\u00adpflege'],
+];
+const trennbar = (titel: string) => TRENNUNG.reduce((t, [muster, ersatz]) => t.replace(muster, ersatz), titel);
 ---
 
 {
@@ -23,7 +33,7 @@ const weitere = kompakt ? leistungen : leistungen.filter((l) => !l.data.schwerpu
           <Foto name={`leistung-${l.id}`} class="karte__bild" sizes="(min-width: 75rem) 37rem, (min-width: 48rem) 50vw, 100vw" />
           <div class="karte__text">
             <h3>
-              <a href={leistungsUrl(l.id)}>{l.data.titel}</a>
+              <a href={leistungsUrl(l.id)}>{trennbar(l.data.titel)}</a>
             </h3>
             <p>{l.data.kurz}</p>
             <span class="mehr" aria-hidden="true">
@@ -41,7 +51,7 @@ const weitere = kompakt ? leistungen : leistungen.filter((l) => !l.data.schwerpu
     weitere.map((l) => (
       <li class="karte">
         <h3>
-          <a href={leistungsUrl(l.id)}>{l.data.titel}</a>
+          <a href={leistungsUrl(l.id)}>{trennbar(l.data.titel)}</a>
         </h3>
         <p>{l.data.kurz}</p>
         <Icon name="pfeil" class="karte__pfeil" />
@@ -145,6 +155,7 @@ const weitere = kompakt ? leistungen : leistungen.filter((l) => !l.data.schwerpu
 
   .weitere .karte {
     padding-right: 3rem;
+    min-width: 0;
   }
 
   .weitere :global(.karte__pfeil) {
@@ -160,23 +171,34 @@ const weitere = kompakt ? leistungen : leistungen.filter((l) => !l.data.schwerpu
     }
   }
 
-  /* Breite Bildschirme: drei Karten je Reihe, eine unvollständige letzte Reihe füllt die ganze Breite */
+  /* Breite Bildschirme: drei Karten je Reihe. Bleiben zwei übrig, teilen sie sich die letzte Reihe.
+     Bliebe eine einzelne übrig (z. B. 7 Karten), stehen die ersten vier in einer Reihe: 4 + 3 statt 3 + 3 + 1. */
   @media (min-width: 60rem) {
     .weitere {
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(12, 1fr);
     }
 
     .weitere .karte {
-      grid-column: span 2;
+      grid-column: span 4;
     }
 
     .weitere .karte:nth-child(3n + 1):nth-last-child(2),
     .weitere .karte:nth-child(3n + 2):last-child {
-      grid-column: span 3;
+      grid-column: span 6;
     }
 
-    .weitere .karte:nth-child(3n + 1):last-child {
-      grid-column: span 6;
+    .weitere:has(> .karte:nth-child(3n + 1):last-child) > .karte:nth-child(-n + 4) {
+      grid-column: span 3;
+      padding-right: 2.5rem;
+    }
+
+    /* Mit Viererreihe sind die Karten schmaler: alle Titel etwas kleiner, damit beide Reihen einheitlich wirken */
+    .weitere:has(> .karte:nth-child(3n + 1):last-child) > .karte h3 {
+      font-size: 1.2rem;
+    }
+
+    .weitere .karte:only-child {
+      grid-column: span 12;
     }
   }
 

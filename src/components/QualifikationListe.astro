@@ -7,7 +7,7 @@ const qualifikationen = await vorhandeneQualifikationen();
 const beiBedarf = await qualifikationenBeiBedarf();
 ---
 
-<section class="abschnitt qualifikation" aria-labelledby="qualifikation-titel">
+<section class="abschnitt abschnitt--weiss qualifikation" aria-labelledby="qualifikation-titel">
   <div class="huelle raster">
     <div class="text">
       <p class="kicker">Qualifikationen</p>
@@ -42,11 +42,7 @@ const beiBedarf = await qualifikationenBeiBedarf();
 </section>
 
 <style>
-  .qualifikation {
-    background: var(--salbei);
-    --fokus: var(--gold-hell);
-    color: var(--auf-dunkel);
-  }
+  /* Heller Grund: auf „Über uns“ folgt direkt der grüne Kontaktbereich */
 
   .raster {
     display: grid;
@@ -59,17 +55,8 @@ const beiBedarf = await qualifikationenBeiBedarf();
     align-content: start;
   }
 
-  .kicker {
-    color: var(--gold-hell);
-  }
-
-  h2,
-  h3 {
-    color: var(--auf-dunkel);
-  }
-
   .text p {
-    color: var(--auf-dunkel-weich);
+    color: var(--text-weich);
     max-width: 34rem;
   }
 
@@ -85,16 +72,16 @@ const beiBedarf = await qualifikationenBeiBedarf();
     display: grid;
     gap: 0.2rem;
     padding: 0.85rem 0;
-    border-bottom: 1px solid color-mix(in srgb, var(--auf-dunkel) 22%, transparent);
+    border-bottom: 1px solid var(--linie);
   }
 
   .liste h3 {
     font-size: 1.15rem;
-    color: var(--gold-hell);
+    color: var(--gold-dunkel);
   }
 
   .liste p {
-    color: var(--auf-dunkel-weich);
+    color: var(--text-weich);
     font-size: 0.98rem;
     line-height: 1.5;
   }

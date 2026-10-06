@@ -62,7 +62,7 @@ const service = dienstleistung(Astro.site!, leistungsUrl(leistung.id), d.titel, 
   {
     fragen.length > 0 && (
       <section class="abschnitt" aria-labelledby="faq-titel">
-        <div class="huelle">
+        <div class="huelle raster-seitlich">
           <div class="abschnittskopf">
             <p class="kicker">Häufige Fragen</p>
             <h2 id="faq-titel">{d.fragenTitel ?? `Fragen und Antworten: ${d.titel}`}</h2>
@@ -79,6 +79,7 @@ const service = dienstleistung(Astro.site!, leistungsUrl(leistung.id), d.titel, 
   <section class="abschnitt" aria-labelledby="weitere-titel">
     <div class="huelle">
       <div class="abschnittskopf">
+        <p class="kicker">Leistungen</p>
         <h2 id="weitere-titel">Weitere Leistungen</h2>
       </div>
       <LeistungsKarten ohne={leistung.id} kompakt />
@@ -103,15 +104,6 @@ const service = dienstleistung(Astro.site!, leistungsUrl(leistung.id), d.titel, 
     padding-block: clamp(2.25rem, 4vw, 3.25rem);
   }
 
-  /* Die Karten liegen weiß auf weiß: ohne Innenabstand, dafür mit klarem Spaltenabstand */
-  .vorteile :global(.karten) {
-    gap: 1.75rem 2.5rem;
-  }
-
-  .vorteile :global(.karten li) {
-    padding: 0;
-    background: none;
-  }
 
   /* Leistungstext: ab Desktop Überschrift links, Text rechts, Abschnitte durch feine Linien getrennt */
   @media (min-width: 60rem) {
