@@ -17,18 +17,14 @@ baumschutz:
   geprueft: null
 ---
 
-## Am Rhein zu Hause
+## Wesseling und seine Bäume
 
-Wesseling ist geprägt vom Rhein und von großen Industrieanlagen, daneben gibt es ruhige Wohngebiete mit Gärten. In Rheinnähe wachsen häufig Weiden und Pappeln. Beide Arten legen schnell an Höhe zu, und ihr Holz gilt als vergleichsweise bruchanfällig. Stehen solche Bäume nah am Haus, an der Terrasse oder an einem Weg, empfiehlt sich ein regelmäßiger Blick in die Krone. Rechtzeitig entferntes Totholz und eingekürzte, schwere Äste verringern das Risiko, dass beim nächsten Unwetter etwas herunterkommt.
+Wesseling ist geprägt vom Rhein und von großen Industrieanlagen, daneben gibt es ruhige Wohngebiete mit Gärten. In Rheinnähe wachsen häufig Weiden und Pappeln. Beide Arten legen schnell an Höhe zu, und ihr Holz gilt als vergleichsweise bruchanfällig. In den Wohngebieten von Berzdorf, Keldenich und Urfeld finden sich viele Einfamilien- und Reihenhäuser mit Gärten unterschiedlicher Größe.
 
-## Gärten in Berzdorf, Keldenich und Urfeld
+## Typische Arbeiten in Wesseling
 
-In den Wohngebieten der Stadtteile finden sich viele Einfamilien- und Reihenhäuser mit Gärten unterschiedlicher Größe. Typische Aufgaben sind dort der Schnitt von Hecken und Gartenbäumen, die Fällung zu groß gewordener Nadelbäume und das Entfernen alter Wurzelstöcke. Fällung und Wurzelstockentfernung erhalten Sie dabei aus einer Hand.
+Stehen Weiden oder Pappeln nah am Haus, an der Terrasse oder an einem Weg, empfiehlt sich ein regelmäßiger Blick in die Krone. Rechtzeitig entferntes Totholz und eingekürzte, schwere Äste verringern das Risiko, dass beim nächsten Unwetter etwas herunterkommt. In den Hausgärten stehen der Schnitt von Hecken und Gartenbäumen, die Fällung zu groß gewordener Nadelbäume und das Entfernen alter Wurzelstöcke im Vordergrund. Fällung und Wurzelstockentfernung erhalten Sie dabei aus einer Hand. Äste häckseln wir gleich vor Ort, Stammholz und Häckselgut nehmen wir mit. Ihren Garten hinterlassen wir sauberer, als wir ihn vorgefunden haben.
 
-## Kurzer Weg aus Bornheim
+## Anfahrt und Besichtigung
 
-Mit rund 7 Kilometern Luftlinie gehört Wesseling zu den Orten, die wir von Bornheim aus gut erreichen. Für eine erste Einschätzung bitten wir um Fotos vom Baum und seinem Umfeld, auf denen etwa der Abstand zu Haus, Zaun und Nachbargrundstück zu erkennen ist. Wir melden uns persönlich mit unserer Einschätzung. Ist eine Besichtigung nötig, lässt sie sich dank der kurzen Anfahrt gut einplanen. Danach erhalten Sie ein schriftliches Angebot. Ob die Stadt Wesseling für Ihren Baum eine Genehmigung verlangt, klären Sie bitte vor der Fällung mit der Verwaltung.
-
-## Aufräumen gehört dazu
-
-Ihren Garten hinterlassen wir sauberer, als wir ihn vorgefunden haben. Äste häckseln wir gleich vor Ort, Stammholz und Häckselgut nehmen wir mit. Aufräumen und Entsorgung gehören immer dazu.
+Mit rund 7 Kilometern Luftlinie gehört Wesseling zu den Orten, die wir von Bornheim aus gut erreichen. Für eine erste Einschätzung bitten wir um Fotos vom Baum und seinem Umfeld, auf denen etwa der Abstand zu Haus, Zaun und Nachbargrundstück zu erkennen ist. Wir melden uns persönlich mit unserer Einschätzung. Ist eine Besichtigung nötig, lässt sie sich dank der kurzen Anfahrt gut einplanen. Danach erhalten Sie ein schriftliches Angebot.

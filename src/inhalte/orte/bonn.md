@@ -18,18 +18,14 @@ baumschutz:
   regel: "Nach Angaben der Stadt Bonn sind unter anderem Laubbäume ab 100 cm Stammumfang geschützt, gemessen in 1 m Höhe."
 ---
 
-## Alte Bäume in einer grünen Stadt
+## Bonn und seine Bäume
 
-Viele Bonner Gärten sind Jahrzehnte alt, und mit ihnen die Bäume. In den Villenvierteln von Bad Godesberg, aber auch in Endenich, Kessenich oder Beuel stehen großkronige Laubbäume oft dicht am Haus. Sie spenden Schatten, prägen das Straßenbild und geben dem Grundstück seinen Charakter. Dafür brauchen sie fachkundige Pflege: Totholz wird entfernt, lange Äste über Dächern und Wegen werden eingekürzt, und die Krone wird so ausgelichtet, dass der Baum seine natürliche Form behält. In Bonn gilt eine Baumschutzsatzung; ob Ihr Baum darunterfällt, beantwortet im Zweifel die Stadtverwaltung.
+Viele Bonner Gärten sind Jahrzehnte alt, und mit ihnen die Bäume. In den Villenvierteln von Bad Godesberg, aber auch in Endenich, Kessenich oder Beuel stehen großkronige Laubbäume oft dicht am Haus. Sie spenden Schatten, prägen das Straßenbild und geben dem Grundstück seinen Charakter. In vielen Straßen stehen Bäume in Vorgärten dicht an Gehweg und Fahrbahn, anderswo wachsen sie in Reihenhausgärten, die nur über einen schmalen Weg erreichbar sind. Im Südwesten reicht die Stadt bis an die Wälder von Venusberg und Kottenforst. In Röttgen, Ippendorf oder auf dem Venusberg grenzen manche Gärten an den Wald.
 
-## Bäume am Haus und an der Straße
+## Typische Arbeiten in Bonn
 
-In vielen Bonner Straßen stehen Bäume in Vorgärten dicht an Gehweg und Fahrbahn, anderswo wachsen sie in Reihenhausgärten, die nur über einen schmalen Weg erreichbar sind. Beides verlangt sorgfältige Planung: Wo kann unser Fahrzeug halten, und wie kommen Holz und Schnittgut heraus, ohne Pflaster, Rasen oder Nachbargrundstück zu belasten? Das klären wir vor Beginn mit Ihnen. Die Äste häckseln wir direkt vor Ort, das Holz laden wir auf und fahren es ab.
+Alte Bäume brauchen fachkundige Pflege: Totholz wird entfernt, lange Äste über Dächern und Wegen werden eingekürzt, und die Krone wird so ausgelichtet, dass der Baum seine natürliche Form behält. Am Waldrand fallen nach stürmischen Tagen häufiger Äste in den Garten, gelegentlich stürzt ein geschwächter Baum um. Wir beseitigen solche Sturmschäden und entfernen auf Wunsch auch den verbliebenen Wurzelstock. Bei engen Zugängen klären wir vor Beginn, wo unser Fahrzeug halten kann und wie Holz und Schnittgut herauskommen, ohne Pflaster, Rasen oder Nachbargrundstück zu belasten. Die Äste häckseln wir direkt vor Ort, das Holz nehmen wir mit.
 
-## Am Rand von Kottenforst und Venusberg
+## Anfahrt und Besichtigung
 
-Im Südwesten reicht Bonn bis an die Wälder von Venusberg und Kottenforst. In Röttgen, Ippendorf oder auf dem Venusberg grenzen manche Gärten an den Wald. Hier fallen nach stürmischen Tagen häufiger Äste in den Garten, und gelegentlich stürzt ein geschwächter Baum um. Wir beseitigen solche Sturmschäden und entfernen auf Wunsch auch den verbliebenen Wurzelstock.
-
-## Von Bornheim nach Bonn
-
-Bonn schließt im Süden an Bornheim an. Von unserem Betrieb bis in die Bonner Innenstadt messen wir rund 8 Kilometer Luftlinie. Besonders nah sind Buschdorf, Tannenbusch und Dransdorf im Bonner Norden. Für eine erste Einschätzung genügen meist einige Fotos des Baumes und seines Umfelds. Ist eine Besichtigung sinnvoll, vereinbaren wir einen Termin mit Ihnen. Was wir vorschlagen, erhalten Sie anschließend als schriftliches Angebot.
+Bonn schließt im Süden an Bornheim an. Von unserem Betrieb bis in die Bonner Innenstadt sind es rund 8 Kilometer Luftlinie, besonders nah liegen Buschdorf, Tannenbusch und Dransdorf im Bonner Norden. Für eine erste Einschätzung genügen meist einige Fotos des Baumes und seines Umfelds. Ist eine Besichtigung sinnvoll, vereinbaren wir einen Termin mit Ihnen. Was wir vorschlagen, erhalten Sie anschließend als schriftliches Angebot.

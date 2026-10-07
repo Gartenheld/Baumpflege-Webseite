@@ -18,18 +18,14 @@ baumschutz:
   regel: "Nach Angaben der Stadt Köln sind unter anderem Laubbäume ab 80 cm Stammumfang geschützt. Für ihre Fällung ist ein kostenpflichtiger Antrag bei der Stadt nötig."
 ---
 
-## Stadtbäume mit Geschichte
+## Köln und seine Bäume
 
-In Marienburg, Hahnwald oder Rodenkirchen stehen auf großen Grundstücken Bäume, die oft schon viele Jahrzehnte alt sind. Großkronige Laubbäume dieser Art brauchen eine Pflege, die ihren Charakter bewahrt: Totholz entfernen, störende Äste gezielt einkürzen, die Krone nicht unnötig schwächen. Ganz anders sieht es in den dicht bebauten Vierteln aus. Dort wachsen Bäume oft in Innenhöfen oder kleinen Gärten hinter dem Haus, erreichbar nur durch einen Hausflur oder eine schmale Einfahrt. Für solche Fälle klären wir vorab genau, wie Schnittgut und Holz sicher nach draußen gelangen und wo der Häcksler stehen kann.
+In Marienburg, Hahnwald oder Rodenkirchen stehen auf großen Grundstücken Bäume, die oft schon viele Jahrzehnte alt sind. Ganz anders sieht es in den dicht bebauten Vierteln aus: Dort wachsen Bäume oft in Innenhöfen oder kleinen Gärten hinter dem Haus, erreichbar nur durch einen Hausflur oder eine schmale Einfahrt. Dazu ist Köln von Grünflächen durchzogen. Der Grüngürtel und die Rheinufer prägen viele Viertel, und auch die privaten Gärten tragen zum Grün der Stadt bei.
 
-## Grün am Rhein und im Grüngürtel
+## Typische Arbeiten in Köln
 
-Köln ist von Grünflächen durchzogen, der Grüngürtel und die Rheinufer prägen viele Viertel. Auch private Gärten tragen dazu bei, und nach einem Sturm zeigt sich, wie verletzlich ältere Bäume sein können. Abgebrochene Äste, ein umgestürzter Baum oder eine eingerissene Krone: Wir beseitigen solche Schäden nach Absprache und besprechen mit Ihnen, ob ein beschädigter Baum erhalten werden kann oder gefällt werden sollte.
+Großkronige Laubbäume brauchen eine Pflege, die ihren Charakter bewahrt: Totholz entfernen, störende Äste gezielt einkürzen, die Krone nicht unnötig schwächen. Nach einem Sturm zeigt sich, wie verletzlich ältere Bäume sein können. Abgebrochene Äste, ein umgestürzter Baum oder eine eingerissene Krone: Wir beseitigen solche Schäden nach Absprache und besprechen mit Ihnen, ob ein beschädigter Baum erhalten werden kann oder gefällt werden sollte. Bei Innenhöfen und engen Zugängen klären wir vorab genau, wie Schnittgut und Holz sicher nach draußen gelangen und wo der Häcksler stehen kann.
 
-## Gut geplant in der Großstadt
+## Anfahrt und Besichtigung
 
-In Köln gibt es eine Baumschutzsatzung; ob Ihr Baum darunterfällt und eine Fällung genehmigt werden muss, beantwortet die Stadt Köln. Bei der Planung der Arbeiten berücksichtigen wir die Gegebenheiten vor Ort, etwa Parkmöglichkeiten in engen Straßen oder Nachbargrundstücke, die betroffen sein könnten.
-
-## Anfahrt aus Bornheim
-
-Die Kölner Innenstadt ist rund 20 Kilometer Luftlinie von Bornheim entfernt, der Kölner Süden mit Sürth, Weiß und Godorf liegt deutlich näher. Damit wir die Anfahrt gut planen können, nennen Sie uns in Ihrer Anfrage bitte Adresse und Stadtteil und fügen einige Fotos bei. Auf dieser Grundlage schätzen wir den Aufwand ein und melden uns persönlich bei Ihnen. Reichen die Fotos nicht aus, vereinbaren wir einen Termin vor Ort. Das Angebot erhalten Sie anschließend schriftlich.
+Die Kölner Innenstadt ist rund 20 Kilometer Luftlinie von Bornheim entfernt, der Kölner Süden mit Sürth, Weiß und Godorf liegt deutlich näher. Bei der Planung berücksichtigen wir die Gegebenheiten vor Ort, etwa Parkmöglichkeiten in engen Straßen oder Nachbargrundstücke, die betroffen sein könnten. Nennen Sie uns in Ihrer Anfrage deshalb bitte Adresse und Stadtteil und fügen Sie einige Fotos bei. Auf dieser Grundlage schätzen wir den Aufwand ein und melden uns persönlich bei Ihnen. Reichen die Fotos nicht aus, vereinbaren wir einen Termin vor Ort. Das Angebot erhalten Sie anschließend schriftlich.

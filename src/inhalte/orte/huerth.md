@@ -16,18 +16,14 @@ baumschutz:
   geprueft: null
 ---
 
-## Eine Stadt mit Bergbaugeschichte
+## Hürth und seine Bäume
 
-Hürth ist seit Langem vom Braunkohleabbau und von der Industrie in Knapsack geprägt. In der Ville rund um Hürth sind auf ehemaligen Abbauflächen inzwischen Wälder und Seen entstanden. Wer am Waldrand wohnt, hat oft Bäume in direkter Nachbarschaft, deren Äste über die Grundstücksgrenze wachsen oder nach einem Sturm im Garten liegen. Wir beseitigen solche Schäden, sägen umgestürzte Stämme auf und räumen die Fläche wieder frei.
+Hürth ist seit Langem vom Braunkohleabbau und von der Industrie in Knapsack geprägt. In der Ville rund um Hürth sind auf ehemaligen Abbauflächen inzwischen Wälder und Seen entstanden, und wer am Waldrand wohnt, hat oft Bäume in direkter Nachbarschaft. Die Stadtteile im Norden gehen fast nahtlos in den Kölner Stadtrand über. Dort stehen Bäume oft in kleineren Gärten, dicht an Häusern, Garagen und Nachbargrenzen.
 
-## Wohngebiete nah an Köln
+## Typische Arbeiten in Hürth
 
-Die Stadtteile im Norden gehen fast nahtlos in den Kölner Stadtrand über. Dort stehen Bäume oft in kleineren Gärten, dicht an Häusern, Garagen und Nachbargrenzen. Eine Fällung muss in solchen Lagen besonders genau geplant werden: Arbeitsweise, Platz für das Holz und der Weg zum Häcksler werden vorher festgelegt. Häufig sind auch Hecken über die Jahre zu breit oder zu hoch geworden. Wir schneiden sie wieder auf ein gepflegtes Maß zurück.
+Am Waldrand wachsen Äste über die Grundstücksgrenze oder liegen nach einem Sturm im Garten. Wir beseitigen solche Schäden, sägen umgestürzte Stämme auf und räumen die Fläche wieder frei. In den dicht bebauten Lagen muss eine Fällung besonders genau geplant werden: Arbeitsweise, Platz für das Holz und der Weg zum Häcksler werden vorher festgelegt. Häufig sind auch Hecken über die Jahre zu breit oder zu hoch geworden, wir bringen sie wieder auf ein gepflegtes Maß. Hinzu kommen Kronenpflege, das Entfernen von Totholz und die Wurzelstockentfernung.
 
-## Was wir in Hürth übernehmen
+## Anfahrt und Besichtigung
 
-Zu unseren Arbeiten gehören Kronenpflege und das Entfernen von Totholz, Fällungen, Wurzelstockentfernung und die Beseitigung von Sturmschäden. Dafür kommen wir in alle Stadtteile, nach Gleuel, Fischenich oder Kendenich ebenso wie nach Hermülheim und Efferen. Ob die Stadt Hürth Vorgaben zum Baumschutz macht, die Ihren Baum betreffen, erfahren Sie bei der Stadtverwaltung.
-
-## Anfahrt und erste Einschätzung
-
-Nach Hürth sind es von unserem Betrieb in Bornheim rund 16 Kilometer Luftlinie, in nordwestlicher Richtung am Höhenzug der Ville entlang. Bevor wir losfahren, verschaffen wir uns anhand Ihrer Fotos einen ersten Eindruck und melden uns persönlich mit unserer Einschätzung. Wenn wir den Baum vor Ort sehen müssen, vereinbaren wir einen Termin. Das schriftliche Angebot erhalten Sie im Anschluss.
+Nach Hürth sind es von unserem Betrieb in Bornheim rund 16 Kilometer Luftlinie, in nordwestlicher Richtung am Höhenzug der Ville entlang. Wir kommen in alle Stadtteile, nach Gleuel, Fischenich oder Kendenich ebenso wie nach Hermülheim und Efferen. Bevor wir losfahren, verschaffen wir uns anhand Ihrer Fotos einen ersten Eindruck und melden uns persönlich mit unserer Einschätzung. Wenn wir den Baum vor Ort sehen müssen, vereinbaren wir einen Termin. Das schriftliche Angebot erhalten Sie im Anschluss.

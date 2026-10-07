@@ -16,18 +16,14 @@ baumschutz:
   geprueft: null
 ---
 
-## Ländlich zwischen Erft und Swist
+## Weilerswist und seine Bäume
 
-Weilerswist gehört zum Kreis Euskirchen und liegt dort, wo die Swist in die Erft mündet. Die Gemeinde ist ländlich geprägt, mit Feldern, kleinen Ortschaften und Gärten, die oft großzügig angelegt sind. Entlang von Bächen und Feldwegen wachsen Gehölze, die mitunter bis an die Grundstücke heranreichen.
+Weilerswist gehört zum Kreis Euskirchen und liegt dort, wo die Swist in die Erft mündet. Die Gemeinde ist ländlich geprägt, mit Feldern, kleinen Ortschaften und Gärten, die oft großzügig angelegt sind. Auf älteren Grundstücken stehen häufig Obstbäume und große Laubbäume, die über Jahrzehnte gewachsen sind. Entlang von Bächen und Feldwegen wachsen Gehölze, die mitunter bis an die Grundstücke heranreichen.
 
-## Was in Weilerswist häufig ansteht
+## Typische Arbeiten in Weilerswist
 
-In den Ortsteilen stehen auf älteren Grundstücken häufig Obstbäume und große Laubbäume, die über Jahrzehnte gewachsen sind. Ein fachgerechter Schnitt hält sie vital und verringert das Risiko, dass schwere Äste brechen. Ist ein Baum nicht mehr zu erhalten, fällen wir ihn und entfernen auf Wunsch den Wurzelstock. Lange Hecken zu Feld oder Straße schneiden wir auf Wunsch im selben Termin mit, und das gesamte Schnittgut wird gehäckselt und abgefahren.
+Ein fachgerechter Schnitt hält alte Bäume vital und verringert das Risiko, dass schwere Äste brechen. Ist ein Baum nicht mehr zu erhalten, fällen wir ihn und entfernen auf Wunsch den Wurzelstock. Lange Hecken zu Feld oder Straße schneiden wir auf Wunsch im selben Termin mit. In freien Lagen trifft ein Sturm die Bäume oft härter als in dicht bebauten Vierteln. Nach einem Unwetter beseitigen wir umgestürzte Bäume und abgebrochene Äste, und Bäume, die schief stehen oder angerissen sind, sehen wir uns genau an. Wir sagen Ihnen offen, ob sie sich mit einer Pflege erhalten lassen. Das Schnittgut häckseln wir vor Ort und nehmen es mit.
 
-## Wenn der Wind über das offene Land geht
+## Anfahrt und Besichtigung
 
-In freien Lagen trifft ein Sturm die Bäume oft härter als in dicht bebauten Vierteln. Nach einem Unwetter beseitigen wir umgestürzte Bäume und abgebrochene Äste und sprechen mit Ihnen ab, was zuerst erledigt werden muss. Auch Bäume, die nach einem Sturm schief stehen oder angerissen sind, sehen wir uns an und sagen Ihnen offen, ob sie sich mit einer Pflege erhalten lassen.
-
-## Anfahrt über die Ville
-
-Zwischen unserem Betrieb in Bornheim und Weilerswist liegen rund 10 Kilometer Luftlinie, dazwischen der Höhenrücken der Ville. Fragen zum Baumschutz in Weilerswist beantwortet die Gemeindeverwaltung. Für Ihre Anfrage genügen zunächst einige Fotos und wenige Sätze zur Situation. Wir antworten persönlich mit einer ersten Einschätzung. Braucht es eine Besichtigung, kommen wir nach Weilerswist. Das schriftliche Angebot erstellen wir erst, wenn wir uns ein vollständiges Bild gemacht haben.
+Zwischen unserem Betrieb in Bornheim und Weilerswist liegen rund 10 Kilometer Luftlinie, dazwischen der Höhenrücken der Ville. Für Ihre Anfrage genügen zunächst einige Fotos und wenige Sätze zur Situation. Wir antworten persönlich mit einer ersten Einschätzung. Braucht es eine Besichtigung, kommen wir nach Weilerswist. Das schriftliche Angebot erstellen wir, sobald wir uns ein vollständiges Bild gemacht haben.

@@ -16,18 +16,14 @@ baumschutz:
   geprueft: null
 ---
 
-## Nachbarschaft am Vorgebirge
+## Alfter und seine Bäume
 
-Alfter grenzt unmittelbar an Bornheim, unser Betriebssitz liegt rund 3 Kilometer Luftlinie entfernt. Für Sie bedeutet das kurze Wege und einen Ansprechpartner, der die Gegend kennt.
+Das Gemeindegebiet reicht von den landwirtschaftlich genutzten Flächen am Hang des Vorgebirges bis an den Kottenforst. Diese Lage zeigt sich auch in den Gärten. In den älteren Ortslagen von Alfter, Gielsdorf und Oedekoven stehen häufig gewachsene Hausbäume und Obstbäume, die den Gärten über Jahrzehnte ihren Charakter geben. Rund um Witterschlick, Impekoven und Volmershoven-Heidgen ist der Wald nicht weit, manche Gärten liegen nah an Gehölzen oder direkt am Waldrand.
 
-## Zwischen Feldern und Kottenforst
+## Typische Arbeiten in Alfter
 
-Das Gemeindegebiet reicht von den landwirtschaftlich genutzten Flächen am Hang des Vorgebirges bis an den Kottenforst. Diese Lage zeigt sich auch in den Gärten. In den älteren Ortslagen von Alfter, Gielsdorf und Oedekoven stehen häufig gewachsene Hausbäume und Obstbäume, die den Gärten über Jahrzehnte ihren Charakter geben und einen regelmäßigen, fachgerechten Schnitt brauchen. Rund um Witterschlick, Impekoven und Volmershoven-Heidgen ist der Wald nicht weit, und manche Gärten liegen nah an Gehölzen oder am Waldrand. Dort geht es oft um überhängende Äste, Bäume mit Totholz und um Aufräumarbeiten nach einem Sturm.
+Haus- und Obstbäume brauchen einen regelmäßigen, fachgerechten Schnitt, damit sie gesund und in Form bleiben. Nah am Wald geht es oft um überhängende Äste, um Totholz und um Sturmschäden. Ob Kronenpflege, die Fällung eines kranken Baumes oder das Entfernen eines alten Wurzelstocks: Wir planen jede Arbeit mit Rücksicht auf Haus, Zaun und Beete. Hecken entlang der Straße oder zum Nachbarn schneiden wir sauber in Form. Ist eine Hecke über Jahre in die Breite gewachsen, nehmen wir sie schrittweise zurück, damit sie wieder dicht austreibt. Äste und Zweige häckseln wir an Ort und Stelle und nehmen sie mit.
 
-## Leistungen für Ihr Grundstück in Alfter
+## Anfahrt und Besichtigung
 
-Ob Kronenpflege, die Fällung eines kranken Baumes oder das Entfernen eines alten Wurzelstocks: Wir planen jede Arbeit mit Rücksicht auf Haus, Zaun und Beete. Hecken entlang der Straße oder zum Nachbarn schneiden wir sauber in Form. Wächst eine Hecke seit Jahren unbeachtet in die Breite, nehmen wir sie schrittweise zurück, damit sie wieder dicht austreiben kann. Äste und Zweige häckseln wir an Ort und Stelle und fahren sie ab. Ob für eine Fällung eine Genehmigung erforderlich ist, kann Ihnen die Gemeinde Alfter sagen.
-
-## Ihre Anfrage aus Alfter
-
-Zeigen Sie uns den Baum zunächst auf einigen Fotos. Wir melden uns persönlich mit einer ersten Einschätzung und kommen, wenn nötig, zur Besichtigung zu Ihnen. Anschließend erhalten Sie ein schriftliches Angebot, über das Sie in Ruhe entscheiden können.
+Alfter grenzt unmittelbar an Bornheim, unser Betriebssitz liegt rund 3 Kilometer Luftlinie entfernt. Für Sie bedeutet das kurze Wege und einen Ansprechpartner, der die Gegend kennt. Zeigen Sie uns den Baum zunächst auf einigen Fotos. Wir melden uns persönlich mit einer ersten Einschätzung und kommen, wenn nötig, zur Besichtigung zu Ihnen. Anschließend erhalten Sie ein schriftliches Angebot, über das Sie in Ruhe entscheiden können.
