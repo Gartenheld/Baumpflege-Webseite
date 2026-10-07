@@ -18,7 +18,7 @@ const fragen = (await faqNachThema()).find((g) => g.thema === 'kosten')?.fragen.
 
 const marken = [
   { titel: 'Preisfaktoren', ziel: 'preisfaktoren' },
-  { titel: 'Gut zu wissen', ziel: 'gut-zu-wissen' },
+  { titel: 'Ihr Pauschalpreis', ziel: 'pauschalpreis' },
   { titel: 'Ablauf', ziel: 'ablauf-titel' },
   ...(fragen.length > 0 ? [{ titel: 'Häufige Fragen', ziel: 'fragen' }] : []),
 ];
@@ -40,11 +40,11 @@ const marken = [
     </div>
   </section>
 
-  <section class="abschnitt" id="gut-zu-wissen" aria-labelledby="gut-zu-wissen-titel">
+  <section class="abschnitt" id="pauschalpreis" aria-labelledby="pauschalpreis-titel">
     <div class="huelle">
       <div class="abschnittskopf">
         <p class="kicker">Ihr Pauschalpreis</p>
-        <h2 id="gut-zu-wissen-titel">Gut zu wissen</h2>
+        <h2 id="pauschalpreis-titel">Was Sie erwarten dürfen</h2>
       </div>
       <ul class="punkte">
         {

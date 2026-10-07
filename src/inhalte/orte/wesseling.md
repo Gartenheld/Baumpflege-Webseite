@@ -4,7 +4,7 @@ reihenfolge: 6
 breite: 50.8208
 laenge: 6.9744
 seitentitel: "Baumpflege und Baumfällung in Wesseling | Baumpflege Happe"
-beschreibung: "Baumpflege und Baumfällung in Wesseling und allen Stadtteilen: kurze Anfahrt aus Bornheim, Aufräumen und Entsorgung inklusive. Anfrage mit Fotos senden."
+beschreibung: "Baumpflege und Baumfällung in Wesseling und allen Stadtteilen: kurze Anfahrt aus Bornheim, persönliche Betreuung durch den Inhaber. Anfrage mit Fotos senden."
 h1: "Baumpflege und Baumfällung in Wesseling"
 einleitung: "Wesseling liegt am Rhein, nur wenige Kilometer rheinabwärts von Bornheim. Wir pflegen und fällen Bäume in der Kernstadt ebenso wie in Berzdorf, Keldenich und Urfeld."
 ortsteile: [Berzdorf, Keldenich, Urfeld]

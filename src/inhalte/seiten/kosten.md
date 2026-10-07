@@ -18,14 +18,14 @@ karten:
     text: "Die Menge an Ästen und Holz bestimmt den Aufwand für Häckseln, Abtransport und Entsorgung. Möchten Sie Holz behalten, berücksichtigen wir das im Angebot."
   - titel: "Zusätzliche Arbeiten"
     text: "Zum Beispiel das Entfernen des Wurzelstocks. Muss für die Arbeit eine Straße oder ein Gehweg genutzt werden, kann außerdem eine Genehmigung nötig sein."
-# Abschnitt „Gut zu wissen“
+# Abschnitt „Was Sie erwarten dürfen“ (vier Punkte, Texte etwa gleich lang halten)
 punkte:
-  - titel: "Einschätzung und Angebot kostenlos"
-    text: "Das gilt auch für eine Besichtigung vor Ort, wenn sie nötig ist. Für den Anfang genügen meist Fotos vom ganzen Baum, vom Stamm und von der Zufahrt."
-  - titel: "Aufräumen inklusive"
-    text: "Aufräumen und Entsorgung gehören immer dazu und sind im Angebot enthalten."
-  - titel: "Mehraufwand nur nach Absprache"
-    text: "Zeigt sich bei der Arbeit ein Mehraufwand, der vorher nicht erkennbar war, sprechen wir Sie an, bevor wir fortfahren."
-  - titel: "Arbeiten bündeln"
-    text: "Ist im Garten noch mehr zu tun, planen wir es gern mit ein. So bleibt es bei einem Termin auf Ihrem Grundstück."
+  - titel: "Kostenfreies Angebot"
+    text: "Ersteinschätzung, Besichtigung vor Ort und schriftliches Angebot sind für Sie kostenfrei."
+  - titel: "Pauschalpreis vorab"
+    text: "Ihr Preis steht vor Beginn schriftlich fest, einschließlich Abtransport und Entsorgung."
+  - titel: "Klare Absprachen"
+    text: "Zeigt sich ein Mehraufwand, der vorher nicht erkennbar war, stimmen wir das Vorgehen mit Ihnen ab."
+  - titel: "Ein Termin für alles"
+    text: "Weitere Arbeiten auf Ihrem Grundstück planen wir auf Wunsch mit ein und führen sie in einem Termin aus."
 ---

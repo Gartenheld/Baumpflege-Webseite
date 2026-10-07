@@ -1,9 +1,9 @@
 ---
 seitentitel: "Kontakt und Anfrage mit Fotos | Baumpflege Happe Bornheim"
-beschreibung: "Fotos Ihres Baumes senden: persönliche Antwort innerhalb von 24 Stunden an Werktagen, kostenlose Ersteinschätzung. Baumpflege Happe aus Bornheim."
+beschreibung: "Fotos Ihres Baumes senden: persönliche Antwort innerhalb von 24 Stunden an Werktagen, kostenfreie Ersteinschätzung. Baumpflege Happe aus Bornheim."
 kicker: Kontakt
 h1: "Anfrage mit Fotos senden"
-einleitung: "Senden Sie uns einige Fotos und beschreiben Sie kurz, was zu tun ist. Sie erhalten eine kostenlose Ersteinschätzung und, wenn Sie möchten, ein schriftliches Angebot."
+einleitung: "Senden Sie uns einige Fotos und beschreiben Sie kurz, was zu tun ist. Sie erhalten eine kostenfreie Ersteinschätzung und, wenn Sie möchten, ein schriftliches Angebot."
 karten:
   - titel: "Gesamtansicht"
     text: "Der ganze Baum aus einigen Metern Abstand, damit Höhe, Krone und Umgebung zu sehen sind."

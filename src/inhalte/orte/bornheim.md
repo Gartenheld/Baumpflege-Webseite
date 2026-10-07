@@ -4,7 +4,7 @@ reihenfolge: 1
 breite: 50.7592
 laenge: 6.9906
 seitentitel: "Baumpflege und Baumfällung in Bornheim | Baumpflege Happe"
-beschreibung: "Baumpflege und Baumfällung in Bornheim, direkt vom Betrieb vor Ort: kurze Wege, schriftliches Angebot, Aufräumen inklusive. Anfrage mit Fotos senden."
+beschreibung: "Baumpflege und Baumfällung in Bornheim, direkt vom Betrieb vor Ort: kurze Wege, persönliche Betreuung, schriftliches Angebot. Anfrage mit Fotos senden."
 h1: "Baumpflege und Baumfällung in Bornheim"
 einleitung: "Bornheim ist unser Betriebssitz. Vom Rheinufer bis zu den Hangorten am Vorgebirge haben wir kurze Wege zu Ihnen und kennen die Gärten und Baumbestände der Gegend aus eigener Anschauung."
 ortsteile: [Merten, Roisdorf, Sechtem, Hersel, Walberberg, Waldorf, Kardorf, Hemmerich, Rösberg, Brenig, Dersdorf, Widdig, Uedorf]
