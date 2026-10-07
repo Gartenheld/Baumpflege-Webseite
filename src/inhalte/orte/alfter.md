@@ -18,8 +18,8 @@ baumschutz:
 
 ## Typische Arbeiten in Alfter
 
-In den älteren Ortslagen von Alfter, Gielsdorf und Oedekoven stehen häufig gewachsene Haus- und Obstbäume. Sie brauchen einen regelmäßigen, fachgerechten Schnitt, damit sie gesund und in Form bleiben. Rund um Witterschlick, Impekoven und Volmershoven-Heidgen liegen manche Gärten nah am Wald. Dort geht es oft um überhängende Äste, um Totholz und um Sturmschäden. Ob Kronenpflege, die Fällung eines kranken Baumes oder das Entfernen eines alten Wurzelstocks: Wir planen jede Arbeit mit Rücksicht auf Haus, Zaun und Beete. Hecken entlang der Straße oder zum Nachbarn schneiden wir sauber in Form. Ist eine Hecke über Jahre in die Breite gewachsen, nehmen wir sie schrittweise zurück, damit sie wieder dicht austreibt. Äste und Zweige häckseln wir an Ort und Stelle und nehmen sie mit.
+In Alfter, Gielsdorf und Oedekoven pflegen wir vor allem gewachsene Haus- und Obstbäume, rund um Witterschlick und Impekoven auch Gärten am Waldrand mit Totholz und überhängenden Ästen. Wir fällen kranke Bäume, entfernen Wurzelstöcke und bringen Hecken wieder in Form, stets mit Rücksicht auf Haus, Zaun und Beete.
 
 ## Anfahrt und Besichtigung
 
-Alfter grenzt unmittelbar an Bornheim, unser Betriebssitz liegt rund 3 Kilometer Luftlinie entfernt. Für Sie bedeutet das kurze Wege und einen Ansprechpartner, der die Gegend kennt. Zeigen Sie uns den Baum zunächst auf einigen Fotos. Wir melden uns persönlich mit einer ersten Einschätzung und kommen, wenn nötig, zur Besichtigung zu Ihnen. Anschließend erhalten Sie ein schriftliches Angebot, über das Sie in Ruhe entscheiden können.
+Unser Betrieb in Bornheim liegt rund 3 Kilometer entfernt, Ihr Ansprechpartner kennt die Gegend. Nach einer ersten Einschätzung anhand Ihrer Fotos kommen wir bei Bedarf zur Besichtigung und legen Ihnen anschließend ein schriftliches Angebot vor.

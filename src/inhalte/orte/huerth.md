@@ -18,8 +18,8 @@ baumschutz:
 
 ## Typische Arbeiten in Hürth
 
-Wer am Waldrand der Ville wohnt, hat oft Bäume in direkter Nachbarschaft, deren Äste über die Grundstücksgrenze wachsen oder nach einem Sturm im Garten liegen. Wir beseitigen solche Schäden, sägen umgestürzte Stämme auf und räumen die Fläche wieder frei. In den Stadtteilen im Norden, nah an Köln, stehen Bäume oft in kleineren Gärten, dicht an Häusern, Garagen und Nachbargrenzen. Eine Fällung muss in solchen Lagen besonders genau geplant werden: Arbeitsweise, Platz für das Holz und der Weg zum Häcksler werden vorher festgelegt. Häufig sind auch Hecken über die Jahre zu breit oder zu hoch geworden, wir bringen sie wieder auf ein gepflegtes Maß. Hinzu kommen Kronenpflege, das Entfernen von Totholz und die Wurzelstockentfernung.
+Am Waldrand der Ville beseitigen wir Sturmschäden und überhängende Äste. In den Stadtteilen nah an Köln planen wir Fällungen auf engem Raum besonders sorgfältig: Arbeitsweise, Platz für das Holz und der Weg zum Häcksler stehen vorab fest. Dazu übernehmen wir Kronenpflege, Heckenschnitt und Wurzelstockentfernung.
 
 ## Anfahrt und Besichtigung
 
-Nach Hürth sind es von unserem Betrieb in Bornheim rund 16 Kilometer Luftlinie, in nordwestlicher Richtung am Höhenzug der Ville entlang. Wir kommen in alle Stadtteile, nach Gleuel, Fischenich oder Kendenich ebenso wie nach Hermülheim und Efferen. Bevor wir losfahren, verschaffen wir uns anhand Ihrer Fotos einen ersten Eindruck und melden uns persönlich mit unserer Einschätzung. Wenn wir den Baum vor Ort sehen müssen, vereinbaren wir einen Termin. Das schriftliche Angebot erhalten Sie im Anschluss.
+Von Bornheim sind es rund 16 Kilometer, wir kommen in alle Stadtteile, von Hermülheim und Efferen bis Gleuel und Kendenich. Anhand Ihrer Fotos geben wir Ihnen eine erste Einschätzung, bei Bedarf sehen wir uns den Baum vor Ort an. Das schriftliche Angebot erhalten Sie im Anschluss.

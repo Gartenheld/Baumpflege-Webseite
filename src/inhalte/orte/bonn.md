@@ -20,8 +20,8 @@ baumschutz:
 
 ## Typische Arbeiten in Bonn
 
-In den Villenvierteln von Bad Godesberg, aber auch in Endenich, Kessenich oder Beuel stehen großkronige Laubbäume oft dicht am Haus. Sie brauchen fachkundige Pflege: Totholz wird entfernt, lange Äste über Dächern und Wegen werden eingekürzt, und die Krone wird so ausgelichtet, dass der Baum seine natürliche Form behält. In Röttgen, Ippendorf oder auf dem Venusberg grenzen manche Gärten an den Wald. Dort fallen nach stürmischen Tagen häufiger Äste in den Garten, gelegentlich stürzt ein geschwächter Baum um. Wir beseitigen solche Sturmschäden und entfernen auf Wunsch auch den verbliebenen Wurzelstock. Stehen Bäume im Vorgarten dicht an Gehweg und Fahrbahn oder in einem Reihenhausgarten mit schmalem Zugang, klären wir vor Beginn, wo unser Fahrzeug halten kann und wie Holz und Schnittgut herauskommen, ohne Pflaster, Rasen oder Nachbargrundstück zu belasten. Die Äste häckseln wir direkt vor Ort, das Holz nehmen wir mit.
+In Bad Godesberg, Endenich oder Beuel stehen großkronige Laubbäume oft dicht am Haus. Wir pflegen sie so, dass Charakter und natürliche Form erhalten bleiben. In Röttgen, Ippendorf und am Venusberg beseitigen wir Sturmschäden in Gärten am Waldrand. Bei engen Zugängen klären wir vorab, wie Holz und Schnittgut das Grundstück verlassen, ohne Pflaster und Rasen zu belasten.
 
 ## Anfahrt und Besichtigung
 
-Bonn schließt im Süden an Bornheim an. Von unserem Betrieb bis in die Bonner Innenstadt sind es rund 8 Kilometer Luftlinie, besonders nah liegen Buschdorf, Tannenbusch und Dransdorf im Bonner Norden. Für eine erste Einschätzung genügen meist einige Fotos des Baumes und seines Umfelds. Ist eine Besichtigung sinnvoll, vereinbaren wir einen Termin mit Ihnen. Was wir vorschlagen, erhalten Sie anschließend als schriftliches Angebot.
+Bonn grenzt an Bornheim, der Bonner Norden mit Buschdorf und Tannenbusch liegt besonders nah. Für die erste Einschätzung genügen meist einige Fotos. Ist eine Besichtigung sinnvoll, vereinbaren wir einen Termin, danach erhalten Sie ein schriftliches Angebot mit Pauschalpreis.

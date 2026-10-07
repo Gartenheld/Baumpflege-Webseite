@@ -6,7 +6,7 @@ laenge: 6.9603
 seitentitel: "Baumpflege und Baumfällung in Köln | Baumpflege Happe"
 beschreibung: "Baumpflege und Baumfällung in Köln: Pflege alter Bäume im Garten, Hinweise zur Baumschutzsatzung, Anfahrt aus Bornheim. Anfrage mit Fotos senden."
 h1: "Baumpflege und Baumfällung in Köln"
-einleitung: "In Kölner Gärten, Innenhöfen und Villenvierteln wachsen Bäume, die oft seit Generationen ihr Viertel prägen. Von Bornheim aus liegt der Kölner Süden am nächsten, Anfragen aus anderen Stadtteilen nehmen wir ebenso gern entgegen."
+einleitung: "In Köln pflegen und fällen wir Bäume in Gärten, Innenhöfen und Villenvierteln, im Kölner Süden ebenso wie in allen anderen Stadtteilen."
 ortsteile: [Rodenkirchen, Sürth, Weiß, Hahnwald, Marienburg, Godorf, Immendorf, Meschenich, Lindenthal, Junkersdorf]
 entfernungKm: 20
 baumschutz:
@@ -20,8 +20,8 @@ baumschutz:
 
 ## Typische Arbeiten in Köln
 
-Auf großen Grundstücken in Marienburg, Hahnwald oder Rodenkirchen stehen Bäume, die oft schon viele Jahrzehnte alt sind. Großkronige Laubbäume dieser Art brauchen eine Pflege, die ihren Charakter bewahrt: Totholz entfernen, störende Äste gezielt einkürzen, die Krone nicht unnötig schwächen. In den dicht bebauten Vierteln wachsen Bäume dagegen oft in Innenhöfen oder kleinen Gärten hinter dem Haus, erreichbar nur durch einen Hausflur oder eine schmale Einfahrt. Hier klären wir vorab genau, wie Schnittgut und Holz sicher nach draußen gelangen und wo der Häcksler stehen kann. Nach einem Sturm beseitigen wir abgebrochene Äste, umgestürzte Bäume oder eingerissene Kronen nach Absprache und besprechen mit Ihnen, ob ein beschädigter Baum erhalten werden kann oder gefällt werden sollte.
+In Marienburg, Hahnwald und Rodenkirchen pflegen wir alte, großkronige Bäume so, dass ihr Charakter erhalten bleibt. Für Innenhöfe und Gärten, die nur durch Hausflur oder schmale Einfahrt erreichbar sind, planen wir vorab genau, wie Holz und Schnittgut sicher nach draußen gelangen. Nach Sturmschäden besprechen wir mit Ihnen, ob ein Baum erhalten werden kann oder gefällt werden sollte.
 
 ## Anfahrt und Besichtigung
 
-Die Kölner Innenstadt ist rund 20 Kilometer Luftlinie von Bornheim entfernt, der Kölner Süden mit Sürth, Weiß und Godorf liegt deutlich näher. Bei der Planung berücksichtigen wir die Gegebenheiten vor Ort, etwa Parkmöglichkeiten in engen Straßen oder Nachbargrundstücke, die betroffen sein könnten. Nennen Sie uns in Ihrer Anfrage deshalb bitte Adresse und Stadtteil und fügen Sie einige Fotos bei. Auf dieser Grundlage schätzen wir den Aufwand ein und melden uns persönlich bei Ihnen. Reichen die Fotos nicht aus, vereinbaren wir einen Termin vor Ort. Das Angebot erhalten Sie anschließend schriftlich.
+Der Kölner Süden mit Sürth, Weiß und Godorf liegt von Bornheim aus nah, die Innenstadt rund 20 Kilometer entfernt. Nennen Sie uns bitte Adresse und Stadtteil, damit wir Zufahrt und Parkmöglichkeit vorab einplanen. Nach Ihren Fotos und, wenn nötig, einer Besichtigung erhalten Sie ein schriftliches Angebot.

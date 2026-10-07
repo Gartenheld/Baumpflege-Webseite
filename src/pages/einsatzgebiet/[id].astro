@@ -9,6 +9,8 @@ import BaumschutzHinweis from '../../components/BaumschutzHinweis.astro';
 import LeistungsKarten from '../../components/LeistungsKarten.astro';
 import ReferenzKarten from '../../components/ReferenzKarten.astro';
 import KontaktAufruf from '../../components/start/KontaktAufruf.astro';
+import Icon from '../../components/Icon.astro';
+import { betrieb } from '../../config/betrieb';
 import { getCollection, render } from 'astro:content';
 import { sichtbareReferenzen, ortUrl } from '../../lib/inhalte';
 import { dienstleistung } from '../../lib/strukturdaten';
@@ -23,6 +25,13 @@ const d = ort.data;
 const { Content } = await render(ort);
 // Auf Ortsseiten nur echte, freigegebene Referenzen, keine Platzhalter (auch nicht in der Vorschau)
 const referenzen = (await sichtbareReferenzen(ort.id)).liste.filter((r) => r.data.veroeffentlichen);
+// Zusagen unter dem Text, auf allen Ortsseiten gleich
+const zusagen = [
+  `Persönlich betreut von ${betrieb.inhaber}`,
+  `Antwort ${betrieb.antwortzeit}`,
+  'Ersteinschätzung, Besichtigung und Angebot kostenfrei',
+  'Schriftlicher Pauschalpreis, einschließlich Abtransport und Entsorgung',
+];
 const service = dienstleistung(Astro.site!, ortUrl(ort.id), `Baumpflege und Baumfällung in ${d.name}`, 'Baumpflege und Baumfällung', d.beschreibung, [d.name]);
 ---
 
@@ -37,7 +46,19 @@ const service = dienstleistung(Astro.site!, ortUrl(ort.id), `Baumpflege und Baum
 
   <section class="abschnitt abschnitt--weiss">
     <div class="huelle raster">
-      <div class="prosa"><Content /></div>
+      <div class="text">
+        <div class="prosa"><Content /></div>
+        <ul class="zusagen" aria-label="Unsere Zusagen">
+          {
+            zusagen.map((z) => (
+              <li>
+                <Icon name="haken" />
+                {z}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
       <div class="seite">
         <Karte hervorheben={ort.id} />
         <BaumschutzHinweis ort={d.name} status={d.baumschutz.status} stelle={d.baumschutz.stelle} link={d.baumschutz.link} linktext={d.baumschutz.linktext} regel={d.baumschutz.regel} />
@@ -82,6 +103,36 @@ const service = dienstleistung(Astro.site!, ortUrl(ort.id), `Baumpflege und Baum
   .seite {
     display: grid;
     gap: 1.5rem;
+  }
+
+  .zusagen {
+    list-style: none;
+    margin: 2.5rem 0 0;
+    padding: 1.25rem 0 0;
+    border-top: 2px solid var(--gold);
+    display: grid;
+  }
+
+  .zusagen li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--linie);
+    font-weight: 600;
+    line-height: 1.45;
+  }
+
+  .zusagen li:last-child {
+    border-bottom: 0;
+  }
+
+  .zusagen :global(.icon) {
+    flex-shrink: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: 0.15rem;
+    color: var(--gold-dunkel);
   }
 
   @media (min-width: 60rem) {

@@ -18,8 +18,8 @@ baumschutz:
 
 ## Typische Arbeiten in Erftstadt
 
-In den dörflichen Ortsteilen wie Gymnich, Friesheim oder Erp stehen auf größeren Grundstücken oft alte Laub- und Obstbäume, deren Kronen mit den Jahren ausladend geworden sind. Hier geht es meist um einen Erhaltungsschnitt, um Totholz und um Äste, die über Straße oder Nachbargrundstück ragen. In den Wohngebieten von Liblar und Lechenich sind eher Heckenschnitt, die Fällung einzelner Gartenbäume und das Entfernen von Wurzelstöcken gefragt. Auch Gehölzstreifen und lange Hecken am Rand größerer Grundstücke pflegen wir, damit sie dicht bleiben und nicht in Wege oder Felder hineinwachsen. Das Schnittgut zerkleinern wir mit dem Häcksler direkt vor Ort. Auf Wunsch bleibt das Häckselgut als Mulch für Beete und Baumscheiben bei Ihnen, ansonsten nehmen wir es mit.
+In Gymnich, Friesheim oder Erp stehen auf großen Grundstücken oft alte Laub- und Obstbäume, die einen fachgerechten Erhaltungsschnitt brauchen. In Liblar und Lechenich sind vor allem Heckenschnitt, Fällungen und Wurzelstockentfernung gefragt. Auch lange Hecken und Gehölzstreifen pflegen wir. Das Häckselgut bleibt auf Wunsch als Mulch bei Ihnen.
 
 ## Anfahrt und Besichtigung
 
-Rund 15 Kilometer Luftlinie trennen Erftstadt von unserem Betrieb in Bornheim. Größere Arbeiten planen wir nach Möglichkeit so, dass sie in einem Zug ausgeführt werden. So bleibt es bei einem Termin auf Ihrem Grundstück. Am Anfang stehen Ihre Fotos und eine kurze Beschreibung. Wir sagen Ihnen offen, was wir für sinnvoll halten, und erstellen, falls nötig nach einer Besichtigung, ein schriftliches Angebot mit Pauschalpreis.
+Erftstadt liegt rund 15 Kilometer von unserem Betrieb entfernt. Größere Arbeiten führen wir nach Möglichkeit in einem Termin aus. Nach Ihren Fotos und, falls nötig, einer Besichtigung erhalten Sie ein schriftliches Angebot mit Pauschalpreis.
