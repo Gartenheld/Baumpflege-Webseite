@@ -644,7 +644,7 @@ Descriptions nach dem Muster Leistung + Ort + Nutzen + Aufforderung:
 
 | Seite | Beispiel | Zeichen |
 |---|---|---|
-| Startseite | Baumpflege und Baumfällung in Bornheim, Köln, Bonn und Umgebung: fachgerecht geplant, sauber ausgeführt, Aufräumen inklusive. Anfrage mit Fotos senden. | 151 |
+| Startseite | Baumpflege, Baumschnitt und Baumfällung in Bornheim, Köln, Bonn und Umgebung: fachgerecht, sorgfältig und persönlich betreut. Antwort in 24 Stunden an Werktagen. | 161 |
 | Leistung Baumfällung | Baumfällung in Bornheim, Köln und Bonn: sorgfältig geplant, sauber ausgeführt. Schnittgut wird vor Ort gehäckselt und abgefahren. Anfrage mit Fotos senden. | 155 |
 | Ortsseite Bornheim | Baumpflege und Baumfällung in Bornheim und den Ortsteilen: Hinweise zur Fällgenehmigung, schriftliches Angebot, kurze Wege. Anfrage mit Fotos senden. | 149 |
 | Ortsseite Köln | Baumpflege und Baumfällung in Köln: Hinweise zu Baumschutz und Fällgenehmigung, Anfahrt aus Bornheim, schriftliches Angebot. Anfrage mit Fotos senden. | 150 |

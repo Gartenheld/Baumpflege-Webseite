@@ -1,10 +1,10 @@
 ---
-frage: "Wie wird abgerechnet und sind Aufräumen und Entsorgung enthalten?"
+frage: "Wie wird abgerechnet und was ist im Preis enthalten?"
 thema: kosten
 leistungen: [haeckselarbeiten]
 aufFaqSeite: true
 reihenfolge: 30
 ---
-Bevor wir beginnen, erhalten Sie ein **schriftliches Angebot**. Darin sind die vereinbarten Arbeiten aufgeführt und auch Aufräumen und Entsorgung ausgewiesen, denn beides gehört bei uns immer dazu. Das Schnittgut häckseln wir in der Regel vor Ort und fahren es ab. Möchten Sie Holz oder Häckselgut behalten, etwa als Brennholz oder zum Mulchen, sagen Sie es uns vorher, dann berücksichtigen wir das im Angebot.
+Bevor wir beginnen, erhalten Sie ein **schriftliches Angebot mit Pauschalpreis**. Darin sind alle vereinbarten Arbeiten aufgeführt, ebenso Abtransport und Entsorgung des Schnittguts. Äste und Zweige häckseln wir in der Regel vor Ort und nehmen sie mit, Ihr Grundstück hinterlassen wir gepflegt. Möchten Sie Holz oder Häckselgut behalten, etwa als Brennholz oder zum Mulchen, sagen Sie es uns vorher, dann berücksichtigen wir das im Angebot.
 
-Sie erhalten einen Pauschalpreis für die vereinbarten Arbeiten, abgerechnet wird nach dem Angebot. Die Zahlungsbedingungen finden Sie im Angebot und auf der Rechnung. Zeigt sich bei der Arbeit ein Mehraufwand, der vorher nicht erkennbar war, sprechen wir mit Ihnen, bevor wir fortfahren.
+Abgerechnet wird nach dem Angebot. Die Zahlungsbedingungen finden Sie im Angebot und auf der Rechnung. Zeigt sich bei der Arbeit ein Mehraufwand, der vorher nicht erkennbar war, stimmen wir das weitere Vorgehen mit Ihnen ab, bevor wir fortfahren.
