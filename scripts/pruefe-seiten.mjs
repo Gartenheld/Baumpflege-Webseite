@@ -118,9 +118,9 @@ for (const [d, html] of inhalt) {
   if (/^\/einsatzgebiet\/[^/]+\/$/.test(url)) {
     const prosa = html.match(/class="prosa[^"]*"[^>]*>([\s\S]*?)<\/div>/);
     const h2 = prosa ? [...prosa[1].matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)].map((m) => ent(m[1].replace(/<[^>]+>/g, '').trim())) : [];
-    const muster = [/^\S.* und seine Bäume$/, /^Typische Arbeiten in \S/, /^Anfahrt und Besichtigung$/];
+    const muster = [/^Typische Arbeiten in \S/, /^Anfahrt und Besichtigung$/];
     if (h2.length !== muster.length || !muster.every((r, i) => r.test(h2[i])))
-      fehler.push(`${url}: Ortsseite weicht von der Gliederung ab („<Ort> und seine Bäume“, „Typische Arbeiten in <Ort>“, „Anfahrt und Besichtigung“), gefunden: ${h2.join(' | ') || 'keine Zwischenüberschriften'}`);
+      fehler.push(`${url}: Ortsseite weicht von der Gliederung ab („Typische Arbeiten in <Ort>“, „Anfahrt und Besichtigung“), gefunden: ${h2.join(' | ') || 'keine Zwischenüberschriften'}`);
   }
 
   // Sichtbarer Text ohne Skripte, Stile und SVG

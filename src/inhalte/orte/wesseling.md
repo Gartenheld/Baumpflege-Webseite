@@ -17,13 +17,9 @@ baumschutz:
   geprueft: null
 ---
 
-## Wesseling und seine Bäume
-
-Wesseling ist geprägt vom Rhein und von großen Industrieanlagen, daneben gibt es ruhige Wohngebiete mit Gärten. In Rheinnähe wachsen häufig Weiden und Pappeln. Beide Arten legen schnell an Höhe zu, und ihr Holz gilt als vergleichsweise bruchanfällig. In den Wohngebieten von Berzdorf, Keldenich und Urfeld finden sich viele Einfamilien- und Reihenhäuser mit Gärten unterschiedlicher Größe.
-
 ## Typische Arbeiten in Wesseling
 
-Stehen Weiden oder Pappeln nah am Haus, an der Terrasse oder an einem Weg, empfiehlt sich ein regelmäßiger Blick in die Krone. Rechtzeitig entferntes Totholz und eingekürzte, schwere Äste verringern das Risiko, dass beim nächsten Unwetter etwas herunterkommt. In den Hausgärten stehen der Schnitt von Hecken und Gartenbäumen, die Fällung zu groß gewordener Nadelbäume und das Entfernen alter Wurzelstöcke im Vordergrund. Fällung und Wurzelstockentfernung erhalten Sie dabei aus einer Hand. Äste häckseln wir gleich vor Ort, Stammholz und Häckselgut nehmen wir mit. Ihren Garten hinterlassen wir sauberer, als wir ihn vorgefunden haben.
+In Rheinnähe wachsen häufig Weiden und Pappeln. Beide Arten legen schnell an Höhe zu, und ihr Holz gilt als vergleichsweise bruchanfällig. Stehen solche Bäume nah am Haus, an der Terrasse oder an einem Weg, empfiehlt sich ein regelmäßiger Blick in die Krone. Rechtzeitig entferntes Totholz und eingekürzte, schwere Äste verringern das Risiko, dass beim nächsten Unwetter etwas herunterkommt. In den Gärten von Berzdorf, Keldenich und Urfeld stehen der Schnitt von Hecken und Gartenbäumen, die Fällung zu groß gewordener Nadelbäume und das Entfernen alter Wurzelstöcke im Vordergrund. Fällung und Wurzelstockentfernung erhalten Sie dabei aus einer Hand. Äste häckseln wir gleich vor Ort, Stammholz und Häckselgut nehmen wir mit. Ihren Garten hinterlassen wir sauberer, als wir ihn vorgefunden haben.
 
 ## Anfahrt und Besichtigung
 

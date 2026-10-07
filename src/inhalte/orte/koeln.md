@@ -18,13 +18,9 @@ baumschutz:
   regel: "Nach Angaben der Stadt Köln sind unter anderem Laubbäume ab 80 cm Stammumfang geschützt. Für ihre Fällung ist ein kostenpflichtiger Antrag bei der Stadt nötig."
 ---
 
-## Köln und seine Bäume
-
-In Marienburg, Hahnwald oder Rodenkirchen stehen auf großen Grundstücken Bäume, die oft schon viele Jahrzehnte alt sind. Ganz anders sieht es in den dicht bebauten Vierteln aus: Dort wachsen Bäume oft in Innenhöfen oder kleinen Gärten hinter dem Haus, erreichbar nur durch einen Hausflur oder eine schmale Einfahrt. Dazu ist Köln von Grünflächen durchzogen. Der Grüngürtel und die Rheinufer prägen viele Viertel, und auch die privaten Gärten tragen zum Grün der Stadt bei.
-
 ## Typische Arbeiten in Köln
 
-Großkronige Laubbäume brauchen eine Pflege, die ihren Charakter bewahrt: Totholz entfernen, störende Äste gezielt einkürzen, die Krone nicht unnötig schwächen. Nach einem Sturm zeigt sich, wie verletzlich ältere Bäume sein können. Abgebrochene Äste, ein umgestürzter Baum oder eine eingerissene Krone: Wir beseitigen solche Schäden nach Absprache und besprechen mit Ihnen, ob ein beschädigter Baum erhalten werden kann oder gefällt werden sollte. Bei Innenhöfen und engen Zugängen klären wir vorab genau, wie Schnittgut und Holz sicher nach draußen gelangen und wo der Häcksler stehen kann.
+Auf großen Grundstücken in Marienburg, Hahnwald oder Rodenkirchen stehen Bäume, die oft schon viele Jahrzehnte alt sind. Großkronige Laubbäume dieser Art brauchen eine Pflege, die ihren Charakter bewahrt: Totholz entfernen, störende Äste gezielt einkürzen, die Krone nicht unnötig schwächen. In den dicht bebauten Vierteln wachsen Bäume dagegen oft in Innenhöfen oder kleinen Gärten hinter dem Haus, erreichbar nur durch einen Hausflur oder eine schmale Einfahrt. Hier klären wir vorab genau, wie Schnittgut und Holz sicher nach draußen gelangen und wo der Häcksler stehen kann. Nach einem Sturm beseitigen wir abgebrochene Äste, umgestürzte Bäume oder eingerissene Kronen nach Absprache und besprechen mit Ihnen, ob ein beschädigter Baum erhalten werden kann oder gefällt werden sollte.
 
 ## Anfahrt und Besichtigung
 
