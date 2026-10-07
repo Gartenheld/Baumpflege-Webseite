@@ -1,5 +1,5 @@
 ---
-frage: "Ist die Anfrage mit Kosten verbunden und wann melden Sie sich?"
+frage: "Ist meine Anfrage mit Kosten verbunden und wann erhalte ich eine Antwort?"
 thema: kosten
 leistungen: []
 aufFaqSeite: true
